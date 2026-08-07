@@ -1,0 +1,558 @@
+{
+ "release": "AWIBI-SCOUT-IMAGING-2026.08.R1",
+ "corrections_to_imaging_document": [
+  {
+   "id": "IMG-C1",
+   "severity": "HIGH",
+   "topic": "Geometry compression",
+   "doc_says": "Step 5 of the optimisation pipeline: 'DRACO COMPRESSION ~2MB — Binary compression for delivery'.",
+   "why_wrong": "Draco gives the smallest bytes on the wire but pays for it in DECODE TIME on the client. On a mid-range Android phone that decode shows up as a visible hitch before the model appears — the user taps, sees nothing, and taps again. Meshopt (EXT_meshopt_compression) achieves similar ratios once combined with gzip or brotli, and decompresses far faster.",
+   "correction": "DEFAULT TO MESHOPT, not Draco, for Awibi Scout. The target device is a mid-range Android phone on an unreliable connection. Decode speed matters more here than the last 15% of file size. Use KHR_mesh_quantization + EXT_meshopt_compression, served as .glb with brotli. Keep Draco as an option only for models that are geometry-heavy AND will be pre-cached in the offline package, where decode happens once.",
+   "test": "Measure both on a real mid-range device, not a laptop. Ship the benchmark numbers.",
+   "cli": "gltf-transform optimize in.glb out.glb --compress meshopt --texture-compress ktx2 --texture-size 1024"
+  },
+  {
+   "id": "IMG-C2",
+   "severity": "HIGH",
+   "topic": "Radiology images",
+   "doc_says": "Radiology teaching visuals sit in the same bucket as illustrations, generated with DALL·E / Midjourney.",
+   "why_wrong": "You must NEVER generate a radiograph with an image model. A generated 'chest X-ray showing consolidation' is a picture of something that has never existed in a human body. It will contain plausible-looking, anatomically impossible findings, and a student who learns from it will carry that error to a real film. This is the single highest-risk item in the entire imaging plan.",
+   "correction": "Radiographs, CT and MRI images are TIER 4 and come from real, licence-cleared, de-identified cases ONLY. Generative models may be used for the SCHEMATIC beside the film (an SVG line drawing showing where the pleural line runs) but never for the film itself.",
+   "rule": "HARD RULE: no AI-generated radiological image ships in Awibi Scout. Ever."
+  },
+  {
+   "id": "IMG-C3",
+   "severity": "HIGH",
+   "topic": "AI-generated anatomy generally",
+   "doc_says": "Tripo AI / Luma AI generate the anatomical 3D models; DALL·E / Midjourney generate the illustrations.",
+   "why_wrong": "Generative models produce anatomy that is confidently wrong in ways a non-anatomist cannot see: an extra hepatic vein, a mirrored branching pattern, a nerve on the wrong side of an artery, six fingers, a coronary arising from the wrong sinus. The output LOOKS professional, which is exactly what makes it dangerous.",
+   "correction": "AI generation is permitted as a FIRST DRAFT ONLY, and every generated asset must pass named anatomist or specialist review BEFORE optimisation. Review happens early because fixing geometry after texturing and compression is far more expensive. Record the reviewer name and date in the manifest. An asset with no reviewer does not ship.",
+   "workflow": "generate → REVIEW → correct → optimise → register → ship"
+  },
+  {
+   "id": "IMG-C4",
+   "severity": "CRITICAL",
+   "topic": "Licensing — silent in the document",
+   "doc_says": "Nothing. The document specifies tools and sizes but never licences.",
+   "why_it_matters": "A medical product shipping infringing images is a commercial and reputational catastrophe, and it surfaces at the worst possible moment — usually at investment due diligence or a hospital procurement review.",
+   "correction": "See SOURCE_REGISTRY. Two findings that will change your plans:\n  · MedPix is NOT Creative Commons. Its licence covers personal use and LOCAL teaching at your own institution only. It cannot go in a commercial product. It has also MOVED from NLM to the ASNR.\n  · Radiopaedia is CC BY-NC-SA. The NC clause blocks commercial use.\nBoth are the first two places a developer will look. Both are unusable."
+  },
+  {
+   "id": "IMG-C5",
+   "severity": "MEDIUM",
+   "topic": "Annotation strategy — silent in the document",
+   "doc_says": "Images are treated as finished artefacts with labels baked in.",
+   "why_wrong": "A radiograph with 'visceral pleural line' burned into the pixels cannot be translated to Hausa, cannot be read by a screen reader, cannot be searched, blurs when zoomed, and needs a full re-export to correct a typo.",
+   "correction": "Copy what OHIF/Cornerstone3D do in production radiology: RENDER ANNOTATIONS AS AN SVG OVERLAY ON TOP OF THE RASTER. The image is pixels; the labels, arrows, callouts and measurement bars are data. See ANNOTATION_MODEL. This is the highest-leverage single decision in the whole visual system.",
+   "benefit": "Sharp at any zoom · translatable · searchable · screen-reader accessible · themeable · correctable without re-export · A/B testable · the same overlay works on a photo, a radiograph or a 3D screenshot"
+  }
+ ],
+ "source_registry": [
+  {
+   "source": "NIH BioArt Source (NIAID)",
+   "url": "https://bioart.niaid.nih.gov/",
+   "what": "2,000+ professionally drawn biomedical illustrations — anatomy, cells and organelles, MEDICAL EQUIPMENT, people, viruses, bacteria, proteins, icons",
+   "formats": "SVG, EPS, AI, PNG",
+   "licence": "Mostly PUBLIC DOMAIN; the site lets you FILTER BY LICENCE (Public Domain, CC-BY, CC-BY-SA, CC-BY-NC, CC-BY-ND and others)",
+   "commercial_use": "YES for the public-domain and CC-BY items",
+   "verdict": "★ START HERE. Vector format means it drops straight into the Tier-1 SVG layer. Created by medical illustrators with subject-matter experts, so accuracy is already reviewed. Released Oct 2024, still growing.",
+   "scout_use": "Base layer for equipment, cells, organs, icons, and the people figures used in examination diagrams",
+   "caution": "FILTER BY LICENCE BEFORE DOWNLOAD. Not every item is public domain."
+  },
+  {
+   "source": "NIH 3D",
+   "url": "https://3d.nih.gov/",
+   "what": "Community portal of bioscientific and medical 3D models for printing and interactive visualisation, including VR/AR",
+   "formats": "STL, OBJ, and others",
+   "licence": "Per-model; many permissive",
+   "commercial_use": "Check per model",
+   "verdict": "Good second stop for 3D. Check each model's licence individually.",
+   "scout_use": "Organ models, pathology specimens"
+  },
+  {
+   "source": "BodyParts3D (Database Center for Life Science, Japan)",
+   "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/",
+   "what": "Complete male anatomical model, structure by structure, keyed to FMA ontology",
+   "licence": "CC BY-SA 2.1 Japan",
+   "commercial_use": "Yes, but SHARE-ALIKE applies to derivatives",
+   "attribution_required": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan",
+   "verdict": "The foundation almost every open anatomy project is built on.",
+   "caution": "ShareAlike is viral on the adapted mesh."
+  },
+  {
+   "source": "Z-Anatomy",
+   "url": "https://github.com/Z-Anatomy",
+   "what": "BodyParts3D remeshed, organised, named and translated into a navigable atlas; Blender template plus a web build",
+   "licence": "CC BY-SA 4.0",
+   "commercial_use": "Yes with ShareAlike on derivatives",
+   "verdict": "Far more usable than raw BodyParts3D. Structures are named and hierarchical, which is exactly what Scout needs to link a mesh to an entry slug.",
+   "caution": "Definitions inside it lean on Wikipedia — do not import those as clinical text."
+  },
+  {
+   "source": "Open 3D Model / AnatomyTOOL (LUMC, Utrecht, Maastricht, Leuven)",
+   "url": "https://anatomytool.org/open3dmodel",
+   "what": "Retopologised, cleaned successor to Z-Anatomy",
+   "licence": "CC BY-SA",
+   "verdict": "Cleanest geometry of the three. Prefer this over raw Z-Anatomy."
+  },
+  {
+   "source": "Open-i (NLM)",
+   "url": "https://openi.nlm.nih.gov/",
+   "what": "Biomedical image search across PubMed Central open-access articles plus special collections (Indiana University chest X-ray collection, USC orthopaedic surgical anatomy)",
+   "licence": "VARIES PER IMAGE — the search interface has a licence-type filter",
+   "commercial_use": "Only for images whose own licence permits it",
+   "verdict": "Best route to licence-cleared REAL radiographs. Filter to CC-BY, then verify the licence on the source article before use.",
+   "scout_use": "Tier-4 radiographs, with the SVG annotation overlay applied by Scout"
+  },
+  {
+   "source": "CDC Public Health Image Library (PHIL)",
+   "url": "https://phil.cdc.gov/",
+   "what": "Clinical photographs, especially infectious disease presentations",
+   "licence": "Mostly public domain; some copyright-protected — stated under each image",
+   "verdict": "Useful for rashes, lesions and infectious presentations. Check each image."
+  },
+  {
+   "source": "Wellcome Collection",
+   "url": "https://wellcomecollection.org/",
+   "what": "40,000+ clinical and biomedical images plus 90,000 historical",
+   "licence": "Much of it CC-BY; some restricted",
+   "verdict": "Good, check per item."
+  },
+  {
+   "source": "MedPix",
+   "url": "https://www.asnr.org/case-of-the-week/ (moved from NLM)",
+   "what": "59,000 radiology teaching images across 12,000 cases",
+   "licence": "NOT Creative Commons. Personal use and LOCAL teaching at your own institution only. Anything else requires contacting the original contributor.",
+   "commercial_use": "NO",
+   "verdict": "✖ DO NOT USE IN AWIBI SCOUT. This is the first place a developer will look and it is not usable. Flag it explicitly in the developer brief so nobody wastes a week.",
+   "note": "MedPix has also MOVED off NLM to the American Society of Neuroradiology."
+  },
+  {
+   "source": "Radiopaedia",
+   "url": "https://radiopaedia.org/",
+   "what": "The largest radiology teaching resource in the world",
+   "licence": "CC BY-NC-SA — the NC clause forbids commercial use",
+   "commercial_use": "NO",
+   "verdict": "✖ DO NOT USE in a paid product. Excellent for personal learning."
+  },
+  {
+   "source": "Locally consented cases (your own hospitals)",
+   "what": "Radiographs, clinical photographs and instrument trays from partner facilities",
+   "licence": "Whatever your consent form says — draft it properly at the start",
+   "verdict": "★ THE STRATEGIC ANSWER. Locally sourced images show local pathology on local skin tones with locally available equipment. Nothing licensed from abroad matches that. Budget for a consent workflow and a de-identification step from day one.",
+   "requirements": [
+    "Written consent covering publication in a commercial educational product",
+    "De-identification: remove burned-in patient identifiers, not just crop them — check DICOM headers AND the pixel data",
+    "Ethics committee approval where the institution requires it",
+    "Named contributor credit if they want it",
+    "A revocation route the contributor can actually use"
+   ]
+  }
+ ],
+ "annotation_model": {
+  "principle": "The image is pixels. Everything a human reads is DATA rendered on top.",
+  "borrowed_from": "OHIF / Cornerstone3D render annotations as SVG overlays so they stay sharp at any zoom. Scout applies the same pattern to static teaching images.",
+  "schema": {
+   "asset_id": "IMG-CXR-003",
+   "base": {
+    "src": "cxr-free-air.avif",
+    "w": 1024,
+    "h": 1024,
+    "licence": "CC-BY-4.0",
+    "source": "Open-i / PMC1234567",
+    "attribution": "…"
+   },
+   "overlay": [
+    {
+     "id": "a1",
+     "kind": "arrow",
+     "x": 0.42,
+     "y": 0.31,
+     "to_x": 0.5,
+     "to_y": 0.28,
+     "label": {
+      "en": "Free air under the diaphragm",
+      "ha": "…",
+      "yo": "…",
+      "ig": "…"
+     },
+     "teaching_point": "Erect film only. This means a perforated viscus until proven otherwise.",
+     "reveal": "on_tap"
+    },
+    {
+     "id": "a2",
+     "kind": "region",
+     "shape": "ellipse",
+     "cx": 0.46,
+     "cy": 0.3,
+     "rx": 0.09,
+     "ry": 0.05,
+     "label": {
+      "en": "Right hemidiaphragm"
+     },
+     "reveal": "always"
+    },
+    {
+     "id": "a3",
+     "kind": "measure",
+     "from": [
+      0.2,
+      0.6
+     ],
+     "to": [
+      0.8,
+      0.6
+     ],
+     "label": {
+      "en": "Cardiothoracic ratio measured here"
+     },
+     "reveal": "on_tap"
+    }
+   ],
+   "quiz_mode": {
+    "enabled": true,
+    "prompt": "What is the abnormality?",
+    "hide": [
+     "a1",
+     "a3"
+    ],
+    "reveal_on": "tap_or_after_10s"
+   }
+  },
+  "coordinates": "ALL normalised 0–1 against the base image. The overlay then survives any resize, any device, any zoom level, and any future re-export of the base at a different resolution.",
+  "why_this_wins": [
+   "TRANSLATION — one label object, N languages. Hausa, Yoruba and Igbo become a data task, not a re-draw.",
+   "ACCESSIBILITY — each annotation is a focusable element with an accessible name. A screen reader can walk the findings on a chest film. Nothing else achieves that.",
+   "SEARCH — annotation labels feed the search index, so 'free air under diaphragm' finds the image.",
+   "QUIZ MODE FOR FREE — hide the labels and you have a teaching case. Same asset, two products. This is where the Duolingo-style engagement actually lives.",
+   "CORRECTION — a wrong label is a one-line JSON edit, not a re-export and re-review.",
+   "REUSE — the same overlay format works on photographs, radiographs, and screenshots of a 3D model.",
+   "SIZE — an overlay is under 2 KB. Baking labels into ten language variants of a raster is ten files."
+  ],
+  "render": "SVG absolutely positioned over the <img>, sharing a viewBox derived from the base dimensions. Pointer events on annotation groups only, so pan and zoom still work on the image beneath."
+ },
+ "tier_matrix": {
+  "decision_questions": [
+   {
+    "q": "Is the real-world APPEARANCE the thing being taught (colour, texture, what it actually looks like on a tray or a foot)?",
+    "yes": "TIER 3 photograph",
+    "no": "next"
+   },
+   {
+    "q": "Is it a radiological image?",
+    "yes": "TIER 4 — real, licence-cleared, never generated",
+    "no": "next"
+   },
+   {
+    "q": "Does it change over TIME or in a SEQUENCE?",
+    "yes": "TIER 2 animated SVG",
+    "no": "next"
+   },
+   {
+    "q": "Does understanding require rotating it or seeing what is BEHIND what?",
+    "yes": "TIER 5 3D — and justify it individually",
+    "no": "TIER 1 SVG"
+   }
+  ],
+  "default": "TIER 1. If you are unsure, it is Tier 1. Roughly 80% of Scout's visuals are Tier 1 and that is the correct proportion, not a compromise.",
+  "tiers": [
+   {
+    "tier": 1,
+    "name": "Inline SVG diagram",
+    "budget": "2–20 KB",
+    "render": "instant",
+    "offline": "trivial",
+    "a11y": "native — title, desc, focusable groups",
+    "examples": "ECG intervals · nephron with diuretic sites · safe triangle · dermatomes · Circle of Willis territories · GATHER loop · fever pattern charts · lab slips · scoring cards · flowcharts · algorithm trees"
+   },
+   {
+    "tier": 2,
+    "name": "Animated SVG / CSS (Lottie only if genuinely complex)",
+    "budget": "5–40 KB",
+    "render": "instant",
+    "offline": "trivial",
+    "a11y": "respect prefers-reduced-motion; provide a static frame",
+    "examples": "hyperkalaemia ECG progression · DKA mechanism · sickling cascade · chest drain step-by-step · CPR timing · labour partogram progression"
+   },
+   {
+    "tier": 3,
+    "name": "Photograph (AVIF + WebP fallback)",
+    "budget": "30–120 KB",
+    "render": "lazy",
+    "offline": "in package",
+    "a11y": "alt text plus SVG annotation overlay",
+    "examples": "clubbing · Charcot foot · instrument tray · sample bottles · cannulae by gauge · rashes · ulcers · jaundice across skin tones",
+    "hard_requirement": "Range of skin tones for any sign of pallor, cyanosis, jaundice, erythema or rash. Non-negotiable for a Nigerian product."
+   },
+   {
+    "tier": 4,
+    "name": "Radiograph / CT / MRI (AVIF)",
+    "budget": "60–200 KB",
+    "render": "lazy",
+    "offline": "in package",
+    "a11y": "SVG annotation overlay carries all findings",
+    "examples": "free air under diaphragm · pneumothorax pleural line · consolidation with silhouette sign · effusion meniscus · bowel obstruction · double bubble · tube positions · fracture patterns",
+    "hard_requirement": "Real, de-identified, licence-cleared. NEVER generated."
+   },
+   {
+    "tier": 5,
+    "name": "3D glTF (.glb, meshopt, KTX2)",
+    "budget": "≤3 MB",
+    "render": "lazy, on demand, gated by device capability",
+    "offline": "opt-in download only",
+    "a11y": "mandatory 2D fallback that conveys the same teaching point",
+    "justified": [
+     "Circle of Willis with cranial nerve relationships",
+     "Cardiac chambers and valves",
+     "Liver segments (Couinaud)",
+     "Inguinal canal layers",
+     "Spine and cord levels",
+     "Middle and inner ear",
+     "Eye layers",
+     "Fracture patterns and fixation"
+    ],
+    "not_justified": [
+     "anything essentially flat",
+     "flowcharts",
+     "charts and scores",
+     "skin lesions",
+     "instruments — a photo is better AND 100× lighter"
+    ]
+   }
+  ]
+ },
+ "pipeline_svg": {
+  "steps": [
+   "1. CLINICAL SPEC first — what it must show, why it changes a decision, required labels.",
+   "2. Source: NIH BioArt (filter to public domain) as base elements where possible; hand-author or AI-draft the composition.",
+   "3. CLINICAL REVIEW of anatomy and labels. Named reviewer. Not optional.",
+   "4. Convert all text to real <text> elements — never outlined paths.",
+   "5. Replace hard-coded fills with CSS custom properties: fill='var(--scout-stroke)'.",
+   "6. Add <title> and <desc> to every meaningful group; add role='img' and aria-labelledby.",
+   "7. Verify colour is never the only cue — pair with label, pattern or shape.",
+   "8. SVGO with a config that PRESERVES ids, titles and descs (default SVGO strips them).",
+   "9. Register in the manifest with reviewer, date, licence and source."
+  ],
+  "svgo_config": {
+   "plugins": [
+    "preset-default"
+   ],
+   "overrides": {
+    "removeViewBox": false,
+    "cleanupIds": false,
+    "removeTitle": false,
+    "removeDesc": false,
+    "removeUnknownsAndDefaults": {
+     "keepAriaAttrs": true
+    }
+   }
+  },
+  "budget": "under 20 KB. If it is bigger, it is a photograph pretending to be a diagram."
+ },
+ "pipeline_raster": {
+  "steps": [
+   "1. Source with licence verified and recorded, OR shoot locally with consent.",
+   "2. De-identify: strip EXIF; for radiographs check BOTH DICOM headers and burned-in pixel text.",
+   "3. Crop to the teaching point. Most clinical photos carry 60% irrelevant background.",
+   "4. Resize: 1024 px on the long edge is enough for a phone. 1600 px only where fine texture is the point (skin lesions, radiographs).",
+   "5. Encode AVIF quality ~55 (visually lossless for clinical photos), plus WebP fallback.",
+   "6. Generate a 20 px LQIP blur placeholder inlined as a data URI (about 400 bytes).",
+   "7. Author the SVG ANNOTATION OVERLAY as a separate JSON/SVG pair.",
+   "8. Register in the manifest."
+  ],
+  "cli": [
+   "sharp in.jpg --resize 1024 --avif --quality 55 -o out.avif",
+   "sharp in.jpg --resize 1024 --webp --quality 72 -o out.webp",
+   "exiftool -all= out.avif"
+  ],
+  "loading": "<picture> with AVIF then WebP; loading='lazy'; explicit width/height to prevent layout shift; LQIP as the CSS background so something appears immediately."
+ },
+ "pipeline_3d": {
+  "steps": [
+   {
+    "n": 1,
+    "step": "Source",
+    "detail": "Open 3D Model (LUMC) > Z-Anatomy > BodyParts3D > NIH 3D. AI generation (Tripo/Luma) only for shapes not available in those."
+   },
+   {
+    "n": 2,
+    "step": "ANATOMIST REVIEW",
+    "detail": "Before any optimisation. Cheapest point to reject. Named reviewer recorded."
+   },
+   {
+    "n": 3,
+    "step": "Split and NAME meshes",
+    "detail": "Every clickable structure is its own mesh, named to match an entry slug: mca_left, pca_right, cystic_artery. THIS NAME IS THE JOIN KEY between the model and the clinical library. Get it right here or the 3D layer is decoration."
+   },
+   {
+    "n": 4,
+    "step": "Weld and dedupe",
+    "detail": "gltf-transform dedup + weld — often 50%+ before you decimate"
+   },
+   {
+    "n": 5,
+    "step": "Decimate",
+    "detail": "Target 30k–80k triangles total. Preserve landmark features, decimate flat regions harder. gltf-transform simplify --ratio 0.5 --error 0.001"
+   },
+   {
+    "n": 6,
+    "step": "Quantize",
+    "detail": "gltf-transform quantize — KHR_mesh_quantization, big win, no decode cost"
+   },
+   {
+    "n": 7,
+    "step": "Textures to KTX2",
+    "detail": "1024 max. ETC1S for size, UASTC for normal maps. Stays compressed in VRAM, which matters more than download size on a 2 GB phone."
+   },
+   {
+    "n": 8,
+    "step": "MESHOPT compress",
+    "detail": "gltf-transform meshopt --level medium. NOT Draco. See IMG-C1."
+   },
+   {
+    "n": 9,
+    "step": "Generate 2D fallback",
+    "detail": "MANDATORY. A static SVG or AVIF conveying the same teaching point. Ships alongside and renders first."
+   },
+   {
+    "n": 10,
+    "step": "Register",
+    "detail": "asset_id, entry slugs served, mesh-name→slug map, licence, attribution, byte size, fallback id, reviewer, date."
+   }
+  ],
+  "single_command": "gltf-transform optimize raw.glb out.glb --compress meshopt --texture-compress ktx2 --texture-size 1024 --simplify true",
+  "expected": "~50 MB raw → ~2 MB delivered. The doc's 96% saving figure is right; the method changes.",
+  "runtime": [
+   "three.js is NEVER in the main bundle. Dynamic import when a 3D card opens.",
+   "Render the 2D fallback IMMEDIATELY; swap when the model resolves.",
+   "Capability gate: offer 3D only if navigator.deviceMemory >= 2 AND !connection.saveData AND WebGL2 available. Otherwise show the fallback and a 'load 3D anyway' link.",
+   "Keep DRAW CALLS under 100. Triangle count matters less than draw call count — merge static meshes that are never clicked separately.",
+   "Cache .glb in Cache Storage keyed by asset_id + content hash.",
+   "Hard cap 3 models in memory. Dispose geometry, materials AND textures on unmount — three.js leaks aggressively otherwise.",
+   "Every clickable mesh emits its slug and OPENS THE MATCHING CLINICAL ENTRY. The model is a navigation surface into the library, not a separate feature. This is what stops it becoming an expensive toy."
+  ]
+ },
+ "device_budgets": {
+  "reference_device": "Mid-range Android, 4 GB RAM, Snapdragon 6-series or equivalent, Chrome, on 3G/patchy 4G. Test on this, not on a MacBook.",
+  "budgets": [
+   {
+    "metric": "Initial JS bundle (gzipped)",
+    "target": "≤180 KB",
+    "note": "three.js, Lottie and the DICOM stack are ALL lazy. None of them are in the first load."
+   },
+   {
+    "metric": "Time to interactive, first visit, 3G",
+    "target": "≤4 s"
+   },
+   {
+    "metric": "Time to interactive, repeat visit (service worker)",
+    "target": "≤1 s"
+   },
+   {
+    "metric": "Search keystroke → suggestions",
+    "target": "≤60 ms p95"
+   },
+   {
+    "metric": "Tap entry → card rendered",
+    "target": "≤150 ms p95 offline"
+   },
+   {
+    "metric": "Tier-1 SVG paint",
+    "target": "≤16 ms (one frame)"
+   },
+   {
+    "metric": "Tier-3/4 image: LQIP visible",
+    "target": "≤100 ms"
+   },
+   {
+    "metric": "Tier-5 3D: fallback visible",
+    "target": "≤200 ms"
+   },
+   {
+    "metric": "Tier-5 3D: model interactive",
+    "target": "≤3 s on wifi, else keep the fallback"
+   },
+   {
+    "metric": "Offline package total",
+    "target": "≤60 MB with all Tier 1–4; 3D is opt-in download"
+   },
+   {
+    "metric": "Peak JS heap",
+    "target": "≤120 MB"
+   }
+  ],
+  "graceful_degradation": [
+   "No WebGL2 → 2D fallback, no error message, no mention of 3D.",
+   "saveData on → images at lower quality, 3D hidden behind an explicit tap.",
+   "Offline → everything Tier 1–4 works. 3D shows the fallback and 'available when online'.",
+   "Slow network → LQIP then progressive upgrade; never a blank box or a spinner over nothing.",
+   "Screen reader → SVG titles and annotation overlays carry the full teaching content. A blind clinician can read the findings on a chest film. Almost no medical app does this."
+  ]
+ },
+ "dicom_module": {
+  "status": "PHASE 3 — do NOT build this in v1. Named here so the architecture leaves room.",
+  "the_distinction": "Scout's teaching images are STATIC, curated, de-identified assets shipped in the package. A patient's actual CT is a live, identified, regulated object retrieved from a PACS. Conflating them is an architectural and regulatory mistake.",
+  "when_you_do_build_it": {
+   "use": "Cornerstone3D + OHIF Viewer. Open source, maintained by the Open Health Imaging Foundation with Chan Zuckerberg Initiative funding, and used in production radiology.",
+   "why_theirs_and_not_yours": "Three engineering problems they have already solved and you have not:\n  1. ONE SHARED WEBGL CONTEXT rendering offscreen and compositing to every viewport. Naive implementations spin up a context per viewport and hit the browser limit at ~8–16 panels.\n  2. WEBASSEMBLY DECODERS in web workers for JPEG 2000 and JPEG-LS, so decompression does not block the UI thread.\n  3. METADATA AHEAD, PIXELS ON DEMAND — retrieve the study metadata first, stream pixel data as the user scrolls. This is what makes a 2,000-slice CT usable on a weak link.",
+   "architecture": "React with a mode/extension model, so you can add a Nigerian-specific workflow without touching the rendering core.",
+   "requires": "A DICOMweb-compliant archive (WADO-RS/QIDO-RS). If the hospital PACS does not speak DICOMweb, that integration is the actual project, not the viewer.",
+   "borrow_now_even_if_you_dont_build_it": "The SVG-overlay-annotation pattern (see ANNOTATION_MODEL) comes straight from Cornerstone3D and costs you nothing to adopt today."
+  },
+  "volume_rendering_if_ever_needed": "VTK.js or NiiVue. Both are heavy. Almost certainly out of scope for a teaching tool."
+ },
+ "visual_qa_gate": {
+  "principle": "A visual is clinical content. It goes through the same governance as text.",
+  "checklist": [
+   "Clinical spec written BEFORE creation (what it must show, why it changes a decision)",
+   "Anatomy and labels reviewed by a named clinician or anatomist",
+   "Reviewer name and date recorded in the manifest",
+   "Licence recorded with URL; commercial use confirmed",
+   "Attribution string prepared where required",
+   "De-identification verified (EXIF stripped; DICOM headers AND burned-in pixel text checked)",
+   "Consent documented for locally sourced images",
+   "Alt text written by the clinical author, not auto-generated",
+   "Colour is not the only cue",
+   "Skin-tone range covered where the sign is colour-dependent",
+   "Annotation overlay authored as data, not baked into pixels",
+   "Labels supplied in every language Scout ships",
+   "File size within tier budget",
+   "2D fallback exists for every 3D asset",
+   "Renders correctly in dark mode and high-contrast mode",
+   "Tested on the reference mid-range Android device",
+   "AI-generated assets flagged as such in the manifest, with reviewer",
+   "NO AI-generated radiological images present"
+  ],
+  "release_gate": "approved_for_release stays false until every box is ticked by a named human. The build pipeline cannot set it."
+ },
+ "visual_philosophy": {
+  "the_test": "After seeing this, what does a clinician DO differently? If there is no answer, the visual is decoration and should not be commissioned.",
+  "three_jobs": [
+   {
+    "job": "RECOGNISE",
+    "means": "Tell one thing from another at the bedside",
+    "examples": "Allis vs Babcock · UMN vs LMN facial palsy · tented T waves vs normal · Charcot foot vs cellulitis · correctly vs under-filled citrate bottle",
+    "tier": "3 photograph, or 1 SVG when the difference is structural"
+   },
+   {
+    "job": "LOCATE",
+    "means": "Know where to put the needle, the drain, the stethoscope",
+    "examples": "safe triangle · McBurney's point · monofilament sites · auscultation areas · JVP from the sternal angle · dorsalis pedis position",
+    "tier": "1 SVG on a body outline"
+   },
+   {
+    "job": "UNDERSTAND",
+    "means": "See a mechanism or a spatial relationship that words handle badly",
+    "examples": "nephron with diuretic sites · glucose pathway across fed-to-starved · Circle of Willis territories · cardiac action potential with drug classes",
+    "tier": "1 or 2; 5 only if the relationship is genuinely three-dimensional"
+   }
+  ],
+  "anti_patterns": [
+   "A stock photo of a stethoscope at the top of a card. Decoration. Delete.",
+   "A 3D heart that spins but teaches nothing you could not get from a labelled cross-section.",
+   "A diagram with 40 labels. Nobody reads 40 labels. Split it into three diagrams.",
+   "An image that duplicates the text beside it. Either the text or the image is redundant.",
+   "A beautiful illustration of something a clinician will never have to identify."
+  ]
+ }
+}

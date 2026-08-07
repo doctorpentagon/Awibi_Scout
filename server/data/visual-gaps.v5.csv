@@ -1,0 +1,108 @@
+entry_id,entry_title,type,hazard,priority,suggested_tier
+AS-TRIL-0004,AMBITION-cm (2022) — Cryptococcal meningitis in Africa,trial,critical,P1,1
+AS-TRIL-0003,AQUAMAT (2010) — Artesunate vs quinine in African children,trial,critical,P1,1
+AS-EMRG-0005,Adrenal Crisis — Give Hydrocortisone Now,emergency,critical,P1,1
+AS-CRIT-0002,DKA — Diagnosis (2024 criteria),criteria,critical,P1,1
+AS-DRUG-0003,"Digoxin — Use, Cautions and Toxicity",drug,critical,P1,1
+AS-TRIL-0002,E-MOTIVE (2023) — Postpartum bleeding bundle,trial,critical,P1,1
+AS-TRIL-0001,FEAST (2011) — Fluid bolus in African children,trial,critical,P1,1
+AS-CLRK-0001,Gunshot and Stab Wound — How To Clerk,clerking,critical,P1,1
+AS-CRIT-0003,HHS — Diagnosis and Management,criteria,critical,P1,1
+AS-EMRG-0004,Hypoglycaemia — Recognise and Treat,emergency,critical,P1,1
+AS-REGI-0003,"Insulin — Types, Regimens and Doses",regimen,critical,P1,1
+AS-GUID-0007,"Malaria — Diagnosis, Severity and Treatment",guideline,critical,P1,1
+AS-EMRG-0007,Pre-eclampsia and Eclampsia,emergency,critical,P1,1
+AS-SHRT-0001,"Prescription Shorthand — BD, TDS, STAT, PRN and the Rest",shorthand,critical,P1,1
+AS-PATH-0002,Status Epilepticus — Timed Pathway,pathway,critical,P1,2
+AS-REGI-0001,TB Treatment — Regimens and Drug Resistance,regimen,critical,P1,1
+AS-TRIL-0005,TB-PRACTECAL (2022) — 6-month all-oral MDR-TB regimen,trial,critical,P1,1
+AS-SCOR-0007,Thyroid Storm — Burch-Wartofsky Score,score,critical,P1,1
+AS-EMRG-0001,Transfusion Reaction — What To Do Now,emergency,critical,P1,1
+AS-PATH-0005,Trauma Primary Survey (ABCDE),pathway,critical,P1,2
+AS-GUID-0003,Typhoid Perforation,guideline,critical,P1,1
+AS-SCOR-0009,APGAR Score,score,high,P2,1
+AS-DRUG-0001,"Antibiotics — Classes, Cover and Side Effects",drug,high,P2,1
+AS-DRUG-0002,Brand Names — What Drug Is This?,drug,high,P2,1
+AS-SCOR-0004,CHA₂DS₂-VASc — AF Stroke Risk,score,high,P2,1
+AS-CALC-0013,Cerebral Perfusion Pressure (CPP),calculator,high,P2,1
+AS-CALC-0011,Child Maintenance Fluid (4-2-1 Rule),calculator,high,P2,1
+AS-CALC-0008,Corrected Sodium (in high sugar),calculator,high,P2,1
+AS-CALC-0005,Creatinine Clearance (Cockcroft-Gault),calculator,high,P2,1
+AS-REGI-0002,Heart Failure — The Four Pillars,regimen,high,P2,1
+AS-GRAD-0001,Hepatic Encephalopathy — West Haven Grades,grading,high,P2,1
+AS-CALC-0007,Osmolality and Osmolar Gap,calculator,high,P2,1
+AS-NAMK-0001,Pregnancy Danger Signs,named_knowledge,high,P2,1
+AS-SPEC-0001,"Samples — Container, Transport and Why They Get Rejected",specimen,high,P2,1
+AS-MONI-0001,What To Monitor and How Often,monitoring,high,P2,1
+AS-TEST-0001,Widal Test — What It Does and Doesn't Tell You,test,high,P2,1
+AS-TRIL-0043,4S (1994) — Statins in secondary prevention,trial,moderate,P3,1
+AS-TRIL-0012,ADVANCE (2019) — Dolutegravir first-line in Africa,trial,moderate,P3,1
+AS-TRIL-0024,ARDSNet ARMA (2000) — Low tidal volume ventilation,trial,moderate,P3,1
+AS-CALC-0006,Anion Gap (albumin-corrected),calculator,moderate,P3,1
+AS-SCOR-0008,Appendicitis — Alvarado Score,score,moderate,P3,1
+AS-CALC-0002,Body Surface Area (BSA),calculator,moderate,P3,1
+AS-DEFN-0001,"Breathlessness Words — Dyspnoea, Orthopnoea, PND and Others",definition,moderate,P3,1
+AS-TRIL-0016,CHAMPION (2018) — Heat-stable carbetocin for PPH prevention,trial,moderate,P3,1
+AS-TRIL-0019,CHAP (2004) — Co-trimoxazole prophylaxis in HIV-infected children,trial,moderate,P3,1
+AS-TRIL-0020,CRASH-2 (2010) — Tranexamic acid in trauma,trial,moderate,P3,1
+AS-TRIL-0021,CRASH-3 (2019) — Tranexamic acid in head injury,trial,moderate,P3,1
+AS-SCOR-0002,CURB-65 — Pneumonia Severity,score,moderate,P3,1
+AS-TRIL-0044,CURE (2001) — Dual antiplatelet therapy in ACS,trial,moderate,P3,1
+AS-SCOR-0006,Child-Pugh Score,score,moderate,P3,1
+AS-CLRK-0003,Clerking — Presenting Complaint and History,clerking,moderate,P3,1
+AS-CALC-0009,Corrected Calcium,calculator,moderate,P3,1
+AS-TRIL-0030,DAPA-HF (2019) — SGLT2 inhibitor in heart failure without diabetes,trial,moderate,P3,1
+AS-TRIL-0011,DART (2010) — ART monitoring without routine labs,trial,moderate,P3,1
+AS-TRIL-0028,DCCT (1993) — Intensive insulin in type 1 diabetes,trial,moderate,P3,1
+AS-TRIL-0029,EMPA-REG OUTCOME (2015) — SGLT2 inhibitor cardiovascular outcomes,trial,moderate,P3,1
+AS-CALC-0010,FENa — Prerenal or ATN?,calculator,moderate,P3,1
+AS-TRIL-0048,GOLD / TORCH (2007) — Inhaled therapy in COPD,trial,moderate,P3,1
+AS-SCOR-0005,HAS-BLED — Bleeding Risk,score,moderate,P3,1
+AS-TRIL-0042,HOPE (2000) — ACE inhibition for vascular protection,trial,moderate,P3,1
+AS-TRIL-0033,ISIS-2 (1988) — Aspirin and streptokinase in myocardial infarction,trial,moderate,P3,1
+AS-CALC-0003,Ideal and Adjusted Body Weight,calculator,moderate,P3,1
+AS-TRIL-0014,KEN SHE (2022) — Single-dose HPV vaccine,trial,moderate,P3,1
+AS-TRIL-0008,MORDOR (2018) — Mass azithromycin and child mortality,trial,moderate,P3,1
+AS-TRIL-0035,MR CLEAN (2015) — Mechanical thrombectomy in stroke,trial,moderate,P3,1
+AS-TRIL-0037,Magpie (2002) — Magnesium sulfate for pre-eclampsia,trial,moderate,P3,1
+AS-CALC-0012,Mean Arterial Pressure (MAP),calculator,moderate,P3,1
+AS-TRIL-0040,NICE-SUGAR (2009) — Tight glucose control in ICU,trial,moderate,P3,1
+AS-TRIL-0034,NINDS tPA (1995) — Thrombolysis in acute ischaemic stroke,trial,moderate,P3,1
+AS-TRIL-0010,PALM (2019) — Ebola monoclonal antibodies,trial,moderate,P3,1
+AS-TRIL-0031,PARADIGM-HF (2014) — ARNI versus ACE inhibitor,trial,moderate,P3,1
+AS-TRIL-0017,R21/Matrix-M (2023) — Malaria vaccine,trial,moderate,P3,1
+AS-TRIL-0032,RALES (1999) — Spironolactone in heart failure,trial,moderate,P3,1
+AS-TRIL-0009,REACH (2019) — Hydroxyurea for sickle cell in Africa,trial,moderate,P3,1
+AS-TRIL-0006,REALITY (2017) — Advanced HIV in Africa,trial,moderate,P3,1
+AS-TRIL-0023,RECOVERY dexamethasone (2020) — Steroids in severe COVID-19,trial,moderate,P3,1
+AS-TRIL-0025,Rivers EGDT (2001) — Early goal-directed therapy in sepsis,trial,moderate,P3,1
+AS-TRIL-0039,SAFE (2004) — Albumin versus saline for resuscitation,trial,moderate,P3,1
+AS-TRIL-0013,SHINE (2022) — 4-month TB treatment in children,trial,moderate,P3,1
+AS-TRIL-0026,SPRINT (2015) — Intensive blood pressure lowering,trial,moderate,P3,1
+AS-TRIL-0041,STICH / hypothermia TTM (2013) — Targeted temperature after cardiac arrest,trial,moderate,P3,1
+AS-TRIL-0047,STOP-NIDDM / DPP (2002) — Preventing type 2 diabetes,trial,moderate,P3,1
+AS-TRIL-0045,Surviving Sepsis / PROWESS (2001) — Activated protein C in sepsis,trial,moderate,P3,1
+AS-TRIL-0018,TEMPRANO (2015) — Early ART and isoniazid prophylaxis,trial,moderate,P3,1
+AS-TRIL-0007,TRACT (2019) — Transfusion in African children with severe anaemia,trial,moderate,P3,1
+AS-TRIL-0036,TRICC (1999) — Restrictive transfusion threshold,trial,moderate,P3,1
+AS-TRIL-0038,Term Breech Trial (2000) — Planned caesarean for breech,trial,moderate,P3,1
+AS-NAMK-0014,Triads and Tetrads,named_knowledge,moderate,P3,1
+AS-TRIL-0027,UKPDS (1998) — Glycaemic and BP control in type 2 diabetes,trial,moderate,P3,1
+AS-TRIL-0022,WOMAN (2017) — Tranexamic acid for postpartum bleeding,trial,moderate,P3,1
+AS-SCOR-0003,Wells Score — DVT,score,moderate,P3,1
+AS-TRIL-0046,Women's Health Initiative (2002) — Hormone therapy in postmenopausal women,trial,moderate,P3,1
+AS-TRIL-0015,iKMC (2021) — Immediate kangaroo mother care,trial,moderate,P3,1
+AS-CALC-0001,Body Mass Index (BMI),calculator,low,P4,1
+AS-NAMK-0006,Calculator and Scoring Index,named_knowledge,low,P4,1
+AS-NAMK-0010,Drug and Brand Index,named_knowledge,low,P4,1
+AS-NAMK-0011,Electrolyte and Channel Index,named_knowledge,low,P4,1
+AS-NAMK-0004,Examination Index,named_knowledge,low,P4,1
+AS-NAMK-0007,Guideline and Management-Principles Index,named_knowledge,low,P4,1
+AS-NAMK-0012,Hormone Index,named_knowledge,low,P4,1
+AS-NAMK-0008,"Instrument, Equipment and Colour-Code Index",named_knowledge,low,P4,1
+AS-NAMK-0005,Investigation and Test Index,named_knowledge,low,P4,1
+AS-NAMK-0013,Monitoring Index,named_knowledge,low,P4,1
+AS-NAMK-0009,Oncology Index,named_knowledge,low,P4,1
+AS-NAMK-0003,Shock Index (Navigational),named_knowledge,low,P4,1
+AS-NAMK-0002,Syndrome Index,named_knowledge,low,P4,1
+AS-TRIL-0049,Trials Index — Landmark Studies by Topic,trial,low,P4,1

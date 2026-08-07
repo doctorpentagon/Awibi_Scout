@@ -1,0 +1,27 @@
+{
+  "name": "awibi-scout",
+  "version": "5.0.0",
+  "private": true,
+  "description": "Awibi Scout — clinical reference bench inside Awibi EHR. Content release AWIBI-SCOUT-CONTENT-2026.08.R2, imaging release AWIBI-SCOUT-IMAGING-2026.08.R1.",
+  "type": "module",
+  "engines": {
+    "node": ">=20.11.0"
+  },
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "dev": "concurrently -n server,client -c blue,magenta \"npm:dev:server\" \"npm:dev:client\"",
+    "dev:server": "npm run dev --workspace server",
+    "dev:client": "npm run dev --workspace client",
+    "build": "npm run build --workspace client",
+    "start": "npm run start --workspace server",
+    "lint": "eslint .",
+    "test": "npm run test --workspace server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "eslint": "^9.18.0"
+  }
+}

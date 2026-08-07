@@ -1,0 +1,47 @@
+.diagram {
+  margin: 0;
+  width: 100%;
+}
+
+.diagram-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+/* Tier-2 sequences. Each panel fades in turn, and the whole thing freezes on a
+   readable static frame when the reader has asked for reduced motion. */
+.seq-panel {
+  animation: seqStep 8s infinite;
+}
+.seq-panel-1 {
+  animation-delay: 0s;
+}
+.seq-panel-2 {
+  animation-delay: 2s;
+}
+.seq-panel-3 {
+  animation-delay: 4s;
+}
+.seq-panel-4 {
+  animation-delay: 6s;
+}
+
+@keyframes seqStep {
+  0%,
+  18% {
+    opacity: 1;
+  }
+  30%,
+  100% {
+    opacity: 0.34;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .seq-panel {
+    animation: none;
+    opacity: 1;
+  }
+}

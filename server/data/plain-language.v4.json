@@ -1,0 +1,1130 @@
+{
+ "body_swaps": {
+  "rate-controlled pump": {
+   "use": "infusion pump or syringe driver",
+   "gloss": "a machine that controls the rate itself, instead of you counting drops"
+  },
+  "rate controlled pump": {
+   "use": "infusion pump or syringe driver",
+   "gloss": "a machine that controls the rate itself, instead of you counting drops"
+  },
+  "vasoactive drugs": {
+   "use": "drugs that change blood pressure (adrenaline, noradrenaline, dopamine, dobutamine)",
+   "gloss": null
+  },
+  "vasoactives": {
+   "use": "blood-pressure drugs like adrenaline and dopamine",
+   "gloss": null
+  },
+  "vasopressor": {
+   "use": "blood-pressure-raising drug (adrenaline, noradrenaline, dopamine)",
+   "gloss": null
+  },
+  "inotrope": {
+   "use": "heart-squeeze drug (dobutamine, adrenaline)",
+   "gloss": null
+  },
+  "where rate is dose": {
+   "use": "where the drip rate IS the dose — go too fast and you overdose the patient",
+   "gloss": null
+  },
+  "gravity count": {
+   "use": "counting drops by eye",
+   "gloss": null
+  },
+  "gravity set": {
+   "use": "ordinary giving set that runs by gravity",
+   "gloss": null
+  },
+  "administration set": {
+   "use": "giving set",
+   "gloss": null
+  },
+  "volumetric rate": {
+   "use": "rate in mL per hour",
+   "gloss": null
+  },
+  "haemodynamically unstable": {
+   "use": "unstable — low blood pressure, fast pulse, poor perfusion",
+   "gloss": null
+  },
+  "haemodynamic compromise": {
+   "use": "failing circulation — low BP, fast pulse, cold peripheries",
+   "gloss": null
+  },
+  "hypoperfusion": {
+   "use": "poor blood flow to the tissues",
+   "gloss": null
+  },
+  "euvolaemic": {
+   "use": "normal fluid state — not dry, not overloaded",
+   "gloss": null
+  },
+  "obtunded": {
+   "use": "drowsy and hard to rouse",
+   "gloss": null
+  },
+  "iatrogenic": {
+   "use": "caused by treatment",
+   "gloss": null
+  },
+  "idiosyncratic": {
+   "use": "unpredictable, not dose-related",
+   "gloss": null
+  },
+  "refractory": {
+   "use": "not responding to treatment",
+   "gloss": null
+  },
+  "sequelae": {
+   "use": "what it leaves behind afterwards",
+   "gloss": null
+  },
+  "prophylaxis": {
+   "use": "prevention",
+   "gloss": null
+  },
+  "antipyretic": {
+   "use": "fever medicine like paracetamol",
+   "gloss": null
+  },
+  "analgesia": {
+   "use": "pain relief",
+   "gloss": null
+  },
+  "antiemetic": {
+   "use": "anti-vomiting drug",
+   "gloss": null
+  },
+  "enteral feeding": {
+   "use": "feeding through the gut — by mouth or through a tube",
+   "gloss": null
+  },
+  "parenteral": {
+   "use": "by injection or drip, not by mouth",
+   "gloss": null
+  },
+  "titrate to effect": {
+   "use": "adjust the dose up or down until it works",
+   "gloss": null
+  },
+  "de-escalate": {
+   "use": "step down to a narrower or lower-dose treatment",
+   "gloss": null
+  },
+  "escalate care": {
+   "use": "call for more senior help or move to a higher level of care",
+   "gloss": null
+  },
+  "source control": {
+   "use": "find where the infection is coming from and drain, remove or clean it out",
+   "gloss": null
+  },
+  "definitive airway": {
+   "use": "a tube in the trachea with the cuff up",
+   "gloss": null
+  },
+  "secure the airway": {
+   "use": "get a tube in",
+   "gloss": null
+  },
+  "loading dose": {
+   "use": "a bigger first dose to get the level up quickly",
+   "gloss": null
+  },
+  "maintenance dose": {
+   "use": "the regular dose that keeps the level steady",
+   "gloss": null
+  },
+  "narrow therapeutic index": {
+   "use": "small gap between the dose that works and the dose that harms",
+   "gloss": null
+  },
+  "first-pass metabolism": {
+   "use": "how much the liver destroys before the drug reaches the blood",
+   "gloss": null
+  },
+  "positive inotropy": {
+   "use": "makes the heart squeeze harder",
+   "gloss": null
+  },
+  "chronotropic": {
+   "use": "affects heart rate",
+   "gloss": null
+  },
+  "non-inferior": {
+   "use": "as good as — not worse",
+   "gloss": null
+  },
+  "composite outcome": {
+   "use": "several outcomes counted together as one",
+   "gloss": null
+  },
+  "number needed to treat": {
+   "use": "how many patients you treat to help one",
+   "gloss": null
+  },
+  "point-of-care": {
+   "use": "done at the bedside, result in minutes",
+   "gloss": null
+  },
+  "resource-limited setting": {
+   "use": "hospital where staff, drugs or equipment are short",
+   "gloss": null
+  },
+  "low-resource": {
+   "use": "where staff, drugs or equipment are short",
+   "gloss": null
+  },
+  "multidisciplinary": {
+   "use": "doctors, nurses and other staff working together",
+   "gloss": null
+  },
+  "contemporaneous documentation": {
+   "use": "write it down at the time, not later",
+   "gloss": null
+  },
+  "commence": {
+   "use": "start",
+   "gloss": null
+  },
+  "administer": {
+   "use": "give",
+   "gloss": null
+  },
+  "utilise": {
+   "use": "use",
+   "gloss": null
+  },
+  "in the setting of": {
+   "use": "in",
+   "gloss": null
+  },
+  "is indicative of": {
+   "use": "means",
+   "gloss": null
+  },
+  "in a timely manner": {
+   "use": "quickly",
+   "gloss": null
+  },
+  "expeditiously": {
+   "use": "quickly",
+   "gloss": null
+  },
+  "aetiology": {
+   "use": "cause",
+   "gloss": null
+  },
+  "sequelae of": {
+   "use": "what follows from",
+   "gloss": null
+  },
+  "morbidity": {
+   "use": "illness and disability",
+   "gloss": null
+  },
+  "mortality": {
+   "use": "death rate",
+   "gloss": null
+  }
+ },
+ "protected_terms": [
+  "anaphylaxis",
+  "hypoglycaemia",
+  "hyperkalaemia",
+  "tachycardia",
+  "bradycardia",
+  "hypotension",
+  "hypertension",
+  "pneumothorax",
+  "tamponade",
+  "eclampsia",
+  "ketoacidosis",
+  "haemorrhage",
+  "sepsis",
+  "peritonitis",
+  "osteomyelitis",
+  "hydrocortisone",
+  "adrenaline",
+  "magnesium sulfate",
+  "tranexamic acid",
+  "capnography",
+  "fasciotomy",
+  "laparotomy",
+  "thrombolysis",
+  "crossmatch",
+  "monofilament",
+  "opisthotonus",
+  "trismus",
+  "asterixis",
+  "proteinuria"
+ ],
+ "rename_map": {
+  "Gravity Infusion Drop Rate (mL/h ↔ drops/min)": {
+   "new_title": "IV Fluid Drip Rate (mL/h ↔ drops/min)",
+   "also_known_as": [
+    "drip rate",
+    "gravity infusion drop rate",
+    "drops per minute",
+    "gtt/min",
+    "iv fluid drop calculator",
+    "infusion rate calculator",
+    "how many drops",
+    "set the drip",
+    "drip calculation",
+    "blood drip rate",
+    "fluid drop"
+   ]
+  },
+  "Blood Component Reference — Whole Blood vs Packed Red Cells": {
+   "new_title": "Blood Transfusion — Units, Volumes and Drip Rate",
+   "also_known_as": [
+    "blood component reference",
+    "whole blood vs packed cells",
+    "pint of blood",
+    "blood drop",
+    "blood drip",
+    "transfusion volume",
+    "how many pints",
+    "one unit of blood",
+    "blood bottle",
+    "crossmatch volume"
+   ]
+  },
+  "Acute Transfusion Reaction — Recognition and Immediate Response": {
+   "new_title": "Transfusion Reaction — What To Do Now",
+   "also_known_as": [
+    "transfusion reaction",
+    "blood reaction",
+    "reaction to blood",
+    "haemolytic reaction",
+    "febrile reaction",
+    "TACO",
+    "TRALI"
+   ]
+  },
+  "Primary Survey — ATLS-style Trauma Assessment": {
+   "new_title": "Trauma Primary Survey (ABCDE)",
+   "also_known_as": [
+    "primary survey",
+    "atls",
+    "abcde",
+    "trauma assessment",
+    "cABCDE",
+    "resus of trauma"
+   ]
+  },
+  "Gunshot and Penetrating Injury — Specialist Clerking": {
+   "new_title": "Gunshot and Stab Wound — How To Clerk",
+   "also_known_as": [
+    "gunshot clerking",
+    "gsw",
+    "stab wound history",
+    "penetrating injury clerking",
+    "bullet wound",
+    "machete injury",
+    "cut with cutlass"
+   ]
+  },
+  "Paediatric Maintenance Fluid — Holliday-Segar (4-2-1)": {
+   "new_title": "Child Maintenance Fluid (4-2-1 Rule)",
+   "also_known_as": [
+    "holliday segar",
+    "4-2-1",
+    "maintenance fluid",
+    "daily fluid for child",
+    "how much fluid for child",
+    "paediatric fluid"
+   ]
+  },
+  "Burns — Total Body Surface Area and Fluid Resuscitation": {
+   "new_title": "Burns — TBSA and Fluid (Rule of Nines, Parkland)",
+   "also_known_as": [
+    "burns fluid",
+    "parkland",
+    "rule of nines",
+    "tbsa",
+    "burn percentage",
+    "how much fluid for burns",
+    "lund browder"
+   ]
+  },
+  "Serum Anion Gap (with albumin correction)": {
+   "new_title": "Anion Gap (albumin-corrected)",
+   "also_known_as": [
+    "anion gap",
+    "ag",
+    "hagma",
+    "nagma",
+    "metabolic acidosis gap"
+   ]
+  },
+  "Serum Osmolality and Osmolar Gap": {
+   "new_title": "Osmolality and Osmolar Gap",
+   "also_known_as": [
+    "osmolality",
+    "osmolarity",
+    "osmolar gap",
+    "tonicity",
+    "effective osmolality"
+   ]
+  },
+  "Blood Collection Tubes — Colour Code Reference": {
+   "new_title": "Sample Bottle Colours — Which Bottle For Which Test",
+   "also_known_as": [
+    "blood bottle",
+    "bottle colour",
+    "tube colour",
+    "which bottle",
+    "specimen bottle",
+    "purple top",
+    "grey top",
+    "red bottle",
+    "green bottle",
+    "EDTA bottle",
+    "vacutainer",
+    "syringe colour",
+    "test bottle"
+   ]
+  },
+  "Airway, Tubes and Catheters — Identification, Sizing and Indications": {
+   "new_title": "Tubes and Catheters — Sizes, When To Use, When Not To",
+   "also_known_as": [
+    "ngt",
+    "endotracheal tube",
+    "chest tube",
+    "catheter size",
+    "cannula gauge",
+    "tube sizes",
+    "chest drain",
+    "foley",
+    "suprapubic",
+    "guedel"
+   ]
+  },
+  "Surgical Instruments — Recognition and Use by Function": {
+   "new_title": "Theatre Instruments — Name It and Know Its Use",
+   "also_known_as": [
+    "surgical instruments",
+    "theatre instruments",
+    "forceps",
+    "artery forceps",
+    "retractor",
+    "instrument tray",
+    "kocher",
+    "allis",
+    "babcock"
+   ]
+  },
+  "Chest Radiograph — Systematic Interpretation": {
+   "new_title": "Chest X-ray — How To Read It",
+   "also_known_as": [
+    "cxr",
+    "chest xray",
+    "chest radiograph",
+    "read chest film",
+    "chest film",
+    "xray reading",
+    "abcde chest"
+   ]
+  },
+  "Presenting Complaint and History of Presenting Complaint — Master Template": {
+   "new_title": "Clerking — Presenting Complaint and History",
+   "also_known_as": [
+    "clerking",
+    "history taking",
+    "hpc",
+    "presenting complaint",
+    "socrates",
+    "clerk patient"
+   ]
+  },
+  "Neurological Power, Tone and Reflex Grading": {
+   "new_title": "Power, Tone and Reflexes — Grading and Technique",
+   "also_known_as": [
+    "mrc grading",
+    "power grading",
+    "tone",
+    "reflex grading",
+    "clonus",
+    "babinski",
+    "how to test power"
+   ]
+  },
+  "Cranial Nerve Examination — All Twelve": {
+   "new_title": "Cranial Nerves 1–12 — Test and Lesion",
+   "also_known_as": [
+    "cranial nerves",
+    "cn exam",
+    "12 cranial nerves",
+    "nerve testing"
+   ]
+  },
+  "General (Head-to-Toe) Examination": {
+   "new_title": "General Examination — Head to Toe",
+   "also_known_as": [
+    "general examination",
+    "head to toe",
+    "peripheral exam",
+    "general survey"
+   ]
+  },
+  "Reference Intervals — Master Index and Provenance Rules": {
+   "new_title": "Normal Values — Reference Ranges",
+   "also_known_as": [
+    "reference range",
+    "normal values",
+    "lab values",
+    "normal range",
+    "eucr range"
+   ]
+  },
+  "Therapeutic Drug and Treatment Monitoring — Master Schedule": {
+   "new_title": "What To Monitor and How Often",
+   "also_known_as": [
+    "monitoring",
+    "drug monitoring",
+    "follow up bloods",
+    "tdm",
+    "safety monitoring"
+   ]
+  },
+  "Brand Name to Generic — Governed Alias Register": {
+   "new_title": "Brand Names — What Drug Is This?",
+   "also_known_as": [
+    "brand name",
+    "trade name",
+    "what drug is",
+    "lantus",
+    "clexane",
+    "lasix",
+    "flagyl",
+    "augmentin",
+    "coartem",
+    "daonil",
+    "df118",
+    "fungasol"
+   ]
+  },
+  "Antibiotic Classes, Mechanism and Spectrum — Reference": {
+   "new_title": "Antibiotics — Classes, Cover and Side Effects",
+   "also_known_as": [
+    "antibiotics",
+    "antibiotic classes",
+    "which antibiotic",
+    "drug cover",
+    "beta lactam",
+    "macrolide",
+    "quinolone"
+   ]
+  },
+  "Tuberculosis Treatment — Drug-Susceptible and Drug-Resistant Regimens": {
+   "new_title": "TB Treatment — Regimens and Drug Resistance",
+   "also_known_as": [
+    "tb drugs",
+    "anti tb",
+    "rhze",
+    "mdr tb",
+    "dr tb",
+    "bpalm",
+    "tb regimen",
+    "tuberculosis treatment"
+   ]
+  },
+  "Malaria — Diagnosis, Severity and Treatment Principles": {
+   "new_title": "Malaria — Diagnosis, Severity and Treatment",
+   "also_known_as": [
+    "malaria",
+    "act",
+    "artesunate",
+    "severe malaria",
+    "cerebral malaria",
+    "rdt"
+   ]
+  },
+  "Heart Failure with Reduced Ejection Fraction — Disease-Modifying Therapy": {
+   "new_title": "Heart Failure — The Four Pillars",
+   "also_known_as": [
+    "heart failure drugs",
+    "hfref",
+    "four pillars",
+    "mortality drugs heart failure",
+    "arni",
+    "sglt2 heart failure"
+   ]
+  },
+  "Digoxin — Indications, Contraindications and Toxicity": {
+   "new_title": "Digoxin — Use, Cautions and Toxicity",
+   "also_known_as": [
+    "digoxin",
+    "dig toxicity",
+    "cardiac glycoside",
+    "xanthopsia"
+   ]
+  },
+  "Insulin Types, Regimens and Basal-Bolus Principles": {
+   "new_title": "Insulin — Types, Regimens and Doses",
+   "also_known_as": [
+    "insulin",
+    "insulin types",
+    "basal bolus",
+    "lantus",
+    "actrapid",
+    "mixtard",
+    "soluble insulin",
+    "how to give insulin"
+   ]
+  },
+  "Severe Acute Malnutrition — Inpatient Management": {
+   "new_title": "Severe Malnutrition (SAM) — Ward Management",
+   "also_known_as": [
+    "sam",
+    "severe acute malnutrition",
+    "kwashiorkor",
+    "marasmus",
+    "f75",
+    "f100",
+    "rutf",
+    "resomal",
+    "ten steps"
+   ]
+  },
+  "Paediatric Dehydration — Assessment and Fluid Plan": {
+   "new_title": "Child Dehydration — Plan A, B, C",
+   "also_known_as": [
+    "dehydration",
+    "diarrhoea child",
+    "ors",
+    "plan c",
+    "rehydration",
+    "zinc"
+   ]
+  },
+  "Pre-eclampsia and Eclampsia — Assessment and Management": {
+   "new_title": "Pre-eclampsia and Eclampsia",
+   "also_known_as": [
+    "pre eclampsia",
+    "eclampsia",
+    "magnesium sulphate",
+    "fits in pregnancy",
+    "high bp in pregnancy",
+    "hellp"
+   ]
+  },
+  "Postpartum Haemorrhage — Management": {
+   "new_title": "Postpartum Bleeding (PPH) — Stop The Bleeding",
+   "also_known_as": [
+    "pph",
+    "postpartum haemorrhage",
+    "bleeding after delivery",
+    "four ts",
+    "atonic uterus",
+    "e-motive",
+    "motive bundle"
+   ]
+  },
+  "Antenatal Booking Visit — Parameters and Checks": {
+   "new_title": "Antenatal Booking — What To Check",
+   "also_known_as": [
+    "booking",
+    "anc",
+    "first antenatal visit",
+    "edd",
+    "naegele"
+   ]
+  },
+  "Diabetic Ketoacidosis (DKA) — 2024 Diagnostic Criteria": {
+   "new_title": "DKA — Diagnosis (2024 criteria)",
+   "also_known_as": [
+    "dka",
+    "ketoacidosis",
+    "diabetic ketoacidosis",
+    "ketones",
+    "bohb"
+   ]
+  },
+  "Diabetic Ketoacidosis (DKA) — Management Pathway": {
+   "new_title": "DKA — Management",
+   "also_known_as": [
+    "dka treatment",
+    "dka management",
+    "insulin infusion",
+    "dka fluids",
+    "dka potassium"
+   ]
+  },
+  "Hyperglycaemic Hyperosmolar State (HHS) — 2024 Criteria and Management": {
+   "new_title": "HHS — Diagnosis and Management",
+   "also_known_as": [
+    "hhs",
+    "hyperosmolar",
+    "honk",
+    "hyperosmolar coma"
+   ]
+  },
+  "Hypoglycaemia — Recognition and Treatment": {
+   "new_title": "Hypoglycaemia — Recognise and Treat",
+   "also_known_as": [
+    "hypo",
+    "low sugar",
+    "hypoglycaemia",
+    "d50",
+    "glucagon"
+   ]
+  },
+  "Burch-Wartofsky Point Scale (BWPS) — Thyroid Storm": {
+   "new_title": "Thyroid Storm — Burch-Wartofsky Score",
+   "also_known_as": [
+    "thyroid storm",
+    "bwps",
+    "burch wartofsky",
+    "thyrotoxic crisis"
+   ]
+  },
+  "Adrenal Crisis — Recognition and Management": {
+   "new_title": "Adrenal Crisis — Give Hydrocortisone Now",
+   "also_known_as": [
+    "adrenal crisis",
+    "addisonian crisis",
+    "addison",
+    "hydrocortisone emergency"
+   ]
+  },
+  "Status Epilepticus — Timed Treatment Pathway": {
+   "new_title": "Status Epilepticus — Timed Pathway",
+   "also_known_as": [
+    "status epilepticus",
+    "fits not stopping",
+    "continuous seizure",
+    "diazepam seizure"
+   ]
+  },
+  "Acute Stroke — Recognition and Hyperacute Pathway": {
+   "new_title": "Stroke — First Hours",
+   "also_known_as": [
+    "stroke",
+    "cva",
+    "fast",
+    "hemiplegia",
+    "thrombolysis",
+    "brain attack"
+   ]
+  },
+  "Tetanus — Principles of Management": {
+   "new_title": "Tetanus — Principles of Management",
+   "also_known_as": [
+    "tetanus",
+    "lockjaw",
+    "trismus",
+    "opisthotonus",
+    "ats",
+    "tig"
+   ]
+  },
+  "Shock — Classification and Differentiation": {
+   "new_title": "Shock — Types and How To Tell Them Apart",
+   "also_known_as": [
+    "shock",
+    "types of shock",
+    "septic shock",
+    "cardiogenic",
+    "hypovolaemic",
+    "neurogenic shock",
+    "anaphylactic shock"
+   ]
+  },
+  "Anaphylaxis — Immediate Management": {
+   "new_title": "Anaphylaxis — Adrenaline First",
+   "also_known_as": [
+    "anaphylaxis",
+    "allergic reaction",
+    "adrenaline",
+    "epinephrine",
+    "epipen"
+   ]
+  },
+  "Acute Abdomen — Structured Approach": {
+   "new_title": "Acute Abdomen — Approach",
+   "also_known_as": [
+    "acute abdomen",
+    "abdominal pain",
+    "peritonitis",
+    "surgical abdomen"
+   ]
+  },
+  "Intestinal Obstruction — Assessment and Management": {
+   "new_title": "Bowel Obstruction — Assess and Manage",
+   "also_known_as": [
+    "intestinal obstruction",
+    "bowel obstruction",
+    "volvulus",
+    "adhesions",
+    "absolute constipation"
+   ]
+  },
+  "Hernia — Classification and Management Principles": {
+   "new_title": "Hernia — Types and Management",
+   "also_known_as": [
+    "hernia",
+    "inguinal",
+    "femoral",
+    "strangulated",
+    "incisional",
+    "umbilical"
+   ]
+  },
+  "Acute Scrotum — Torsion versus Epididymo-orchitis": {
+   "new_title": "Acute Scrotum — Torsion or Infection?",
+   "also_known_as": [
+    "testicular torsion",
+    "acute scrotum",
+    "scrotal pain",
+    "epididymitis",
+    "twisted testicle",
+    "cremasteric"
+   ]
+  },
+  "Acute Urinary Retention and Catheterisation": {
+   "new_title": "Urinary Retention and Catheter",
+   "also_known_as": [
+    "retention",
+    "cannot pass urine",
+    "catheter",
+    "foley",
+    "spc",
+    "bph"
+   ]
+  },
+  "Compartment Syndrome — Recognition": {
+   "new_title": "Compartment Syndrome — Spot It Early",
+   "also_known_as": [
+    "compartment syndrome",
+    "fasciotomy",
+    "6 ps",
+    "pain on passive stretch"
+   ]
+  },
+  "Fracture Management — Principles": {
+   "new_title": "Fracture — Principles of Management",
+   "also_known_as": [
+    "fracture",
+    "reduction",
+    "cast",
+    "orif",
+    "open fracture",
+    "gustilo",
+    "pop"
+   ]
+  },
+  "Tension Pneumothorax — Recognition and Decompression": {
+   "new_title": "Tension Pneumothorax — Decompress Now",
+   "also_known_as": [
+    "tension pneumothorax",
+    "needle decompression",
+    "chest decompression"
+   ]
+  },
+  "Typhoid Ileal Perforation": {
+   "new_title": "Typhoid Perforation",
+   "also_known_as": [
+    "typhoid perforation",
+    "tip",
+    "enteric perforation",
+    "ileal perforation"
+   ]
+  },
+  "Widal Test — Interpretation and Limitations": {
+   "new_title": "Widal Test — What It Does and Doesn't Tell You",
+   "also_known_as": [
+    "widal",
+    "typhoid test",
+    "widal titre",
+    "enteric fever test"
+   ]
+  },
+  "Mental State Examination (MSE)": {
+   "new_title": "Mental State Examination (MSE)",
+   "also_known_as": [
+    "mse",
+    "mental state",
+    "psychiatric examination",
+    "mental status exam"
+   ]
+  },
+  "Delirium versus Dementia": {
+   "new_title": "Delirium or Dementia?",
+   "also_known_as": [
+    "delirium",
+    "dementia",
+    "confusion",
+    "acute confusion",
+    "sundowning"
+   ]
+  },
+  "Diabetic Foot — Risk Stratification and Examination": {
+   "new_title": "Diabetic Foot — Examine and Grade",
+   "also_known_as": [
+    "diabetic foot",
+    "foot at risk",
+    "monofilament",
+    "wagner",
+    "charcot foot"
+   ]
+  },
+  "Finger Clubbing — Grading and Causes": {
+   "new_title": "Clubbing — Grades and Causes",
+   "also_known_as": [
+    "clubbing",
+    "finger clubbing",
+    "schamroth",
+    "drumstick fingers"
+   ]
+  },
+  "Clinical Triads, Tetrads and Pentads": {
+   "new_title": "Triads and Tetrads",
+   "also_known_as": [
+    "triad",
+    "triads",
+    "tetrad",
+    "pentad",
+    "classic triad",
+    "charcot triad",
+    "beck triad"
+   ]
+  },
+  "Alvarado Score for Appendicitis": {
+   "new_title": "Appendicitis — Alvarado Score",
+   "also_known_as": [
+    "alvarado",
+    "appendicitis score",
+    "mantrels",
+    "rif pain"
+   ]
+  },
+  "qSOFA and Sepsis Screening": {
+   "new_title": "Sepsis Screening (qSOFA)",
+   "also_known_as": [
+    "sepsis",
+    "qsofa",
+    "septic",
+    "sepsis six",
+    "sirs"
+   ]
+  },
+  "Cockcroft-Gault Creatinine Clearance": {
+   "new_title": "Creatinine Clearance (Cockcroft-Gault)",
+   "also_known_as": [
+    "crcl",
+    "creatinine clearance",
+    "cockcroft gault",
+    "renal dosing",
+    "kidney function"
+   ]
+  },
+  "Ideal and Adjusted Body Weight (Devine)": {
+   "new_title": "Ideal and Adjusted Body Weight",
+   "also_known_as": [
+    "ibw",
+    "ideal body weight",
+    "adjusted body weight",
+    "dosing weight",
+    "devine"
+   ]
+  },
+  "Mid-Upper Arm Circumference (MUAC) interpretation": {
+   "new_title": "MUAC — Arm Circumference for Malnutrition",
+   "also_known_as": [
+    "muac",
+    "arm circumference",
+    "mid upper arm",
+    "malnutrition screening"
+   ]
+  },
+  "Body Surface Area — Mosteller": {
+   "new_title": "Body Surface Area (BSA)",
+   "also_known_as": [
+    "bsa",
+    "body surface area",
+    "mosteller",
+    "chemo dosing"
+   ]
+  },
+  "Corrected Sodium in Hyperglycaemia": {
+   "new_title": "Corrected Sodium (in high sugar)",
+   "also_known_as": [
+    "corrected sodium",
+    "pseudohyponatraemia",
+    "sodium correction"
+   ]
+  },
+  "Corrected Calcium for Albumin": {
+   "new_title": "Corrected Calcium",
+   "also_known_as": [
+    "corrected calcium",
+    "adjusted calcium",
+    "albumin calcium"
+   ]
+  },
+  "Fractional Excretion of Sodium (FENa)": {
+   "new_title": "FENa — Prerenal or ATN?",
+   "also_known_as": [
+    "fena",
+    "fractional excretion",
+    "prerenal",
+    "atn"
+   ]
+  },
+  "Child-Pugh Score for Chronic Liver Disease": {
+   "new_title": "Child-Pugh Score",
+   "also_known_as": [
+    "child pugh",
+    "cirrhosis score",
+    "liver score"
+   ]
+  },
+  "Hepatic Encephalopathy — West Haven Grading": {
+   "new_title": "Hepatic Encephalopathy — West Haven Grades",
+   "also_known_as": [
+    "hepatic encephalopathy",
+    "west haven",
+    "asterixis",
+    "liver coma",
+    "flapping tremor"
+   ]
+  },
+  "CURB-65 — Community-Acquired Pneumonia Severity": {
+   "new_title": "CURB-65 — Pneumonia Severity",
+   "also_known_as": [
+    "curb 65",
+    "pneumonia severity",
+    "cap score"
+   ]
+  },
+  "CHA₂DS₂-VASc — Stroke Risk in Atrial Fibrillation": {
+   "new_title": "CHA₂DS₂-VASc — AF Stroke Risk",
+   "also_known_as": [
+    "chads vasc",
+    "af stroke risk",
+    "anticoagulate af"
+   ]
+  },
+  "HAS-BLED — Bleeding Risk on Anticoagulation": {
+   "new_title": "HAS-BLED — Bleeding Risk",
+   "also_known_as": [
+    "has bled",
+    "bleeding risk",
+    "warfarin risk"
+   ]
+  },
+  "Wells Score for Deep Vein Thrombosis": {
+   "new_title": "Wells Score — DVT",
+   "also_known_as": [
+    "wells",
+    "dvt score",
+    "leg swelling",
+    "dvt probability"
+   ]
+  },
+  "Cerebral Perfusion Pressure (CPP)": {
+   "new_title": "Cerebral Perfusion Pressure (CPP)",
+   "also_known_as": [
+    "cpp",
+    "icp",
+    "head injury pressure"
+   ]
+  },
+  "Mean Arterial Pressure (MAP)": {
+   "new_title": "Mean Arterial Pressure (MAP)",
+   "also_known_as": [
+    "map",
+    "mean arterial pressure",
+    "perfusion pressure"
+   ]
+  },
+  "Glasgow Coma Scale (GCS)": {
+   "new_title": "Glasgow Coma Scale (GCS)",
+   "also_known_as": [
+    "gcs",
+    "coma scale",
+    "conscious level",
+    "eye verbal motor",
+    "avpu"
+   ]
+  },
+  "Neonatal Jaundice — Assessment": {
+   "new_title": "Newborn Jaundice — Assess",
+   "also_known_as": [
+    "neonatal jaundice",
+    "yellow baby",
+    "kernicterus",
+    "phototherapy",
+    "g6pd baby"
+   ]
+  },
+  "APGAR Score": {
+   "new_title": "APGAR Score",
+   "also_known_as": [
+    "apgar",
+    "newborn score",
+    "birth asphyxia"
+   ]
+  },
+  "Obstetric Danger Signs": {
+   "new_title": "Pregnancy Danger Signs",
+   "also_known_as": [
+    "danger signs",
+    "when to come to hospital",
+    "warning signs pregnancy"
+   ]
+  },
+  "Cardiovascular System Examination": {
+   "new_title": "Cardiovascular Examination (CVS)",
+   "also_known_as": [
+    "cvs exam",
+    "heart examination",
+    "praecordium",
+    "murmur exam"
+   ]
+  }
+ },
+ "banned_title_words": [
+  "governed",
+  "artifact",
+  "framework",
+  "systematic",
+  "structured",
+  "comprehensive",
+  "canonical",
+  "master",
+  "paradigm",
+  "modality-agnostic",
+  "holistic",
+  "robust",
+  "leverage",
+  "utilise",
+  "utilize",
+  "commence",
+  "optimal pathway"
+ ],
+ "plain_word_swaps": {
+  "gravity infusion": "IV fluid drip",
+  "administration set": "giving set",
+  "administer": "give",
+  "commence": "start",
+  "utilise": "use",
+  "utilize": "use",
+  "in the setting of": "in",
+  "prior to": "before",
+  "subsequent to": "after",
+  "with regard to": "about",
+  "is indicative of": "means",
+  "demonstrates": "shows",
+  "presents with": "comes in with",
+  "the patient should be": "",
+  "it is recommended that": "",
+  "parenteral": "injection",
+  "per os": "by mouth",
+  "expeditiously": "quickly"
+ }
+}

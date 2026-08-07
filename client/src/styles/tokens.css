@@ -1,0 +1,115 @@
+/*
+ * Awibi Scout — design tokens.
+ *
+ * Lifted verbatim from the shipped design source (Awibi Scout v2.dc.html).
+ * These values are the authority; nothing here is an approximation.
+ *
+ * Themes are applied by setting data-theme on <html>. Every colour is a custom
+ * property so the Tier-1 SVG diagrams theme for free — a diagram authored with
+ * fill="var(--scout-stroke)" is correct in both modes with no second export.
+ */
+
+:root,
+:root[data-theme='light'] {
+  --bg: #f4f6fb;
+  --card: #ffffff;
+  --skel: #e7ecf4;
+  --skel-2: #f0f3f9;
+  --line: #e2e6ee;
+  --line-2: #eef1f7;
+  --ink: #0e1320;
+  --ink-2: #2a3344;
+  --muted: #6b7588;
+  --faint: #9aa3b2;
+  --blue: #335cf4;
+  --blue-700: #2954f3;
+  --blue-100: #dbe1f8;
+  --blue-wash: #eaeefe;
+  --danger: #dc2626;
+  --accent: #ff7a3c;
+
+  /* Risk badges — colour is never the only cue, the label always reads. */
+  --hz-low-fg: #1fa93b;
+  --hz-low-bg: #eafbec;
+  --hz-moderate-fg: #b07900;
+  --hz-moderate-bg: #fff6e5;
+  --hz-high-fg: #b4490f;
+  --hz-high-bg: #fff1e9;
+  --hz-critical-fg: #dc2626;
+  --hz-critical-bg: #fcebeb;
+
+  /* Visual layer — consumed by every Tier-1/2 SVG diagram. */
+  --scout-stroke: #2a3344;
+  --scout-stroke-soft: #9aa3b2;
+  --scout-fill: #ffffff;
+  --scout-fill-soft: #f0f3f9;
+  --scout-accent: #335cf4;
+  --scout-accent-soft: #eaeefe;
+  --scout-warn: #b4490f;
+  --scout-warn-soft: #fff1e9;
+  --scout-danger: #dc2626;
+  --scout-danger-soft: #fcebeb;
+  --scout-good: #1fa93b;
+  --scout-good-soft: #eafbec;
+  --scout-label: #0e1320;
+
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  --bg: #0b0f1a;
+  --card: #131a2a;
+  --skel: #1e2739;
+  --skel-2: #1a2233;
+  --line: #28324a;
+  --line-2: #1f2839;
+  --ink: #eaeef6;
+  --ink-2: #c3ccdc;
+  --muted: #93a0b5;
+  --faint: #6d7a92;
+  --blue: #6e8cff;
+  --blue-700: #8ca4ff;
+  --blue-100: #2a3763;
+  --blue-wash: #1b2445;
+  --danger: #ff7a73;
+  --accent: #ff9e5e;
+
+  --hz-low-fg: #6bda84;
+  --hz-low-bg: #16301d;
+  --hz-moderate-fg: #e9bc53;
+  --hz-moderate-bg: #332a12;
+  --hz-high-fg: #ff9e5e;
+  --hz-high-bg: #3a2415;
+  --hz-critical-fg: #ff7a73;
+  --hz-critical-bg: #3a1a18;
+
+  --scout-stroke: #c3ccdc;
+  --scout-stroke-soft: #6d7a92;
+  --scout-fill: #131a2a;
+  --scout-fill-soft: #1a2233;
+  --scout-accent: #6e8cff;
+  --scout-accent-soft: #1b2445;
+  --scout-warn: #ff9e5e;
+  --scout-warn-soft: #3a2415;
+  --scout-danger: #ff7a73;
+  --scout-danger-soft: #3a1a18;
+  --scout-good: #6bda84;
+  --scout-good-soft: #16301d;
+  --scout-label: #eaeef6;
+
+  color-scheme: dark;
+}
+
+:root {
+  --font-ui: Inter, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'Cascadia Mono', monospace;
+
+  --sidebar-w: 248px;
+  --page-x: clamp(13px, 2.2vw, 26px);
+
+  --r-sm: 6px;
+  --r-md: 9px;
+  --r-lg: 11px;
+  --r-xl: 14px;
+  --r-pill: 20px;
+}

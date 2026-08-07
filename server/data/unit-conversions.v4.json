@@ -1,0 +1,291 @@
+{
+ "conversion_table": [
+  {
+   "analyte": "Glucose",
+   "conventional": "mg/dL",
+   "si": "mmol/L",
+   "mw": 180.16,
+   "to_si": "divide by 18",
+   "to_conv": "multiply by 18",
+   "anchors": [
+    "70 mg/dL = 3.9 mmol/L (hypoglycaemia alert)",
+    "126 mg/dL = 7.0 mmol/L (fasting diabetes threshold)",
+    "200 mg/dL = 11.1 mmol/L (DKA glucose criterion)",
+    "600 mg/dL = 33.3 mmol/L (HHS glucose criterion)"
+   ],
+   "note": "Glucose is reported in mg/dL or mmol/L — NOT g/dL. If you see g/dL on a glucose result, query it."
+  },
+  {
+   "analyte": "Creatinine",
+   "conventional": "mg/dL",
+   "si": "µmol/L",
+   "mw": 113.12,
+   "to_si": "multiply by 88.4",
+   "to_conv": "divide by 88.4",
+   "anchors": [
+    "1.0 mg/dL = 88 µmol/L",
+    "2.0 mg/dL = 177 µmol/L",
+    "5.0 mg/dL = 442 µmol/L"
+   ],
+   "note": "Mixing these two up is a common cause of a wrong drug dose, because Cockcroft-Gault uses different constants for each unit."
+  },
+  {
+   "analyte": "Urea / BUN",
+   "conventional": "mg/dL (BUN)",
+   "si": "mmol/L (urea)",
+   "mw": 60.06,
+   "to_si": "BUN mg/dL ÷ 2.8 = urea mmol/L",
+   "to_conv": "urea mmol/L × 2.8 = BUN mg/dL",
+   "anchors": [
+    "20 mg/dL BUN = 7.1 mmol/L urea (CURB-65 threshold)"
+   ],
+   "note": "BUN measures the NITROGEN only; urea measures the whole molecule. They are not the same quantity, which is why the factor is 2.8 and not 6."
+  },
+  {
+   "analyte": "Total bilirubin",
+   "conventional": "mg/dL",
+   "si": "µmol/L",
+   "mw": 584.66,
+   "to_si": "multiply by 17.1",
+   "to_conv": "divide by 17.1",
+   "anchors": [
+    "1 mg/dL = 17 µmol/L",
+    "3 mg/dL = 51 µmol/L (jaundice usually visible)",
+    "20 mg/dL = 342 µmol/L"
+   ],
+   "note": "Newborn phototherapy charts differ by country in which unit they use — check the chart before plotting."
+  },
+  {
+   "analyte": "Calcium",
+   "conventional": "mg/dL",
+   "si": "mmol/L",
+   "mw": 40.08,
+   "to_si": "divide by 4",
+   "to_conv": "multiply by 4",
+   "anchors": [
+    "10 mg/dL = 2.5 mmol/L",
+    "14 mg/dL = 3.5 mmol/L (severe hypercalcaemia)"
+   ],
+   "note": "Some labs report mEq/L: mmol/L × 2 = mEq/L for calcium, because it is divalent."
+  },
+  {
+   "analyte": "Cholesterol",
+   "conventional": "mg/dL",
+   "si": "mmol/L",
+   "mw": 386.65,
+   "to_si": "divide by 38.67",
+   "to_conv": "multiply by 38.67",
+   "anchors": [
+    "200 mg/dL = 5.2 mmol/L",
+    "100 mg/dL LDL = 2.6 mmol/L"
+   ],
+   "note": null
+  },
+  {
+   "analyte": "Triglycerides",
+   "conventional": "mg/dL",
+   "si": "mmol/L",
+   "mw": 885,
+   "to_si": "divide by 88.6",
+   "to_conv": "multiply by 88.6",
+   "anchors": [
+    "150 mg/dL = 1.7 mmol/L"
+   ],
+   "note": "Different factor from cholesterol — do not reuse the 38.67."
+  },
+  {
+   "analyte": "Haemoglobin",
+   "conventional": "g/dL",
+   "si": "g/L",
+   "mw": null,
+   "to_si": "multiply by 10",
+   "to_conv": "divide by 10",
+   "anchors": [
+    "7 g/dL = 70 g/L (common transfusion threshold)",
+    "12 g/dL = 120 g/L"
+   ],
+   "note": "THIS is the one measured in g/dL. Some labs use mmol/L for haemoglobin (× 0.6206 from g/dL) — rare, but check the unit on the report."
+  },
+  {
+   "analyte": "Albumin",
+   "conventional": "g/dL",
+   "si": "g/L",
+   "mw": null,
+   "to_si": "multiply by 10",
+   "to_conv": "divide by 10",
+   "anchors": [
+    "3.5 g/dL = 35 g/L",
+    "4.0 g/dL = 40 g/L (reference point for corrected calcium)"
+   ],
+   "note": "Corrected-calcium formulas differ depending on which albumin unit you use."
+  },
+  {
+   "analyte": "Uric acid",
+   "conventional": "mg/dL",
+   "si": "µmol/L",
+   "mw": 168.11,
+   "to_si": "multiply by 59.48",
+   "to_conv": "divide by 59.48",
+   "anchors": [
+    "7 mg/dL = 416 µmol/L"
+   ],
+   "note": null
+  },
+  {
+   "analyte": "Magnesium",
+   "conventional": "mg/dL",
+   "si": "mmol/L",
+   "mw": 24.31,
+   "to_si": "divide by 2.43",
+   "to_conv": "multiply by 2.43",
+   "anchors": [
+    "2 mg/dL = 0.82 mmol/L"
+   ],
+   "note": "Also reported in mEq/L: mmol/L × 2 = mEq/L (divalent)."
+  },
+  {
+   "analyte": "Phosphate",
+   "conventional": "mg/dL",
+   "si": "mmol/L",
+   "mw": 30.97,
+   "to_si": "divide by 3.1",
+   "to_conv": "multiply by 3.1",
+   "anchors": [
+    "4 mg/dL = 1.29 mmol/L"
+   ],
+   "note": null
+  },
+  {
+   "analyte": "Sodium, potassium, chloride, bicarbonate",
+   "conventional": "mEq/L",
+   "si": "mmol/L",
+   "mw": null,
+   "to_si": "the same number",
+   "to_conv": "the same number",
+   "anchors": [
+    "140 mEq/L = 140 mmol/L"
+   ],
+   "note": "For these SINGLY charged ions mEq/L and mmol/L are numerically identical. For calcium and magnesium (double charge) they are NOT — divide mEq by 2."
+  },
+  {
+   "analyte": "Ionised calcium",
+   "conventional": "mg/dL",
+   "si": "mmol/L",
+   "mw": 40.08,
+   "to_si": "divide by 4",
+   "to_conv": "multiply by 4",
+   "anchors": [
+    "4.6 mg/dL = 1.15 mmol/L"
+   ],
+   "note": null
+  },
+  {
+   "analyte": "Lactate",
+   "conventional": "mg/dL",
+   "si": "mmol/L",
+   "mw": 90.08,
+   "to_si": "divide by 9",
+   "to_conv": "multiply by 9",
+   "anchors": [
+    "18 mg/dL = 2 mmol/L (sepsis threshold)",
+    "36 mg/dL = 4 mmol/L"
+   ],
+   "note": null
+  },
+  {
+   "analyte": "Ketone (beta-hydroxybutyrate)",
+   "conventional": "mg/dL",
+   "si": "mmol/L",
+   "mw": 104.1,
+   "to_si": "divide by 10.4",
+   "to_conv": "multiply by 10.4",
+   "anchors": [
+    "31 mg/dL = 3.0 mmol/L (DKA ketone criterion)"
+   ],
+   "note": null
+  },
+  {
+   "analyte": "HbA1c",
+   "conventional": "% (NGSP/DCCT)",
+   "si": "mmol/mol (IFCC)",
+   "mw": null,
+   "to_si": "(% − 2.15) × 10.929",
+   "to_conv": "(mmol/mol ÷ 10.929) + 2.15",
+   "anchors": [
+    "6.5% = 48 mmol/mol (diabetes threshold)",
+    "7.0% = 53 mmol/mol (common target)",
+    "8.0% = 64 mmol/mol",
+    "10% = 86 mmol/mol"
+   ],
+   "note": "Two entirely different scales, not a simple multiplication. Nigeria mostly reports %, the UK reports mmol/mol."
+  }
+ ],
+ "other_conversions": [
+  {
+   "from": "Pounds (lb)",
+   "to": "Kilograms",
+   "how": "divide by 2.2",
+   "note": "Weigh in kg. Drug doses in Nigeria are prescribed per kg."
+  },
+  {
+   "from": "Stones",
+   "to": "Kilograms",
+   "how": "× 6.35",
+   "note": null
+  },
+  {
+   "from": "Inches",
+   "to": "Centimetres",
+   "how": "× 2.54",
+   "note": null
+  },
+  {
+   "from": "Feet and inches",
+   "to": "Metres",
+   "how": "(feet × 12 + inches) × 2.54 ÷ 100",
+   "note": "Needed for BMI, BSA and lung-protective tidal volume."
+  },
+  {
+   "from": "°F",
+   "to": "°C",
+   "how": "(°F − 32) × 5/9",
+   "note": "98.6 °F = 37 °C; 100.4 °F = 38 °C (the usual fever threshold)."
+  },
+  {
+   "from": "mmHg",
+   "to": "kPa",
+   "how": "÷ 7.5",
+   "note": "Blood gases are reported in kPa in some labs and mmHg in others. PaO2 of 60 mmHg = 8 kPa."
+  },
+  {
+   "from": "cmH2O",
+   "to": "mmHg",
+   "how": "× 0.735",
+   "note": "Ventilator pressures are cmH2O; CVP may be either — check."
+  },
+  {
+   "from": "mL/h",
+   "to": "drops/min",
+   "how": "× drop factor ÷ 60",
+   "note": "See the IV fluid drip rate card."
+  },
+  {
+   "from": "micrograms",
+   "to": "milligrams",
+   "how": "÷ 1000",
+   "note": "Write 'microgram' in full. 'mcg' misread as 'mg' is a 1000-fold overdose."
+  },
+  {
+   "from": "Grams per 100 mL (%)",
+   "to": "mg/mL",
+   "how": "% × 10",
+   "note": "1% lidocaine = 10 mg/mL. 0.9% saline = 9 mg/mL sodium chloride. 50% dextrose = 500 mg/mL. This is the one that catches people out."
+  },
+  {
+   "from": "1:1000 / 1:10,000",
+   "to": "mg/mL",
+   "how": "1:1000 = 1 mg/mL; 1:10,000 = 0.1 mg/mL",
+   "note": "Adrenaline. 1:1000 is the IM ampoule; 1:10,000 is the pre-filled cardiac arrest syringe. Giving 1:1000 intravenously by mistake has killed patients."
+  }
+ ]
+}

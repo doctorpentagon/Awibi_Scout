@@ -1,0 +1,257 @@
+.visual-panel {
+  margin: 26px 0;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+.visual-panel-head {
+  margin-bottom: 16px;
+}
+
+.visual-asset {
+  border: 1px solid var(--line);
+  border-radius: var(--r-xl);
+  background: var(--card);
+  padding: 18px;
+  margin-bottom: 16px;
+}
+
+.visual-asset-head {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.visual-asset-title {
+  font-size: 15.5px;
+  font-weight: 700;
+}
+.visual-asset-does {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: var(--muted);
+  max-width: 64ch;
+}
+.visual-asset-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.visual-id {
+  font-size: 11px;
+  color: var(--faint);
+}
+.visual-tier {
+  font-size: 10.5px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: var(--r-sm);
+  white-space: nowrap;
+  background: var(--skel-2);
+  color: var(--muted);
+}
+.visual-tier.tier-1,
+.visual-tier.tier-2 {
+  background: var(--hz-low-bg);
+  color: var(--hz-low-fg);
+}
+.visual-tier.tier-4 {
+  background: var(--hz-critical-bg);
+  color: var(--hz-critical-fg);
+}
+.visual-tier.tier-5 {
+  background: var(--blue-wash);
+  color: var(--blue);
+}
+
+.visual-stage {
+  border: 1px solid var(--line-2);
+  border-radius: var(--r-md);
+  background: var(--card);
+  padding: 16px;
+  overflow-x: auto;
+}
+.visual-loading {
+  padding: 40px;
+  text-align: center;
+  color: var(--faint);
+  font-size: 13px;
+}
+
+/* ---------------- annotated raster ---------------- */
+
+.annotated-figure {
+  margin: 0;
+}
+.annotated-stage {
+  position: relative;
+  width: 100%;
+  border-radius: var(--r-md);
+  overflow: hidden;
+  background: var(--skel-2);
+}
+.annotated-stage img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.annotation-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  /* Pointer events on annotation groups ONLY, so pan and zoom still work on
+     the image underneath. */
+  pointer-events: none;
+}
+.annotation {
+  pointer-events: auto;
+  cursor: pointer;
+}
+.annotation:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+.annotation.is-active,
+.annotation:hover {
+  filter: brightness(1.12);
+}
+.annotated-caption {
+  margin-top: 8px;
+  font-size: 11.5px;
+  color: var(--faint);
+}
+.annotated-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+.annotated-prompt {
+  font-size: 13px;
+}
+.annotated-teaching {
+  margin-top: 12px;
+  padding: 12px 15px;
+  border-radius: var(--r-md);
+  border-left: 3px solid var(--blue);
+  background: var(--blue-wash);
+  font-size: 13.5px;
+}
+.annotated-teaching p {
+  margin: 6px 0 0;
+  color: var(--ink-2);
+}
+
+/* ---------------- specification card ---------------- */
+
+.spec-card {
+  border: 1px dashed var(--line);
+  border-radius: var(--r-md);
+  padding: 16px;
+  background: var(--skel-2);
+}
+.spec-slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 30px 16px;
+  border: 1px dashed var(--faint);
+  border-radius: var(--r-md);
+  background: var(--card);
+  color: var(--faint);
+  text-align: center;
+}
+.spec-slot-icon {
+  width: 40px;
+  height: 40px;
+}
+.spec-slot-label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+}
+.spec-slot-status {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.spec-grid {
+  margin: 16px 0 0;
+  display: grid;
+  gap: 14px;
+}
+.spec-grid dt {
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--faint);
+  margin-bottom: 4px;
+}
+.spec-grid dd {
+  margin: 0;
+  font-size: 13px;
+  color: var(--ink-2);
+}
+.spec-pending {
+  font-family: var(--font-mono);
+  font-size: 11.5px !important;
+  color: var(--hz-high-fg) !important;
+}
+.spec-labels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.spec-label {
+  padding: 3px 8px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  background: var(--card);
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.spec-flag {
+  margin: 14px 0 0;
+  padding: 11px 14px;
+  border-radius: var(--r-md);
+  background: var(--card);
+  border-left: 3px solid var(--line);
+  font-size: 12.5px;
+  color: var(--ink-2);
+}
+.spec-flag-skin {
+  border-left-color: var(--accent);
+}
+.spec-flag-danger {
+  border-left-color: var(--danger);
+  background: var(--hz-critical-bg);
+  color: var(--hz-critical-fg);
+}
+
+/* ---------------- 3D ---------------- */
+
+.model3d-stage {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--r-md);
+  overflow: hidden;
+  background: var(--skel-2);
+}
+.model3d-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+  font-size: 13px;
+}
+.model3d-gate {
+  font-size: 12px;
+}

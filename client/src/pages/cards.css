@@ -1,0 +1,210 @@
+.learn-toggle {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+
+/* ---------------- flashcards ---------------- */
+
+.deck-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 20px;
+  align-items: start;
+}
+
+.flashcard {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--r-xl);
+  padding: 24px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.flashcard-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+.flashcard-q {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+.flashcard-a-wrap {
+  flex: 1;
+  margin: 20px 0;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+.flashcard-a {
+  margin: 0;
+  font-size: 16px;
+  color: var(--ink-2);
+  line-height: 1.55;
+}
+.flashcard-a.is-hidden {
+  color: var(--faint);
+  font-style: italic;
+}
+.flashcard-actions {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  flex-wrap: wrap;
+}
+.flashcard-open {
+  margin-left: auto;
+  font-size: 13.5px;
+  font-weight: 600;
+}
+.deck-position {
+  margin: 10px 0 0;
+  font-size: 12px;
+  color: var(--faint);
+}
+
+.deck-rail {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--r-xl);
+  padding: 14px;
+  max-height: 620px;
+  overflow: auto;
+}
+.deck-rail-head {
+  padding: 4px 8px 10px;
+}
+.deck-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  padding: 9px 10px;
+  border: 0;
+  border-radius: var(--r-md);
+  background: transparent;
+  color: var(--ink-2);
+  font-size: 13.5px;
+  cursor: pointer;
+  text-align: left;
+}
+.deck-item:hover {
+  background: var(--skel-2);
+}
+.deck-item.is-active {
+  background: var(--blue-wash);
+  color: var(--blue);
+  font-weight: 600;
+}
+.deck-n {
+  font-size: 11px;
+  color: var(--faint);
+}
+.deck-item.is-active .deck-n {
+  color: var(--blue);
+}
+
+/* ---------------- checklists ---------------- */
+
+.checklist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+
+.checklist {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--r-xl);
+  padding: 18px;
+}
+.checklist-head {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 10px;
+}
+.checklist-type {
+  font-size: 12.5px;
+}
+.checklist-title {
+  font-size: 15.5px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 14px;
+}
+.checklist-progress {
+  height: 4px;
+  border-radius: 2px;
+  background: var(--skel);
+  overflow: hidden;
+}
+.checklist-progress span {
+  display: block;
+  height: 100%;
+  background: var(--blue);
+  transition: width 0.16s ease;
+}
+.checklist-count {
+  margin: 8px 0 12px;
+  font-size: 12px;
+}
+.checklist-items {
+  list-style: none;
+  margin: 0 0 14px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.checklist-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13.5px;
+  color: var(--ink-2);
+  cursor: pointer;
+}
+.checklist-item input {
+  width: 18px;
+  height: 18px;
+  margin: 1px 0 0;
+  flex: none;
+}
+.checklist-item .is-done {
+  color: var(--faint);
+  text-decoration: line-through;
+}
+.checklist-actions {
+  display: flex;
+  gap: 14px;
+  font-size: 13px;
+}
+.checklist-reset {
+  border: 0;
+  background: none;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 13px;
+  padding: 0;
+}
+.checklist-reset:hover {
+  color: var(--blue);
+}
+
+@media (max-width: 900px) {
+  .deck-layout {
+    grid-template-columns: 1fr;
+  }
+  .deck-rail {
+    max-height: 300px;
+  }
+}

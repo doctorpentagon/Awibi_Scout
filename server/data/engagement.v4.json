@@ -1,0 +1,170 @@
+{
+ "surveillance": {
+  "principle": "Scout never auto-publishes a clinical change. Machines WATCH; humans DECIDE. An automated pipeline that silently rewrote a drug dose would be the single most dangerous thing this product could do.",
+  "tiers": [
+   {
+    "tier": "T1 — Watch (automated, daily)",
+    "what": "Poll public feeds for changes affecting entries in the library",
+    "sources": [
+     {
+      "name": "WHO publications and news",
+      "method": "RSS + page hash diff"
+     },
+     {
+      "name": "PubMed E-utilities",
+      "method": "Saved searches per high-risk topic, esearch by date window"
+     },
+     {
+      "name": "ClinicalTrials.gov API v2",
+      "method": "Watch trials linked from trial entries for results posting"
+     },
+     {
+      "name": "NICE syndication API",
+      "method": "Where a licence is held"
+     },
+     {
+      "name": "National programme sites (NTBLCP, NMEP, FMoH)",
+      "method": "Scheduled page-hash diff; many have no feed, so hashing is the pragmatic answer"
+     },
+     {
+      "name": "NAFDAC alerts",
+      "method": "Page diff — substandard and falsified product alerts"
+     },
+     {
+      "name": "Journal tables of contents",
+      "method": "RSS for NEJM, Lancet, BMJ, JAMA, Lancet Global Health"
+     }
+    ],
+    "output": "A change candidate with: source, date, URL, diff snippet, and the entry IDs whose search terms it matches."
+   },
+   {
+    "tier": "T2 — Triage (automated scoring, human queue)",
+    "what": "Rank candidates so reviewers see the dangerous ones first",
+    "score_inputs": [
+     "Hazard level of the affected entries (critical entries jump the queue)",
+     "How many entries it touches",
+     "Source authority tier",
+     "Whether it contradicts current text (keyword opposition detection)",
+     "How long since that entry was last reviewed"
+    ],
+    "output": "Prioritised review queue with a suggested reviewer."
+   },
+   {
+    "tier": "T3 — Decide (HUMAN ONLY)",
+    "what": "A named clinical reviewer opens the candidate beside the current entry text and chooses: no change / minor edit / major revision / withdraw entry",
+    "gate": "Nothing moves past here without a named human. The system has no path to skip this."
+   },
+   {
+    "tier": "T4 — Publish (versioned, reversible)",
+    "what": "Approved change creates a NEW entry version",
+    "rules": [
+     "Old version is retained and remains addressable — never overwritten",
+     "content_hash changes; approved_for_release resets and must be re-granted",
+     "`supersedes` points at the previous version",
+     "Change note is written in plain language and shown on the entry",
+     "Users who used the old version in the last 90 days get a 'this has changed' flag",
+     "Offline packages get a delta, not a full re-download"
+    ]
+   }
+  ],
+  "user_facing_signals": [
+   "Each entry shows: last checked date, next check due, and who signed it off.",
+   "An entry past its review date shows a soft 'due for review' marker and is ranked lower in search.",
+   "A superseded entry shows a banner linking to the current version.",
+   "Offline users see the date their package was built, so they know how stale they might be."
+  ],
+  "the_other_direction": {
+   "name": "User signal — the cheapest surveillance you have",
+   "inputs": [
+    "Zero-result query log (3+ hits in a week promotes to backlog)",
+    "'This looks wrong' button on every entry, with a free-text box",
+    "Which checklist items get ticked and which get skipped — a consistently skipped item is usually an item that cannot be done here",
+    "Which entries get opened repeatedly in one shift — that is a workflow gap, not curiosity"
+   ],
+   "why": "Your users know before your feeds do that the national protocol changed, because they were at the training. Give them one tap to tell you."
+  },
+  "honest_limits": [
+   "Feed watching catches published changes. It does not catch a state ministry circular, a verbal change at a training day, or a stockout that makes the recommended drug unavailable.",
+   "Page-hash diffing is noisy — expect false positives from cookie banners and rotating banners. Hash the main content region, not the whole page.",
+   "Do not build this in month one. Ship the library first with honest review dates. Surveillance matters when you have 500 entries and cannot remember what needs checking."
+  ]
+ },
+ "engagement": {
+  "the_goal_restated": "Not 'time in app'. A clinician who spends longer in your EHR is not a success — they are away from a patient. The goal is: they come BACK, they trust it, and they leave slightly better than they arrived.",
+  "what_to_borrow_from_duolingo": [
+   {
+    "mechanic": "Tiny sessions",
+    "apply": "One card. 20 seconds. Never a 'module'.",
+    "scout_form": "CARD OF THE SHIFT — one flashcard from an entry relevant to the ward they are on, shown once per shift on the dashboard. Answer or skip. No penalty."
+   },
+   {
+    "mechanic": "Streaks",
+    "apply": "CAUTIOUSLY. A streak that punishes a doctor for a busy night shift is hostile. Use a forgiving streak: weekly, not daily; freezes automatically on days off.",
+    "scout_form": "'You've checked something 4 weeks running.' No loss animation. No guilt."
+   },
+   {
+    "mechanic": "Immediate feedback",
+    "apply": "Show whether they were right instantly, with the one-line why.",
+    "scout_form": "Flip the card, show the answer plus a link to the full entry."
+   },
+   {
+    "mechanic": "Visible progress",
+    "apply": "Show coverage, not points.",
+    "scout_form": "'You've now seen 34 of the 51 emergency cards.' Progress against a real body of knowledge, not an invented currency."
+   },
+   {
+    "mechanic": "Surfacing what you got wrong",
+    "apply": "Spaced repetition on missed cards only.",
+    "scout_form": "Missed cards return in 1 day, 3 days, 7 days, 21 days. This is the single highest-value learning mechanic and it is cheap to build."
+   }
+  ],
+  "what_NOT_to_borrow": [
+   "Leaderboards between clinicians. Competition around clinical knowledge creates concealment of uncertainty, which is exactly the opposite of what a safe department needs.",
+   "Loss animations, sad mascots, guilt mechanics. These are for a language app, not a hospital.",
+   "Streak-breaking punishment. Someone was on call.",
+   "Anything that gates clinical content behind a game. Emergency content is ALWAYS one tap away, always, for everyone, with no progress requirement."
+  ],
+  "curiosity_hooks": [
+   {
+    "hook": "'Why does this work?'",
+    "where": "A collapsed line at the bottom of any calculator",
+    "example": "On the drip card: 'Why 60?' → 'Because you set the rate per MINUTE but the order is per HOUR, so you divide by 60.'"
+   },
+   {
+    "hook": "'Related' rail",
+    "where": "Bottom of every entry",
+    "example": "From the drip card → potassium correction, blood transfusion, child maintenance fluid"
+   },
+   {
+    "hook": "'Someone got this wrong'",
+    "where": "Anonymous, aggregated, opt-in",
+    "example": "'The most-missed card on this ward this month: which weight for tidal volume.'"
+   },
+   {
+    "hook": "'New in Scout'",
+    "where": "Dashboard, weekly",
+    "example": "'DKA criteria updated — the anion gap is no longer part of the diagnosis. See what changed.'"
+   },
+   {
+    "hook": "Trial of the week",
+    "where": "Dashboard",
+    "example": "'FEAST (2011) — why we stopped giving routine fluid boluses to African children.'"
+   }
+  ],
+  "measure_these_not_those": {
+   "measure": [
+    "Time to answer (target under 15 seconds from tap to the number)",
+    "Repeat use within 7 days",
+    "Zero-result rate (should fall every month)",
+    "Percentage of searches ending in an opened entry",
+    "Checklist completion rate on high-risk procedures",
+    "'This looks wrong' reports per 1000 opens (a rising number is good — it means trust)"
+   ],
+   "do_not_optimise": [
+    "Session duration",
+    "Screens per session",
+    "Daily active users as a headline"
+   ]
+  }
+ }
+}

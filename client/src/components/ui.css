@@ -1,0 +1,116 @@
+.risk {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 3px 7px;
+  border-radius: var(--r-sm);
+  white-space: nowrap;
+}
+.risk-low {
+  color: var(--hz-low-fg);
+  background: var(--hz-low-bg);
+}
+.risk-moderate {
+  color: var(--hz-moderate-fg);
+  background: var(--hz-moderate-bg);
+}
+.risk-high {
+  color: var(--hz-high-fg);
+  background: var(--hz-high-bg);
+}
+.risk-critical {
+  color: var(--hz-critical-fg);
+  background: var(--hz-critical-bg);
+}
+
+.time-critical {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 3px 7px;
+  border-radius: var(--r-sm);
+  color: var(--hz-high-fg);
+  background: var(--hz-high-bg);
+  white-space: nowrap;
+}
+
+.stat-tile {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--r-xl);
+  padding: 16px 18px;
+}
+.stat-value {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--blue);
+  line-height: 1.1;
+}
+.stat-value.tone-danger {
+  color: var(--danger);
+}
+.stat-value.tone-warn {
+  color: var(--hz-high-fg);
+}
+.stat-value.tone-good {
+  color: var(--hz-low-fg);
+}
+.stat-value.tone-ink {
+  color: var(--ink);
+}
+.stat-label {
+  margin-top: 6px;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+.state-block {
+  padding: 40px 4px;
+  max-width: 560px;
+}
+.loading-line {
+  font-size: 11.5px;
+  letter-spacing: 0.1em;
+  color: var(--blue);
+  animation: awPulse 1.4s infinite;
+}
+.state-note {
+  margin: 10px 0 14px;
+}
+.error-block .error-title {
+  color: var(--danger);
+}
+.error-title {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.stale-note {
+  margin-bottom: 14px;
+  padding: 9px 13px;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--r-md);
+  background: var(--card);
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+.page-head {
+  margin-bottom: 20px;
+}
+.page-h1 {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+.page-lede {
+  margin: 10px 0 0;
+  max-width: 62ch;
+  color: var(--muted);
+  font-size: 14px;
+}

@@ -1,0 +1,91 @@
+{
+ "_comment": "Reference implementation of the annotation model. Copy this shape for every tier-3 and tier-4 asset. Coordinates are normalised 0-1 against the base image.",
+ "asset_id": "V-CXR-002",
+ "base": {
+  "src": "v-cxr-002-free-air.avif",
+  "fallback": "v-cxr-002-free-air.webp",
+  "lqip": "data:image/webp;base64,<20px blur>",
+  "w": 1024,
+  "h": 1024,
+  "licence": "CC BY 4.0",
+  "source_url": "https://openi.nlm.nih.gov/detail/…",
+  "attribution": "Author et al., PMC1234567, CC BY 4.0",
+  "deidentified": true,
+  "deidentification_checked_by": "UNASSIGNED"
+ },
+ "overlay": [
+  {
+   "id": "a1",
+   "kind": "arrow",
+   "x": 0.44,
+   "y": 0.36,
+   "to_x": 0.5,
+   "to_y": 0.3,
+   "label": {
+    "en": "Free air under the right hemidiaphragm",
+    "ha": "",
+    "yo": "",
+    "ig": ""
+   },
+   "teaching_point": "Erect film only. A supine film will not show this. Free air here means a perforated viscus until proven otherwise.",
+   "reveal": "on_tap"
+  },
+  {
+   "id": "a2",
+   "kind": "region",
+   "shape": "ellipse",
+   "cx": 0.47,
+   "cy": 0.33,
+   "rx": 0.1,
+   "ry": 0.045,
+   "label": {
+    "en": "Lucent crescent between diaphragm and liver"
+   },
+   "reveal": "on_tap"
+  },
+  {
+   "id": "a3",
+   "kind": "region",
+   "shape": "ellipse",
+   "cx": 0.47,
+   "cy": 0.42,
+   "rx": 0.14,
+   "ry": 0.09,
+   "label": {
+    "en": "Liver"
+   },
+   "reveal": "always"
+  },
+  {
+   "id": "a4",
+   "kind": "note",
+   "x": 0.05,
+   "y": 0.94,
+   "label": {
+    "en": "Absence of free air does NOT exclude perforation."
+   },
+   "reveal": "always"
+  }
+ ],
+ "quiz_mode": {
+  "enabled": true,
+  "prompt": "What is the abnormality and what does it mean?",
+  "hide": [
+   "a1",
+   "a2"
+  ],
+  "reveal_on": "tap_or_after_10s",
+  "answer_entry": "typhoid_perforation"
+ },
+ "a11y": {
+  "role": "img",
+  "aria_label": "Erect chest radiograph showing free gas beneath the right hemidiaphragm",
+  "annotations_focusable": true,
+  "reading_order": [
+   "a3",
+   "a2",
+   "a1",
+   "a4"
+  ]
+ }
+}
