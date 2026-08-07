@@ -26,6 +26,26 @@ export const TIER1_REGISTRY = {
   'V-NEPH-001': lazy(() => import('./NephronDiuretics.jsx').then((m) => ({ default: m.NephronDiuretics }))),
   'V-CVS-001': lazy(() => import('./AuscultationAreas.jsx').then((m) => ({ default: m.AuscultationAreas }))),
   'V-PPH-001': lazy(() => import('./FourTs.jsx').then((m) => ({ default: m.FourTs }))),
+  'V-THY-001': lazy(() =>
+    import('./GravesPathophysiology.jsx').then((m) => ({ default: m.GravesPathophysiology })),
+  ),
+  'V-THY-002': lazy(() =>
+    import('./ThyrotoxicosisCompare.jsx').then((m) => ({ default: m.ThyrotoxicosisCompare })),
+  ),
+  'V-THY-003': lazy(() =>
+    import('./AntithyroidMechanism.jsx').then((m) => ({ default: m.AntithyroidMechanism })),
+  ),
+  'V-THY-004': lazy(() =>
+    import('./AgranulocytosisAlert.jsx').then((m) => ({ default: m.AgranulocytosisAlert })),
+  ),
+  'V-GAST-002': lazy(() => import('./CharcotTriad.jsx').then((m) => ({ default: m.CharcotTriad }))),
+  'V-NEUR-004': lazy(() =>
+    import('./McDonaldCriteria.jsx').then((m) => ({ default: m.McDonaldCriteria })),
+  ),
+  'V-NEUR-005': lazy(() => import('./MsNmoAdem.jsx').then((m) => ({ default: m.MsNmoAdem }))),
+  'V-SUMM-001': lazy(() =>
+    import('./FourTopicSummary.jsx').then((m) => ({ default: m.FourTopicSummary })),
+  ),
 };
 
 export const isBuilt = (assetId) => Object.hasOwn(TIER1_REGISTRY, assetId);

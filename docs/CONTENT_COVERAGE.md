@@ -3,8 +3,8 @@
 **What areas exist in the Awibi Scout library, and what does not.**
 
 Updated 7 August 2026 · base release `AWIBI-SCOUT-CONTENT-2026.08.R2` (158 entries)
-· extension release `AWIBI-SCOUT-CONTENT-2026.08.R3` (83 entries) · **241 total**
-· 886 flashcards · 144 checklists / 1,282 items · 96 visual assets
+· extension release `AWIBI-SCOUT-CONTENT-2026.08.R3` (86 entries) · **244 total**
+· 908 flashcards · 147 checklists / 1,303 items · 114 visual assets (20 drawn)
 
 Every extension entry is `approved_for_release: false` with `clinical_reviewer: null`.
 The build cannot set either. Nothing here has a doctor's sign-off.
@@ -132,6 +132,24 @@ Gallstone disease across colic, cholecystitis, cholangitis and pancreatitis · p
 ### 1.20 Cardiovascular, respiratory and renal (3) — `AS-CVSD-*`, `AS-RESP-*`, `AS-RENL-*`
 
 Heart failure and atrial fibrillation · asthma, COPD and pneumonia · the nephron segment by segment, AKI, and the nephrotic–nephritic split.
+
+### 1.21 Thyroid autoimmunity and MS criteria (3) — `AS-THYR-*`, `AS-NEUR-0006`
+
+| Entry | Covers |
+|---|---|
+| `AS-THYR-0001` **Graves disease and the causes of thyrotoxicosis** | TSH receptor antibody mechanism · why the eyes and shins are involved in Graves alone · the three-way split against toxic nodular goitre and thyroiditis · uptake scan as the discriminator · treatment options · thyroid storm |
+| `AS-THYR-0002` **Antithyroid drugs and the agranulocytosis rule** | Thyroid peroxidase block · the extra deiodinase block unique to PTU · why improvement takes 2–6 weeks · titration vs block-and-replace · **agranulocytosis** and the sore-throat rule · hepatotoxicity · pregnancy drug choice |
+| `AS-NEUR-0006` **McDonald criteria** | Dissemination in space and in time · the four locations · how one scan proves two times · oligoclonal bands against paired serum · red flags against MS · **MS vs NMOSD vs ADEM** · the aquaporin-4-before-treatment rule |
+
+**Searchable terms that resolve to these:** graves · exophthalmos · proptosis · pretibial myxoedema ·
+thyroid dermopathy · thyrotoxicosis · toxic nodular goitre · thyroiditis · TRAb · carbimazole ·
+methimazole · propylthiouracil · PTU · thionamide · agranulocytosis · thyroid peroxidase ·
+block and replace · McDonald criteria · dissemination in space · dissemination in time ·
+Dawson fingers · periventricular · juxtacortical · infratentorial · oligoclonal bands · NMO ·
+NMOSD · aquaporin · MOGAD · ADEM · area postrema · longitudinally extensive.
+
+Charcot triad and Reynolds pentad were already carried by `AS-GAST-0001` and the base
+release's *Triads and Tetrads*; this release adds the **diagram** (`V-GAST-002`), not new prose.
 
 ---
 

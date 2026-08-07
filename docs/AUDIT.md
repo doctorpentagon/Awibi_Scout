@@ -9,7 +9,7 @@
 
 | Check | Result |
 |---|---|
-| Content build + validation | **PASS — 83 entries, 0 errors** |
+| Content build + validation | **PASS — 86 entries, 0 errors** |
 | Client production build | **PASS** — 6.8 s |
 | Server boot | **PASS** — library + index built at boot |
 
@@ -29,10 +29,10 @@ Validation is not cosmetic: it rejects duplicate ids, duplicate slugs, collision
 
 | Metric | Value |
 |---|---|
-| Entries | **241** (158 base + 83 extension) |
-| Flashcards | 886 |
-| Checklists / items | 144 / 1,282 |
-| Visual assets specified | 96 |
+| Entries | **244** (158 base + 86 extension) |
+| Flashcards | 908 |
+| Checklists / items | 147 / 1,303 |
+| Visual assets specified | 114 (20 drawn) |
 | Missing summary | **0** |
 | Missing title | **0** |
 | Invalid hazard value | **0** |
@@ -43,11 +43,11 @@ Validation is not cosmetic: it rejects duplicate ids, duplicate slugs, collision
 
 ## D. Search
 
-68 queries covering every newly built area:
+**108 queries · 108 resolved · 0 false gaps** (68 from the first wave, 40 from the thyroid / demyelination wave)
 
-**68 resolved · 0 false gaps**
+Thyroid and demyelination wave (40): graves, graves disease, exophthalmos, proptosis, thyroid dermopathy, pretibial myxoedema, thyrotoxicosis, hyperthyroidism, toxic nodular goitre, thyroiditis, thyroid storm, TRAb, carbimazole, methimazole, propylthiouracil, PTU, thionamide, agranulocytosis, sore throat neutropenia, thyroid peroxidase, block and replace, Charcot triad, Reynolds pentad, cholangitis, McDonald criteria, dissemination in space, dissemination in time, oligoclonal bands, Dawson fingers, periventricular, juxtacortical, infratentorial, NMO, NMOSD, aquaporin, ADEM, MOGAD, multiple sclerosis, transverse myelitis, area postrema.
 
-Includes: cholecystitis, Murphy sign, Charcot triad, McBurney, melaena, tinea, ringworm, psoriasis, versicolor, pityriasis rosea, cellulitis, necrotising fasciitis, whitlow, spondylolisthesis, scoliosis, genu valgum, septic arthritis, gout, otitis externa, cholesteatoma, visual acuity, perimetry, fundoscopy, Gram stain, PCR, iatrogenic, nosocomial, splenectomy, gravida, GTPAL, MUAC, NSAID, triple whammy, rifampicin, ethambutol, neutropenic sepsis, checkpoint inhibitor, chest pain, breathlessness, jaundice, fibrosis, cirrhosis, cystic fibrosis, amyloidosis, cystic hygroma, metaplasia, dysplasia, heart failure, CHA2DS2, asthma, COPD, nephron, nephrotic, nephritic, loop of Henle, Fanconi.
+First wave (68) includes: cholecystitis, Murphy sign, Charcot triad, McBurney, melaena, tinea, ringworm, psoriasis, versicolor, pityriasis rosea, cellulitis, necrotising fasciitis, whitlow, spondylolisthesis, scoliosis, genu valgum, septic arthritis, gout, otitis externa, cholesteatoma, visual acuity, perimetry, fundoscopy, Gram stain, PCR, iatrogenic, nosocomial, splenectomy, gravida, GTPAL, MUAC, NSAID, triple whammy, rifampicin, ethambutol, neutropenic sepsis, checkpoint inhibitor, chest pain, breathlessness, jaundice, fibrosis, cirrhosis, cystic fibrosis, amyloidosis, cystic hygroma, metaplasia, dysplasia, heart failure, CHA2DS2, asthma, COPD, nephron, nephrotic, nephritic, loop of Henle, Fanconi.
 
 ### Latency (warm, n=52)
 
@@ -67,10 +67,17 @@ Budget is 60 ms p95 to suggestions. Running **79× inside it**.
 | `tetanus` | EXACT |
 | `MI` | DISAMBIGUATE (never guesses) |
 | `shock` | NAVIGATE |
-| `transf` `ketoacid` `sulph` | SUBWORD |
-| `diabetis` `pnemonia` | FUZZY |
-| `coombs` `esr` | PARTIAL |
-| `pheochromo` `xyzzyplork` | GAP + logged |
+| `transf` `ketoacid` `sulph` `diabetis` `pnemonia` | SUBWORD |
+| `aquaporin` | FUZZY |
+| `coombs` `esr` `bilirubin` `haemoglobin` | PARTIAL |
+| `xyzzyplork` | GAP + logged |
+
+**Correction to the earlier audit.** `diabetis` and `pnemonia` were previously recorded as FUZZY. They resolve at **SUBWORD**, which sits above FUZZY on the ladder and absorbs most misspellings before the edit-distance layer is reached. Both land on the correct entry (*DKA — Diagnosis*, *CURB-65*), so the behaviour is right and only the label was wrong. FUZZY is genuinely rare precisely because SUBWORD is doing its job; `aquaporin` is a real example.
+
+### Observations carried forward, not fixed in this wave
+
+- **`bilirubin` (0.462) and `haemoglobin` (0.451) return PARTIAL.** They resolve to sensible entries (*Newborn Jaundice*, *Anaemia*) but clear neither the 0.62 gate nor a dedicated entry. These are two of the most-ordered results in the deployment setting and warrant entries of their own. PARTIAL is not logged as a gap, so this would not have surfaced from the gap log alone.
+- **`creatnine` resolves to the polymyositis entry.** Not an index fault: it is matching **creatine** kinase, and `creatnine` sits almost equidistant between *creatine* and *creatinine* as a string. Both correct spellings resolve correctly (`creatinine` → *Creatinine Clearance*, `egfr` → *The Nephron, AKI…*). A real clinical confusable worth a disambiguation entry rather than an index change.
 
 ---
 
@@ -122,6 +129,29 @@ The build sets `approved_for_release: false` and `clinical_reviewer: null` uncon
 6. **Overlapping legend rows** in the nephron diagram (`Math.floor(i/2) * 0`).
 7. **3 id collisions** with the base release — caught by the build, which refused to emit.
 8. **Numeric-literal object key** (`5_fluorouracil`) — caught by the build.
+9. **Two searches resolved to the wrong entry.** `dawson fingers` landed on *Clubbing* (matching "fingers") and `area postrema` landed on *Body Surface Area* (matching "area"). Both returned a confident non-GAP state while being clinically wrong, which is worse than a gap. Fixed by indexing the multi-word terms explicitly on `AS-NEUR-0006`; five further terms (`nmo`, `nmosd`, `adem`, `periventricular`, `infratentorial`) moved from PARTIAL to EXACT as a result.
+
+---
+
+## H2. Thyroid, biliary and demyelination wave
+
+| Check | Result |
+|---|---|
+| New entries | 3 — `AS-THYR-0001`, `AS-THYR-0002`, `AS-NEUR-0006` |
+| New Tier-1 diagrams drawn | **8** |
+| New Tier-3 photographs specified | 5 — **0 built, 0 fabricated** |
+| New Tier-4 radiology specified | 5 — **0 built, 0 fabricated** |
+| Per-diagram gzipped size | 2.03–3.04 KB (budget 2–20 KB) |
+| Initial bundle impact | **none** — all 8 lazily imported and separately chunked |
+| Search queries for this wave | 40 resolved · 0 gaps |
+| Assets arriving licensed or reviewed | **0** ✅ |
+
+The 10 raster assets are **specifications, not images**. The user asked for real clinical
+photographs of Graves disease and real MRIs showing the four McDonald locations. Those cannot
+be produced by a build step: Tier 3/4 assets must be real, licence-cleared and de-identified,
+and the project's hard rule is that no AI-generated radiological image ships. Each renders as
+an honest "specified, not yet sourced" card until commissioned. Sourcing constraints — including
+why MedPix and Radiopaedia are unusable — are recorded per asset and in `VISUAL_COVERAGE.md`.
 
 ---
 
@@ -129,13 +159,13 @@ The build sets `approved_for_release: false` and `clinical_reviewer: null` uncon
 
 These are **deliberate and documented**, not defects:
 
-- **No content is clinically approved.** 0 of 241 entries carry a doctor's sign-off. This is a reference tool for qualified professionals, not a diagnostic device.
+- **No content is clinically approved.** 0 of 244 entries carry a doctor's sign-off. This is a reference tool for qualified professionals, not a diagnostic device.
 - **No drug doses.** Deliberately excluded — they vary by formulary, indication and country. Entries name the drug and the decision.
-- **12 of 96 visual assets are drawn.** Tier 3/4/5 render as commissioning specifications, never as fake placeholders. Every licence still reads `TO BE CONFIRMED`.
+- **20 of 114 visual assets are drawn.** Tier 3/4/5 render as commissioning specifications, never as fake placeholders. Every licence still reads `TO BE CONFIRMED`.
 - **No authentication.** By design for beta — Scout is read-only reference with no per-user data.
 - **Gap log is in-memory.** Zero-result queries survive until server restart. Persisting them is Phase 2.
 - **The contact form has no inbox.** It says so and routes to a real email address rather than silently swallowing messages.
-- **107 of 158 base entries have no visual**, and the 83 extension entries are not yet mapped to visuals.
+- **107 of 158 base entries have no visual.** Of the 86 extension entries, only the 3 newest are mapped to visuals; the other 83 are not.
 
 ---
 

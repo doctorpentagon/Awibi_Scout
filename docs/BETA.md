@@ -94,22 +94,23 @@ hazard levels.
 
 | | |
 |---|---|
-| Entries | 241 (158 base + 83 extension) |
-| Flashcards | 886 |
-| Checklists / items | 144 / 1,282 |
-| Visual assets specified / drawn | 96 / 12 |
+| Entries | 244 (158 base + 86 extension) |
+| Flashcards | 908 |
+| Checklists / items | 147 / 1,303 |
+| Visual assets specified / drawn | 114 / 20 |
 | **Entries with a clinical reviewer** | **0** |
 | **Entries approved for release** | **0** |
 | Search p95 (warm) | 0.76 ms |
 | Initial JS + CSS (gzipped) | 74 KB |
 
 Full audit: [AUDIT.md](AUDIT.md). Coverage by area: [CONTENT_COVERAGE.md](CONTENT_COVERAGE.md).
+Visuals drawn vs specified: [VISUAL_COVERAGE.md](VISUAL_COVERAGE.md).
 
 ---
 
 ## 5. The governance gate — read before going public
 
-`approved_for_release` is `false` and `clinical_reviewer` is `null` on all 241
+`approved_for_release` is `false` and `clinical_reviewer` is `null` on all 244
 entries. The build sets both unconditionally; neither is configurable from the
 authored source. **The pipeline cannot approve clinical content.**
 
@@ -131,7 +132,9 @@ draft — which is precisely what beta testing is for.
   cadence works across restarts.
 - Wire the contact form to a real inbox. It currently states plainly that it
   cannot deliver, rather than swallowing messages.
-- Commission Wave 1 of the visual plan: the 24 Tier-1 SVGs need no licence
-  negotiation, and the 6 skin-tone photographs are the highest clinical value
-  per naira in the whole plan.
+- Commission Wave 1 of the visual plan: the remaining Tier-1 SVGs need no licence
+  negotiation, and the 10 skin-tone photographs are the highest clinical value
+  per naira in the whole plan. See [VISUAL_COVERAGE.md](VISUAL_COVERAGE.md).
+- Source the 5 Tier-3 photographs and 5 Tier-4 MRIs specified for the thyroid and
+  demyelination wave. `V-NEUR-R04` and `V-NEUR-R05` must be commissioned as a pair.
 - Map the 83 extension entries to visual assets.

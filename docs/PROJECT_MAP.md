@@ -151,11 +151,26 @@ awibi-scout/
         ├── components/        shell, sidebar, header, badges
         ├── pages/             Scout, Library, Cards, Sources, About, Reach us
         └── visuals/           ◀ THE MOAT
-            ├── tier1/         hand-authored SVG diagrams
-            ├── AnnotationOverlay.jsx
-            ├── AnnotatedImage.jsx
-            └── Model3DViewer.jsx
+            ├── tier1/         hand-authored SVG diagrams (20 drawn)
+            │   ├── Diagram.jsx        wrapper enforcing the v5 SVG rules
+            │   ├── index.js           TIER1_REGISTRY: asset_id → lazy component
+            │   └── *.jsx              one file per diagram
+            ├── AnnotationOverlay.jsx  normalised 0–1 annotation data over a raster
+            ├── AnnotatedImage.jsx     renders the "specified, not yet sourced" card
+            ├── Model3DViewer.jsx      capability gate + mandatory 2D fallback
+            └── VisualPanel.jsx        tier router
 ```
+
+Documentation lives in `docs/`:
+
+| File | Answers |
+|---|---|
+| `PROJECT_MAP.md` | where is everything, and which source wins |
+| `REQUIREMENTS.md` | R-01…R-133, each tagged to its source |
+| `CONTENT_COVERAGE.md` | which clinical areas exist, and how to query coverage live |
+| `VISUAL_COVERAGE.md` | which visuals are **drawn** vs **specified**, and the sourcing rules |
+| `AUDIT.md` | the release audit |
+| `BETA.md` | publishing, running, and the beta tester briefing |
 
 ---
 
