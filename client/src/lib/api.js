@@ -6,7 +6,18 @@
  * the last good response for that URL if we have one, and say so.
  */
 
-const BASE = '/api';
+/**
+ * Where the API lives.
+ *
+ * Default is a same-origin relative path, because the Express server serves
+ * both the API and this bundle — one origin, no CORS, nothing to configure.
+ *
+ * Set VITE_API_BASE at BUILD time only if you are hosting the frontend
+ * separately from the API (for example the client on Vercel and the server on
+ * Render). The server must then allow that origin via its CORS_ORIGIN
+ * environment variable, or every request will be blocked by the browser.
+ */
+const BASE = (import.meta.env?.VITE_API_BASE || '/api').replace(/\/$/, '');
 
 /** Successful GET responses, kept for the session. Also the offline fallback. */
 const cache = new Map();

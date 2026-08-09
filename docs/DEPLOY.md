@@ -1,107 +1,188 @@
 # DEPLOY.md — Hosting Awibi Scout
 
-**Short answer: you need ONE host, not two. Render (or any Node host) is enough.
-Vercel alone will not run this app as it is built.**
+## The short answer
+
+| Question | Answer |
+|---|---|
+| Is it frontend only? | **No.** Frontend **and** backend. |
+| Does it need a database? | **No.** Do not create one. |
+| How many hosts do I need? | **One.** |
+| Which host? | **Render** (Web Service). |
+| Can I use Vercel? | Only for the frontend, and only with a split setup. It cannot run the backend. |
 
 ---
 
-## 1. Why one host is enough
+## 1. What this app actually is
 
-Scout is a **single Node process**. The Express server does two jobs at once:
+Verified from the code, not assumed:
 
 ```
-server/src/index.js
-  ├── /api/*        the JSON API (search, entries, calculators, visuals)
-  └── /*            serves client/dist — the built React app, with SPA fallback
+client/           React 18 + Vite    -> builds to static files in client/dist
+server/           Node 20 + Express  -> serves /api  AND  serves client/dist
+server/data/*.json  ~2.6 MB of content, read into memory at boot
 ```
 
-That is why `npm start` gives you the whole product on `http://localhost:5188`.
-There is no separate frontend server to deploy.
+**Server dependencies, in full:** `express`, `cors`, `helmet`, `compression`,
+`morgan`. That is the entire list.
 
-So the deployment is: **build the client, start the server, point a domain at it.**
+- **No database driver** of any kind — no Postgres, MySQL, Mongo, SQLite, Prisma or Redis.
+- **The server never writes to disk at runtime.** Nothing is persisted.
+- All content lives as **JSON files committed to the repository** and is loaded
+  into memory when the process starts.
+
+So it is a **two-part app with no database**: a React frontend and a Node
+backend, where the backend also serves the frontend. `npm start` gives you the
+whole product on one URL.
+
+### Do you need Render's PostgreSQL?
+
+**No. Do not create it.** There is nothing to put in it. It would cost money and
+sit empty.
+
+You would only need a database when you add something that must **survive a
+restart**. Right now the only candidate is the **search gap log** (what people
+searched for and did not find), which is currently in memory and is lost on
+every restart or redeploy. That is the first genuine reason you will ever have
+to add storage — and even then a small managed Postgres or a file-backed store
+would do.
 
 ---
 
-## 2. Render — the recommended route
+## 2. Render — the recommended route (works today, no code changes)
 
-Render runs a long-lived Node process, which is exactly what this needs.
+### Step by step
 
-### One-time setup
-
-1. Push the repo to GitHub (see §5).
-2. Go to **render.com → New → Web Service** and connect the repository.
-3. Fill in:
+1. Go to **render.com** → sign in with GitHub → **New +** → **Web Service**.
+2. Connect the repository **doctorpentagon/Awibi_Scout**. Authorise Render if asked.
+3. Fill in the form:
 
 | Field | Value |
 |---|---|
-| Environment | **Node** |
-| Region | pick the one closest to your users |
+| Name | `awibi-scout` |
+| Region | closest to your users |
 | Branch | `master` |
-| Build command | `npm install && npm run build` |
-| Start command | `npm start` |
-| Instance type | Free works for beta; Starter avoids cold-start sleeping |
+| Root Directory | *(leave blank)* |
+| Runtime | **Node** |
+| Build Command | `npm install && npm run build` |
+| Start Command | `npm start` |
+| Instance Type | Free to start |
 
-4. **Environment variables** — add these under *Environment*:
+4. Click **Advanced** → **Add Environment Variable**:
 
-| Key | Value | Why |
-|---|---|---|
-| `NODE_ENV` | `production` | Enables production logging and static serving |
-| `NODE_VERSION` | `20` | The app is built and tested on Node 20 |
+| Key | Value |
+|---|---|
+| `NODE_ENV` | `production` |
+| `NODE_VERSION` | `20` |
 
-Do **not** set `PORT`. Render injects it, and the server already reads
-`process.env.PORT`.
+**Do not set `PORT`.** Render injects it and the server already reads
+`process.env.PORT`. Setting it yourself will break the health check.
 
-5. Deploy. Render gives you `https://<name>.onrender.com`.
+5. **Create Web Service.** First build takes a few minutes.
+6. You get `https://awibi-scout.onrender.com`. That single URL serves the app
+   and the API. Nothing else to configure.
+
+### Redeploying
+
+Render watches the branch. `git push origin master` triggers a new deploy.
 
 ### The free-tier caveat, stated plainly
 
 A free Render service **sleeps after 15 minutes of inactivity** and takes
-roughly 30–60 seconds to wake. For a clinical reference someone opens mid-shift,
-that is a bad first impression. If real people are going to rely on it, use the
-paid Starter tier. For invited beta testers, free is fine — just tell them.
+roughly 30–60 seconds to wake. For someone opening a clinical reference
+mid-shift, that is a bad first impression. Free is fine for invited testers if
+you warn them. If real clinicians will depend on it, use the paid Starter tier
+(~$7/month).
+
+### Optional environment variables
+
+| Key | Purpose |
+|---|---|
+| `CORS_ORIGIN` | Comma-separated origins to allow. Only needed for a split setup. |
+| `LOG_LEVEL` | `debug`, `info`, `warn`, `error` |
+| `DATA_DIR` | Point at a different content folder |
 
 ---
 
-## 3. Vercel — what it can and cannot do here
+## 3. Vercel — what it can and cannot do
 
-Vercel is built for static frontends plus **serverless functions**. It does not
-run a persistent Node server.
+**Vercel cannot host the backend as written.** It runs serverless functions,
+not a long-lived process. The server builds its **six-layer search index in
+memory at boot** (312 entries). Serverless would rebuild that index on cold
+starts, which destroys the latency the app is designed around, and the in-memory
+gap log would reset constantly.
 
-**As the code stands today, deploying to Vercel will not work**, because:
+So Vercel is only an option for the **frontend**, with the API somewhere else.
 
-- The server builds the whole search index **in memory at boot** (309 entries,
-  six index layers). Serverless functions are cold-started per request, so that
-  index would be rebuilt constantly — slow, and it defeats the 60 ms p95 budget
-  the app was designed around.
-- The in-memory gap log would reset on every invocation.
+### The split setup, step by step
 
-You have two honest options if you want Vercel:
+You need **both** hosts. Deploy the API first.
 
-**Option A — split the app (more work, more moving parts)**
-- Frontend (`client/dist`) → Vercel
-- API (`server/`) → Render / Railway / Fly
-- Set `VITE_API_BASE` on Vercel to the API URL, and enable CORS for the Vercel
-  origin on the server. Both must then be kept in sync on every release.
+**Step 1 — API on Render.** Follow §2. Note the URL, e.g.
+`https://awibi-scout-api.onrender.com`.
 
-**Option B — just use Render.** One service, one URL, no CORS, no drift.
+**Step 2 — Allow the Vercel origin on the API.** In Render → Environment, add:
 
-**Recommendation: Option B.** Splitting buys you nothing here — there is no
-heavy frontend build, no ISR, no edge rendering. It only adds a second thing
-that can break.
+```
+CORS_ORIGIN = https://your-project.vercel.app
+```
+
+Without this the browser blocks every request and the app will look broken with
+no obvious cause.
+
+**Step 3 — Frontend on Vercel.**
+
+1. **vercel.com** → **Add New** → **Project** → import `doctorpentagon/Awibi_Scout`.
+2. Configure:
+
+| Field | Value |
+|---|---|
+| Framework Preset | **Vite** |
+| Root Directory | **`client`** |
+| Build Command | `npm run build` |
+| Output Directory | `dist` |
+| Install Command | `npm install` |
+
+3. **Environment Variables** — add:
+
+| Key | Value |
+|---|---|
+| `VITE_API_BASE` | `https://awibi-scout-api.onrender.com/api` |
+
+This is read at **build time**, so changing it later requires a **redeploy**,
+not just a restart.
+
+4. Deploy.
+
+**Step 4 — SPA routing.** Deep links such as `/entry/AS-THYR-0001` must serve
+`index.html`. Vercel's Vite preset usually handles this; if you get a 404 on a
+deep link, add `client/vercel.json`:
+
+```json
+{
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+}
+```
+
+### What the split costs you
+
+- Two services to deploy, monitor and keep in version-sync.
+- CORS to maintain.
+- A Vercel build that is stale until you redeploy after changing the API URL.
+- Slightly slower first paint, since the API is on another origin.
+
+**It buys you nothing here.** There is no heavy frontend build, no ISR, no edge
+rendering, no image optimisation in play. **Use Render alone unless you have a
+specific reason not to.**
 
 ---
 
-## 4. Other hosts that work unchanged
+## 4. Other hosts that work with no changes
 
-Anything that runs a long-lived Node process:
+Anything that runs a persistent Node process: **Railway**, **Fly.io** (good for
+African latency), **Koyeb**, or a **plain VPS** with `pm2` or systemd behind
+nginx.
 
-- **Railway** — same shape as Render, `npm run build` / `npm start`
-- **Fly.io** — good if you want it close to African users; add a `Dockerfile`
-- **A plain VPS** — `npm ci && npm run build && npm start` behind nginx, with
-  `pm2` or a systemd unit to keep it alive
-- **Any Docker host** — the app needs no database, no Redis, no volumes
-
-### Minimal Dockerfile, if you want one
+### Dockerfile, if you want one
 
 ```dockerfile
 FROM node:20-alpine
@@ -119,51 +200,30 @@ CMD ["npm", "start"]
 
 ---
 
-## 5. Pushing to GitHub
+## 5. Before real users see it
 
-```bash
-cd "C:\Users\USER\Desktop\AWIBI SCOUT\awibi-scout"
+Deployable today. Not blockers for invited beta testers; genuine blockers for
+general release:
 
-git remote add origin https://github.com/doctorpentagon/Awibi_Scout.git
-git branch -M master
-git push -u origin master
-```
-
-If the remote already exists, replace the first line with:
-
-```bash
-git remote set-url origin https://github.com/doctorpentagon/Awibi_Scout.git
-```
-
----
-
-## 6. Before you point real users at it
-
-The app is technically deployable today. These are not blockers for a beta with
-invited testers, but they are blockers for general release:
-
-- [ ] **No entry carries a clinical sign-off.** 0 of 309. Anyone reading it must
-      be told that. The banner already says so — do not remove it.
-- [ ] **The gap log is in memory** and is lost on restart or redeploy. On a free
-      tier that sleeps, you will lose the record of what people searched for and
-      did not find — which is the single most valuable beta signal. Persist it
-      before you rely on it.
-- [ ] **The contact form has no inbox.** It states this honestly rather than
-      swallowing messages, but nobody is receiving anything.
+- [ ] **No entry carries a clinical sign-off.** 0 of 312. The banner says so — leave it.
+- [ ] **The gap log is in memory** and is lost on every restart. On a sleeping free tier you will lose the single most valuable beta signal. This is the first thing that will justify a database.
+- [ ] **The contact form has no inbox.** It says so honestly, but nobody receives anything.
 - [ ] **No rate limiting** on the API. Fine behind an invite; not fine public.
-- [ ] **No analytics or error reporting.** You will not know if it breaks for
-      someone.
+- [ ] **No error reporting or analytics.** You will not know when it breaks for someone.
+- [ ] **The repository is public.** The content is readable by anyone. `gh repo edit --visibility private` if that is not what you want.
 
 ---
 
-## 7. What it costs
+## 6. Cost
 
-| Host | Free tier | Realistic paid |
+| Host | Free | Paid |
 |---|---|---|
-| Render | Yes, sleeps after 15 min | ~$7/mo Starter |
-| Railway | Trial credit | usage-based |
-| Fly.io | Small free allowance | usage-based |
+| Render Web Service | Yes, sleeps after 15 min | ~$7/mo Starter |
+| Render PostgreSQL | **not needed** | **do not buy** |
+| Vercel (frontend only) | Generous hobby tier | — |
+| Fly.io / Railway | Small allowance | usage-based |
 | VPS | No | ~$5/mo |
 
-No database, no object storage, no queue — the whole app is a Node process and
-a folder of JSON. That is deliberate, and it is why hosting is this cheap.
+No database, no object storage, no queue, no cache server. The whole app is one
+Node process and a folder of JSON. That is deliberate, and it is why this is
+cheap to run.
