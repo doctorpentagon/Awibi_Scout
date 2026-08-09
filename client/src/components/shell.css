@@ -15,15 +15,15 @@
   border-right: 1px solid var(--line);
   display: flex;
   flex-direction: column;
-  padding: 18px 14px 14px;
+  padding: 16px 12px 12px;
   overflow: auto;
 }
 
 .brand {
   display: flex;
   align-items: center;
-  gap: 9px;
-  padding: 0 6px 16px;
+  gap: 8px;
+  padding: 0 4px 16px;
 }
 .brand img {
   object-fit: contain;
@@ -37,14 +37,14 @@
 }
 .brand-name {
   font-weight: 800;
-  font-size: 15px;
+  font-size: 14px;
   letter-spacing: -0.02em;
 }
 .brand-name-light {
   font-weight: 500;
 }
 .brand-sub {
-  font-size: 9px;
+  font-size: 12px;
   color: var(--muted);
   letter-spacing: 0.04em;
 }
@@ -52,11 +52,11 @@
 .release-chip {
   border: 1px solid var(--line);
   border-radius: var(--r-lg);
-  padding: 9px 11px;
+  padding: 8px 12px;
   display: flex;
-  gap: 9px;
+  gap: 8px;
   align-items: center;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 .release-badge {
   display: grid;
@@ -76,14 +76,14 @@
 .release-title {
   display: block;
   font-weight: 600;
-  font-size: 12.5px;
+  font-size: 12px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .release-sub {
   display: block;
-  font-size: 10.5px;
+  font-size: 12px;
   color: var(--muted);
   white-space: nowrap;
   overflow: hidden;
@@ -94,24 +94,25 @@
   display: flex;
   flex-direction: column;
   gap: 2px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 .nav-group-label {
   padding: 8px 8px 4px;
 }
 
 .nav-item {
+  min-height: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 8px;
   width: 100%;
-  padding: 9px 10px;
+  padding: 8px 8px;
   border: 0;
   border-radius: var(--r-md);
   background: transparent;
   color: var(--ink-2);
-  font-size: 13.5px;
+  font-size: 13px;
   font-weight: 500;
   text-align: left;
   cursor: pointer;
@@ -130,7 +131,7 @@
 .nav-item-label {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   min-width: 0;
 }
 .nav-icon {
@@ -140,14 +141,14 @@
   flex: none;
 }
 .nav-kbd {
-  font-size: 10px;
+  font-size: 12px;
   color: var(--faint);
 }
 
 .nav-footer {
   margin-top: auto;
   border-top: 1px solid var(--line-2);
-  padding-top: 10px;
+  padding-top: 8px;
   display: flex;
   flex-direction: column;
   gap: 2px;
@@ -175,7 +176,7 @@
   z-index: 50;
   background: var(--card);
   border-bottom: 1px solid var(--line);
-  padding: 11px var(--page-x);
+  padding: 12px var(--page-x);
   display: flex;
   align-items: center;
   gap: clamp(10px, 2vw, 22px);
@@ -218,11 +219,11 @@
 .search-input {
   width: 100%;
   height: 40px;
-  padding: 0 74px 0 36px;
+  padding: 0 72px 0 36px;
   border-radius: 10px;
   border: 1px solid transparent;
   background: var(--skel-2);
-  font-size: 13.5px;
+  font-size: 13px;
   color: var(--ink);
   appearance: none;
 }
@@ -239,15 +240,15 @@
   top: 50%;
   transform: translateY(-50%);
   display: flex;
-  gap: 3px;
+  gap: 2px;
   pointer-events: none;
 }
 .search-kbd kbd {
-  font-size: 10px;
+  font-size: 12px;
   border: 1px solid var(--line);
   background: var(--card);
   border-radius: 5px;
-  padding: 2px 5px;
+  padding: 2px 4px;
   color: var(--muted);
 }
 
@@ -267,8 +268,8 @@
 .mode-badge {
   display: flex;
   align-items: center;
-  gap: 9px;
-  padding-left: 10px;
+  gap: 8px;
+  padding-left: 8px;
   border-left: 1px solid var(--line-2);
 }
 .mode-avatar {
@@ -289,11 +290,11 @@
 .mode-title {
   display: block;
   font-weight: 600;
-  font-size: 12.5px;
+  font-size: 12px;
 }
 .mode-sub {
   display: block;
-  font-size: 10.5px;
+  font-size: 12px;
   color: var(--muted);
 }
 
@@ -309,7 +310,7 @@
   flex-wrap: wrap;
   gap: 12px;
   justify-content: space-between;
-  font-size: 12.5px;
+  font-size: 12px;
   color: var(--muted);
   background: var(--card);
 }
@@ -350,17 +351,17 @@
 
 @media (max-width: 620px) {
   .search-input {
-    padding-right: 14px;
+    padding-right: 12px;
   }
   .search-kbd {
     display: none;
   }
   .emergency-btn {
     font-size: 0;
-    padding: 8px 11px;
+    padding: 8px 12px;
   }
   .emergency-btn::before {
     content: '⚡';
-    font-size: 15px;
+    font-size: 14px;
   }
 }

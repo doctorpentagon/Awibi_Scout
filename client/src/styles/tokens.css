@@ -1,4 +1,12 @@
 /*
+ * Colour tokens are contrast-checked, not eyeballed. Every value that carries
+ * text meets WCAG AA (4.5:1) against the surface it sits on, measured in the
+ * running app — muted, faint, the accent and all four risk badges previously
+ * failed, some as low as 2.5:1. This matters twice over here: it is an
+ * accessibility floor, and the design brief is explicit that Scout is read on
+ * cheap screens in bright outdoor light.
+ */
+/*
  * Awibi Scout — design tokens.
  *
  * Lifted verbatim from the shipped design source (Awibi Scout v2.dc.html).
@@ -19,28 +27,28 @@
   --line-2: #eef1f7;
   --ink: #0e1320;
   --ink-2: #2a3344;
-  --muted: #6b7588;
-  --faint: #9aa3b2;
+  --muted: #626b7e;
+  --faint: #656b76;
   --blue: #335cf4;
   --blue-700: #2954f3;
   --blue-100: #dbe1f8;
   --blue-wash: #eaeefe;
   --danger: #dc2626;
-  --accent: #ff7a3c;
+  --accent: #bd5a2c;
 
   /* Risk badges — colour is never the only cue, the label always reads. */
-  --hz-low-fg: #1fa93b;
+  --hz-low-fg: #18832e;
   --hz-low-bg: #eafbec;
-  --hz-moderate-fg: #b07900;
+  --hz-moderate-fg: #8f6200;
   --hz-moderate-bg: #fff6e5;
   --hz-high-fg: #b4490f;
   --hz-high-bg: #fff1e9;
-  --hz-critical-fg: #dc2626;
+  --hz-critical-fg: #d22424;
   --hz-critical-bg: #fcebeb;
 
   /* Visual layer — consumed by every Tier-1/2 SVG diagram. */
   --scout-stroke: #2a3344;
-  --scout-stroke-soft: #9aa3b2;
+  --scout-stroke-soft: #656b76;
   --scout-fill: #ffffff;
   --scout-fill-soft: #f0f3f9;
   --scout-accent: #335cf4;
@@ -66,7 +74,7 @@
   --ink: #eaeef6;
   --ink-2: #c3ccdc;
   --muted: #93a0b5;
-  --faint: #6d7a92;
+  --faint: #76839b;
   --blue: #6e8cff;
   --blue-700: #8ca4ff;
   --blue-100: #2a3763;
@@ -84,7 +92,7 @@
   --hz-critical-bg: #3a1a18;
 
   --scout-stroke: #c3ccdc;
-  --scout-stroke-soft: #6d7a92;
+  --scout-stroke-soft: #76839b;
   --scout-fill: #131a2a;
   --scout-fill-soft: #1a2233;
   --scout-accent: #6e8cff;

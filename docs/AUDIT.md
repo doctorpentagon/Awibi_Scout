@@ -9,7 +9,7 @@
 
 | Check | Result |
 |---|---|
-| Content build + validation | **PASS — 151 entries, 0 errors** |
+| Content build + validation | **PASS — 153 entries, 0 errors** |
 | Client production build | **PASS** — 6.8 s |
 | Server boot | **PASS** — library + index built at boot |
 
@@ -29,7 +29,7 @@ Validation is not cosmetic: it rejects duplicate ids, duplicate slugs, collision
 
 | Metric | Value |
 |---|---|
-| Entries | **309** (158 base + 151 extension) |
+| Entries | **311** (158 base + 153 extension) |
 | Flashcards | 1,436 |
 | Checklists | 212 |
 | Visual assets specified | 114 (20 drawn) |

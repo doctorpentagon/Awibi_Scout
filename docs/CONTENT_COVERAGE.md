@@ -3,7 +3,7 @@
 **What areas exist in the Awibi Scout library, and what does not.**
 
 Updated 7 August 2026 · base release `AWIBI-SCOUT-CONTENT-2026.08.R2` (158 entries)
-· extension release `AWIBI-SCOUT-CONTENT-2026.08.R3` (151 entries) · **309 total**
+· extension release `AWIBI-SCOUT-CONTENT-2026.08.R3` (153 entries) · **311 total**
 · 1,436 flashcards · 212 checklists · 114 visual assets (20 drawn)
 
 Every extension entry is `approved_for_release: false` with `clinical_reviewer: null`.

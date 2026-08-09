@@ -94,7 +94,7 @@ hazard levels.
 
 | | |
 |---|---|
-| Entries | 309 (158 base + 151 extension) |
+| Entries | 311 (158 base + 153 extension) |
 | Flashcards | 1,436 |
 | Checklists | 212 |
 | Visual assets specified / drawn | 114 / 20 |

@@ -257,3 +257,31 @@ The template proposes Inter + `#2563EB` + 8 px base + `rounded-md`. Scout's ship
 | 9 PNG screenshots | R-100…R-107 |
 | `Awibi Scout v2.dc.html` | R-110…R-115 |
 | `governance.json` | R-120…R-124 |
+
+## 12. Design system conformance
+
+Audited in the running app with Chrome, not by eye. Measurements before and
+after the normalisation pass:
+
+| Check | Before | After |
+|---|---|---|
+| Distinct font sizes in use | 28 | **8** |
+| Text below the 12px floor | 3,300+ nodes | **0** |
+| WCAG AA contrast failures | 2,150 nodes | **0** |
+| Touch targets under 40px (phone profile) | 738 | **0** |
+| Spacing values off the grid | 3,350 | 25 (all `auto` margins) |
+
+### Deliberate deviation from `typography.md`
+
+The standard sets a **16px minimum body text** size. Scout uses **16px for
+reading prose** (entry bodies) but keeps **13–14px for UI chrome** — table
+cells, chips, labels, the results grid.
+
+The reason: Scout's primary screen is a dense clinical results table, and the
+supplied design (`Awibi Scout v2.dc.html`) is built at a 14px base. Forcing
+16px on the chrome would show roughly a third fewer rows per screen on the
+device this is meant for. Reading text — the part someone actually reads at
+length — meets the standard. This is the same trade every clinical system and
+spreadsheet makes, and it is recorded here rather than left implicit.
+
+The 12px floor is absolute and is enforced: nothing renders below it.

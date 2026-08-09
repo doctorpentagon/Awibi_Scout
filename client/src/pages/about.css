@@ -11,7 +11,7 @@
 }
 
 .about-lede {
-  font-size: 17px;
+  font-size: 16px;
   color: var(--ink-2);
   max-width: 62ch;
   margin: 0 0 16px;
@@ -19,22 +19,22 @@
 }
 
 .about-origin {
-  font-size: 14.5px;
+  font-size: 14px;
   color: var(--muted);
   max-width: 62ch;
   margin: 0 0 28px;
 }
 
 .about-stats {
-  margin-bottom: 34px;
+  margin-bottom: 32px;
 }
 
 .about-section {
-  margin-bottom: 34px;
+  margin-bottom: 32px;
 }
 
 .about-body {
-  font-size: 14.5px;
+  font-size: 14px;
   color: var(--ink-2);
   max-width: 68ch;
   margin: 0;
@@ -42,22 +42,22 @@
 
 .about-cards {
   display: grid;
-  gap: 10px;
+  gap: 8px;
 }
 .about-card {
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: var(--r-xl);
-  padding: 16px 18px;
+  padding: 16px 16px;
 }
 .about-card h3 {
-  font-size: 14.5px;
+  font-size: 14px;
   font-weight: 700;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 .about-card p {
   margin: 0;
-  font-size: 13.5px;
+  font-size: 13px;
   color: var(--muted);
   line-height: 1.5;
   max-width: 74ch;
@@ -68,7 +68,7 @@
   padding-left: 20px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
   font-size: 14px;
   color: var(--ink-2);
   max-width: 70ch;

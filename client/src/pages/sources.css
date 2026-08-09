@@ -10,14 +10,14 @@
 }
 
 .sources-filter {
-  margin-bottom: 14px;
+  margin-bottom: 12px;
   max-width: 100%;
 }
 
 .sources-note {
   margin: 0 0 16px;
   max-width: 76ch;
-  font-size: 13.5px;
+  font-size: 13px;
 }
 
 /* .table-wrap and .registry now live in styles/base.css — shared by /sources and /visuals. */
@@ -42,19 +42,19 @@
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: var(--r-md);
-  padding: 14px;
+  padding: 12px;
 }
 .add-term {
   font-weight: 700;
   font-size: 14px;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 .add-card p {
   margin: 0 0 8px;
-  font-size: 12.5px;
+  font-size: 12px;
 }
 .add-hits {
-  font-size: 11px;
+  font-size: 12px;
   color: var(--faint);
 }
 
@@ -63,7 +63,7 @@
 .pic-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  gap: 14px;
+  gap: 12px;
 }
 .pic-card {
   background: var(--card);
@@ -78,17 +78,17 @@
   border-bottom: 1px dashed var(--line);
   background: var(--skel-2);
   color: var(--faint);
-  font-size: 11px;
+  font-size: 12px;
   text-align: center;
   padding: 12px;
 }
 .pic-body {
-  padding: 12px 14px;
+  padding: 12px 12px;
 }
 .pic-body h3 {
-  font-size: 13.5px;
+  font-size: 13px;
   font-weight: 700;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   line-height: 1.35;
 }
 .pic-body p {
@@ -105,17 +105,17 @@
 .short-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 10px;
+  gap: 8px;
 }
 .short-card {
   display: flex;
-  gap: 10px;
+  gap: 8px;
   align-items: baseline;
-  padding: 10px 13px;
+  padding: 8px 12px;
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: var(--r-md);
-  font-size: 12.5px;
+  font-size: 12px;
 }
 .short-card.ambiguous {
   border-left: 3px solid var(--accent);

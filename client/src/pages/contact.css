@@ -9,7 +9,7 @@
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: var(--r-xl);
-  padding: 22px;
+  padding: 20px;
 }
 
 .contact-row {
@@ -24,7 +24,7 @@
 .contact-textarea {
   min-height: 130px;
   resize: vertical;
-  padding-top: 10px;
+  padding-top: 8px;
 }
 .contact-submit {
   width: 100%;
@@ -32,8 +32,8 @@
 }
 
 .contact-sent {
-  margin-top: 14px;
-  padding: 13px 15px;
+  margin-top: 12px;
+  padding: 12px 16px;
   border-radius: var(--r-md);
   border-left: 3px solid var(--accent);
   background: var(--hz-high-bg);
@@ -42,8 +42,8 @@
 }
 
 .contact-warning {
-  margin: 14px 0 0;
-  font-size: 12.5px;
+  margin: 12px 0 0;
+  font-size: 12px;
   color: var(--muted);
 }
 
@@ -56,18 +56,18 @@
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: var(--r-xl);
-  padding: 15px 17px;
+  padding: 16px 16px;
 }
 .contact-route-value {
-  margin: 7px 0 6px;
-  font-size: 15px;
+  margin: 8px 0 4px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: -0.01em;
   word-break: break-word;
 }
 .contact-route p {
   margin: 0;
-  font-size: 12.5px;
+  font-size: 12px;
   line-height: 1.45;
 }
 
