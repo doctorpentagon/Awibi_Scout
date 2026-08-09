@@ -29,7 +29,25 @@ const SEQUENCED = new Set([
   'management_principles',
 ]);
 
-export function BodyRenderer({ body, depth = 0 }) {
+import { Link } from 'react-router-dom';
+import { resolveEntryLink } from '../lib/entryLinks.js';
+
+/**
+ * A name inside a navigational index becomes a link when a matching entry
+ * exists, and stays plain text when it does not. A list of bare names is not
+ * navigation — but a link that 404s is worse than no link.
+ */
+function IndexLink({ text, linkMap }) {
+  const slug = resolveEntryLink(linkMap, text);
+  if (!slug) return <>{text}</>;
+  return (
+    <Link to={`/entry/${slug}`} className="index-link">
+      {text}
+    </Link>
+  );
+}
+
+export function BodyRenderer({ body, depth = 0, linkMap = null }) {
   if (!body || typeof body !== 'object' || Array.isArray(body)) return null;
   const fields = Object.entries(body).filter(([, v]) => !isEmpty(v));
   if (!fields.length) return null;
@@ -39,14 +57,14 @@ export function BodyRenderer({ body, depth = 0 }) {
       {fields.map(([key, value]) => (
         <section className={`body-field depth-${Math.min(depth, 2)}`} key={key}>
           <h3 className="body-field-title">{humanise(key)}</h3>
-          <FieldValue field={key} value={value} depth={depth} />
+          <FieldValue field={key} value={value} depth={depth} linkMap={linkMap} />
         </section>
       ))}
     </>
   );
 }
 
-function FieldValue({ field, value, depth }) {
+function FieldValue({ field, value, depth, linkMap = null }) {
   if (typeof value === 'string') return <p className="body-text">{value}</p>;
 
   if (typeof value === 'boolean') {
@@ -63,7 +81,9 @@ function FieldValue({ field, value, depth }) {
       return (
         <List className={`body-list${List === 'ol' ? ' body-list-ordered' : ''}`}>
           {value.map((v, i) => (
-            <li key={i}>{v}</li>
+            <li key={i}>
+              <IndexLink text={v} linkMap={linkMap} />
+            </li>
           ))}
         </List>
       );
@@ -109,7 +129,7 @@ function FieldValue({ field, value, depth }) {
   // Plain object — nest one level deeper.
   return (
     <div className="body-nested">
-      <BodyRenderer body={value} depth={depth + 1} />
+      <BodyRenderer body={value} depth={depth + 1} linkMap={linkMap} />
     </div>
   );
 }

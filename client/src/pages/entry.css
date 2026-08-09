@@ -271,3 +271,11 @@
 .pending {
   color: var(--hz-high-fg);
 }
+
+/* A name inside a navigational index that resolves to a real entry. */
+.index-link {
+  color: var(--blue);
+}
+.index-link:hover {
+  text-decoration: underline;
+}

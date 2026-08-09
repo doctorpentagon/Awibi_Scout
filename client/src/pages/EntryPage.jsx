@@ -1,9 +1,10 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { api } from '../lib/api.js';
 import { useApi } from '../hooks/useApi.js';
 import { ErrorState, Loading, RiskBadge, TimeCritical } from '../components/ui.jsx';
 import { BodyRenderer, humanise } from '../components/BodyRenderer.jsx';
+import { loadEntryLinks } from '../lib/entryLinks.js';
 import { Calculator } from '../components/Calculator.jsx';
 import { VisualPanel } from '../visuals/VisualPanel.jsx';
 import './entry.css';
@@ -14,6 +15,19 @@ export function EntryPage() {
     (signal) => api.entry(idOrSlug, signal),
     [idOrSlug],
   );
+
+  // Only a navigational index needs the title -> slug lookup, so only an index
+  // pays for the request. Everything else renders without it.
+  const [linkMap, setLinkMap] = useState(null);
+  const isIndex = entry?.body?.hub_type === 'navigational_index';
+  useEffect(() => {
+    if (!isIndex) return undefined;
+    const ac = new AbortController();
+    loadEntryLinks(ac.signal).then(setLinkMap).catch(() => {
+      /* names simply stay as plain text */
+    });
+    return () => ac.abort();
+  }, [isIndex]);
 
   if (loading && !entry) return <Loading label="Opening the entry…" />;
   if (error) return <ErrorState error={error} onRetry={refetch} />;
@@ -64,7 +78,7 @@ export function EntryPage() {
       {hasCalc && <Calculator entry={entry} />}
 
       <div className="entry-body">
-        <BodyRenderer body={entry.body} />
+        <BodyRenderer body={entry.body} linkMap={linkMap} />
       </div>
 
       {entry.visual_assets?.length > 0 && <VisualPanel assets={entry.visual_assets} entry={entry} />}
