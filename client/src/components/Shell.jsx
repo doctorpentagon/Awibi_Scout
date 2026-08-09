@@ -33,12 +33,47 @@ export function Shell({ meta, children, query, onQuery, emergency, onEmergency }
   const navigate = useNavigate();
   const searchRef = useRef(null);
 
-  const [dark, setDark] = useLocalState('awibi_scout_dark', false);
+  // Theme resolution, in order: an explicit stored choice, then the operating
+  // system. useLocalState is deliberately NOT used here — it writes on mount,
+  // which would persist a preference the user never expressed and freeze the
+  // app to whatever their OS happened to be on their first visit.
+  const [dark, setDark] = useState(() => {
+    try {
+      const stored = localStorage.getItem('awibi_scout_dark');
+      if (stored !== null) return JSON.parse(stored);
+    } catch {
+      /* private mode — fall through to the OS */
+    }
+    return window.matchMedia?.('(prefers-color-scheme: dark)').matches ?? false;
+  });
   const [navOpen, setNavOpen] = useState(false);
 
   useEffect(() => {
     document.documentElement.dataset.theme = dark ? 'dark' : 'light';
   }, [dark]);
+
+  // Follow the OS until the reader makes a choice of their own.
+  useEffect(() => {
+    if (localStorage.getItem('awibi_scout_dark') !== null) return undefined;
+    const mq = window.matchMedia?.('(prefers-color-scheme: dark)');
+    if (!mq) return undefined;
+    const onChange = (e) => setDark(e.matches);
+    mq.addEventListener('change', onChange);
+    return () => mq.removeEventListener('change', onChange);
+  }, []);
+
+  // Only an explicit toggle is remembered.
+  const toggleDark = () => {
+    setDark((prev) => {
+      const next = !prev;
+      try {
+        localStorage.setItem('awibi_scout_dark', JSON.stringify(next));
+      } catch {
+        /* private mode, quota — the app still works, it just forgets */
+      }
+      return next;
+    });
+  };
 
   // ⌘K / Ctrl-K focuses search from anywhere; Escape clears it.
   useEffect(() => {
@@ -123,7 +158,7 @@ export function Shell({ meta, children, query, onQuery, emergency, onEmergency }
               Reach us
             </span>
           </NavLink>
-          <button type="button" className="nav-item" onClick={() => setDark(!dark)}>
+          <button type="button" className="nav-item" onClick={toggleDark}>
             <span className="nav-item-label">
               <span className="nav-icon" aria-hidden="true">
                 {dark ? '☀' : '☾'}

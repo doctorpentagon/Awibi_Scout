@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import { Suspense, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { api } from '../lib/api.js';
 import { useApi } from '../hooks/useApi.js';
 import { ErrorState, Loading, PageHead, RiskBadge, StatTile } from '../components/ui.jsx';
-import { builtCount, isBuilt } from '../visuals/tier1/index.js';
+import { TIER1_REGISTRY, builtCount, isBuilt } from '../visuals/tier1/index.js';
 import './visualsPage.css';
 
 const TIERS = [
@@ -91,6 +91,15 @@ export function VisualsPage() {
             <h2 className="asset-card-title">{a.title}</h2>
             <p className="asset-card-does">{a.changes_what_a_clinician_does}</p>
 
+            {/*
+              A "Drawn" badge told the reader an asset existed without ever
+              showing it — the drawn diagrams were only reachable from the entry
+              they serve. The preview is opened on demand rather than eagerly,
+              so browsing 114 cards does not pull 20 lazy chunks over a slow
+              connection.
+            */}
+            {isBuilt(a.asset_id) && <AssetPreview assetId={a.asset_id} title={a.title} />}
+
             <dl className="asset-card-meta">
               <div>
                 <dt>Job</dt>
@@ -159,6 +168,41 @@ export function VisualsPage() {
             </table>
           </div>
         </section>
+      )}
+    </div>
+  );
+}
+
+/**
+ * On-demand preview of a drawn Tier-1 asset.
+ *
+ * The component behind each asset_id is lazily imported, so nothing is fetched
+ * until the reader asks for it. That matters on a metered connection: the index
+ * lists 114 assets and eagerly mounting the 20 drawn ones would download every
+ * diagram chunk just to scroll past them.
+ */
+function AssetPreview({ assetId, title }) {
+  const [open, setOpen] = useState(false);
+  const Diagram = TIER1_REGISTRY[assetId];
+  if (!Diagram) return null;
+
+  return (
+    <div className="asset-preview">
+      <button
+        type="button"
+        className="asset-preview-toggle"
+        onClick={() => setOpen((v) => !v)}
+        aria-expanded={open}
+        aria-label={`${open ? 'Hide' : 'Show'} diagram: ${title}`}
+      >
+        {open ? 'Hide diagram' : 'Show diagram'}
+      </button>
+      {open && (
+        <div className="asset-preview-body">
+          <Suspense fallback={<p className="muted">Loading diagram…</p>}>
+            <Diagram />
+          </Suspense>
+        </div>
       )}
     </div>
   );

@@ -7,9 +7,15 @@ import './styles/tokens.css';
 import './styles/base.css';
 
 // Set the theme before first paint so a dark-mode user never sees a white flash.
+//
+// An explicit choice always wins. With no stored choice we follow the operating
+// system, because defaulting to light meant a dark-mode user got the white flash
+// this block exists to prevent — and on a night shift that is the whole point.
 try {
-  const saved = JSON.parse(localStorage.getItem('awibi_scout_dark') || 'false');
-  document.documentElement.dataset.theme = saved ? 'dark' : 'light';
+  const stored = localStorage.getItem('awibi_scout_dark');
+  const prefersDark = window.matchMedia?.('(prefers-color-scheme: dark)').matches ?? false;
+  const dark = stored === null ? prefersDark : JSON.parse(stored);
+  document.documentElement.dataset.theme = dark ? 'dark' : 'light';
 } catch {
   document.documentElement.dataset.theme = 'light';
 }

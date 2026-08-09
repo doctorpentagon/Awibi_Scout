@@ -255,3 +255,61 @@ h4 {
   left: 8px;
   text-decoration: none;
 }
+
+/* ---------------- data tables ----------------
+ * `.table-wrap` + `.registry` are used by more than one page, so they live
+ * here rather than in a single page's stylesheet. They were previously only
+ * in sources.css, which VisualsPage does not import — so the registry table
+ * on /visuals had no scroll container and overflowed the viewport on a phone.
+ * A wide table must scroll inside its own box, never push the page sideways.
+ */
+.table-wrap {
+  overflow-x: auto;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--r-xl);
+  max-width: 100%;
+
+  /* `overflow-x: auto` alone did NOT stop the 720px-wide registry table
+   * widening the document on a phone — /sources and /visuals could both be
+   * dragged sideways at 390px. Measured in Chrome: width:100%, max-width:100%,
+   * min-width:0 on the ancestors and overflow-x:hidden on .main all failed;
+   * only paint containment held the table inside its own box. It is also the
+   * honest declaration for a scroll container — this element's painting is its
+   * own business. The table still scrolls horizontally inside the wrapper. */
+  contain: paint;
+}
+
+.registry {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+  min-width: 720px;
+}
+.registry th {
+  text-align: left;
+  padding: 12px 16px;
+  background: var(--skel-2);
+  border-bottom: 1px solid var(--line);
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.registry td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--line-2);
+  vertical-align: middle;
+}
+.registry tr:last-child td {
+  border-bottom: 0;
+}
+.registry tbody tr:hover {
+  background: var(--skel-2);
+}
+.registry-code,
+.registry-version {
+  font-size: 11.5px;
+  color: var(--faint);
+  white-space: nowrap;
+}
