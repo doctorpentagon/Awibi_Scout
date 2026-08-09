@@ -12,7 +12,7 @@ export default [
     intents: ['identify', 'classify'],
     hazard: 'critical',
     urgency: 'urgent',
-    aka: ['heart failure', 'atrial fibrillation', 'af', 'hfref', 'hfpef', 'ccf', 'congestive cardiac failure'],
+    aka: ['heart failure', 'atrial fibrillation', 'af', 'hfref', 'hfpef', 'ccf', 'congestive cardiac failure', 'cardiac failure', 'chf', 'congestive heart failure', 'left ventricular failure', 'lvf'],
     terms: ['heart failure', 'hfref', 'hfpef', 'bnp', 'orthopnoea', 'pnd', 'atrial fibrillation', 'cha2ds2-vasc', 'has-bled', 'rate control', 'anticoagulation', 'ejection fraction'],
     confirm_locally: true,
     body: {
