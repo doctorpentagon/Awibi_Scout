@@ -1,0 +1,253 @@
+/** Wave 6 — the remaining cardiology backlog. */
+
+export default [
+  {
+    id: 'AS-CARD-0005',
+    type: 'differential',
+    title: 'Cardiomyopathies and Wolff-Parkinson-White',
+    short: 'Cardiomyopathy and WPW',
+    summary:
+      'HOCM is the one that kills young athletes, and its murmur behaves BACKWARDS — louder on standing and Valsalva, quieter on squatting. In WPW with atrial fibrillation, AV-nodal blockers can cause ventricular fibrillation, so the intuitive drug is the fatal one.',
+    domains: ['cardiovascular', 'emergency_medicine'],
+    intents: ['identify', 'classify'],
+    hazard: 'critical',
+    urgency: 'urgent',
+    aka: ['cardiomyopathy', 'dilated cardiomyopathy', 'hypertrophic cardiomyopathy', 'hocm', 'restrictive cardiomyopathy', 'arrhythmogenic right ventricular cardiomyopathy', 'takotsubo', 'wolff parkinson white', 'wpw', 'delta wave', 'pre-excitation'],
+    terms: ['cardiomyopathy', 'dilated', 'hypertrophic', 'hocm', 'restrictive', 'arvc', 'takotsubo', 'peripartum', 'sudden cardiac death', 'valsalva', 'squatting', 'systolic anterior motion', 'wolff parkinson white', 'wpw', 'delta wave', 'short pr', 'orthodromic', 'antidromic', 'accessory pathway', 'ablation'],
+    confirm_locally: true,
+    body: {
+      dilated_cardiomyopathy: {
+        what: 'A dilated, poorly contracting ventricle with systolic failure. The commonest cardiomyopathy.',
+        causes: 'Idiopathic and genetic (a substantial proportion — so take a family history) · ALCOHOL · viral myocarditis · PERIPARTUM · thyroid disease · haemochromatosis · chemotherapy, notably ANTHRACYCLINES and trastuzumab · tachycardia-induced (which is reversible if the arrhythmia is controlled — worth remembering, because it is a curable cardiomyopathy) · nutritional (thiamine deficiency, wet beriberi) · HIV · Chagas disease where endemic.',
+        peripartum: 'Develops in the last month of pregnancy or the first five months postpartum. It is under-recognised because breathlessness and oedema are attributed to normal pregnancy. It carries a real risk of recurrence in subsequent pregnancies, which must be discussed before another conception.',
+        management: 'Standard heart failure therapy, treat the cause, consider device therapy and anticoagulation where indicated.',
+      },
+      hypertrophic_cardiomyopathy: {
+        what: 'Genetic (usually autosomal dominant sarcomeric protein mutation) causing inappropriate LEFT VENTRICULAR HYPERTROPHY, often asymmetric septal hypertrophy, with a small stiff cavity and DIASTOLIC dysfunction. Where there is dynamic outflow tract obstruction it is called HOCM.',
+        why_it_matters: 'It is the leading cause of SUDDEN CARDIAC DEATH IN YOUNG PEOPLE AND ATHLETES, and the first presentation is frequently death. Family screening therefore saves lives — every first-degree relative of an affected person needs assessment.',
+        the_murmur_that_behaves_backwards: {
+          the_rule: 'The murmur is an EJECTION SYSTOLIC murmur that gets LOUDER when preload or afterload FALLS, because a smaller cavity worsens the dynamic obstruction. So it is LOUDER on STANDING and on VALSALVA, and QUIETER on SQUATTING or with handgrip.',
+          why_this_is_diagnostically_powerful: 'Aortic stenosis does the OPPOSITE — it gets QUIETER on standing and Valsalva, because less blood is crossing the valve. Standing the patient up is a free bedside test that separates the two, and it is rarely performed.',
+        },
+        other_features: 'Exertional syncope or pre-syncope (an ominous symptom that demands urgent assessment), angina with normal coronaries, palpitations, breathlessness, a JERKY carotid pulse, a double apical impulse, and a fourth heart sound. ECG shows LVH with deep T-wave inversion, and echocardiography shows the hypertrophy and SYSTOLIC ANTERIOR MOTION of the mitral valve.',
+        the_prescribing_hazard:
+          'AVOID anything that reduces preload or afterload or increases contractility, because all of them WORSEN the dynamic obstruction: NITRATES, ACE inhibitors, diuretics in excess, digoxin, and inotropes. Beta-blockers and rate-limiting calcium channel blockers are the mainstay because they slow the heart and allow filling. Giving GTN to a patient with chest pain who turns out to have HOCM can precipitate collapse.',
+        risk_and_management: 'Risk stratify for sudden death (family history of sudden death, unexplained syncope, massive hypertrophy, non-sustained VT, abnormal blood pressure response to exercise) and consider an implantable defibrillator. Advise on exercise restriction per specialist guidance. Screen the family.',
+      },
+      restrictive_cardiomyopathy: {
+        what: 'A stiff, non-compliant ventricle with impaired FILLING but often preserved systolic function. It causes predominantly RIGHT-sided failure with a raised JVP, ascites and oedema out of proportion to the pulmonary findings.',
+        causes: 'AMYLOIDOSIS (the commonest and most important — suspect it with heart failure plus a thick ventricle on echo but LOW voltages on ECG, which is a discordance that should always prompt the thought), sarcoidosis, haemochromatosis, endomyocardial fibrosis (important in tropical regions), radiation, and hypereosinophilic syndrome.',
+        the_key_differential: 'CONSTRICTIVE PERICARDITIS produces a very similar picture but is SURGICALLY CURABLE, so distinguishing them matters enormously. Imaging, haemodynamics and pericardial calcification help.',
+      },
+      arvc: 'Arrhythmogenic right ventricular cardiomyopathy — fibrofatty replacement of the right ventricle causing ventricular arrhythmias and sudden death, again typically in young people and often provoked by exercise. Look for epsilon waves and T-wave inversion in V1 to V3. Another cause for family screening.',
+      takotsubo: 'Stress-induced apical ballooning, classically in postmenopausal women after intense emotional or physical stress. It MIMICS acute myocardial infarction with ST elevation and raised troponin, but the coronaries are unobstructed and the ventricle recovers over weeks. It cannot be distinguished from MI without angiography, so it is not a diagnosis to make in the emergency department.',
+      wolff_parkinson_white: {
+        what: 'An ACCESSORY PATHWAY (bundle of Kent) connecting atrium to ventricle directly, bypassing the AV node.',
+        the_resting_ecg: 'SHORT PR interval, a DELTA WAVE (slurred upstroke of the QRS from early ventricular activation through the pathway), and a widened QRS. Repolarisation abnormalities may mimic ischaemia or a prior infarct.',
+        the_tachycardias: {
+          orthodromic: 'Commonest. Conducts DOWN the AV node and BACK UP the accessory pathway, giving a NARROW complex regular tachycardia. It looks like ordinary SVT and is treated as such.',
+          antidromic: 'Conducts DOWN the accessory pathway and back up the AV node, giving a BROAD complex tachycardia easily mistaken for ventricular tachycardia.',
+        },
+        the_lethal_scenario: {
+          what_happens: 'If ATRIAL FIBRILLATION develops in a patient with WPW, the accessory pathway can conduct the chaotic atrial impulses to the ventricle WITHOUT the rate-limiting protection of the AV node. This produces a very fast, IRREGULAR, BROAD complex tachycardia with varying QRS morphology, and it can degenerate into VENTRICULAR FIBRILLATION.',
+          the_fatal_error:
+            'Giving an AV-NODAL BLOCKING drug — ADENOSINE, VERAPAMIL, DILTIAZEM, BETA-BLOCKERS or DIGOXIN — blocks the normal route and pushes ALL conduction down the accessory pathway, accelerating the ventricular rate and precipitating ventricular fibrillation. These are exactly the drugs a clinician reaches for in a fast irregular rhythm, which is why this must be known before it is met.',
+          what_to_do_instead: 'For an IRREGULAR broad complex tachycardia, treat as pre-excited AF: if unstable, SYNCHRONISED DC CARDIOVERSION. If stable, use an agent that acts on the accessory pathway per your local protocol, and involve cardiology urgently.',
+          the_recognition_rule: 'FAST, IRREGULAR, BROAD and with VARYING QRS shapes = pre-excited AF until proven otherwise. Do not give adenosine.',
+        },
+        definitive_treatment: 'Catheter ABLATION of the accessory pathway is curative and is offered to symptomatic patients and to those with high-risk features.',
+      },
+    },
+    warnings: [
+      'In WPW with atrial fibrillation, AV-nodal blockers (adenosine, verapamil, diltiazem, beta-blockers, digoxin) can precipitate ventricular fibrillation. A fast, irregular, broad complex tachycardia with varying QRS shapes is pre-excited AF until proven otherwise.',
+      'The HOCM murmur is LOUDER on standing and Valsalva and QUIETER on squatting — the opposite of aortic stenosis. Stand the patient up.',
+      'Avoid nitrates, excess diuretics, ACE inhibitors, digoxin and inotropes in HOCM — they worsen dynamic obstruction.',
+      'Exertional syncope in a young person is an ominous symptom — assess urgently before attributing it to anything benign.',
+      'Screen first-degree relatives in HOCM and ARVC. The first presentation can be sudden death.',
+      'Heart failure with a thick ventricle on echo but LOW ECG voltages suggests cardiac amyloidosis.',
+      'Constrictive pericarditis mimics restrictive cardiomyopathy and is surgically curable — distinguish them.',
+      'Peripartum cardiomyopathy is missed because breathlessness and oedema are attributed to pregnancy. It recurs in later pregnancies.',
+      'Tachycardia-induced cardiomyopathy is reversible if the rhythm is controlled.',
+      'Takotsubo cannot be distinguished from MI without angiography — do not diagnose it in the emergency department.',
+    ],
+    limitations: ['Risk stratification, device indications, ablation selection and drug choices are specialist- and protocol-directed. No doses are given here.'],
+    cards: [
+      { q: 'How does the HOCM murmur respond to standing?', a: 'It gets LOUDER — reduced preload worsens the dynamic obstruction. Aortic stenosis gets quieter.' },
+      { q: 'Which drugs must be avoided in HOCM?', a: 'Nitrates, excess diuretics, ACE inhibitors, digoxin and inotropes.' },
+      { q: 'What is the ECG triad of WPW?', a: 'Short PR, delta wave, widened QRS.' },
+      { q: 'Why are AV-nodal blockers dangerous in WPW with AF?', a: 'They divert all conduction down the accessory pathway, accelerating the ventricle into VF.' },
+      { q: 'How do you recognise pre-excited AF?', a: 'Fast, irregular, broad complex with varying QRS morphology.' },
+      { q: 'Orthodromic vs antidromic AVRT?', a: 'Orthodromic goes down the AV node (narrow); antidromic goes down the pathway (broad, mimics VT).' },
+      { q: 'Which echo–ECG discordance suggests amyloid?', a: 'Thick ventricle on echo with LOW voltages on ECG.' },
+      { q: 'Which cardiomyopathy is curable by rate control?', a: 'Tachycardia-induced.' },
+    ],
+    checks: ['Family history of sudden death taken', 'Murmur assessed with standing and squatting', 'ECG examined for delta wave and voltages', 'Adenosine withheld in irregular broad complex tachycardia', 'Relatives offered screening', 'Exercise advice given in HOCM'],
+  },
+
+  {
+    id: 'AS-CARD-0006',
+    type: 'pattern',
+    title: 'Hypertension — End-Organ Stigmata, ECG Potassium Changes and the J-Curve',
+    short: 'Hypertension stigmata and ECG K',
+    summary:
+      'Long-standing hypertension writes itself on the arteries, the heart, the eyes and the kidneys — and each sign has a mechanism. Separately: in potassium disturbance the ECG matters more than the number, and it is the change you treat.',
+    domains: ['cardiovascular', 'renal', 'ophthalmology'],
+    intents: ['identify', 'understand'],
+    hazard: 'critical',
+    urgency: 'urgent',
+    aka: ['hypertension', 'end organ damage', 'hypertensive retinopathy', 'left ventricular hypertrophy', 'displaced apex beat', 'arteriosclerosis', 'ecg hyperkalaemia', 'ecg hypokalaemia', 'j curve', 'j shaped curve', 'alcohol and stroke'],
+    terms: ['hypertension', 'end organ damage', 'apex beat', 'heaving', 'thrusting', 'fourth heart sound', 'lvh', 'retinopathy', 'silver wiring', 'av nipping', 'cotton wool', 'papilloedema', 'arteriosclerosis', 'thickened artery', 'tented t wave', 'sine wave', 'u wave', 'hyperkalaemia ecg', 'hypokalaemia ecg', 'j curve', 'alcohol'],
+    confirm_locally: true,
+    body: {
+      the_peripheral_stigmata_and_why_each_occurs: {
+        the_arterial_wall: {
+          what_you_feel: 'A THICKENED, hard, sometimes tortuous and palpable radial or brachial artery. In advanced cases the vessel is palpable even when compressed (the historical "pipe-stem" artery).',
+          the_mechanism: 'Sustained high pressure causes HYPERTROPHY of vascular smooth muscle and increased collagen deposition in the media, plus fragmentation of elastin. The vessel becomes thicker and STIFFER. Stiffness matters clinically: it raises SYSTOLIC pressure and WIDENS THE PULSE PRESSURE, so isolated systolic hypertension in older people is a disease of arterial stiffness rather than of increased resistance alone.',
+          the_related_finding: 'A wide pulse pressure with a collapsing character has other causes (aortic regurgitation, thyrotoxicosis, anaemia, arteriovenous fistula) which should be considered rather than assumed to be age.',
+        },
+        the_displaced_apex_beat: {
+          what_you_feel: 'Two distinct abnormalities that are frequently conflated. A HEAVING or SUSTAINED, forceful apex in a NORMAL position indicates PRESSURE overload — concentric left ventricular hypertrophy from hypertension or aortic stenosis. A DISPLACED apex (lateral to the midclavicular line and below the fifth intercostal space), diffuse and thrusting, indicates VOLUME overload with DILATATION — aortic or mitral regurgitation, or dilated cardiomyopathy.',
+          the_mechanism: 'Pressure overload produces sarcomeres added in PARALLEL, thickening the wall without enlarging the cavity — so the apex is forceful but not displaced. Volume overload adds sarcomeres in SERIES, lengthening fibres and enlarging the cavity — so the apex moves. Recognising which one you are feeling tells you the mechanism before any imaging.',
+          the_accompanying_sign: 'A FOURTH HEART SOUND is common in hypertensive heart disease — it is atrial contraction against a stiff, non-compliant ventricle, and it disappears in atrial fibrillation because there is no coordinated atrial contraction.',
+        },
+        the_eye: {
+          why_it_is_the_only_place_you_see_arteries_directly: 'Fundoscopy is the only direct view of small arteries in the living body, which is why hypertensive retinopathy is such a useful proxy for what is happening in the brain and kidney.',
+          the_progression: 'Generalised ARTERIOLAR NARROWING and increased light reflex ("SILVER" or "COPPER WIRING") from wall thickening · ARTERIOVENOUS NIPPING where a thickened arteriole compresses a vein at a crossing point · FLAME haemorrhages and COTTON WOOL SPOTS (retinal nerve fibre layer infarcts) and hard exudates · then PAPILLOEDEMA.',
+          the_emergency: 'PAPILLOEDEMA with severe hypertension indicates a HYPERTENSIVE EMERGENCY requiring same-day treatment and admission. Bilateral disc swelling in a hypertensive patient must never be treated as an outpatient problem.',
+        },
+        the_kidney: 'Hypertensive nephrosclerosis — a slow rise in creatinine with modest proteinuria and small, smooth kidneys. Hypertension is both a cause and a consequence of renal disease, and untangling which came first matters for management.',
+      },
+      the_ecg_of_potassium: {
+        the_governing_principle:
+          'The ECG matters more than the number, in both directions. Treat the ECG and the patient, not the laboratory value alone — and remember that the RATE OF CHANGE matters as much as the absolute level, because a slow rise is tolerated far better than a rapid one.',
+        hyperkalaemia_progression: 'TALL, PEAKED, narrow-based TENTED T waves (earliest) → FLATTENING and then LOSS of the P wave with a prolonged PR → WIDENING of the QRS → the QRS merging with the T wave into a SINE WAVE pattern → ventricular fibrillation or asystole. The sine wave is a peri-arrest finding and demands immediate treatment.',
+        hypokalaemia_progression: 'ST DEPRESSION and T-wave FLATTENING → prominent U WAVES (a positive deflection after the T wave, best seen in the mid-precordial leads) → the T and U waves merging, which can be mistaken for a long QT → and increased risk of ventricular arrhythmia, particularly TORSADES DE POINTES.',
+        the_two_practical_points: [
+          'ALWAYS check MAGNESIUM alongside potassium. Hypokalaemia is often refractory to replacement until magnesium is corrected, because magnesium is required for cellular potassium retention. Replacing potassium repeatedly without checking magnesium is a common and futile exercise.',
+          'DIGOXIN toxicity is precipitated by hypokalaemia, and the two frequently coexist because diuretics cause both the low potassium and the setting in which digoxin is used.',
+        ],
+      },
+      the_j_shaped_curve: {
+        the_blood_pressure_j_curve: 'The observation that cardiovascular events rise at very LOW achieved diastolic pressures as well as at high ones. The likely explanation is partly that CORONARY PERFUSION occurs during DIASTOLE, so an excessively low diastolic pressure may compromise it in patients with existing coronary disease — and partly REVERSE CAUSATION, in that sick, frail patients have low blood pressure because they are sick. The practical consequence is caution about aggressive lowering in frail, elderly patients with established coronary disease, without abandoning treatment of genuine hypertension.',
+        the_alcohol_j_curve: {
+          the_claim: 'Older observational studies suggested that light to moderate drinkers had LOWER cardiovascular and stroke risk than abstainers, producing a J- or U-shaped curve, with harm at higher intake.',
+          why_it_is_now_strongly_contested:
+            'The apparent protection at low intake is substantially explained by CONFOUNDING and by SICK-QUITTER BIAS — the "abstainer" group in many studies included former drinkers who had stopped because of ill health, making abstainers look unhealthy. Studies that separate lifelong abstainers, and MENDELIAN RANDOMISATION studies using genetic variants in alcohol metabolism, largely fail to reproduce a protective effect. Current major guidance is that there is NO safe level established as beneficial, and that any cardiovascular benefit is at best small and outweighed by cancer risk, which rises from low levels of intake.',
+          the_stroke_specific_point: 'The relationship differs by stroke type — the evidence for any protective association is weaker for HAEMORRHAGIC stroke, and heavy drinking clearly increases both haemorrhagic stroke and atrial fibrillation ("holiday heart"), which itself causes ischaemic stroke.',
+          what_to_tell_a_patient: 'Do not advise anyone to start drinking, or continue drinking, for cardiovascular benefit. That advice has been given and is not supportable.',
+        },
+      },
+    },
+    warnings: [
+      'Papilloedema with severe hypertension is a hypertensive emergency needing same-day treatment — never an outpatient problem.',
+      'Distinguish a HEAVING apex in normal position (pressure overload) from a DISPLACED apex (volume overload and dilatation). They mean different things.',
+      'In potassium disturbance, treat the ECG and the patient, not the number. Rate of change matters as much as the level.',
+      'A sine-wave ECG in hyperkalaemia is a peri-arrest finding — treat immediately.',
+      'Always check MAGNESIUM in hypokalaemia — potassium replacement fails until magnesium is corrected.',
+      'Hypokalaemia precipitates digoxin toxicity, and the two commonly coexist through diuretic use.',
+      'Do not advise anyone to drink alcohol for cardiovascular benefit — the J-curve is substantially explained by sick-quitter bias and confounding.',
+      'Be cautious about aggressive blood pressure lowering in frail elderly patients with established coronary disease.',
+      'A wide pulse pressure has causes other than arterial stiffness — consider aortic regurgitation, thyrotoxicosis and anaemia.',
+      'A fourth heart sound disappears in atrial fibrillation because coordinated atrial contraction is lost.',
+    ],
+    limitations: ['Blood pressure targets, potassium treatment thresholds and alcohol guidance are guideline- and country-specific and are periodically revised. No doses are given here.'],
+    cards: [
+      { q: 'Heaving vs displaced apex beat?', a: 'Heaving in normal position = pressure overload (hypertrophy). Displaced = volume overload (dilatation).' },
+      { q: 'Why does pressure overload not displace the apex?', a: 'Sarcomeres are added in parallel, thickening the wall without enlarging the cavity.' },
+      { q: 'Why does arterial stiffness widen the pulse pressure?', a: 'A stiff aorta cannot buffer systole, so systolic pressure rises while diastolic falls.' },
+      { q: 'Order of ECG changes in hyperkalaemia?', a: 'Tented T waves, loss of P, widening QRS, sine wave, then VF or asystole.' },
+      { q: 'ECG of hypokalaemia?', a: 'ST depression, flat T waves, prominent U waves, T-U fusion, risk of torsades.' },
+      { q: 'Why does potassium replacement fail sometimes?', a: 'Uncorrected hypomagnesaemia — magnesium is needed for cellular potassium retention.' },
+      { q: 'What is the alcohol J-curve, and why is it doubted?', a: 'Apparent protection at low intake — largely explained by sick-quitter bias and confounding; not reproduced by Mendelian randomisation.' },
+      { q: 'What does papilloedema with hypertension mean?', a: 'A hypertensive emergency — same-day treatment and admission.' },
+    ],
+    checks: ['Apex beat character and position both described', 'Fundoscopy performed', 'Pulse pressure noted', 'ECG obtained in any potassium disturbance', 'Magnesium checked alongside potassium', 'Alcohol advice given without implying cardiovascular benefit'],
+  },
+
+  {
+    id: 'AS-CARD-0007',
+    type: 'drug',
+    title: 'Inotropes, Vasopressors and Cardiorenal Syndrome',
+    short: 'Inotropes and cardiorenal syndrome',
+    summary:
+      'Ask one question first: is the problem PUMP or PIPES? A vasopressor squeezes the vessels; an inotrope makes the heart squeeze harder. Giving the wrong one wastes time in a patient who has none — and neither works in an empty tank.',
+    domains: ['critical_care', 'cardiovascular', 'renal'],
+    intents: ['prescribe_reference', 'classify'],
+    hazard: 'critical',
+    urgency: 'immediate',
+    aka: ['inotropes', 'vasopressors', 'noradrenaline', 'norepinephrine', 'adrenaline', 'dobutamine', 'dopamine', 'vasopressin', 'milrinone', 'levosimendan', 'cardiorenal syndrome', 'cardiogenic shock'],
+    terms: ['inotrope', 'vasopressor', 'noradrenaline', 'adrenaline', 'dobutamine', 'dopamine', 'vasopressin', 'milrinone', 'levosimendan', 'phenylephrine', 'alpha receptor', 'beta receptor', 'systemic vascular resistance', 'cardiac output', 'cardiogenic shock', 'cardiorenal', 'venous congestion', 'diuretic resistance'],
+    confirm_locally: true,
+    body: {
+      the_first_question: {
+        pump_or_pipes:
+          'Blood pressure is cardiac output multiplied by systemic vascular resistance. If the vessels are dilated (SEPSIS, anaphylaxis, neurogenic shock) the problem is the PIPES and the answer is a VASOPRESSOR. If the heart is failing to eject (cardiogenic shock, severe myocardial dysfunction) the problem is the PUMP and the answer is an INOTROPE. Many critically ill patients need both.',
+        the_precondition: 'NEITHER WORKS IN AN EMPTY TANK. Assess and correct volume status first — starting a vasopressor in a profoundly hypovolaemic patient raises the pressure by squeezing an underfilled circulation, at the cost of tissue perfusion. And exclude the obstructive causes (tension pneumothorax, tamponade, massive PE), where drugs are not the treatment at all.',
+      },
+      the_receptors: {
+        alpha_1: 'Vascular smooth muscle. Stimulation causes VASOCONSTRICTION, raising systemic vascular resistance and blood pressure.',
+        beta_1: 'Cardiac. Stimulation increases CONTRACTILITY (inotropy) and RATE (chronotropy).',
+        beta_2: 'Vascular and bronchial smooth muscle. Stimulation causes vasoDILATATION and bronchodilatation.',
+        dopaminergic: 'Renal and splanchnic vasodilatation at low dose.',
+      },
+      the_agents: {
+        noradrenaline: 'Predominantly ALPHA with modest beta-1. The first-line VASOPRESSOR in septic and most vasodilatory shock — it raises pressure with relatively little tachycardia. Requires central access ideally, because EXTRAVASATION causes tissue necrosis.',
+        adrenaline: 'Alpha AND beta. Vasoconstrictor, inotrope and chronotrope. First line in ANAPHYLAXIS and cardiac arrest. In shock it causes more tachyarrhythmia and raises LACTATE through beta-2 mediated glycolysis — so a rising lactate on adrenaline is not necessarily worsening perfusion, which is a genuine interpretive trap.',
+        dobutamine: 'Predominantly BETA-1 with some beta-2. A pure INOTROPE that increases contractility and cardiac output but can DROP the blood pressure through beta-2 vasodilatation. Useful in cardiogenic shock with adequate pressure, often combined with noradrenaline.',
+        dopamine: 'Dose-dependent effects. Now largely superseded — it causes more arrhythmia than noradrenaline in shock, and the concept of a "renal dose" protecting the kidney has been disproven and should be abandoned.',
+        vasopressin: 'Acts on V1 receptors independently of adrenergic pathways, which makes it useful as an adjunct when catecholamine requirements are escalating, and in vasoplegia.',
+        milrinone_and_levosimendan: 'Inodilators — they increase contractility while reducing afterload, without acting through beta receptors, so they retain effect in patients on chronic BETA-BLOCKERS. Both cause hypotension. Milrinone accumulates in renal impairment.',
+        phenylephrine: 'Pure alpha-1. Raises pressure with reflex bradycardia; useful in specific situations such as tachyarrhythmia with hypotension.',
+      },
+      the_principles_that_matter_more_than_the_agent: [
+        'Treat the CAUSE. Vasopressors buy time; they do not fix sepsis, tamponade or infarction.',
+        'Use the LOWEST dose for the SHORTEST time to an agreed target — usually a mean arterial pressure, individualised to the patient (a chronically hypertensive patient may need a higher target).',
+        'Monitor PERFUSION, not just pressure — lactate clearance, urine output, capillary refill, mental state. A normal blood pressure achieved by intense vasoconstriction can coexist with dying tissue.',
+        'Vasoconstrictors cause DIGITAL, MESENTERIC and RENAL ischaemia at high doses. Look at the fingers and toes.',
+        'Extravasation of a vasoconstrictor causes necrosis — use central access where possible and know the local treatment for extravasation.',
+        'Correct calcium, acidosis and hypoxia — catecholamines work poorly in severe acidosis.',
+      ],
+      cardiorenal_syndrome: {
+        the_concept: 'Dysfunction of the heart and kidney where each drives the other. It is classified into five types by which organ fails first and whether the process is acute or chronic.',
+        the_five_types: {
+          type_1: 'ACUTE cardiac dysfunction causing ACUTE kidney injury — for example acute decompensated heart failure or cardiogenic shock precipitating AKI.',
+          type_2: 'CHRONIC cardiac dysfunction causing CHRONIC kidney disease.',
+          type_3: 'ACUTE kidney injury causing ACUTE cardiac dysfunction — through fluid overload, hyperkalaemic arrhythmia, uraemic pericarditis or acidosis.',
+          type_4: 'CHRONIC kidney disease causing chronic cardiac disease — accelerated atherosclerosis, left ventricular hypertrophy, and the very high cardiovascular mortality of chronic kidney disease.',
+          type_5: 'SECONDARY — a systemic condition damaging both, such as sepsis, amyloidosis, diabetes or lupus.',
+        },
+        the_mechanism_that_changed_practice:
+          'The traditional model attributed renal impairment in heart failure to LOW CARDIAC OUTPUT and poor forward perfusion. The evidence now shows that VENOUS CONGESTION — raised central venous pressure transmitted back to the renal veins — is a more important driver. Raised renal venous pressure reduces the transrenal perfusion gradient and raises interstitial pressure, impairing filtration.',
+        the_practical_consequence:
+          'This inverts the instinct. In a congested patient whose creatinine is rising, the answer is often MORE decongestion rather than less — stopping diuretics and giving fluid to "protect the kidney" can make both organs worse. A modest rise in creatinine during effective decongestion is common and does not by itself mean the diuretic should be stopped. This is a genuinely counterintuitive point and it must be applied with careful assessment of volume status, not as a blanket rule.',
+        diuretic_resistance: 'Common. Causes include poor absorption from gut oedema, hypoalbuminaemia, low renal perfusion, high sodium intake, NSAIDs, and compensatory distal tubular hypertrophy. Strategies include adequate dosing, intravenous rather than oral administration, and SEQUENTIAL NEPHRON BLOCKADE by adding a thiazide-like agent to a loop diuretic — which is effective and requires close electrolyte monitoring.',
+        what_to_actually_do: 'Assess volume status carefully and repeatedly. Optimise heart failure therapy. Avoid nephrotoxics. Monitor potassium closely, especially when combining renin-angiotensin blockade with mineralocorticoid antagonists. Recognise that both organs must be managed together, and involve cardiology and nephrology jointly rather than sequentially.',
+      },
+    },
+    warnings: [
+      'Neither inotropes nor vasopressors work in an empty tank. Correct volume status and exclude obstructive causes first.',
+      'A rising lactate on ADRENALINE may be beta-2 mediated glycolysis, not worsening perfusion.',
+      '"Renal dose" dopamine does not protect the kidney. The concept is disproven and should be abandoned.',
+      'Monitor perfusion — lactate, urine output, capillary refill, mental state — not blood pressure alone.',
+      'Extravasation of a vasoconstrictor causes tissue necrosis. Use central access and know the local treatment.',
+      'Check the fingers and toes on high-dose vasoconstrictors — digital ischaemia is a real complication.',
+      'In cardiorenal syndrome, VENOUS CONGESTION is often the driver. Stopping diuretics and giving fluid to protect the kidney can worsen both organs.',
+      'A modest creatinine rise during effective decongestion does not automatically mean stopping the diuretic.',
+      'Milrinone and levosimendan retain effect in patients on beta-blockers, but both cause hypotension.',
+      'Catecholamines work poorly in severe acidosis — correct it.',
+    ],
+    limitations: ['All agents, doses, targets and monitoring are protocol-specific and require critical care expertise. No doses are given here.'],
+    cards: [
+      { q: 'Vasopressor or inotrope — how do you choose?', a: 'Pipes (vasodilated, e.g. sepsis) need a vasopressor; pump failure needs an inotrope. Often both.' },
+      { q: 'First-line vasopressor in septic shock?', a: 'Noradrenaline.' },
+      { q: 'Why can dobutamine drop the blood pressure?', a: 'Beta-2 mediated vasodilatation alongside its inotropic effect.' },
+      { q: 'Why might lactate rise on adrenaline?', a: 'Beta-2 stimulated glycolysis — not necessarily worsening perfusion.' },
+      { q: 'Is there a renal-protective dose of dopamine?', a: 'No. The concept is disproven.' },
+      { q: 'Which inotropes work despite beta-blockade?', a: 'Milrinone and levosimendan — they bypass beta receptors.' },
+      { q: 'Name the five cardiorenal types.', a: 'Acute cardio-renal, chronic cardio-renal, acute reno-cardiac, chronic reno-cardiac, and secondary.' },
+      { q: 'What drives renal impairment in heart failure more than low output?', a: 'Venous congestion raising renal venous and interstitial pressure.' },
+      { q: 'What is sequential nephron blockade?', a: 'Adding a thiazide-like diuretic to a loop diuretic to overcome resistance — needs close electrolyte monitoring.' },
+    ],
+    checks: ['Volume status assessed before starting any agent', 'Obstructive causes excluded', 'Pump versus pipes decided explicitly', 'Perfusion markers monitored, not pressure alone', 'Central access used where possible', 'Digits inspected', 'Congestion assessed before reducing diuretics in cardiorenal syndrome', 'Potassium monitored closely'],
+  },
+];

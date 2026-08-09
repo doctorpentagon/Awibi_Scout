@@ -94,9 +94,9 @@ hazard levels.
 
 | | |
 |---|---|
-| Entries | 244 (158 base + 86 extension) |
-| Flashcards | 908 |
-| Checklists / items | 147 / 1,303 |
+| Entries | 309 (158 base + 151 extension) |
+| Flashcards | 1,436 |
+| Checklists | 212 |
 | Visual assets specified / drawn | 114 / 20 |
 | **Entries with a clinical reviewer** | **0** |
 | **Entries approved for release** | **0** |
@@ -110,7 +110,7 @@ Visuals drawn vs specified: [VISUAL_COVERAGE.md](VISUAL_COVERAGE.md).
 
 ## 5. The governance gate — read before going public
 
-`approved_for_release` is `false` and `clinical_reviewer` is `null` on all 244
+`approved_for_release` is `false` and `clinical_reviewer` is `null` on all 309
 entries. The build sets both unconditionally; neither is configurable from the
 authored source. **The pipeline cannot approve clinical content.**
 

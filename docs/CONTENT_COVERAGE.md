@@ -3,8 +3,8 @@
 **What areas exist in the Awibi Scout library, and what does not.**
 
 Updated 7 August 2026 · base release `AWIBI-SCOUT-CONTENT-2026.08.R2` (158 entries)
-· extension release `AWIBI-SCOUT-CONTENT-2026.08.R3` (86 entries) · **244 total**
-· 908 flashcards · 147 checklists / 1,303 items · 114 visual assets (20 drawn)
+· extension release `AWIBI-SCOUT-CONTENT-2026.08.R3` (151 entries) · **309 total**
+· 1,436 flashcards · 212 checklists · 114 visual assets (20 drawn)
 
 Every extension entry is `approved_for_release: false` with `clinical_reviewer: null`.
 The build cannot set either. Nothing here has a doctor's sign-off.
@@ -26,7 +26,7 @@ A term that returns **PARTIAL** exists but did not clear the confidence gate.
 
 ---
 
-## 1. Extension areas — built and searchable (83 entries)
+## 1. Extension areas — built and searchable (151 entries)
 
 ### 1.1 Electrolytes and metabolites (12) — `AS-ELEC-*`
 
@@ -150,6 +150,74 @@ NMOSD · aquaporin · MOGAD · ADEM · area postrema · longitudinally extensive
 
 Charcot triad and Reynolds pentad were already carried by `AS-GAST-0001` and the base
 release's *Triads and Tetrads*; this release adds the **diagram** (`V-GAST-002`), not new prose.
+
+### 1.22 Laboratory tests (9) — `AS-LABT-*`
+
+The tests actually ordered every day, which previously resolved onto tangential entries.
+
+Full blood count line by line · liver function, hepatocellular vs cholestatic · bilirubin,
+conjugated vs unconjugated · troponin, CK and LDH · CRP, ESR, procalcitonin and ferritin ·
+clotting (INR, APTT, D-dimer, fibrinogen) · amylase and lipase · creatinine, eGFR and the
+creatine confusion · ammonia.
+
+### 1.23 Eponym disambiguation (2) — `AS-EPON-*`
+
+**Charcot** — the cholangitis triad, the historical MS triad, the neuropathic joint, and
+Charcot-Marie-Tooth · **Bell** — palsy versus the normal phenomenon.
+
+### 1.24 Core presentations (5) — `AS-CARD-*`, `AS-ENDO-0003`, `AS-RESP-*`
+
+Acute coronary syndrome · cardiac arrest · diabetes mellitus · pulmonary embolism ·
+spirometry and lung function.
+
+### 1.25 Paediatric calculators (5) — `AS-PCAL-*`, `AS-PAED-*`
+
+**New Ballard Score** (computes gestational age) · **mid-parental height** (computes target
+height with sex adjustment) · **corrected gestational age** (computes) · growth plotting and
+SGA/AGA/LGA · insulin injection technique.
+
+### 1.26 Wave-1 emergencies (6) — `AS-NSUR-*`, `AS-CARD-*`, `AS-NEUR-*`, `AS-TOXI-*`, `AS-RESP-*`
+
+Subarachnoid haemorrhage with Hunt and Hess · aortic dissection with Stanford and DeBakey ·
+Guillain-Barré and the FVC rule · myasthenia gravis · NMS vs serotonin syndrome vs malignant
+hyperthermia and the extrapyramidal syndromes · respiratory failure types 1 and 2, and ARDS.
+
+### 1.27 Endocrine tumours and adrenal disease (5) — `AS-ENDO-*`
+
+Phaeochromocytoma and alpha-before-beta · MEN 1/2A/2B, carcinoid and the functioning
+pancreatic tumours · Cushing, Conn and Addison · pituitary and sella turcica tumours ·
+advanced glycation end products.
+
+### 1.28 Rheumatology and nephrology (4) — `AS-RHEU-*`, `AS-RENL-*`
+
+Polymyositis and dermatomyositis · systemic sclerosis and Sjögren · spondyloarthritis,
+reactive arthritis and Takayasu · ADPKD, HIVAN, IRIS and dialysis.
+
+### 1.29 Dermatology and oncology (7) — `AS-DERM-*`, `AS-ONCO-*`
+
+Lesion morphology vocabulary · skin structure, cell types and Blaschko lines · pigment
+disorders · skin cancer and the blistering diseases · **histological type versus primary
+site** (the "is adenocarcinoma one disease?" question) · breast cancer · GI and lung cancer
+with the paraneoplastic syndromes.
+
+### 1.30 Psychiatry, toxicology and safeguarding (6) — `AS-PSYC-*`, `AS-TOXI-*`, `AS-SAFE-*`
+
+Delirium vs dementia and the subtypes · bipolar disorder · substance misuse, withdrawal and
+what actually reverses what · safeguarding children · exploitation, trafficking and FGM ·
+adult safeguarding, capacity and coercion.
+
+### 1.31 Clerking templates, anaesthesia and surgery (5) — `AS-HIST-*`, `AS-ANAE-*`, `AS-SURG-*`, `AS-GAST-*`
+
+Upper GI bleed · oliguria and frothy urine · seizure, cough, chest pain and weakness · local
+anaesthetics and LAST · induction agents, relaxants and neuraxial blocks · gastroschisis,
+omphalocele and pharyngeal pouch · diarrhoea, constipation and fever.
+
+### 1.32 Wave-6 cardiology, neurology and pathology (6) — `AS-CARD-*`, `AS-NEUR-*`, `AS-RADS-*`, `AS-GPTH-*`, `AS-NAMK-*`
+
+Cardiomyopathies and WPW · hypertension stigmata, ECG potassium and the J-curve · inotropes,
+vasopressors and cardiorenal syndrome · peripheral neuropathy · optic neuritis, trigeminal
+neuralgia and cerebellar ataxia · intracranial bleeds and the named imaging signs · cell
+injury and death · inflammation and healing · the clinical rules of N.
 
 ---
 

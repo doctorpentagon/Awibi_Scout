@@ -9,7 +9,7 @@
 
 | Check | Result |
 |---|---|
-| Content build + validation | **PASS — 86 entries, 0 errors** |
+| Content build + validation | **PASS — 151 entries, 0 errors** |
 | Client production build | **PASS** — 6.8 s |
 | Server boot | **PASS** — library + index built at boot |
 
@@ -29,9 +29,9 @@ Validation is not cosmetic: it rejects duplicate ids, duplicate slugs, collision
 
 | Metric | Value |
 |---|---|
-| Entries | **244** (158 base + 86 extension) |
-| Flashcards | 908 |
-| Checklists / items | 147 / 1,303 |
+| Entries | **309** (158 base + 151 extension) |
+| Flashcards | 1,436 |
+| Checklists | 212 |
 | Visual assets specified | 114 (20 drawn) |
 | Missing summary | **0** |
 | Missing title | **0** |
@@ -159,13 +159,13 @@ why MedPix and Radiopaedia are unusable — are recorded per asset and in `VISUA
 
 These are **deliberate and documented**, not defects:
 
-- **No content is clinically approved.** 0 of 244 entries carry a doctor's sign-off. This is a reference tool for qualified professionals, not a diagnostic device.
+- **No content is clinically approved.** 0 of 309 entries carry a doctor's sign-off. This is a reference tool for qualified professionals, not a diagnostic device.
 - **No drug doses.** Deliberately excluded — they vary by formulary, indication and country. Entries name the drug and the decision.
 - **20 of 114 visual assets are drawn.** Tier 3/4/5 render as commissioning specifications, never as fake placeholders. Every licence still reads `TO BE CONFIRMED`.
 - **No authentication.** By design for beta — Scout is read-only reference with no per-user data.
 - **Gap log is in-memory.** Zero-result queries survive until server restart. Persisting them is Phase 2.
 - **The contact form has no inbox.** It says so and routes to a real email address rather than silently swallowing messages.
-- **107 of 158 base entries have no visual.** Of the 86 extension entries, only the 3 newest are mapped to visuals; the other 83 are not.
+- **107 of 158 base entries have no visual.** Of the 151 extension entries, only 3 are mapped to visuals.
 
 ---
 

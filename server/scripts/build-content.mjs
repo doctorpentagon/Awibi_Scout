@@ -158,6 +158,25 @@ async function main() {
   const all = [];
   const perFile = {};
 
+  // ---- encoding guard ----
+  // A UTF-8 module read as latin1 and rewritten produces mojibake ("â€”" for an
+  // em-dash) or U+FFFD replacement characters. Both are invisible in a diff of
+  // a large file and would ship corrupted clinical text to a reader. This has
+  // happened once; it must never happen silently again.
+  const encodingErrors = [];
+  const MOJIBAKE = /â€|Â·|Ã©|â€™/;
+  for (const file of files) {
+    const raw = fs.readFileSync(path.join(contentDir, file), 'utf8');
+    if (raw.charCodeAt(0) === 0xfeff) encodingErrors.push(`${file}: has a UTF-8 BOM — strip it`);
+    if (MOJIBAKE.test(raw)) encodingErrors.push(`${file}: mojibake — the file was decoded as latin1 somewhere`);
+    if (raw.includes('�')) encodingErrors.push(`${file}: contains U+FFFD replacement characters — text was lost`);
+  }
+  if (encodingErrors.length) {
+    console.error(`ENCODING CHECK FAILED — ${encodingErrors.length} problems`);
+    encodingErrors.forEach((e) => console.error('  ' + e));
+    process.exit(1);
+  }
+
   for (const file of files) {
     const mod = await import(`file://${path.join(contentDir, file)}`);
     const entries = mod.default || mod.entries || [];
