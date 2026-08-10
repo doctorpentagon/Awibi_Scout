@@ -119,7 +119,7 @@ export default [
     title: 'Heart Failure by Ejection Fraction — HFrEF, HFmrEF, HFpEF and Recovered',
     short: 'Heart failure classification',
     summary:
-      'The ejection fraction decides which treatments apply. HFrEF has four drugs that change survival; HFpEF is a stiff ventricle where most of those drugs have never worked, and the treatment is the comorbidities plus an SGLT2 inhibitor.',
+      'The ejection fraction decides which treatments apply. Heart failure with REDUCED ejection fraction (HFrEF) has four drugs that change survival; heart failure with PRESERVED ejection fraction (HFpEF) is a stiff ventricle where most of those drugs have never worked, and the treatment is the comorbidities plus a sodium-glucose co-transporter 2 (SGLT2) inhibitor.',
     domains: ['cardiovascular'],
     intents: ['classify'],
     hazard: 'high',
@@ -136,6 +136,24 @@ export default [
     ],
     confirm_locally: true,
     body: {
+      what_every_abbreviation_means: {
+        the_note: 'Expanded once here so the rest of the entry can use the short forms.',
+        ef: 'EF — EJECTION FRACTION. The proportion of blood in the left ventricle that is pushed out with each beat.',
+        lvef: 'LVEF — LEFT VENTRICULAR EJECTION FRACTION. The same thing, specifying the left ventricle. Normal is roughly 50–70%.',
+        hfref: 'HFrEF — Heart Failure with REDUCED Ejection Fraction. The small "r" stands for reduced.',
+        hfmref: 'HFmrEF — Heart Failure with MILDLY REDUCED Ejection Fraction. The "mr" stands for mildly reduced.',
+        hfpef: 'HFpEF — Heart Failure with PRESERVED Ejection Fraction. The "p" stands for preserved.',
+        hfrecef: 'HFrecEF — Heart Failure with RECOVERED (or improved) Ejection Fraction.',
+        nyha: 'NYHA — NEW YORK HEART ASSOCIATION functional class. A symptom scale, I to IV, nothing to do with ejection fraction.',
+        arni: 'ARNI — ANGIOTENSIN RECEPTOR NEPRILYSIN INHIBITOR. One tablet combining two drugs: sacubitril (the neprilysin inhibitor) plus valsartan (the angiotensin receptor blocker). Trade name Entresto.',
+        acei: 'ACE inhibitor — ANGIOTENSIN-CONVERTING ENZYME inhibitor. The "-prils": ramipril, lisinopril, enalapril, perindopril.',
+        arb: 'ARB — ANGIOTENSIN RECEPTOR BLOCKER. The "-sartans": losartan, candesartan, valsartan. Used when an ACE inhibitor causes cough.',
+        mra: 'MRA — MINERALOCORTICOID RECEPTOR ANTAGONIST. Spironolactone and eplerenone. They block aldosterone.',
+        sglt2: 'SGLT2 inhibitor — SODIUM-GLUCOSE CO-TRANSPORTER 2 inhibitor. The "-gliflozins": dapagliflozin, empagliflozin, canagliflozin. They make the kidney pass glucose into the urine, and they help the heart and kidney for reasons only partly to do with glucose.',
+        bnp: 'BNP / NT-proBNP — B-type NATRIURETIC PEPTIDE and its N-terminal fragment. Hormones released by a stretched ventricle; used as a blood test to support or exclude heart failure.',
+        icd_crt: 'ICD — IMPLANTABLE CARDIOVERTER DEFIBRILLATOR, which shocks a lethal rhythm. CRT — CARDIAC RESYNCHRONISATION THERAPY, a pacemaker that makes both ventricles beat together.',
+      },
+
       what_the_number_means: {
         definition: 'EJECTION FRACTION is the proportion of the blood in the left ventricle at the end of filling that is ejected with each beat — stroke volume divided by end-diastolic volume. Normal is roughly 50–70%.',
         the_thing_to_understand:
@@ -148,7 +166,7 @@ export default [
           formerly: 'Systolic heart failure',
           the_problem: 'The ventricle cannot CONTRACT adequately. It is typically dilated with thin walls — eccentric remodelling.',
           causes: 'Ischaemic heart disease (the commonest), previous myocardial infarction, dilated cardiomyopathy, valvular disease, myocarditis, alcohol, chemotherapy (anthracyclines, trastuzumab), peripartum, tachycardia-induced, and thyroid disease.',
-          why_this_category_matters_most: 'It is the ONLY category with a large body of evidence for drugs that reduce MORTALITY. The four pillars — an ARNI or ACE inhibitor/ARB, a beta-blocker, a mineralocorticoid receptor antagonist, and an SGLT2 inhibitor — each independently improve survival and should be started early and titrated, not sequenced slowly one at a time. Device therapy (ICD, CRT) applies here too.',
+          why_this_category_matters_most: 'It is the ONLY category with a large body of evidence for drugs that reduce MORTALITY. The four pillars — an ARNI (sacubitril-valsartan) or an ACE inhibitor such as ramipril, a beta-blocker such as bisoprolol or carvedilol, a mineralocorticoid receptor antagonist such as spironolactone, and an SGLT2 inhibitor such as dapagliflozin — each independently improve survival and should be started early and titrated, not sequenced slowly one at a time. Device therapy applies here too: an implantable cardioverter defibrillator (ICD) for those at risk of sudden death, and cardiac resynchronisation therapy (CRT) where the ventricles are contracting out of step.',
         },
         hfmref: {
           ef: '41% to 49%',
@@ -161,9 +179,9 @@ export default [
           the_problem: 'The ventricle contracts normally but is STIFF and cannot RELAX and FILL. Filling pressures rise, and that pressure is transmitted back to the lungs — which is why the patient is breathless despite a "normal" heart on a report.',
           who: 'Older patients, more often women, with HYPERTENSION (the dominant driver), obesity, diabetes, atrial fibrillation, chronic kidney disease and sleep apnoea. It now accounts for around half of all heart failure and the proportion is rising.',
           the_diagnostic_difficulty:
-            'The echo can look near-normal, so the diagnosis rests on symptoms and signs of heart failure PLUS evidence of raised filling pressures — natriuretic peptides, diastolic indices, left atrial enlargement, or a stress test. It is frequently misattributed to obesity, deconditioning or lung disease for years. Note that natriuretic peptides are LOWER in obesity, so a normal BNP in a very obese breathless patient does not exclude HFpEF.',
+            'The echo can look near-normal, so the diagnosis rests on symptoms and signs of heart failure PLUS evidence of raised filling pressures — natriuretic peptides (BNP or NT-proBNP), diastolic indices, left atrial enlargement, or a stress test. It is frequently misattributed to obesity, deconditioning or lung disease for years. Note that natriuretic peptides are LOWER in obesity, so a normal BNP in a very obese breathless patient does not exclude HFpEF.',
           the_treatment_reality:
-            'Be honest about this: the drugs that transformed HFrEF have largely FAILED to show mortality benefit in HFpEF. What is established is SGLT2 INHIBITORS, which reduce hospitalisation and cardiovascular death and are now first-line. Beyond that: diuretics for congestion (symptom relief only), and aggressive treatment of the CAUSES — blood pressure, weight, atrial fibrillation, sleep apnoea, diabetes. Mineralocorticoid antagonists have a role in selected patients. Exercise training genuinely helps.',
+            'Be honest about this: the drugs that transformed HFrEF have largely FAILED to show mortality benefit in HFpEF. What is established is SGLT2 INHIBITORS — dapagliflozin and empagliflozin — which reduce hospitalisation and cardiovascular death and are now first-line. Beyond that: diuretics for congestion (symptom relief only), and aggressive treatment of the CAUSES — blood pressure, weight, atrial fibrillation, sleep apnoea, diabetes. Mineralocorticoid antagonists have a role in selected patients. Exercise training genuinely helps.',
           the_mimics_that_must_be_excluded: 'Before settling on HFpEF, exclude the specific and treatable causes of a stiff ventricle: CARDIAC AMYLOIDOSIS (suspect it with a thick ventricle and LOW ECG voltages, carpal tunnel syndrome, or intolerance of standard heart failure drugs), hypertrophic cardiomyopathy, constrictive pericarditis, and significant valve disease. Amyloidosis in particular is now treatable and is routinely missed.',
         },
         hfrecef: {

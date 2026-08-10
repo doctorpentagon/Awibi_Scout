@@ -2,7 +2,7 @@
  "release": "AWIBI-SCOUT-CONTENT-2026.08.R3",
  "schema_version": "4.0.0",
  "build_date": "2026-08-07",
- "entry_count": 154,
+ "entry_count": 160,
  "extends": "AWIBI-SCOUT-CONTENT-2026.08.R2",
  "note": "Content extension. Adds areas; supersedes nothing. Every entry is unreviewed and unapproved.",
  "entries": [
@@ -27655,7 +27655,7 @@
     "reduced ejection fraction",
     "nyha"
    ],
-   "summary": "The ejection fraction decides which treatments apply. HFrEF has four drugs that change survival; HFpEF is a stiff ventricle where most of those drugs have never worked, and the treatment is the comorbidities plus an SGLT2 inhibitor.",
+   "summary": "The ejection fraction decides which treatments apply. Heart failure with REDUCED ejection fraction (HFrEF) has four drugs that change survival; heart failure with PRESERVED ejection fraction (HFpEF) is a stiff ventricle where most of those drugs have never worked, and the treatment is the comorbidities plus a sodium-glucose co-transporter 2 (SGLT2) inhibitor.",
    "domains": [
     "cardiovascular"
    ],
@@ -27718,6 +27718,23 @@
     }
    },
    "body": {
+    "what_every_abbreviation_means": {
+     "the_note": "Expanded once here so the rest of the entry can use the short forms.",
+     "ef": "EF — EJECTION FRACTION. The proportion of blood in the left ventricle that is pushed out with each beat.",
+     "lvef": "LVEF — LEFT VENTRICULAR EJECTION FRACTION. The same thing, specifying the left ventricle. Normal is roughly 50–70%.",
+     "hfref": "HFrEF — Heart Failure with REDUCED Ejection Fraction. The small \"r\" stands for reduced.",
+     "hfmref": "HFmrEF — Heart Failure with MILDLY REDUCED Ejection Fraction. The \"mr\" stands for mildly reduced.",
+     "hfpef": "HFpEF — Heart Failure with PRESERVED Ejection Fraction. The \"p\" stands for preserved.",
+     "hfrecef": "HFrecEF — Heart Failure with RECOVERED (or improved) Ejection Fraction.",
+     "nyha": "NYHA — NEW YORK HEART ASSOCIATION functional class. A symptom scale, I to IV, nothing to do with ejection fraction.",
+     "arni": "ARNI — ANGIOTENSIN RECEPTOR NEPRILYSIN INHIBITOR. One tablet combining two drugs: sacubitril (the neprilysin inhibitor) plus valsartan (the angiotensin receptor blocker). Trade name Entresto.",
+     "acei": "ACE inhibitor — ANGIOTENSIN-CONVERTING ENZYME inhibitor. The \"-prils\": ramipril, lisinopril, enalapril, perindopril.",
+     "arb": "ARB — ANGIOTENSIN RECEPTOR BLOCKER. The \"-sartans\": losartan, candesartan, valsartan. Used when an ACE inhibitor causes cough.",
+     "mra": "MRA — MINERALOCORTICOID RECEPTOR ANTAGONIST. Spironolactone and eplerenone. They block aldosterone.",
+     "sglt2": "SGLT2 inhibitor — SODIUM-GLUCOSE CO-TRANSPORTER 2 inhibitor. The \"-gliflozins\": dapagliflozin, empagliflozin, canagliflozin. They make the kidney pass glucose into the urine, and they help the heart and kidney for reasons only partly to do with glucose.",
+     "bnp": "BNP / NT-proBNP — B-type NATRIURETIC PEPTIDE and its N-terminal fragment. Hormones released by a stretched ventricle; used as a blood test to support or exclude heart failure.",
+     "icd_crt": "ICD — IMPLANTABLE CARDIOVERTER DEFIBRILLATOR, which shocks a lethal rhythm. CRT — CARDIAC RESYNCHRONISATION THERAPY, a pacemaker that makes both ventricles beat together."
+    },
     "what_the_number_means": {
      "definition": "EJECTION FRACTION is the proportion of the blood in the left ventricle at the end of filling that is ejected with each beat — stroke volume divided by end-diastolic volume. Normal is roughly 50–70%.",
      "the_thing_to_understand": "It is a RATIO, not a measure of how much blood is pumped. A small, stiff ventricle can eject 60% of a tiny volume and still deliver an inadequate cardiac output — which is exactly what happens in HFpEF. A normal ejection fraction therefore does NOT mean a normal heart or an adequate output.",
@@ -27729,7 +27746,7 @@
       "formerly": "Systolic heart failure",
       "the_problem": "The ventricle cannot CONTRACT adequately. It is typically dilated with thin walls — eccentric remodelling.",
       "causes": "Ischaemic heart disease (the commonest), previous myocardial infarction, dilated cardiomyopathy, valvular disease, myocarditis, alcohol, chemotherapy (anthracyclines, trastuzumab), peripartum, tachycardia-induced, and thyroid disease.",
-      "why_this_category_matters_most": "It is the ONLY category with a large body of evidence for drugs that reduce MORTALITY. The four pillars — an ARNI or ACE inhibitor/ARB, a beta-blocker, a mineralocorticoid receptor antagonist, and an SGLT2 inhibitor — each independently improve survival and should be started early and titrated, not sequenced slowly one at a time. Device therapy (ICD, CRT) applies here too."
+      "why_this_category_matters_most": "It is the ONLY category with a large body of evidence for drugs that reduce MORTALITY. The four pillars — an ARNI (sacubitril-valsartan) or an ACE inhibitor such as ramipril, a beta-blocker such as bisoprolol or carvedilol, a mineralocorticoid receptor antagonist such as spironolactone, and an SGLT2 inhibitor such as dapagliflozin — each independently improve survival and should be started early and titrated, not sequenced slowly one at a time. Device therapy applies here too: an implantable cardioverter defibrillator (ICD) for those at risk of sudden death, and cardiac resynchronisation therapy (CRT) where the ventricles are contracting out of step."
      },
      "hfmref": {
       "ef": "41% to 49%",
@@ -27741,8 +27758,8 @@
       "formerly": "Diastolic heart failure",
       "the_problem": "The ventricle contracts normally but is STIFF and cannot RELAX and FILL. Filling pressures rise, and that pressure is transmitted back to the lungs — which is why the patient is breathless despite a \"normal\" heart on a report.",
       "who": "Older patients, more often women, with HYPERTENSION (the dominant driver), obesity, diabetes, atrial fibrillation, chronic kidney disease and sleep apnoea. It now accounts for around half of all heart failure and the proportion is rising.",
-      "the_diagnostic_difficulty": "The echo can look near-normal, so the diagnosis rests on symptoms and signs of heart failure PLUS evidence of raised filling pressures — natriuretic peptides, diastolic indices, left atrial enlargement, or a stress test. It is frequently misattributed to obesity, deconditioning or lung disease for years. Note that natriuretic peptides are LOWER in obesity, so a normal BNP in a very obese breathless patient does not exclude HFpEF.",
-      "the_treatment_reality": "Be honest about this: the drugs that transformed HFrEF have largely FAILED to show mortality benefit in HFpEF. What is established is SGLT2 INHIBITORS, which reduce hospitalisation and cardiovascular death and are now first-line. Beyond that: diuretics for congestion (symptom relief only), and aggressive treatment of the CAUSES — blood pressure, weight, atrial fibrillation, sleep apnoea, diabetes. Mineralocorticoid antagonists have a role in selected patients. Exercise training genuinely helps.",
+      "the_diagnostic_difficulty": "The echo can look near-normal, so the diagnosis rests on symptoms and signs of heart failure PLUS evidence of raised filling pressures — natriuretic peptides (BNP or NT-proBNP), diastolic indices, left atrial enlargement, or a stress test. It is frequently misattributed to obesity, deconditioning or lung disease for years. Note that natriuretic peptides are LOWER in obesity, so a normal BNP in a very obese breathless patient does not exclude HFpEF.",
+      "the_treatment_reality": "Be honest about this: the drugs that transformed HFrEF have largely FAILED to show mortality benefit in HFpEF. What is established is SGLT2 INHIBITORS — dapagliflozin and empagliflozin — which reduce hospitalisation and cardiovascular death and are now first-line. Beyond that: diuretics for congestion (symptom relief only), and aggressive treatment of the CAUSES — blood pressure, weight, atrial fibrillation, sleep apnoea, diabetes. Mineralocorticoid antagonists have a role in selected patients. Exercise training genuinely helps.",
       "the_mimics_that_must_be_excluded": "Before settling on HFpEF, exclude the specific and treatable causes of a stiff ventricle: CARDIAC AMYLOIDOSIS (suspect it with a thick ventricle and LOW ECG voltages, carpal tunnel syndrome, or intolerance of standard heart failure drugs), hypertrophic cardiomyopathy, constrictive pericarditis, and significant valve disease. Amyloidosis in particular is now treatable and is routinely missed."
      },
      "hfrecef": {
@@ -27835,7 +27852,7 @@
     "approved_for_release": false,
     "local_confirmation_required": true,
     "supersedes": null,
-    "content_hash": "9302dc7611023ca9"
+    "content_hash": "131a794a89f171d8"
    }
   },
   {
@@ -28166,6 +28183,1526 @@
     "local_confirmation_required": true,
     "supersedes": null,
     "content_hash": "8ebd00fdafd4314e"
+   }
+  },
+  {
+   "id": "AS-DRGC-0004",
+   "schema_version": "4.0.0",
+   "content_release": "AWIBI-SCOUT-CONTENT-2026.08.R3",
+   "type": "drug",
+   "title": "Diabetes Drugs — Every Class, What It Does, and When to Pick It Over Another",
+   "short_title": "Antidiabetic drug classes",
+   "slug": "diabetes_drugs_every_class_what_it_does_and_when_to_pick_it_over_another",
+   "also_known_as": [
+    "antidiabetic drugs",
+    "diabetes drugs",
+    "oral hypoglycaemics",
+    "oral antidiabetic",
+    "metformin",
+    "sulfonylurea",
+    "gliclazide",
+    "glibenclamide",
+    "glimepiride",
+    "sglt2 inhibitor",
+    "gliflozin",
+    "dapagliflozin",
+    "empagliflozin",
+    "canagliflozin",
+    "glp-1 agonist",
+    "semaglutide",
+    "liraglutide",
+    "dulaglutide",
+    "tirzepatide",
+    "dpp-4 inhibitor",
+    "gliptin",
+    "sitagliptin",
+    "linagliptin",
+    "pioglitazone",
+    "thiazolidinedione",
+    "glitazone",
+    "acarbose",
+    "insulin types"
+   ],
+   "summary": "Nine classes, each named in full with real drug examples. The choice is no longer about which lowers glucose most — metformin, then a drug chosen for the ORGAN you are protecting: the heart, the kidney, or the weight. And when the sugar is very high with weight loss and ketones, none of the tablets are the answer — that is insulin.",
+   "domains": [
+    "endocrine",
+    "pharmacology"
+   ],
+   "intents": [
+    "prescribe_reference",
+    "classify"
+   ],
+   "populations": [
+    "all_ages"
+   ],
+   "contexts": [
+    "routine"
+   ],
+   "hazard": "critical",
+   "urgency": "routine",
+   "jurisdiction": "international",
+   "search": {
+    "terms": [
+     "acarbose",
+     "another",
+     "antidiabetic drug classes",
+     "antidiabetic drugs",
+     "biguanide",
+     "canagliflozin",
+     "cardiovascular outcome",
+     "class",
+     "dapagliflozin",
+     "diabetes",
+     "diabetes drugs",
+     "diabetes drugs — every class, what it does, and when to pick it over another",
+     "does",
+     "dpp-4",
+     "dpp-4 inhibitor",
+     "drugs",
+     "dulaglutide",
+     "empagliflozin",
+     "euglycaemic dka",
+     "every",
+     "glibenclamide",
+     "gliclazide",
+     "gliflozin",
+     "glimepiride",
+     "gliptin",
+     "glitazone",
+     "glp-1",
+     "glp-1 agonist",
+     "hba1c",
+     "hypoglycaemia",
+     "insulin",
+     "insulin types",
+     "lactic acidosis",
+     "linagliptin",
+     "liraglutide",
+     "metformin",
+     "oral antidiabetic",
+     "oral hypoglycaemics",
+     "over",
+     "pick",
+     "pioglitazone",
+     "semaglutide",
+     "sglt2",
+     "sglt2 inhibitor",
+     "sitagliptin",
+     "sulfonylurea",
+     "thiazolidinedione",
+     "tirzepatide",
+     "weight neutral"
+    ],
+    "ambiguous_terms": [],
+    "phrases": [],
+    "field_weights": {
+     "title": 8,
+     "short_title": 6,
+     "also_known_as": 5,
+     "terms": 4,
+     "summary": 2,
+     "body": 1,
+     "flashcards": 0.5
+    }
+   },
+   "body": {
+    "the_abbreviations_expanded_first": {
+     "why": "Every short form used below, written out once. A drug class you cannot name is a drug class you cannot look up.",
+     "hba1c": "HbA1c — GLYCATED HAEMOGLOBIN. Glucose sticks irreversibly to haemoglobin, so the level reflects the average glucose over the red cell lifespan, roughly the past 2–3 months. It is the standard measure of overall control.",
+     "sglt2": "SGLT2 — SODIUM-GLUCOSE CO-TRANSPORTER 2. The protein in the kidney that reabsorbs filtered glucose back into the blood. Blocking it makes you pass sugar in the urine.",
+     "glp1": "GLP-1 — GLUCAGON-LIKE PEPTIDE 1. A gut hormone released after eating that tells the pancreas to release insulin, tells the liver to stop making glucose, slows stomach emptying and reduces appetite.",
+     "dpp4": "DPP-4 — DIPEPTIDYL PEPTIDASE 4. The enzyme that DESTROYS GLP-1. Block the enzyme and your own GLP-1 lasts longer.",
+     "tzd": "TZD — THIAZOLIDINEDIONE, also called a glitazone. Makes tissues more sensitive to insulin.",
+     "dka": "DKA — DIABETIC KETOACIDOSIS. Life-threatening acid build-up from burning fat when there is not enough insulin.",
+     "cv_ckd": "CV — CARDIOVASCULAR. CKD — CHRONIC KIDNEY DISEASE. ASCVD — ATHEROSCLEROTIC CARDIOVASCULAR DISEASE, meaning established artery disease such as previous heart attack or stroke."
+    },
+    "the_modern_principle": {
+     "what_changed": "Treatment used to be a ladder chosen by how much each drug lowered HbA1c. That is no longer how it works. Several drugs were shown to reduce heart attacks, heart failure hospitalisation, kidney failure and death BEYOND what their glucose lowering explained. So the question is now: what else does this person have? Heart failure, kidney disease, established artery disease, or obesity each point at a specific drug.",
+     "the_order": "METFORMIN plus lifestyle for almost everyone. Then add the drug that protects the ORGAN at risk. HbA1c matters, but it is no longer the only thing choosing the drug."
+    },
+    "class_1_biguanide_metformin": {
+     "the_only_drug": "METFORMIN.",
+     "how_it_works": "Mainly reduces the amount of glucose the LIVER makes and releases, and makes muscle more sensitive to insulin. It does not make the pancreas release insulin.",
+     "advantages": "FIRST LINE almost everywhere. Does NOT cause hypoglycaemia on its own, because it does not force insulin out. WEIGHT NEUTRAL or mildly weight-reducing. Very cheap and very well understood. Long-term cardiovascular benefit shown in UKPDS.",
+     "side_effects": "GASTROINTESTINAL — nausea, diarrhoea, metallic taste — in a substantial minority. Usually manageable by starting low, going slow, taking it with food, or using the modified-release form. Long-term VITAMIN B12 DEFICIENCY, which is genuinely under-checked and causes a neuropathy that is easily blamed on diabetes itself.",
+     "the_serious_but_rare_one": "LACTIC ACIDOSIS. Rare, but serious. Risk rises when metformin accumulates — so it is withheld in significant renal impairment, in acute illness with dehydration or hypoxia, and around iodinated contrast and surgery. The practical rule patients must be told is SICK DAY RULES: stop metformin while vomiting, having diarrhoea, or acutely unwell and not drinking, and restart when eating and drinking normally.",
+     "when_not_to_use": "Severe renal impairment (thresholds are local), acute decompensation, severe hepatic impairment, and heavy alcohol use."
+    },
+    "class_2_sglt2_inhibitors_the_gliflozins": {
+     "the_drugs": "DAPAGLIFLOZIN, EMPAGLIFLOZIN, CANAGLIFLOZIN, ertugliflozin. Recognise them by the ending \"-GLIFLOZIN\".",
+     "how_it_works": "Blocks SGLT2 in the kidney so filtered glucose is NOT reabsorbed and is passed out in the urine instead. Because it works in the kidney and not on the pancreas, it lowers glucose WITHOUT needing insulin to be present.",
+     "advantages": {
+      "the_big_one": "PROVEN BENEFIT IN HEART FAILURE AND KIDNEY DISEASE, including in people WITHOUT diabetes. It reduces heart failure hospitalisation and slows progression of chronic kidney disease. This is why it now appears in cardiology and nephrology guidelines, not just diabetes ones.",
+      "others": "Causes WEIGHT LOSS (you are excreting calories). Lowers blood pressure a little. Does not cause hypoglycaemia by itself."
+     },
+     "side_effects": {
+      "common": "GENITAL THRUSH and urinary infection — sugar in the urine feeds yeast. Warn every patient, and advise genital hygiene. Volume depletion, dizziness and postural drop, particularly with a diuretic.",
+      "rare_and_serious": "FOURNIER GANGRENE — a necrotising infection of the perineum. Rare, but any severe genital pain, swelling or redness needs the same-day emergency assessment.",
+      "the_specific_trap": "EUGLYCAEMIC DIABETIC KETOACIDOSIS — full ketoacidosis with a glucose that looks normal or only mildly raised, because the sugar is being poured out in the urine. A clinician who checks only the glucose will be falsely reassured. CHECK KETONES, NOT JUST GLUCOSE, in any unwell patient on a gliflozin. Hold the drug during acute illness, fasting and around surgery."
+     },
+     "choose_it_when": "Heart failure, chronic kidney disease, established artery disease, or when weight loss is wanted."
+    },
+    "class_3_glp1_receptor_agonists": {
+     "the_drugs": "SEMAGLUTIDE (Ozempic weekly injection, Rybelsus tablet, Wegovy for obesity), LIRAGLUTIDE, DULAGLUTIDE, exenatide. TIRZEPATIDE is a dual GLP-1 and GIP agonist and is more potent still. Recognise them by \"-GLUTIDE\" or \"-TIDE\".",
+     "how_it_works": "Mimics the gut hormone GLP-1: increases insulin release ONLY when glucose is high (which is why it does not cause hypoglycaemia alone), suppresses glucagon, slows gastric emptying, and acts on the brain to REDUCE APPETITE.",
+     "advantages": "The LARGEST WEIGHT LOSS of any glucose-lowering class, by a wide margin. Proven reduction in cardiovascular events for several agents. Powerful HbA1c reduction. Mostly weekly injection, which suits adherence.",
+     "side_effects": "NAUSEA, vomiting, diarrhoea — very common at the start and on dose increases, and the main reason people stop. It settles; escalate the dose slowly. Gallstones with rapid weight loss. Pancreatitis is reported and remains debated. AVOID in personal or family history of MEDULLARY THYROID CARCINOMA or multiple endocrine neoplasia type 2, based on rodent data. Injection-site reactions. Expensive, and supply has been unreliable.",
+     "choose_it_when": "Obesity is a major problem, or established artery disease. Increasingly used before insulin in type 2 diabetes for exactly that reason."
+    },
+    "class_4_dpp4_inhibitors_the_gliptins": {
+     "the_drugs": "SITAGLIPTIN, LINAGLIPTIN, alogliptin, saxagliptin. Recognise \"-GLIPTIN\".",
+     "how_it_works": "Blocks the enzyme DPP-4 that breaks down your own GLP-1, so natural GLP-1 lasts longer. Same pathway as the injections, but a much gentler effect.",
+     "advantages": "WELL TOLERATED and WEIGHT NEUTRAL. Oral, once daily. No hypoglycaemia alone. LINAGLIPTIN is cleared by the liver, so it needs no dose change in renal impairment — genuinely useful in advanced kidney disease.",
+     "disadvantages": "MODEST glucose lowering compared with the others, and NO cardiovascular or kidney benefit demonstrated. Saxagliptin was associated with more heart failure hospitalisation — so avoid gliptins where heart failure is the concern. Pancreatitis and joint pain reported.",
+     "choose_it_when": "A frail or elderly patient where the priority is avoiding hypoglycaemia and side effects rather than maximum benefit, or where renal impairment restricts other options.",
+     "do_not_combine": "Never give a gliptin with a GLP-1 agonist — the same pathway, no added benefit."
+    },
+    "class_5_sulfonylureas": {
+     "the_drugs": "GLICLAZIDE, GLIMEPIRIDE, GLIBENCLAMIDE (glyburide), tolbutamide.",
+     "how_it_works": "Binds the sulfonylurea receptor on the pancreatic beta cell, closes the potassium channel, and FORCES insulin release — whether or not glucose is high. That last point is the whole safety story.",
+     "advantages": "CHEAP, widely available, and works FAST with a substantial HbA1c drop. In many settings it is the realistic second-line drug on cost grounds alone, and that matters more than guideline preference if the alternatives are unaffordable.",
+     "side_effects": {
+      "hypoglycaemia": "The defining risk, because insulin is released regardless of the glucose level. It can be PROLONGED and can RECUR many hours after apparent correction — so a patient with sulfonylurea hypoglycaemia must be OBSERVED, not corrected and discharged. Worse with GLIBENCLAMIDE (long acting), in the elderly, in renal impairment, and when meals are missed.",
+      "others": "WEIGHT GAIN. Rash, and rarely blood dyscrasias."
+     },
+     "the_practical_preference": "GLICLAZIDE is generally preferred over glibenclamide — shorter acting, less hypoglycaemia, safer in older people.",
+     "caution": "Beta-blockers mask the warning symptoms of hypoglycaemia. Alcohol and missed meals precipitate it."
+    },
+    "class_6_thiazolidinediones": {
+     "the_drug": "PIOGLITAZONE. (Rosiglitazone was withdrawn in many countries over cardiovascular concerns.)",
+     "how_it_works": "Activates a nuclear receptor called PPAR-gamma, which makes fat and muscle more SENSITIVE to insulin. It takes WEEKS to work — this is not a drug for a quick correction.",
+     "advantages": "Durable glucose control, no hypoglycaemia alone, improves fatty liver, and evidence of benefit in insulin-resistant stroke patients.",
+     "side_effects": "FLUID RETENTION and OEDEMA — so it is CONTRAINDICATED IN HEART FAILURE, which is the key exam and ward point. WEIGHT GAIN. Increased FRACTURE risk, particularly in women. A debated association with bladder cancer.",
+     "choose_it_when": "Marked insulin resistance or fatty liver, and no heart failure."
+    },
+    "class_7_alpha_glucosidase_inhibitors": {
+     "the_drug": "ACARBOSE.",
+     "how_it_works": "Blocks the gut enzyme that breaks complex carbohydrate into absorbable sugar, so absorption is slowed and the after-meal spike is blunted.",
+     "advantages": "Targets post-meal glucose specifically. No hypoglycaemia alone. Weight neutral.",
+     "side_effects": "FLATULENCE, bloating and diarrhoea — from unabsorbed carbohydrate fermenting in the colon. Poor tolerance limits use.",
+     "the_critical_rule": "If a patient on acarbose becomes hypoglycaemic from ANOTHER drug, treat with GLUCOSE (dextrose), NOT with sucrose or ordinary table sugar — acarbose blocks the enzyme needed to break sucrose down, so ordinary sugar will not work fast enough."
+    },
+    "class_8_meglitinides": {
+     "the_drugs": "REPAGLINIDE, nateglinide.",
+     "how_it_works": "Same idea as a sulfonylurea but FAST ON, FAST OFF. Taken with each meal.",
+     "use": "Useful with erratic meal timing, since a skipped meal means a skipped dose. Less prolonged hypoglycaemia than a sulfonylurea, but more dosing."
+    },
+    "class_9_insulin": {
+     "the_types": {
+      "rapid_acting": "Aspart, lispro, glulisine — starts in minutes, taken with the meal.",
+      "short_acting": "Regular / soluble human insulin — starts in about 30 minutes.",
+      "intermediate": "NPH / isophane — covers roughly half a day, and is cloudy so it must be resuspended.",
+      "long_acting": "Glargine, detemir, degludec — flat background cover for 24 hours or more.",
+      "premixed": "Fixed combinations such as 30/70, giving background and mealtime cover in one injection. Convenient, less flexible."
+     },
+     "the_point_the_question_raised": "You asked when insulin is chosen over the tablets. The answer is not \"when the tablets fail\" — it is when the pancreas cannot deliver, and there are specific situations where insulin is the RIGHT FIRST CHOICE rather than a last resort:",
+     "when_insulin_is_needed_regardless_of_hba1c": [
+      "TYPE 1 DIABETES — always, from diagnosis, for life. No tablet substitutes for absent insulin.",
+      "DIABETIC KETOACIDOSIS or hyperosmolar hyperglycaemic state — insulin, always.",
+      "CATABOLIC FEATURES: marked weight loss, ketones present, very high glucose with thirst and polyuria. This is a failing pancreas and it needs insulin NOW, not another tablet.",
+      "PREGNANCY, where insulin (and metformin in some protocols) is used and most other agents are avoided.",
+      "ACUTE ILLNESS, sepsis, surgery, and steroid-induced hyperglycaemia.",
+      "SEVERE hepatic or renal impairment restricting the oral options.",
+      "A very high HbA1c at diagnosis — a period of insulin can rest the beta cells, and some patients then come OFF it."
+     ],
+     "the_nuance_worth_knowing": "Starting insulin is NOT a failure and should not be framed to patients as one. It is also not necessarily permanent in type 2 diabetes. And with GLP-1 agonists now available, many patients who would once have gone straight to insulin do better on an injectable that also reduces weight.",
+     "side_effects": "HYPOGLYCAEMIA (the main one), WEIGHT GAIN, injection-site LIPOHYPERTROPHY, and rarely allergy. See the insulin injection technique entry — bad technique, not dose, explains much unexplained variability."
+    },
+    "choosing_between_them_a_practical_map": {
+     "everyone": "Metformin plus diet, activity, smoking cessation, blood pressure and lipids.",
+     "heart_failure": "Add an SGLT2 INHIBITOR. AVOID pioglitazone (fluid retention) and be cautious with saxagliptin.",
+     "chronic_kidney_disease": "Add an SGLT2 INHIBITOR. Linagliptin if a gliptin is needed. Adjust or avoid metformin by the local threshold.",
+     "established_artery_disease": "A GLP-1 AGONIST or an SGLT2 INHIBITOR, both with proven cardiovascular benefit.",
+     "obesity_dominant": "A GLP-1 AGONIST (or tirzepatide). Avoid sulfonylureas and pioglitazone, which cause weight gain.",
+     "frail_or_elderly": "Prioritise AVOIDING HYPOGLYCAEMIA — a gliptin is gentle; relax the HbA1c target; avoid glibenclamide entirely.",
+     "cost_is_the_constraint": "Metformin plus GLICLAZIDE remains effective, affordable and widely available. An unaffordable optimal drug is worse than an affordable good one, and pretending otherwise is not clinical guidance.",
+     "very_high_glucose_with_weight_loss_or_ketones": "INSULIN, now. Do not add another tablet."
+    },
+    "targets": "HbA1c targets are INDIVIDUAL, not universal — tighter in the young, newly diagnosed and otherwise well; looser in the frail, in those with hypoglycaemia unawareness, and where the risk of a hypo outweighs the benefit of a lower number. A single target applied to everyone causes harm at both ends."
+   },
+   "inputs": [],
+   "logic": {},
+   "outputs": [],
+   "warnings": [
+    "SGLT2 inhibitors cause EUGLYCAEMIC ketoacidosis — check KETONES, not just glucose, in any unwell patient on a gliflozin.",
+    "Warn every patient starting a gliflozin about genital thrush, and about severe perineal pain as a Fournier gangrene red flag.",
+    "Sulfonylurea hypoglycaemia is PROLONGED and RECURS. Observe the patient; do not correct and discharge.",
+    "Gliclazide is preferred over glibenclamide — shorter acting and less hypoglycaemia, especially in the elderly.",
+    "Pioglitazone is CONTRAINDICATED in heart failure — it causes fluid retention.",
+    "Teach metformin SICK DAY RULES: stop while vomiting, with diarrhoea, or acutely unwell and not drinking.",
+    "Check vitamin B12 in anyone on long-term metformin — the deficiency neuropathy is blamed on diabetes instead.",
+    "If a patient on acarbose has a hypo, give GLUCOSE — ordinary table sugar will not work, because acarbose blocks its breakdown.",
+    "Never combine a DPP-4 inhibitor with a GLP-1 agonist — same pathway, no added benefit.",
+    "Avoid GLP-1 agonists with a personal or family history of medullary thyroid carcinoma or MEN type 2.",
+    "Weight loss with ketones and very high glucose means INSULIN now, not another tablet — and reconsider whether this is type 1.",
+    "HbA1c targets are individual. A single target for everyone harms the frail and under-treats the young."
+   ],
+   "limitations": [
+    "Doses, renal thresholds, licensing and availability are country- and formulary-specific and change. Scout deliberately states no doses."
+   ],
+   "flashcards": [
+    {
+     "q": "What does SGLT2 stand for, and how does blocking it work?",
+     "a": "Sodium-glucose co-transporter 2 — blocking it makes the kidney pass glucose into the urine instead of reabsorbing it."
+    },
+    {
+     "q": "What does GLP-1 stand for and do?",
+     "a": "Glucagon-like peptide 1 — a gut hormone that raises insulin only when glucose is high, slows the stomach and reduces appetite."
+    },
+    {
+     "q": "What does DPP-4 do, and what do gliptins do to it?",
+     "a": "DPP-4 (dipeptidyl peptidase 4) destroys GLP-1. Gliptins block the enzyme so your own GLP-1 lasts longer."
+    },
+    {
+     "q": "Name three SGLT2 inhibitors.",
+     "a": "Dapagliflozin, empagliflozin, canagliflozin — the \"-gliflozins\"."
+    },
+    {
+     "q": "Which class gives the most weight loss?",
+     "a": "GLP-1 receptor agonists — semaglutide, liraglutide, dulaglutide; tirzepatide more still."
+    },
+    {
+     "q": "Which diabetes drug is contraindicated in heart failure?",
+     "a": "Pioglitazone — fluid retention."
+    },
+    {
+     "q": "Why is sulfonylurea hypoglycaemia dangerous?",
+     "a": "Insulin is forced out regardless of glucose, so it is prolonged and recurs after correction."
+    },
+    {
+     "q": "When is insulin the right first choice rather than a last resort?",
+     "a": "Type 1, DKA, catabolic features (weight loss and ketones), pregnancy, acute illness, and a very high HbA1c at diagnosis."
+    },
+    {
+     "q": "What must you check in an unwell patient on a gliflozin?",
+     "a": "Ketones — euglycaemic DKA has a near-normal glucose."
+    },
+    {
+     "q": "Hypo on acarbose — what do you give?",
+     "a": "Glucose, not table sugar. Acarbose blocks sucrose breakdown."
+    },
+    {
+     "q": "What does HbA1c actually measure?",
+     "a": "Glycated haemoglobin — average glucose over roughly the past 2–3 months."
+    }
+   ],
+   "checkboxes": [
+    "Metformin considered first unless contraindicated",
+    "Organ at risk identified and the drug chosen for it",
+    "Ketone advice given with any SGLT2 inhibitor",
+    "Sick day rules taught for metformin",
+    "Hypoglycaemia risk assessed before a sulfonylurea",
+    "HbA1c target individualised and recorded",
+    "Cost and availability considered",
+    "B12 checked on long-term metformin"
+   ],
+   "related_slugs": [],
+   "patient_integration": null,
+   "governance": {
+    "evidence_tier": "T5_textbook_or_standard_teaching",
+    "verification_status": "standard_teaching",
+    "sources": [],
+    "nigeria_overlay": null,
+    "build_date": "2026-08-07",
+    "review_interval_months": 12,
+    "next_review_due": "2027-08-07",
+    "clinical_reviewer": null,
+    "approved_for_release": false,
+    "local_confirmation_required": true,
+    "supersedes": null,
+    "content_hash": "3c048ca280b5d5fd"
+   }
+  },
+  {
+   "id": "AS-DRGC-0005",
+   "schema_version": "4.0.0",
+   "content_release": "AWIBI-SCOUT-CONTENT-2026.08.R3",
+   "type": "drug",
+   "title": "NSAIDs, COX-1, COX-2 and the Lipoxygenase Pathway — With the Drugs Named",
+   "short_title": "NSAIDs, COX and LOX",
+   "slug": "nsaids_cox_1_cox_2_and_the_lipoxygenase_pathway_with_the_drugs_named",
+   "also_known_as": [
+    "nsaid",
+    "nsaids",
+    "cox-1",
+    "cox-2",
+    "cyclo-oxygenase",
+    "cyclooxygenase",
+    "lipoxygenase",
+    "lox",
+    "arachidonic acid",
+    "prostaglandin",
+    "leukotriene",
+    "coxib",
+    "celecoxib",
+    "ibuprofen",
+    "naproxen",
+    "diclofenac",
+    "aspirin",
+    "indomethacin",
+    "montelukast",
+    "zileuton",
+    "aspirin exacerbated respiratory disease",
+    "samter triad"
+   ],
+   "summary": "One enzyme family, two versions. COX-1 is the housekeeper protecting your stomach and platelets; COX-2 is the one switched on by inflammation. Every NSAID side effect is explained by which of the two it blocks — and the arachidonic acid pathway also explains why blocking one arm can worsen asthma.",
+   "domains": [
+    "pharmacology",
+    "immunology"
+   ],
+   "intents": [
+    "prescribe_reference",
+    "understand"
+   ],
+   "populations": [
+    "all_ages"
+   ],
+   "contexts": [
+    "routine"
+   ],
+   "hazard": "critical",
+   "urgency": "routine",
+   "jurisdiction": "international",
+   "search": {
+    "terms": [
+     "aerd",
+     "arachidonic acid",
+     "aspirin",
+     "aspirin exacerbated respiratory disease",
+     "celecoxib",
+     "cox-1",
+     "cox-2",
+     "coxib",
+     "cyclo-oxygenase",
+     "cyclooxygenase",
+     "diclofenac",
+     "drugs",
+     "ibuprofen",
+     "indomethacin",
+     "ketorolac",
+     "leukotriene",
+     "lipoxygenase",
+     "lox",
+     "montelukast",
+     "named",
+     "naproxen",
+     "nsaid",
+     "nsaids",
+     "nsaids, cox and lox",
+     "nsaids, cox-1, cox-2 and the lipoxygenase pathway — with the drugs named",
+     "pathway",
+     "phospholipase a2",
+     "prostacyclin",
+     "prostaglandin",
+     "reye syndrome",
+     "samter",
+     "samter triad",
+     "thromboxane",
+     "triple whammy",
+     "zafirlukast",
+     "zileuton"
+    ],
+    "ambiguous_terms": [],
+    "phrases": [],
+    "field_weights": {
+     "title": 8,
+     "short_title": 6,
+     "also_known_as": 5,
+     "terms": 4,
+     "summary": 2,
+     "body": 1,
+     "flashcards": 0.5
+    }
+   },
+   "body": {
+    "the_abbreviations_expanded_first": {
+     "nsaid": "NSAID — NON-STEROIDAL ANTI-INFLAMMATORY DRUG. \"Non-steroidal\" simply distinguishes them from corticosteroids, which are the other big anti-inflammatory family.",
+     "cox": "COX — CYCLO-OXYGENASE. The enzyme that converts arachidonic acid into prostaglandins and thromboxane. It exists as COX-1 and COX-2.",
+     "lox": "LOX — LIPOXYGENASE. The OTHER enzyme acting on the same starting material, producing LEUKOTRIENES instead.",
+     "coxib": "COXIB — a selective COX-2 inhibitor. Celecoxib and etoricoxib."
+    },
+    "the_pathway_in_one_picture": {
+     "the_start": "Cell membrane damage releases PHOSPHOLIPIDS. The enzyme PHOSPHOLIPASE A2 converts them into ARACHIDONIC ACID. That single molecule is the fork in the road.",
+     "arm_one_cyclo_oxygenase": "Arachidonic acid → COX → PROSTAGLANDINS (pain, fever, inflammation, stomach protection, kidney blood flow), PROSTACYCLIN (vasodilates, stops platelets sticking) and THROMBOXANE A2 (vasoconstricts, makes platelets stick).",
+     "arm_two_lipoxygenase": "Arachidonic acid → LOX → LEUKOTRIENES, which cause bronchoconstriction, mucus and eosinophil recruitment. This is the ASTHMA arm.",
+     "why_this_matters_clinically": "CORTICOSTEROIDS block PHOSPHOLIPASE A2, so they shut down BOTH arms — which is why they are more powerful anti-inflammatories than NSAIDs, and why they have far more side effects. NSAIDs block only the COX arm. Blocking COX can push arachidonic acid down the LOX arm, producing MORE leukotrienes — which is the mechanism behind aspirin-induced asthma."
+    },
+    "cox_1_versus_cox_2": {
+     "cox_1_the_housekeeper": {
+      "where": "Present all the time, in almost every tissue.",
+      "what_it_does": "Makes the prostaglandins that PROTECT THE STOMACH LINING (mucus and bicarbonate), maintain KIDNEY blood flow, and — in platelets — make THROMBOXANE A2 for clotting.",
+      "so_blocking_it_causes": "Gastric ulceration and bleeding, kidney injury, and reduced platelet function (bleeding)."
+     },
+     "cox_2_the_inducible_one": {
+      "where": "Switched ON at sites of inflammation. Also constitutively present in kidney and vascular endothelium — which is the catch.",
+      "what_it_does": "Makes the prostaglandins of PAIN, FEVER and INFLAMMATION. Also makes PROSTACYCLIN in blood vessels, which is protective.",
+      "so_blocking_it_gives": "The wanted effect — analgesia, antipyresis, anti-inflammation — with less stomach damage."
+     },
+     "the_trade_off_that_defines_the_class": "A selective COX-2 inhibitor spares the stomach BUT removes protective PROSTACYCLIN from blood vessels while leaving platelet THROMBOXANE (COX-1) intact. That tips the balance towards clotting — which is why coxibs carry an increased risk of myocardial infarction and stroke, and why rofecoxib was withdrawn. You trade stomach risk for cardiovascular risk. Neither is free."
+    },
+    "the_drugs_named": {
+     "non_selective_block_both": "IBUPROFEN (weakest gastrointestinal risk of the traditional ones), NAPROXEN (relatively favourable cardiovascular profile — often preferred if a patient has heart disease and needs an NSAID), DICLOFENAC (effective but higher cardiovascular risk), INDOMETACIN (potent, poorly tolerated, used in gout and in closing a patent ductus arteriosus), KETOROLAC (very potent, short-term only, high bleeding risk), mefenamic acid, piroxicam.",
+     "cox_2_selective": "CELECOXIB, ETORICOXIB. Better for the stomach, worse for the heart. Avoid in established cardiovascular disease.",
+     "aspirin_is_different": {
+      "why": "Aspirin binds COX IRREVERSIBLY. A platelet has no nucleus and cannot make new enzyme, so a single low dose disables that platelet for its whole 7–10 day life. Endothelium CAN make new enzyme. That asymmetry is exactly why LOW-DOSE aspirin is antiplatelet while HIGH-DOSE aspirin is an anti-inflammatory.",
+      "reye_syndrome": "AVOID aspirin in children and teenagers with a viral illness — REYE SYNDROME, an encephalopathy with fatty liver. Exceptions such as Kawasaki disease are specialist-directed."
+     },
+     "paracetamol_note": "PARACETAMOL (acetaminophen) is an analgesic and antipyretic but a WEAK anti-inflammatory, works largely centrally, and does NOT carry the gastric, renal, platelet or cardiovascular profile of an NSAID. It is not an NSAID and should not be lumped in with them."
+    },
+    "the_four_predictable_harms": {
+     "gastrointestinal": "Dyspepsia, erosion, ULCER, bleeding and perforation — and it can be PAINLESS, especially in the elderly, so the first sign may be a bleed. Risk rises with age, past ulcer, high dose, long duration, and combination with steroids, anticoagulants or SSRIs. Co-prescribe a PROTON PUMP INHIBITOR in anyone at risk.",
+     "renal": "Prostaglandins keep the afferent arteriole open. Block them and renal perfusion falls — usually harmless in a healthy person, dangerous in anyone volume-depleted, elderly, or with existing kidney disease. The TRIPLE WHAMMY of an ACE inhibitor (or ARB) plus a DIURETIC plus an NSAID is a well-described cause of avoidable acute kidney injury. Also fluid retention, hypertension and hyperkalaemia.",
+     "cardiovascular": "Increased myocardial infarction, stroke and heart failure with most NSAIDs, greatest with coxibs and diclofenac and lowest with naproxen. NSAIDs worsen heart failure and blunt antihypertensives. Ibuprofen can also block aspirin's antiplatelet effect if taken shortly before it.",
+     "respiratory_and_allergic": "ASPIRIN-EXACERBATED RESPIRATORY DISEASE, also called SAMTER TRIAD: asthma + nasal polyps + NSAID sensitivity. Blocking COX diverts arachidonic acid down the LOX arm, flooding the airway with leukotrienes and causing severe bronchospasm. Ask every asthmatic about NSAID reactions before prescribing."
+    },
+    "the_lipoxygenase_drugs": {
+     "why_they_exist": "If leukotrienes drive the asthma arm, blocking them treats asthma — particularly the aspirin-sensitive and exercise-induced types.",
+     "leukotriene_receptor_antagonists": "MONTELUKAST, zafirlukast. Block the receptor. Oral, useful as add-on therapy in asthma and in allergic rhinitis. Important warning: montelukast carries NEUROPSYCHIATRIC adverse effects — sleep disturbance, vivid dreams, agitation, mood change and suicidal ideation, including in children. Parents must be told what to watch for.",
+     "synthesis_inhibitor": "ZILEUTON blocks 5-lipoxygenase itself. Less used; needs liver monitoring."
+    },
+    "prescribing_rules_that_prevent_most_harm": [
+     "Lowest effective dose, shortest possible duration. Review it — NSAIDs get repeated indefinitely without anyone reconsidering.",
+     "Check renal function, blood pressure and the full drug list first, including over-the-counter and traditional remedies. Patients do not report ibuprofen as \"medication\".",
+     "Co-prescribe a proton pump inhibitor for anyone with gastrointestinal risk factors.",
+     "Naproxen where cardiovascular risk dominates; a coxib plus a proton pump inhibitor where gastrointestinal risk dominates and the heart is fine.",
+     "Avoid entirely in significant renal impairment, active ulcer, heart failure, and in the third trimester of pregnancy (premature closure of the ductus arteriosus and oligohydramnios).",
+     "Never combine two NSAIDs. The harms add; the benefit does not."
+    ]
+   },
+   "inputs": [],
+   "logic": {},
+   "outputs": [],
+   "warnings": [
+    "Blocking COX-1 removes stomach protection, kidney perfusion and platelet function — that is the whole side-effect profile.",
+    "COX-2 selective drugs spare the stomach but increase myocardial infarction and stroke risk. You trade one risk for another.",
+    "NSAID ulceration can be PAINLESS in the elderly — the first sign may be a bleed.",
+    "The TRIPLE WHAMMY — ACE inhibitor or ARB, plus diuretic, plus NSAID — is a well-described cause of avoidable acute kidney injury.",
+    "Ask every asthmatic about NSAID sensitivity: aspirin-exacerbated respiratory disease (Samter triad) causes severe bronchospasm.",
+    "Avoid aspirin in children and teenagers with viral illness — Reye syndrome.",
+    "Naproxen has the most favourable cardiovascular profile; diclofenac and the coxibs the worst.",
+    "Ibuprofen taken shortly before aspirin can block aspirin's antiplatelet effect.",
+    "Montelukast causes neuropsychiatric effects including mood change and suicidal ideation, in children too. Warn parents explicitly.",
+    "Avoid NSAIDs in the third trimester — premature ductus arteriosus closure and oligohydramnios.",
+    "Paracetamol is NOT an NSAID and does not share these harms.",
+    "Never combine two NSAIDs."
+   ],
+   "limitations": [
+    "Doses, relative risk rankings and licensing vary by agent and country and are periodically revised. No doses are given here."
+   ],
+   "flashcards": [
+    {
+     "q": "What does NSAID stand for?",
+     "a": "Non-steroidal anti-inflammatory drug — non-steroidal distinguishes them from corticosteroids."
+    },
+    {
+     "q": "What do COX and LOX stand for?",
+     "a": "Cyclo-oxygenase and lipoxygenase — the two enzymes acting on arachidonic acid."
+    },
+    {
+     "q": "COX-1 vs COX-2 in one line?",
+     "a": "COX-1 is the constant housekeeper (stomach, kidney, platelets); COX-2 is induced by inflammation."
+    },
+    {
+     "q": "Why do coxibs increase cardiovascular risk?",
+     "a": "They remove protective prostacyclin from vessels while leaving platelet thromboxane intact."
+    },
+    {
+     "q": "Why is low-dose aspirin antiplatelet but high-dose anti-inflammatory?",
+     "a": "Aspirin binds COX irreversibly; platelets have no nucleus and cannot make more enzyme."
+    },
+    {
+     "q": "Which NSAID is preferred if cardiovascular risk dominates?",
+     "a": "Naproxen."
+    },
+    {
+     "q": "What is Samter triad?",
+     "a": "Asthma, nasal polyps and NSAID sensitivity — blocking COX diverts arachidonic acid to leukotrienes."
+    },
+    {
+     "q": "Which drugs block the leukotriene arm?",
+     "a": "Montelukast and zafirlukast (receptor); zileuton (5-lipoxygenase)."
+    },
+    {
+     "q": "What must parents be warned about with montelukast?",
+     "a": "Neuropsychiatric effects — sleep disturbance, mood change, suicidal ideation."
+    },
+    {
+     "q": "Where do corticosteroids act on this pathway?",
+     "a": "Phospholipase A2 — upstream of both arms, which is why they are more powerful and more toxic."
+    },
+    {
+     "q": "Is paracetamol an NSAID?",
+     "a": "No — weak anti-inflammatory, largely central, without the gastric, renal or cardiovascular profile."
+    }
+   ],
+   "checkboxes": [
+    "Renal function and blood pressure checked before prescribing",
+    "Full drug list including over-the-counter reviewed",
+    "Asthma and NSAID sensitivity asked about",
+    "Proton pump inhibitor co-prescribed if at risk",
+    "Agent matched to whether gastric or cardiovascular risk dominates",
+    "Duration set and a review date recorded",
+    "Two NSAIDs never combined"
+   ],
+   "related_slugs": [],
+   "patient_integration": null,
+   "governance": {
+    "evidence_tier": "T5_textbook_or_standard_teaching",
+    "verification_status": "standard_teaching",
+    "sources": [],
+    "nigeria_overlay": null,
+    "build_date": "2026-08-07",
+    "review_interval_months": 12,
+    "next_review_due": "2027-08-07",
+    "clinical_reviewer": null,
+    "approved_for_release": false,
+    "local_confirmation_required": true,
+    "supersedes": null,
+    "content_hash": "dedd5da04aadaf21"
+   }
+  },
+  {
+   "id": "AS-ORTH-0001",
+   "schema_version": "4.0.0",
+   "content_release": "AWIBI-SCOUT-CONTENT-2026.08.R3",
+   "type": "guideline",
+   "title": "Fracture Management — The R's, ORIF, External Fixation and Compartment Syndrome",
+   "short_title": "Fracture management principles",
+   "slug": "fracture_management_the_r_s_orif_external_fixation_and_compartment_syndrome",
+   "also_known_as": [
+    "fracture management",
+    "orif",
+    "open reduction internal fixation",
+    "external fixator",
+    "ex fix",
+    "internal fixation",
+    "closed reduction",
+    "damage control orthopaedics",
+    "compartment syndrome",
+    "six ps",
+    "6 ps",
+    "four rs",
+    "6 rs",
+    "fracture healing",
+    "k-wire",
+    "intramedullary nail",
+    "plate and screws",
+    "traction"
+   ],
+   "summary": "Every fracture follows the same sequence: resuscitate, reduce, hold, rehabilitate. The decision that matters is HOW you hold it — a plate (ORIF) gives perfect anatomy but needs healthy soft tissue; an external fixator gives stability without touching the zone of injury, which is why it wins in war, contamination and physiological collapse.",
+   "domains": [
+    "orthopaedics",
+    "trauma",
+    "general_surgery"
+   ],
+   "intents": [
+    "classify",
+    "act"
+   ],
+   "populations": [
+    "all_ages"
+   ],
+   "contexts": [
+    "routine"
+   ],
+   "hazard": "critical",
+   "urgency": "immediate",
+   "jurisdiction": "international",
+   "search": {
+    "terms": [
+     "6 ps",
+     "6 rs",
+     "absolute stability",
+     "avascular necrosis",
+     "callus",
+     "closed reduction",
+     "compartment",
+     "compartment syndrome",
+     "damage control",
+     "damage control orthopaedics",
+     "ex fix",
+     "external",
+     "external fixator",
+     "fasciotomy",
+     "fat embolism",
+     "fixation",
+     "four rs",
+     "fracture",
+     "fracture healing",
+     "fracture management",
+     "fracture management principles",
+     "fracture management — the r's, orif, external fixation and compartment syndrome",
+     "immobilisation",
+     "internal fixation",
+     "intramedullary nail",
+     "k-wire",
+     "malunion",
+     "management",
+     "non-union",
+     "open reduction",
+     "open reduction internal fixation",
+     "orif",
+     "plate",
+     "plate and screws",
+     "primary bone healing",
+     "reduction",
+     "rehabilitation",
+     "relative stability",
+     "screw",
+     "secondary bone healing",
+     "six ps",
+     "syndrome",
+     "traction"
+    ],
+    "ambiguous_terms": [],
+    "phrases": [],
+    "field_weights": {
+     "title": 8,
+     "short_title": 6,
+     "also_known_as": 5,
+     "terms": 4,
+     "summary": 2,
+     "body": 1,
+     "flashcards": 0.5
+    }
+   },
+   "body": {
+    "abbreviations_expanded": {
+     "orif": "ORIF — OPEN REDUCTION AND INTERNAL FIXATION. \"Open\" means the fracture is surgically exposed; \"reduction\" means the bone ends are put back into position; \"internal fixation\" means metal (plate, screws, nail, wire) holds it there, inside the body.",
+     "crif": "CRIF / CRPP — CLOSED Reduction and Internal Fixation, or Closed Reduction and Percutaneous Pinning. The fracture is reduced WITHOUT opening it, then held with wires passed through the skin.",
+     "ex_fix": "EXTERNAL FIXATOR — pins into bone ABOVE and BELOW the fracture, connected by a frame OUTSIDE the skin, bridging the injured zone without operating in it.",
+     "im_nail": "IM NAIL — INTRAMEDULLARY NAIL. A metal rod passed down the marrow cavity of a long bone.",
+     "dco": "DCO — DAMAGE CONTROL ORTHOPAEDICS. Temporary stabilisation now, definitive surgery later, when the patient can survive it."
+    },
+    "the_sequence_the_r_s": {
+     "a_note_on_the_mnemonic": "You will hear this taught as the \"4 R's\", the \"5 R's\" and the \"6 R's\" depending on the school — the extra letters are usually Recognition and Review/Referral bolted onto the front and back. The number does not matter; the SEQUENCE does. Do not argue about the count in an exam — state the steps.",
+     "one_resuscitate": "The patient before the limb. Airway, breathing, circulation. A femoral shaft fracture can lose 1–1.5 litres and a pelvic fracture several litres — fractures cause shock. Look for the injuries that kill before the one you can see. In an open fracture, this is also when TETANUS status is checked and ANTIBIOTICS are given — antibiotic timing is one of the strongest determinants of infection.",
+     "two_recognise_and_assess": "History and mechanism (energy transferred predicts soft tissue damage more than the X-ray does), then examine: skin integrity (open or closed?), NEUROVASCULAR STATUS distal to the injury — documented BEFORE and AFTER any manipulation, every time, without exception — and compartments. Then image: two views, two joints, two occasions where needed.",
+     "three_reduce": "Restore alignment, length and rotation. CLOSED reduction (manipulation, traction) if possible; OPEN if not. Reduction relieves pain, reduces bleeding, relieves pressure on skin and neurovascular structures, and is sometimes urgent in its own right — a dislocated ankle tenting white skin must be reduced immediately, before imaging, or the skin dies.",
+     "four_retain_hold": "Maintain the reduction while the bone heals: cast or splint, traction, or surgical fixation. This is where the ORIF-versus-external-fixation decision sits.",
+     "five_rehabilitate": "Begin early. The enemy is STIFFNESS, muscle wasting and thromboembolism, not movement. \"Rehabilitation starts on day one\" is not a slogan — a perfectly fixed fracture with a stiff, wasted limb is a failed treatment.",
+     "six_review": "Serial radiographs and clinical review for loss of position, infection, non-union and functional recovery."
+    },
+    "how_bone_actually_heals_and_why_it_changes_the_fixation_choice": {
+     "secondary_healing": "Healing through CALLUS, in stages — haematoma, inflammation, soft callus, hard callus, remodelling. It requires MICROMOTION at the fracture site. This is what happens in a cast, in traction, with an intramedullary nail, and with an external fixator. These give RELATIVE stability, and you EXPECT to see callus on the follow-up film.",
+     "primary_healing": "Direct cortical healing with NO callus, requiring ABSOLUTE stability and compression — a lag screw and compression plate. Here, visible callus is a sign that the fixation is LOOSE, not that healing is going well. This inversion catches people out constantly.",
+     "the_practical_rule": "Know which kind of healing your construct is aiming for before you interpret the follow-up X-ray."
+    },
+    "choosing_the_construct": {
+     "conservative_cast_or_splint": "Undisplaced or minimally displaced stable fractures, and most paediatric fractures, where remodelling potential is enormous. Watch for cast complications: pressure sores, compartment syndrome under a tight cast, and loss of position.",
+     "orif": {
+      "what_it_offers": "ANATOMICAL reduction, rigid fixation and EARLY MOBILISATION. Essential for intra-articular fractures, where a step in the joint surface of even 1–2 mm leads to post-traumatic arthritis.",
+      "indications": "Intra-articular fractures · failed closed reduction · unstable patterns · fractures with vascular injury needing repair · pathological fractures · non-union · some open fractures once clean · and the classic list where non-operative treatment does badly, such as displaced femoral neck fractures in the young.",
+      "the_cost": "It requires a surgical exposure through soft tissue that is already injured, and it introduces METAL into a contaminated or swollen field. In the wrong soft-tissue conditions it converts a fracture problem into an INFECTION problem — and infected metal is a far worse disease than the original fracture."
+     },
+     "external_fixation": {
+      "why_it_exists": "It achieves stability with pins placed OUTSIDE the zone of injury, so it does not require dissecting through damaged, contaminated or swollen tissue.",
+      "when_it_is_the_right_answer": [
+       "SEVERE OPEN FRACTURES, especially Gustilo type III.",
+       "GUNSHOT and blast injuries — contaminated by definition.",
+       "The physiologically UNSTABLE polytrauma patient — this is DAMAGE CONTROL ORTHOPAEDICS: stabilise fast, limit the second hit of a long operation, return for definitive fixation when the patient is warm, resuscitated and not coagulopathic.",
+       "Severe SOFT TISSUE swelling, fracture blisters, or degloving where a skin incision would not heal — commonly a \"spanning\" fixator across the ankle or knee until swelling settles.",
+       "Fractures with VASCULAR INJURY, where the bone must be stabilised quickly before or after vascular repair.",
+       "Infected non-union, and limb lengthening or deformity correction (Ilizarov and other circular frames).",
+       "Resource-limited and conflict settings — an external fixator needs less theatre infrastructure and less implant inventory than a full plating set."
+      ],
+      "the_downsides": "PIN-SITE INFECTION (needs taught daily pin care), pin loosening, joint stiffness while the frame spans a joint, bulk and social burden for the patient, and neurovascular injury during pin insertion if safe corridors are not respected."
+     },
+     "intramedullary_nail": "The workhorse for femoral and tibial SHAFT fractures. Load-sharing, closed insertion away from the fracture site, allows early weight-bearing. Caution in the very contaminated open fracture, and the timing in a patient with chest injury has historically been debated because of the pulmonary insult from reaming.",
+     "traction": "Largely superseded where surgery is available, but still genuinely useful as a temporising measure, in some paediatric femoral fractures, and where surgical capacity does not exist."
+    },
+    "compartment_syndrome": {
+     "why_it_belongs_here": "It is the emergency that turns a treatable fracture into a permanently useless limb, and it is missed by relying on the wrong signs.",
+     "what_it_is": "Pressure rises inside a closed fascial compartment until it exceeds perfusion pressure. Muscle and nerve become ischaemic and die. It occurs in CLOSED and OPEN fractures alike — an open fracture does NOT decompress the compartment, which is a dangerous and widespread assumption.",
+     "the_six_ps_and_their_real_value": {
+      "the_list": "PAIN · PARAESTHESIA · PALLOR · PARALYSIS · PULSELESSNESS · POIKILOTHERMIA (perishing cold).",
+      "the_critical_correction": "Only the FIRST TWO are early. PALLOR, PARALYSIS and PULSELESSNESS are LATE — by the time the pulse is gone the muscle is usually already dead. WAITING FOR THE SIX P's IS HOW LIMBS ARE LOST. A PRESENT PULSE DOES NOT EXCLUDE COMPARTMENT SYNDROME, because compartment pressure rarely exceeds systolic arterial pressure.",
+      "what_to_act_on_instead": "PAIN OUT OF PROPORTION to the injury, pain that ESCALATES and needs increasing opioid, and PAIN ON PASSIVE STRETCH of the muscles in that compartment. Those three, together, are the diagnosis. A rising analgesia requirement is a red flag, not a nursing problem."
+     },
+     "the_unreliable_patient": "In the unconscious, intubated, regionally blocked or very young patient, pain cannot be assessed. Here you need a high index of suspicion and compartment PRESSURE MONITORING. Note also that a REGIONAL BLOCK can mask evolving compartment syndrome — a real and recognised hazard when siting blocks in high-risk fractures.",
+     "the_action": "Remove all circumferential casts and dressings down to skin — a split cast is not enough, it must be split through every layer. Keep the limb at HEART LEVEL (not elevated — elevation reduces the arteriovenous gradient and worsens perfusion). Correct hypotension. Then URGENT FASCIOTOMY. Fasciotomy is a clinical decision; do not delay it for a pressure reading you cannot obtain quickly.",
+     "after": "Watch for RHABDOMYOLYSIS — check creatine kinase and potassium, give generous fluids, and monitor renal function."
+    },
+    "the_complications_to_look_for": {
+     "early": "Haemorrhage and shock · neurovascular injury · compartment syndrome · FAT EMBOLISM SYNDROME (classically 24–72 hours after a long bone fracture: breathlessness and hypoxia, confusion, and a petechial rash in the axilla, conjunctiva and upper chest) · infection · venous thromboembolism.",
+     "late": "NON-UNION and delayed union · MALUNION · AVASCULAR NECROSIS at the classic watershed sites — femoral head after neck fracture, scaphoid proximal pole, talus — where the blood supply runs retrograde · post-traumatic arthritis · joint stiffness · complex regional pain syndrome · limb length discrepancy and growth arrest in children · implant failure."
+    }
+   },
+   "inputs": [],
+   "logic": {},
+   "outputs": [],
+   "warnings": [
+    "Document neurovascular status BEFORE and AFTER every manipulation, cast and operation. This is the single most important record in fracture care.",
+    "A PRESENT PULSE DOES NOT EXCLUDE compartment syndrome. Pain out of proportion and pain on passive stretch are the early signs.",
+    "The six P's are mostly LATE signs. Waiting for them costs limbs.",
+    "An OPEN fracture does not decompress a compartment — compartment syndrome still occurs.",
+    "Keep the limb at heart level in suspected compartment syndrome. Elevation worsens perfusion.",
+    "Split casts through EVERY layer down to skin, not just the plaster.",
+    "A regional block can mask evolving compartment syndrome — consider this before siting one in a high-risk fracture.",
+    "Visible callus around a compression plate means the fixation is LOOSE, not that healing is going well.",
+    "Reduce a dislocation that is tenting or blanching skin IMMEDIATELY — before imaging — or the skin necroses.",
+    "Femoral shaft fractures bleed 1–1.5 litres; pelvic fractures far more. Fractures cause shock.",
+    "Internal fixation in the wrong soft-tissue conditions converts a fracture problem into an infected-metal problem.",
+    "Suspect fat embolism 24–72 hours after long bone fracture: hypoxia, confusion, petechiae in the axilla and conjunctiva."
+   ],
+   "limitations": [
+    "Implant choice, antibiotic agents, timing thresholds and thromboprophylaxis are protocol- and resource-specific. Scout states no doses."
+   ],
+   "flashcards": [
+    {
+     "q": "What does ORIF stand for?",
+     "a": "Open Reduction and Internal Fixation — the fracture is exposed, realigned and held with internal metal."
+    },
+    {
+     "q": "When is an external fixator preferred over a plate?",
+     "a": "Severe open fractures, gunshot and blast, damage control in unstable polytrauma, bad soft tissues, and vascular injury."
+    },
+    {
+     "q": "What is damage control orthopaedics?",
+     "a": "Rapid temporary stabilisation now, definitive fixation later once the patient is physiologically able to survive it."
+    },
+    {
+     "q": "Which two of the six P's are early?",
+     "a": "Pain and paraesthesia. Pallor, paralysis and pulselessness are late."
+    },
+    {
+     "q": "Does a palpable pulse exclude compartment syndrome?",
+     "a": "No — compartment pressure rarely exceeds systolic pressure."
+    },
+    {
+     "q": "Which three findings actually make the diagnosis?",
+     "a": "Pain out of proportion, escalating analgesia requirement, and pain on passive stretch."
+    },
+    {
+     "q": "Should you elevate a limb with suspected compartment syndrome?",
+     "a": "No — keep it at heart level. Elevation reduces perfusion pressure."
+    },
+    {
+     "q": "Callus around a compression plate means what?",
+     "a": "The fixation is loose — absolute stability should heal without callus."
+    },
+    {
+     "q": "Which fractures classically cause avascular necrosis?",
+     "a": "Femoral neck, scaphoid proximal pole, talus — retrograde blood supply."
+    },
+    {
+     "q": "How does fat embolism syndrome present?",
+     "a": "Hypoxia, confusion and a petechial rash 24–72 hours after a long bone fracture."
+    }
+   ],
+   "checkboxes": [
+    "Patient resuscitated before the limb addressed",
+    "Neurovascular status documented before and after every manipulation",
+    "Open or closed established",
+    "Tetanus and antibiotics given if open",
+    "Compartments assessed and reassessed",
+    "Analgesia requirement trend reviewed",
+    "Two views and joint above and below imaged",
+    "Rehabilitation started early"
+   ],
+   "related_slugs": [],
+   "patient_integration": null,
+   "governance": {
+    "evidence_tier": "T5_textbook_or_standard_teaching",
+    "verification_status": "standard_teaching",
+    "sources": [],
+    "nigeria_overlay": null,
+    "build_date": "2026-08-07",
+    "review_interval_months": 12,
+    "next_review_due": "2027-08-07",
+    "clinical_reviewer": null,
+    "approved_for_release": false,
+    "local_confirmation_required": true,
+    "supersedes": null,
+    "content_hash": "3c4237f4f5e4e411"
+   }
+  },
+  {
+   "id": "AS-ORTH-0002",
+   "schema_version": "4.0.0",
+   "content_release": "AWIBI-SCOUT-CONTENT-2026.08.R3",
+   "type": "classification",
+   "title": "Salter-Harris Classification — Growth Plate Fractures in Children",
+   "short_title": "Salter-Harris",
+   "slug": "salter_harris_classification_growth_plate_fractures_in_children",
+   "also_known_as": [
+    "salter harris",
+    "salter-harris",
+    "saltr",
+    "growth plate fracture",
+    "physeal fracture",
+    "physeal injury",
+    "epiphyseal injury",
+    "thurston holland",
+    "growth arrest"
+   ],
+   "summary": "Five types, remembered as SALTR. The higher the number the worse the prognosis, because types III and IV cross into the joint and type V crushes the growth plate itself. Type I can look completely normal on X-ray — the diagnosis is tenderness over the physis, not the film.",
+   "domains": [
+    "orthopaedics",
+    "paediatrics",
+    "trauma"
+   ],
+   "intents": [
+    "classify",
+    "identify"
+   ],
+   "populations": [
+    "all_ages"
+   ],
+   "contexts": [
+    "routine"
+   ],
+   "hazard": "high",
+   "urgency": "urgent",
+   "jurisdiction": "international",
+   "search": {
+    "terms": [
+     "angular deformity",
+     "children",
+     "classification",
+     "diaphysis",
+     "epiphyseal injury",
+     "epiphysis",
+     "fractures",
+     "growth",
+     "growth arrest",
+     "growth plate",
+     "growth plate fracture",
+     "harris",
+     "lateral condyle",
+     "limb length discrepancy",
+     "metaphysis",
+     "physeal bar",
+     "physeal fracture",
+     "physeal injury",
+     "physis",
+     "plate",
+     "salter",
+     "salter harris",
+     "salter-harris",
+     "salter-harris classification — growth plate fractures in children",
+     "saltr",
+     "slipped upper femoral epiphysis",
+     "thurston holland",
+     "tillaux",
+     "triplane"
+    ],
+    "ambiguous_terms": [],
+    "phrases": [],
+    "field_weights": {
+     "title": 8,
+     "short_title": 6,
+     "also_known_as": 5,
+     "terms": 4,
+     "summary": 2,
+     "body": 1,
+     "flashcards": 0.5
+    }
+   },
+   "body": {
+    "the_anatomy_you_need_first": {
+     "epiphysis": "The END of the bone, beyond the growth plate, forming the joint surface.",
+     "physis": "The GROWTH PLATE itself — a cartilage disc where lengthening happens. It is the WEAKEST part of a child's bone: weaker than the surrounding bone and weaker than the ligaments.",
+     "metaphysis": "The flared segment between the growth plate and the shaft.",
+     "diaphysis": "The shaft.",
+     "the_consequence_that_defines_paediatric_trauma": "Because the physis is weaker than the ligaments, a force that would SPRAIN an adult ankle FRACTURES a child's growth plate. \"A sprain in a skeletally immature patient is a fracture until proven otherwise\" — this is why a child with a tender growth plate and a normal X-ray is immobilised and reviewed, not discharged as a sprain."
+    },
+    "the_five_types_saltr": {
+     "the_mnemonic": "SALTR — Slip, Above, Lower, Through, Rammed. Each letter tells you where the fracture line runs relative to the growth plate.",
+     "type_i_s_slip": {
+      "anatomy": "Through the PHYSIS ONLY. The epiphysis slips off the metaphysis; no bone is fractured.",
+      "x_ray": "MAY LOOK COMPLETELY NORMAL, or show only a subtly WIDENED physis. This is the trap. Diagnose it clinically on point tenderness over the growth plate.",
+      "examples": "Distal radius in a young child; SLIPPED UPPER FEMORAL EPIPHYSIS is essentially a chronic type I.",
+      "prognosis": "Excellent. Growth disturbance is rare."
+     },
+     "type_ii_a_above": {
+      "anatomy": "Through the PHYSIS and out through the METAPHYSIS — taking a triangular metaphyseal fragment called the THURSTON-HOLLAND fragment.",
+      "frequency": "THE COMMONEST — roughly 75% of all physeal injuries.",
+      "examples": "Distal radius, distal tibia.",
+      "prognosis": "Good. Usually managed by closed reduction and cast."
+     },
+     "type_iii_l_lower": {
+      "anatomy": "Through the PHYSIS and down through the EPIPHYSIS into the JOINT. INTRA-ARTICULAR.",
+      "examples": "Juvenile TILLAUX fracture of the distal tibia.",
+      "prognosis": "Guarded. Because it enters the joint, it needs ANATOMICAL reduction — often ORIF — to prevent both joint incongruity and growth arrest."
+     },
+     "type_iv_t_through": {
+      "anatomy": "Crosses ALL THREE — metaphysis, physis and epiphysis — in a single vertical line. INTRA-ARTICULAR.",
+      "examples": "LATERAL CONDYLE of the humerus — the classic, and notorious for non-union and deformity if under-treated.",
+      "prognosis": "Poor without perfect reduction. High risk of forming a PHYSEAL BAR (a bony bridge across the growth plate) causing angular deformity. Usually needs ORIF."
+     },
+     "type_v_r_rammed": {
+      "anatomy": "A CRUSH injury of the physis from axial compression. Nothing is displaced.",
+      "x_ray": "Often looks NORMAL at the time. The diagnosis is usually made RETROSPECTIVELY, months later, when growth has already arrested.",
+      "prognosis": "THE WORST. Almost always causes growth arrest and progressive deformity. There is little to do acutely except recognise the mechanism and warn the family that follow-up is essential."
+     }
+    },
+    "the_later_additions": {
+     "note": "Types VI to IX were added by Rang and Ogden and are far less used. Know that they exist; you will rarely be asked beyond V.",
+     "type_vi": "Injury to the PERICHONDRIAL RING at the edge of the physis — often from a degloving or lawnmower-type injury. Causes a peripheral bar and angular deformity.",
+     "type_vii": "Isolated EPIPHYSEAL injury not involving the physis.",
+     "type_viii": "Isolated METAPHYSEAL injury affecting metaphyseal growth and remodelling.",
+     "type_ix": "PERIOSTEAL injury impairing appositional (width) growth."
+    },
+    "why_this_classification_earns_its_place": {
+     "prognosis": "The number predicts outcome: I and II usually do well with closed treatment; III and IV are intra-articular and usually need surgery; V does badly whatever you do.",
+     "the_thing_that_must_be_said_to_the_family": "ANY physeal injury can cause GROWTH ARREST, and arrest may only declare itself MONTHS TO YEARS later as a progressive angular deformity or a limb length discrepancy. Every child with a physeal fracture needs planned follow-up until growth is complete or the risk has passed, and the family must be told this at the first visit — otherwise they will not return, and the deformity presents late.",
+     "the_younger_the_child_the_worse_the_arrest": "A young child has more growth remaining, so an arrest produces a larger final deformity. Paradoxically, younger children also remodel non-physeal fractures better. Both are true and they apply to different things."
+    },
+    "practical_points": [
+     "Point tenderness over the growth plate with a normal X-ray is a Salter-Harris I until proven otherwise. Immobilise and review.",
+     "Compare with the OTHER SIDE if uncertain — a comparison view of the uninjured limb resolves many doubts about physeal width.",
+     "Avoid repeated forceful reduction attempts of a physeal fracture; each manipulation can further damage the germinal layer and cause the arrest you are trying to prevent.",
+     "If a physeal fracture presents LATE (more than about a week), aggressive remanipulation is often more harmful than accepting the position and planning later correction.",
+     "A child with a physeal fracture from a mechanism that does not fit, or with multiple injuries of different ages, requires a SAFEGUARDING assessment."
+    ]
+   },
+   "inputs": [],
+   "logic": {},
+   "outputs": [],
+   "warnings": [
+    "A Salter-Harris type I can have a completely NORMAL X-ray. Tenderness over the physis is the diagnosis — immobilise and review.",
+    "In a skeletally immature patient, treat an apparent \"sprain\" as a physeal fracture until proven otherwise — the physis is weaker than the ligaments.",
+    "Types III and IV are INTRA-ARTICULAR and usually need anatomical reduction, often ORIF.",
+    "Type V is diagnosed retrospectively after growth arrest and has the worst prognosis.",
+    "Every physeal injury needs planned follow-up for growth arrest — tell the family at the first visit or they will not return.",
+    "Type IV lateral condyle of the humerus is notorious for non-union and deformity if under-treated.",
+    "Repeated forceful manipulation of a physeal fracture can itself cause growth arrest.",
+    "A fracture with a mechanism that does not fit, or injuries of different ages, requires safeguarding assessment."
+   ],
+   "limitations": [
+    "Reduction thresholds, fixation choice and follow-up intervals are protocol- and age-specific."
+   ],
+   "flashcards": [
+    {
+     "q": "What does SALTR stand for?",
+     "a": "Slip (I), Above (II), Lower (III), Through (IV), Rammed/crush (V)."
+    },
+    {
+     "q": "Which type is commonest?",
+     "a": "Type II — about 75%, with a Thurston-Holland metaphyseal fragment."
+    },
+    {
+     "q": "Which type has a normal X-ray acutely and the worst prognosis?",
+     "a": "Type V — a crush of the physis, usually diagnosed after growth has already arrested."
+    },
+    {
+     "q": "Which types are intra-articular?",
+     "a": "Types III and IV — they need anatomical reduction."
+    },
+    {
+     "q": "What is the Thurston-Holland fragment?",
+     "a": "The triangular metaphyseal fragment of a Salter-Harris type II."
+    },
+    {
+     "q": "Why is a \"sprain\" suspect in a child?",
+     "a": "The physis is weaker than the ligaments, so the growth plate fractures instead."
+    },
+    {
+     "q": "What must every family be told?",
+     "a": "That growth arrest can appear months to years later, so follow-up is essential."
+    },
+    {
+     "q": "Which type IV fracture is notorious?",
+     "a": "Lateral condyle of the humerus — non-union and deformity if under-treated."
+    }
+   ],
+   "checkboxes": [
+    "Physis palpated for point tenderness",
+    "Comparison view considered",
+    "Type assigned and intra-articular involvement assessed",
+    "Neurovascular status documented",
+    "Growth arrest risk explained to the family",
+    "Follow-up arranged and its purpose stated",
+    "Safeguarding considered if mechanism does not fit"
+   ],
+   "related_slugs": [],
+   "patient_integration": null,
+   "governance": {
+    "evidence_tier": "T5_textbook_or_standard_teaching",
+    "verification_status": "standard_teaching",
+    "sources": [],
+    "nigeria_overlay": null,
+    "build_date": "2026-08-07",
+    "review_interval_months": 12,
+    "next_review_due": "2027-08-07",
+    "clinical_reviewer": null,
+    "approved_for_release": false,
+    "local_confirmation_required": true,
+    "supersedes": null,
+    "content_hash": "3b51ea4c1f09104b"
+   }
+  },
+  {
+   "id": "AS-ORTH-0003",
+   "schema_version": "4.0.0",
+   "content_release": "AWIBI-SCOUT-CONTENT-2026.08.R3",
+   "type": "classification",
+   "title": "Gustilo-Anderson, Open Fractures and Gunshot Injuries",
+   "short_title": "Gustilo-Anderson and open fractures",
+   "slug": "gustilo_anderson_open_fractures_and_gunshot_injuries",
+   "also_known_as": [
+    "gustilo anderson",
+    "gustilo-anderson",
+    "gustilo",
+    "open fracture",
+    "compound fracture",
+    "gunshot fracture",
+    "ballistic injury",
+    "mess score",
+    "mangled extremity severity score",
+    "ao ota classification",
+    "debridement"
+   ],
+   "summary": "Grade by the SOFT TISSUE, not the hole in the skin. A one-centimetre wound from a high-velocity rifle round is a type III injury, and the true grade can only be assigned in theatre after debridement. Antibiotics within the hour matter more than the timing of surgery.",
+   "domains": [
+    "orthopaedics",
+    "trauma",
+    "general_surgery",
+    "infectious_disease"
+   ],
+   "intents": [
+    "classify",
+    "act"
+   ],
+   "populations": [
+    "all_ages"
+   ],
+   "contexts": [
+    "routine"
+   ],
+   "hazard": "critical",
+   "urgency": "immediate",
+   "jurisdiction": "international",
+   "search": {
+    "terms": [
+     "amputation",
+     "anderson",
+     "ao ota",
+     "ao ota classification",
+     "ballistic injury",
+     "cavitation",
+     "clostridium",
+     "compound fracture",
+     "debridement",
+     "fix and flap",
+     "flap",
+     "fractures",
+     "gas gangrene",
+     "gunshot",
+     "gunshot fracture",
+     "gustilo",
+     "gustilo anderson",
+     "gustilo-anderson",
+     "gustilo-anderson and open fractures",
+     "gustilo-anderson, open fractures and gunshot injuries",
+     "high velocity",
+     "injuries",
+     "irrigation",
+     "low velocity",
+     "mangled extremity",
+     "mangled extremity severity score",
+     "mess score",
+     "open",
+     "open fracture",
+     "periosteal stripping",
+     "soft tissue coverage",
+     "tetanus"
+    ],
+    "ambiguous_terms": [],
+    "phrases": [],
+    "field_weights": {
+     "title": 8,
+     "short_title": 6,
+     "also_known_as": 5,
+     "terms": 4,
+     "summary": 2,
+     "body": 1,
+     "flashcards": 0.5
+    }
+   },
+   "body": {
+    "the_governing_principle": "An open fracture is a SOFT TISSUE injury that happens to involve bone. The prognosis is decided by the soft tissue envelope, its blood supply and its contamination — not by the fracture pattern. Everything in the classification follows from that.",
+    "gustilo_anderson": {
+     "history_note": "Gustilo and Anderson described types I–III in 1976. Gustilo, Mendoza and Williams SUBDIVIDED type III into A, B and C in 1984. So \"modified Gustilo-Anderson\" simply means the version with IIIA/B/C — which is the version everyone now uses.",
+     "type_i": "Wound UNDER 1 cm. Clean. LOW energy. Minimal soft tissue damage, usually an inside-out puncture from the bone end. Simple fracture pattern.",
+     "type_ii": "Wound 1–10 cm. MODERATE energy and contamination. Moderate soft tissue damage but adequate coverage — no flap required.",
+     "type_iii_general": "Wound usually OVER 10 cm, HIGH energy, EXTENSIVE soft tissue damage and contamination. Also type III REGARDLESS OF WOUND SIZE if there is: a segmental or severely comminuted fracture, a farmyard or heavily contaminated injury, a gunshot from a high-velocity weapon, a vascular injury, or a delay of more than several hours before treatment.",
+     "type_iiia": "Extensive soft tissue damage, but the bone can still be COVERED with local soft tissue. No flap needed.",
+     "type_iiib": "Extensive damage with PERIOSTEAL STRIPPING and BONE EXPOSED. Coverage is inadequate — requires a FLAP (local or free). This is the injury needing combined orthopaedic and plastic surgery.",
+     "type_iiic": "ANY open fracture with an ARTERIAL INJURY REQUIRING REPAIR to save the limb — regardless of wound size or soft tissue damage. Highest amputation rate.",
+     "the_two_practical_corrections": {
+      "grade_after_debridement": "The definitive grade is assigned IN THEATRE AFTER DEBRIDEMENT, not in the emergency department. The skin wound systematically UNDER-represents the injury, and inter-observer agreement on Gustilo grading from the ED is known to be poor. Do not let an initial \"type I\" label anchor the plan.",
+      "the_size_is_a_proxy": "Wound length is a proxy for energy, not the thing itself. Judge energy from the MECHANISM, the fracture comminution and the muscle findings."
+     }
+    },
+    "management_of_open_fractures": {
+     "the_priority_order": [
+      "Resuscitate. Look for the injuries that kill.",
+      "ANTIBIOTICS AS EARLY AS POSSIBLE — ideally within an hour of injury. This is the single most evidence-supported intervention for preventing infection, and it outweighs surgical timing. Agents commonly used: a first-generation cephalosporin such as CEFAZOLIN for types I and II; broader Gram-negative cover added (for example an aminoglycoside such as GENTAMICIN) for type III; and additional anaerobic cover such as PENICILLIN or metronidazole for farmyard, soil or vascular-compromised wounds because of CLOSTRIDIUM. Follow your local protocol for agents and doses.",
+      "TETANUS assessment — immunisation status and immunoglobulin as indicated.",
+      "Photograph the wound once, then apply a SALINE-SOAKED sterile dressing and DO NOT repeatedly uncover it. Repeated inspection increases contamination and adds nothing.",
+      "Splint, and document neurovascular status.",
+      "Surgical DEBRIDEMENT — thorough excision of all dead and contaminated tissue, and copious irrigation. Debridement quality matters more than debridement speed; timing within 12–24 hours is generally acceptable for most injuries, with immediate surgery for gross contamination, vascular compromise or compartment syndrome. This has replaced the old \"6-hour rule\", which was never well evidenced.",
+      "STABILISE the fracture — commonly an external fixator initially in type III.",
+      "EARLY SOFT TISSUE COVERAGE. Definitive coverage within about 72 hours, and certainly within 7 days, substantially reduces deep infection (\"fix and flap\"). A bone left exposed becomes an infected bone."
+     ],
+     "what_not_to_do": "Do NOT primarily close a contaminated wound under tension. Do NOT irrigate with high-pressure lavage or antiseptics into the wound — evidence favours low-pressure normal saline. Do NOT remove bone fragments that retain a soft tissue attachment and blood supply."
+    },
+    "gunshot_and_ballistic_injury": {
+     "the_first_rule": "Every gunshot fracture is an OPEN fracture by definition — there is a tract from the outside to the bone, and the projectile is not sterile.",
+     "low_velocity": "Handguns, under roughly 600 m/s. Damage is largely confined to the tract. Usually behaves as Gustilo I or II and many are managed with local wound care, antibiotics and fracture treatment without formal extensive debridement.",
+     "high_velocity": "Rifles and military weapons, over roughly 600 m/s. Energy transfer is proportional to the SQUARE of velocity, and the round produces TEMPORARY CAVITATION — a transient cavity many times the projectile diameter that tears, stretches and devitalises tissue far beyond the visible tract, and sucks debris and clothing inward. These behave as Gustilo III and require formal, and often REPEATED, debridement.",
+     "the_key_clinical_consequence": "The visible entry and exit wounds tell you very little about the true zone of injury in a high-velocity wound. Tissue that looks viable at first debridement may be dead at 48 hours, which is why PLANNED SECOND-LOOK debridement is standard and why primary closure is avoided.",
+     "shotgun": "Depends heavily on range. Close range transfers enormous energy plus wadding and clothing into the wound and behaves as a severe type III.",
+     "additional_considerations": "Retained fragments are usually left unless intra-articular, intravascular, or near a nerve — an INTRA-ARTICULAR lead fragment must be removed because synovial fluid dissolves lead and causes systemic plumbism and joint destruction. Document injuries carefully and preserve evidence where there are forensic implications, and follow local legal reporting duties."
+    },
+    "ao_ota_classification": {
+     "what_it_is": "The AO/OTA classification — AO from the Arbeitsgemeinschaft für Osteosynthesefragen, OTA from the Orthopaedic Trauma Association — is a universal alphanumeric code for describing any long bone fracture, used for research, audit and communication.",
+     "the_structure": "BONE . SEGMENT — TYPE . GROUP. Bones: 1 humerus, 2 radius/ulna, 3 femur, 4 tibia/fibula. Segments: 1 proximal, 2 diaphysis (shaft), 3 distal. Types for the diaphysis: A simple, B wedge, C complex/comminuted.",
+     "example": "32-B2 = femur (3), diaphysis (2), wedge fracture (B2).",
+     "why_bother": "It removes ambiguity from referral and research. It does not, by itself, tell you what to do."
+    },
+    "mess_score": {
+     "what_it_is": "MESS — MANGLED EXTREMITY SEVERITY SCORE. Scores four domains: skeletal and soft tissue injury (1–4), limb ischaemia (1–3, DOUBLED if longer than 6 hours), shock (0–2), and age (0–2).",
+     "the_traditional_teaching": "A score of 7 or more suggests amputation may be required.",
+     "the_correction_that_matters": "MESS was derived on a small retrospective series and has since performed POORLY as a predictor in prospective studies — notably the LEAP study — with a low positive predictive value. It must NOT be used alone to justify amputation. A high score should prompt senior multidisciplinary discussion, not a decision. The genuine determinants are the vascular status, the soft tissue and nerve deficit (particularly posterior tibial nerve function and plantar sensation, though even this is less decisive than once taught), the patient's physiology, and their own informed wishes. Amputation is sometimes the RIGHT and limb-sparing-superior choice, but the decision is clinical, consented and senior."
+    }
+   },
+   "inputs": [],
+   "logic": {},
+   "outputs": [],
+   "warnings": [
+    "Give ANTIBIOTICS within an hour of an open fracture — this is the strongest infection-prevention intervention, stronger than surgical timing.",
+    "The definitive Gustilo grade is assigned in THEATRE AFTER DEBRIDEMENT. The skin wound under-represents the injury.",
+    "Wound size is a proxy for energy. A small wound from a high-velocity round is a type III injury.",
+    "Every gunshot fracture is an open fracture.",
+    "In high-velocity wounds, tissue viable at first debridement may be dead at 48 hours — plan a second-look debridement and avoid primary closure.",
+    "Type IIIC means arterial injury requiring repair, regardless of wound size, and carries the highest amputation risk.",
+    "The old \"6-hour rule\" for debridement is not well evidenced. Debridement QUALITY matters more than speed, but gross contamination, vascular injury and compartment syndrome still need immediate surgery.",
+    "Achieve soft tissue coverage within about 72 hours. Exposed bone becomes infected bone.",
+    "Do NOT use MESS alone to justify amputation — it performs poorly prospectively. Escalate to a senior multidisciplinary decision.",
+    "Remove intra-articular lead fragments — synovial fluid dissolves lead, causing systemic toxicity and joint destruction.",
+    "Do not remove bone fragments that still have a soft tissue attachment and blood supply.",
+    "Check tetanus status in every open fracture."
+   ],
+   "limitations": [
+    "Antibiotic agents, doses, debridement timing targets and coverage pathways are protocol- and resource-specific. Scout states no doses."
+   ],
+   "flashcards": [
+    {
+     "q": "What defines Gustilo type IIIB?",
+     "a": "Extensive damage with periosteal stripping and exposed bone requiring flap coverage."
+    },
+    {
+     "q": "What defines type IIIC?",
+     "a": "Any open fracture with arterial injury requiring repair — regardless of wound size."
+    },
+    {
+     "q": "When is the Gustilo grade properly assigned?",
+     "a": "In theatre after debridement — not in the emergency department."
+    },
+    {
+     "q": "What is the most important early intervention in an open fracture?",
+     "a": "Antibiotics within an hour."
+    },
+    {
+     "q": "Why are high-velocity gunshot wounds worse than they look?",
+     "a": "Temporary cavitation devitalises tissue far beyond the visible tract and draws in debris."
+    },
+    {
+     "q": "Why plan a second-look debridement?",
+     "a": "Tissue viable at first debridement may be dead at 48 hours."
+    },
+    {
+     "q": "Decode AO/OTA 32-B2.",
+     "a": "Femur (3), diaphysis (2), wedge fracture (B2)."
+    },
+    {
+     "q": "Can MESS alone decide amputation?",
+     "a": "No — it performs poorly prospectively. It prompts senior discussion, not a decision."
+    },
+    {
+     "q": "Which retained bullet fragment must be removed?",
+     "a": "An intra-articular one — synovial fluid dissolves lead."
+    }
+   ],
+   "checkboxes": [
+    "Antibiotics given within the hour and documented",
+    "Tetanus status established",
+    "Wound photographed once then covered and left alone",
+    "Neurovascular status documented",
+    "Definitive grade assigned after debridement",
+    "Second-look planned for high-energy injuries",
+    "Soft tissue coverage plan made early",
+    "Senior multidisciplinary discussion before any amputation decision"
+   ],
+   "related_slugs": [],
+   "patient_integration": null,
+   "governance": {
+    "evidence_tier": "T5_textbook_or_standard_teaching",
+    "verification_status": "standard_teaching",
+    "sources": [],
+    "nigeria_overlay": null,
+    "build_date": "2026-08-07",
+    "review_interval_months": 12,
+    "next_review_due": "2027-08-07",
+    "clinical_reviewer": null,
+    "approved_for_release": false,
+    "local_confirmation_required": true,
+    "supersedes": null,
+    "content_hash": "70c88c5e4ce3e927"
+   }
+  },
+  {
+   "id": "AS-ORTH-0004",
+   "schema_version": "4.0.0",
+   "content_release": "AWIBI-SCOUT-CONTENT-2026.08.R3",
+   "type": "classification",
+   "title": "Spinal Trauma — Denis Columns, AO Spine, TLICS and the ASIA Scale",
+   "short_title": "Spinal trauma classification",
+   "slug": "spinal_trauma_denis_columns_ao_spine_tlics_and_the_asia_scale",
+   "also_known_as": [
+    "spinal trauma classification",
+    "denis",
+    "denis three column",
+    "ao spine",
+    "tlics",
+    "slics",
+    "asia scale",
+    "asia impairment scale",
+    "spinal cord injury",
+    "isis score",
+    "asis",
+    "thoracolumbar injury",
+    "chance fracture",
+    "burst fracture",
+    "spinal instability"
+   ],
+   "summary": "Denis tells you if it is UNSTABLE, AO Spine tells you the morphology, TLICS tells you whether to operate, and ASIA grades the cord. And the counterintuitive point that decides surgery: an INCOMPLETE cord injury scores HIGHER than a complete one, because there is still something to save.",
+   "domains": [
+    "orthopaedics",
+    "neurosurgery",
+    "trauma",
+    "emergency_medicine"
+   ],
+   "intents": [
+    "classify",
+    "act"
+   ],
+   "populations": [
+    "all_ages"
+   ],
+   "contexts": [
+    "routine"
+   ],
+   "hazard": "critical",
+   "urgency": "immediate",
+   "jurisdiction": "international",
+   "search": {
+    "terms": [
+     "anterior column",
+     "anterior superior iliac spine",
+     "ao spine",
+     "asia",
+     "asia impairment scale",
+     "asia scale",
+     "asis",
+     "burst fracture",
+     "chance fracture",
+     "columns",
+     "denis",
+     "denis three column",
+     "flexion distraction",
+     "impairment scale",
+     "instability severity index",
+     "isis score",
+     "middle column",
+     "posterior column",
+     "posterior ligamentous complex",
+     "sacral sparing",
+     "scale",
+     "slics",
+     "spinal",
+     "spinal cord injury",
+     "spinal instability",
+     "spinal trauma classification",
+     "spinal trauma — denis columns, ao spine, tlics and the asia scale",
+     "spine",
+     "thoracolumbar injury",
+     "three column",
+     "tile",
+     "tlics",
+     "translation",
+     "trauma",
+     "young burgess"
+    ],
+    "ambiguous_terms": [],
+    "phrases": [],
+    "field_weights": {
+     "title": 8,
+     "short_title": 6,
+     "also_known_as": 5,
+     "terms": 4,
+     "summary": 2,
+     "body": 1,
+     "flashcards": 0.5
+    }
+   },
+   "body": {
+    "abbreviations_expanded": {
+     "asia": "ASIA — AMERICAN SPINAL INJURY ASSOCIATION. Its Impairment Scale grades spinal cord injury A to E.",
+     "tlics": "TLICS — THORACOLUMBAR INJURY CLASSIFICATION AND SEVERITY score. A points system that helps decide surgery versus conservative treatment.",
+     "slics": "SLICS — SUBAXIAL CERVICAL SPINE INJURY CLASSIFICATION AND SEVERITY score. The same idea for the lower cervical spine.",
+     "plc": "PLC — POSTERIOR LIGAMENTOUS COMPLEX: the supraspinous and interspinous ligaments, ligamentum flavum, and facet joint capsules. The \"posterior tension band\" of the spine.",
+     "ao": "AO — Arbeitsgemeinschaft für Osteosynthesefragen, the international group whose classification system is now standard."
+    },
+    "denis_three_column_concept": {
+     "why_it_exists": "It is the foundation on which the later systems are built. It answers one question: IS THIS UNSTABLE?",
+     "anterior_column": "Anterior longitudinal ligament + the ANTERIOR half of the vertebral body + the anterior half of the intervertebral disc and annulus.",
+     "middle_column": "The POSTERIOR half of the vertebral body + the posterior half of the disc and annulus + the POSTERIOR LONGITUDINAL LIGAMENT.",
+     "posterior_column": "Everything behind the posterior longitudinal ligament — pedicles, facets, laminae, spinous process, and the posterior ligamentous complex.",
+     "the_instability_rule": "Disruption of TWO OR MORE columns = UNSTABLE.",
+     "the_key_insight_people_miss": "The MIDDLE column is the critical one. A simple wedge COMPRESSION fracture involves the anterior column only and is stable. The moment the MIDDLE column fails, retropulsed bone can enter the canal and the injury becomes a BURST fracture — unstable, and potentially neurologically significant. When you look at a lateral film or a CT, the question is always \"what has happened to the posterior wall of the vertebral body?\""
+    },
+    "ao_spine_thoracolumbar_classification": {
+     "the_logic": "Three types in increasing severity, based on MORPHOLOGY — how the injury happened mechanically.",
+     "type_a_compression": "The vertebral body is CRUSHED, with the posterior tension band INTACT. A0 minor (transverse or spinous process only) · A1 wedge impaction · A2 split/pincer · A3 INCOMPLETE burst (one endplate) · A4 COMPLETE burst (both endplates).",
+     "type_b_distraction": "FAILURE OF THE TENSION BAND — the spine has been pulled apart, anteriorly or posteriorly. B1 transosseous posterior disruption (the classic CHANCE fracture, a horizontal split through the bone, associated with lap-belt injuries and often with intra-abdominal injury — always examine the abdomen) · B2 posterior LIGAMENTOUS disruption · B3 ANTERIOR hyperextension injury, typically in the ankylosed spine.",
+     "type_c_translation": "DISPLACEMENT or ROTATION — one part of the spine has moved relative to another in any plane. The most unstable. Essentially always needs surgical stabilisation.",
+     "the_modifiers": "A neurological modifier (N0 intact to N4 complete) and clinical modifiers (M1 uncertain tension band integrity, M2 patient-specific comorbidity such as ankylosing spondylitis) are added, because they change the decision."
+    },
+    "tlics_and_slics": {
+     "the_three_things_scored": {
+      "morphology": "Compression 1 · Burst 2 · Translation/rotation 3 · Distraction 4.",
+      "plc_integrity": "Intact 0 · Suspected/indeterminate 2 · Injured 3. Magnetic resonance imaging is what settles a suspected posterior ligamentous injury, and it is the finding that most often converts a conservative plan into an operative one.",
+      "neurology": "Intact 0 · Nerve root 2 · COMPLETE cord or conus injury 2 · INCOMPLETE cord or conus injury 3 · Cauda equina 3."
+     },
+     "the_counterintuitive_point_that_is_the_whole_lesson": "An INCOMPLETE cord injury scores HIGHER (3) than a COMPLETE one (2). That is deliberate, not a typographical error. An incomplete injury means viable cord remains, so decompression and stabilisation may preserve or improve function — there is something to save, so the threshold to operate is lower. This is the single most commonly misread part of the score.",
+     "interpretation": "Total 0–3 → conservative management. 4 → grey zone, clinical judgement. 5 or more → surgery. SLICS uses the same structure for the subaxial cervical spine, substituting discoligamentous complex integrity.",
+     "the_caveat": "These are decision AIDS. They do not override the surgeon, the patient's other injuries, or the clinical picture."
+    },
+    "asia_impairment_scale": {
+     "what_it_grades": "The NEUROLOGICAL severity of a spinal cord injury, from a standardised examination of motor and sensory function.",
+     "grade_a": "COMPLETE. NO motor or sensory function preserved in the SACRAL SEGMENTS S4–S5.",
+     "grade_b": "SENSORY INCOMPLETE. Sensation preserved below the level INCLUDING S4–S5, but no motor function below the level.",
+     "grade_c": "MOTOR INCOMPLETE. Motor preserved below the level, but MORE THAN HALF of key muscles below the level are weaker than grade 3 (cannot resist gravity).",
+     "grade_d": "MOTOR INCOMPLETE. Motor preserved below the level, and AT LEAST HALF of key muscles below the level are grade 3 or better.",
+     "grade_e": "NORMAL motor and sensory function (in a patient who had a documented deficit).",
+     "the_examination_detail_that_defines_the_grade": "SACRAL SPARING is the whole thing. Complete versus incomplete rests on function in the LOWEST sacral segments, which means you MUST perform a PERIANAL EXAMINATION — light touch and pin-prick in the perianal region, deep anal pressure, and VOLUNTARY ANAL CONTRACTION. An injury cannot be called complete without it. Omitting the rectal examination is the most common reason an ASIA grade is wrong, and it changes the prognosis conversation completely.",
+     "spinal_shock": "In the first hours to days there may be areflexia and flaccidity that mimics a complete injury. The RETURN OF THE BULBOCAVERNOSUS REFLEX marks the end of spinal shock. Do NOT give a definitive prognosis while the patient is still in spinal shock — a grade assigned then may improve."
+    },
+    "asia_versus_isis_versus_asis": {
+     "why_this_confusion_matters": "Three similar-sounding terms from different parts of orthopaedics. Being asked one and answering another is a common and avoidable error.",
+     "asia": "AMERICAN SPINAL INJURY ASSOCIATION Impairment Scale. SPINE + CORD INJURY + NEUROLOGY. Graded A to E. This is the one meant by \"the spinal one\".",
+     "isis": "INSTABILITY SEVERITY INDEX SCORE. SHOULDER + recurrent anterior instability. A 10-point pre-operative score: age under 20 (2), competitive sport (1), contact or forced-overhead sport (1), shoulder hyperlaxity (1), Hill-Sachs lesion visible on an AP radiograph in external rotation (2), and loss of the normal glenoid contour (2). ISIS 3 or less → an arthroscopic BANKART soft tissue repair is reasonable. ISIS above 6 → a LATARJET bone block procedure, because Bankart alone has an unacceptable recurrence rate. 4–6 is a grey zone.",
+     "asis": "ANTERIOR SUPERIOR ILIAC SPINE. NOT a classification at all — a BONY LANDMARK on the pelvis. It is the attachment of the inguinal ligament and sartorius, the reference point for measuring TRUE leg length (ASIS to medial malleolus), and a landmark used within pelvic fracture classifications such as YOUNG AND BURGESS (which classifies by force direction: anteroposterior compression, lateral compression, vertical shear) and TILE (which classifies by stability: A stable, B rotationally unstable, C rotationally and vertically unstable).",
+     "the_quick_rule": "Spine and neurology → ASIA. Recurrent shoulder dislocation → ISIS. Pelvis and anatomy → ASIS."
+    },
+    "gunshot_injury_to_the_spine": {
+     "classification": "Classified the same way as any spinal injury — STABLE versus UNSTABLE by the Denis columns destroyed, and COMPLETE versus INCOMPLETE by ASIA.",
+     "the_specific_points": "High-velocity rounds transferring energy through the spine produce extensive destruction and are usually unstable and highly contaminated. Low-velocity civilian gunshot spinal injuries are often relatively STABLE, because the bullet destroys bone without the ligamentous disruption of a flexion-distraction mechanism — and routine surgical stabilisation is frequently NOT required, which surprises people.",
+     "the_management_notes": "Antibiotics, particularly where the tract has crossed bowel (a transabdominal trajectory) which markedly raises infection risk. Bullet removal is generally reserved for cord or cauda equina compression with incomplete deficit, or for a retained intracanal fragment causing progressive symptoms. Corticosteroids are NOT recommended in penetrating spinal cord injury."
+    },
+    "the_practical_priorities_before_any_classification": [
+     "Airway, breathing, circulation. Neurogenic shock (hypotension WITH bradycardia, from loss of sympathetic outflow above roughly T6) is distinct from haemorrhagic shock and is treated differently — but exclude bleeding first.",
+     "Full spinal precautions until cleared.",
+     "A documented, complete neurological examination INCLUDING perianal sensation and voluntary anal contraction, repeated and dated.",
+     "Appropriate imaging — CT for bony injury, MRI for cord, disc and posterior ligamentous complex.",
+     "Early specialist referral. Time to decompression matters in incomplete injuries."
+    ]
+   },
+   "inputs": [],
+   "logic": {},
+   "outputs": [],
+   "warnings": [
+    "You cannot assign an ASIA grade without a PERIANAL examination — sacral sparing defines complete versus incomplete.",
+    "In TLICS, an INCOMPLETE cord injury scores HIGHER than a complete one, because there is still function to save.",
+    "Do not give a definitive prognosis during spinal shock — wait for the bulbocavernosus reflex to return.",
+    "Denis: disruption of two or more columns is unstable. The MIDDLE column is the critical one.",
+    "A Chance (flexion-distraction) fracture is strongly associated with intra-abdominal injury — examine the abdomen and image it.",
+    "AO Spine type C (translation) is the most unstable and essentially always needs surgery.",
+    "MRI is what settles suspected posterior ligamentous complex injury, and it frequently converts a conservative plan to an operative one.",
+    "Neurogenic shock is hypotension WITH bradycardia — but exclude haemorrhage before attributing it.",
+    "Corticosteroids are not recommended in penetrating spinal cord injury.",
+    "An ankylosed spine (ankylosing spondylitis, DISH) fractures with trivial force and is highly unstable — CT the whole spine, never plain films alone.",
+    "ASIA is spine, ISIS is shoulder instability, ASIS is a pelvic landmark. Do not confuse them."
+   ],
+   "limitations": [
+    "Scores are decision aids, not decisions. Operative thresholds, imaging protocols and referral pathways are service-specific."
+   ],
+   "flashcards": [
+    {
+     "q": "What is the Denis instability rule?",
+     "a": "Disruption of two or more of the three columns means unstable."
+    },
+    {
+     "q": "Which Denis column is most critical, and why?",
+     "a": "The middle — its failure turns a compression fracture into a burst fracture with canal compromise."
+    },
+    {
+     "q": "Give the three AO Spine types.",
+     "a": "A compression, B distraction (tension band failure), C translation/rotation."
+    },
+    {
+     "q": "Why does an incomplete cord injury score higher in TLICS?",
+     "a": "There is viable cord to save, so the threshold for surgery is lower."
+    },
+    {
+     "q": "What TLICS score indicates surgery?",
+     "a": "5 or more; 0–3 conservative; 4 is a grey zone."
+    },
+    {
+     "q": "Define ASIA A and ASIA B.",
+     "a": "A: no motor or sensory function at S4–S5. B: sensory preserved including S4–S5 but no motor below the level."
+    },
+    {
+     "q": "What separates ASIA C from D?",
+     "a": "Whether at least half the key muscles below the level are grade 3 or better (D) or not (C)."
+    },
+    {
+     "q": "What examination is mandatory for an ASIA grade?",
+     "a": "Perianal sensation, deep anal pressure and voluntary anal contraction — sacral sparing."
+    },
+    {
+     "q": "What is ISIS and what does it decide?",
+     "a": "Instability Severity Index Score for shoulder instability — Bankart if ≤3, Latarjet if >6."
+    },
+    {
+     "q": "What is ASIS?",
+     "a": "Anterior superior iliac spine — a pelvic bony landmark, not a classification."
+    },
+    {
+     "q": "What marks the end of spinal shock?",
+     "a": "Return of the bulbocavernosus reflex."
+    }
+   ],
+   "checkboxes": [
+    "Full neurological examination with perianal assessment documented and dated",
+    "Spinal precautions maintained until cleared",
+    "Denis columns assessed on imaging",
+    "Posterior ligamentous complex assessed on MRI where suspected",
+    "TLICS or SLICS calculated",
+    "ASIA grade assigned only after spinal shock considered",
+    "Abdomen examined if a Chance fracture",
+    "Whole spine imaged if ankylosed",
+    "Specialist referral made early"
+   ],
+   "related_slugs": [],
+   "patient_integration": null,
+   "governance": {
+    "evidence_tier": "T5_textbook_or_standard_teaching",
+    "verification_status": "standard_teaching",
+    "sources": [],
+    "nigeria_overlay": null,
+    "build_date": "2026-08-07",
+    "review_interval_months": 12,
+    "next_review_due": "2027-08-07",
+    "clinical_reviewer": null,
+    "approved_for_release": false,
+    "local_confirmation_required": true,
+    "supersedes": null,
+    "content_hash": "0b79ab5164e18ce1"
    }
   }
  ]
