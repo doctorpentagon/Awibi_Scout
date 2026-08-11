@@ -2,7 +2,7 @@
  "release": "AWIBI-SCOUT-CONTENT-2026.08.R3",
  "schema_version": "4.0.0",
  "build_date": "2026-08-07",
- "entry_count": 160,
+ "entry_count": 162,
  "extends": "AWIBI-SCOUT-CONTENT-2026.08.R2",
  "note": "Content extension. Adds areas; supersedes nothing. Every entry is unreviewed and unapproved.",
  "entries": [
@@ -125,6 +125,20 @@
      "Recheck after replacement, and look for the cause rather than treating the number repeatedly."
     ]
    },
+   "glossary": [
+    {
+     "abbr": "DKA",
+     "full": "diabetic ketoacidosis"
+    },
+    {
+     "abbr": "ECG",
+     "full": "electrocardiogram"
+    },
+    {
+     "abbr": "VT",
+     "full": "ventricular tachycardia"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -298,6 +312,20 @@
      "REMOVE from the body: this is the only step that actually lowers total potassium — treat the cause, stop the offending drugs, consider a potassium binder, and refer for dialysis if refractory or anuric."
     ]
    },
+   "glossary": [
+    {
+     "abbr": "DKA",
+     "full": "diabetic ketoacidosis"
+    },
+    {
+     "abbr": "ECG",
+     "full": "electrocardiogram"
+    },
+    {
+     "abbr": "VF",
+     "full": "ventricular fibrillation"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -466,6 +494,20 @@
      "Severe: seizures, reduced consciousness, respiratory arrest, coma"
     ]
    },
+   "glossary": [
+    {
+     "abbr": "DKA",
+     "full": "diabetic ketoacidosis"
+    },
+    {
+     "abbr": "HHS",
+     "full": "hyperosmolar hyperglycaemic state"
+    },
+    {
+     "abbr": "JVP",
+     "full": "jugular venous pressure"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -628,6 +670,12 @@
      "Follow the local protocol for correction rate — commonly no more than about 10–12 mmol/L in 24 hours in chronic cases."
     ]
    },
+   "glossary": [
+    {
+     "abbr": "DKA",
+     "full": "diabetic ketoacidosis"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -788,6 +836,7 @@
      "The PTH is the key test: a raised or even \"inappropriately normal\" PTH with a high calcium points to hyperparathyroidism; a suppressed PTH with a high calcium points to malignancy."
     ]
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -943,6 +992,7 @@
      "Symptoms overlap almost entirely with those of low potassium and low calcium."
     ]
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -1087,6 +1137,7 @@
      "Units differ: many places report urea in mmol/L, others report blood urea nitrogen (BUN) in mg/dL. They are not the same number. Confirm what your laboratory reports."
     ]
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -1231,6 +1282,12 @@
     },
     "pre_eclampsia_note": "Urate rises in pre-eclampsia and broadly tracks severity, but it is neither sensitive nor specific enough to diagnose or exclude it. It supports a clinical picture; it does not make one."
    },
+   "glossary": [
+    {
+     "abbr": "ECG",
+     "full": "electrocardiogram"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -1359,6 +1416,12 @@
     ],
     "practical_use": "On a routine panel, a low bicarbonate is often the first and only clue to a significant metabolic acidosis in a patient who has not had a gas. Take it seriously: calculate the anion gap and check lactate, glucose and renal function."
    },
+   "glossary": [
+    {
+     "abbr": "COPD",
+     "full": "chronic obstructive pulmonary disease"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -1492,6 +1555,7 @@
     },
     "osmolar_gap": "If a raised-gap acidosis has no obvious cause, calculate the osmolar gap (measured minus calculated osmolality). A raised osmolar gap with a raised anion gap suggests a toxic alcohol — methanol or ethylene glycol — which is a time-critical poisoning."
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -1645,6 +1709,16 @@
      "Weakness from hypophosphataemia is easily attributed to the underlying illness."
     ]
    },
+   "glossary": [
+    {
+     "abbr": "BMI",
+     "full": "body mass index"
+    },
+    {
+     "abbr": "DKA",
+     "full": "diabetic ketoacidosis"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -1807,6 +1881,32 @@
      "Albumin distorts calcium, and the anion gap, and reflects both nutrition and liver function. Always look at it."
     ]
    },
+   "glossary": [
+    {
+     "abbr": "ALP",
+     "full": "alkaline phosphatase",
+     "gloss": "from bile ducts, bone, placenta and intestine"
+    },
+    {
+     "abbr": "ALT",
+     "full": "alanine aminotransferase",
+     "gloss": "a liver-specific enzyme released when hepatocytes are injured"
+    },
+    {
+     "abbr": "AST",
+     "full": "aspartate aminotransferase",
+     "gloss": "an enzyme from liver, heart, muscle and red cells"
+    },
+    {
+     "abbr": "GGT",
+     "full": "gamma-glutamyl transferase"
+    },
+    {
+     "abbr": "INR",
+     "full": "international normalised ratio",
+     "gloss": "a standardised measure of how long blood takes to clot"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -1959,6 +2059,7 @@
     "venous_versus_arterial": "A venous gas is adequate for pH, bicarbonate and lactate in most situations and spares the patient an arterial stab. It is NOT reliable for pO2, and venous pCO2 runs a few mmHg higher. If oxygenation is the question, you need an arterial sample or oximetry.",
     "units_warning": "pCO2 is reported in kPa in some countries and mmHg in others. The compensation formulae above use mmHg. Roughly 1 kPa ≈ 7.5 mmHg. Confirm the units your analyser reports before applying any formula."
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -2108,6 +2209,7 @@
      "A \"normal\" gap in hypoalbuminaemia may be genuinely raised once corrected."
     ]
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -2255,6 +2357,7 @@
      "Type 4 RTA has a HIGH potassium, which is the opposite of what most people remember about RTA."
     ]
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -2395,6 +2498,7 @@
      "Correcting the alkalosis in a chronically hypercapnic patient too quickly removes their respiratory drive."
     ]
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -2546,6 +2650,12 @@
      "A mild respiratory alkalosis in a pregnant woman is physiological."
     ]
    },
+   "glossary": [
+    {
+     "abbr": "COPD",
+     "full": "chronic obstructive pulmonary disease"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -2685,6 +2795,7 @@
     ],
     "what_goes_with_it": "A true upper motor neurone picture also has increased tone, brisk reflexes, clonus, and a pyramidal pattern of weakness — weak extensors in the arm, weak flexors in the leg. One sign in isolation is weak evidence."
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -2828,6 +2939,12 @@
     ],
     "other_causes_of_meningism": "Subarachnoid haemorrhage (meningism from blood, not infection), tonsillitis and cervical lymphadenitis in children, pneumonia of the upper lobe, tetanus, and raised intracranial pressure."
    },
+   "glossary": [
+    {
+     "abbr": "CT",
+     "full": "computed tomography"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -2966,6 +3083,12 @@
     ],
     "what_to_do": "Take a full neurological history, examine for posterior column signs (vibration and proprioception), check vitamin B12, and image the cervical cord with MRI."
    },
+   "glossary": [
+    {
+     "abbr": "MRI",
+     "full": "magnetic resonance imaging"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -3094,6 +3217,7 @@
     "management": "Cooling, treating any underlying infection, avoiding known triggers, and reassurance. Cooling garments and pre-cooling before exercise help some patients.",
     "historical_note": "The hot bath test was once used to diagnose multiple sclerosis. It was abandoned because it is dangerous — it can precipitate severe transient deficits."
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -3256,6 +3380,7 @@
     ],
     "investigation": "Nailfold capillaroscopy, antinuclear antibody, extractable nuclear antigens, inflammatory markers, full blood count. Occupational and drug history."
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -3413,6 +3538,12 @@
      "MS is a CNS disease. Peripheral findings — absent reflexes, glove-and-stocking loss — point elsewhere."
     ]
    },
+   "glossary": [
+    {
+     "abbr": "MRI",
+     "full": "magnetic resonance imaging"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -3564,6 +3695,7 @@
     "motor_neurone_disease_note": "Motor neurone disease is the classic cause of BOTH at once, because it affects upper and lower motor neurones simultaneously. A wasted fasciculating tongue with a brisk jaw jerk in the same patient is highly suggestive of it.",
     "why_it_matters_practically": "Both cause dysphagia and both risk ASPIRATION. Whatever the level of the lesion, the immediate management is the same: keep the patient nil by mouth until a swallow assessment is done, and consider aspiration pneumonia in any deterioration."
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -3713,6 +3845,16 @@
     ],
     "management": "Treat as an acute stroke on the local pathway. Nil by mouth until swallow assessed — aspiration is the main early killer. Assess for vertebral artery dissection, especially in a younger patient or after neck trauma or manipulation."
    },
+   "glossary": [
+    {
+     "abbr": "CT",
+     "full": "computed tomography"
+    },
+    {
+     "abbr": "MRI",
+     "full": "magnetic resonance imaging"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -3886,6 +4028,12 @@
      "The names change at the crossing point — dorsal columns become the medial lemniscus, spinothalamic becomes the spinal lemniscus. It is the same pathway with a new name."
     ]
    },
+   "glossary": [
+    {
+     "abbr": "MS",
+     "full": "multiple sclerosis"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -4040,6 +4188,7 @@
      "Is creatine kinase high? Very high → polymyositis."
     ]
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -4197,6 +4346,7 @@
      "Radiotherapy causes both gliosis and, years later, a small risk of secondary glioma — so an area of change in an irradiated brain needs careful interpretation."
     ]
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -4348,6 +4498,25 @@
     ],
     "the_reversible_ones_to_exclude_immediately": "Check GLUCOSE in every confused patient before anything else. Then sodium, calcium, oxygenation and temperature. Give thiamine if there is any suspicion of Wernicke — it is harmless and the alternative is irreversible."
    },
+   "glossary": [
+    {
+     "abbr": "CSF",
+     "full": "cerebrospinal fluid"
+    },
+    {
+     "abbr": "CT",
+     "full": "computed tomography"
+    },
+    {
+     "abbr": "MRI",
+     "full": "magnetic resonance imaging"
+    },
+    {
+     "abbr": "PCR",
+     "full": "polymerase chain reaction",
+     "gloss": "a test that amplifies and detects a specific DNA or RNA sequence"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -4512,6 +4681,12 @@
      "Airway protection at grade 3–4."
     ]
    },
+   "glossary": [
+    {
+     "abbr": "TIPS",
+     "full": "transjugular intrahepatic portosystemic shunt"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -4655,6 +4830,12 @@
     "the_key_exception": "Different emergencies have different targets. Aortic dissection needs rapid, aggressive lowering. Acute ischaemic stroke needs permissive hypertension. Eclampsia has its own pathway with magnesium sulphate. Never apply one target to every hypertensive emergency.",
     "differential": "Ischaemic and haemorrhagic stroke, subarachnoid haemorrhage, venous sinus thrombosis, encephalitis, and in pregnancy, eclampsia. Imaging is required — the treatment for stroke is the opposite."
    },
+   "glossary": [
+    {
+     "abbr": "MRI",
+     "full": "magnetic resonance imaging"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -4824,6 +5005,17 @@
     "traumatic_tap_versus_haemorrhage": "In a traumatic tap the red cell count FALLS between the first and last bottle and there is no xanthochromia. In subarachnoid haemorrhage the count stays constant across bottles and xanthochromia is present after 12 hours.",
     "cryptococcal_pressure_management": "In cryptococcal meningitis, raised intracranial pressure is a major cause of death and is managed with repeated therapeutic lumbar punctures, not with steroids or mannitol. Measure the opening pressure every time."
    },
+   "glossary": [
+    {
+     "abbr": "CT",
+     "full": "computed tomography"
+    },
+    {
+     "abbr": "PCR",
+     "full": "polymerase chain reaction",
+     "gloss": "a test that amplifies and detects a specific DNA or RNA sequence"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -4976,6 +5168,7 @@
     ],
     "practical_use": "On a frontal chest film with an opacity, ask which borders are preserved and which are lost. That gives you the lobe without needing a lateral view — useful where a lateral film is not routinely available."
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -5120,6 +5313,7 @@
     },
     "ultrasound_note": "Ultrasound is more sensitive than a plain film, distinguishes fluid from consolidation immediately, identifies loculations, and should be used to guide any pleural procedure. Blind pleural aspiration is no longer acceptable practice where ultrasound is available."
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -5283,6 +5477,20 @@
      "\"Lucency\" and \"density\" are plain film words; using them for MRI is incorrect."
     ]
    },
+   "glossary": [
+    {
+     "abbr": "CSF",
+     "full": "cerebrospinal fluid"
+    },
+    {
+     "abbr": "CT",
+     "full": "computed tomography"
+    },
+    {
+     "abbr": "MRI",
+     "full": "magnetic resonance imaging"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -5430,6 +5638,20 @@
     "the_practical_rule": "Do not assume tumour. In much of the world, infection is more likely than malignancy, and infection is treatable. Take the history, check HIV status, and consider a trial of therapy where that is the local pathway.",
     "in_hiv": "Toxoplasmosis and primary CNS lymphoma are the two main considerations. Toxoplasmosis is usually multiple with a positive serology, lymphoma often solitary and periventricular. Where thallium SPECT or PET is unavailable, an empirical trial of anti-toxoplasma treatment with reimaging at two weeks is a widely used pathway."
    },
+   "glossary": [
+    {
+     "abbr": "CT",
+     "full": "computed tomography"
+    },
+    {
+     "abbr": "MRI",
+     "full": "magnetic resonance imaging"
+    },
+    {
+     "abbr": "TB",
+     "full": "tuberculosis"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -5589,6 +5811,12 @@
     },
     "non_resolving_consolidation": "Consolidation that has not cleared after adequate treatment and a reasonable interval must be investigated. It may be tuberculosis, malignancy, organising pneumonia or an unusual organism. Arrange follow-up imaging on every patient treated for pneumonia and act on failure to resolve."
    },
+   "glossary": [
+    {
+     "abbr": "CT",
+     "full": "computed tomography"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -5751,6 +5979,12 @@
     },
     "the_review_areas": "The places lesions hide: lung APICES, behind the HEART, below the DIAPHRAGM, the HILA, the periphery just inside the ribs, and the soft tissues and bones. Look at these deliberately after the main sweep."
    },
+   "glossary": [
+    {
+     "abbr": "TIPS",
+     "full": "transjugular intrahepatic portosystemic shunt"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -5906,6 +6140,21 @@
      "neither_prolonged_but_bleeding": "Platelet problem, von Willebrand disease, vascular problem, or FACTOR XIII deficiency — which does not prolong either test."
     }
    },
+   "glossary": [
+    {
+     "abbr": "APTT",
+     "full": "activated partial thromboplastin time"
+    },
+    {
+     "abbr": "DIC",
+     "full": "disseminated intravascular coagulation"
+    },
+    {
+     "abbr": "INR",
+     "full": "international normalised ratio",
+     "gloss": "a standardised measure of how long blood takes to clot"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -6082,6 +6331,26 @@
      "action": "Stop ALL heparin including flushes and LMWH, and start a non-heparin anticoagulant. Do NOT simply stop and observe — the thrombotic risk is high."
     }
    },
+   "glossary": [
+    {
+     "abbr": "APTT",
+     "full": "activated partial thromboplastin time"
+    },
+    {
+     "abbr": "DOAC",
+     "full": "direct oral anticoagulant",
+     "gloss": "apixaban, rivaroxaban, edoxaban, dabigatran"
+    },
+    {
+     "abbr": "FBC",
+     "full": "full blood count"
+    },
+    {
+     "abbr": "INR",
+     "full": "international normalised ratio",
+     "gloss": "a standardised measure of how long blood takes to clot"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -6228,6 +6497,18 @@
     },
     "the_essential_next_step": "Iron deficiency in an adult man or a post-menopausal woman is gastrointestinal blood loss until proven otherwise, and needs investigation of the gut. Do not simply prescribe iron and stop."
    },
+   "glossary": [
+    {
+     "abbr": "MCV",
+     "full": "mean corpuscular volume",
+     "gloss": "average red cell size"
+    },
+    {
+     "abbr": "RDW",
+     "full": "red cell distribution width",
+     "gloss": "how variable the red cell sizes are"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -6385,6 +6666,16 @@
     },
     "dat_negative_haemolysis": "If haemolysis is confirmed but the DAT is negative, the cause is non-immune: hereditary spherocytosis, G6PD deficiency, sickle cell disease, thalassaemia, mechanical (prosthetic valve), microangiopathic (TTP, HUS, DIC), malaria, or paroxysmal nocturnal haemoglobinuria."
    },
+   "glossary": [
+    {
+     "abbr": "DIC",
+     "full": "disseminated intravascular coagulation"
+    },
+    {
+     "abbr": "TTP",
+     "full": "thrombotic thrombocytopenic purpura"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -6542,6 +6833,7 @@
      "the_discriminator": "RETICULOCYTES. Low means aplastic crisis. High means sequestration or haemolysis — and then the spleen size separates those two."
     }
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -6703,6 +6995,21 @@
      "both_are_non_specific": "Neither diagnoses anything. They quantify that something inflammatory is happening."
     }
    },
+   "glossary": [
+    {
+     "abbr": "COX-1",
+     "full": "cyclo-oxygenase 1",
+     "gloss": "the constant housekeeping form protecting stomach, kidney and platelets"
+    },
+    {
+     "abbr": "CRP",
+     "full": "C-reactive protein"
+    },
+    {
+     "abbr": "ESR",
+     "full": "erythrocyte sedimentation rate"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -6851,6 +7158,7 @@
     },
     "the_memory_hook": "Brain liquefies. Everything else coagulates. TB is cheesy. Pancreas is fatty. Vessels go fibrinoid. Limbs go gangrenous."
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -7003,6 +7311,7 @@
      "the_mnemonic": "ACID — Anaphylactic, Cytotoxic, Immune complex, Delayed."
     }
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -7166,6 +7475,20 @@
      "A negative test does not exclude disease; seronegative rheumatoid arthritis and ANA-negative lupus both exist."
     ]
    },
+   "glossary": [
+    {
+     "abbr": "ANA",
+     "full": "antinuclear antibody"
+    },
+    {
+     "abbr": "GBM",
+     "full": "glomerular basement membrane"
+    },
+    {
+     "abbr": "TSH",
+     "full": "thyroid-stimulating hormone"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -7320,6 +7643,7 @@
     },
     "the_emergency_rule": "If adrenal crisis is suspected, take a baseline cortisol and ACTH and then TREAT IMMEDIATELY with hydrocortisone. Do not wait for the Synacthen test. Hydrocortisone does cross-react with cortisol assays, so take the sample first — but never delay treatment for a sample."
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -7483,6 +7807,12 @@
     ],
     "starting_levothyroxine": "Start low and go slow in the elderly and in known ischaemic heart disease — a rapid increase in metabolic rate can precipitate angina or arrhythmia. Recheck TSH no sooner than about 6 weeks after any dose change, because the axis takes that long to re-equilibrate."
    },
+   "glossary": [
+    {
+     "abbr": "TSH",
+     "full": "thyroid-stimulating hormone"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -7646,6 +7976,17 @@
      "why_muac_matters": "It requires only a paper tape, is independent of hydration status in a way weight is not, and is colour-banded so a community health worker can use it correctly without arithmetic."
     }
    },
+   "glossary": [
+    {
+     "abbr": "BMI",
+     "full": "body mass index"
+    },
+    {
+     "abbr": "HbA1c",
+     "full": "glycated haemoglobin",
+     "gloss": "average glucose over roughly the past 2–3 months"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -7813,6 +8154,18 @@
      "B12 BEFORE folate when both may be deficient."
     ]
    },
+   "glossary": [
+    {
+     "abbr": "ALP",
+     "full": "alkaline phosphatase",
+     "gloss": "from bile ducts, bone, placenta and intestine"
+    },
+    {
+     "abbr": "INR",
+     "full": "international normalised ratio",
+     "gloss": "a standardised measure of how long blood takes to clot"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -7973,6 +8326,7 @@
     },
     "the_honest_caveat": "Oxidative stress is genuinely implicated in ageing, atherosclerosis, neurodegeneration and cancer. That does NOT mean antioxidant supplements prevent those diseases — large trials have repeatedly failed to show benefit, and some (beta-carotene in smokers) showed HARM. The biochemistry is sound; the supplement inference is not."
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -8147,6 +8501,7 @@
     ],
     "anaphylaxis_readiness": "Adrenaline must be immediately available wherever vaccines are given, with staff trained to use it and an observation period per protocol."
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -8318,6 +8673,7 @@
     "how_to_describe_it_in_one_sentence": "Site and distribution, then number, then size, then primary lesion type, then colour, then blanching, then surface change, then any secondary features. \"Multiple 1–2 cm erythematous scaly plaques on the extensor elbows and knees, blanching, with silvery scale\" is a diagnosis. \"A rash on the arms\" is not.",
     "skin_tone_note": "Erythema is far harder to see on darker skin and may appear violaceous, grey or simply darker than surrounding skin rather than red. Rely on PALPATION for warmth and induration, on comparison with unaffected skin, and on the patient telling you where it hurts. Describing an inflamed area as \"no erythema\" because it is not pink is a recognised source of missed cellulitis."
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -8474,6 +8830,7 @@
      "Do not use combined steroid-antifungal preparations as a default."
     ]
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -8642,6 +8999,7 @@
      "demarcation": "Psoriasis is sharply demarcated; eczema is not."
     }
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -8816,6 +9174,7 @@
      "Drain any abscess. Antibiotics do not penetrate pus."
     ]
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -8983,6 +9342,16 @@
      "Prolonged steroid use, intravenous drug use, immunosuppression."
     ]
    },
+   "glossary": [
+    {
+     "abbr": "AGE",
+     "full": "advanced glycation end product"
+    },
+    {
+     "abbr": "TB",
+     "full": "tuberculosis"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -9156,6 +9525,12 @@
     },
     "rickets_recap": "Vitamin D deficiency in a growing child. Beyond the leg deformity: RACHITIC ROSARY (beaded costochondral junctions), widened wrists and ankles, frontal bossing, craniotabes, delayed fontanelle closure, delayed dentition, Harrison sulcus, and a high alkaline phosphatase with low or low-normal calcium, low phosphate and high PTH."
    },
+   "glossary": [
+    {
+     "abbr": "MRI",
+     "full": "magnetic resonance imaging"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -9335,6 +9710,16 @@
      "Sudden monoarticular attack with normal markers or raised urate → crystal arthritis — but only after infection is excluded."
     ]
    },
+   "glossary": [
+    {
+     "abbr": "CRP",
+     "full": "C-reactive protein"
+    },
+    {
+     "abbr": "ESR",
+     "full": "erythrocyte sedimentation rate"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -9515,6 +9900,7 @@
     },
     "the_one_line_summary": "Pull the pinna: pain means externa. Look at the drum: bulging means acute media, dull and retracted means effusion, perforated and smelly means chronic — and think cholesteatoma."
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -9708,6 +10094,7 @@
      "scleritis": "Deep boring pain that wakes the patient, worse on eye movement; associated with systemic autoimmune disease."
     }
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -9887,6 +10274,7 @@
      "wet_mount_and_koh": "Fungal elements in skin scrapings; motile organisms in genital and stool samples."
     }
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -10037,6 +10425,13 @@
     ],
     "the_practical_summary": "Culture proves something is ALIVE. PCR proves its genetic material is PRESENT. Serology proves the immune system has MET it. Three different questions — choose the test that answers the one you are actually asking."
    },
+   "glossary": [
+    {
+     "abbr": "PCR",
+     "full": "polymerase chain reaction",
+     "gloss": "a test that amplifies and detects a specific DNA or RNA sequence"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -10204,6 +10599,7 @@
      "also_applies_to": "Functional hyposplenism — sickle cell disease (autosplenectomy), coeliac disease, and after splenic irradiation. The spleen may be present and still not working."
     }
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -10373,6 +10769,7 @@
      "cephalopelvic_disproportion": "A retrospective diagnosis, made on failure to progress despite adequate contractions — not something to predict from pelvic size alone."
     }
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -10576,6 +10973,12 @@
      "kernicterus": "Bilirubin encephalopathy. Preventable by measuring and treating against the age-specific threshold chart. Never assess neonatal jaundice by eye alone."
     }
    },
+   "glossary": [
+    {
+     "abbr": "AGE",
+     "full": "advanced glycation end product"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -10742,6 +11145,28 @@
     ],
     "practical_prescribing": "Lowest effective dose, shortest duration, with gastroprotection where indicated, with renal function checked in anyone at risk, and with a clear stop date. NSAIDs are analgesics, not maintenance therapy."
    },
+   "glossary": [
+    {
+     "abbr": "ARB",
+     "full": "angiotensin receptor blocker",
+     "gloss": "the \"-sartans\" — losartan, candesartan, valsartan"
+    },
+    {
+     "abbr": "COX-1",
+     "full": "cyclo-oxygenase 1",
+     "gloss": "the constant housekeeping form protecting stomach, kidney and platelets"
+    },
+    {
+     "abbr": "COX-2",
+     "full": "cyclo-oxygenase 2",
+     "gloss": "the form induced by inflammation"
+    },
+    {
+     "abbr": "NSAID",
+     "full": "non-steroidal anti-inflammatory drug",
+     "gloss": "ibuprofen, naproxen, diclofenac — as distinct from corticosteroids"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -10923,6 +11348,7 @@
      "Address nutrition, and the social conditions that will determine whether the course is completed."
     ]
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -11113,6 +11539,20 @@
     },
     "the_general_principle": "You do not need to know the regimens. You need to recognise the emergencies, know that the drug list matters, and know who to call."
    },
+   "glossary": [
+    {
+     "abbr": "ANCA",
+     "full": "antineutrophil cytoplasmic antibody"
+    },
+    {
+     "abbr": "CRP",
+     "full": "C-reactive protein"
+    },
+    {
+     "abbr": "ECG",
+     "full": "electrocardiogram"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -11292,6 +11732,29 @@
     ],
     "the_minimum_workup": "ECG within 10 minutes of arrival, observations including oxygen saturation and blood pressure IN BOTH ARMS, chest radiograph, troponin with serial repeat per protocol, and a clinical probability assessment for PE."
    },
+   "glossary": [
+    {
+     "abbr": "CT",
+     "full": "computed tomography"
+    },
+    {
+     "abbr": "ECG",
+     "full": "electrocardiogram"
+    },
+    {
+     "abbr": "JVP",
+     "full": "jugular venous pressure"
+    },
+    {
+     "abbr": "STEMI",
+     "full": "ST-elevation myocardial infarction",
+     "gloss": "a complete coronary occlusion needing immediate reperfusion"
+    },
+    {
+     "abbr": "VTE",
+     "full": "venous thromboembolism"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -11442,6 +11905,29 @@
     },
     "the_minimum_workup": "Observations including saturation and respiratory rate, ECG, chest radiograph, full blood count, urea and electrolytes, and a blood gas if unwell. Add D-dimer or imaging by PE probability, and BNP where heart failure is in question."
    },
+   "glossary": [
+    {
+     "abbr": "BNP",
+     "full": "B-type natriuretic peptide",
+     "gloss": "a hormone released by a stretched ventricle, used as a blood test for heart failure"
+    },
+    {
+     "abbr": "COPD",
+     "full": "chronic obstructive pulmonary disease"
+    },
+    {
+     "abbr": "DKA",
+     "full": "diabetic ketoacidosis"
+    },
+    {
+     "abbr": "ECG",
+     "full": "electrocardiogram"
+    },
+    {
+     "abbr": "JVP",
+     "full": "jugular venous pressure"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -11604,6 +12090,24 @@
     ],
     "the_minimum_workup": "Pregnancy test, full blood count, urea and electrolytes, liver function, amylase or lipase, CRP, glucose, group and save, urine dipstick, ECG, and an erect chest film if perforation is possible. Lactate and a gas if unwell. Imaging as directed by the clinical picture."
    },
+   "glossary": [
+    {
+     "abbr": "CRP",
+     "full": "C-reactive protein"
+    },
+    {
+     "abbr": "CT",
+     "full": "computed tomography"
+    },
+    {
+     "abbr": "DKA",
+     "full": "diabetic ketoacidosis"
+    },
+    {
+     "abbr": "ECG",
+     "full": "electrocardiogram"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -11783,6 +12287,44 @@
      "do_not_forget": "Not all yellow is jaundice. Carotenaemia spares the SCLERAE. Check the sclerae in natural light — and remember that scleral icterus is where jaundice is detected earliest and most reliably across all skin tones."
     }
    },
+   "glossary": [
+    {
+     "abbr": "ALP",
+     "full": "alkaline phosphatase",
+     "gloss": "from bile ducts, bone, placenta and intestine"
+    },
+    {
+     "abbr": "ALT",
+     "full": "alanine aminotransferase",
+     "gloss": "a liver-specific enzyme released when hepatocytes are injured"
+    },
+    {
+     "abbr": "AST",
+     "full": "aspartate aminotransferase",
+     "gloss": "an enzyme from liver, heart, muscle and red cells"
+    },
+    {
+     "abbr": "CRP",
+     "full": "C-reactive protein"
+    },
+    {
+     "abbr": "CT",
+     "full": "computed tomography"
+    },
+    {
+     "abbr": "ESR",
+     "full": "erythrocyte sedimentation rate"
+    },
+    {
+     "abbr": "GGT",
+     "full": "gamma-glutamyl transferase"
+    },
+    {
+     "abbr": "INR",
+     "full": "international normalised ratio",
+     "gloss": "a standardised measure of how long blood takes to clot"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -11954,6 +12496,18 @@
      "diagnosis": "Newborn screening where available, sweat chloride testing, and genetic analysis."
     }
    },
+   "glossary": [
+    {
+     "abbr": "CFTR",
+     "full": "cystic fibrosis transmembrane conductance regulator",
+     "gloss": "the chloride channel that is faulty in cystic fibrosis"
+    },
+    {
+     "abbr": "GAVE",
+     "full": "gastric antral vascular ectasia",
+     "gloss": "\"watermelon stomach\""
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -12125,6 +12679,13 @@
      "Aminoglycosides are best avoided."
     ]
    },
+   "glossary": [
+    {
+     "abbr": "INR",
+     "full": "international normalised ratio",
+     "gloss": "a standardised measure of how long blood takes to clot"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -12294,6 +12855,12 @@
      "the_examination_routine": "For any lump: site, size, shape, surface, edge, consistency, fluctuance, TRANSILLUMINATION, pulsatility, compressibility, temperature, tenderness, attachment to skin and to deep structures, and regional lymph nodes."
     }
    },
+   "glossary": [
+    {
+     "abbr": "ECG",
+     "full": "electrocardiogram"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -12459,6 +13026,7 @@
      "the_exceptions_that_break_the_rule": "MELANOMA, LYMPHOMA, MESOTHELIOMA and SEMINOMA are all MALIGNANT despite the -oma ending. This trips people constantly."
     }
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -12637,6 +13205,25 @@
      "Epigastric pain to the back with raised lipase → pancreatitis. Score severity, treat supportively, plan cholecystectomy."
     ]
    },
+   "glossary": [
+    {
+     "abbr": "ALP",
+     "full": "alkaline phosphatase",
+     "gloss": "from bile ducts, bone, placenta and intestine"
+    },
+    {
+     "abbr": "CRP",
+     "full": "C-reactive protein"
+    },
+    {
+     "abbr": "ERCP",
+     "full": "endoscopic retrograde cholangiopancreatography"
+    },
+    {
+     "abbr": "GGT",
+     "full": "gamma-glutamyl transferase"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -12815,6 +13402,25 @@
      "the_key_differentials": "Ectopic pregnancy, ovarian cyst rupture or torsion, pelvic inflammatory disease, mesenteric adenitis, Meckel diverticulitis, Crohn disease, right ureteric colic, and in children, right lower lobe pneumonia."
     }
    },
+   "glossary": [
+    {
+     "abbr": "AGE",
+     "full": "advanced glycation end product"
+    },
+    {
+     "abbr": "CT",
+     "full": "computed tomography"
+    },
+    {
+     "abbr": "NSAID",
+     "full": "non-steroidal anti-inflammatory drug",
+     "gloss": "ibuprofen, naproxen, diclofenac — as distinct from corticosteroids"
+    },
+    {
+     "abbr": "UTI",
+     "full": "urinary tract infection"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -12991,6 +13597,26 @@
      "valvular_af": "AF with moderate-to-severe mitral stenosis or a mechanical valve requires WARFARIN. Direct oral anticoagulants are NOT licensed and are inferior in this group."
     }
    },
+   "glossary": [
+    {
+     "abbr": "BNP",
+     "full": "B-type natriuretic peptide",
+     "gloss": "a hormone released by a stretched ventricle, used as a blood test for heart failure"
+    },
+    {
+     "abbr": "ECG",
+     "full": "electrocardiogram"
+    },
+    {
+     "abbr": "INR",
+     "full": "international normalised ratio",
+     "gloss": "a standardised measure of how long blood takes to clot"
+    },
+    {
+     "abbr": "JVP",
+     "full": "jugular venous pressure"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -13163,6 +13789,21 @@
      "tuberculosis_note": "In endemic settings, chronic cough over the locally specified duration with weight loss, night sweats or haemoptysis is TB until excluded. Isolate and send sputum before anything else. An upper lobe cavity is TB until proven otherwise."
     }
    },
+   "glossary": [
+    {
+     "abbr": "COPD",
+     "full": "chronic obstructive pulmonary disease"
+    },
+    {
+     "abbr": "FEV1",
+     "full": "forced expiratory volume in one second"
+    },
+    {
+     "abbr": "FVC",
+     "full": "forced vital capacity",
+     "gloss": "the total volume forcibly exhaled after a full breath in"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -13352,6 +13993,31 @@
      "the_overlap": "Some diseases produce both pictures. Lupus nephritis is the classic chameleon."
     }
    },
+   "glossary": [
+    {
+     "abbr": "ANCA",
+     "full": "antineutrophil cytoplasmic antibody"
+    },
+    {
+     "abbr": "ENaC",
+     "full": "epithelial sodium channel",
+     "gloss": "the collecting duct channel that amiloride blocks"
+    },
+    {
+     "abbr": "GBM",
+     "full": "glomerular basement membrane"
+    },
+    {
+     "abbr": "NKCC2",
+     "full": "sodium-potassium-2-chloride co-transporter",
+     "gloss": "the loop of Henle transporter that loop diuretics block"
+    },
+    {
+     "abbr": "SGLT2",
+     "full": "sodium-glucose co-transporter 2",
+     "gloss": "the kidney protein that reabsorbs filtered glucose; blocking it makes you pass sugar in the urine"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -13529,6 +14195,21 @@
      "the_management_principle": "Treat on suspicion. Block synthesis (antithyroid drug), block release (IODINE — but only AFTER the antithyroid drug has been given, or the iodine provides fresh substrate and makes it worse), block peripheral conversion and adrenergic effect (propranolol, corticosteroid), cool, rehydrate, and treat the precipitant. The ORDER of antithyroid drug before iodine is the point most often got wrong."
     }
    },
+   "glossary": [
+    {
+     "abbr": "DKA",
+     "full": "diabetic ketoacidosis"
+    },
+    {
+     "abbr": "TRAb",
+     "full": "TSH receptor antibody",
+     "gloss": "the autoantibody that causes Graves disease"
+    },
+    {
+     "abbr": "TSH",
+     "full": "thyroid-stimulating hormone"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -13711,6 +14392,12 @@
      "the_summary": "Two warnings go to every patient: the SORE THROAT rule (agranulocytosis) and the JAUNDICE rule (hepatotoxicity)."
     }
    },
+   "glossary": [
+    {
+     "abbr": "TSH",
+     "full": "thyroid-stimulating hormone"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -13950,6 +14637,20 @@
      "Visual evoked potentials where a subclinical optic nerve lesion would change the diagnosis."
     ]
    },
+   "glossary": [
+    {
+     "abbr": "AGE",
+     "full": "advanced glycation end product"
+    },
+    {
+     "abbr": "ANA",
+     "full": "antinuclear antibody"
+    },
+    {
+     "abbr": "MRI",
+     "full": "magnetic resonance imaging"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -14192,6 +14893,34 @@
     },
     "the_film": "A blood film is cheap, fast and still answers questions no analyser can. Ask for one whenever the counts do not fit the patient, when there is unexplained anaemia, or when the analyser flags abnormal cells."
    },
+   "glossary": [
+    {
+     "abbr": "APTT",
+     "full": "activated partial thromboplastin time"
+    },
+    {
+     "abbr": "DIC",
+     "full": "disseminated intravascular coagulation"
+    },
+    {
+     "abbr": "INR",
+     "full": "international normalised ratio",
+     "gloss": "a standardised measure of how long blood takes to clot"
+    },
+    {
+     "abbr": "ITP",
+     "full": "immune thrombocytopenic purpura"
+    },
+    {
+     "abbr": "MCV",
+     "full": "mean corpuscular volume",
+     "gloss": "average red cell size"
+    },
+    {
+     "abbr": "TTP",
+     "full": "thrombotic thrombocytopenic purpura"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -14384,6 +15113,31 @@
      "Any deterioration after paracetamol overdose, regardless of the initial level."
     ]
    },
+   "glossary": [
+    {
+     "abbr": "ALT",
+     "full": "alanine aminotransferase",
+     "gloss": "a liver-specific enzyme released when hepatocytes are injured"
+    },
+    {
+     "abbr": "ANA",
+     "full": "antinuclear antibody"
+    },
+    {
+     "abbr": "AST",
+     "full": "aspartate aminotransferase",
+     "gloss": "an enzyme from liver, heart, muscle and red cells"
+    },
+    {
+     "abbr": "GGT",
+     "full": "gamma-glutamyl transferase"
+    },
+    {
+     "abbr": "INR",
+     "full": "international normalised ratio",
+     "gloss": "a standardised measure of how long blood takes to clot"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -14569,6 +15323,18 @@
     ],
     "when_jaundice_becomes_visible": "Clinically detectable at roughly twice the upper limit of normal, so a patient can be significantly hyperbilirubinaemic and look normal. Examine the SCLERAE in NATURAL LIGHT — and on darker skin the sclerae, the under-surface of the tongue and the hard palate are the reliable sites, while skin colour is not."
    },
+   "glossary": [
+    {
+     "abbr": "ALP",
+     "full": "alkaline phosphatase",
+     "gloss": "from bile ducts, bone, placenta and intestine"
+    },
+    {
+     "abbr": "INR",
+     "full": "international normalised ratio",
+     "gloss": "a standardised measure of how long blood takes to clot"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -14754,6 +15520,12 @@
      "the_trap": "A HAEMOLYSED SAMPLE raises LDH and potassium in the bottle. Before working up a patient for haemolysis, confirm the sample was not simply difficult to draw."
     }
    },
+   "glossary": [
+    {
+     "abbr": "ECG",
+     "full": "electrocardiogram"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -14931,6 +15703,20 @@
     },
     "how_to_use_them_together": "Ask what question you are answering. Following a known process over days → CRP. Suspecting a chronic or smouldering process, myeloma or giant cell arteritis → ESR. Deciding whether to stop antibiotics → procalcitonin if available. Assessing iron → ferritin, interpreted alongside CRP and transferrin saturation."
    },
+   "glossary": [
+    {
+     "abbr": "AGE",
+     "full": "advanced glycation end product"
+    },
+    {
+     "abbr": "CRP",
+     "full": "C-reactive protein"
+    },
+    {
+     "abbr": "ESR",
+     "full": "erythrocyte sedimentation rate"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -15128,6 +15914,21 @@
      "the_principle": "DIC is a manifestation, never a diagnosis in itself. Treating the numbers without finding and treating the trigger does not work."
     }
    },
+   "glossary": [
+    {
+     "abbr": "APTT",
+     "full": "activated partial thromboplastin time"
+    },
+    {
+     "abbr": "DIC",
+     "full": "disseminated intravascular coagulation"
+    },
+    {
+     "abbr": "INR",
+     "full": "international normalised ratio",
+     "gloss": "a standardised measure of how long blood takes to clot"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -15285,6 +16086,17 @@
      "what_actually_changes_outcome": "Early aggressive fluid resuscitation, analgesia, monitoring for organ failure, and early enteral nutrition where tolerated. Severity assessment, not the enzyme level, drives escalation."
     }
    },
+   "glossary": [
+    {
+     "abbr": "ALT",
+     "full": "alanine aminotransferase",
+     "gloss": "a liver-specific enzyme released when hepatocytes are injured"
+    },
+    {
+     "abbr": "ERCP",
+     "full": "endoscopic retrograde cholangiopancreatography"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -15466,6 +16278,22 @@
      "A rising creatinine with a falling urine output needs a cause found today — obstruction is the one that is fully reversible and is missed by not scanning the bladder."
     ]
    },
+   "glossary": [
+    {
+     "abbr": "eGFR",
+     "full": "estimated glomerular filtration rate",
+     "gloss": "a calculated estimate of kidney filtering capacity"
+    },
+    {
+     "abbr": "GFR",
+     "full": "glomerular filtration rate"
+    },
+    {
+     "abbr": "NSAID",
+     "full": "non-steroidal anti-inflammatory drug",
+     "gloss": "ibuprofen, naproxen, diclofenac — as distinct from corticosteroids"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -15621,6 +16449,12 @@
     "other_causes_of_a_raised_ammonia": "Gastrointestinal bleeding (a protein load in the gut), constipation, infection, dehydration, hypokalaemia, portosystemic shunting including TIPS, urease-producing urinary infection with obstruction, high-dose chemotherapy, and drugs — valproate most notably.",
     "in_hepatic_encephalopathy_what_actually_matters": "FIND THE PRECIPITANT. Infection including spontaneous bacterial peritonitis, gastrointestinal bleeding, constipation, dehydration, electrolyte disturbance, sedatives, and non-adherence to lactulose. Identifying and treating the precipitant changes the outcome; measuring the ammonia repeatedly does not."
    },
+   "glossary": [
+    {
+     "abbr": "TIPS",
+     "full": "transjugular intrahepatic portosystemic shunt"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -15802,6 +16636,12 @@
     "also_bearing_his_name": "CHARCOT-BOUCHARD ANEURYSMS — microaneurysms of small penetrating cerebral arteries in chronic hypertension, the classic substrate for deep intracerebral haemorrhage in the basal ganglia, thalamus, pons and cerebellum.",
     "how_to_avoid_the_confusion": "If a colleague says \"Charcot\", ask which. In a jaundiced febrile patient it is the biliary triad. In a hot swollen insensate diabetic foot it is the joint. In a young patient with pes cavus and foot drop it is the inherited neuropathy. In an MS discussion it is a historical triad you should not be using."
    },
+   "glossary": [
+    {
+     "abbr": "CRP",
+     "full": "C-reactive protein"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -15973,6 +16813,13 @@
     },
     "the_other_bells_worth_knowing": "BELL-MAGENDIE law — anterior spinal roots are motor, posterior roots are sensory. Charles Bell also gave his name to the long thoracic nerve palsy causing winged scapula, sometimes called Bell nerve palsy."
    },
+   "glossary": [
+    {
+     "abbr": "GAVE",
+     "full": "gastric antral vascular ectasia",
+     "gloss": "\"watermelon stomach\""
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -16171,6 +17018,26 @@
     },
     "the_mimics_to_exclude": "Aortic dissection, pulmonary embolism, pericarditis and myocarditis, oesophageal rupture or spasm, pneumothorax, and musculoskeletal pain. Dissection and PE are the two that are both common enough and lethal enough to actively exclude."
    },
+   "glossary": [
+    {
+     "abbr": "ECG",
+     "full": "electrocardiogram"
+    },
+    {
+     "abbr": "NSTEMI",
+     "full": "non-ST-elevation myocardial infarction"
+    },
+    {
+     "abbr": "PCI",
+     "full": "percutaneous coronary intervention",
+     "gloss": "angioplasty and stenting"
+    },
+    {
+     "abbr": "STEMI",
+     "full": "ST-elevation myocardial infarction",
+     "gloss": "a complete coronary occlusion needing immediate reperfusion"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -16383,6 +17250,26 @@
     },
     "the_acute_emergencies": "DKA and HHS are covered separately. The rule that matters here: any unwell person with diabetes needs a glucose AND ketones checked, and \"sick day rules\" — never stop insulin when unwell — must be taught explicitly, because stopping insulin during illness is a common route into DKA."
    },
+   "glossary": [
+    {
+     "abbr": "CKD",
+     "full": "chronic kidney disease"
+    },
+    {
+     "abbr": "eGFR",
+     "full": "estimated glomerular filtration rate",
+     "gloss": "a calculated estimate of kidney filtering capacity"
+    },
+    {
+     "abbr": "HbA1c",
+     "full": "glycated haemoglobin",
+     "gloss": "average glucose over roughly the past 2–3 months"
+    },
+    {
+     "abbr": "HHS",
+     "full": "hyperosmolar hyperglycaemic state"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -16587,6 +17474,29 @@
      "Warn about the small but real risk of chronic thromboembolic pulmonary hypertension if breathlessness persists."
     ]
    },
+   "glossary": [
+    {
+     "abbr": "BNP",
+     "full": "B-type natriuretic peptide",
+     "gloss": "a hormone released by a stretched ventricle, used as a blood test for heart failure"
+    },
+    {
+     "abbr": "CT",
+     "full": "computed tomography"
+    },
+    {
+     "abbr": "DVT",
+     "full": "deep vein thrombosis"
+    },
+    {
+     "abbr": "ECG",
+     "full": "electrocardiogram"
+    },
+    {
+     "abbr": "VTE",
+     "full": "venous thromboembolism"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -16794,6 +17704,34 @@
      "contraindications_and_timing": "Relative contraindications include recent myocardial infarction, pneumothorax, recent eye or abdominal surgery, and haemoptysis. Defer testing during an acute exacerbation or active infection — results will not represent the patient baseline."
     }
    },
+   "glossary": [
+    {
+     "abbr": "COPD",
+     "full": "chronic obstructive pulmonary disease"
+    },
+    {
+     "abbr": "DLCO",
+     "full": "diffusing capacity of the lung for carbon monoxide",
+     "gloss": "the transfer factor — how well gas crosses into the blood"
+    },
+    {
+     "abbr": "FEV1",
+     "full": "forced expiratory volume in one second"
+    },
+    {
+     "abbr": "FVC",
+     "full": "forced vital capacity",
+     "gloss": "the total volume forcibly exhaled after a full breath in"
+    },
+    {
+     "abbr": "PE",
+     "full": "pulmonary embolism"
+    },
+    {
+     "abbr": "TLCO",
+     "full": "transfer factor for carbon monoxide"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -17049,6 +17987,16 @@
      "Debrief the team afterwards. It improves both performance and staff wellbeing."
     ]
    },
+   "glossary": [
+    {
+     "abbr": "ECG",
+     "full": "electrocardiogram"
+    },
+    {
+     "abbr": "PE",
+     "full": "pulmonary embolism"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -17227,6 +18175,12 @@
     "the_important_limitation": "Accuracy is roughly ±2 WEEKS. That range matters enormously at the margins: a score suggesting 25 weeks could be 23 or 27, and the management differs sharply. Ballard SUPPORTS a decision; it does not settle one on its own. A reliable last menstrual period or early ultrasound beats it.",
     "what_to_do_with_the_answer": "Gestational age alone is not enough. Plot the BIRTH WEIGHT against the gestational age to classify the baby as small, appropriate or large for gestational age — that combination, not either number alone, predicts hypoglycaemia, polycythaemia and feeding problems."
    },
+   "glossary": [
+    {
+     "abbr": "SGA",
+     "full": "small for gestational age"
+    }
+   ],
    "inputs": [
     {
      "key": "neuromuscular",
@@ -17497,6 +18451,7 @@
      "Dysmorphic features, developmental delay, or symptoms of chronic disease."
     ]
    },
+   "glossary": [],
    "inputs": [
     {
      "key": "father_height",
@@ -17747,6 +18702,12 @@
     "the_error_in_the_other_direction": "Correction explains a delay of a few months. It does NOT explain a gross or persistent delay, an asymmetric pattern, loss of previously acquired skills, or abnormal tone. Attributing those to prematurity delays diagnosis of cerebral palsy and of hearing and visual impairment, all of which are commoner after preterm birth and all of which benefit from early intervention.",
     "related_terms": "POSTMENSTRUAL AGE = gestational age + chronological age; used in the neonatal unit before term. CORRECTED AGE is used after discharge."
    },
+   "glossary": [
+    {
+     "abbr": "AGE",
+     "full": "advanced glycation end product"
+    }
+   ],
    "inputs": [
     {
      "key": "chronological_weeks",
@@ -18018,6 +18979,20 @@
      "Re-measure before acting on a single surprising value."
     ]
    },
+   "glossary": [
+    {
+     "abbr": "AGE",
+     "full": "advanced glycation end product"
+    },
+    {
+     "abbr": "BMI",
+     "full": "body mass index"
+    },
+    {
+     "abbr": "IUGR",
+     "full": "intrauterine growth restriction"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -18207,6 +19182,7 @@
     ],
     "lipoatrophy": "A LOSS of subcutaneous fat at injection sites — immunological, and now rare with modern insulins. Distinct from lipohypertrophy, which is a gain."
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -18416,6 +19392,20 @@
      "Reverse anticoagulation if present."
     ]
    },
+   "glossary": [
+    {
+     "abbr": "CSF",
+     "full": "cerebrospinal fluid"
+    },
+    {
+     "abbr": "CT",
+     "full": "computed tomography"
+    },
+    {
+     "abbr": "GCS",
+     "full": "Glasgow Coma Scale"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -18614,6 +19604,24 @@
      "The character of the pain — tearing, maximal at onset, radiating to the back."
     ]
    },
+   "glossary": [
+    {
+     "abbr": "CT",
+     "full": "computed tomography"
+    },
+    {
+     "abbr": "ECG",
+     "full": "electrocardiogram"
+    },
+    {
+     "abbr": "JVP",
+     "full": "jugular venous pressure"
+    },
+    {
+     "abbr": "MRI",
+     "full": "magnetic resonance imaging"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -18805,6 +19813,20 @@
      "prognosis": "Most recover substantially, though it takes months and a proportion retain deficits. Poorer prognosis with older age, rapid onset, preceding Campylobacter, axonal subtype and the need for ventilation."
     }
    },
+   "glossary": [
+    {
+     "abbr": "CIDP",
+     "full": "chronic inflammatory demyelinating polyradiculoneuropathy"
+    },
+    {
+     "abbr": "CSF",
+     "full": "cerebrospinal fluid"
+    },
+    {
+     "abbr": "MRI",
+     "full": "magnetic resonance imaging"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -19018,6 +20040,21 @@
      "the_critical_association": "Strongly associated with SMALL CELL LUNG CANCER, and the neurological syndrome commonly PRECEDES the cancer diagnosis. A new Lambert-Eaton diagnosis mandates a search for malignancy and continued surveillance if the first search is negative."
     }
    },
+   "glossary": [
+    {
+     "abbr": "CT",
+     "full": "computed tomography"
+    },
+    {
+     "abbr": "FVC",
+     "full": "forced vital capacity",
+     "gloss": "the total volume forcibly exhaled after a full breath in"
+    },
+    {
+     "abbr": "MRI",
+     "full": "magnetic resonance imaging"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -19242,6 +20279,16 @@
      "the_mnemonic_for_timing": "Hours → dystonia. Days to weeks → akathisia and NMS. Weeks to months → parkinsonism. Months to years → tardive dyskinesia."
     }
    },
+   "glossary": [
+    {
+     "abbr": "AKI",
+     "full": "acute kidney injury"
+    },
+    {
+     "abbr": "NMS",
+     "full": "neuroleptic malignant syndrome"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -19461,6 +20508,25 @@
      "the_key_conceptual_point": "Accept permissive HYPERCAPNIA to protect the lung. Chasing a normal CO2 with large tidal volumes causes ventilator-induced lung injury and worsens outcome. The gas numbers are subordinate to the lung protection."
     }
    },
+   "glossary": [
+    {
+     "abbr": "ARDS",
+     "full": "acute respiratory distress syndrome",
+     "gloss": "diffuse inflammatory lung injury causing refractory hypoxaemia"
+    },
+    {
+     "abbr": "COPD",
+     "full": "chronic obstructive pulmonary disease"
+    },
+    {
+     "abbr": "NIV",
+     "full": "non-invasive ventilation"
+    },
+    {
+     "abbr": "PE",
+     "full": "pulmonary embolism"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -19642,6 +20708,20 @@
      "after": "Lifelong follow-up. Recurrence and metachronous tumours occur, especially in hereditary disease."
     }
    },
+   "glossary": [
+    {
+     "abbr": "CT",
+     "full": "computed tomography"
+    },
+    {
+     "abbr": "MEN",
+     "full": "multiple endocrine neoplasia"
+    },
+    {
+     "abbr": "MRI",
+     "full": "magnetic resonance imaging"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -19849,6 +20929,16 @@
      "somatostatinoma": "Diabetes, gallstones and steatorrhoea — the classic triad from inhibition of insulin, gallbladder contraction and pancreatic enzymes."
     }
    },
+   "glossary": [
+    {
+     "abbr": "MEN",
+     "full": "multiple endocrine neoplasia"
+    },
+    {
+     "abbr": "TSH",
+     "full": "thyroid-stimulating hormone"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -20052,6 +21142,12 @@
      "the_education_that_prevents_deaths": "SICK DAY RULES — double the oral dose during febrile illness; if vomiting, use the emergency INTRAMUSCULAR hydrocortisone. Every patient must have an emergency injection kit, be trained to use it, carry a steroid card or bracelet, and have a family member trained too. This is the single highest-value intervention in the whole condition."
     }
    },
+   "glossary": [
+    {
+     "abbr": "CT",
+     "full": "computed tomography"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -20261,6 +21357,20 @@
     },
     "the_replacement_rule": "When replacing multiple hormones, GIVE HYDROCORTISONE BEFORE LEVOTHYROXINE. Starting thyroxine first increases metabolic demand and can precipitate an adrenal crisis in someone with unrecognised ACTH deficiency. This ordering is essential and frequently got wrong."
    },
+   "glossary": [
+    {
+     "abbr": "IGF-1",
+     "full": "insulin-like growth factor 1"
+    },
+    {
+     "abbr": "MRI",
+     "full": "magnetic resonance imaging"
+    },
+    {
+     "abbr": "TSH",
+     "full": "thyroid-stimulating hormone"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -20443,6 +21553,13 @@
     "other_sources_of_ages": "Not all AGEs are made internally. DIETARY AGEs are formed by high-temperature dry cooking — grilling, frying, roasting, browning. Boiling, steaming and stewing generate far fewer. SMOKING is also a significant exogenous source. These are modifiable and are rarely mentioned to patients.",
     "why_this_belongs_in_a_clinical_reference": "Because it converts a list of complications into a single mechanism a patient can understand: \"sugar sticks to the long-lasting proteins in your eyes, kidneys, nerves and blood vessels and makes them stiff, and that damage is slow to undo — which is why control now matters for years to come.\""
    },
+   "glossary": [
+    {
+     "abbr": "HbA1c",
+     "full": "glycated haemoglobin",
+     "gloss": "average glucose over roughly the past 2–3 months"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -20627,6 +21744,34 @@
     },
     "treatment_principles": "Corticosteroids are first line, with a steroid-sparing agent introduced early. IVIG has a role, particularly with dysphagia. Rituximab and other agents for refractory disease. Physiotherapy is important, not optional. Skin disease needs photoprotection and topical therapy. Screen and monitor for interstitial lung disease with pulmonary function tests and high-resolution CT — the lungs, not the muscles, are often what determines prognosis."
    },
+   "glossary": [
+    {
+     "abbr": "ALT",
+     "full": "alanine aminotransferase",
+     "gloss": "a liver-specific enzyme released when hepatocytes are injured"
+    },
+    {
+     "abbr": "ANA",
+     "full": "antinuclear antibody"
+    },
+    {
+     "abbr": "AST",
+     "full": "aspartate aminotransferase",
+     "gloss": "an enzyme from liver, heart, muscle and red cells"
+    },
+    {
+     "abbr": "CT",
+     "full": "computed tomography"
+    },
+    {
+     "abbr": "MRI",
+     "full": "magnetic resonance imaging"
+    },
+    {
+     "abbr": "TSH",
+     "full": "thyroid-stimulating hormone"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -20835,6 +21980,17 @@
     },
     "mixed_connective_tissue_disease": "Features of systemic sclerosis, lupus and myositis together with a HIGH-TITRE ANTI-U1-RNP antibody. Raynaud and puffy hands are typical early features. Pulmonary hypertension is the main cause of death, so it needs the same screening discipline as systemic sclerosis."
    },
+   "glossary": [
+    {
+     "abbr": "ANA",
+     "full": "antinuclear antibody"
+    },
+    {
+     "abbr": "GAVE",
+     "full": "gastric antral vascular ectasia",
+     "gloss": "\"watermelon stomach\""
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -21036,6 +22192,28 @@
      "the_contrast_with_giant_cell_arteritis": "GCA affects the OVER-50s and involves cranial branches — headache, jaw claudication, scalp tenderness, visual loss. Takayasu affects the UNDER-40s and involves the aorta and its proximal branches. Both are large-vessel granulomatous vasculitides and they overlap considerably in the middle."
     }
    },
+   "glossary": [
+    {
+     "abbr": "CRP",
+     "full": "C-reactive protein"
+    },
+    {
+     "abbr": "CT",
+     "full": "computed tomography"
+    },
+    {
+     "abbr": "ESR",
+     "full": "erythrocyte sedimentation rate"
+    },
+    {
+     "abbr": "IBD",
+     "full": "inflammatory bowel disease"
+    },
+    {
+     "abbr": "MRI",
+     "full": "magnetic resonance imaging"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -21254,6 +22432,17 @@
      "conservative_management": "A legitimate, actively chosen pathway — not \"no treatment\". In frail elderly patients with multiple comorbidities, dialysis may not extend life and may reduce its quality. This conversation should happen early, honestly, and repeatedly."
     }
    },
+   "glossary": [
+    {
+     "abbr": "ADPKD",
+     "full": "autosomal dominant polycystic kidney disease"
+    },
+    {
+     "abbr": "ARB",
+     "full": "angiotensin receptor blocker",
+     "gloss": "the \"-sartans\" — losartan, candesartan, valsartan"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -21490,6 +22679,7 @@
     },
     "what_a_useful_description_contains": "Site and distribution · number · size · morphology (the correct noun) · colour · border (well or ill defined) · surface (scale, crust, erosion) · palpation (warm, indurated, tender) · blanching · configuration · associated changes in hair, nails and mucosae · and whether it itches."
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -21683,6 +22873,7 @@
     },
     "why_all_this_earns_its_place": "Each structure predicts a disease. Split above the basement membrane and you get pemphigus; below it, pemphigoid. Destroy melanocytes and you get vitiligo; disable their enzyme and you get albinism. Sensitise Langerhans cells and you get contact dermatitis. Follow the embryonic migration lines and you are looking at a mosaic genetic disease."
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -21878,6 +23069,21 @@
      "the_practical_consequence": "Treat the underlying inflammation EARLY and effectively, because the longer inflammation persists the worse the pigment change. Use photoprotection. Explain the expected timeline honestly — months, not weeks. Do not describe it as \"just pigmentation\"."
     }
    },
+   "glossary": [
+    {
+     "abbr": "HbA1c",
+     "full": "glycated haemoglobin",
+     "gloss": "average glucose over roughly the past 2–3 months"
+    },
+    {
+     "abbr": "IGF-1",
+     "full": "insulin-like growth factor 1"
+    },
+    {
+     "abbr": "TSH",
+     "full": "thyroid-stimulating hormone"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -22127,6 +23333,7 @@
      "gorlin_syndrome": "PTCH1 mutation — multiple BCCs from a young age, jaw keratocysts, palmar pits and skeletal anomalies."
     }
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -22365,6 +23572,13 @@
      "Is there lymphovascular or perineural invasion?"
     ]
    },
+   "glossary": [
+    {
+     "abbr": "eGFR",
+     "full": "estimated glomerular filtration rate",
+     "gloss": "a calculated estimate of kidney filtering capacity"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -22580,6 +23794,12 @@
     "treatment_principles": "Surgery (breast-conserving with radiotherapy, or mastectomy — survival is equivalent for suitable tumours, so this can genuinely be the patient choice) plus axillary staging by SENTINEL NODE biopsy where the axilla is clinically negative. Then adjuvant radiotherapy, endocrine therapy, chemotherapy and targeted therapy as indicated by receptor status, stage and genomic assays. Reconstruction should be discussed BEFORE surgery, not after.",
     "the_thing_most_often_neglected": "Lymphoedema risk counselling, fertility preservation discussion BEFORE chemotherapy in younger women, bone health on aromatase inhibitors, menopausal symptom management, and psychological support. These determine quality of life for years and are frequently deferred until too late to act."
    },
+   "glossary": [
+    {
+     "abbr": "MRI",
+     "full": "magnetic resonance imaging"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -22814,6 +24034,18 @@
      "the_practical_rule": "Adult with a persistent unilateral serous otitis media, or an unexplained upper cervical node, needs the nasopharynx visualised. It is treated with radiotherapy and chemoradiotherapy and is curable when caught early."
     }
    },
+   "glossary": [
+    {
+     "abbr": "ASIA",
+     "full": "American Spinal Injury Association",
+     "gloss": "its Impairment Scale grades spinal cord injury A to E"
+    },
+    {
+     "abbr": "eGFR",
+     "full": "estimated glomerular filtration rate",
+     "gloss": "a calculated estimate of kidney filtering capacity"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -23028,6 +24260,7 @@
     "the_diagnostic_approach": "A collateral history from someone who knows the person is essential and is the most informative single element. Cognitive testing (MoCA is more sensitive than MMSE for mild impairment and executive dysfunction). Bloods to exclude reversible causes. Imaging. Functional assessment — what has the person stopped being able to do?",
     "the_things_that_actually_help": "Acetylcholinesterase inhibitors and memantine give modest symptomatic benefit in selected types. But the interventions that change lives are: advance care planning while capacity remains, carer support and respite, driving assessment, financial and legal safeguarding (lasting power of attorney), falls prevention, treating pain (which is a major and under-recognised cause of agitation in people who cannot report it), and continuity of care."
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -23215,6 +24448,7 @@
     "the_perinatal_point": "Bipolar disorder carries a very high risk of POSTPARTUM PSYCHOSIS, which is a psychiatric emergency with risk to mother and infant. Any woman with bipolar disorder who is pregnant or planning pregnancy needs specialist perinatal mental health input in advance — for medication planning and for a postpartum monitoring plan.",
     "risk": "Suicide risk is high, particularly in mixed states, in the depressive phase, early in the illness, and with comorbid substance misuse. Assess it explicitly and repeatedly, and involve family in safety planning where the patient consents."
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -23439,6 +24673,7 @@
      "Consider the children and dependants of anyone with problematic substance use — safeguarding is part of the assessment."
     ]
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -23668,6 +24903,7 @@
      "Follow up. Confirm the referral was received and acted on; escalate if not."
     ]
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -23877,6 +25113,7 @@
     },
     "the_common_thread": "In all of these, the person in front of you may not identify as a victim, may not want intervention, and may be at greater risk if you act clumsily. The safe actions are the same: see them alone, use a professional interpreter, ask openly, document carefully, refer through the proper mechanism, and never confront the person exercising control."
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -24082,6 +25319,7 @@
      "Escalate organisational concerns about an institution, not just the individual case."
     ]
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -24272,6 +25510,7 @@
     "scoring_and_disposal": "The GLASGOW-BLATCHFORD score identifies very low-risk patients who may avoid admission; the ROCKALL score estimates mortality and rebleeding, pre- and post-endoscopy. Use whichever your service uses, and do not let a low score override a patient who looks unwell.",
     "the_immediate_actions_in_parallel_with_the_history": "Two large-bore cannulae · resuscitate with fluid and blood as needed · correct coagulopathy · in suspected VARICEAL bleeding start a vasoactive agent and PROPHYLACTIC ANTIBIOTICS (which independently reduce mortality — a frequently forgotten but evidence-based step) · discuss urgent ENDOSCOPY timing · involve seniors early."
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -24461,6 +25700,50 @@
     "investigations": "URINE DIPSTICK first and immediately — blood and protein together suggest a glomerular cause and change everything. Then urine microscopy for RED CELL CASTS (glomerulonephritis) and a protein:creatinine or albumin:creatinine ratio. Bloods: renal profile, calcium, bone profile, albumin, CK, full blood count, clotting, inflammatory markers, and where indicated ANA, ANCA, anti-GBM, complement, immunoglobulins and electrophoresis, hepatitis and HIV serology. ULTRASOUND to exclude obstruction and assess size — small kidneys mean chronic disease.",
     "the_immediate_priorities": "POTASSIUM and an ECG first — hyperkalaemia kills before the creatinine matters. Then fluid status, stop nephrotoxics, relieve obstruction, treat sepsis, and identify indications for dialysis (AEIOU)."
    },
+   "glossary": [
+    {
+     "abbr": "ADPKD",
+     "full": "autosomal dominant polycystic kidney disease"
+    },
+    {
+     "abbr": "AKI",
+     "full": "acute kidney injury"
+    },
+    {
+     "abbr": "ANA",
+     "full": "antinuclear antibody"
+    },
+    {
+     "abbr": "ANCA",
+     "full": "antineutrophil cytoplasmic antibody"
+    },
+    {
+     "abbr": "ARB",
+     "full": "angiotensin receptor blocker",
+     "gloss": "the \"-sartans\" — losartan, candesartan, valsartan"
+    },
+    {
+     "abbr": "ECG",
+     "full": "electrocardiogram"
+    },
+    {
+     "abbr": "GBM",
+     "full": "glomerular basement membrane"
+    },
+    {
+     "abbr": "HIVAN",
+     "full": "HIV-associated nephropathy"
+    },
+    {
+     "abbr": "JVP",
+     "full": "jugular venous pressure"
+    },
+    {
+     "abbr": "NSAID",
+     "full": "non-steroidal anti-inflammatory drug",
+     "gloss": "ibuprofen, naproxen, diclofenac — as distinct from corticosteroids"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -24674,6 +25957,37 @@
      "the_essential_early_tests": "Glucose, full blood count, electrolytes INCLUDING potassium, calcium, magnesium and phosphate, renal and liver function, TSH, CK, inflammatory markers, and HIV where relevant. Hypokalaemia and hypercalcaemia in particular are trivially reversible causes of profound weakness and must be excluded before anything elaborate."
     }
    },
+   "glossary": [
+    {
+     "abbr": "COPD",
+     "full": "chronic obstructive pulmonary disease"
+    },
+    {
+     "abbr": "ECG",
+     "full": "electrocardiogram"
+    },
+    {
+     "abbr": "FVC",
+     "full": "forced vital capacity",
+     "gloss": "the total volume forcibly exhaled after a full breath in"
+    },
+    {
+     "abbr": "MRI",
+     "full": "magnetic resonance imaging"
+    },
+    {
+     "abbr": "TB",
+     "full": "tuberculosis"
+    },
+    {
+     "abbr": "TSH",
+     "full": "thyroid-stimulating hormone"
+    },
+    {
+     "abbr": "VTE",
+     "full": "venous thromboembolism"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -24883,6 +26197,12 @@
      "topical_preparations": "EMLA and tetracaine gels are systemically absorbed, particularly through broken or inflamed skin and mucosa, and over large areas in small children. Overdose from topical agents is documented and is easy to forget."
     }
    },
+   "glossary": [
+    {
+     "abbr": "LAST",
+     "full": "local anaesthetic systemic toxicity"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -25086,6 +26406,16 @@
      "contraindications": "Patient refusal, local infection at the site, uncorrected coagulopathy or therapeutic anticoagulation, raised intracranial pressure, severe uncorrected hypovolaemia, and severe fixed cardiac output states such as critical aortic stenosis."
     }
    },
+   "glossary": [
+    {
+     "abbr": "CSF",
+     "full": "cerebrospinal fluid"
+    },
+    {
+     "abbr": "MRI",
+     "full": "magnetic resonance imaging"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -25273,6 +26603,7 @@
      "management": "Endoscopic stapling or diverticulotomy, or open surgery with cricopharyngeal myotomy. Myotomy addresses the underlying cause; simply removing the pouch without it risks recurrence. There is a small long-term risk of carcinoma developing within a long-standing pouch."
     }
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -25481,6 +26812,7 @@
      "the_things_not_to_miss": "NEUTROPENIC SEPSIS in anyone on chemotherapy — antibiotics within the hour · MENINGITIS · malaria · endocarditis in anyone with a murmur, prosthetic valve or injecting drug use · and remember that the ELDERLY, the very young and the immunosuppressed may be seriously infected with LITTLE OR NO FEVER, and hypothermia in sepsis carries a worse prognosis than fever."
     }
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -25695,6 +27027,24 @@
      "definitive_treatment": "Catheter ABLATION of the accessory pathway is curative and is offered to symptomatic patients and to those with high-risk features."
     }
    },
+   "glossary": [
+    {
+     "abbr": "ECG",
+     "full": "electrocardiogram"
+    },
+    {
+     "abbr": "HOCM",
+     "full": "hypertrophic obstructive cardiomyopathy"
+    },
+    {
+     "abbr": "JVP",
+     "full": "jugular venous pressure"
+    },
+    {
+     "abbr": "WPW",
+     "full": "Wolff-Parkinson-White syndrome"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -25900,6 +27250,12 @@
      }
     }
    },
+   "glossary": [
+    {
+     "abbr": "ECG",
+     "full": "electrocardiogram"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -26101,6 +27457,12 @@
      "what_to_actually_do": "Assess volume status carefully and repeatedly. Optimise heart failure therapy. Avoid nephrotoxics. Monitor potassium closely, especially when combining renin-angiotensin blockade with mineralocorticoid antagonists. Recognise that both organs must be managed together, and involve cardiology and nephrology jointly rather than sequentially."
     }
    },
+   "glossary": [
+    {
+     "abbr": "PE",
+     "full": "pulmonary embolism"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -26305,6 +27667,33 @@
     "the_practical_workup": "Glucose or HbA1c and an oral glucose tolerance test if normal but suspicion is high · B12 and folate · TSH · renal and liver function · full blood count and ESR · protein electrophoresis and free light chains · HIV where relevant · ANA and ANCA if asymmetric or systemic features · nerve conduction studies. Reserve broader testing for atypical or progressive cases.",
     "management_principles": "Treat the CAUSE — this is the only thing that alters the course. FOOT CARE and protection is critical in any sensory neuropathy, because insensate feet ulcerate, and that is preventable. Neuropathic pain agents help symptoms but not the nerve. Physiotherapy, orthotics for foot drop, and falls prevention. Address driving where proprioception is impaired."
    },
+   "glossary": [
+    {
+     "abbr": "ANA",
+     "full": "antinuclear antibody"
+    },
+    {
+     "abbr": "ANCA",
+     "full": "antineutrophil cytoplasmic antibody"
+    },
+    {
+     "abbr": "CIDP",
+     "full": "chronic inflammatory demyelinating polyradiculoneuropathy"
+    },
+    {
+     "abbr": "ESR",
+     "full": "erythrocyte sedimentation rate"
+    },
+    {
+     "abbr": "HbA1c",
+     "full": "glycated haemoglobin",
+     "gloss": "average glucose over roughly the past 2–3 months"
+    },
+    {
+     "abbr": "TSH",
+     "full": "thyroid-stimulating hormone"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -26511,6 +27900,20 @@
      "the_immediate_priorities": "Exclude stroke and a posterior fossa mass with imaging where the onset is acute or there are other signs. Check glucose, drug levels, thiamine status and thyroid function. Give thiamine before glucose in anyone at risk."
     }
    },
+   "glossary": [
+    {
+     "abbr": "MOGAD",
+     "full": "myelin oligodendrocyte glycoprotein antibody-associated disease"
+    },
+    {
+     "abbr": "MRI",
+     "full": "magnetic resonance imaging"
+    },
+    {
+     "abbr": "NMOSD",
+     "full": "neuromyelitis optica spectrum disorder"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -26724,6 +28127,16 @@
      "Any older person with unexplained cognitive decline, gait disturbance or fluctuating consciousness deserves consideration of chronic subdural haematoma — it is treatable and it is missed."
     ]
    },
+   "glossary": [
+    {
+     "abbr": "CSF",
+     "full": "cerebrospinal fluid"
+    },
+    {
+     "abbr": "CT",
+     "full": "computed tomography"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -26914,6 +28327,13 @@
     },
     "the_cellular_adaptations_that_precede_injury": "HYPERTROPHY (bigger cells) · HYPERPLASIA (more cells) · ATROPHY (smaller or fewer) · METAPLASIA (one mature type replaced by another better suited to the stress) · and then DYSPLASIA and NEOPLASIA when adaptation becomes disordered. Adaptation is the tissue succeeding; injury is adaptation failing."
    },
+   "glossary": [
+    {
+     "abbr": "ALT",
+     "full": "alanine aminotransferase",
+     "gloss": "a liver-specific enzyme released when hepatocytes are injured"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -27130,6 +28550,16 @@
      "the_others": "Cachexia from TNF, reactive thrombocytosis, a pro-thrombotic state, and — over years — accelerated ATHEROSCLEROSIS, which is why chronic inflammatory diseases carry excess cardiovascular mortality."
     }
    },
+   "glossary": [
+    {
+     "abbr": "CRP",
+     "full": "C-reactive protein"
+    },
+    {
+     "abbr": "ESR",
+     "full": "erythrocyte sedimentation rate"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -27329,6 +28759,7 @@
     },
     "the_honest_caveat": "Numbered rules persist because they are memorable, not because they are accurate. Several have been superseded by evidence while continuing to be taught. Where a rule conflicts with a current guideline or with the patient in front of you, the rule loses."
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -27548,6 +28979,16 @@
     },
     "the_bedside_summary": "Scooped ST with a short QT in a well patient = EFFECT, leave it alone. Any new arrhythmia, nausea, confusion or yellow vision in someone on digoxin = TOXICITY until proven otherwise, whatever the level says."
    },
+   "glossary": [
+    {
+     "abbr": "AKI",
+     "full": "acute kidney injury"
+    },
+    {
+     "abbr": "ECG",
+     "full": "electrocardiogram"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -27775,6 +29216,20 @@
     },
     "the_universal_principle": "Heart failure is a SYNDROME, not a diagnosis. Whatever the ejection fraction, the question \"what caused this?\" must still be answered — ischaemia, valve disease, arrhythmia, thyroid, alcohol, infiltration, hypertension — because several of those causes are treatable in their own right and the label alone treats nobody."
    },
+   "glossary": [
+    {
+     "abbr": "ECG",
+     "full": "electrocardiogram"
+    },
+    {
+     "abbr": "HFrecEF",
+     "full": "heart failure with recovered ejection fraction"
+    },
+    {
+     "abbr": "MRI",
+     "full": "magnetic resonance imaging"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -28091,6 +29546,57 @@
      "lithium": "Aquaporin-2 response · nephrogenic diabetes insipidus"
     }
    },
+   "glossary": [
+    {
+     "abbr": "CFTR",
+     "full": "cystic fibrosis transmembrane conductance regulator",
+     "gloss": "the chloride channel that is faulty in cystic fibrosis"
+    },
+    {
+     "abbr": "ENaC",
+     "full": "epithelial sodium channel",
+     "gloss": "the collecting duct channel that amiloride blocks"
+    },
+    {
+     "abbr": "GLUT",
+     "full": "glucose transporter"
+    },
+    {
+     "abbr": "MS",
+     "full": "multiple sclerosis"
+    },
+    {
+     "abbr": "NKCC2",
+     "full": "sodium-potassium-2-chloride co-transporter",
+     "gloss": "the loop of Henle transporter that loop diuretics block"
+    },
+    {
+     "abbr": "NMOSD",
+     "full": "neuromyelitis optica spectrum disorder"
+    },
+    {
+     "abbr": "ROMK",
+     "full": "renal outer medullary potassium channel"
+    },
+    {
+     "abbr": "SERCA",
+     "full": "sarcoplasmic/endoplasmic reticulum calcium ATPase",
+     "gloss": "the pump that returns calcium into intracellular stores"
+    },
+    {
+     "abbr": "SGLT1",
+     "full": "sodium-glucose co-transporter 1"
+    },
+    {
+     "abbr": "SGLT2",
+     "full": "sodium-glucose co-transporter 2",
+     "gloss": "the kidney protein that reabsorbs filtered glucose; blocking it makes you pass sugar in the urine"
+    },
+    {
+     "abbr": "VT",
+     "full": "ventricular tachycardia"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -28420,6 +29926,7 @@
     },
     "targets": "HbA1c targets are INDIVIDUAL, not universal — tighter in the young, newly diagnosed and otherwise well; looser in the frail, in those with hypoglycaemia unawareness, and where the risk of a hypo outweighs the benefit of a lower number. A single target applied to everyone causes harm at both ends."
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -28669,6 +30176,27 @@
      "Never combine two NSAIDs. The harms add; the benefit does not."
     ]
    },
+   "glossary": [
+    {
+     "abbr": "ARB",
+     "full": "angiotensin receptor blocker",
+     "gloss": "the \"-sartans\" — losartan, candesartan, valsartan"
+    },
+    {
+     "abbr": "COX-1",
+     "full": "cyclo-oxygenase 1",
+     "gloss": "the constant housekeeping form protecting stomach, kidney and platelets"
+    },
+    {
+     "abbr": "COX-2",
+     "full": "cyclo-oxygenase 2",
+     "gloss": "the form induced by inflammation"
+    },
+    {
+     "abbr": "TIPS",
+     "full": "transjugular intrahepatic portosystemic shunt"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -28928,6 +30456,7 @@
      "late": "NON-UNION and delayed union · MALUNION · AVASCULAR NECROSIS at the classic watershed sites — femoral head after neck fracture, scaphoid proximal pole, talus — where the blood supply runs retrograde · post-traumatic arthritis · joint stiffness · complex regional pain syndrome · limb length discrepancy and growth arrest in children · implant failure."
     }
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -29157,6 +30686,12 @@
      "A child with a physeal fracture from a mechanism that does not fit, or with multiple injuries of different ages, requires a SAFEGUARDING assessment."
     ]
    },
+   "glossary": [
+    {
+     "abbr": "ORIF",
+     "full": "open reduction and internal fixation"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -29369,6 +30904,7 @@
      "the_correction_that_matters": "MESS was derived on a small retrospective series and has since performed POORLY as a predictor in prospective studies — notably the LEAP study — with a low positive predictive value. It must NOT be used alone to justify amputation. A high score should prompt senior multidisciplinary discussion, not a decision. The genuine determinants are the vascular status, the soft tissue and nerve deficit (particularly posterior tibial nerve function and plantar sensation, though even this is less decisive than once taught), the patient's physiology, and their own informed wishes. Amputation is sometimes the RIGHT and limb-sparing-superior choice, but the decision is clinical, consented and senior."
     }
    },
+   "glossary": [],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -29612,6 +31148,12 @@
      "Early specialist referral. Time to decompression matters in incomplete injuries."
     ]
    },
+   "glossary": [
+    {
+     "abbr": "CT",
+     "full": "computed tomography"
+    }
+   ],
    "inputs": [],
    "logic": {},
    "outputs": [],
@@ -29703,6 +31245,501 @@
     "local_confirmation_required": true,
     "supersedes": null,
     "content_hash": "0b79ab5164e18ce1"
+   }
+  },
+  {
+   "id": "AS-STIG-0002",
+   "schema_version": "4.0.0",
+   "content_release": "AWIBI-SCOUT-CONTENT-2026.08.R3",
+   "type": "stigmata",
+   "title": "Peripheral Stigmata of Long-Standing Hypertension",
+   "short_title": "Hypertension stigmata",
+   "slug": "peripheral_stigmata_of_long_standing_hypertension",
+   "also_known_as": [
+    "hypertension stigmata",
+    "peripheral stigmata of hypertension",
+    "signs of hypertension",
+    "end organ damage",
+    "hypertensive retinopathy",
+    "displaced apex beat",
+    "heaving apex",
+    "thickened arterial wall",
+    "arterial thickening",
+    "hypertensive heart disease",
+    "malignant hypertension",
+    "accelerated hypertension"
+   ],
+   "summary": "Blood pressure is a number taken at one moment. The stigmata tell you how long it has been high and what it has already damaged — and the two that matter most are the DISPLACED APEX BEAT and the RETINA, because they are end-organ damage you can find at the bedside without a single test.",
+   "domains": [
+    "cardiovascular",
+    "physiology"
+   ],
+   "intents": [
+    "identify"
+   ],
+   "populations": [
+    "all_ages"
+   ],
+   "contexts": [
+    "routine"
+   ],
+   "hazard": "high",
+   "urgency": "urgent",
+   "jurisdiction": "international",
+   "search": {
+    "terms": [
+     "accelerated hypertension",
+     "apex beat",
+     "arterial thickening",
+     "arteriosclerosis",
+     "av nipping",
+     "coarctation",
+     "corneal arcus",
+     "cotton wool",
+     "displaced",
+     "displaced apex beat",
+     "end organ damage",
+     "fourth heart sound",
+     "heaving",
+     "heaving apex",
+     "hypertension",
+     "hypertension stigmata",
+     "hypertensive heart disease",
+     "hypertensive retinopathy",
+     "keith wagener",
+     "left ventricular hypertrophy",
+     "long",
+     "malignant hypertension",
+     "papilloedema",
+     "peripheral",
+     "peripheral stigmata of hypertension",
+     "peripheral stigmata of long-standing hypertension",
+     "radiofemoral delay",
+     "renal bruit",
+     "retinopathy",
+     "s4",
+     "signs of hypertension",
+     "silver wiring",
+     "standing",
+     "stigmata",
+     "sustained",
+     "target organ damage",
+     "thickened arterial wall",
+     "thickened artery",
+     "thrusting",
+     "xanthelasma"
+    ],
+    "ambiguous_terms": [],
+    "phrases": [],
+    "field_weights": {
+     "title": 8,
+     "short_title": 6,
+     "also_known_as": 5,
+     "terms": 4,
+     "summary": 2,
+     "body": 1,
+     "flashcards": 0.5
+    }
+   },
+   "body": {
+    "where_the_rest_of_hypertension_lives": "This entry is the BEDSIDE EXAMINATION in depth — what to look for, how to elicit it, and what each finding means. The ECG changes of potassium disturbance, the J-curve of blood pressure lowering, and the wider management of hypertension are covered in \"Hypertension — End-Organ Stigmata, ECG Potassium Changes and the J-Curve\". Use that entry for the disease; use this one when you are standing at the bed.",
+    "why_look_for_these_at_all": "A blood pressure reading tells you about this moment. Stigmata tell you about YEARS. They answer three questions no single reading can: has this been present long enough to damage organs, is there a SECONDARY cause, and is this an emergency right now? Finding end-organ damage converts \"raised blood pressure\" into \"hypertensive heart disease\" or \"hypertension with retinopathy\", which changes the urgency, the target and the drug.",
+    "the_hands_and_arms": {
+     "the_arterial_wall_itself": {
+      "what_to_feel": "Palpate the RADIAL and especially the BRACHIAL artery. In long-standing hypertension and arteriosclerosis the wall becomes THICKENED, stiff and palpably cord-like — it can be rolled under the finger rather than compressed.",
+      "the_related_sign": "A very stiff vessel may produce PSEUDOHYPERTENSION, where the cuff cannot compress the rigid artery and reads falsely high. The classic bedside test is OSLER SIGN — the radial artery remains palpable as a firm cord even when the cuff is inflated above systolic. Its reliability is debated, but the concept matters: suspect it in an elderly patient with very high readings and no end-organ damage who becomes symptomatically hypotensive on treatment. That combination is a real trap."
+     },
+     "pulse_character": "Assess rate, rhythm and character. Long-standing hypertension gives a stiff arterial tree and a WIDE PULSE PRESSURE with a sharp upstroke in the elderly. Note that isolated systolic hypertension in an older patient is a stiff-artery disease, not simply \"mild\" hypertension.",
+     "radiofemoral_delay": "Palpate the radial and femoral pulses SIMULTANEOUSLY. A delay, or weak femoral pulses, suggests COARCTATION OF THE AORTA — a correctable, secondary cause of hypertension that is missed for decades because nobody feels the femorals. Also check for a blood pressure difference between arms.",
+     "signs_of_lipid_and_vascular_disease": "Tendon xanthomata, xanthelasma and a CORNEAL ARCUS in a patient under about 45 all point to hyperlipidaemia and shared cardiovascular risk rather than to hypertension itself — but they belong in the same survey."
+    },
+    "the_face_and_eyes": {
+     "the_retina_is_the_only_place_you_see_arteries_directly": "FUNDOSCOPY is the single highest-value examination here, and it is the one most often skipped. Nowhere else in the body can you look at small arteries without an instrument through the skin.",
+     "keith_wagener_barker_grading": {
+      "grade_1": "Generalised arteriolar NARROWING and increased light reflex — \"SILVER\" or \"COPPER WIRING\".",
+      "grade_2": "ARTERIOVENOUS NIPPING — the thickened arteriole indents the vein where they cross.",
+      "grade_3": "Grade 2 plus FLAME HAEMORRHAGES, COTTON-WOOL SPOTS (retinal infarcts) and hard exudates.",
+      "grade_4": "Grade 3 plus PAPILLOEDEMA — swelling of the optic disc."
+     },
+     "the_action_point": "Grades 3 and 4 define ACCELERATED (malignant) HYPERTENSION. This is a HYPERTENSIVE EMERGENCY requiring same-day assessment and controlled blood pressure reduction, not a routine clinic adjustment. Papilloedema in a hypertensive patient is not a finding to note and review in six weeks.",
+     "the_face_in_secondary_causes": "A CUSHINGOID appearance — moon face, plethora, supraclavicular and interscapular fat pads — suggests Cushing syndrome or exogenous steroid. COARSE features, prognathism and large hands suggest acromegaly. Both are secondary, treatable causes."
+    },
+    "the_praecordium_the_two_most_important_findings": {
+     "the_displaced_apex_beat": {
+      "how_to_find_it": "The apex beat is the most inferolateral point at which the cardiac impulse is palpable. Locate it by INTERCOSTAL SPACE and by its relation to the MID-CLAVICULAR LINE. Normal is the 5th intercostal space in or medial to the mid-clavicular line.",
+      "what_displacement_means": "DISPLACEMENT — down and out — indicates VOLUME overload and chamber DILATATION. In the hypertensive patient this signifies that the ventricle has moved beyond compensated hypertrophy into DILATATION and failure. It is a late and serious sign.",
+      "the_distinction_that_matters_more": {
+       "heaving_sustained": "A HEAVING (sustained, thrusting) apex that is NOT displaced indicates PRESSURE overload with CONCENTRIC LEFT VENTRICULAR HYPERTROPHY. This is the characteristic finding of long-standing hypertension and of aortic stenosis. The ventricle has thickened, not dilated.",
+       "thrusting_displaced": "A hyperdynamic, DISPLACED apex indicates VOLUME overload — aortic or mitral regurgitation, or a dilated failing ventricle.",
+       "why_it_matters": "Heaving-but-not-displaced tells you the hypertension has been present for years and the ventricle is compensating. Heaving AND displaced tells you compensation has failed. That is a genuinely different clinical situation and it is decided entirely by palpation."
+      },
+      "when_you_cannot_feel_it": "An impalpable apex is common and does not exclude disease — obesity, emphysema, pericardial effusion and dextrocardia all account for it. Say so rather than inventing a position."
+     },
+     "the_fourth_heart_sound": "An S4 is a LOW-PITCHED sound just BEFORE S1, produced by atrial contraction against a STIFF, non-compliant ventricle. It is heard best at the apex with the BELL, patient in the left lateral position. It is a classic accompaniment of hypertensive left ventricular hypertrophy. Crucially, an S4 CANNOT exist in atrial fibrillation, because it requires organised atrial contraction — a small logical check that catches a lot of invented findings.",
+     "other_praecordial_findings": "A loud or ringing A2 (the aortic component of the second heart sound). Murmurs of associated aortic valve disease. Signs of heart failure if compensation has failed — raised JVP, third heart sound, basal crackles, dependent oedema."
+    },
+    "the_abdomen": {
+     "renal_bruit": "AUSCULTATE for a bruit above the umbilicus and in the flanks. A bruit suggests RENAL ARTERY STENOSIS — a secondary and potentially correctable cause. Suspect it particularly in resistant hypertension, in a patient with widespread atherosclerosis, in a young woman (fibromuscular dysplasia), or where renal function DETERIORATES SHARPLY after starting an ACE inhibitor or ARB, which is a near-classic presentation.",
+     "ballotable_kidneys": "Bilateral enlarged, ballotable kidneys suggest AUTOSOMAL DOMINANT POLYCYSTIC KIDNEY DISEASE — hypertension often appears BEFORE any fall in renal function and is the earliest treatable finding in that condition.",
+     "aortic_aneurysm": "Palpate for an expansile pulsatile mass. Hypertension is a major risk factor.",
+     "adrenal_causes": "Episodic hypertension with headache, sweating and palpitations suggests PHAEOCHROMOCYTOMA; hypertension with hypokalaemia suggests primary hyperaldosteronism (Conn syndrome). Neither has a specific abdominal sign, but both belong in the survey."
+    },
+    "the_legs_and_the_rest": "Peripheral pulses and evidence of peripheral arterial disease. Oedema, which may be heart failure or a calcium channel blocker side effect — a distinction worth making before escalating diuretics. Signs of chronic kidney disease, since hypertension is both cause and consequence.",
+    "the_synthesis": {
+     "what_the_findings_together_tell_you": "Thickened vessels + heaving non-displaced apex + S4 + grade 1–2 retinopathy = long-standing, compensated hypertensive heart disease. Add a displaced apex, a third heart sound and basal crackles and compensation has failed. Add grade 3–4 retinopathy and it is an emergency today.",
+     "the_secondary_cause_checklist_from_examination_alone": "Radiofemoral delay (coarctation) · renal bruit (renal artery stenosis) · ballotable kidneys (polycystic disease) · cushingoid habitus (Cushing) · acromegalic features · thyroid signs. Any one of these changes the investigation completely, and all are found by looking."
+    }
+   },
+   "glossary": [
+    {
+     "abbr": "ARB",
+     "full": "angiotensin receptor blocker",
+     "gloss": "the \"-sartans\" — losartan, candesartan, valsartan"
+    },
+    {
+     "abbr": "ECG",
+     "full": "electrocardiogram"
+    },
+    {
+     "abbr": "JVP",
+     "full": "jugular venous pressure"
+    }
+   ],
+   "inputs": [],
+   "logic": {},
+   "outputs": [],
+   "warnings": [
+    "A HEAVING but NOT displaced apex means concentric hypertrophy from pressure overload — the hypertension has been present for years. A DISPLACED apex means dilatation and failed compensation. The distinction is made by palpation alone.",
+    "Grade 3 or 4 retinopathy (haemorrhages, cotton-wool spots, papilloedema) is accelerated hypertension — a same-day emergency, not a clinic adjustment.",
+    "Do fundoscopy. It is the only place you can see arteries directly and it is the most commonly skipped part of this examination.",
+    "Feel the femoral pulses with the radials. Coarctation is a correctable cause missed for decades because nobody checks.",
+    "Listen for a renal bruit — especially in resistant hypertension, or if renal function falls sharply after starting an ACE inhibitor or ARB.",
+    "Suspect pseudohypertension in an elderly patient with very high readings, no end-organ damage, and symptomatic hypotension on treatment.",
+    "An S4 cannot exist in atrial fibrillation — it requires organised atrial contraction.",
+    "An impalpable apex does not exclude disease. Say it is impalpable rather than inventing a position.",
+    "Ankle oedema in a hypertensive patient may be a calcium channel blocker effect, not heart failure — check before adding a diuretic."
+   ],
+   "limitations": [
+    "Retinopathy grading systems vary between services. Blood pressure thresholds and treatment targets are guideline-specific."
+   ],
+   "flashcards": [
+    {
+     "q": "What does a heaving, non-displaced apex indicate?",
+     "a": "Pressure overload with concentric left ventricular hypertrophy — long-standing hypertension or aortic stenosis."
+    },
+    {
+     "q": "What does a displaced apex indicate?",
+     "a": "Volume overload and chamber dilatation — compensation has failed."
+    },
+    {
+     "q": "Grade the Keith-Wagener-Barker retinopathy stages.",
+     "a": "1 silver wiring, 2 AV nipping, 3 haemorrhages and cotton-wool spots, 4 papilloedema."
+    },
+    {
+     "q": "Which retinopathy grades constitute an emergency?",
+     "a": "Grades 3 and 4 — accelerated (malignant) hypertension, same-day assessment."
+    },
+    {
+     "q": "What does radiofemoral delay suggest?",
+     "a": "Coarctation of the aorta — a correctable secondary cause."
+    },
+    {
+     "q": "When should you suspect renal artery stenosis?",
+     "a": "Resistant hypertension, a renal bruit, or renal function falling sharply after an ACE inhibitor or ARB."
+    },
+    {
+     "q": "What is Osler sign and why does it matter?",
+     "a": "A palpable radial artery despite suprasystolic cuff inflation — suggests pseudohypertension from a rigid vessel."
+    },
+    {
+     "q": "Why can an S4 not occur in atrial fibrillation?",
+     "a": "It is produced by organised atrial contraction, which AF abolishes."
+    },
+    {
+     "q": "Which bedside findings suggest a secondary cause?",
+     "a": "Radiofemoral delay, renal bruit, ballotable kidneys, cushingoid or acromegalic features."
+    }
+   ],
+   "checkboxes": [
+    "Brachial and radial wall character palpated",
+    "Radial and femoral pulses timed together",
+    "Blood pressure measured in both arms",
+    "Apex beat located by space and mid-clavicular line, and its character described",
+    "Auscultated for S4 and a loud A2",
+    "Fundoscopy performed and graded",
+    "Renal bruit auscultated",
+    "Kidneys ballotted",
+    "Secondary-cause features documented"
+   ],
+   "related_slugs": [
+    "hypertension_end_organ_stigmata_ecg_potassium_changes_and_the_j_curve"
+   ],
+   "patient_integration": null,
+   "governance": {
+    "evidence_tier": "T5_textbook_or_standard_teaching",
+    "verification_status": "standard_teaching",
+    "sources": [],
+    "nigeria_overlay": null,
+    "build_date": "2026-08-07",
+    "review_interval_months": 12,
+    "next_review_due": "2027-08-07",
+    "clinical_reviewer": null,
+    "approved_for_release": false,
+    "local_confirmation_required": true,
+    "supersedes": null,
+    "content_hash": "77749b3f74d091bd"
+   }
+  },
+  {
+   "id": "AS-STIG-0003",
+   "schema_version": "4.0.0",
+   "content_release": "AWIBI-SCOUT-CONTENT-2026.08.R3",
+   "type": "stigmata",
+   "title": "Peripheral Stigmata of Chronic Kidney Disease",
+   "short_title": "Renal stigmata",
+   "slug": "peripheral_stigmata_of_chronic_kidney_disease",
+   "also_known_as": [
+    "renal stigmata",
+    "peripheral stigmata of renal disease",
+    "signs of chronic kidney disease",
+    "uraemic signs",
+    "uraemia",
+    "uraemic frost",
+    "uraemic fetor",
+    "leuconychia",
+    "half and half nails",
+    "lindsay nails",
+    "terry nails",
+    "asterixis",
+    "pericardial rub",
+    "av fistula",
+    "renal failure signs"
+   ],
+   "summary": "Uraemia is visible before it is measured. The hands, the skin, the breath and the fistula tell you how advanced the disease is and whether the patient is already on dialysis — and a PERICARDIAL RUB in a uraemic patient is an emergency, because it is an absolute indication for dialysis.",
+   "domains": [
+    "renal",
+    "physiology"
+   ],
+   "intents": [
+    "identify"
+   ],
+   "populations": [
+    "all_ages"
+   ],
+   "contexts": [
+    "routine"
+   ],
+   "hazard": "critical",
+   "urgency": "urgent",
+   "jurisdiction": "international",
+   "search": {
+    "terms": [
+     "arteriovenous fistula",
+     "asterixis",
+     "av fistula",
+     "beau lines",
+     "bruit",
+     "calciphylaxis",
+     "chronic",
+     "chronic kidney disease",
+     "chvostek",
+     "disease",
+     "excoriation",
+     "flapping tremor",
+     "half and half nails",
+     "kidney",
+     "leuconychia",
+     "lindsay",
+     "lindsay nails",
+     "muehrcke lines",
+     "nephrotic",
+     "pallor",
+     "pericardial rub",
+     "periorbital oedema",
+     "peripheral",
+     "peripheral stigmata of chronic kidney disease",
+     "peripheral stigmata of renal disease",
+     "peritoneal dialysis catheter",
+     "pruritus",
+     "renal bone disease",
+     "renal failure signs",
+     "renal stigmata",
+     "rutherford morrison",
+     "sallow",
+     "signs of chronic kidney disease",
+     "stigmata",
+     "terry nails",
+     "tetany",
+     "thrill",
+     "transplant scar",
+     "trousseau",
+     "tunnelled line",
+     "uraemia",
+     "uraemic fetor",
+     "uraemic frost",
+     "uraemic signs"
+    ],
+    "ambiguous_terms": [],
+    "phrases": [],
+    "field_weights": {
+     "title": 8,
+     "short_title": 6,
+     "also_known_as": 5,
+     "terms": 4,
+     "summary": 2,
+     "body": 1,
+     "flashcards": 0.5
+    }
+   },
+   "body": {
+    "why_this_matters": "Chronic kidney disease is a whole-body disease, not a number on a blood test. The stigmata tell you the STAGE, whether the patient is on RENAL REPLACEMENT THERAPY, whether there are complications needing action today, and often what the underlying cause was. Much of it is visible from the end of the bed.",
+    "the_hands_and_nails": {
+     "leuconychia": "WHITE nails from HYPOALBUMINAEMIA — nephrotic syndrome, or malnutrition of chronic disease. Also seen in liver disease.",
+     "half_and_half_nails": "LINDSAY NAILS — the PROXIMAL half white and the DISTAL half red-brown, with a sharp line between. Relatively specific for CHRONIC KIDNEY DISEASE and genuinely useful. Distinguish from TERRY NAILS (proximal white with only a narrow distal brown band), which are more associated with cirrhosis.",
+     "muehrcke_lines": "Paired transverse WHITE bands that do NOT move with nail growth — a sign of sustained hypoalbuminaemia.",
+     "beau_lines": "Transverse GROOVES marking a period of arrested nail growth during severe systemic illness. They date the illness.",
+     "asterixis": {
+      "what": "A FLAPPING TREMOR elicited by asking the patient to extend the arms with wrists dorsiflexed and fingers spread, and hold for 30 seconds. There are irregular, jerky lapses of posture.",
+      "what_it_means": "A METABOLIC ENCEPHALOPATHY — here uraemic. It is NOT specific to the kidney: hepatic encephalopathy, carbon dioxide retention and severe electrolyte disturbance all cause it. In a uraemic patient it signals advanced disease and is an indication to consider dialysis urgently."
+     },
+     "other_hand_signs": "Pallor of the palmar creases from ANAEMIA of chronic kidney disease (reduced erythropoietin). Peripheral neuropathy. Signs of the underlying cause — the sclerodactyly of systemic sclerosis, the joint deformity of rheumatoid, gouty tophi, or the vasculitic lesions of ANCA-associated disease.",
+     "the_arm_you_must_examine_and_protect": {
+      "arteriovenous_fistula": "Look for a surgical scar with a dilated, tortuous vein at the wrist or antecubital fossa. PALPATE for a THRILL and AUSCULTATE for a BRUIT — both should be present in a working fistula. Their ABSENCE suggests THROMBOSIS and needs urgent vascular assessment, because a lost fistula is a lost access.",
+      "the_rule_that_protects_the_patient_for_life": "NEVER take blood, site a cannula, place a PICC line or apply a blood pressure cuff on a fistula arm — or on the non-dominant arm of anyone with advancing chronic kidney disease who may need one in future. Damaging those veins destroys future access. Ward staff do this routinely without realising, and the consequences are permanent. Say it aloud at the bedside and document it."
+     }
+    },
+    "the_face_and_mouth": {
+     "complexion": "A SALLOW, yellow-brown or muddy complexion from retained urochrome pigment, combined with the pallor of anaemia. On darker skin this is subtle — assess conjunctival and palmar pallor rather than relying on complexion.",
+     "periorbital_oedema": "Prominent on WAKING and characteristic of NEPHROTIC syndrome, because low oncotic pressure lets fluid collect in the loose periorbital tissue overnight.",
+     "uraemic_fetor": "A distinctive AMMONIACAL or \"fishy\" smell on the breath, from urea broken down to ammonia in saliva. It indicates severe uraemia.",
+     "mouth": "Dry mucosa, gum hypertrophy in transplant patients on CICLOSPORIN or on calcium channel blockers, and oral candidiasis in the immunosuppressed.",
+     "eyes": "Band keratopathy from chronic hypercalcaemia. Retinopathy from the diabetes or hypertension that often caused the kidney disease in the first place — and its ABSENCE in presumed diabetic nephropathy should make you question that diagnosis."
+    },
+    "the_skin": {
+     "pruritus_and_excoriation": "ITCH is one of the most distressing and under-treated symptoms of advanced chronic kidney disease. Look for widespread EXCORIATIONS and lichenification — often the most visible sign, and often the one the patient most wants addressed.",
+     "uraemic_frost": "A fine WHITE crystalline deposit of urea on the skin, most visible on the face and trunk, appearing as sweat evaporates. It is a sign of PROFOUND, untreated uraemia. It is rare wherever dialysis is available, and where it is seen it indicates a patient who has been without treatment far too long.",
+     "pallor_and_bruising": "Anaemia, plus easy bruising and purpura from URAEMIC PLATELET DYSFUNCTION — the platelet COUNT is often normal while platelet FUNCTION is impaired, which is why these patients bleed with a normal full blood count.",
+     "calciphylaxis": "Extremely painful, violaceous, net-like (retiform) skin lesions progressing to necrotic ulcers, typically on the thighs, abdomen and buttocks. Caused by calcification of small dermal vessels in advanced renal bone-mineral disease. It carries a very high mortality and needs urgent specialist involvement — it is regularly misdiagnosed as cellulitis or a vasculitic ulcer.",
+     "other": "Nephrogenic systemic fibrosis, historically associated with gadolinium exposure in severe renal impairment. Porphyria cutanea tarda-like blistering on sun-exposed skin in dialysis patients."
+    },
+    "the_neck_chest_and_abdomen": {
+     "volume_status": "The JUGULAR VENOUS PRESSURE is central. Raised in fluid overload, low in the over-dialysed or volume-depleted patient. Assess it deliberately — fluid management is the daily question in this population.",
+     "pericardial_rub": {
+      "what": "A scratchy, superficial, to-and-fro sound heard best at the left sternal edge with the patient leaning forward at end-expiration.",
+      "why_it_is_urgent": "URAEMIC PERICARDITIS is an ABSOLUTE INDICATION FOR DIALYSIS. It can progress to a haemorrhagic effusion and TAMPONADE. Finding a rub in a uraemic patient is not an interesting sign to record — it changes management today. It is one of the highest-yield findings in this entire examination and it is frequently not listened for."
+     },
+     "lungs": "Basal crackles and pleural effusions from fluid overload. \"Uraemic lung\" — a bat-wing pattern of pulmonary oedema on the chest film.",
+     "heart": "Hypertension is almost universal. Left ventricular hypertrophy is common. Listen for the murmurs of accelerated valvular calcification.",
+     "abdomen": {
+      "transplant": "A hockey-stick or RUTHERFORD MORRISON scar in the ILIAC FOSSA with a palpable, firm mass beneath it is a RENAL TRANSPLANT. It is placed in the iliac fossa, not orthotopically, and it is easily mistaken for a mass by the unwary. Its presence tells you the patient is immunosuppressed.",
+      "peritoneal_dialysis": "A Tenckhoff CATHETER exit site, usually paramedian. Inspect it for infection, and remember the rule: a CLOUDY BAG is peritonitis until proven otherwise.",
+      "ballotable_kidneys": "Bilateral enlargement suggests polycystic kidney disease. Also look for a hepatomegaly of associated liver cysts.",
+      "nephrectomy_scars": "Loin scars from previous surgery."
+     },
+     "vascular_access_elsewhere": "A TUNNELLED CENTRAL LINE below the clavicle, or scars from previous ones. Multiple scars indicate repeated access failure and a difficult vascular future."
+    },
+    "the_neuromuscular_signs": {
+     "renal_bone_mineral_disease": "Bone pain, proximal myopathy and fracture from renal osteodystrophy — driven by phosphate retention, reduced vitamin D activation and secondary hyperparathyroidism.",
+     "hypocalcaemia": "Look for CHVOSTEK SIGN (tapping the facial nerve causes facial twitching) and TROUSSEAU SIGN (inflating a blood pressure cuff above systolic for three minutes causes carpopedal spasm). Trousseau is the more specific of the two.",
+     "peripheral_neuropathy_and_restless_legs": "Both common, both under-recognised, and restless legs in particular is a substantial cause of sleep disturbance in dialysis patients."
+    },
+    "putting_it_together": "Half-and-half nails + sallow complexion + excoriations + a fistula with a thrill = established chronic kidney disease on haemodialysis. Add asterixis, uraemic fetor or a pericardial rub and the patient is inadequately dialysed or presenting late, and that requires action today rather than at the next clinic."
+   },
+   "glossary": [
+    {
+     "abbr": "ANCA",
+     "full": "antineutrophil cytoplasmic antibody"
+    }
+   ],
+   "inputs": [],
+   "logic": {},
+   "outputs": [],
+   "warnings": [
+    "A PERICARDIAL RUB in a uraemic patient is an ABSOLUTE indication for dialysis and can progress to tamponade. Listen for it deliberately.",
+    "NEVER cannulate, venepuncture, or apply a blood pressure cuff to a fistula arm — or the non-dominant arm of anyone with advancing CKD. The damage is permanent.",
+    "An absent thrill or bruit over a fistula suggests thrombosis — urgent vascular assessment.",
+    "Asterixis in a uraemic patient signals encephalopathy and advanced disease — consider dialysis urgently.",
+    "Uraemic platelet DYSFUNCTION causes bleeding with a NORMAL platelet count.",
+    "Calciphylaxis is regularly misdiagnosed as cellulitis. Painful violaceous retiform lesions in advanced CKD need urgent specialist input and carry high mortality.",
+    "A cloudy peritoneal dialysis bag is peritonitis until proven otherwise, even without pain or fever.",
+    "A firm mass under an iliac fossa scar is a transplanted kidney — the patient is immunosuppressed.",
+    "Uraemic frost indicates profound untreated uraemia and a patient who has gone far too long without treatment.",
+    "Absence of retinopathy in presumed diabetic nephropathy should make you question the diagnosis.",
+    "On darker skin, assess pallor at the conjunctivae and palmar creases rather than by complexion."
+   ],
+   "limitations": [
+    "Dialysis indications, access protocols and bone-mineral targets are service-specific."
+   ],
+   "flashcards": [
+    {
+     "q": "What are half-and-half (Lindsay) nails?",
+     "a": "Proximal half white, distal half red-brown — relatively specific for chronic kidney disease."
+    },
+    {
+     "q": "How do you elicit asterixis and what does it mean?",
+     "a": "Arms extended, wrists dorsiflexed, held 30 seconds — jerky lapses of posture indicate metabolic encephalopathy."
+    },
+    {
+     "q": "Why is a pericardial rub urgent in a uraemic patient?",
+     "a": "Uraemic pericarditis is an absolute indication for dialysis and can progress to tamponade."
+    },
+    {
+     "q": "What must never be done to a fistula arm?",
+     "a": "No cannulation, venepuncture, PICC line or blood pressure cuff — the damage to future access is permanent."
+    },
+    {
+     "q": "What does an absent thrill over a fistula suggest?",
+     "a": "Thrombosis — urgent vascular assessment."
+    },
+    {
+     "q": "Why do uraemic patients bleed with a normal platelet count?",
+     "a": "Platelet FUNCTION is impaired, not the count."
+    },
+    {
+     "q": "What is calciphylaxis?",
+     "a": "Calcification of small dermal vessels causing painful retiform necrotic ulcers — high mortality, often mistaken for cellulitis."
+    },
+    {
+     "q": "Where is a transplanted kidney placed?",
+     "a": "The iliac fossa, under a Rutherford Morrison scar — not orthotopically."
+    },
+    {
+     "q": "What is uraemic frost?",
+     "a": "Crystalline urea deposited on the skin — a sign of profound untreated uraemia."
+    },
+    {
+     "q": "Which sign is more specific for hypocalcaemia, Chvostek or Trousseau?",
+     "a": "Trousseau — carpopedal spasm on cuff inflation."
+    }
+   ],
+   "checkboxes": [
+    "Nails inspected for half-and-half and Muehrcke lines",
+    "Asterixis tested",
+    "Fistula examined for thrill and bruit, and the arm protected and documented",
+    "Skin examined for excoriation, purpura and calciphylaxis",
+    "JVP and volume status assessed",
+    "Auscultated specifically for a pericardial rub",
+    "Abdomen examined for transplant, PD catheter and ballotable kidneys",
+    "Chvostek and Trousseau tested if hypocalcaemia suspected"
+   ],
+   "related_slugs": [
+    "the_nephron_acute_kidney_injury_and_the_nephrotic_nephritic_split",
+    "adpkd_hivan_and_dialysis"
+   ],
+   "patient_integration": null,
+   "governance": {
+    "evidence_tier": "T5_textbook_or_standard_teaching",
+    "verification_status": "standard_teaching",
+    "sources": [],
+    "nigeria_overlay": null,
+    "build_date": "2026-08-07",
+    "review_interval_months": 12,
+    "next_review_due": "2027-08-07",
+    "clinical_reviewer": null,
+    "approved_for_release": false,
+    "local_confirmation_required": true,
+    "supersedes": null,
+    "content_hash": "dbafafab9f6ea638"
    }
   }
  ]

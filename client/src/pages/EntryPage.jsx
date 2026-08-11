@@ -77,6 +77,28 @@ export function EntryPage() {
 
       {hasCalc && <Calculator entry={entry} />}
 
+      {/* Short forms used in this entry, expanded. An abbreviation nobody
+          expands teaches nothing, so the build derives this from the text —
+          only listing terms the entry does not already spell out itself. */}
+      {entry.glossary?.length > 0 && (
+        <details className="entry-glossary">
+          <summary>
+            Short forms used here <span className="entry-glossary-count">{entry.glossary.length}</span>
+          </summary>
+          <dl className="entry-glossary-list">
+            {entry.glossary.map((g) => (
+              <div key={g.abbr} className="entry-glossary-row">
+                <dt>{g.abbr}</dt>
+                <dd>
+                  {g.full}
+                  {g.gloss && <span className="entry-glossary-gloss"> — {g.gloss}</span>}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </details>
+      )}
+
       <div className="entry-body">
         <BodyRenderer body={entry.body} linkMap={linkMap} />
       </div>

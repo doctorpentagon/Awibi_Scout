@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { config } from '../config/index.js';
 import { logger } from '../lib/logger.js';
+import { deriveGlossary } from './glossary.js';
 
 function readJson(file) {
   const full = path.join(config.dataDir, file);
@@ -56,7 +57,12 @@ class Repository {
       logger.warn('no content extension found — running on the base release only');
     }
 
-    const allEntries = [...entriesFile.entries, ...extension.entries];
+    // The v6 build attaches a glossary to its own entries. The v4 base release
+    // predates that, so derive one here for anything still missing it — every
+    // entry gets the same treatment regardless of which release it came from.
+    const allEntries = [...entriesFile.entries, ...extension.entries].map((e) =>
+      e.glossary ? e : { ...e, glossary: deriveGlossary(e) },
+    );
 
     this.meta = {
       contentRelease: entriesFile.release,

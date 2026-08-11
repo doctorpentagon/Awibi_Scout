@@ -279,3 +279,92 @@
 .index-link:hover {
   text-decoration: underline;
 }
+
+/* ---- short-form glossary ---------------------------------------------- */
+/* Collapsed by default: a reader who knows the abbreviations should not have
+   to scroll past them, and one who does not can open it in a tap. */
+.entry-glossary {
+  margin: 20px 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.entry-glossary > summary {
+  cursor: pointer;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  box-sizing: border-box;
+}
+
+.entry-glossary > summary::-webkit-details-marker { display: none; }
+
+.entry-glossary > summary::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 5px solid var(--muted);
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  transition: transform 120ms ease;
+  flex: none;
+}
+
+.entry-glossary[open] > summary::before { transform: rotate(90deg); }
+
+.entry-glossary > summary:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: -2px;
+}
+
+.entry-glossary-count {
+  margin-left: auto;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.entry-glossary-list {
+  margin: 0;
+  padding: 0 16px 12px;
+  border-top: 1px solid var(--line);
+  padding-top: 12px;
+}
+
+.entry-glossary-row {
+  display: grid;
+  grid-template-columns: minmax(64px, max-content) 1fr;
+  gap: 4px 16px;
+  padding: 6px 0;
+}
+
+.entry-glossary-row + .entry-glossary-row { border-top: 1px solid var(--line-soft, var(--line)); }
+
+.entry-glossary-row dt {
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+
+.entry-glossary-row dd {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.entry-glossary-gloss { color: var(--muted); }
+
+/* On a narrow screen the two-column grid squeezes the definition too hard. */
+@media (max-width: 480px) {
+  .entry-glossary-row { grid-template-columns: 1fr; gap: 2px; }
+}

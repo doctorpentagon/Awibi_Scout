@@ -17,6 +17,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
+import { ABBREVIATIONS, CASE_SENSITIVE } from '../content/_abbreviations.mjs';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const serverRoot = path.resolve(here, '..');
@@ -75,6 +76,37 @@ function buildTerms(entry) {
   return [...terms].sort();
 }
 
+/**
+ * Which abbreviations does this entry actually use, and does it already expand
+ * them? An audit found 165 places where a short form was used and never
+ * explained. Rather than patch prose by hand — which drifts again the moment
+ * anyone edits it — the build derives the glossary from the text every time.
+ *
+ * An abbreviation is only added if the entry does NOT already spell it out, so
+ * entries that do the right thing in prose gain nothing and stay uncluttered.
+ */
+function buildGlossary(entry, bodyText) {
+  const haystack = [entry.title, entry.short, entry.summary, bodyText,
+    (entry.warnings || []).join(' '), (entry.limitations || []).join(' '),
+    (entry.cards || []).map((c) => `${c.q} ${c.a}`).join(' ')].filter(Boolean).join(' ');
+  const normalised = haystack.toLowerCase().replace(/[^a-z0-9]+/g, ' ');
+
+  const out = [];
+  for (const [abbr, def] of Object.entries(ABBREVIATIONS)) {
+    const escaped = abbr.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const pattern = `\\b${escaped}\\b`;
+    const used = CASE_SENSITIVE.has(abbr)
+      ? new RegExp(pattern).test(haystack)
+      : new RegExp(pattern, 'i').test(haystack);
+    if (!used) continue;
+    // Already explained in the prose? Then the entry needs no help.
+    const fullNorm = def.full.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+    if (normalised.includes(fullNorm)) continue;
+    out.push({ abbr, full: def.full, ...(def.gloss ? { gloss: def.gloss } : {}) });
+  }
+  return out.sort((a, b) => a.abbr.localeCompare(b.abbr));
+}
+
 function expand(entry, index) {
   if (!entry.title) throw new Error(`Entry ${index} has no title`);
   if (!entry.summary) throw new Error(`${entry.title}: no summary`);
@@ -115,6 +147,7 @@ function expand(entry, index) {
       },
     },
     body: entry.body || {},
+    glossary: buildGlossary(entry, bodyText),
     inputs: entry.inputs || [],
     logic: entry.logic || {},
     outputs: entry.outputs || [],
@@ -152,7 +185,7 @@ function expand(entry, index) {
 async function main() {
   const files = fs
     .readdirSync(contentDir)
-    .filter((f) => f.endsWith('.mjs'))
+    .filter((f) => f.endsWith('.mjs') && !f.startsWith('_'))
     .sort();
 
   const all = [];
