@@ -4,6 +4,7 @@ import entries from './entries.routes.js';
 import search from './search.routes.js';
 import visuals from './visuals.routes.js';
 import governance from './governance.routes.js';
+import read from './read.routes.js';
 
 const router = Router();
 
@@ -12,5 +13,6 @@ router.use(entries);
 router.use(search);
 router.use(visuals);
 router.use(governance);
+router.use(read);
 
 export default router;

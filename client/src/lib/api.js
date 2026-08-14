@@ -85,6 +85,11 @@ export const api = {
   calculate: (idOrSlug, inputs, signal) =>
     request(`/entries/${encodeURIComponent(idOrSlug)}/calculate`, { method: 'POST', body: { inputs }, signal }),
 
+  // Sequential reading — the library as an ordered book.
+  readToc: (signal) => request('/read', { signal }),
+  readAt: (position, signal) => request(`/read/${encodeURIComponent(position)}`, { signal }),
+  readPositionOf: (idOrSlug, signal) => request(`/read/position-of/${encodeURIComponent(idOrSlug)}`, { signal }),
+
   cards: (deck, signal) => request(`/cards${qs({ deck })}`, { signal }),
   checklists: (signal) => request('/checklists', { signal }),
 

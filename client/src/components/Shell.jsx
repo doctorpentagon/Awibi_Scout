@@ -9,6 +9,7 @@ const NAV_GROUPS = [
     label: 'The library',
     items: [
       { to: '/library', label: 'Library', icon: '☰' },
+      { to: '/read', label: 'Read it all', icon: '▤' },
       { to: '/cards', label: 'Cards & checklists', icon: '✎' },
     ],
   },
@@ -21,6 +22,7 @@ const NAV_GROUPS = [
 const TITLES = {
   '/': 'Scout',
   '/library': 'Library',
+  '/read': 'Read the library',
   '/cards': 'Learn',
   '/sources': 'Sources & updates',
   '/about': 'About',

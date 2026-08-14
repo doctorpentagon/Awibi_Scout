@@ -11,6 +11,7 @@ import { EntryPage } from './pages/EntryPage.jsx';
 // Screens beyond the search path are split out of the first load. The device
 // budget is 180 KB gzipped and search is what a clinician opens at 2am.
 const LibraryPage = lazy(() => import('./pages/LibraryPage.jsx').then((m) => ({ default: m.LibraryPage })));
+const ReadPage = lazy(() => import('./pages/ReadPage.jsx'));
 const CardsPage = lazy(() => import('./pages/CardsPage.jsx').then((m) => ({ default: m.CardsPage })));
 const SourcesPage = lazy(() => import('./pages/SourcesPage.jsx').then((m) => ({ default: m.SourcesPage })));
 const VisualsPage = lazy(() => import('./pages/VisualsPage.jsx').then((m) => ({ default: m.VisualsPage })));
@@ -35,6 +36,8 @@ export function App() {
           <Route path="/" element={<ScoutPage query={query} onQuery={setQuery} emergency={emergency} meta={meta} />} />
           <Route path="/entry/:idOrSlug" element={<EntryPage />} />
           <Route path="/library" element={<LibraryPage />} />
+          <Route path="/read" element={<ReadPage />} />
+          <Route path="/read/:position" element={<ReadPage />} />
           <Route path="/cards" element={<CardsPage />} />
           <Route path="/sources" element={<SourcesPage />} />
           <Route path="/visuals" element={<VisualsPage />} />

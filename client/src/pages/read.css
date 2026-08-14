@@ -1,0 +1,71 @@
+/* ---- sequential reading ------------------------------------------------ */
+.read-page { max-width: 760px; margin: 0 auto; padding: 0 0 64px; }
+
+.read-head { margin-bottom: 32px; }
+.read-head h1 { font-size: 28px; margin: 0 0 12px; }
+.read-intro { font-size: 16px; line-height: 1.6; color: var(--muted); margin: 0 0 20px; max-width: 60ch; }
+
+.read-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+
+.read-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 44px; padding: 0 20px;
+  border: 1px solid var(--line); border-radius: var(--radius);
+  background: var(--surface); color: var(--text);
+  font-size: 14px; font-weight: 600; text-decoration: none; cursor: pointer;
+}
+.read-btn:hover:not(:disabled) { border-color: var(--muted); }
+.read-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.read-btn:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.read-btn-primary { background: var(--accent); border-color: var(--accent); color: var(--on-accent, #fff); }
+
+/* ---- contents ---- */
+.read-parts { list-style: none; margin: 0; padding: 0; }
+.read-part { margin-bottom: 32px; }
+.read-part-head { display: flex; align-items: baseline; gap: 12px; }
+.read-part-head h2 { font-size: 18px; margin: 0; }
+.read-part-count {
+  margin-left: auto; font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums;
+}
+.read-part-blurb { font-size: 14px; color: var(--muted); margin: 4px 0 12px; line-height: 1.5; max-width: 62ch; }
+
+.read-chapters { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.read-chapters li { border-bottom: 1px solid var(--line); }
+.read-chapters a {
+  display: flex; align-items: center; gap: 16px;
+  min-height: 48px; padding: 8px 4px;
+  text-decoration: none; color: var(--text); font-size: 14px;
+}
+.read-chapters a:hover { background: var(--surface); }
+.read-chapters a:focus-visible { outline: 2px solid var(--focus); outline-offset: -2px; }
+.read-ch-title { font-weight: 600; }
+.read-ch-meta { margin-left: auto; font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+/* ---- reader ---- */
+.read-bar {
+  display: flex; align-items: center; gap: 16px;
+  padding: 12px 0; border-bottom: 1px solid var(--line); margin-bottom: 0;
+}
+.read-bar-toc { font-size: 14px; font-weight: 600; color: var(--accent); text-decoration: none; flex: none; }
+.read-bar-where { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.read-bar-part { font-size: 12px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.read-bar-chapter { font-size: 13px; font-weight: 600; }
+.read-bar-pos { margin-left: auto; font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; flex: none; }
+
+.read-progress { height: 3px; background: var(--line); margin-bottom: 32px; }
+.read-progress-fill { height: 100%; background: var(--accent); transition: width 200ms ease; }
+
+.read-entry { margin-bottom: 32px; }
+.read-entry h1 { font-size: 24px; line-height: 1.3; margin: 0 0 16px; }
+.read-summary { font-size: 16px; line-height: 1.65; margin: 0 0 24px; max-width: 62ch; }
+
+.read-nav { display: flex; gap: 12px; }
+.read-nav .read-btn { flex: 1; }
+.read-hint { font-size: 13px; color: var(--muted); margin: 12px 0 0; text-align: center; }
+
+.read-error { color: var(--hz-critical-fg, var(--text)); font-size: 15px; }
+
+@media (max-width: 560px) {
+  .read-bar-part { display: none; }
+  .read-head h1 { font-size: 24px; }
+}
