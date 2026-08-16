@@ -19,8 +19,8 @@ there is a natural checkpoint every 10 cases rather than every 3.
 | **2** | 11–20 | Gastroenterology · Hepatology · Neurology · Haematology · Infectious disease | **COMPLETE** |
 | **3** | 21–30 | Rheumatology · Infectious disease · Oncology · Dermatology | **COMPLETE** |
 | **4** | 31–40 | General surgery · Trauma · Burns · Orthopaedics | **COMPLETE** |
-| **5** | 41–50 | Urology · Orthopaedics · Vascular | **next** |
-| 6 | 51–60 | Neurosurgery · Cardiothoracic · Paediatric surgery · Plastics | planned |
+| **5** | 41–50 | Urology · Orthopaedics · Vascular | **COMPLETE** |
+| **6** | 51–60 | Neurosurgery · Cardiothoracic · Paediatric surgery · Plastics | **next** |
 | 7 | 61–70 | Anaesthesia · ENT · Ophthalmology · Dental | planned |
 | 8 | 71–80 | Obstetrics · Gynaecology | planned |
 | 9 | 81–90 | Paediatrics · Neonatology | planned |
@@ -35,9 +35,9 @@ curl localhost:5188/api/cases | node -e "let d='';process.stdin.on('data',c=>d+=
 
 | | |
 |---|---|
-| Cases written | **40** |
+| Cases written | **50** |
 | Target | 200+ |
-| Specialty areas covered | 16 of ~45 |
+| Specialty areas covered | 18 of ~45 |
 
 ---
 
@@ -114,12 +114,14 @@ point is that no area is left without a worked patient.
       *Planned:* acute cholecystitis · incarcerated hernia · diverticulitis · lower GI bleed
 - [x] **Trauma** (3) — polytrauma primary survey · extradural haematoma and head injury · penetrating chest trauma
       *Planned:* abdominal trauma · pelvic fracture with haemorrhage · spinal trauma
-- [ ] **Urology** — renal colic · acute urinary retention · testicular torsion · Fournier gangrene · haematuria · prostate cancer
-- [x] **Orthopaedics** (1) — acute compartment syndrome
-      *Planned:* neck of femur fracture · open fracture · cauda equina · supracondylar fracture in a child
+- [x] **Urology** (3) — testicular torsion · infected obstructed kidney · acute urinary retention
+      *Planned:* Fournier gangrene · frank haematuria · prostate cancer presentation · priapism
+- [x] **Orthopaedics** (5) — acute compartment syndrome · neck of femur fracture · cauda equina syndrome · open tibial fracture · paediatric supracondylar fracture
+      *Planned:* septic arthritis of the hip in a child · periprosthetic infection · shoulder dislocation
 - [ ] **Neurosurgery** — extradural haematoma · chronic subdural · raised intracranial pressure · hydrocephalus with a blocked shunt
 - [ ] **Cardiothoracic** — aortic dissection · empyema · pneumothorax requiring drain · oesophageal perforation
-- [ ] **Vascular** — acute limb ischaemia · ruptured abdominal aortic aneurysm · diabetic foot · critical limb ischaemia
+- [x] **Vascular** (3) — acute limb ischaemia · ruptured abdominal aortic aneurysm · infected diabetic foot
+      *Planned:* critical limb ischaemia · carotid disease · varicose vein complications
 - [ ] **Paediatric surgery** — intussusception · pyloric stenosis · gastroschisis and omphalocele · undescended testis
 - [x] **Plastics and burns** (1) — major burn with inhalation injury and fluid calculation
       *Planned:* hand injury · degloving · pressure ulcer · flap failure
