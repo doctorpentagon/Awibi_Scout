@@ -294,6 +294,12 @@ is a human step and the code cannot perform it.
 ## 6. Adding a new area
 
 ```bash
+# 0. CHECK WHICH IDS ARE FREE FIRST — three modules in a row were written
+#    with ids already in use, and the build correctly refused to emit each
+#    time, but only after the content was written.
+node scripts/next-id.mjs                # every prefix and its next free id
+node scripts/next-id.mjs AS-ORTH 4      # the next four free AS-ORTH ids
+
 # 1. author  server/content/NN-topic.mjs   (compact shape: id, title, summary, body, warnings, cards, checks)
 # 2. build   npm run build:content --workspace server
 # 3. restart the server — the repository merges v4 + v6 at boot
