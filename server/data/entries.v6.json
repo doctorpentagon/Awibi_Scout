@@ -2,7 +2,7 @@
  "release": "AWIBI-SCOUT-CONTENT-2026.08.R3",
  "schema_version": "4.0.0",
  "build_date": "2026-08-07",
- "entry_count": 198,
+ "entry_count": 205,
  "extends": "AWIBI-SCOUT-CONTENT-2026.08.R2",
  "note": "Content extension. Adds areas; supersedes nothing. Every entry is unreviewed and unapproved.",
  "entries": [
@@ -42175,6 +42175,2226 @@
     "local_confirmation_required": true,
     "supersedes": null,
     "content_hash": "9dbca301b0d85f2c"
+   }
+  },
+  {
+   "id": "AS-CASE-0014",
+   "schema_version": "4.0.0",
+   "content_release": "AWIBI-SCOUT-CONTENT-2026.08.R3",
+   "type": "case",
+   "title": "CASE: A Seizure That Has Not Stopped for 12 Minutes",
+   "short_title": "Case: status epilepticus",
+   "slug": "case_a_seizure_that_has_not_stopped_for_12_minutes",
+   "also_known_as": [
+    "case status epilepticus",
+    "seizure case",
+    "convulsive status",
+    "lorazepam case",
+    "levetiracetam",
+    "phenytoin loading",
+    "non-convulsive status",
+    "rsi seizure"
+   ],
+   "summary": "A 28-year-old known epileptic who ran out of tablets, now in a continuous generalised seizure. Teaches the timed ladder — benzodiazepine, then a second-line agent, then anaesthesia — why the clock rather than appearance drives escalation, and why the paralysed patient may still be fitting.",
+   "domains": [
+    "neurology",
+    "emergency_medicine",
+    "critical_care"
+   ],
+   "intents": [
+    "identify",
+    "act"
+   ],
+   "populations": [
+    "all_ages"
+   ],
+   "contexts": [
+    "routine"
+   ],
+   "hazard": "critical",
+   "urgency": "immediate",
+   "jurisdiction": "international",
+   "search": {
+    "terms": [
+     "case",
+     "case status epilepticus",
+     "case: a seizure that has not stopped for 12 minutes",
+     "case: status epilepticus",
+     "convulsive",
+     "convulsive status",
+     "diazepam",
+     "eclampsia",
+     "eeg",
+     "levetiracetam",
+     "lorazepam",
+     "lorazepam case",
+     "midazolam",
+     "minutes",
+     "non-convulsive status",
+     "phenytoin",
+     "phenytoin loading",
+     "purple glove syndrome",
+     "pyridoxine",
+     "refractory status",
+     "rhabdomyolysis",
+     "rsi seizure",
+     "seizure",
+     "seizure case",
+     "sodium valproate",
+     "status epilepticus",
+     "stopped",
+     "todd paresis"
+    ],
+    "ambiguous_terms": [],
+    "phrases": [],
+    "field_weights": {
+     "title": 8,
+     "short_title": 6,
+     "also_known_as": 5,
+     "terms": 4,
+     "summary": 2,
+     "body": 1,
+     "flashcards": 0.5
+    }
+   },
+   "body": {
+    "the_one_line": "28-year-old man with known epilepsy, brought in by ambulance mid-seizure. Paramedics say it started about 12 minutes ago and has not stopped. His girlfriend says he ran out of his tablets four days ago.",
+    "section_1_clerking": {
+     "the_definition_that_drives_everything": {
+      "old_teaching": "Status epilepticus used to be defined as 30 minutes of continuous seizure activity.",
+      "current_operational_definition": "FIVE MINUTES of continuous generalised convulsive seizure activity, OR two or more seizures without full recovery of consciousness between them. THE DEFINITION WAS SHORTENED DELIBERATELY, because most self-limiting seizures stop within 2 to 3 minutes, and because neuronal injury and treatment resistance begin far earlier than 30 minutes. A seizure still going at 5 minutes is unlikely to stop on its own and needs treatment NOW."
+     },
+     "history_from_the_paramedics_and_girlfriend": "Generalised tonic-clonic activity, continuous, 12 minutes. No head injury. No fever. He has epilepsy diagnosed at 19, usually well controlled on levetiracetam, but RAN OUT OF TABLETS FOUR DAYS AGO and did not get a repeat prescription. No alcohol. No recreational drugs known.",
+     "reading_the_clues": {
+      "twelve_minutes": "Already well past the 5-minute threshold. He is in established status epilepticus and the clock is the most important number in the room. RECORD THE TIME OF ONSET.",
+      "ran_out_of_medication": "ANTIEPILEPTIC WITHDRAWAL IS THE COMMONEST PRECIPITANT of status in a known epileptic. It is also entirely preventable, and the reason must be found — cost, access, side effects, forgetfulness, or simply not understanding that stopping abruptly is dangerous.",
+      "no_fever_no_head_injury": "Narrows the differential, but does not exclude infection or a structural cause. Both are still checked."
+     },
+     "the_precipitants_to_run_through": "Antiepileptic withdrawal or non-adherence (commonest in known epilepsy) · ALCOHOL withdrawal · HYPOGLYCAEMIA · electrolyte disturbance, especially sodium, calcium and magnesium · CNS INFECTION — meningitis or encephalitis · stroke or intracranial haemorrhage · head injury · brain tumour · drug toxicity, including tricyclics, tramadol and cocaine · ECLAMPSIA in any woman who is pregnant or up to 6 weeks postpartum · and hypoxia.",
+     "examination_while_treating": "You examine and treat simultaneously. Airway patency, oxygen saturation, GLUCOSE, temperature, pupils, signs of head injury, neck stiffness (though difficult during convulsion), rash, needle marks, and a MEDIC-ALERT BRACELET. Check for tongue biting and incontinence to support that this is a genuine seizure.",
+     "vitals": "BP 156/94 mmHg. Pulse 132. Respiratory rate irregular. Temperature 37.4. Saturation 89% on air. CAPILLARY GLUCOSE 5.2 mmol/L. Pupils 5 mm and reactive."
+    },
+    "section_2_mechanism": {
+     "what_a_seizure_is": "Abnormal, excessive, synchronised electrical discharge in a population of cortical neurons. It reflects a failure of the normal balance between EXCITATION, mediated largely by glutamate, and INHIBITION, mediated largely by GABA (gamma-aminobutyric acid).",
+     "why_prolonged_seizures_become_harder_to_stop_the_key_concept": {
+      "receptor_trafficking": "Within MINUTES of continuous seizure activity, GABA-A receptors — the target of benzodiazepines — are INTERNALISED, pulled from the neuronal surface membrane into the cell. At the same time, excitatory glutamate receptors are moved TO the surface. The brain becomes progressively LESS responsive to benzodiazepines and MORE excitable.",
+      "the_practical_consequence": "THIS IS WHY EARLY TREATMENT WORKS AND LATE TREATMENT FAILS. A benzodiazepine given at 5 minutes has a high chance of terminating the seizure; the same drug at 45 minutes often will not. It is also why you must not simply keep repeating benzodiazepines — after two adequate doses, escalate to a different mechanism rather than giving a third."
+     },
+     "the_systemic_damage": [
+      "1. Continuous muscle activity consumes enormous oxygen and glucose while the airway is compromised — HYPOXIA and later HYPOGLYCAEMIA.",
+      "2. Anaerobic metabolism produces LACTIC ACIDOSIS.",
+      "3. Massive muscle activity causes RHABDOMYOLYSIS — muscle breakdown releasing myoglobin, which causes acute kidney injury, and potassium, which causes arrhythmia.",
+      "4. HYPERTHERMIA from muscle activity worsens neuronal injury.",
+      "5. Catecholamine surge causes tachycardia, hypertension, arrhythmia and sometimes neurogenic pulmonary oedema.",
+      "6. After roughly 30 minutes, the brain begins to sustain EXCITOTOXIC NEURONAL INJURY independent of the systemic effects — calcium influx driven by sustained glutamate activity kills neurons, particularly in the hippocampus."
+     ]
+    },
+    "section_3_differentials": {
+     "one_convulsive_status_epilepticus": "WORKING DIAGNOSIS. Supporting: known epilepsy, medication withdrawal, continuous generalised convulsive activity beyond 5 minutes.",
+     "two_psychogenic_non_epileptic_seizure": {
+      "note": "A genuine condition, not fabrication, and it can coexist with epilepsy.",
+      "features_that_suggest_it": "Eyes CLOSED and resisting passive opening (eyes are usually OPEN in a genuine tonic-clonic seizure) · asynchronous, thrashing, side-to-side movements rather than rhythmic clonic jerks · pelvic thrusting · prolonged duration with preserved oxygenation and no cyanosis · rapid recovery without a post-ictal phase · absence of a rise in lactate.",
+      "the_safe_approach": "IF IN DOUBT, TREAT AS EPILEPTIC. The harm of under-treating true status vastly exceeds the harm of a benzodiazepine dose. But avoid escalating to intubation on uncertain grounds — get senior help and, if available, an EEG."
+     },
+     "three_eclampsia": "ALWAYS ASK IF SHE COULD BE PREGNANT OR RECENTLY DELIVERED — up to 6 weeks postpartum. Eclampsia is treated with MAGNESIUM SULPHATE, not the standard epilepsy ladder, and missing it is a major cause of maternal death.",
+     "four_hypoglycaemia": "Check the glucose in every seizure. It is instantly reversible and it is the first thing you do.",
+     "five_meningitis_or_encephalitis": "Fever, headache, neck stiffness, rash. If suspected, give antibiotics and aciclovir EARLY — do not wait for imaging or lumbar puncture.",
+     "six_intracranial_haemorrhage_or_stroke": "Focal onset, head injury, anticoagulation. CT once the seizure is controlled."
+    },
+    "section_4_investigations": {
+     "note": "INVESTIGATION HAPPENS ALONGSIDE TREATMENT, NEVER BEFORE IT. The only test that precedes drug administration is the capillary glucose.",
+     "immediate_bedside": {
+      "glucose": "CAPILLARY GLUCOSE FIRST, ALWAYS. Hypoglycaemia causes seizures and is reversible in one minute. If under 4 mmol/L, give 100 mL of 20% glucose intravenously. If there is any suspicion of alcohol dependence or malnutrition, give THIAMINE (Pabrinex) BEFORE or WITH the glucose, because a glucose load in a thiamine-deficient patient can precipitate WERNICKE ENCEPHALOPATHY.",
+      "temperature_and_saturation": "Hyperthermia worsens injury; hypoxia is both cause and consequence."
+     },
+     "bloods": "Full blood count · UREA AND ELECTROLYTES including SODIUM, CALCIUM and MAGNESIUM, all of which cause seizures when deranged · liver function · CREATINE KINASE, looking for rhabdomyolysis, which can reach tens of thousands of units per litre · venous or arterial gas for pH and LACTATE · ANTIEPILEPTIC DRUG LEVELS where available, which directly confirms non-adherence · toxicology screen · blood cultures if febrile · and a PREGNANCY TEST in any woman of reproductive age.",
+     "the_lactate_point": "A markedly raised lactate immediately after a generalised seizure is EXPECTED, from anaerobic muscle metabolism, and clears within about an hour. It supports that the event was a genuine tonic-clonic seizure. A normal lactate after a prolonged apparent convulsion should raise the question of a non-epileptic event.",
+     "imaging": "CT HEAD once the seizure is controlled and the patient is stable — looking for haemorrhage, stroke, mass or trauma. Urgent if there is a focal deficit, head injury, anticoagulation, immunosuppression, or a first seizure.",
+     "lumbar_puncture": "If infection is suspected — AFTER imaging where there are focal signs or reduced consciousness. Do not delay antibiotics for it.",
+     "eeg": {
+      "why_it_matters_more_than_people_realise": "ELECTROENCEPHALOGRAPHY is essential if the patient does not wake up after the convulsions stop, because of NON-CONVULSIVE STATUS EPILEPTICUS — continuing electrical seizure activity WITHOUT visible convulsion. A patient who has been paralysed for intubation CANNOT CONVULSE, so the only way to know whether they are still fitting is the EEG. Attributing prolonged unconsciousness to \"post-ictal drowsiness\" without an EEG is a recognised and serious error."
+     }
+    },
+    "section_5_management": {
+     "the_structure": "A TIMED LADDER. Escalate by the CLOCK, not by how the patient looks. Write the times down — in a resuscitation the sense of elapsed time is unreliable, and someone must be nominated to keep the clock.",
+     "step_0_immediate": {
+      "airway": "Head tilt and chin lift or jaw thrust. NASOPHARYNGEAL airway if tolerated — an oropharyngeal airway is usually impossible during a convulsion and DO NOT FORCE ANYTHING BETWEEN THE TEETH. Suction. Recovery position between seizures.",
+      "breathing": "HIGH-FLOW OXYGEN, 15 L/min via non-rebreather mask.",
+      "circulation": "Intravenous access, bloods, cardiac monitoring.",
+      "disability": "GLUCOSE. Pupils.",
+      "protect_from_injury": "Remove hazards, pad where possible. Do not restrain the limbs."
+     },
+     "step_1_benzodiazepine_0_to_5_minutes": {
+      "first_choice_with_iv_access": "LORAZEPAM 4 mg by SLOW INTRAVENOUS INJECTION over 2 minutes. Preferred because it has a longer duration of anticonvulsant action in the brain than diazepam, so seizures recur less.",
+      "without_iv_access": "MIDAZOLAM 10 mg BUCCALLY (into the cheek) or INTRAMUSCULARLY, or DIAZEPAM 10 to 20 mg RECTALLY. Buccal midazolam is at least as effective as intravenous lorazepam in the pre-hospital setting and needs no cannula.",
+      "the_second_dose": "If the seizure continues after 10 minutes, give a SECOND dose of LORAZEPAM 4 mg.",
+      "the_rule_that_prevents_harm": "DO NOT GIVE MORE THAN TWO DOSES OF BENZODIAZEPINE. A third dose adds little anticonvulsant benefit — because of the receptor internalisation described above — while substantially increasing respiratory depression and hypotension. AFTER TWO DOSES, MOVE TO A DIFFERENT MECHANISM. Repeated benzodiazepine dosing without escalation is one of the commonest management failures in status.",
+      "monitor": "Respiratory rate, oxygen saturation and blood pressure continuously. Have airway support immediately available."
+     },
+     "step_2_second_line_agent_at_about_10_to_20_minutes": {
+      "note": "Any one of the following. Choice depends on local protocol, the patient existing medication and comorbidity. Give it as an INFUSION while continuing to monitor.",
+      "levetiracetam": "LEVETIRACETAM 60 mg/kg intravenously, to a MAXIMUM of 4,500 mg, infused over 10 minutes. FOR A 70 kg MAN: 60 x 70 = 4,200 mg. Widely used first because it has few interactions, needs no cardiac monitoring and is well tolerated. Reduce the dose in renal impairment.",
+      "sodium_valproate": "SODIUM VALPROATE 40 mg/kg intravenously, maximum 3,000 mg, over 10 minutes. FOR 70 kg: 2,800 mg. ABSOLUTELY CONTRAINDICATED IN PREGNANCY AND IN WOMEN OF CHILDBEARING POTENTIAL unless a strict pregnancy prevention programme is in place, because of major congenital malformations and neurodevelopmental harm. Avoid in known liver disease and in mitochondrial disease.",
+      "phenytoin": {
+       "dose": "PHENYTOIN 20 mg/kg intravenously, maximum 2,000 mg, at a rate NOT EXCEEDING 50 mg per minute. FOR 70 kg: 1,400 mg, taking at least 28 minutes.",
+       "why_the_rate_limit_matters": "Faster infusion causes HYPOTENSION and CARDIAC ARRHYTHMIA, because the drug and its propylene glycol diluent are cardiodepressant. CARDIAC MONITORING IS MANDATORY throughout.",
+       "purple_glove_syndrome": "Phenytoin is highly irritant and strongly alkaline. Extravasation causes PURPLE GLOVE SYNDROME — progressive limb discolouration, oedema and pain that can progress to necrosis and compartment syndrome. Use a large vein, a well-secured cannula, and check the site repeatedly. FOSPHENYTOIN is a prodrug that is far less irritant and can be given faster, and is preferred where available."
+      }
+     },
+     "step_3_refractory_status_at_about_30_to_45_minutes": {
+      "definition": "Seizure continuing despite an adequate benzodiazepine and an adequate second-line agent.",
+      "the_action": "GENERAL ANAESTHESIA with intubation and ventilation, in intensive care. Agents include PROPOFOL, MIDAZOLAM infusion or THIOPENTONE. CALL ANAESTHETICS AND INTENSIVE CARE EARLY — ideally at the time you give the second-line agent, not after it has failed, because it takes time for them to arrive and prepare.",
+      "continuous_eeg": "Once paralysed, the patient cannot convulse, so CONTINUOUS EEG MONITORING is required to know whether the seizure has actually stopped. The target is usually seizure suppression or a burst-suppression pattern."
+     },
+     "step_4_specific_situations": {
+      "eclampsia": "MAGNESIUM SULPHATE, not the standard ladder. A typical regimen is 4 g intravenously over 5 to 15 minutes, followed by an infusion of 1 g per hour. Monitor deep tendon reflexes, respiratory rate and urine output for magnesium toxicity, and have CALCIUM GLUCONATE available as the antidote.",
+      "alcohol_withdrawal_seizures": "Benzodiazepines are the treatment. Give THIAMINE. Phenytoin is ineffective for alcohol withdrawal seizures specifically.",
+      "isoniazid_overdose": "Causes seizures refractory to standard treatment. The antidote is PYRIDOXINE (vitamin B6), given gram for gram with the ingested isoniazid.",
+      "hyponatraemia": "Seizures from severe hyponatraemia need HYPERTONIC SALINE, not more antiepileptics."
+     },
+     "after_the_seizure_stops": {
+      "monitor": "Airway, breathing, circulation. Continuous observations. Recovery position. Expect a post-ictal phase of confusion and drowsiness lasting minutes to hours.",
+      "if_they_do_not_wake_up": "THINK NON-CONVULSIVE STATUS EPILEPTICUS AND GET AN EEG. Do not assume post-ictal drowsiness beyond about 30 to 60 minutes.",
+      "rhabdomyolysis": "Check creatine kinase, potassium and renal function. Give generous intravenous fluid if the creatine kinase is markedly raised, to protect the kidneys from myoglobin.",
+      "todd_paresis": "A transient focal weakness after a seizure, lasting minutes to hours, which MIMICS STROKE exactly. If in doubt, image."
+     },
+     "before_discharge": {
+      "the_actual_problem": "HE RAN OUT OF TABLETS. Establish why — cost, repeat prescription failure, side effects, forgetfulness, or not knowing that abrupt withdrawal is dangerous. Fixing THAT prevents the next admission; representing the same drug does not.",
+      "practical": "Restart or adjust his antiepileptic with neurology input. Arrange a reliable repeat prescription. Consider a dosette box or reminder. Give written advice about never stopping abruptly.",
+      "safety_advice": "DRIVING — he must stop and inform the licensing authority; the period off driving is determined by national rules. Avoid swimming alone, showers rather than baths, care with heights, machinery and cooking. Advise family on what to do in a seizure and when to call an ambulance."
+     }
+    },
+    "section_6_teaching_points": {
+     "bonus_1_why_the_definition_was_shortened_to_five_minutes": "Most self-limiting seizures stop within 2 to 3 minutes. Beyond 5 minutes, spontaneous termination becomes unlikely and neuronal injury and drug resistance begin. The old 30-minute definition delayed treatment until the seizure was already hard to stop.",
+     "bonus_2_receptor_internalisation_explains_the_whole_ladder": "Continuous seizure activity pulls GABA-A receptors off the neuronal surface within minutes, so benzodiazepines become progressively less effective, while excitatory receptors are moved TO the surface. This is why early treatment works, why a third benzodiazepine dose is futile, and why escalation must be to a DIFFERENT mechanism.",
+     "bonus_3_the_paralysed_patient_cannot_convulse": "Once intubated and paralysed, visible seizure activity stops whether or not the brain has. NON-CONVULSIVE STATUS is invisible without an EEG. A patient who does not wake up needs an EEG, not reassurance about the post-ictal phase.",
+     "bonus_4_the_lactate_tells_you_it_was_real": "A markedly raised lactate immediately after a generalised convulsion is expected from anaerobic muscle metabolism and clears within about an hour. It supports a genuine tonic-clonic seizure, and a normal lactate after a prolonged apparent convulsion should prompt consideration of a non-epileptic event.",
+     "trap_1": "CHECK THE GLUCOSE FIRST. And give thiamine before or with glucose in anyone who may be alcohol-dependent or malnourished, or you may precipitate Wernicke encephalopathy.",
+     "trap_2": "Do not give more than two benzodiazepine doses. Escalate to a different mechanism instead.",
+     "trap_3": "Never force anything between the teeth. It breaks teeth, injures the airway and injures you.",
+     "trap_4": "Phenytoin must not exceed 50 mg per minute and requires cardiac monitoring. Watch the cannula site for purple glove syndrome.",
+     "trap_5": "Sodium valproate is contraindicated in women of childbearing potential without a pregnancy prevention programme.",
+     "trap_6": "ALWAYS consider eclampsia in a woman who is pregnant or up to 6 weeks postpartum — the treatment is magnesium, not the standard ladder.",
+     "trap_7": "Call anaesthetics and intensive care when you give the second-line drug, not after it fails.",
+     "one_line_summary": "Established status epilepticus from antiepileptic withdrawal. Glucose, oxygen, two doses of lorazepam and no more, then levetiracetam by weight, anaesthesia by 30 to 45 minutes — and an EEG if he does not wake up."
+    }
+   },
+   "glossary": [
+    {
+     "abbr": "CT",
+     "full": "computed tomography"
+    }
+   ],
+   "specialty": "Medicine — Neurology",
+   "teaching_case": true,
+   "inputs": [],
+   "logic": {},
+   "outputs": [],
+   "warnings": [
+    "Status epilepticus is 5 MINUTES of continuous seizure, not 30. Treat at 5 minutes.",
+    "CHECK THE GLUCOSE FIRST, and give thiamine before or with glucose in possible alcohol dependence or malnutrition.",
+    "DO NOT give more than TWO benzodiazepine doses — a third adds little benefit and substantial respiratory depression. Escalate to a different mechanism.",
+    "Never force anything between the teeth during a seizure.",
+    "Phenytoin must not exceed 50 mg per minute and requires cardiac monitoring — faster causes hypotension and arrhythmia.",
+    "Watch the phenytoin cannula site — extravasation causes purple glove syndrome with necrosis and compartment syndrome.",
+    "Sodium valproate is contraindicated in women of childbearing potential without a strict pregnancy prevention programme.",
+    "ALWAYS consider ECLAMPSIA in a woman pregnant or up to 6 weeks postpartum — treat with magnesium sulphate, not the standard ladder.",
+    "A PARALYSED patient cannot convulse. If they do not wake up, get an EEG — non-convulsive status is invisible without it.",
+    "Call anaesthetics and intensive care when you give the second-line agent, not after it has failed.",
+    "Check creatine kinase and potassium — rhabdomyolysis causes acute kidney injury and arrhythmia.",
+    "Todd paresis after a seizure mimics stroke exactly.",
+    "Doses here are teaching examples for an adult. Follow your local status epilepticus protocol."
+   ],
+   "limitations": [
+    "A WORKED TEACHING CASE, not a protocol. Second-line agent choice, doses and escalation timings differ between national and local guidelines.",
+    "Paediatric doses are weight-based and differ substantially — not covered here."
+   ],
+   "flashcards": [
+    {
+     "q": "Define status epilepticus.",
+     "a": "Five minutes of continuous generalised convulsive seizure, or repeated seizures without recovery between them."
+    },
+    {
+     "q": "Why was the definition shortened from 30 to 5 minutes?",
+     "a": "Most seizures stop within 2 to 3 minutes; beyond 5 spontaneous termination is unlikely and injury and drug resistance begin."
+    },
+    {
+     "q": "Why do benzodiazepines fail in prolonged seizures?",
+     "a": "GABA-A receptors are internalised within minutes while excitatory receptors move to the surface."
+    },
+    {
+     "q": "How many benzodiazepine doses, and why no more?",
+     "a": "Two. A third adds little anticonvulsant benefit but substantial respiratory depression."
+    },
+    {
+     "q": "Give the levetiracetam loading dose for a 70 kg adult.",
+     "a": "60 mg/kg = 4,200 mg intravenously over 10 minutes, maximum 4,500 mg."
+    },
+    {
+     "q": "What is the maximum phenytoin infusion rate, and why?",
+     "a": "50 mg per minute — faster causes hypotension and arrhythmia. Cardiac monitoring is mandatory."
+    },
+    {
+     "q": "What is purple glove syndrome?",
+     "a": "Limb discolouration, oedema and pain from phenytoin extravasation, which can progress to necrosis."
+    },
+    {
+     "q": "Which seizure needs magnesium rather than the standard ladder?",
+     "a": "Eclampsia — in pregnancy or up to 6 weeks postpartum."
+    },
+    {
+     "q": "Why must a paralysed patient have an EEG?",
+     "a": "Paralysis abolishes visible convulsion but not electrical seizure activity — non-convulsive status is otherwise invisible."
+    },
+    {
+     "q": "What does a raised lactate after a convulsion indicate?",
+     "a": "Anaerobic muscle metabolism — it supports a genuine tonic-clonic seizure and clears within about an hour."
+    },
+    {
+     "q": "What is the antidote for isoniazid-induced seizures?",
+     "a": "Pyridoxine, gram for gram with the ingested isoniazid."
+    }
+   ],
+   "checkboxes": [
+    "Time of seizure onset recorded and a clock-keeper nominated",
+    "Glucose checked immediately",
+    "Thiamine given if alcohol dependence or malnutrition possible",
+    "High-flow oxygen and airway support",
+    "No more than two benzodiazepine doses given",
+    "Second-line agent calculated by weight",
+    "Cardiac monitoring if phenytoin used, with cannula site checked",
+    "Pregnancy considered and eclampsia excluded",
+    "Anaesthetics and intensive care alerted early",
+    "EEG arranged if the patient does not wake",
+    "Creatine kinase, potassium and renal function checked",
+    "Reason for medication lapse established before discharge",
+    "Driving and safety advice given and documented"
+   ],
+   "related_slugs": [
+    "seizure_cough_chest_pain_and_generalised_weakness_structured_histories"
+   ],
+   "patient_integration": null,
+   "governance": {
+    "evidence_tier": "T5_textbook_or_standard_teaching",
+    "verification_status": "standard_teaching",
+    "sources": [],
+    "nigeria_overlay": null,
+    "build_date": "2026-08-07",
+    "review_interval_months": 12,
+    "next_review_due": "2027-08-07",
+    "clinical_reviewer": null,
+    "approved_for_release": false,
+    "local_confirmation_required": true,
+    "supersedes": null,
+    "content_hash": "43352cdbc6f738d3"
+   }
+  },
+  {
+   "id": "AS-CASE-0015",
+   "schema_version": "4.0.0",
+   "content_release": "AWIBI-SCOUT-CONTENT-2026.08.R3",
+   "type": "case",
+   "title": "CASE: Fever, Headache and a Rash That Does Not Blanch",
+   "short_title": "Case: bacterial meningitis",
+   "slug": "case_fever_headache_and_a_rash_that_does_not_blanch",
+   "also_known_as": [
+    "case meningitis",
+    "bacterial meningitis case",
+    "meningococcal sepsis case",
+    "non-blanching rash",
+    "purpura fulminans",
+    "ceftriaxone meningitis",
+    "dexamethasone meningitis",
+    "lumbar puncture case",
+    "glass test"
+   ],
+   "summary": "A 19-year-old student with 8 hours of fever, headache and a non-blanching rash. The whole case turns on one rule: GIVE THE ANTIBIOTIC FIRST. Not after the CT, not after the lumbar puncture — first.",
+   "domains": [
+    "infectious_disease",
+    "neurology",
+    "emergency_medicine"
+   ],
+   "intents": [
+    "identify",
+    "act"
+   ],
+   "populations": [
+    "all_ages"
+   ],
+   "contexts": [
+    "routine"
+   ],
+   "hazard": "critical",
+   "urgency": "immediate",
+   "jurisdiction": "international",
+   "search": {
+    "terms": [
+     "aciclovir",
+     "amoxicillin listeria",
+     "bacterial meningitis case",
+     "blanch",
+     "brudzinski",
+     "case",
+     "case meningitis",
+     "case: bacterial meningitis",
+     "case: fever, headache and a rash that does not blanch",
+     "ceftriaxone",
+     "ceftriaxone meningitis",
+     "chemoprophylaxis",
+     "csf",
+     "dexamethasone",
+     "dexamethasone meningitis",
+     "does",
+     "fever",
+     "glass test",
+     "headache",
+     "kernig",
+     "lumbar puncture",
+     "lumbar puncture case",
+     "meningitis",
+     "meningococcal",
+     "meningococcal sepsis case",
+     "neisseria meningitidis",
+     "non-blanching",
+     "non-blanching rash",
+     "opening pressure",
+     "petechiae",
+     "purpura",
+     "purpura fulminans",
+     "rash",
+     "streptococcus pneumoniae",
+     "waterhouse friderichsen"
+    ],
+    "ambiguous_terms": [],
+    "phrases": [],
+    "field_weights": {
+     "title": 8,
+     "short_title": 6,
+     "also_known_as": 5,
+     "terms": 4,
+     "summary": 2,
+     "body": 1,
+     "flashcards": 0.5
+    }
+   },
+   "body": {
+    "the_one_line": "19-year-old university student in hall of residence, brought by friends with 8 hours of fever, severe headache, vomiting, photophobia and a rash on his legs that appeared an hour ago.",
+    "section_1_clerking": {
+     "history": "Well yesterday. Woke with headache and fever, which worsened rapidly through the day. He has vomited four times, cannot tolerate the light, and his neck hurts to move. An hour ago his friends noticed dark red spots on his shins that they thought were bruises. He has become increasingly drowsy in the last 30 minutes.",
+     "reading_the_clues": {
+      "eight_hours": "RAPID. Bacterial meningitis and meningococcal sepsis progress over HOURS, not days. A viral illness building over days behaves differently. Speed is a severity marker in itself.",
+      "the_rash": "THE MOST IMPORTANT FINDING IN THE CASE. Dark red or purple spots that DO NOT BLANCH when pressed. Test it with the GLASS TEST — press the side of a clear glass firmly over the rash. Erythema from dilated vessels BLANCHES (whitens); blood that has LEAKED OUT of vessels does NOT. A non-blanching rash in a febrile unwell patient is MENINGOCOCCAL SEPSIS UNTIL PROVEN OTHERWISE.",
+      "rapidly_worsening_drowsiness": "A falling conscious level in this context indicates either raised intracranial pressure or septic shock, and it changes the imaging decision.",
+      "university_hall_of_residence": "Crowded living raises meningococcal transmission. It also means CONTACT TRACING and CHEMOPROPHYLAXIS will be needed for his household and close contacts."
+     },
+     "the_classic_triad_and_its_limitation": "FEVER, NECK STIFFNESS and ALTERED MENTAL STATE. All three are present in fewer than half of adults with bacterial meningitis, so the ABSENCE of the full triad excludes nothing. Nearly all patients have at least TWO of fever, headache, neck stiffness and altered consciousness — which is a more useful rule.",
+     "past_medical_history": "Nil. Vaccinations up to date as far as he knows — ASK SPECIFICALLY about meningococcal vaccination, as it covers some serogroups and not others, and does not exclude the diagnosis.",
+     "vitals": "BP 88/48 mmHg. Pulse 128. Respiratory rate 28. Temperature 39.4. Saturation 94% on air. GCS 13/15. CAPILLARY REFILL 4 seconds. Glucose 6.1.",
+     "the_vitals_interpretation": "HE IS IN SEPTIC SHOCK — hypotensive, tachycardic, poorly perfused. This is not simply meningitis; this is MENINGOCOCCAL SEPSIS, which has a higher mortality than meningitis alone and is what the rash signifies.",
+     "examination": "Drowsy but rousable. NECK STIFFNESS on passive flexion. KERNIG and BRUDZINSKI signs positive — but note BOTH ARE INSENSITIVE and their absence excludes nothing. NON-BLANCHING PETECHIAL AND PURPURIC RASH over both shins and now the trunk, SPREADING WHILE OBSERVED. Cold peripheries with mottling. No focal neurological deficit. Fundoscopy shows no papilloedema.",
+     "the_rash_terminology": "PETECHIAE are non-blanching spots under about 3 mm. PURPURA are 3 mm to 1 cm. ECCHYMOSES are larger. PURPURA FULMINANS is widespread, rapidly progressive purpura with skin necrosis, indicating disseminated intravascular coagulation and carrying a very high mortality."
+    },
+    "section_2_mechanism": {
+     "how_meningitis_happens": [
+      "1. Neisseria meningitidis colonises the nasopharynx — carried harmlessly by a proportion of healthy people.",
+      "2. In a susceptible host it INVADES the bloodstream.",
+      "3. From the blood it crosses the blood-brain barrier into the subarachnoid space, where host defences are limited.",
+      "4. Bacterial multiplication triggers a massive INFLAMMATORY response — cytokines, neutrophil influx, and breakdown of the blood-brain barrier.",
+      "5. That inflammation causes CEREBRAL OEDEMA, raised intracranial pressure, impaired cerebral blood flow and, in some, hydrocephalus and cranial nerve damage — including the SENSORINEURAL HEARING LOSS that is the commonest long-term sequela."
+     ],
+     "why_the_rash_and_the_shock": {
+      "endotoxin": "The meningococcal cell wall contains LIPOOLIGOSACCHARIDE, a potent endotoxin released in large quantities during rapid bacterial multiplication and lysis.",
+      "the_consequences": "Endotoxin triggers overwhelming cytokine release, causing profound VASODILATATION and CAPILLARY LEAK — hence the hypotension and poor perfusion. It also activates coagulation diffusely, consuming clotting factors and platelets, causing DISSEMINATED INTRAVASCULAR COAGULATION. Microvascular thrombosis plus vessel damage causes bleeding into the skin — THE NON-BLANCHING RASH IS THEREFORE A DIRECT MARKER OF SEPSIS SEVERITY, not merely a skin finding.",
+      "waterhouse_friderichsen_syndrome": "Bilateral ADRENAL HAEMORRHAGE causing acute adrenal insufficiency on top of septic shock. Suspect it in refractory hypotension, and treat with hydrocortisone."
+     },
+     "the_organisms_by_age_and_context": {
+      "adults_and_older_children": "STREPTOCOCCUS PNEUMONIAE (commonest overall in adults) and NEISSERIA MENINGITIDIS.",
+      "over_50_or_immunocompromised_or_pregnant": "ADD LISTERIA MONOCYTOGENES — this is why AMOXICILLIN is added to the regimen in these groups, because cephalosporins do not cover Listeria.",
+      "neonates": "Group B streptococcus, Escherichia coli, Listeria.",
+      "after_neurosurgery_or_head_injury": "Staphylococci and Gram-negative organisms."
+     }
+    },
+    "section_3_differentials": {
+     "one_meningococcal_sepsis_with_meningitis": "WORKING DIAGNOSIS. Supporting: rapid onset, fever, headache, photophobia, neck stiffness, non-blanching spreading rash, shock, drowsiness, communal living.",
+     "two_pneumococcal_meningitis": "Supporting: meningitic features. Against: the rash strongly favours meningococcus. But both are covered by the same empirical antibiotic, so the distinction does not delay treatment.",
+     "three_viral_meningitis": "Supporting: fever, headache, neck stiffness, photophobia. Against: he is SHOCKED, drowsy and has a purpuric rash — viral meningitis patients are usually systemically much better. CSF findings distinguish them.",
+     "four_encephalitis": "Supporting: fever and altered consciousness. Distinguishing feature: ENCEPHALITIS causes altered behaviour, confusion, personality change and seizures out of proportion to meningism, and herpes simplex is the treatable cause. If encephalitis is possible, ADD ACICLOVIR.",
+     "five_subarachnoid_haemorrhage": "Supporting: severe headache, vomiting, neck stiffness. Against: onset over hours with fever rather than instantaneous. Speed of onset and fever separate them.",
+     "six_other_causes_of_a_non_blanching_rash": "Immune thrombocytopenia, other vasculitis, and mechanical causes such as vomiting-induced facial petechiae. NONE OF THESE SHOULD DELAY ANTIBIOTICS IN A FEBRILE UNWELL PATIENT."
+    },
+    "section_4_investigations": {
+     "the_governing_rule": {
+      "statement": "DO NOT DELAY ANTIBIOTICS FOR ANY INVESTIGATION. Not for blood cultures if they are difficult, not for the CT, not for the lumbar puncture. Mortality rises measurably with every hour of delay.",
+      "practical": "Take blood cultures if it takes seconds; give the antibiotic; then investigate."
+     },
+     "blood_cultures": "Before antibiotics IF IT CAUSES NO DELAY. Yield falls after antibiotics, but the antibiotic matters more.",
+     "meningococcal_pcr": {
+      "why_it_is_valuable": "A BLOOD PCR (polymerase chain reaction) for meningococcal DNA REMAINS POSITIVE FOR SEVERAL DAYS AFTER ANTIBIOTICS HAVE BEEN GIVEN, unlike culture. It therefore allows confirmation of the diagnosis even when treatment was correctly given first. Send it in every suspected case."
+     },
+     "bloods": "Full blood count (white cells may be very high OR LOW — a LOW count in sepsis is a poor prognostic sign) · CRP · UREA AND ELECTROLYTES · CLOTTING SCREEN AND FIBRINOGEN, looking for disseminated intravascular coagulation · LACTATE, which is a key marker of shock severity · glucose, which must be paired with the CSF glucose · liver function · blood gas.",
+     "lumbar_puncture": {
+      "when_to_delay_and_image_first": "CT HEAD BEFORE LUMBAR PUNCTURE if any of: FOCAL neurological signs · reduced or falling CONSCIOUS LEVEL · SEIZURES · papilloedema · immunocompromise · or signs of raised intracranial pressure. The concern is that removing fluid below a pressure gradient can precipitate CEREBRAL HERNIATION.",
+      "his_case": "His GCS is 13 and falling, so HE NEEDS A CT FIRST — but the antibiotic is given BEFORE the CT, not after it.",
+      "the_common_error": "Waiting for the CT before giving antibiotics. The CT delays treatment by an hour or more and does not change the antibiotic.",
+      "csf_findings": {
+       "what_to_send": "Cell count and differential, protein, glucose (with a PAIRED blood glucose taken at the same time), Gram stain, culture, and PCR. Measure the OPENING PRESSURE — it is raised in bacterial meningitis and is frequently not recorded.",
+       "bacterial": "Appearance TURBID or cloudy · WHITE CELLS markedly raised, predominantly NEUTROPHILS · PROTEIN raised (normal 0.15 to 0.45 g/L) · GLUCOSE LOW, typically under half the blood glucose, because bacteria and neutrophils consume it · opening pressure raised.",
+       "viral": "Appearance clear · white cells modestly raised, predominantly LYMPHOCYTES · protein normal or mildly raised · GLUCOSE NORMAL.",
+       "tuberculous_or_fungal": "Appearance clear or fibrin web · LYMPHOCYTES · protein VERY HIGH · glucose LOW · and it evolves over weeks rather than hours.",
+       "the_glucose_rule": "THE CSF GLUCOSE IS MEANINGLESS WITHOUT A PAIRED BLOOD GLUCOSE. It is the RATIO that matters — normally about two thirds of the blood level."
+      }
+     }
+    },
+    "section_5_management": {
+     "the_first_action": {
+      "antibiotics_now": "CEFTRIAXONE 2 g intravenously (or CEFOTAXIME 2 g intravenously) IMMEDIATELY. This is the single action that determines outcome. In the community, before transfer, BENZYLPENICILLIN 1.2 g intramuscularly or intravenously should be given if meningococcal disease is suspected and transfer will be delayed.",
+      "add_amoxicillin_if": "AGE OVER 50, PREGNANT, IMMUNOCOMPROMISED, or alcohol-dependent — ADD AMOXICILLIN 2 g intravenously every 4 hours to cover LISTERIA MONOCYTOGENES, which cephalosporins do not treat. He is 19 and immunocompetent, so it is not needed here — but knowing WHY is the point.",
+      "add_aciclovir_if": "Encephalitic features are present — confusion, behavioural change, seizures — ACICLOVIR 10 mg/kg intravenously every 8 hours for herpes simplex, adjusted for renal function."
+     },
+     "dexamethasone": {
+      "drug": "DEXAMETHASONE 10 mg intravenously every 6 hours for 4 days.",
+      "the_timing_that_matters": "GIVE IT WITH OR JUST BEFORE THE FIRST DOSE OF ANTIBIOTIC. If given late — after antibiotics have already caused bacterial lysis — the benefit is lost.",
+      "why": "Antibiotics kill bacteria, and dying bacteria RELEASE cell wall components that provoke a further burst of inflammation. Dexamethasone blunts that inflammatory surge. It reduces hearing loss and, in pneumococcal meningitis, reduces mortality.",
+      "the_caveats": "Benefit is clearest in PNEUMOCOCCAL meningitis. It is generally NOT recommended in meningococcal SEPSIS without meningitis, in immunocompromised patients, or in post-surgical meningitis. Do not withhold antibiotics while looking for dexamethasone."
+     },
+     "resuscitation_of_the_septic_shock": {
+      "the_point": "HE IS SHOCKED. This is as urgent as the meningitis.",
+      "fluids": "BALANCED CRYSTALLOID 500 mL boluses, reassessing after each — blood pressure, heart rate, capillary refill, conscious level, urine output and lactate. He may need several litres.",
+      "vasopressors": "If he remains hypotensive after adequate fluid, he needs a VASOPRESSOR such as NORADRENALINE, which requires central access and intensive care. Escalate early rather than repeating boluses indefinitely.",
+      "the_sepsis_six": "Give oxygen, take blood cultures, give antibiotics, give fluid, measure lactate, and measure urine output — all within the first hour.",
+      "steroids_for_refractory_shock": "HYDROCORTISONE 50 mg intravenously every 6 hours in refractory shock, and specifically if Waterhouse-Friderichsen adrenal failure is suspected.",
+      "disseminated_intravascular_coagulation": "Involve haematology. Replace with fresh frozen plasma, cryoprecipitate and platelets guided by the clotting screen and bleeding, not by numbers alone."
+     },
+     "the_public_health_actions_that_are_not_optional": {
+      "notification": "BACTERIAL MENINGITIS AND MENINGOCOCCAL SEPSIS ARE NOTIFIABLE DISEASES. Notify the public health authority IMMEDIATELY on clinical suspicion — do not wait for laboratory confirmation.",
+      "chemoprophylaxis": "CLOSE CONTACTS need antibiotic prophylaxis, typically CIPROFLOXACIN as a single oral dose, or rifampicin. \"Close contacts\" means household members, those who have shared a bedroom, intimate partners, and — importantly here — others in the same hall of residence as defined by public health. Healthcare staff need it only if they had direct exposure to respiratory secretions, such as during airway management without protection.",
+      "isolation": "Droplet precautions for the first 24 hours of effective antibiotic treatment.",
+      "why_this_matters": "Prophylaxis prevents secondary cases. In a university hall, failing to notify promptly can allow an outbreak."
+     },
+     "monitoring_and_complications": {
+      "monitor": "Continuous observations, hourly neurological observations, urine output, lactate trend, and clotting.",
+      "complications": "Raised intracranial pressure and herniation · seizures · SENSORINEURAL HEARING LOSS, the commonest long-term sequela · hydrocephalus · cerebral infarction from vasculitis · subdural empyema · disseminated intravascular coagulation with LIMB AND DIGIT NECROSIS requiring amputation · adrenal haemorrhage · and death.",
+      "follow_up": "FORMAL AUDIOLOGY ASSESSMENT before or shortly after discharge for every patient with bacterial meningitis. Hearing loss is common, is missed if not tested, and early identification matters — particularly in children, where it affects speech and language development."
+     }
+    },
+    "section_6_teaching_points": {
+     "bonus_1_antibiotics_come_first": "Not after the CT, not after the lumbar puncture, not after the blood cultures if those are difficult. Mortality rises with every hour of delay. If you remember one thing from this case, it is the ORDER.",
+     "bonus_2_the_glass_test": "Press a clear glass firmly over the rash. Erythema from vasodilatation BLANCHES; blood outside the vessels does NOT. A non-blanching rash in a febrile unwell patient is meningococcal sepsis until proven otherwise. It is the highest-value two-second examination in medicine, and it can be taught to parents and students in one sentence.",
+     "bonus_3_meningococcal_pcr_survives_antibiotics": "Blood PCR remains positive for days after antibiotics, unlike culture. This means giving the antibiotic first — which you must — does not cost you the diagnosis. Knowing this removes the last excuse for delay.",
+     "bonus_4_dexamethasone_timing": "It must be given WITH or JUST BEFORE the first antibiotic dose, because it works by blunting the inflammatory surge caused by bacterial lysis. Given afterwards, the surge has already happened and the benefit is lost.",
+     "bonus_5_why_amoxicillin_is_added_over_50": "Cephalosporins do not cover LISTERIA MONOCYTOGENES, which causes meningitis in the over-50s, the pregnant and the immunocompromised. Amoxicillin covers it. This is a small addition that is frequently forgotten and occasionally fatal.",
+     "trap_1": "The classic triad is present in fewer than half of adults. Its absence excludes nothing — most patients have at least two of fever, headache, neck stiffness and altered consciousness.",
+     "trap_2": "Kernig and Brudzinski signs are insensitive. A negative sign is not reassurance.",
+     "trap_3": "CSF glucose is meaningless without a PAIRED blood glucose taken at the same time.",
+     "trap_4": "A LOW white cell count in sepsis is a poor prognostic sign, not reassurance.",
+     "trap_5": "Notify public health on SUSPICION, not on confirmation. Contacts need prophylaxis quickly.",
+     "trap_6": "Arrange formal audiology — hearing loss is the commonest long-term sequela and is missed unless tested.",
+     "one_line_summary": "Meningococcal sepsis with meningitis. Ceftriaxone within minutes and before any imaging, dexamethasone with the first dose, fluid and vasopressors for the shock, meningococcal PCR to confirm afterwards, and notify public health on suspicion."
+    }
+   },
+   "glossary": [
+    {
+     "abbr": "AGE",
+     "full": "advanced glycation end product"
+    },
+    {
+     "abbr": "CRP",
+     "full": "C-reactive protein"
+    },
+    {
+     "abbr": "CSF",
+     "full": "cerebrospinal fluid"
+    },
+    {
+     "abbr": "CT",
+     "full": "computed tomography"
+    },
+    {
+     "abbr": "GCS",
+     "full": "Glasgow Coma Scale"
+    }
+   ],
+   "specialty": "Medicine — Infectious disease",
+   "teaching_case": true,
+   "inputs": [],
+   "logic": {},
+   "outputs": [],
+   "warnings": [
+    "GIVE THE ANTIBIOTIC FIRST — before the CT, before the lumbar puncture, and before blood cultures if those cause any delay. Mortality rises with every hour.",
+    "A NON-BLANCHING rash in a febrile unwell patient is meningococcal sepsis until proven otherwise. Use the glass test.",
+    "The classic triad is present in fewer than half of adults — its absence excludes nothing.",
+    "Kernig and Brudzinski signs are insensitive; a negative sign is not reassurance.",
+    "CT before lumbar puncture if there are focal signs, reduced consciousness, seizures, papilloedema or immunocompromise — but give the antibiotic before the CT.",
+    "Give DEXAMETHASONE with or just before the first antibiotic dose — given later, the benefit is lost.",
+    "ADD AMOXICILLIN if over 50, pregnant or immunocompromised — cephalosporins do not cover Listeria.",
+    "Add ACICLOVIR if there are encephalitic features.",
+    "Meningococcal blood PCR stays positive for days after antibiotics — giving treatment first does not cost the diagnosis.",
+    "CSF glucose is meaningless without a paired blood glucose.",
+    "A LOW white cell count in sepsis is a poor prognostic sign, not reassurance.",
+    "NOTIFY PUBLIC HEALTH ON SUSPICION, not on confirmation. Close contacts need prophylaxis quickly.",
+    "Arrange formal audiology — sensorineural hearing loss is the commonest long-term sequela.",
+    "Doses here are teaching examples for an adult. Follow your local meningitis protocol."
+   ],
+   "limitations": [
+    "A WORKED TEACHING CASE, not a protocol. Antibiotic choice, dexamethasone policy and prophylaxis regimens follow national and local guidance.",
+    "Paediatric and neonatal doses and organisms differ substantially."
+   ],
+   "flashcards": [
+    {
+     "q": "What is the single most important action?",
+     "a": "Give the antibiotic immediately — before CT, lumbar puncture, or difficult blood cultures."
+    },
+    {
+     "q": "How do you perform and interpret the glass test?",
+     "a": "Press a clear glass over the rash — erythema blanches, blood outside vessels does not."
+    },
+    {
+     "q": "How often is the classic triad present in adults?",
+     "a": "Fewer than half. Most have at least two of fever, headache, neck stiffness and altered consciousness."
+    },
+    {
+     "q": "When is CT needed before lumbar puncture?",
+     "a": "Focal signs, reduced consciousness, seizures, papilloedema, or immunocompromise."
+    },
+    {
+     "q": "When must dexamethasone be given and why?",
+     "a": "With or just before the first antibiotic — it blunts the inflammatory surge from bacterial lysis."
+    },
+    {
+     "q": "Who needs added amoxicillin, and why?",
+     "a": "Over 50, pregnant or immunocompromised — to cover Listeria, which cephalosporins miss."
+    },
+    {
+     "q": "Give the CSF findings in bacterial meningitis.",
+     "a": "Turbid, high neutrophils, high protein, LOW glucose (under half the blood level), raised opening pressure."
+    },
+    {
+     "q": "Why is meningococcal PCR useful?",
+     "a": "It stays positive for days after antibiotics, unlike culture — so treating first does not lose the diagnosis."
+    },
+    {
+     "q": "What is Waterhouse-Friderichsen syndrome?",
+     "a": "Bilateral adrenal haemorrhage causing acute adrenal insufficiency in meningococcal sepsis."
+    },
+    {
+     "q": "What is the commonest long-term sequela?",
+     "a": "Sensorineural hearing loss — arrange formal audiology."
+    },
+    {
+     "q": "When do you notify public health?",
+     "a": "On clinical suspicion, not on laboratory confirmation."
+    }
+   ],
+   "checkboxes": [
+    "Antibiotic given within minutes of suspicion",
+    "Glass test performed and rash documented",
+    "Dexamethasone given with or before the first antibiotic",
+    "Amoxicillin added if over 50, pregnant or immunocompromised",
+    "Aciclovir considered if encephalitic features",
+    "Blood cultures and meningococcal PCR sent",
+    "CT before lumbar puncture where indicated",
+    "CSF sent with a paired blood glucose and opening pressure recorded",
+    "Sepsis six completed within the hour",
+    "Public health notified on suspicion",
+    "Contact chemoprophylaxis arranged",
+    "Audiology follow-up arranged"
+   ],
+   "related_slugs": [
+    "csf_analysis_across_bacterial_viral_tuberculous_and_fungal"
+   ],
+   "patient_integration": null,
+   "governance": {
+    "evidence_tier": "T5_textbook_or_standard_teaching",
+    "verification_status": "standard_teaching",
+    "sources": [],
+    "nigeria_overlay": null,
+    "build_date": "2026-08-07",
+    "review_interval_months": 12,
+    "next_review_due": "2027-08-07",
+    "clinical_reviewer": null,
+    "approved_for_release": false,
+    "local_confirmation_required": true,
+    "supersedes": null,
+    "content_hash": "6fa403e06160c873"
+   }
+  },
+  {
+   "id": "AS-CASE-0016",
+   "schema_version": "4.0.0",
+   "content_release": "AWIBI-SCOUT-CONTENT-2026.08.R3",
+   "type": "case",
+   "title": "CASE: Weakness Climbing From the Feet Upwards Over Five Days",
+   "short_title": "Case: Guillain-Barré syndrome",
+   "slug": "case_weakness_climbing_from_the_feet_upwards_over_five_days",
+   "also_known_as": [
+    "case guillain barre",
+    "gbs case",
+    "ascending paralysis",
+    "ascending weakness case",
+    "forced vital capacity",
+    "fvc 20 30 40",
+    "albuminocytological dissociation",
+    "ivig case",
+    "plasma exchange",
+    "miller fisher"
+   ],
+   "summary": "A 34-year-old with ascending weakness two weeks after diarrhoea. Teaches why the bedside test that matters is the FORCED VITAL CAPACITY and not the oxygen saturation, why the saturation stays normal until the patient arrests, and why steroids do not work here when they work in almost every other neuroinflammatory disease.",
+   "domains": [
+    "neurology",
+    "critical_care",
+    "emergency_medicine"
+   ],
+   "intents": [
+    "identify",
+    "act"
+   ],
+   "populations": [
+    "all_ages"
+   ],
+   "contexts": [
+    "routine"
+   ],
+   "hazard": "critical",
+   "urgency": "urgent",
+   "jurisdiction": "international",
+   "search": {
+    "terms": [
+     "albuminocytological dissociation",
+     "areflexia",
+     "ascending paralysis",
+     "ascending weakness",
+     "ascending weakness case",
+     "autonomic dysfunction",
+     "botulism",
+     "campylobacter",
+     "case",
+     "case guillain barre",
+     "case: guillain-barré syndrome",
+     "case: weakness climbing from the feet upwards over five days",
+     "climbing",
+     "days",
+     "demyelination",
+     "feet",
+     "five",
+     "forced vital capacity",
+     "fvc 20 30 40",
+     "gbs case",
+     "guillain barre",
+     "intravenous immunoglobulin",
+     "ivig case",
+     "miller fisher",
+     "miller fisher syndrome",
+     "nerve conduction study",
+     "over",
+     "plasma exchange",
+     "single breath count",
+     "tick paralysis",
+     "transverse myelitis",
+     "upwards",
+     "weakness"
+    ],
+    "ambiguous_terms": [],
+    "phrases": [],
+    "field_weights": {
+     "title": 8,
+     "short_title": 6,
+     "also_known_as": 5,
+     "terms": 4,
+     "summary": 2,
+     "body": 1,
+     "flashcards": 0.5
+    }
+   },
+   "body": {
+    "the_one_line": "34-year-old teacher with five days of progressive weakness that began as tingling in both feet and has now reached his thighs, so that he can no longer climb stairs. He had a bout of bloody diarrhoea two weeks ago.",
+    "section_1_clerking": {
+     "history": "Five days ago he noticed tingling and numbness in both feet. Over the next two days it spread up both legs, and the legs became weak. Today he cannot climb the stairs at home and struggles to rise from a chair. His hands have begun to tingle. He has lower back pain. NO bladder or bowel disturbance. TWO WEEKS AGO he had four days of bloody diarrhoea after a barbecue, which settled without treatment.",
+     "reading_the_clues": {
+      "ascending_and_symmetrical": "Weakness that starts DISTALLY and climbs PROXIMALLY, on BOTH sides roughly equally. Symmetry points strongly to a systemic or immune process rather than a structural lesion, which is almost always asymmetrical.",
+      "progressive_over_days": "The tempo is the diagnosis. Minutes to hours suggests vascular; days to weeks suggests inflammatory or immune; months suggests degenerative or compressive. GUILLAIN-BARRE PROGRESSES OVER DAYS TO A MAXIMUM OF FOUR WEEKS. If weakness is still worsening after 8 weeks, the diagnosis is chronic inflammatory demyelinating polyradiculoneuropathy instead.",
+      "the_preceding_diarrhoea": "THE CRITICAL HISTORICAL DETAIL. About two thirds of cases follow an infection by one to three weeks. CAMPYLOBACTER JEJUNI — the classic cause of bloody diarrhoea after undercooked poultry — is the commonest identified trigger, and is associated with a more severe, more axonal form. Also ask about respiratory infection, cytomegalovirus, Epstein-Barr virus, hepatitis E, HIV, Zika, and recent vaccination or surgery.",
+      "no_bladder_or_bowel_disturbance": "IMPORTANT NEGATIVE. Early sphincter involvement points to a SPINAL CORD lesion — cord compression or transverse myelitis — rather than a peripheral neuropathy. Its absence supports the peripheral diagnosis, and its presence would demand urgent spinal imaging.",
+      "back_pain": "Common and often misleading — it comes from inflammation of the nerve roots. It leads to patients being investigated for a mechanical back problem while the weakness climbs."
+     },
+     "the_questions_that_detect_impending_respiratory_failure": "ASK THESE EXPLICITLY: Are you breathless lying flat? Are you breathless when talking? Do you have to pause mid-sentence? Are you sleeping propped up? Do you have difficulty swallowing, or does liquid come back through your nose? Is your voice weaker or more nasal? A patient who cannot complete a sentence in one breath, or who has bulbar weakness, is close to needing ventilation.",
+     "vitals": "BP 148/88 mmHg but FLUCTUATING — it was 96/58 twenty minutes ago. Pulse 104, varying between 58 and 118 on the monitor. Respiratory rate 20. Temperature 36.8. SATURATION 98% ON AIR. FORCED VITAL CAPACITY 1.6 litres.",
+     "the_two_vitals_that_matter_here": {
+      "the_fluctuating_blood_pressure_and_pulse": "AUTONOMIC DYSFUNCTION. The autonomic nerves are affected alongside the motor and sensory ones, causing swings in blood pressure, bradycardia, tachycardia, arrhythmia, ileus and urinary retention. IT IS A LEADING CAUSE OF DEATH IN THIS DISEASE and is frequently overlooked because attention is on the limbs. He needs CARDIAC MONITORING.",
+      "the_forced_vital_capacity": "See below. It is the most important number in the case, and the saturation of 98% is the most dangerous one."
+     },
+     "examination": {
+      "motor": "Symmetrical weakness, worse distally: ankle dorsiflexion 3/5, knee extension 4/5, hip flexion 4/5. Upper limbs 4+/5 with normal grip so far. He cannot rise from a chair without using his arms.",
+      "reflexes": "ABSENT ankle and knee reflexes bilaterally; upper limb reflexes reduced. AREFLEXIA OR MARKED HYPOREFLEXIA IS THE CARDINAL SIGN and is what separates this from most causes of weakness. Plantars are DOWNGOING — a lower motor neurone picture. UPGOING plantars would point to a cord or brain lesion instead.",
+      "sensory": "Mild glove-and-stocking sensory loss. Note the sensory findings are usually MILD compared with the motor deficit — the weakness dominates.",
+      "bulbar_and_respiratory": "Speech normal, cough strong, no nasal regurgitation. He can count to 22 in one breath (see the single breath count below).",
+      "cranial_nerves": "Normal. FACIAL WEAKNESS, often bilateral, occurs in a substantial minority and should be looked for."
+     }
+    },
+    "section_2_mechanism": {
+     "what_it_is": "An ACUTE IMMUNE-MEDIATED POLYRADICULONEUROPATHY — the immune system attacks the peripheral nerves and nerve roots.",
+     "molecular_mimicry_the_central_idea": "The lipooligosaccharide on the surface of Campylobacter jejuni closely RESEMBLES gangliosides — glycolipids concentrated in peripheral nerve membranes. The immune system mounts an appropriate response against the bacterium, and the resulting antibodies CROSS-REACT with the patient own nerves. This is MOLECULAR MIMICRY, and it explains both the delay of one to three weeks (the time to mount an antibody response) and why the illness continues after the infection has cleared.",
+     "why_distal_first_and_ascending": "The longest nerves have the greatest surface area of myelin and the longest axons, so they are affected earliest and most severely. Hence weakness starts in the feet and climbs.",
+     "the_subtypes": {
+      "aidp": "ACUTE INFLAMMATORY DEMYELINATING POLYRADICULONEUROPATHY — the commonest form in Europe and North America. The MYELIN SHEATH is attacked, so conduction slows or blocks. Because the axon is preserved, recovery is usually good once remyelination occurs.",
+      "aman": "ACUTE MOTOR AXONAL NEUROPATHY — the AXON itself is attacked. Commoner in Asia and after Campylobacter. Recovery is slower and often less complete, because axons must regrow at roughly 1 mm per day.",
+      "miller_fisher_syndrome": "A variant with the triad of OPHTHALMOPLEGIA (eye movement paralysis), ATAXIA (incoordination) and AREFLEXIA, associated with ANTI-GQ1B ANTIBODIES. It often DESCENDS rather than ascends, which is why a descending pattern does not exclude the diagnosis."
+     },
+     "why_breathing_fails_silently": {
+      "the_mechanism": "The DIAPHRAGM and intercostal muscles are supplied by peripheral nerves, and they weaken along with everything else. This is VENTILATORY (pump) failure, not a problem of gas exchange.",
+      "why_the_saturation_lies": "The lungs themselves are NORMAL. Gas exchange across the alveolar membrane is fine. A patient can maintain a saturation of 98% on air right up until the muscles fail completely, and then decompensate catastrophically within minutes. THE OXYGEN SATURATION IS THE MOST REASSURING AND MOST MISLEADING NUMBER IN THIS DISEASE. Similarly, the carbon dioxide rises only LATE — by the time the blood gas is abnormal, the patient needs intubating immediately, and a normal gas is not reassurance."
+     }
+    },
+    "section_3_differentials": {
+     "one_guillain_barre_syndrome": "WORKING DIAGNOSIS. Supporting: ascending symmetrical weakness over days, AREFLEXIA, mild sensory signs, preceding diarrhoeal illness, autonomic instability, no sphincter involvement.",
+     "two_transverse_myelitis_or_cord_compression": {
+      "why_it_must_be_excluded": "It is the diagnosis that is MISSED and that has a different, urgent treatment.",
+      "distinguishing_features": "A SENSORY LEVEL on the trunk — test carefully with a pin from the feet upwards. EARLY BLADDER AND BOWEL involvement. UPGOING plantars and eventually BRISK reflexes, though in the acute phase spinal shock can produce flaccid areflexia and mimic Guillain-Barré exactly.",
+      "the_action": "IF THERE IS ANY DOUBT, GET AN URGENT MRI OF THE SPINE. Do not attribute back pain plus leg weakness to Guillain-Barré without considering the cord."
+     },
+     "three_myasthenia_gravis": "FATIGABLE weakness that worsens with repeated use and improves with rest, typically with ptosis and diplopia, and PRESERVED REFLEXES. Reflexes are the key discriminator.",
+     "four_botulism": "DESCENDING weakness beginning with cranial nerves — blurred vision, ptosis, dysphagia — with DILATED UNREACTIVE PUPILS and a dry mouth. History of home-preserved food, or wound botulism in injecting drug users.",
+     "five_hypokalaemic_or_other_periodic_paralysis": "Sudden profound flaccid weakness. CHECK THE POTASSIUM in every acute weakness — it is instantly treatable.",
+     "six_tick_paralysis": "Ascending flaccid paralysis that resolves on removing the tick. SEARCH THE SCALP AND SKIN in an endemic area — it is one of the few instantly curable causes.",
+     "seven_poliomyelitis_and_other_causes": "Consider polio and West Nile virus in relevant settings — typically ASYMMETRICAL, febrile, and purely motor.",
+     "eight_toxic_and_metabolic": "Heavy metals, organophosphates, diphtheria, porphyria, and critical illness polyneuropathy in an intensive care patient."
+    },
+    "section_4_investigations": {
+     "the_test_that_matters_most_is_at_the_bedside": {
+      "forced_vital_capacity": {
+       "what_it_is": "The volume of air a patient can blow out after taking the deepest possible breath, measured with a handheld spirometer at the bedside. Normal is roughly 60 to 70 mL/kg — about 4 to 5 litres in an adult male.",
+       "the_20_30_40_rule": "THE RULE THAT SAVES LIVES. FVC below 20 mL/kg · maximum INSPIRATORY pressure weaker than 30 cmH2O · maximum EXPIRATORY pressure weaker than 40 cmH2O. ANY of these means intensive care and probable intubation. FOR A 70 kg MAN, 20 mL/kg IS 1.4 LITRES.",
+       "his_number": "HIS FVC IS 1.6 LITRES, which is 23 mL/kg. HE IS ALREADY CLOSE TO THE THRESHOLD despite a saturation of 98% and no distress. He needs intensive care review NOW and FVC measured at least every 4 hours, more often if it is falling.",
+       "how_often": "Measure it 4-hourly during progression, and SITTING AND LYING if possible — a fall of more than 20% on lying flat indicates significant diaphragmatic weakness.",
+       "the_bedside_alternative": "THE SINGLE BREATH COUNT. Ask the patient to take a maximal breath and count aloud steadily from 1. Counting to about 25 corresponds roughly to a normal vital capacity; below about 15 is concerning. It requires no equipment and can be done anywhere, so there is no excuse for not assessing respiratory muscle strength."
+      },
+      "why_not_the_saturation_or_the_blood_gas": "BOTH REMAIN NORMAL UNTIL THE PATIENT IS ABOUT TO ARREST, because the lungs are healthy and this is pump failure. Waiting for desaturation or a rising carbon dioxide means intubating a patient who has already decompensated, in an emergency, rather than electively. THIS IS THE SINGLE MOST IMPORTANT PRINCIPLE IN THE CASE."
+     },
+     "lumbar_puncture": {
+      "the_finding": "ALBUMINOCYTOLOGICAL DISSOCIATION — a RAISED PROTEIN with a NORMAL CELL COUNT. Literally, the albumin (protein) and the cytology (cells) are dissociated: one is abnormal and the other is not.",
+      "why_it_happens": "Inflammation of the nerve roots as they traverse the subarachnoid space leaks protein into the cerebrospinal fluid, but there is no significant cellular infiltrate.",
+      "the_timing_caveat_that_causes_false_reassurance": "THE PROTEIN IS OFTEN NORMAL IN THE FIRST WEEK, rising thereafter and peaking at around 4 to 6 weeks. A NORMAL EARLY LUMBAR PUNCTURE DOES NOT EXCLUDE THE DIAGNOSIS. Treating on clinical grounds while awaiting confirmation is correct.",
+      "the_other_reason_to_do_it": "A RAISED CELL COUNT points AWAY from typical Guillain-Barré and towards HIV seroconversion, Lyme disease, sarcoidosis, or malignant infiltration of the roots. So the cell count is as informative as the protein.",
+      "normal_values": "Protein 0.15 to 0.45 g/L; white cells fewer than 5 per mm3."
+     },
+     "nerve_conduction_studies": "Confirm the diagnosis and distinguish demyelinating from axonal forms. Expected in AIDP: slowed conduction velocity, prolonged distal latencies, conduction block, and prolonged or absent F-waves — F-waves are affected EARLY because they test the proximal nerve roots where the disease begins. NOTE THAT STUDIES MAY BE NORMAL IN THE FIRST WEEK. Do not delay treatment for them.",
+     "bloods": "Full blood count · urea and electrolytes including POTASSIUM, MAGNESIUM and CALCIUM · glucose and HbA1c · liver function · CREATINE KINASE to exclude myositis · thyroid function · vitamin B12 · HIV test · stool culture for Campylobacter · and ANTI-GANGLIOSIDE ANTIBODIES where available, particularly ANTI-GQ1B if Miller Fisher variant is suspected.",
+     "mri_spine": "IF THERE IS ANY SUGGESTION OF A CORD LESION — a sensory level, sphincter disturbance, or upgoing plantars. Gadolinium enhancement of the nerve roots supports Guillain-Barré, but the primary purpose is to exclude compression.",
+     "ecg_and_cardiac_monitoring": "Mandatory. Autonomic dysfunction causes arrhythmia, including asystole, and sudden death."
+    },
+    "section_5_management": {
+     "a_the_priority_is_the_airway_not_the_immunotherapy": {
+      "statement": "PATIENTS WITH GUILLAIN-BARRE DIE OF RESPIRATORY FAILURE, AUTONOMIC INSTABILITY AND VENOUS THROMBOEMBOLISM — not of untreated inflammation. Immunotherapy shortens the illness; supportive care determines survival. Get the priorities the right way round.",
+      "actions": "Admit to a monitored bed with intensive care input. FVC at least 4-hourly. Continuous cardiac monitoring. Assess SWALLOW before anything by mouth — bulbar weakness causes aspiration. Intubate ELECTIVELY on the trend, not as an emergency on collapse.",
+      "when_to_intubate": "FVC below 20 mL/kg or falling rapidly · inability to clear secretions · bulbar failure · rising carbon dioxide (which is a LATE sign). An elective intubation in a controlled setting is far safer than an emergency one in a patient with autonomic instability.",
+      "suxamethonium_warning": "AVOID SUXAMETHONIUM for intubation. Denervated muscle upregulates acetylcholine receptors, and suxamethonium then causes a massive potassium release, hyperkalaemia and cardiac arrest. Use a non-depolarising agent. This applies from a few days after denervation and for months afterwards."
+     },
+     "b_immunotherapy": {
+      "intravenous_immunoglobulin": {
+       "dose": "IVIG 0.4 g/kg per day for 5 days — a TOTAL of 2 g/kg. FOR A 70 kg MAN: 28 g per day for 5 days, 140 g in total.",
+       "practical": "Infuse slowly at first and increase as tolerated. Usually the FIRST CHOICE because it is easier to give, needs no specialised equipment, and works as well as plasma exchange.",
+       "adverse_effects": "Headache and aseptic meningitis · fever and chills during infusion · ACUTE KIDNEY INJURY, especially with sucrose-containing preparations and in existing renal impairment · THROMBOSIS, because it increases blood viscosity — relevant in an already immobile patient · anaphylaxis in IgA-deficient patients, so CHECK IgA LEVELS where the service requires it · haemolysis."
+      },
+      "plasma_exchange": {
+       "what_it_is": "The patient plasma, containing the pathogenic antibodies, is removed and replaced with albumin or donor plasma. Typically 5 exchanges over 1 to 2 weeks.",
+       "equivalence": "EQUALLY EFFECTIVE to IVIG. Choice depends on availability, vascular access and comorbidity. It needs large-bore vascular access and specialist equipment, which limits it in many settings.",
+       "do_not_combine": "GIVING BOTH SEQUENTIALLY CONFERS NO ADDITIONAL BENEFIT. And plasma exchange AFTER IVIG simply removes the immunoglobulin you just gave."
+      },
+      "the_timing": "Most effective when started within 2 WEEKS of symptom onset for IVIG, or 4 weeks for plasma exchange. Treat patients who cannot walk unaided; mildly affected, ambulant patients may be observed.",
+      "why_steroids_do_not_work": {
+       "the_fact": "CORTICOSTEROIDS ARE NOT EFFECTIVE IN GUILLAIN-BARRE SYNDROME AND SHOULD NOT BE GIVEN. Trials show no benefit, and oral steroids may even slow recovery.",
+       "why_it_is_worth_knowing": "This is genuinely counter-intuitive. Steroids work in multiple sclerosis relapse, in chronic inflammatory demyelinating polyradiculoneuropathy, in myasthenia and in most inflammatory neuropathies. Guillain-Barré is the exception. The probable reason is that the damage is antibody- and complement-mediated and largely done by the time of presentation, and steroids may impair the macrophage-mediated clearance of myelin debris that recovery requires. REMEMBERING THE EXCEPTION MATTERS BECAUSE THE INSTINCT TO REACH FOR STEROIDS IS STRONG."
+      }
+     },
+     "c_the_supportive_care_that_actually_prevents_death": {
+      "venous_thromboembolism": "HIGH RISK from immobility. LOW MOLECULAR WEIGHT HEPARIN prophylaxis plus intermittent pneumatic compression for every non-ambulant patient. PULMONARY EMBOLISM IS A LEADING CAUSE OF DEATH IN THIS DISEASE, and prophylaxis is the single easiest thing to get right.",
+      "autonomic_monitoring": "Continuous cardiac monitoring. Treat significant bradyarrhythmia; some patients need temporary pacing. Be cautious with drugs that affect blood pressure — the response is exaggerated and unpredictable. Watch for ileus and urinary retention.",
+      "pain": "NEUROPATHIC PAIN IS SEVERE AND SYSTEMATICALLY UNDER-TREATED in this disease, particularly back and limb pain. Use gabapentin or pregabalin, with opioids if needed. Ask about it directly — patients who cannot move often do not volunteer it, and an intubated patient cannot.",
+      "pressure_areas_and_contractures": "Regular repositioning, pressure-relieving mattress, early passive physiotherapy and splinting to prevent foot drop and contractures.",
+      "nutrition_and_swallow": "Formal swallow assessment. Nasogastric feeding if unsafe. Ileus is common.",
+      "eye_care": "If there is facial weakness, the eye may not close. Lubricate and tape to prevent exposure keratopathy.",
+      "psychological": "A fully conscious patient becoming progressively paralysed and possibly ventilated is TERRIFYING. Explain everything, establish a communication method BEFORE intubation, and remember that a paralysed patient can hear every word spoken at the bedside. This is not a soft addition — anxiety and post-traumatic stress after this illness are common and severe."
+     },
+     "d_prognosis_and_recovery": {
+      "the_course": "Progression for up to 4 weeks, then a PLATEAU of days to weeks, then RECOVERY over weeks to months. Most patients improve substantially.",
+      "the_numbers": "Roughly 20 to 30% require mechanical ventilation. Around 80% walk independently at 6 months. Mortality is roughly 3 to 7%, mainly from respiratory failure, autonomic collapse, pulmonary embolism and hospital-acquired infection. Perhaps 20% have significant residual disability, and FATIGUE is very common and long-lasting.",
+      "worse_prognosis": "Older age · rapid onset · preceding diarrhoeal illness, especially Campylobacter · need for ventilation · axonal subtype on nerve conduction studies.",
+      "rehabilitation": "Prolonged multidisciplinary rehabilitation is the rule, not the exception. Warn the patient and family early that recovery is measured in months.",
+      "the_relapse_warning": "A small proportion deteriorate again after initial improvement — TREATMENT-RELATED FLUCTUATION — and may need a second course. If weakness continues to progress or relapses beyond 8 weeks, reconsider the diagnosis as chronic inflammatory demyelinating polyradiculoneuropathy, which IS steroid-responsive."
+     }
+    },
+    "section_6_teaching_points": {
+     "bonus_1_the_saturation_is_the_most_dangerous_number": "The lungs are normal; this is PUMP failure. Oxygen saturation and carbon dioxide stay normal until the respiratory muscles fail completely, and then the patient decompensates within minutes. Monitoring the saturation instead of the vital capacity is how these patients arrest on a general ward.",
+     "bonus_2_the_20_30_40_rule": "FVC below 20 mL/kg, maximum inspiratory pressure weaker than 30 cmH2O, maximum expiratory pressure weaker than 40 cmH2O. Any one means intensive care. For a 70 kg adult, 20 mL/kg is 1.4 litres. Measure it 4-hourly, sitting and lying.",
+     "bonus_3_the_single_breath_count": "One maximal breath, then count aloud steadily. About 25 approximates a normal vital capacity; below 15 is concerning. It needs no equipment, so respiratory muscle strength can be assessed anywhere, on any ward, at any hour.",
+     "bonus_4_albuminocytological_dissociation_and_its_timing_trap": "Raised protein, normal cells — root inflammation leaks protein without a cellular infiltrate. BUT the protein is often normal in the first week. A normal early tap does not exclude the diagnosis, and a RAISED CELL COUNT should send you looking for HIV, Lyme disease or malignant infiltration instead.",
+     "bonus_5_why_steroids_fail_here_when_they_work_everywhere_else": "Guillain-Barré is the exception among inflammatory neuropathies. The injury is antibody- and complement-mediated and largely complete at presentation, and steroids may impair the macrophage clearance of myelin debris that recovery depends on. If the patient is still progressing at 8 weeks, the diagnosis is probably CIDP — which IS steroid-responsive.",
+     "bonus_6_suxamethonium_can_kill_here": "Denervated muscle upregulates acetylcholine receptors, so suxamethonium causes massive potassium release and cardiac arrest. Use a non-depolarising agent, and flag it clearly in the notes for anyone who may intubate.",
+     "trap_1": "Do not give IVIG and plasma exchange together — no added benefit, and exchange after IVIG removes what you just gave.",
+     "trap_2": "Autonomic dysfunction kills. Cardiac monitoring is not optional, and it is missed because attention is on the limbs.",
+     "trap_3": "Give thromboprophylaxis. Pulmonary embolism is a leading cause of death and prophylaxis is the easiest thing to get right.",
+     "trap_4": "Ask about pain directly. It is severe, systematically under-treated, and an intubated patient cannot tell you.",
+     "trap_5": "A sensory level, early sphincter involvement or upgoing plantars means image the spine — cord compression is the diagnosis you cannot afford to miss.",
+     "trap_6": "Miller Fisher variant DESCENDS. A descending pattern does not exclude the diagnosis.",
+     "one_line_summary": "Guillain-Barré after Campylobacter. Measure the forced vital capacity, not the saturation; intubate electively on the trend; IVIG 0.4 g/kg for 5 days; no steroids; and remember that thromboprophylaxis and cardiac monitoring save more lives than the immunotherapy."
+    }
+   },
+   "glossary": [
+    {
+     "abbr": "ASIA",
+     "full": "American Spinal Injury Association",
+     "gloss": "its Impairment Scale grades spinal cord injury A to E"
+    },
+    {
+     "abbr": "GAVE",
+     "full": "gastric antral vascular ectasia",
+     "gloss": "\"watermelon stomach\""
+    },
+    {
+     "abbr": "HbA1c",
+     "full": "glycated haemoglobin",
+     "gloss": "average glucose over roughly the past 2–3 months"
+    },
+    {
+     "abbr": "ICU",
+     "full": "intensive care unit"
+    },
+    {
+     "abbr": "MRI",
+     "full": "magnetic resonance imaging"
+    }
+   ],
+   "specialty": "Medicine — Neurology",
+   "teaching_case": true,
+   "inputs": [],
+   "logic": {},
+   "outputs": [],
+   "warnings": [
+    "MEASURE THE FORCED VITAL CAPACITY, not the oxygen saturation. The lungs are normal — saturation stays at 98% until the patient arrests.",
+    "The 20/30/40 rule: FVC below 20 mL/kg, MIP weaker than 30, MEP weaker than 40 — any one means intensive care.",
+    "A normal blood gas is NOT reassurance — carbon dioxide rises only when the patient already needs intubating.",
+    "Intubate ELECTIVELY on the falling trend, never as an emergency on collapse.",
+    "AVOID SUXAMETHONIUM — denervated muscle releases massive potassium and causes cardiac arrest.",
+    "CORTICOSTEROIDS DO NOT WORK in Guillain-Barré and should not be given, despite working in almost every other inflammatory neuropathy.",
+    "Do NOT give IVIG and plasma exchange together — no benefit, and exchange after IVIG removes what you just gave.",
+    "Continuous CARDIAC MONITORING is mandatory — autonomic dysfunction causes arrhythmia and sudden death.",
+    "Give thromboprophylaxis — pulmonary embolism is a leading cause of death in this disease.",
+    "A normal cerebrospinal fluid protein in the first week does NOT exclude the diagnosis.",
+    "A raised CSF cell count points away from Guillain-Barré — think HIV, Lyme disease or malignant infiltration.",
+    "A sensory level, early bladder involvement or upgoing plantars means image the spine urgently.",
+    "Neuropathic pain is severe and under-treated — ask directly, especially in a patient who cannot speak.",
+    "Doses here are teaching examples for an adult. Follow your local neurology protocol."
+   ],
+   "limitations": [
+    "A WORKED TEACHING CASE, not a protocol. Ventilation thresholds, immunotherapy choice and rehabilitation pathways follow local practice.",
+    "Variant forms differ in presentation and prognosis; nerve conduction studies and antibody testing require specialist interpretation."
+   ],
+   "flashcards": [
+    {
+     "q": "Which bedside measurement matters most, and why not the saturation?",
+     "a": "Forced vital capacity. The lungs are normal — this is pump failure, so saturation stays normal until collapse."
+    },
+    {
+     "q": "State the 20/30/40 rule.",
+     "a": "FVC below 20 mL/kg, maximum inspiratory pressure weaker than 30 cmH2O, maximum expiratory pressure weaker than 40 cmH2O — any one means ICU."
+    },
+    {
+     "q": "What is the single breath count?",
+     "a": "Count aloud after one maximal breath — about 25 approximates a normal vital capacity, below 15 is concerning."
+    },
+    {
+     "q": "What is albuminocytological dissociation?",
+     "a": "Raised CSF protein with a normal cell count — but often normal in the first week."
+    },
+    {
+     "q": "What is the cardinal examination sign?",
+     "a": "Areflexia or marked hyporeflexia with downgoing plantars."
+    },
+    {
+     "q": "Which organism is the classic trigger, and by what mechanism?",
+     "a": "Campylobacter jejuni, by molecular mimicry between its lipooligosaccharide and nerve gangliosides."
+    },
+    {
+     "q": "Give the IVIG regimen for a 70 kg adult.",
+     "a": "0.4 g/kg per day for 5 days = 28 g daily, 140 g total (2 g/kg)."
+    },
+    {
+     "q": "Why are steroids not given?",
+     "a": "They are ineffective and may slow recovery — Guillain-Barré is the exception among inflammatory neuropathies."
+    },
+    {
+     "q": "Why must suxamethonium be avoided?",
+     "a": "Denervated muscle upregulates acetylcholine receptors, causing massive potassium release and cardiac arrest."
+    },
+    {
+     "q": "Name the Miller Fisher triad.",
+     "a": "Ophthalmoplegia, ataxia and areflexia, with anti-GQ1b antibodies — and it often descends."
+    },
+    {
+     "q": "Which findings should send you to image the spine?",
+     "a": "A sensory level, early bladder or bowel involvement, or upgoing plantars."
+    },
+    {
+     "q": "What are the leading causes of death?",
+     "a": "Respiratory failure, autonomic collapse, pulmonary embolism and hospital-acquired infection."
+    }
+   ],
+   "checkboxes": [
+    "Forced vital capacity measured and repeated at least 4-hourly",
+    "Single breath count documented if no spirometer",
+    "Continuous cardiac monitoring for autonomic dysfunction",
+    "Intensive care informed early",
+    "Swallow assessed before anything by mouth",
+    "Suxamethonium contraindication flagged in the notes",
+    "Thromboprophylaxis prescribed",
+    "Spine imaged if any suggestion of a cord lesion",
+    "IVIG or plasma exchange started — not both",
+    "Steroids NOT given",
+    "Neuropathic pain asked about and treated",
+    "Communication method established before any intubation",
+    "Rehabilitation and realistic recovery timeline discussed"
+   ],
+   "related_slugs": [
+    "mcdonald_criteria_diagnosing_multiple_sclerosis_by_dissemination_in_space_and_time"
+   ],
+   "patient_integration": null,
+   "governance": {
+    "evidence_tier": "T5_textbook_or_standard_teaching",
+    "verification_status": "standard_teaching",
+    "sources": [],
+    "nigeria_overlay": null,
+    "build_date": "2026-08-07",
+    "review_interval_months": 12,
+    "next_review_due": "2027-08-07",
+    "clinical_reviewer": null,
+    "approved_for_release": false,
+    "local_confirmation_required": true,
+    "supersedes": null,
+    "content_hash": "f2d6335b3606a1e9"
+   }
+  },
+  {
+   "id": "AS-CASE-0017",
+   "schema_version": "4.0.0",
+   "content_release": "AWIBI-SCOUT-CONTENT-2026.08.R3",
+   "type": "case",
+   "title": "CASE: Severe Bone Pain in a Young Man with Sickle Cell Disease",
+   "short_title": "Case: sickle cell vaso-occlusive crisis",
+   "slug": "case_severe_bone_pain_in_a_young_man_with_sickle_cell_disease",
+   "also_known_as": [
+    "case sickle cell",
+    "vaso-occlusive crisis case",
+    "sickle cell pain crisis",
+    "acute chest syndrome",
+    "sequestration crisis",
+    "aplastic crisis parvovirus",
+    "hydroxyurea",
+    "exchange transfusion sickle",
+    "hbss"
+   ],
+   "summary": "A 22-year-old with HbSS and 12 hours of severe limb and back pain. Teaches why analgesia is given within 30 minutes and is not negotiable, why a normal haemoglobin can be the worst sign in the room, and how acute chest syndrome kills a patient who came in with a painful arm.",
+   "domains": [
+    "haematology",
+    "emergency_medicine",
+    "internal_medicine"
+   ],
+   "intents": [
+    "identify",
+    "act"
+   ],
+   "populations": [
+    "all_ages"
+   ],
+   "contexts": [
+    "routine"
+   ],
+   "hazard": "critical",
+   "urgency": "urgent",
+   "jurisdiction": "international",
+   "search": {
+    "terms": [
+     "acute chest syndrome",
+     "aplastic crisis",
+     "aplastic crisis parvovirus",
+     "avascular necrosis",
+     "bone",
+     "case",
+     "case sickle cell",
+     "case: severe bone pain in a young man with sickle cell disease",
+     "case: sickle cell vaso-occlusive crisis",
+     "cell",
+     "disease",
+     "exchange transfusion",
+     "exchange transfusion sickle",
+     "haemoglobin s",
+     "hbss",
+     "hydroxyurea",
+     "hyposplenism",
+     "incentive spirometry",
+     "pain",
+     "parvovirus b19",
+     "priapism",
+     "reticulocyte",
+     "sequestration crisis",
+     "severe",
+     "sickle",
+     "sickle cell",
+     "sickle cell pain crisis",
+     "sickling",
+     "splenic sequestration",
+     "vaso-occlusive crisis",
+     "vaso-occlusive crisis case",
+     "young"
+    ],
+    "ambiguous_terms": [],
+    "phrases": [],
+    "field_weights": {
+     "title": 8,
+     "short_title": 6,
+     "also_known_as": 5,
+     "terms": 4,
+     "summary": 2,
+     "body": 1,
+     "flashcards": 0.5
+    }
+   },
+   "body": {
+    "the_one_line": "22-year-old man with known sickle cell disease (HbSS) presents with 12 hours of severe pain in both arms, the lower back and both thighs, which started after he walked home in cold rain. He rates the pain 9 out of 10.",
+    "section_1_clerking": {
+     "history": "Pain began gradually last night in both upper arms, then spread to the lower back and thighs. It is deep, constant and boring in character, similar to his previous crises but worse. He has taken his usual paracetamol and ibuprofen at home without relief. No fever, no cough, no breathlessness, no chest pain. NO NEW NEUROLOGICAL SYMPTOMS. He has had 4 admissions in the last year.",
+     "the_precipitants_to_ask_about_every_time": "COLD EXPOSURE (he walked home in cold rain — cold causes vasoconstriction and promotes sickling) · DEHYDRATION · INFECTION · HYPOXIA including air travel and altitude · ACIDOSIS · physical exertion · emotional stress · alcohol · pregnancy · and menstruation. Identifying the trigger allows prevention of the next crisis. IN MANY CRISES NO TRIGGER IS FOUND, and that does not make the crisis less real.",
+     "the_questions_that_screen_for_the_complications_that_kill": "ASK EVERY ONE OF THESE, EVEN IF THE PATIENT PRESENTS ONLY WITH LIMB PAIN: Any CHEST PAIN, COUGH OR BREATHLESSNESS (acute chest syndrome)? Any FEVER (infection in a functionally asplenic patient)? Any ABDOMINAL PAIN OR LEFT-SIDED FULLNESS (splenic sequestration)? Any HEADACHE, WEAKNESS, SPEECH OR VISUAL CHANGE (stroke)? Any PROLONGED PAINFUL ERECTION (priapism)? PATIENTS DO NOT VOLUNTEER PRIAPISM — YOU MUST ASK, and it causes permanent impotence if untreated beyond a few hours.",
+     "past_medical_history": "HbSS diagnosed in infancy. Previous ACUTE CHEST SYNDROME aged 17, requiring exchange transfusion. Cholecystectomy for pigment gallstones aged 19. Avascular necrosis of the right hip. No stroke.",
+     "drug_history": "HYDROXYUREA 1 g daily — but he admits missing doses. PENICILLIN V 250 mg twice daily prophylaxis. FOLIC ACID 5 mg daily. Paracetamol and ibuprofen as needed. IMMUNISATIONS: pneumococcal, meningococcal, Haemophilus influenzae type b and annual influenza — CHECK THESE ARE UP TO DATE, because he is functionally asplenic.",
+     "the_analgesia_history_that_is_often_handled_badly": "ASK WHAT NORMALLY WORKS AND AT WHAT DOSE. Patients with sickle cell disease know their own analgesic requirements better than the clinician meeting them for the first time, and many have an individualised care plan. Many are also opioid-tolerant from repeated crises and therefore need HIGHER doses than an opioid-naive patient — this is TOLERANCE, not addiction. TREAT THE PATIENT ACCOUNT OF THEIR PAIN AS ACCURATE.",
+     "vitals": "BP 128/72 mmHg. Pulse 104. Respiratory rate 20. Temperature 37.2. SATURATION 96% on air — CHECK WHAT HIS BASELINE IS, because many patients with sickle cell disease run lower than 98%, and a \"normal\" reading may represent a fall. Pain score 9/10.",
+     "examination": "In obvious distress. Tenderness over both humeri, the lumbar spine and both femora, with no swelling, redness or warmth. CHEST CLEAR ON AUSCULTATION — but note that acute chest syndrome frequently has a NORMAL examination and a normal chest radiograph in the first 24 hours. Abdomen soft, SPLEEN NOT PALPABLE (expected in an adult with HbSS, who has usually auto-infarcted the spleen by adolescence). Mild scleral icterus from chronic haemolysis. No focal neurological deficit. Both legs examined for ulcers."
+    },
+    "section_2_mechanism": {
+     "the_molecular_defect": "A single point mutation in the beta-globin gene substitutes VALINE for GLUTAMIC ACID at position 6. Glutamic acid is charged and water-loving; valine is uncharged and water-hating. The result is HAEMOGLOBIN S.",
+     "why_it_sickles": "WHEN DEOXYGENATED, the exposed hydrophobic valine allows haemoglobin S molecules to POLYMERISE into long rigid fibres. These distort the red cell into the characteristic sickle shape. Early sickling is reversible on re-oxygenation, but repeated cycles damage the membrane and produce IRREVERSIBLY SICKLED CELLS.",
+     "the_two_consequences": {
+      "vaso_occlusion": "Rigid, sticky sickled cells obstruct the microcirculation. Downstream tissue becomes ISCHAEMIC, causing infarction and PAIN. In bone — where the marrow has a sluggish, low-oxygen circulation — this causes the severe deep bone pain of a crisis. It is genuine tissue infarction, which is why the pain is so severe.",
+      "haemolysis": "Sickled cells are fragile and survive roughly 10 to 20 days instead of 120. This causes chronic ANAEMIA, JAUNDICE from unconjugated bilirubin, PIGMENT GALLSTONES, and a high reticulocyte count as the marrow compensates. Free haemoglobin released into plasma also MOPS UP NITRIC OXIDE, causing vasoconstriction and contributing to pulmonary hypertension, priapism and leg ulcers."
+     },
+     "what_makes_sickling_worse": "HYPOXIA · ACIDOSIS, which shifts the oxygen dissociation curve and promotes deoxygenation · DEHYDRATION, which concentrates haemoglobin inside the cell and accelerates polymerisation · COLD, causing vasoconstriction · and INFECTION, which combines several of these. Every element of treatment is aimed at reversing one of them.",
+     "why_the_spleen_stops_working": "Repeated splenic infarction from childhood leads to AUTOSPLENECTOMY — a shrunken, fibrotic, non-functioning spleen, usually by adolescence. The spleen clears ENCAPSULATED ORGANISMS, so these patients are at lifelong risk of OVERWHELMING SEPSIS from Streptococcus pneumoniae, Haemophilus influenzae type b, Neisseria meningitidis and Salmonella. THIS IS WHY FEVER IN A SICKLE CELL PATIENT IS AN EMERGENCY, and why penicillin prophylaxis and vaccination are lifelong."
+    },
+    "section_3_differentials": {
+     "one_vaso_occlusive_crisis": "WORKING DIAGNOSIS. Supporting: known HbSS, typical distribution and character, cold precipitant, similar to previous crises.",
+     "two_acute_chest_syndrome": {
+      "why_it_dominates_the_case": "IT IS THE LEADING CAUSE OF DEATH IN SICKLE CELL DISEASE and it frequently DEVELOPS DURING an admission for limb pain, typically at 24 to 72 hours.",
+      "definition": "A NEW PULMONARY INFILTRATE on chest radiograph PLUS at least one of: fever, chest pain, cough, wheeze, tachypnoea or hypoxia.",
+      "the_vicious_cycle": "Pain causes SPLINTING — shallow breathing to avoid pain — which causes ATELECTASIS (lung collapse), which causes local HYPOXIA, which causes further SICKLING in the pulmonary vessels, which causes more infarction and more pain. Opioids worsen it by depressing respiration. So the treatment for the pain can precipitate the complication that kills.",
+      "the_prevention": "INCENTIVE SPIROMETRY — see management. This is the specific reason it is prescribed."
+     },
+     "three_infection_including_osteomyelitis": "Fever is an emergency in a functionally asplenic patient. OSTEOMYELITIS mimics a bone crisis exactly, and SALMONELLA is characteristically implicated in sickle cell disease. Distinguishing features: focal swelling, redness and warmth, persistent fever, and pain that does not follow the usual crisis pattern. If in doubt, image and culture.",
+     "four_splenic_sequestration": "Sudden pooling of blood in the spleen causing a RAPIDLY ENLARGING SPLEEN, a FALLING HAEMOGLOBIN and HYPOVOLAEMIC SHOCK. Mainly a disease of young children, since adults with HbSS have usually auto-infarcted, but it occurs in adults with HbSC and sickle-beta-thalassaemia. PALPATE THE SPLEEN.",
+     "five_aplastic_crisis": "PARVOVIRUS B19 infects red cell precursors and temporarily shuts down marrow production. The haemoglobin falls sharply and — the diagnostic clue — the RETICULOCYTE COUNT IS LOW, whereas in every other sickle complication it is high. Treated with transfusion until the marrow recovers.",
+     "six_stroke": "Sickle cell disease is a major cause of stroke in young people, including silent infarcts. Any new neurological symptom requires urgent imaging and usually EXCHANGE transfusion.",
+     "seven_avascular_necrosis_and_other_chronic_causes": "Hip or shoulder pain that persists between crises suggests avascular necrosis rather than acute vaso-occlusion — it needs imaging and orthopaedic input, not escalating opioids.",
+     "eight_other_acute_abdomen_causes": "Do not attribute every abdominal pain to a crisis. Cholecystitis from pigment stones, appendicitis and bowel pathology all occur, and are missed by assuming."
+    },
+    "section_4_investigations": {
+     "full_blood_count_and_the_most_important_comparison": {
+      "the_rule": "COMPARE EVERY RESULT WITH HIS STEADY-STATE BASELINE, NOT WITH THE LABORATORY NORMAL RANGE. A patient whose usual haemoglobin is 78 g/L is at his baseline at 78, and a \"reassuring\" 105 g/L would be strange and worth explaining. Find previous results — this single habit prevents most of the misinterpretation in sickle cell care.",
+      "expected": "Haemoglobin at or slightly below baseline. White cells often raised even without infection, because of chronic inflammation and marrow stimulation."
+     },
+     "reticulocyte_count": {
+      "why_it_is_the_key_test": "Reticulocytes are immature red cells, and the count shows whether the marrow is responding.",
+      "interpretation": "HIGH — expected, showing an active marrow compensating for haemolysis. LOW WITH A FALLING HAEMOGLOBIN — APLASTIC CRISIS, usually parvovirus B19. This is the single test that distinguishes it, and it changes management entirely."
+     },
+     "chest_radiograph": "INDICATED IF THERE IS ANY chest symptom, fever, hypoxia, or a fall in saturation. REMEMBER IT IS FREQUENTLY NORMAL IN THE FIRST 24 HOURS OF ACUTE CHEST SYNDROME — a normal film early does not exclude it, and it should be repeated if symptoms evolve.",
+     "bloods": "Urea and electrolytes · liver function including BILIRUBIN, which is raised from haemolysis · LDH, raised in haemolysis · CRP · GROUP AND SAVE WITH AN EXTENDED PHENOTYPE (see below) · blood cultures if febrile · and a reticulocyte count.",
+     "the_extended_red_cell_phenotype_point": "Patients with sickle cell disease receive many transfusions over a lifetime and readily form ALLOANTIBODIES against donor red cell antigens, which makes future cross-matching progressively harder and can cause DELAYED HAEMOLYTIC TRANSFUSION REACTIONS. Blood should be matched for an EXTENDED PHENOTYPE — at least Rh (C, D, E) and Kell — not just ABO and RhD. Arrange it early, because it takes the laboratory time.",
+     "oxygen_saturation_and_gas": "Continuous saturation monitoring, compared with his own baseline. Blood gas if hypoxic or breathless.",
+     "imaging_for_specific_concerns": "MRI for suspected osteomyelitis or avascular necrosis. Urgent CT or MRI brain for neurological symptoms. Abdominal ultrasound for abdominal pain or a palpable spleen. Transcranial Doppler is a screening tool in children, not an acute test.",
+     "what_is_not_useful": "A \"sickle test\" or haemoglobin electrophoresis in a patient with an established diagnosis adds nothing acutely. There is NO blood test that confirms a vaso-occlusive crisis — IT IS A CLINICAL DIAGNOSIS BASED ON THE PATIENT ACCOUNT OF THEIR PAIN. Waiting for a test to validate the pain is a failure of care."
+    },
+    "section_5_management": {
+     "a_analgesia_within_thirty_minutes": {
+      "the_standard": "STRONG ANALGESIA SHOULD BE GIVEN WITHIN 30 MINUTES OF ARRIVAL, and the pain reassessed within 30 minutes of that. THIS IS THE MOST FREQUENTLY BREACHED STANDARD IN SICKLE CELL CARE, and the delay is well documented to be driven by unfounded suspicion of drug-seeking. A patient in crisis is experiencing bone infarction.",
+      "the_regimen": "For SEVERE pain: MORPHINE 0.1 mg/kg intravenously or subcutaneously, titrated in 2 to 2.5 mg increments every 5 to 10 minutes until pain is controlled, then regular dosing or PATIENT-CONTROLLED ANALGESIA. FOR A 70 kg MAN a typical initial dose is 5 to 10 mg, but FOLLOW HIS INDIVIDUAL CARE PLAN if one exists, because he may routinely need more.",
+      "adjuncts": "PARACETAMOL 1 g orally or intravenously every 6 hours. An NSAID such as IBUPROFEN 400 mg three times daily or DICLOFENAC, PROVIDED renal function is acceptable and there is no contraindication — many patients with sickle cell disease have sickle nephropathy, so check the creatinine. A regular LAXATIVE with every opioid prescription, since constipation is universal and itself causes abdominal pain. An ANTIEMETIC as needed. ANTIHISTAMINE for opioid-induced itch.",
+      "avoid_pethidine": "PETHIDINE should be avoided. Its metabolite NORPETHIDINE accumulates, particularly with repeated dosing and in renal impairment, and causes agitation, tremor and SEIZURES. It has no advantage over morphine.",
+      "the_monitoring_that_must_accompany_opioids": "Respiratory rate, sedation score and oxygen saturation. OPIOIDS CAUSE HYPOVENTILATION, WHICH CAUSES ATELECTASIS AND HYPOXIA, WHICH PRECIPITATES ACUTE CHEST SYNDROME. This is precisely why incentive spirometry is prescribed alongside them, and why \"give more morphine\" is never the whole plan.",
+      "the_attitude_point": "Repeated attendance is a feature of the DISEASE, not of the patient character. Opioid tolerance from years of genuine crises is not addiction. Documented individualised care plans exist for exactly this reason — follow them."
+     },
+     "b_hydration": "Encourage oral fluids. If unable to drink or clinically dehydrated, give intravenous fluid at maintenance — typically around 1.5 times maintenance, guided by clinical assessment. DO NOT OVERLOAD: excessive fluid causes pulmonary oedema and CONTRIBUTES TO ACUTE CHEST SYNDROME. Monitor input, output and daily weight.",
+     "c_oxygen": "Give oxygen ONLY IF THE SATURATION IS BELOW HIS BASELINE or below about 95%. Routine oxygen in a normoxic patient does not help and may mask deterioration. Target his usual baseline.",
+     "d_the_incentive_spirometry_that_prevents_the_thing_that_kills": {
+      "what_it_is": "A simple handheld device the patient inhales through, raising a ball or piston, providing feedback on the depth of breath.",
+      "the_prescription": "TEN BREATHS EVERY TWO HOURS WHILE AWAKE.",
+      "why": "IT PREVENTS ACUTE CHEST SYNDROME. Pain causes splinting, splinting causes atelectasis, atelectasis causes local hypoxia, and hypoxia causes further sickling in the lung. Incentive spirometry interrupts that cycle at the first step. It is a cheap plastic device that reduces the incidence of the leading cause of death in this disease, and it is one of the most frequently omitted prescriptions on the drug chart."
+     },
+     "e_infection": "If febrile, take blood cultures and START BROAD-SPECTRUM ANTIBIOTICS PROMPTLY — he is functionally asplenic and can deteriorate within hours. Do not wait for a source. Continue penicillin prophylaxis. Check vaccinations are current.",
+     "f_thromboprophylaxis": "Sickle cell disease is PROTHROMBOTIC and these patients are immobile in pain. Prescribe low molecular weight heparin unless contraindicated. Venous thromboembolism is common and under-recognised in this group.",
+     "g_transfusion_and_the_distinction_that_matters": {
+      "the_default": "MOST VASO-OCCLUSIVE CRISES DO NOT NEED TRANSFUSION. Transfusing every crisis causes iron overload and alloimmunisation without benefit.",
+      "simple_transfusion": "For symptomatic anaemia significantly below baseline, aplastic crisis, or acute sequestration. Aim to correct symptoms, NOT to normalise the haemoglobin.",
+      "exchange_transfusion": "Removes the patient sickle-containing blood and replaces it with donor blood, REDUCING THE PERCENTAGE OF HAEMOGLOBIN S — typically to below 30% — WITHOUT RAISING THE TOTAL HAEMOGLOBIN AND VISCOSITY. INDICATIONS: acute chest syndrome with hypoxia · STROKE · multi-organ failure · refractory priapism · and before major surgery in selected patients.",
+      "the_hyperviscosity_warning": "DO NOT RAISE THE HAEMOGLOBIN ABOVE ABOUT 100 g/L WITH SIMPLE TRANSFUSION. Higher haemoglobin increases blood VISCOSITY, which SLOWS microvascular flow and CAN WORSEN VASO-OCCLUSION. This is exactly why exchange, rather than simple transfusion, is used when a rapid reduction in haemoglobin S is needed."
+     },
+     "h_specific_emergencies": {
+      "acute_chest_syndrome": "Oxygen, antibiotics covering typical and ATYPICAL organisms (Mycoplasma and Chlamydia are common triggers), careful fluid balance, adequate analgesia to allow deep breathing, incentive spirometry, bronchodilators if wheezy, and EXCHANGE TRANSFUSION if hypoxic or deteriorating. Involve intensive care early.",
+      "priapism": "A urological emergency. Encourage fluids, analgesia and exercise; if it persists beyond about 4 hours, ASPIRATION AND IRRIGATION of the corpora with a sympathomimetic such as phenylephrine is needed. Delay causes permanent erectile dysfunction. ASK ABOUT IT — patients do not volunteer it.",
+      "stroke": "Urgent imaging and URGENT EXCHANGE TRANSFUSION. Standard thrombolysis is not the pathway here.",
+      "aplastic_crisis": "Transfuse and support; it is self-limiting as the marrow recovers. Isolate, since parvovirus B19 is transmissible and dangerous to pregnant contacts and other haemolytic patients."
+     },
+     "i_before_discharge_the_part_that_reduces_the_next_admission": {
+      "hydroxyurea": {
+       "what_it_does": "Increases FETAL HAEMOGLOBIN (HbF), which does not participate in sickle polymer formation and therefore INTERFERES WITH SICKLING. It also lowers the white cell count and reduces cell adhesion.",
+       "the_evidence": "It reduces the frequency of painful crises and of acute chest syndrome, reduces transfusion need, and IMPROVES SURVIVAL. He has had 4 admissions in a year and admits missing doses — OPTIMISING HIS ADHERENCE IS THE HIGHEST-VALUE ACTION IN THE WHOLE ADMISSION.",
+       "monitoring": "Full blood count regularly for myelosuppression. Discuss contraception, as it is teratogenic.",
+       "the_conversation": "Find out WHY he misses it — side effects, cost, forgetfulness, fear of a \"chemotherapy drug\", or not understanding that it works only if taken continuously. Address the actual reason."
+      },
+      "the_rest": "Folic acid 5 mg daily for the demands of chronic haemolysis · penicillin prophylaxis · confirm vaccinations · annual retinal screening for proliferative sickle retinopathy · renal function monitoring · echocardiogram screening for pulmonary hypertension · leg ulcer care · trigger avoidance including cold and dehydration · a WRITTEN INDIVIDUALISED PAIN PLAN so the next emergency attendance is not another 3-hour wait for analgesia · genetic counselling · and specialist haematology follow-up."
+     }
+    },
+    "section_6_teaching_points": {
+     "bonus_1_analgesia_within_thirty_minutes_is_a_standard_not_a_kindness": "Strong analgesia within 30 minutes of arrival, reassessed within 30 minutes of that. It is the most frequently breached standard in sickle cell care, and the delay is documented to be driven by unfounded suspicion of drug-seeking. The patient is having bone infarction. Opioid tolerance from years of genuine crises is tolerance, not addiction.",
+     "bonus_2_incentive_spirometry_prevents_the_leading_cause_of_death": "Ten breaths every two hours while awake. Pain causes splinting, splinting causes atelectasis, atelectasis causes hypoxia, hypoxia causes sickling in the lung. A cheap plastic device breaks that cycle at the first step — and it is one of the most commonly omitted prescriptions on the chart.",
+     "bonus_3_the_reticulocyte_count_finds_the_aplastic_crisis": "In every other sickle complication the reticulocyte count is HIGH. In aplastic crisis from parvovirus B19 it is LOW with a falling haemoglobin. One test, entirely different management.",
+     "bonus_4_compare_with_his_baseline_not_the_normal_range": "A haemoglobin of 78 g/L may be completely normal for him. A haemoglobin that looks \"reassuring\" may represent a significant rise, and a saturation of 96% may be a fall from his usual. Find the previous results before interpreting anything.",
+     "bonus_5_do_not_raise_the_haemoglobin_above_100": "Higher haemoglobin raises blood viscosity, slows microvascular flow, and can WORSEN vaso-occlusion. This is why EXCHANGE transfusion — which lowers haemoglobin S without raising total haemoglobin — is used for acute chest syndrome and stroke, rather than simply transfusing more blood.",
+     "bonus_6_fever_is_an_emergency_because_the_spleen_is_gone": "Repeated infarction causes autosplenectomy by adolescence. Without a spleen, encapsulated organisms cause overwhelming sepsis within hours. That is why penicillin prophylaxis and vaccination are lifelong, and why a febrile sickle patient gets antibiotics immediately rather than a period of observation.",
+     "trap_1": "Ask about PRIAPISM directly. Patients do not volunteer it, and beyond a few hours it causes permanent impotence.",
+     "trap_2": "A normal chest radiograph in the first 24 hours does NOT exclude acute chest syndrome. Repeat it if symptoms evolve.",
+     "trap_3": "Avoid pethidine — norpethidine accumulates and causes seizures.",
+     "trap_4": "Do not over-hydrate. Fluid overload contributes to acute chest syndrome.",
+     "trap_5": "Osteomyelitis, characteristically Salmonella, mimics a bone crisis exactly. Focal swelling, warmth and persistent fever should prompt imaging.",
+     "trap_6": "Request an EXTENDED red cell phenotype early — these patients alloimmunise readily and future cross-matching gets harder.",
+     "trap_7": "Prescribe a laxative with every opioid, and thromboprophylaxis for every immobile patient.",
+     "one_line_summary": "Vaso-occlusive crisis in HbSS. Strong analgesia within 30 minutes, hydration without overload, incentive spirometry ten breaths every two hours to prevent acute chest syndrome, transfuse only for a specific indication — and fix the hydroxyurea adherence before he leaves."
+    }
+   },
+   "glossary": [
+    {
+     "abbr": "CRP",
+     "full": "C-reactive protein"
+    },
+    {
+     "abbr": "CT",
+     "full": "computed tomography"
+    },
+    {
+     "abbr": "MRI",
+     "full": "magnetic resonance imaging"
+    },
+    {
+     "abbr": "NSAID",
+     "full": "non-steroidal anti-inflammatory drug",
+     "gloss": "ibuprofen, naproxen, diclofenac — as distinct from corticosteroids"
+    }
+   ],
+   "specialty": "Medicine — Haematology",
+   "teaching_case": true,
+   "inputs": [],
+   "logic": {},
+   "outputs": [],
+   "warnings": [
+    "STRONG ANALGESIA WITHIN 30 MINUTES of arrival, reassessed within 30 minutes. This is a standard, and it is the most frequently breached one in sickle cell care.",
+    "Opioid tolerance from years of genuine crises is TOLERANCE, not addiction. Follow the patient individualised care plan.",
+    "Compare every result with the patient STEADY-STATE BASELINE, not the laboratory normal range.",
+    "PRESCRIBE INCENTIVE SPIROMETRY — ten breaths every two hours — it prevents acute chest syndrome, the leading cause of death.",
+    "Opioids cause hypoventilation, which precipitates acute chest syndrome. Monitor respiratory rate, sedation and saturation.",
+    "A normal chest radiograph in the first 24 hours does NOT exclude acute chest syndrome.",
+    "A LOW reticulocyte count with a falling haemoglobin means APLASTIC CRISIS from parvovirus B19.",
+    "FEVER IS AN EMERGENCY — the patient is functionally asplenic. Cultures and antibiotics immediately.",
+    "Do NOT raise the haemoglobin above about 100 g/L — hyperviscosity worsens vaso-occlusion. Use exchange transfusion when haemoglobin S must be lowered.",
+    "AVOID PETHIDINE — norpethidine accumulates and causes seizures.",
+    "Do not over-hydrate — fluid overload contributes to acute chest syndrome.",
+    "ASK ABOUT PRIAPISM — patients do not volunteer it, and it causes permanent impotence if untreated beyond a few hours.",
+    "Request an EXTENDED red cell phenotype (Rh and Kell at minimum), not just ABO and RhD.",
+    "Prescribe a laxative with every opioid and thromboprophylaxis for every immobile patient.",
+    "Doses here are teaching examples for an adult. Follow your local sickle cell protocol and any individual care plan."
+   ],
+   "limitations": [
+    "A WORKED TEACHING CASE, not a protocol. Analgesic regimens, transfusion thresholds and exchange indications follow local haematology guidance and individual care plans.",
+    "Paediatric management, including splenic sequestration and transcranial Doppler screening, differs and is not covered here."
+   ],
+   "flashcards": [
+    {
+     "q": "How quickly must strong analgesia be given?",
+     "a": "Within 30 minutes of arrival, reassessed within 30 minutes of that."
+    },
+    {
+     "q": "What is the molecular defect?",
+     "a": "Valine replaces glutamic acid at position 6 of the beta-globin chain, allowing HbS to polymerise when deoxygenated."
+    },
+    {
+     "q": "Why is incentive spirometry prescribed?",
+     "a": "Ten breaths every two hours prevents the splinting-atelectasis-hypoxia-sickling cycle that causes acute chest syndrome."
+    },
+    {
+     "q": "Define acute chest syndrome.",
+     "a": "A new pulmonary infiltrate plus fever, chest pain, cough, wheeze, tachypnoea or hypoxia."
+    },
+    {
+     "q": "What does a LOW reticulocyte count with falling haemoglobin mean?",
+     "a": "Aplastic crisis, usually parvovirus B19."
+    },
+    {
+     "q": "Why is fever an emergency?",
+     "a": "Autosplenectomy leaves the patient at risk of overwhelming sepsis from encapsulated organisms within hours."
+    },
+    {
+     "q": "Why must haemoglobin not be raised above about 100 g/L?",
+     "a": "Hyperviscosity slows microvascular flow and worsens vaso-occlusion."
+    },
+    {
+     "q": "When is exchange rather than simple transfusion used?",
+     "a": "Acute chest syndrome with hypoxia, stroke, multi-organ failure, refractory priapism, and before major surgery in selected patients."
+    },
+    {
+     "q": "Why is pethidine avoided?",
+     "a": "Its metabolite norpethidine accumulates and causes agitation, tremor and seizures."
+    },
+    {
+     "q": "How does hydroxyurea work?",
+     "a": "It raises fetal haemoglobin, which does not join the sickle polymer, and reduces crises, acute chest syndrome and mortality."
+    },
+    {
+     "q": "Which organism characteristically causes osteomyelitis here?",
+     "a": "Salmonella — and it mimics a bone crisis exactly."
+    },
+    {
+     "q": "Why request an extended red cell phenotype?",
+     "a": "Repeated transfusion causes alloimmunisation; matching Rh and Kell reduces future cross-match difficulty and delayed reactions."
+    }
+   ],
+   "checkboxes": [
+    "Strong analgesia given within 30 minutes and reassessed",
+    "Individualised care plan checked and followed",
+    "Chest, fever, abdominal, neurological and priapism screening questions asked",
+    "Results compared with steady-state baseline",
+    "Reticulocyte count sent",
+    "Incentive spirometry prescribed — ten breaths every two hours",
+    "Respiratory rate and sedation monitored with opioids",
+    "Laxative and antiemetic prescribed",
+    "Thromboprophylaxis prescribed",
+    "Blood cultures and antibiotics if febrile",
+    "Extended red cell phenotype requested if transfusion likely",
+    "Hydroxyurea adherence addressed before discharge",
+    "Vaccinations, penicillin prophylaxis and screening confirmed"
+   ],
+   "related_slugs": [
+    "sickle_cell_disease_crises_and_the_complications_that_kill"
+   ],
+   "patient_integration": null,
+   "governance": {
+    "evidence_tier": "T5_textbook_or_standard_teaching",
+    "verification_status": "standard_teaching",
+    "sources": [],
+    "nigeria_overlay": null,
+    "build_date": "2026-08-07",
+    "review_interval_months": 12,
+    "next_review_due": "2027-08-07",
+    "clinical_reviewer": null,
+    "approved_for_release": false,
+    "local_confirmation_required": true,
+    "supersedes": null,
+    "content_hash": "1a4114cefc761f7e"
+   }
+  },
+  {
+   "id": "AS-CASE-0018",
+   "schema_version": "4.0.0",
+   "content_release": "AWIBI-SCOUT-CONTENT-2026.08.R3",
+   "type": "case",
+   "title": "CASE: A Temperature of 38.2 Ten Days After Chemotherapy",
+   "short_title": "Case: neutropenic sepsis",
+   "slug": "case_a_temperature_of_38_2_ten_days_after_chemotherapy",
+   "also_known_as": [
+    "case neutropenic sepsis",
+    "febrile neutropenia case",
+    "neutropenic fever",
+    "piperacillin tazobactam",
+    "tazocin neutropenic",
+    "masc score",
+    "g-csf",
+    "chemotherapy fever",
+    "door to needle antibiotic"
+   ],
+   "summary": "A 58-year-old ten days after chemotherapy with a single fever spike and no other symptoms. Teaches why antibiotics go in within one hour on suspicion alone, why the absence of signs is the disease rather than reassurance, and why a normal-looking patient can be dead by morning.",
+   "domains": [
+    "haematology",
+    "oncology",
+    "emergency_medicine",
+    "infectious_disease"
+   ],
+   "intents": [
+    "identify",
+    "act"
+   ],
+   "populations": [
+    "all_ages"
+   ],
+   "contexts": [
+    "routine"
+   ],
+   "hazard": "critical",
+   "urgency": "immediate",
+   "jurisdiction": "international",
+   "search": {
+    "terms": [
+     "after",
+     "case",
+     "case neutropenic sepsis",
+     "case: a temperature of 38.2 ten days after chemotherapy",
+     "case: neutropenic sepsis",
+     "central line infection",
+     "chemotherapy",
+     "chemotherapy fever",
+     "days",
+     "door to needle antibiotic",
+     "febrile neutropenia",
+     "febrile neutropenia case",
+     "filgrastim",
+     "g-csf",
+     "immunosuppression",
+     "lactate",
+     "masc score",
+     "meropenem",
+     "nadir",
+     "neutropenic fever",
+     "neutropenic sepsis",
+     "neutrophil count",
+     "piperacillin tazobactam",
+     "sepsis six",
+     "tazocin neutropenic",
+     "temperature",
+     "tumour lysis"
+    ],
+    "ambiguous_terms": [],
+    "phrases": [],
+    "field_weights": {
+     "title": 8,
+     "short_title": 6,
+     "also_known_as": 5,
+     "terms": 4,
+     "summary": 2,
+     "body": 1,
+     "flashcards": 0.5
+    }
+   },
+   "body": {
+    "the_one_line": "58-year-old woman, day 10 after her second cycle of chemotherapy for breast cancer, attends because she recorded a temperature of 38.2 at home. She feels \"a bit off\" but has no cough, no dysuria, no diarrhoea and no localising symptoms at all.",
+    "section_1_clerking": {
+     "the_rule_that_governs_the_entire_case": "A TEMPERATURE OF 38.0 OR ABOVE — OR ANY UNEXPLAINED DETERIORATION — IN A PATIENT WHO HAS HAD CHEMOTHERAPY IN THE LAST SIX WEEKS IS NEUTROPENIC SEPSIS UNTIL PROVEN OTHERWISE. It is treated as an emergency BEFORE the blood count is known, because waiting for confirmation is what kills these patients.",
+     "history": "Second cycle of chemotherapy 10 days ago. Recorded 38.2 at home this afternoon using the thermometer the oncology unit gave her. No cough, no sputum, no breathlessness, no urinary symptoms, no abdominal pain, no diarrhoea, no rash, no sore throat. She has a PICC line (peripherally inserted central catheter) in the right arm which she says looks normal. She \"did not want to make a fuss\" and waited four hours before coming in.",
+     "reading_the_clues": {
+      "day_10": "THE NADIR — the point at which the neutrophil count is at its lowest — is typically DAYS 7 TO 14 after chemotherapy. She is precisely in that window. Knowing the nadir means you can anticipate the risk rather than react to it.",
+      "no_localising_symptoms": "THIS IS THE MOST IMPORTANT AND MOST MISUNDERSTOOD FEATURE. Neutrophils produce the signs of infection — pus, consolidation on a chest film, redness, swelling, the exudate on a tonsil. WITHOUT NEUTROPHILS, THOSE SIGNS CANNOT FORM. A neutropenic patient with pneumonia may have a clear chest radiograph; with a urinary infection, a clean-looking urine dipstick; with an abscess, no pus. THE ABSENCE OF SIGNS IS THE DISEASE, NOT REASSURANCE.",
+      "she_looks_well": "Equally dangerous. Patients with neutropenic sepsis can look entirely well and then deteriorate into septic shock over a few hours. There is no clinical impression that safely rules it out.",
+      "the_picc_line": "An indwelling central catheter is a direct route into the bloodstream and a common source. Examine the site, and take blood cultures FROM THE LINE AS WELL AS PERIPHERALLY.",
+      "the_four_hour_delay": "Common, and a target for patient education. Every patient starting chemotherapy should leave with a thermometer, a 24-hour contact number, and an instruction that fever means come in NOW, not in the morning."
+     },
+     "past_medical_history": "Breast cancer, on adjuvant chemotherapy. Type 2 diabetes. No other significant history.",
+     "drug_history": "Chemotherapy regimen as per protocol. Metformin. DEXAMETHASONE as part of her antiemetic regimen — IMPORTANT, because steroids blunt the fever response, so a patient on steroids may be septic WITHOUT a temperature at all.",
+     "vitals": "BP 108/64 mmHg (her usual is 130/80 — A FALL, even though the number looks acceptable). Pulse 112. Respiratory rate 22. Temperature 38.4. Saturation 96% on air. Capillary refill 3 seconds. Glucose 9.1.",
+     "the_vitals_reading": "A raised respiratory rate is the EARLIEST and most sensitive sign of deterioration, and it is the most frequently unrecorded observation on a chart. Her blood pressure has fallen relative to HER OWN baseline. She is not yet shocked, but she is moving.",
+     "examination": "EXAMINE EVERY POTENTIAL SOURCE, knowing signs may be absent: mouth for mucositis and candida · skin and all line sites · PICC exit site for redness or tenderness · chest · abdomen · perineum and PERIANAL AREA (a perianal abscess is a classic occult source, and it is missed because nobody looks) · any recent wounds. DO NOT PERFORM A DIGITAL RECTAL EXAMINATION in a neutropenic patient — it risks bacteraemia and mucosal injury. Here: mild oral mucositis, PICC site clean, chest clear, abdomen soft, perineum normal."
+    },
+    "section_2_mechanism": {
+     "what_neutropenia_is": "A NEUTROPHIL COUNT below 1.0 x 10^9/L, with SEVERE neutropenia below 0.5. Normal is roughly 2.0 to 7.5 x 10^9/L. Neutrophils are the first-line phagocytes against bacteria and fungi.",
+     "why_chemotherapy_causes_it": "Cytotoxic drugs kill rapidly dividing cells. That is how they kill cancer, but bone marrow precursors, gut mucosa and hair follicles also divide rapidly — hence myelosuppression, mucositis and alopecia from the same mechanism. Neutrophils have a circulating half-life of only about 6 to 8 hours, so once production stops the count falls quickly.",
+     "the_nadir": "Production stops, existing neutrophils are consumed, and the count reaches its lowest point at DAY 7 TO 14, recovering by around day 21. The timing is predictable, which is why the date of the last cycle is a vital piece of history.",
+     "the_two_breaches": [
+      "1. LOSS OF THE CELLULAR DEFENCE — no neutrophils to contain organisms at the point of entry, so a local infection becomes a bloodstream infection quickly.",
+      "2. LOSS OF THE BARRIER — chemotherapy damages gut mucosa, causing MUCOSITIS. The gut wall becomes leaky, and the patient own gut flora translocate directly into the blood. THIS IS WHY GRAM-NEGATIVE ORGANISMS FROM THE GUT DOMINATE, AND WHY THE EMPIRICAL ANTIBIOTIC MUST COVER PSEUDOMONAS."
+     ],
+     "the_organisms": "Historically Gram-negative — Escherichia coli, Klebsiella, PSEUDOMONAS AERUGINOSA, which is why antipseudomonal cover is mandatory. Gram-positive organisms have become commoner with indwelling lines — coagulase-negative staphylococci, Staphylococcus aureus, streptococci. FUNGAL infection, particularly Candida and Aspergillus, becomes important in PROLONGED neutropenia beyond about 4 to 7 days."
+    },
+    "section_3_differentials": {
+     "the_framing": "The differential is not \"is this infection or not\" — it is \"WHERE is the infection\", asked while the antibiotic is already running.",
+     "sources_to_consider": "Chest · urinary tract · LINE-RELATED bloodstream infection · gut translocation from mucositis · PERIANAL infection · skin and soft tissue · sinuses · and CNS. Roughly half of febrile neutropenic episodes never have a source identified, and that does not change the management.",
+     "non_infective_causes_of_fever": "Drug fever · transfusion reaction · TUMOUR FEVER from the malignancy itself · TUMOUR LYSIS SYNDROME · venous thromboembolism, which is common in cancer and causes fever. NONE OF THESE MAY BE ASSUMED UNTIL SEPSIS HAS BEEN TREATED. You treat first and reconsider later.",
+     "the_patient_without_a_fever": "Neutropenic sepsis can present with HYPOTHERMIA, confusion, hypotension or simply feeling unwell, particularly in patients on steroids. Do not require a temperature to make the diagnosis."
+    },
+    "section_4_investigations": {
+     "the_governing_rule": "INVESTIGATIONS DO NOT DELAY THE ANTIBIOTIC. Take the cultures as you site the cannula, then give the drug. If cultures are difficult, give the drug.",
+     "blood_cultures": "PERIPHERAL cultures AND cultures FROM EACH LUMEN OF THE CENTRAL LINE, labelled by site. Comparing them identifies a line as the source — if the line cultures turn positive significantly earlier than the peripheral ones, that \"differential time to positivity\" points to line infection.",
+     "full_blood_count": "Confirms neutropenia and its severity. Also shows platelets, which may be low and affects procedures. Expected here: neutrophils 0.3 x 10^9/L — severe neutropenia.",
+     "bloods": "Urea and electrolytes · liver function · CRP · LACTATE, which is the key marker of tissue hypoperfusion and of severity · clotting · glucose · and blood gas if unwell. In a patient with a high tumour burden, add URATE, PHOSPHATE, POTASSIUM and CALCIUM for tumour lysis.",
+     "cultures_and_samples": "Urine culture · sputum if productive · stool if diarrhoea, including Clostridioides difficile testing · swabs of any wound or line site · viral respiratory swabs.",
+     "chest_radiograph": "Perform it — but REMEMBER IT MAY BE NORMAL DESPITE PNEUMONIA, because without neutrophils there is no consolidation to see. A normal film does not exclude a chest source, and CT is far more sensitive if suspicion persists.",
+     "risk_stratification": "The MASCC score (Multinational Association for Supportive Care in Cancer) stratifies patients into low and high risk, and identifies a subgroup who may be suitable for oral antibiotics and early discharge. USE IT AFTER the first intravenous dose has been given and the patient assessed — never as a reason to delay treatment."
+    },
+    "section_5_management": {
+     "a_the_door_to_needle_target": {
+      "the_standard": "BROAD-SPECTRUM INTRAVENOUS ANTIBIOTICS WITHIN ONE HOUR OF ARRIVAL — and ideally within 30 minutes. This is the single measure most strongly associated with survival, and it is the standard against which units are audited. Give it on SUSPICION. DO NOT WAIT for the full blood count to confirm neutropenia; do not wait for the chest film; do not wait for a senior review.",
+      "why_it_is_missed": "Because the patient looks well, has no localising symptoms, and is often triaged as low priority. The presentation is deliberately unimpressive. That is the trap."
+     },
+     "b_the_antibiotic": {
+      "first_line": "PIPERACILLIN WITH TAZOBACTAM 4.5 g intravenously every 6 to 8 hours. It covers Gram-negatives INCLUDING PSEUDOMONAS, Gram-positives and anaerobes — which is exactly the spectrum required.",
+      "penicillin_allergy": "MEROPENEM 1 g intravenously every 8 hours, or a combination such as CIPROFLOXACIN plus a glycopeptide, according to local policy and the nature of the allergy. Establish what the \"allergy\" actually was — a documented rash decades ago is not the same as anaphylaxis, and mislabelled penicillin allergy leads to worse antibiotic choices.",
+      "when_to_add_a_glycopeptide": "ADD VANCOMYCIN or TEICOPLANIN if there is suspected LINE INFECTION, evident skin or soft tissue infection, known MRSA colonisation, or haemodynamic instability. It is NOT added routinely, because it does not improve outcomes in unselected patients and drives resistance.",
+      "antifungals": "Considered if fever persists beyond about 4 to 7 days of appropriate antibacterials in a persistently neutropenic patient — a specialist decision, guided by imaging and fungal markers."
+     },
+     "c_the_sepsis_six_within_the_hour": "GIVE oxygen if hypoxic · GIVE intravenous antibiotics · GIVE intravenous fluid · TAKE blood cultures · TAKE lactate · TAKE urine output measurement (catheterise if needed). Three in, three out, all within one hour.",
+     "d_resuscitation": "Balanced crystalloid 500 mL boluses with reassessment after each. If hypotension persists after adequate fluid, she needs VASOPRESSOR support and critical care — escalate early rather than repeating boluses. INVOLVE CRITICAL CARE EARLY: a neutropenic patient has no physiological reserve and deteriorates faster than a non-neutropenic one.",
+     "e_the_line": "Do not remove a central line reflexively. Remove it for a tunnel infection, persistent bacteraemia despite appropriate antibiotics, haemodynamic instability, or specific organisms — Staphylococcus aureus, Pseudomonas, Candida — where line removal is required for cure. Decide with microbiology.",
+     "f_supportive_care": "Isolate in a single room. Strict hand hygiene — THE MOST EFFECTIVE INFECTION CONTROL MEASURE AVAILABLE AND THE ONE MOST OFTEN SKIPPED. Mouth care for mucositis. Avoid rectal examinations, suppositories and rectal thermometers. Monitor observations at least hourly initially. Nutrition. Thromboprophylaxis if the platelet count permits — cancer is prothrombotic.",
+     "g_g_csf": "GRANULOCYTE COLONY-STIMULATING FACTOR (for example FILGRASTIM) stimulates neutrophil production. It is NOT routinely given for an established febrile neutropenic episode, because it shortens neutropenia without clearly improving survival. It IS used as PRIMARY PROPHYLAXIS in regimens with a high risk of febrile neutropenia, and as secondary prophylaxis after a previous episode. Its use here is an oncology decision.",
+     "h_de_escalation_and_the_conversation_that_prevents_the_next_episode": {
+      "review": "Review at 48 hours with culture results. De-escalate to a narrower agent if an organism is identified, or continue if the patient remains neutropenic and febrile. Duration is usually until the neutrophil count recovers above 0.5 and the patient is afebrile.",
+      "the_oncology_decision": "The next chemotherapy cycle may need a dose reduction, a delay, or G-CSF prophylaxis. That decision belongs to the oncology team and must be explicitly communicated, not left to the next clerking.",
+      "patient_education": "She waited four hours because she \"did not want to make a fuss\". BEFORE DISCHARGE: give her a thermometer, a written 24-hour contact number, an alert card stating she is on chemotherapy, and an unambiguous instruction — ANY temperature of 38 or above, or feeling unwell, means attend IMMEDIATELY, at any hour, and show the card at the door. This is the intervention that converts a 4-hour delay into a 30-minute one, and it saves more lives than the choice between one antibiotic and another."
+     }
+    },
+    "section_6_teaching_points": {
+     "bonus_1_the_absence_of_signs_is_the_disease": "Neutrophils create the visible signs of infection — pus, consolidation, redness, exudate. Without them, a neutropenic patient with pneumonia has a clear chest film and one with an abscess has no pus. A \"normal\" examination and a \"normal\" chest radiograph are entirely compatible with life-threatening infection. This inverts normal clinical reasoning, which is why it must be taught explicitly.",
+     "bonus_2_antibiotics_within_one_hour_on_suspicion": "Not after the blood count, not after the chest film, not after senior review. Door-to-needle time is the measure most strongly associated with survival. The presentation is deliberately unimpressive — a well-looking patient with a single fever spike — and that is precisely the trap.",
+     "bonus_3_why_pseudomonas_cover_is_mandatory": "Chemotherapy damages gut mucosa, so the patient own gut flora translocate directly into the bloodstream. That is why Gram-negatives including Pseudomonas dominate, and why an antibiotic without antipseudomonal activity is inadequate no matter how broad it otherwise looks.",
+     "bonus_4_the_nadir_lets_you_predict_rather_than_react": "Days 7 to 14 after the cycle, recovering by about day 21. Ask the date of the last chemotherapy in every unwell cancer patient — it tells you where in that curve they are.",
+     "bonus_5_steroids_hide_the_fever": "A patient on dexamethasone as an antiemetic may be septic without a temperature. Hypothermia, confusion, hypotension or simply feeling unwell are enough. Do not require a fever to make the diagnosis.",
+     "trap_1": "Do NOT perform a digital rectal examination or give suppositories — risk of bacteraemia and mucosal injury. But DO look at the perineum; a perianal source is classic and missed because nobody looks.",
+     "trap_2": "Take cultures from EVERY lumen of the line as well as peripherally — differential time to positivity identifies the line as the source.",
+     "trap_3": "Do not add vancomycin routinely — reserve it for suspected line or skin infection, MRSA colonisation, or instability.",
+     "trap_4": "Record the RESPIRATORY RATE. It is the earliest sign of deterioration and the most frequently omitted observation.",
+     "trap_5": "Interpret blood pressure against the patient own baseline. 108/64 is a significant fall for someone who runs at 130/80.",
+     "trap_6": "G-CSF is not a treatment for an established episode — it is prophylaxis, and that is an oncology decision.",
+     "one_line_summary": "Neutropenic sepsis at the day-10 nadir. Cultures as you cannulate, piperacillin-tazobactam within the hour on suspicion alone, sepsis six completed, critical care alerted early — and she leaves with a thermometer, a card and an instruction never to wait four hours again."
+    }
+   },
+   "glossary": [
+    {
+     "abbr": "CRP",
+     "full": "C-reactive protein"
+    },
+    {
+     "abbr": "CSF",
+     "full": "cerebrospinal fluid"
+    },
+    {
+     "abbr": "CT",
+     "full": "computed tomography"
+    },
+    {
+     "abbr": "GAVE",
+     "full": "gastric antral vascular ectasia",
+     "gloss": "\"watermelon stomach\""
+    },
+    {
+     "abbr": "LAST",
+     "full": "local anaesthetic systemic toxicity"
+    },
+    {
+     "abbr": "MRSA",
+     "full": "meticillin-resistant Staphylococcus aureus"
+    }
+   ],
+   "specialty": "Medicine — Haematology",
+   "teaching_case": true,
+   "inputs": [],
+   "logic": {},
+   "outputs": [],
+   "warnings": [
+    "ANY temperature of 38 or above within 6 weeks of chemotherapy is NEUTROPENIC SEPSIS until proven otherwise.",
+    "BROAD-SPECTRUM INTRAVENOUS ANTIBIOTICS WITHIN ONE HOUR — on suspicion, before the blood count, before the chest film, before senior review.",
+    "THE ABSENCE OF SIGNS IS THE DISEASE. Without neutrophils there is no pus, no consolidation, no redness — a normal examination and a normal chest film do not exclude severe infection.",
+    "A patient who looks well can be in septic shock within hours. There is no clinical impression that rules this out.",
+    "Antipseudomonal cover is MANDATORY — gut mucositis translocates Gram-negative flora directly into the blood.",
+    "Steroids blunt the fever response — a septic patient on dexamethasone may have no temperature at all.",
+    "Do NOT perform a digital rectal examination or give suppositories — but DO inspect the perineum for an occult perianal source.",
+    "Take blood cultures from EVERY lumen of the central line as well as peripherally.",
+    "Do NOT add vancomycin routinely — reserve it for line or skin infection, MRSA colonisation, or instability.",
+    "RECORD THE RESPIRATORY RATE — it is the earliest sign of deterioration and the most frequently omitted observation.",
+    "Interpret blood pressure against the patient own baseline, not the normal range.",
+    "G-CSF is prophylaxis, not treatment for an established episode.",
+    "Doses here are teaching examples for an adult with normal renal function. Follow your local neutropenic sepsis protocol."
+   ],
+   "limitations": [
+    "A WORKED TEACHING CASE, not a protocol. Empirical antibiotic choice is dictated by local resistance patterns and formulary.",
+    "Risk stratification tools and outpatient management pathways vary between services."
+   ],
+   "flashcards": [
+    {
+     "q": "What defines neutropenic sepsis as an emergency?",
+     "a": "Temperature 38 or above, or any unexplained deterioration, within 6 weeks of chemotherapy — treated before the count is known."
+    },
+    {
+     "q": "What is the door-to-needle target?",
+     "a": "Broad-spectrum intravenous antibiotics within one hour, ideally 30 minutes, on suspicion alone."
+    },
+    {
+     "q": "Why may examination and chest radiograph be normal?",
+     "a": "Neutrophils produce the signs of infection — without them there is no pus, consolidation or redness."
+    },
+    {
+     "q": "When is the neutrophil nadir?",
+     "a": "Days 7 to 14 after chemotherapy, recovering by about day 21."
+    },
+    {
+     "q": "Why must the antibiotic cover Pseudomonas?",
+     "a": "Mucositis lets gut Gram-negative flora translocate directly into the bloodstream."
+    },
+    {
+     "q": "Give a first-line regimen.",
+     "a": "Piperacillin with tazobactam 4.5 g intravenously every 6 to 8 hours."
+    },
+    {
+     "q": "When is a glycopeptide added?",
+     "a": "Suspected line or skin infection, known MRSA colonisation, or haemodynamic instability — not routinely."
+    },
+    {
+     "q": "Why take cultures from every line lumen?",
+     "a": "Differential time to positivity against peripheral cultures identifies the line as the source."
+    },
+    {
+     "q": "Why can a septic patient on steroids have no fever?",
+     "a": "Steroids blunt the fever response — hypothermia, confusion or simply feeling unwell are enough."
+    },
+    {
+     "q": "What must not be done in a neutropenic patient, and what must?",
+     "a": "No rectal examination or suppositories — but DO inspect the perineum for a perianal source."
+    },
+    {
+     "q": "What is the role of G-CSF?",
+     "a": "Prophylaxis in high-risk regimens or after a previous episode — not treatment for an established one."
+    }
+   ],
+   "checkboxes": [
+    "Date of last chemotherapy established",
+    "Antibiotic given within one hour of arrival",
+    "Blood cultures taken peripherally and from every line lumen",
+    "Sepsis six completed within the hour",
+    "Lactate measured",
+    "Perineum inspected; no rectal examination performed",
+    "Respiratory rate recorded",
+    "Blood pressure compared with the patient own baseline",
+    "Critical care alerted if hypotension persists after fluid",
+    "Isolation and hand hygiene enforced",
+    "Microbiology consulted about line management",
+    "Oncology informed for next-cycle dose and G-CSF decision",
+    "Thermometer, alert card and 24-hour contact number given before discharge"
+   ],
+   "related_slugs": [
+    "sepsis_recognition_the_sepsis_six_and_why_the_first_hour_decides"
+   ],
+   "patient_integration": null,
+   "governance": {
+    "evidence_tier": "T5_textbook_or_standard_teaching",
+    "verification_status": "standard_teaching",
+    "sources": [],
+    "nigeria_overlay": null,
+    "build_date": "2026-08-07",
+    "review_interval_months": 12,
+    "next_review_due": "2027-08-07",
+    "clinical_reviewer": null,
+    "approved_for_release": false,
+    "local_confirmation_required": true,
+    "supersedes": null,
+    "content_hash": "3b73cc26300de9c4"
+   }
+  },
+  {
+   "id": "AS-CASE-0019",
+   "schema_version": "4.0.0",
+   "content_release": "AWIBI-SCOUT-CONTENT-2026.08.R3",
+   "type": "case",
+   "title": "CASE: Bruising, Exhaustion and a White Cell Count of 180",
+   "short_title": "Case: acute leukaemia presentation",
+   "slug": "case_bruising_exhaustion_and_a_white_cell_count_of_180",
+   "also_known_as": [
+    "case leukaemia",
+    "acute leukaemia presentation",
+    "blast crisis case",
+    "hyperleukocytosis",
+    "leukostasis",
+    "tumour lysis syndrome case",
+    "rasburicase",
+    "auer rods",
+    "apl dic",
+    "pancytopenia case"
+   ],
+   "summary": "A 24-year-old with three weeks of bruising and fatigue whose white count is 180 x 10^9/L. Teaches the pancytopenia triad, why a very high white count is itself an emergency, why transfusion can kill here, and how tumour lysis syndrome is prevented rather than treated.",
+   "domains": [
+    "haematology",
+    "oncology",
+    "emergency_medicine"
+   ],
+   "intents": [
+    "identify",
+    "act"
+   ],
+   "populations": [
+    "all_ages"
+   ],
+   "contexts": [
+    "routine"
+   ],
+   "hazard": "critical",
+   "urgency": "immediate",
+   "jurisdiction": "international",
+   "search": {
+    "terms": [
+     "acute leukaemia presentation",
+     "acute lymphoblastic leukaemia",
+     "acute myeloid leukaemia",
+     "acute promyelocytic leukaemia",
+     "allopurinol",
+     "apl dic",
+     "atra",
+     "auer rods",
+     "blast crisis case",
+     "blasts",
+     "bone marrow aspirate",
+     "bruising",
+     "case",
+     "case leukaemia",
+     "case: acute leukaemia presentation",
+     "case: bruising, exhaustion and a white cell count of 180",
+     "cell",
+     "count",
+     "disseminated intravascular coagulation",
+     "exhaustion",
+     "hyperleukocytosis",
+     "immunophenotyping",
+     "leukaemia",
+     "leukapheresis",
+     "leukostasis",
+     "pancytopenia",
+     "pancytopenia case",
+     "rasburicase",
+     "tumour lysis syndrome",
+     "tumour lysis syndrome case",
+     "urate",
+     "white"
+    ],
+    "ambiguous_terms": [],
+    "phrases": [],
+    "field_weights": {
+     "title": 8,
+     "short_title": 6,
+     "also_known_as": 5,
+     "terms": 4,
+     "summary": 2,
+     "body": 1,
+     "flashcards": 0.5
+    }
+   },
+   "body": {
+    "the_one_line": "24-year-old man with three weeks of increasing tiredness, bruising on both legs he cannot account for, bleeding gums when brushing his teeth, and a sore throat that has not settled. His full blood count shows a white cell count of 180 x 10^9/L.",
+    "section_1_clerking": {
+     "history": "Three weeks of progressive fatigue, now breathless climbing one flight of stairs. Bruises appearing on his legs without injury. Gums bleed on brushing. A sore throat for 10 days that did not respond to a course of amoxicillin from his general practitioner. Drenching night sweats. He has lost about 5 kg. No recent travel. No new medication.",
+     "reading_the_clues": {
+      "the_triad_that_should_trigger_the_thought": "ANAEMIA (fatigue, breathlessness, pallor) + THROMBOCYTOPENIA (bruising, bleeding gums, petechiae) + NEUTROPENIA (an infection that will not settle). THREE CELL LINES FAILING AT ONCE IS PANCYTOPENIA, and pancytopenia in a young person points at the BONE MARROW. A single low cell line has many causes; all three together narrows the field sharply.",
+      "the_sore_throat_that_did_not_respond_to_antibiotics": "Frequently the presenting complaint, and frequently treated twice before anyone counts the cells. Any infection that does not behave as expected deserves a full blood count.",
+      "bleeding_from_mucous_membranes": "Gum and nose bleeding, and petechiae, indicate a PLATELET problem rather than a clotting factor problem. Clotting factor deficiencies bleed into joints and muscles instead. The pattern of bleeding tells you which arm of haemostasis has failed.",
+      "night_sweats_and_weight_loss": "B symptoms — systemic features of a haematological malignancy."
+     },
+     "vitals": "BP 118/70 mmHg. Pulse 118. Respiratory rate 26. Temperature 38.1. SATURATION 91% ON AIR. Glucose 6.4. He is confused about the date and mildly drowsy.",
+     "the_vitals_that_change_the_urgency": "HYPOXIA AND CONFUSION IN A PATIENT WITH A WHITE COUNT OF 180 ARE NOT INCIDENTAL. They are LEUKOSTASIS — see below — and they make this a same-hour emergency rather than a same-day referral.",
+     "examination": "Pale. WIDESPREAD PETECHIAE on both shins and PURPURA on the forearms. Gum hypertrophy and bleeding — GUM INFILTRATION IS CHARACTERISTIC OF MONOCYTIC ACUTE MYELOID LEUKAEMIA. Cervical lymphadenopathy. SPLENOMEGALY 4 cm below the costal margin. Sternal tenderness. Chest clear. FUNDOSCOPY: retinal haemorrhages — a sign of both thrombocytopenia and hyperviscosity. No focal neurological deficit but he is drowsy. TESTICULAR EXAMINATION in a young man with suspected acute lymphoblastic leukaemia, as the testes are a sanctuary site."
+    },
+    "section_2_mechanism": {
+     "what_acute_leukaemia_is": "A malignant clone of an immature white cell precursor — a BLAST — proliferates uncontrollably in the bone marrow. The defining feature is a BLOCK IN MATURATION: the cells divide but never mature into functioning neutrophils or lymphocytes.",
+     "the_two_consequences": {
+      "marrow_failure": "Blasts CROWD OUT normal haematopoiesis. Red cell production fails, giving ANAEMIA. Platelet production fails, giving THROMBOCYTOPENIA and bleeding. Normal white cell production fails, giving functional NEUTROPENIA and infection. THIS IS WHY THE WHITE COUNT CAN BE ENORMOUS WHILE THE PATIENT IS PROFOUNDLY IMMUNOSUPPRESSED — the 180 x 10^9/L cells are useless blasts, not functioning neutrophils. That paradox is the single most important concept in the case.",
+      "tissue_infiltration": "Blasts infiltrate the liver, spleen, lymph nodes, gums, skin, testes and central nervous system, producing the organomegaly and gum hypertrophy."
+     },
+     "leukostasis_the_reason_this_is_an_emergency_tonight": {
+      "the_mechanism": "When the blast count is very high — generally above 100 x 10^9/L, and more dangerous in myeloid leukaemia because myeloblasts are larger and stickier than lymphoblasts — the blood becomes VISCOUS and blast plugs obstruct the microcirculation. The most vulnerable beds are the LUNGS and the BRAIN.",
+      "the_presentation": "PULMONARY: breathlessness, hypoxia, and a chest radiograph that may look unimpressive relative to the hypoxia. NEUROLOGICAL: confusion, headache, visual disturbance, drowsiness, and ultimately intracranial haemorrhage. HE HAS BOTH.",
+      "the_mortality": "Untreated leukostasis carries a very high early mortality — measured in the first days, not weeks."
+     },
+     "tumour_lysis_syndrome_the_thing_treatment_causes": {
+      "the_mechanism": "When a large mass of cells is killed rapidly — by chemotherapy, or spontaneously in a fast-growing leukaemia — their intracellular contents are released into the blood all at once.",
+      "the_four_derangements": "HIGH POTASSIUM, released from cells, causing ARRHYTHMIA AND CARDIAC ARREST — the fastest killer. HIGH PHOSPHATE, released from cells. LOW CALCIUM, because the released phosphate binds calcium and precipitates it, causing tetany, seizures and arrhythmia. HIGH URATE, from the breakdown of nucleic acids, which crystallises in the renal tubules and causes ACUTE KIDNEY INJURY. The calcium phosphate also precipitates in the kidney, compounding it.",
+      "the_point": "IT IS PREVENTED, NOT TREATED. Once established, it causes renal failure and arrhythmia. Prevention starts BEFORE the first dose of chemotherapy."
+     }
+    },
+    "section_3_differentials": {
+     "one_acute_leukaemia": "WORKING DIAGNOSIS. Supporting: pancytopenia of the functioning lines with a massive blast count, B symptoms, organomegaly, gum infiltration, sternal tenderness.",
+     "two_chronic_myeloid_leukaemia_in_blast_phase": "Can present with a very high white count. The chronic phase has a full spectrum of maturing myeloid cells rather than a dominant blast population; blast transformation converts it into an acute picture.",
+     "three_leukaemoid_reaction": "A reactive white count that can exceed 50 x 10^9/L in severe infection, but consists of MATURE neutrophils and their immediate precursors, not blasts. THE BLOOD FILM DISTINGUISHES THEM IMMEDIATELY, which is why the film is requested urgently rather than left to routine reporting.",
+     "four_aplastic_anaemia": "Pancytopenia with an EMPTY marrow and NO blasts, and no organomegaly.",
+     "five_severe_b12_or_folate_deficiency": "Can cause pancytopenia with a MACROCYTIC picture and hypersegmented neutrophils. Reversible, and worth excluding.",
+     "six_marrow_infiltration_by_another_malignancy_or_infection": "Metastatic carcinoma, lymphoma, myeloma, and disseminated tuberculosis all infiltrate marrow. The marrow biopsy answers it.",
+     "the_subtype_that_changes_everything": {
+      "acute_promyelocytic_leukaemia": "A subtype of acute myeloid leukaemia that MUST be identified immediately, because it presents with severe DISSEMINATED INTRAVASCULAR COAGULATION and patients die of catastrophic haemorrhage — often intracranial or pulmonary — in the first days, BEFORE chemotherapy has even started. It is ALSO the most curable subtype, treated with ALL-TRANS RETINOIC ACID (ATRA), which forces the malignant promyelocytes to mature rather than killing them.",
+      "the_practical_rule": "IF ACUTE PROMYELOCYTIC LEUKAEMIA IS SUSPECTED, ATRA IS STARTED IMMEDIATELY ON SUSPICION — before genetic confirmation — because the drug is relatively safe and the delay is lethal. Aggressive blood product support to keep fibrinogen and platelets up is given alongside."
+     }
+    },
+    "section_4_investigations": {
+     "full_blood_count_and_urgent_blood_film": {
+      "why_the_film_is_urgent": "The film distinguishes BLASTS from a reactive leukaemoid reaction within minutes and can identify AUER RODS — needle-shaped cytoplasmic inclusions that are diagnostic of MYELOID lineage, and are seen in abundance in acute promyelocytic leukaemia. TELEPHONE THE HAEMATOLOGY LABORATORY; do not let this sit in a routine queue.",
+      "expected": "White cells 180 x 10^9/L with a high blast percentage. Haemoglobin 68 g/L (normal roughly 130 to 175 in men). PLATELETS 12 x 10^9/L (normal 150 to 400) — a level at which spontaneous bleeding occurs."
+     },
+     "clotting_screen_and_fibrinogen": {
+      "why_it_is_not_optional": "To identify DISSEMINATED INTRAVASCULAR COAGULATION, which is the emergency within the emergency in acute promyelocytic leukaemia. SEND FIBRINOGEN AND D-DIMER SPECIFICALLY, not just PT and APTT — a falling fibrinogen is the early warning, and a standard clotting screen may not include it."
+     },
+     "tumour_lysis_bloods": "POTASSIUM, PHOSPHATE, CORRECTED CALCIUM, URATE, urea, creatinine and LDH. Repeat at least 6-hourly, more often once treatment starts. LDH reflects cell turnover and is typically very high.",
+     "bone_marrow_aspirate_and_trephine": "THE DIAGNOSTIC TEST. Sent for morphology, IMMUNOPHENOTYPING by flow cytometry (which assigns lineage — myeloid versus lymphoid — and therefore determines the treatment protocol), CYTOGENETICS and MOLECULAR studies. Cytogenetics determine both prognosis and specific therapy, including the t(15;17) translocation that defines acute promyelocytic leukaemia.",
+     "lumbar_puncture": "For central nervous system involvement, particularly in acute lymphoblastic leukaemia. DO NOT PERFORM IT WHILE THE PLATELET COUNT IS CRITICALLY LOW OR IN THE PRESENCE OF DIC — correct first. It is typically deferred and combined with intrathecal chemotherapy.",
+     "other": "Chest radiograph — looking for a MEDIASTINAL MASS, characteristic of T-cell acute lymphoblastic leukaemia and capable of causing superior vena cava obstruction or airway compromise. Blood cultures and a full septic screen, as he is febrile. Virology including hepatitis B and C, HIV and CMV before immunosuppression. Echocardiogram before anthracycline chemotherapy, which is cardiotoxic. Group and save with an extended phenotype. FERTILITY DISCUSSION AND SPERM BANKING before chemotherapy — in a 24-year-old this is time-critical and is forgotten in the rush of an acute admission."
+    },
+    "section_5_management": {
+     "a_the_first_hours": "This is a haematological emergency. TELEPHONE HAEMATOLOGY IMMEDIATELY — not a written referral. Admit to a monitored bed. Cardiac monitoring for the potassium. Large-bore access.",
+     "b_treat_the_infection": "He is febrile with functional neutropenia despite a white count of 180. TREAT AS NEUTROPENIC SEPSIS — broad-spectrum intravenous antibiotics with antipseudomonal cover within one hour, after cultures. The enormous white count is not protection; it is the disease.",
+     "c_prevent_tumour_lysis_before_it_happens": {
+      "hydration": "AGGRESSIVE INTRAVENOUS FLUID — typically 2.5 to 3 litres per square metre per day of isotonic fluid, aiming for a high urine output, generally above 100 mL per hour. Fluid dilutes the released solutes and maintains renal flow. Monitor for overload, particularly if there is cardiac or renal impairment.",
+      "urate_lowering": {
+       "allopurinol": "ALLOPURINOL 300 mg orally daily PREVENTS the formation of new urate by inhibiting xanthine oxidase. IT DOES NOT REMOVE URATE ALREADY PRESENT. Use for lower-risk patients. Note it interacts dangerously with azathioprine and mercaptopurine.",
+       "rasburicase": {
+        "what_it_is": "A recombinant URATE OXIDASE enzyme that CONVERTS EXISTING URATE into allantoin, which is highly water-soluble and readily excreted. It therefore lowers a urate that is ALREADY HIGH, which allopurinol cannot do.",
+        "dose": "Typically 0.2 mg/kg intravenously daily, often as a single dose with further doses guided by urate levels. FOR A 70 kg MAN: 14 mg.",
+        "indication": "HIGH-RISK patients — a very high white count, a high urate, renal impairment, or bulky disease. HE QUALIFIES.",
+        "the_contraindication_that_must_be_checked": "G6PD DEFICIENCY. Rasburicase generates HYDROGEN PEROXIDE as it breaks down urate. A patient deficient in glucose-6-phosphate dehydrogenase cannot neutralise it and suffers SEVERE HAEMOLYSIS and METHAEMOGLOBINAEMIA. CHECK G6PD STATUS, particularly in patients of African, Mediterranean, Middle Eastern or Southeast Asian ancestry, where deficiency is common.",
+        "the_sampling_trap": "Rasburicase CONTINUES TO DEGRADE URATE IN THE SAMPLE TUBE AT ROOM TEMPERATURE, producing a falsely low result. Samples must be collected into a PRE-CHILLED tube and transported ON ICE to the laboratory. A falsely reassuring urate leads to prophylaxis being stopped in a patient who still needs it."
+       }
+      },
+      "monitoring": "Potassium, phosphate, calcium, urate and creatinine at least 6-hourly. Cardiac monitoring. Involve nephrology early — some patients need dialysis.",
+      "what_not_to_do": "DO NOT give potassium in maintenance fluid. Avoid nephrotoxic drugs. Routine urinary ALKALINISATION is NO LONGER RECOMMENDED — it increases urate solubility but promotes calcium phosphate precipitation in the tubules, and may do net harm."
+     },
+     "d_leukostasis": {
+      "the_actions": "Oxygen. AVOID RED CELL TRANSFUSION IF AT ALL POSSIBLE UNTIL THE WHITE COUNT IS REDUCED — see the trap below. Urgent CYTOREDUCTION, which is the definitive treatment: starting chemotherapy, or HYDROXYCARBAMIDE as a temporising measure. LEUKAPHERESIS — mechanically filtering white cells from the blood — may be used in severe symptomatic leukostasis, though the evidence for improved survival is debated and it must not delay definitive chemotherapy.",
+      "the_transfusion_trap_that_can_kill": {
+       "the_rule": "DO NOT TRANSFUSE RED CELLS INTO A PATIENT WITH HYPERLEUKOCYTOSIS AND LEUKOSTASIS UNLESS ABSOLUTELY NECESSARY, and if you must, transfuse SLOWLY and in small volumes.",
+       "why": "Red cells are the main determinant of blood VISCOSITY. Raising the haematocrit in a patient whose blood is already viscous with blasts can PRECIPITATE OR WORSEN LEUKOSTASIS, causing respiratory failure or intracranial catastrophe. His haemoglobin of 68 g/L looks alarming and the instinct to transfuse is strong — THIS IS THE TRAP. PLATELETS, by contrast, do not raise viscosity meaningfully and SHOULD be given for bleeding or a critically low count."
+      }
+     },
+     "e_bleeding_and_platelets": "Platelets 12 x 10^9/L with active mucosal bleeding — TRANSFUSE PLATELETS. Typical thresholds are below 10 x 10^9/L prophylactically, below 20 if febrile, and higher for active bleeding or procedures. TRANEXAMIC ACID may help mucosal bleeding, but AVOID IT IF DIC IS SUSPECTED. If DIC is present, give fresh frozen plasma, cryoprecipitate for fibrinogen and platelets, guided by the clotting screen and the bleeding, and treat the underlying leukaemia urgently.",
+     "f_supportive_and_definitive_care": "Irradiated and CMV-safe blood products where indicated, to prevent transfusion-associated graft-versus-host disease. Tumour lysis prophylaxis continued. Antifungal and antiviral prophylaxis per protocol. CENTRAL VENOUS ACCESS once the platelet count and clotting permit. Definitive chemotherapy determined by lineage and cytogenetics, delivered in a specialist centre. Consider stem cell transplantation depending on risk category.",
+     "g_the_conversations": "A 24-year-old is being told he has leukaemia. FERTILITY PRESERVATION IS TIME-CRITICAL and must be raised before chemotherapy begins — it is the thing most often lost in an acute admission and cannot be recovered afterwards. Involve the clinical nurse specialist early. Discuss the diagnosis honestly, with realistic prognosis once the subtype is known, and give written information. Involve family with his consent."
+    },
+    "section_6_teaching_points": {
+     "bonus_1_a_white_count_of_180_is_not_immunity": "The cells are useless blasts, not functioning neutrophils. He is FUNCTIONALLY NEUTROPENIC despite an enormous count, and his fever is treated as neutropenic sepsis. Reading the white count as protective is the conceptual error the case is built to prevent.",
+     "bonus_2_do_not_transfuse_red_cells_into_leukostasis": "Red cells drive viscosity. Transfusing into hyperleukocytosis can precipitate respiratory failure or intracranial haemorrhage. A haemoglobin of 68 makes the instinct to transfuse almost irresistible — resist it, reduce the white count first, and if transfusion is unavoidable give it slowly in small volumes. PLATELETS do not raise viscosity and should be given.",
+     "bonus_3_allopurinol_prevents_rasburicase_removes": "Allopurinol blocks xanthine oxidase so no NEW urate forms — it cannot touch urate already present. Rasburicase is an enzyme that converts EXISTING urate to soluble allantoin. High-risk patients with an already-high urate need rasburicase; allopurinol alone is inadequate.",
+     "bonus_4_two_rasburicase_traps": "CHECK G6PD STATUS FIRST — rasburicase generates hydrogen peroxide, and a deficient patient suffers severe haemolysis and methaemoglobinaemia. And send urate samples in a PRE-CHILLED tube ON ICE, because the drug keeps degrading urate inside the tube and gives a falsely low, falsely reassuring result.",
+     "bonus_5_acute_promyelocytic_leukaemia_is_treated_on_suspicion": "It kills by catastrophic haemorrhage from DIC in the first days, before chemotherapy starts, and it is the most curable subtype. ATRA is started ON SUSPICION, before genetic confirmation, because the drug is relatively safe and the delay is not. Send fibrinogen and D-dimer specifically — a falling fibrinogen is the early warning.",
+     "bonus_6_the_pattern_of_bleeding_localises_the_defect": "Mucosal bleeding — gums, nose, petechiae — indicates a PLATELET problem. Bleeding into joints and muscles indicates a CLOTTING FACTOR problem. The pattern tells you which arm of haemostasis has failed before any test returns.",
+     "trap_1": "Urinary alkalinisation is NO LONGER recommended — it promotes calcium phosphate precipitation in the tubules.",
+     "trap_2": "Do not put potassium in maintenance fluid in a patient at risk of tumour lysis.",
+     "trap_3": "Telephone the laboratory for an urgent film. Blasts versus a leukaemoid reaction is answered in minutes and changes everything.",
+     "trap_4": "Do not perform a lumbar puncture with critical thrombocytopenia or DIC — correct first.",
+     "trap_5": "Avoid tranexamic acid if DIC is suspected.",
+     "trap_6": "RAISE FERTILITY PRESERVATION BEFORE CHEMOTHERAPY. In a 24-year-old it is time-critical and cannot be recovered later.",
+     "one_line_summary": "Acute leukaemia with hyperleukocytosis, leukostasis and impending tumour lysis. Telephone haematology, treat the fever as neutropenic sepsis, hydrate and give rasburicase after checking G6PD, give platelets but withhold red cells, exclude promyelocytic leukaemia urgently — and raise sperm banking today."
+    }
+   },
+   "glossary": [
+    {
+     "abbr": "APTT",
+     "full": "activated partial thromboplastin time"
+    }
+   ],
+   "specialty": "Medicine — Haematology",
+   "teaching_case": true,
+   "inputs": [],
+   "logic": {},
+   "outputs": [],
+   "warnings": [
+    "A white cell count of 180 is NOT immunity — the cells are useless blasts. Treat fever as NEUTROPENIC SEPSIS with antibiotics within one hour.",
+    "DO NOT TRANSFUSE RED CELLS in hyperleukocytosis with leukostasis unless unavoidable — it raises viscosity and can cause respiratory failure or intracranial haemorrhage. Platelets are safe and should be given.",
+    "Hypoxia and confusion with a very high blast count are LEUKOSTASIS — a same-hour emergency.",
+    "Tumour lysis syndrome is PREVENTED, not treated. Start hydration and urate-lowering before chemotherapy.",
+    "Allopurinol prevents NEW urate; only RASBURICASE removes urate already present.",
+    "CHECK G6PD STATUS before rasburicase — deficiency causes severe haemolysis and methaemoglobinaemia.",
+    "Send urate samples in a PRE-CHILLED tube ON ICE after rasburicase — the drug degrades urate in the tube and gives a falsely low result.",
+    "Suspect ACUTE PROMYELOCYTIC LEUKAEMIA and start ATRA on suspicion — patients die of DIC haemorrhage before chemotherapy begins.",
+    "Send FIBRINOGEN and D-DIMER specifically, not just PT and APTT — a falling fibrinogen is the early warning of DIC.",
+    "Urinary alkalinisation is NO LONGER recommended — it precipitates calcium phosphate in the tubules.",
+    "Do not add potassium to maintenance fluid in a patient at risk of tumour lysis.",
+    "Do not perform a lumbar puncture with critical thrombocytopenia or DIC.",
+    "Avoid tranexamic acid if DIC is suspected.",
+    "RAISE FERTILITY PRESERVATION BEFORE CHEMOTHERAPY — it is time-critical and cannot be recovered afterwards.",
+    "Doses here are teaching examples. Follow your specialist haematology protocol."
+   ],
+   "limitations": [
+    "A WORKED TEACHING CASE, not a protocol. Definitive treatment is determined by lineage, cytogenetics and trial protocol in a specialist centre.",
+    "Tumour lysis prophylaxis intensity and leukapheresis indications vary between services."
+   ],
+   "flashcards": [
+    {
+     "q": "What does pancytopenia in a young person point to?",
+     "a": "The bone marrow — anaemia, thrombocytopenia and neutropenia together narrow the field sharply."
+    },
+    {
+     "q": "Why is a white count of 180 not protective?",
+     "a": "The cells are useless blasts; the patient is functionally neutropenic and must be treated as neutropenic sepsis."
+    },
+    {
+     "q": "What is leukostasis and how does it present?",
+     "a": "Blast plugging of the microcirculation — hypoxia and breathlessness, plus confusion, headache and drowsiness."
+    },
+    {
+     "q": "Why must red cells not be transfused in leukostasis?",
+     "a": "Red cells drive viscosity — transfusion can precipitate respiratory failure or intracranial haemorrhage."
+    },
+    {
+     "q": "Name the four derangements of tumour lysis syndrome.",
+     "a": "High potassium, high phosphate, LOW calcium, high urate."
+    },
+    {
+     "q": "How do allopurinol and rasburicase differ?",
+     "a": "Allopurinol prevents new urate forming; rasburicase converts existing urate to soluble allantoin."
+    },
+    {
+     "q": "What must be checked before rasburicase, and why?",
+     "a": "G6PD status — the drug generates hydrogen peroxide, causing haemolysis and methaemoglobinaemia in deficiency."
+    },
+    {
+     "q": "How must urate samples be handled after rasburicase?",
+     "a": "Pre-chilled tube, transported on ice — the drug keeps degrading urate in the tube."
+    },
+    {
+     "q": "Why is acute promyelocytic leukaemia treated on suspicion?",
+     "a": "It kills by DIC haemorrhage in the first days, and ATRA is relatively safe — the delay is not."
+    },
+    {
+     "q": "What are Auer rods?",
+     "a": "Needle-shaped cytoplasmic inclusions diagnostic of myeloid lineage, abundant in acute promyelocytic leukaemia."
+    },
+    {
+     "q": "What does the pattern of bleeding tell you?",
+     "a": "Mucosal bleeding means a platelet problem; joint and muscle bleeding means a clotting factor problem."
+    },
+    {
+     "q": "What is time-critical and easily forgotten in a young patient?",
+     "a": "Fertility preservation — it must be raised before chemotherapy begins."
+    }
+   ],
+   "checkboxes": [
+    "Haematology telephoned immediately",
+    "Urgent blood film requested by telephone",
+    "Fever treated as neutropenic sepsis within one hour",
+    "Clotting screen with FIBRINOGEN and D-dimer sent",
+    "Acute promyelocytic leukaemia considered and ATRA started if suspected",
+    "Tumour lysis bloods sent and repeated 6-hourly",
+    "Aggressive hydration started",
+    "G6PD checked before rasburicase",
+    "Urate samples sent on ice",
+    "Red cell transfusion withheld or given slowly in small volumes",
+    "Platelets given for bleeding or critical count",
+    "Cardiac monitoring for potassium",
+    "Fertility preservation raised before chemotherapy",
+    "Virology, echocardiogram and extended phenotype arranged"
+   ],
+   "related_slugs": [
+    "tumour_lysis_syndrome_and_the_oncological_emergencies"
+   ],
+   "patient_integration": null,
+   "governance": {
+    "evidence_tier": "T5_textbook_or_standard_teaching",
+    "verification_status": "standard_teaching",
+    "sources": [],
+    "nigeria_overlay": null,
+    "build_date": "2026-08-07",
+    "review_interval_months": 12,
+    "next_review_due": "2027-08-07",
+    "clinical_reviewer": null,
+    "approved_for_release": false,
+    "local_confirmation_required": true,
+    "supersedes": null,
+    "content_hash": "48d0a8487b22862d"
+   }
+  },
+  {
+   "id": "AS-CASE-0020",
+   "schema_version": "4.0.0",
+   "content_release": "AWIBI-SCOUT-CONTENT-2026.08.R3",
+   "type": "case",
+   "title": "CASE: An INR of 8.4 and Blood in the Stool on Warfarin",
+   "short_title": "Case: anticoagulant-related major bleeding",
+   "slug": "case_an_inr_of_8_4_and_blood_in_the_stool_on_warfarin",
+   "also_known_as": [
+    "case warfarin bleeding",
+    "high inr case",
+    "inr reversal",
+    "prothrombin complex concentrate",
+    "vitamin k reversal",
+    "octaplex beriplex",
+    "doac reversal",
+    "idarucizumab",
+    "andexanet",
+    "melaena case",
+    "anticoagulant bleeding"
+   ],
+   "summary": "A 76-year-old on warfarin with melaena and an INR of 8.4. Teaches the four-question framework for any bleeding anticoagulated patient, why vitamin K alone is not enough when there is major bleeding, and how the answer differs completely for a direct oral anticoagulant.",
+   "domains": [
+    "haematology",
+    "emergency_medicine",
+    "gastroenterology"
+   ],
+   "intents": [
+    "identify",
+    "act"
+   ],
+   "populations": [
+    "all_ages"
+   ],
+   "contexts": [
+    "routine"
+   ],
+   "hazard": "critical",
+   "urgency": "immediate",
+   "jurisdiction": "international",
+   "search": {
+    "terms": [
+     "andexanet",
+     "andexanet alfa",
+     "anticoagulant bleeding",
+     "anticoagulation restart",
+     "apixaban",
+     "blood",
+     "case",
+     "case warfarin bleeding",
+     "case: an inr of 8.4 and blood in the stool on warfarin",
+     "case: anticoagulant-related major bleeding",
+     "dabigatran",
+     "doac",
+     "doac reversal",
+     "fresh frozen plasma",
+     "high inr case",
+     "idarucizumab",
+     "inr",
+     "inr reversal",
+     "major bleeding",
+     "melaena",
+     "melaena case",
+     "octaplex beriplex",
+     "phytomenadione",
+     "prothrombin complex concentrate",
+     "rivaroxaban",
+     "stool",
+     "tranexamic acid",
+     "vitamin k",
+     "vitamin k reversal",
+     "warfarin"
+    ],
+    "ambiguous_terms": [],
+    "phrases": [],
+    "field_weights": {
+     "title": 8,
+     "short_title": 6,
+     "also_known_as": 5,
+     "terms": 4,
+     "summary": 2,
+     "body": 1,
+     "flashcards": 0.5
+    }
+   },
+   "body": {
+    "the_one_line": "76-year-old woman on warfarin for atrial fibrillation attends with three days of black tarry stools and dizziness on standing. Her INR is 8.4 (her target range is 2.0 to 3.0).",
+    "section_1_clerking": {
+     "history": "Three days of BLACK, TARRY, OFFENSIVE-SMELLING STOOL — MELAENA, which indicates bleeding from the upper gastrointestinal tract, digested during transit. Dizzy on standing. No haematemesis. No abdominal pain. She started a course of CLARITHROMYCIN five days ago for a chest infection, and has been eating poorly since.",
+     "the_four_questions_that_structure_every_bleeding_anticoagulated_patient": {
+      "question_1": "IS THE BLEEDING MAJOR? Major means bleeding into a critical site — intracranial, intraspinal, intraocular, pericardial, retroperitoneal, intra-articular, intramuscular with compartment syndrome — OR bleeding causing haemodynamic compromise, OR a fall in haemoglobin of 20 g/L or more, OR requiring transfusion of two or more units. HER ANSWER IS YES: she is symptomatically hypovolaemic with a significant haemoglobin fall.",
+      "question_2": "WHICH ANTICOAGULANT, AND WHEN WAS THE LAST DOSE? Warfarin, direct oral anticoagulant and heparin are reversed COMPLETELY DIFFERENTLY. For a direct oral anticoagulant the TIMING of the last dose matters more than any laboratory number, because they have short half-lives.",
+      "question_3": "WHY IS THE INR HIGH TODAY? A supratherapeutic INR is almost never random. Find the cause or it recurs.",
+      "question_4": "WHY IS SHE ANTICOAGULATED, AND WHAT HAPPENS IF WE STOP? A mechanical mitral valve is a different risk from atrial fibrillation with a low score. This governs whether and when anticoagulation restarts."
+     },
+     "answering_question_three_here": {
+      "the_clarithromycin": "THE CAUSE IS IN THE HISTORY. Clarithromycin is a potent inhibitor of CYP3A4 and reduces warfarin metabolism, raising the INR sharply. Warfarin has an enormous interaction list — MACROLIDES, METRONIDAZOLE, CIPROFLOXACIN, FLUCONAZOLE and AZOLE antifungals, AMIODARONE, and many others potentiate it; RIFAMPICIN, CARBAMAZEPINE, PHENYTOIN and ST JOHN WORT reduce it.",
+      "the_poor_oral_intake": "Reduced dietary vitamin K intake also raises the INR. Acute illness, heart failure and liver dysfunction all potentiate warfarin as well. SEVERAL FACTORS USUALLY COMBINE.",
+      "why_this_matters_beyond_today": "If you correct the INR and discharge her on the same warfarin dose while she finishes the clarithromycin, she will bleed again. The interaction is the diagnosis."
+     },
+     "past_medical_history": "Atrial fibrillation. Hypertension. Osteoarthritis. PREVIOUS PEPTIC ULCER 8 years ago.",
+     "drug_history": "Warfarin as directed by the anticoagulation clinic. Bisoprolol. Amlodipine. CLARITHROMYCIN, day 5. IBUPROFEN taken regularly for knee pain — SHE BUYS IT HERSELF AND DID NOT MENTION IT UNTIL ASKED DIRECTLY. NSAIDs cause ulcers, inhibit platelets, and combined with warfarin greatly increase bleeding risk. ALWAYS ASK ABOUT OVER-THE-COUNTER AND HERBAL MEDICINES BY NAME — patients do not consider them \"medicines\".",
+     "vitals": "BP 96/58 mmHg lying, dropping to 78/48 on sitting. Pulse 108. Respiratory rate 20. Temperature 36.6. Saturation 97%. Capillary refill 3 seconds. She is pale and clammy.",
+     "examination": "Pale, cool peripheries. Abdomen soft with no tenderness or mass. RECTAL EXAMINATION CONFIRMS MELAENA — this is the examination that converts a reported symptom into a finding, and it must be done. No stigmata of chronic liver disease. No bruising elsewhere, no joint swelling. GCS 15 with no focal neurology — and CHECK THIS CAREFULLY, because an intracranial bleed is the reversal indication you cannot afford to miss."
+    },
+    "section_2_mechanism": {
+     "how_warfarin_works": "Warfarin inhibits VITAMIN K EPOXIDE REDUCTASE, the enzyme that regenerates active vitamin K. Vitamin K is required to carboxylate clotting FACTORS II, VII, IX AND X, plus the natural anticoagulants PROTEIN C and PROTEIN S. Without carboxylation these factors cannot bind calcium and phospholipid, and cannot function.",
+     "why_the_inr_measures_it": "The INR is a standardised prothrombin time, which reflects the EXTRINSIC and COMMON pathways. FACTOR VII has the SHORTEST HALF-LIFE — about 4 to 6 hours — so it falls first, and the INR is therefore highly sensitive to warfarin. Factor II has the longest half-life at around 60 to 72 hours.",
+     "the_two_practical_consequences_of_those_half_lives": [
+      "1. THE INR RISES BEFORE THE PATIENT IS FULLY ANTICOAGULATED when starting warfarin, because factor VII falls first while factor II remains. This is why bridging is used in high-risk patients.",
+      "2. PROTEIN C ALSO HAS A SHORT HALF-LIFE, so in the first days of warfarin the patient can be transiently PROCOAGULANT — the cause of the rare WARFARIN-INDUCED SKIN NECROSIS."
+     ],
+     "why_the_bleeding_site_matters": "A high INR does not create a bleeding lesion; it unmasks one. She has melaena, a previous peptic ulcer and is taking an NSAID. THE ANTICOAGULANT IS THE MULTIPLIER, THE ULCER IS THE SOURCE. Correcting the INR without finding and treating the source treats half the problem."
+    },
+    "section_3_differentials": {
+     "the_source_of_the_bleeding": "PEPTIC ULCER — most likely, given the previous ulcer and NSAID use · gastritis or oesophagitis · oesophageal varices, less likely with no liver disease · MALIGNANCY, which must be excluded in a 76-year-old with gastrointestinal bleeding · Mallory-Weiss tear · angiodysplasia.",
+     "the_important_reframing": "ANTICOAGULANT-ASSOCIATED GASTROINTESTINAL BLEEDING IS OFTEN THE FIRST PRESENTATION OF A CANCER. The anticoagulant made an occult lesion bleed sooner. Never conclude \"it was just the warfarin\" — investigate the source properly.",
+     "other_causes_of_a_high_inr": "Liver disease, which impairs synthesis of the same factors · disseminated intravascular coagulation, where fibrinogen falls and D-dimer rises · vitamin K deficiency from malnutrition or malabsorption · and deliberate or accidental overdose, including superwarfarin rodenticide, which causes a very prolonged effect lasting weeks."
+    },
+    "section_4_investigations": {
+     "immediate": "FULL BLOOD COUNT — expected haemoglobin low, and REMEMBER IT MAY BE FALSELY NORMAL IN ACUTE BLEEDING before haemodilution occurs. Platelets. CLOTTING SCREEN with INR and FIBRINOGEN. UREA AND ELECTROLYTES — A RAISED UREA WITH A NORMAL CREATININE IS CHARACTERISTIC OF UPPER GASTROINTESTINAL BLEEDING, because digested blood is absorbed protein. Liver function. GROUP AND SAVE AND CROSS-MATCH. Lactate. Venous gas for a rapid haemoglobin.",
+     "risk_scoring": "The GLASGOW-BLATCHFORD score at presentation identifies who needs intervention; the ROCKALL score assesses mortality risk after endoscopy. Use them to support decisions, not to replace assessment of a shocked patient.",
+     "endoscopy": "UPPER GASTROINTESTINAL ENDOSCOPY within 24 hours, and IMMEDIATELY AFTER RESUSCITATION in unstable bleeding. It is both diagnostic and therapeutic — injection, clips, thermal coagulation. RESUSCITATE FIRST: an unstable patient does not become safer in the endoscopy suite.",
+     "imaging": "CT angiography if bleeding continues and endoscopy has not identified or controlled the source. URGENT CT HEAD in any anticoagulated patient with head injury, headache, confusion or focal signs — with a LOW threshold, because intracranial bleeding on anticoagulation can be catastrophic and initially silent."
+    },
+    "section_5_management": {
+     "a_resuscitate_first": "ABCDE. TWO LARGE-BORE CANNULAE. Bloods and cross-match. Fluid resuscitation with balanced crystalloid, and BLOOD if she remains unstable. ACTIVATE THE MAJOR HAEMORRHAGE PROTOCOL if bleeding is severe — it delivers red cells, plasma and platelets in a coordinated way rather than piecemeal. Catheterise and monitor urine output. Nil by mouth for endoscopy. Reversal and resuscitation happen in parallel, not in sequence.",
+     "b_stop_the_anticoagulant": "WITHHOLD WARFARIN. Obvious, and still sometimes missed on the drug chart while everything else is being done.",
+     "c_reverse_the_warfarin_the_core_of_the_case": {
+      "major_bleeding_which_is_her_situation": {
+       "step_1": "PROTHROMBIN COMPLEX CONCENTRATE (PCC), for example Beriplex or Octaplex, intravenously. Dose is typically 25 to 50 units/kg according to INR and local protocol. FOR A 65 kg WOMAN with an INR of 8.4, a typical dose at 50 units/kg is 3,250 units.",
+       "why_pcc": "It contains CONCENTRATED FACTORS II, VII, IX AND X — exactly what warfarin has depleted. It works WITHIN MINUTES, requires no cross-matching, and comes in a SMALL VOLUME, which matters in an elderly patient who cannot tolerate fluid loading.",
+       "step_2": "VITAMIN K (PHYTOMENADIONE) 5 to 10 mg by SLOW INTRAVENOUS INJECTION. IT MUST BE GIVEN AS WELL AS THE PCC, NOT INSTEAD OF IT.",
+       "why_both_are_needed_the_central_point": "PCC works in minutes but its effect WEARS OFF IN ABOUT 6 TO 8 HOURS, because the infused factors are consumed and cleared. WARFARIN IS STILL PRESENT IN THE BODY AND HAS A LONG HALF-LIFE OF ROUGHLY 36 TO 42 HOURS. So the INR REBOUNDS. Vitamin K takes about 6 to 12 hours to work, but its effect LASTS, because it restores the patient own ability to make functional factors. GIVING PCC ALONE PRODUCES A PATIENT WHO LOOKS CORRECTED AT MIDNIGHT AND IS BLEEDING AGAIN AT SIX IN THE MORNING. THE TWO COVER DIFFERENT PARTS OF THE SAME TIMELINE.",
+       "recheck": "Repeat the INR 20 to 30 minutes after PCC to confirm correction, and again at 6 hours to detect rebound."
+      },
+      "fresh_frozen_plasma": "ONLY IF PCC IS UNAVAILABLE. It is INFERIOR — it needs thawing and cross-matching, which costs time; it requires a LARGE VOLUME with real risk of fluid overload in the elderly; and it corrects the INR incompletely. Where PCC exists, it is the correct choice.",
+      "minor_or_no_bleeding_which_is_a_different_algorithm": {
+       "inr_above_8_with_no_bleeding": "Stop warfarin. Give VITAMIN K 1 to 5 mg ORALLY. Recheck the INR daily and restart warfarin at a reduced dose when it is in range.",
+       "inr_5_to_8_with_no_bleeding": "Withhold 1 or 2 doses and reduce the maintenance dose. Vitamin K is often unnecessary.",
+       "inr_5_to_8_with_minor_bleeding": "Stop warfarin and give VITAMIN K 1 to 3 mg intravenously.",
+       "the_principle": "DO NOT GIVE A LARGE DOSE OF VITAMIN K TO A PATIENT WHO IS NOT BLEEDING AND NEEDS TO BE RE-ANTICOAGULATED. It causes prolonged warfarin resistance lasting a week or more, leaving them unprotected — particularly dangerous with a mechanical heart valve. Match the dose to the situation."
+      }
+     },
+     "d_what_changes_completely_if_this_were_a_direct_oral_anticoagulant": {
+      "the_general_principles": "ESTABLISH THE TIME OF THE LAST DOSE — it matters more than any number, because half-lives are around 8 to 15 hours and the drug clears on its own. THE INR IS NOT A USEFUL MEASURE OF DOAC EFFECT and must not be used to guide reversal. Renal function is critical, especially for DABIGATRAN, which is largely renally cleared. ACTIVATED CHARCOAL may be considered if ingestion was within about 2 to 4 hours.",
+      "dabigatran": "A direct THROMBIN inhibitor. SPECIFIC REVERSAL AGENT: IDARUCIZUMAB, 5 g intravenously as two 2.5 g doses. It is a monoclonal antibody fragment that binds dabigatran with very high affinity and works within minutes. Dabigatran is also DIALYSABLE, unlike the factor Xa inhibitors, because it has low protein binding.",
+      "apixaban_rivaroxaban_edoxaban": "Direct FACTOR Xa inhibitors. SPECIFIC REVERSAL AGENT: ANDEXANET ALFA, a modified decoy factor Xa molecule that binds and sequesters the drug — where available and affordable, as access is limited in many settings. If it is not available, PROTHROMBIN COMPLEX CONCENTRATE is used as a non-specific alternative. THESE DRUGS ARE NOT DIALYSABLE, because they are highly protein-bound.",
+      "the_examinable_contrast": "WARFARIN — vitamin K plus PCC. DABIGATRAN — idarucizumab, and it dialyses. XA INHIBITORS — andexanet alfa, or PCC if unavailable, and they do not dialyse. Vitamin K is useless for all of the direct oral anticoagulants, because they do not act through vitamin K at all."
+     },
+     "e_treat_the_source": "PROTON PUMP INHIBITOR — for example omeprazole 40 mg intravenously — and ENDOSCOPY with therapeutic intervention. Test and treat HELICOBACTER PYLORI. STOP THE IBUPROFEN PERMANENTLY and provide a safer analgesic plan for her knee. TRANEXAMIC ACID IS NOT RECOMMENDED FOR GASTROINTESTINAL BLEEDING — trial evidence showed no mortality benefit and a signal of increased venous thromboembolism and seizures, which reversed earlier practice.",
+     "f_the_restart_decision_which_is_genuinely_difficult": {
+      "the_tension": "She has atrial fibrillation and needs anticoagulation to prevent stroke. She has just had a major gastrointestinal bleed. BOTH RISKS ARE REAL AND BOTH CAN KILL.",
+      "the_general_principle": "FOR MOST PATIENTS WITH GASTROINTESTINAL BLEEDING, ANTICOAGULATION SHOULD BE RESTARTED once the source is treated and haemostasis secure — typically within days to a couple of weeks. Observational data consistently show LOWER overall mortality in patients restarted than in those left off, because thrombotic risk accumulates relentlessly while bleeding risk is a one-off event that has been treated. THE DEFAULT OF \"SHE BLED, SO STOP IT FOREVER\" IS USUALLY WRONG AND IS ONE OF THE COMMONEST ERRORS AFTER THIS ADMISSION.",
+      "how_to_decide": "Multidisciplinary — gastroenterology, cardiology and the patient. Consider a direct oral anticoagulant rather than warfarin, cover with a proton pump inhibitor, remove the NSAID, and treat Helicobacter. In a patient who genuinely cannot be anticoagulated, LEFT ATRIAL APPENDAGE OCCLUSION is an option worth knowing about.",
+      "document_it": "Write the reasoning, the plan, the restart date and who will review it. An undocumented \"hold anticoagulation\" becomes a permanent stop by default, and nobody revisits it."
+     },
+     "g_before_discharge": "Explain the clarithromycin interaction explicitly, and give a written list of drugs that interact with warfarin. Confirm the anticoagulation clinic knows about the admission and arrange early INR checks. STOP THE IBUPROFEN and address her knee pain another way. Consider whether a direct oral anticoagulant would be simpler and safer for her. Give a bleeding-alert card and clear instructions about what to do if bleeding recurs."
+    },
+    "section_6_teaching_points": {
+     "bonus_1_pcc_and_vitamin_k_cover_different_parts_of_the_timeline": "PCC works in minutes but wears off in 6 to 8 hours. Warfarin persists for 36 to 42 hours. Vitamin K takes 6 to 12 hours to work but lasts. Give PCC alone and the patient looks corrected at midnight and rebleeds by morning. THE TWO ARE NOT ALTERNATIVES — they are sequential halves of one plan.",
+     "bonus_2_match_the_vitamin_k_dose_to_the_situation": "A large dose in a patient who is not bleeding causes warfarin resistance for a week or more, leaving them unprotected — dangerous with a mechanical valve. Major bleeding gets 5 to 10 mg intravenously; a high INR without bleeding gets 1 to 5 mg orally.",
+     "bonus_3_the_reversal_answer_is_completely_different_for_a_doac": "Warfarin — vitamin K plus PCC. Dabigatran — IDARUCIZUMAB, and it is DIALYSABLE. Factor Xa inhibitors — ANDEXANET ALFA, or PCC if unavailable, and they are NOT dialysable because they are highly protein-bound. Vitamin K is useless for all of them. And the INR does not measure their effect — establish the time of the last dose instead.",
+     "bonus_4_a_raised_urea_with_a_normal_creatinine_means_upper_gi_bleeding": "Digested blood is absorbed protein, which is metabolised to urea. A disproportionately raised urea in a patient with anaemia is a strong pointer to an upper gastrointestinal source, and it is a free piece of information on a routine blood test.",
+     "bonus_5_the_anticoagulant_is_the_multiplier_not_the_lesion": "A high INR unmasks a bleeding source; it does not create one. She has an ulcer and takes an NSAID. Anticoagulant-associated bleeding is often the first presentation of a CANCER, so \"it was just the warfarin\" is never a diagnosis. Investigate the source.",
+     "bonus_6_restarting_is_usually_right": "Observational data show lower overall mortality in patients restarted on anticoagulation after gastrointestinal bleeding than in those left off, because thrombotic risk accumulates continuously while the bleed is a treated one-off. Stopping forever by default is one of the commonest errors after this admission — and an undocumented hold becomes a permanent stop because nobody revisits it.",
+     "trap_1": "Fresh frozen plasma is INFERIOR to PCC — slower, larger volume, incomplete correction. Use it only if PCC is unavailable.",
+     "trap_2": "TRANEXAMIC ACID IS NOT RECOMMENDED for gastrointestinal bleeding — no mortality benefit and a signal of increased thromboembolism and seizures.",
+     "trap_3": "Ask about over-the-counter and herbal medicines BY NAME. Patients do not consider ibuprofen a \"medicine\".",
+     "trap_4": "Haemoglobin may be falsely normal in acute bleeding before haemodilution. Do not be reassured by an early result.",
+     "trap_5": "Have a LOW threshold for CT head in any anticoagulated patient with head injury, headache or confusion.",
+     "trap_6": "Resuscitate before endoscopy. An unstable patient does not become safer in the endoscopy suite.",
+     "one_line_summary": "Major bleeding on warfarin with an INR of 8.4 caused by a clarithromycin interaction and an NSAID-related ulcer. Resuscitate, stop the warfarin, give PCC AND vitamin K together, endoscope after stabilising, remove the interacting drugs — and plan the restart rather than defaulting to stopping forever."
+    }
+   },
+   "glossary": [
+    {
+     "abbr": "CT",
+     "full": "computed tomography"
+    },
+    {
+     "abbr": "GCS",
+     "full": "Glasgow Coma Scale"
+    },
+    {
+     "abbr": "INR",
+     "full": "international normalised ratio",
+     "gloss": "a standardised measure of how long blood takes to clot"
+    },
+    {
+     "abbr": "LAST",
+     "full": "local anaesthetic systemic toxicity"
+    },
+    {
+     "abbr": "NSAID",
+     "full": "non-steroidal anti-inflammatory drug",
+     "gloss": "ibuprofen, naproxen, diclofenac — as distinct from corticosteroids"
+    }
+   ],
+   "specialty": "Medicine — Haematology",
+   "teaching_case": true,
+   "inputs": [],
+   "logic": {},
+   "outputs": [],
+   "warnings": [
+    "GIVE PROTHROMBIN COMPLEX CONCENTRATE AND VITAMIN K TOGETHER in major bleeding — PCC works in minutes but wears off in 6 to 8 hours while warfarin persists for 36 to 42 hours.",
+    "Match the vitamin K dose to the situation — a large dose in a non-bleeding patient causes warfarin resistance for a week or more.",
+    "Fresh frozen plasma is INFERIOR to PCC — slower, large volume, incomplete correction. Use only if PCC is unavailable.",
+    "The INR does NOT measure direct oral anticoagulant effect — establish the time of the last dose instead.",
+    "Dabigatran is reversed with IDARUCIZUMAB and is DIALYSABLE; factor Xa inhibitors need ANDEXANET ALFA or PCC and are NOT dialysable.",
+    "Vitamin K is useless for direct oral anticoagulants — they do not act through vitamin K.",
+    "A raised urea with a normal creatinine points to an upper gastrointestinal bleed.",
+    "TRANEXAMIC ACID IS NOT RECOMMENDED for gastrointestinal bleeding — no mortality benefit, with increased thromboembolism and seizures.",
+    "Ask about over-the-counter and herbal medicines BY NAME — patients do not consider ibuprofen a medicine.",
+    "Haemoglobin may be falsely normal in acute bleeding before haemodilution occurs.",
+    "Have a LOW threshold for CT head in any anticoagulated patient with head injury, headache or confusion.",
+    "Resuscitate before endoscopy — an unstable patient does not become safer in the endoscopy suite.",
+    "Anticoagulant-associated bleeding is often the first presentation of a CANCER. Never conclude it was just the warfarin.",
+    "Restarting anticoagulation after gastrointestinal bleeding usually lowers overall mortality. Document the plan and the review date, or the hold becomes permanent by default.",
+    "Doses here are teaching examples. Follow your local anticoagulation reversal protocol."
+   ],
+   "limitations": [
+    "A WORKED TEACHING CASE, not a protocol. PCC dosing, reversal agent availability and restart timing vary between services and countries.",
+    "Andexanet alfa is not available in many settings; local policy dictates the alternative."
+   ],
+   "flashcards": [
+    {
+     "q": "Give the four questions for any bleeding anticoagulated patient.",
+     "a": "Is the bleeding major? Which drug and when was the last dose? Why is the INR high today? Why are they anticoagulated?"
+    },
+    {
+     "q": "Why give PCC AND vitamin K rather than either alone?",
+     "a": "PCC works in minutes but wears off in 6 to 8 hours; warfarin persists 36 to 42 hours; vitamin K takes 6 to 12 hours but lasts."
+    },
+    {
+     "q": "Which clotting factors does warfarin deplete?",
+     "a": "II, VII, IX and X, plus proteins C and S."
+    },
+    {
+     "q": "Why is the INR so sensitive to warfarin?",
+     "a": "Factor VII has the shortest half-life at 4 to 6 hours and falls first."
+    },
+    {
+     "q": "Why not give a large vitamin K dose to a non-bleeding patient?",
+     "a": "It causes warfarin resistance for a week or more, leaving them unprotected."
+    },
+    {
+     "q": "How is dabigatran reversed?",
+     "a": "Idarucizumab 5 g intravenously — and dabigatran is dialysable."
+    },
+    {
+     "q": "How are factor Xa inhibitors reversed?",
+     "a": "Andexanet alfa, or PCC if unavailable. They are NOT dialysable."
+    },
+    {
+     "q": "What does a raised urea with a normal creatinine suggest?",
+     "a": "Upper gastrointestinal bleeding — digested blood is absorbed protein."
+    },
+    {
+     "q": "Why is tranexamic acid not recommended in GI bleeding?",
+     "a": "No mortality benefit, with a signal of increased venous thromboembolism and seizures."
+    },
+    {
+     "q": "Name drugs that raise the INR on warfarin.",
+     "a": "Macrolides, metronidazole, ciprofloxacin, fluconazole and azoles, amiodarone — plus poor dietary vitamin K intake."
+    },
+    {
+     "q": "Should anticoagulation be restarted after a GI bleed?",
+     "a": "Usually yes once the source is treated — overall mortality is lower in those restarted than those left off."
+    }
+   ],
+   "checkboxes": [
+    "Bleeding classified as major or minor",
+    "Anticoagulant identified and time of last dose established",
+    "Cause of the high INR identified — interacting drugs asked about by name",
+    "Indication for anticoagulation established",
+    "Two large-bore cannulae, cross-match and major haemorrhage protocol if needed",
+    "Warfarin withheld on the drug chart",
+    "PCC AND vitamin K both given",
+    "INR rechecked at 30 minutes and again at 6 hours for rebound",
+    "Proton pump inhibitor and endoscopy arranged after resuscitation",
+    "NSAID stopped and alternative analgesia planned",
+    "Helicobacter pylori tested and treated",
+    "CT head considered if any head injury, headache or confusion",
+    "Restart plan documented with a date and a named reviewer"
+   ],
+   "related_slugs": [
+    "warfarin_versus_direct_oral_anticoagulants_monitoring_interactions_and_reversal"
+   ],
+   "patient_integration": null,
+   "governance": {
+    "evidence_tier": "T5_textbook_or_standard_teaching",
+    "verification_status": "standard_teaching",
+    "sources": [],
+    "nigeria_overlay": null,
+    "build_date": "2026-08-07",
+    "review_interval_months": 12,
+    "next_review_due": "2027-08-07",
+    "clinical_reviewer": null,
+    "approved_for_release": false,
+    "local_confirmation_required": true,
+    "supersedes": null,
+    "content_hash": "7e9223da28c37b98"
    }
   }
  ]

@@ -16,8 +16,8 @@ there is a natural checkpoint every 10 cases rather than every 3.
 | Batch | Cases | Areas | Status |
 |---|---|---|---|
 | **1** | 1–10 | Cardiology · Respiratory · Endocrinology · Nephrology · Hepatology | **COMPLETE** |
-| **2** | 11–20 | Gastroenterology · Hepatology · Neurology · Haematology | **in progress — 3 of 10** |
-| 3 | 21–30 | Rheumatology · Infectious disease · Oncology · Dermatology | planned |
+| **2** | 11–20 | Gastroenterology · Hepatology · Neurology · Haematology · Infectious disease | **COMPLETE** |
+| **3** | 21–30 | Rheumatology · Infectious disease · Oncology · Dermatology | **next** |
 | 4 | 31–40 | General surgery · Trauma | planned |
 | 5 | 41–50 | Urology · Orthopaedics · Vascular | planned |
 | 6 | 51–60 | Neurosurgery · Cardiothoracic · Paediatric surgery · Plastics | planned |
@@ -35,9 +35,9 @@ curl localhost:5188/api/cases | node -e "let d='';process.stdin.on('data',c=>d+=
 
 | | |
 |---|---|
-| Cases written | **13** |
+| Cases written | **20** |
 | Target | 200+ |
-| Specialty areas covered | 7 of ~45 |
+| Specialty areas covered | 9 of ~45 |
 
 ---
 
@@ -95,11 +95,13 @@ point is that no area is left without a worked patient.
       *Planned:* lower GI bleed · inflammatory bowel disease flare · bowel obstruction · coeliac disease · *Clostridioides difficile*
 - [x] **Hepatology** (2) — variceal bleed in cirrhosis · paracetamol overdose and acute liver failure
       *Planned:* alcoholic hepatitis · viral hepatitis · spontaneous bacterial peritonitis · hepatic encephalopathy · hepatocellular carcinoma
-- [x] **Neurology** (2) — acute ischaemic stroke · subarachnoid haemorrhage
-      *Planned:* haemorrhagic stroke · Guillain-Barré · myasthenic crisis · status epilepticus · bacterial meningitis · multiple sclerosis relapse · peripheral neuropathy
-- [ ] **Haematology** — sickle cell crisis · acute chest syndrome · neutropenic sepsis · leukaemia presentation · lymphoma · anaemia workup · thrombocytopenia · DIC
+- [x] **Neurology** (4) — acute ischaemic stroke · subarachnoid haemorrhage · status epilepticus · Guillain-Barré syndrome
+      *Planned:* haemorrhagic stroke · myasthenic crisis · multiple sclerosis relapse · peripheral neuropathy · spinal cord compression
+- [x] **Haematology** (4) — sickle cell vaso-occlusive crisis · neutropenic sepsis · acute leukaemia with leukostasis and tumour lysis · anticoagulant-related major bleeding
+      *Planned:* lymphoma presentation · anaemia workup · thrombocytopenia and TTP · haemophilia · transfusion reaction
 - [ ] **Rheumatology** — systemic lupus erythematosus · rheumatoid flare · giant cell arteritis · gout versus septic arthritis · vasculitis · systemic sclerosis crisis
-- [ ] **Infectious disease** — malaria · typhoid · HIV with opportunistic infection · tuberculosis · tetanus · sepsis of unknown source · Lassa fever · rabies exposure
+- [x] **Infectious disease** (1) — bacterial meningitis with meningococcal sepsis
+      *Planned:* malaria · typhoid · HIV with opportunistic infection · tuberculosis · tetanus · sepsis of unknown source · Lassa fever · rabies exposure
 - [ ] **Oncology** — malignant spinal cord compression · superior vena cava obstruction · tumour lysis syndrome · hypercalcaemia of malignancy · febrile neutropenia
 - [ ] **Dermatology** — Stevens-Johnson syndrome and toxic epidermal necrolysis · erythroderma · cellulitis versus necrotising fasciitis · pemphigus · drug eruption
 
