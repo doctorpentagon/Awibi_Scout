@@ -12,10 +12,10 @@ range, every drug with dose, route, preparation, rate and monitoring.
 
 | | |
 |---|---|
-| Cases written | **8** |
+| Cases written | **11** |
 | Target | 200+ |
 | Postings with at least one case | 1 of 12 |
-| Specialty areas covered | 4 of ~45 |
+| Specialty areas covered | 6 of ~45 |
 
 Check the live count yourself — the roadmap is a plan, the API is the truth:
 
@@ -75,8 +75,10 @@ point is that no area is left without a worked patient.
       *Planned:* thyroid storm · myxoedema coma · adrenal crisis · Cushing syndrome · phaeochromocytoma · hypoglycaemia · hyperparathyroidism
 - [x] **Nephrology** (1) — acute kidney injury with hyperkalaemia
       *Planned:* chronic kidney disease with renal bone disease · nephrotic syndrome · nephritic syndrome · interstitial nephritis · ADPKD · rhabdomyolysis · dialysis emergencies
-- [ ] **Gastroenterology** — upper GI bleed · lower GI bleed · inflammatory bowel disease flare · acute pancreatitis · bowel obstruction · coeliac disease · *Clostridioides difficile*
-- [ ] **Hepatology** — decompensated chronic liver disease · alcoholic hepatitis · acute liver failure and paracetamol overdose · viral hepatitis · spontaneous bacterial peritonitis · hepatic encephalopathy · variceal bleed
+- [x] **Gastroenterology** (1) — acute pancreatitis
+      *Planned:* lower GI bleed · inflammatory bowel disease flare · bowel obstruction · coeliac disease · *Clostridioides difficile*
+- [x] **Hepatology** (2) — variceal bleed in cirrhosis · paracetamol overdose and acute liver failure
+      *Planned:* alcoholic hepatitis · viral hepatitis · spontaneous bacterial peritonitis · hepatic encephalopathy · hepatocellular carcinoma
 - [ ] **Neurology** — ischaemic stroke · haemorrhagic stroke · subarachnoid haemorrhage · Guillain-Barré · myasthenic crisis · status epilepticus · meningitis · multiple sclerosis relapse · peripheral neuropathy
 - [ ] **Haematology** — sickle cell crisis · acute chest syndrome · neutropenic sepsis · leukaemia presentation · lymphoma · anaemia workup · thrombocytopenia · DIC
 - [ ] **Rheumatology** — systemic lupus erythematosus · rheumatoid flare · giant cell arteritis · gout versus septic arthritis · vasculitis · systemic sclerosis crisis
