@@ -2,7 +2,7 @@
  "release": "AWIBI-SCOUT-CONTENT-2026.08.R3",
  "schema_version": "4.0.0",
  "build_date": "2026-08-07",
- "entry_count": 215,
+ "entry_count": 221,
  "extends": "AWIBI-SCOUT-CONTENT-2026.08.R2",
  "note": "Content extension. Adds areas; supersedes nothing. Every entry is unreviewed and unapproved.",
  "entries": [
@@ -47586,6 +47586,1962 @@
     "local_confirmation_required": true,
     "supersedes": null,
     "content_hash": "c2c360dcef964e6c"
+   }
+  },
+  {
+   "id": "AS-CASE-0031",
+   "schema_version": "4.0.0",
+   "content_release": "AWIBI-SCOUT-CONTENT-2026.08.R3",
+   "type": "case",
+   "title": "CASE: Central Abdominal Pain That Moved to the Right Iliac Fossa",
+   "short_title": "Case: acute appendicitis",
+   "slug": "case_central_abdominal_pain_that_moved_to_the_right_iliac_fossa",
+   "also_known_as": [
+    "case appendicitis",
+    "right iliac fossa pain case",
+    "migrating pain appendicitis",
+    "rovsing sign",
+    "psoas sign",
+    "obturator sign",
+    "alvarado score",
+    "mcburney point",
+    "appendix mass",
+    "retrocaecal appendix"
+   ],
+   "summary": "A 23-year-old with classic migrating pain. Teaches WHY the pain moves — two different nerve supplies — why the pregnancy test is not a formality, why a normal white count does not exclude it, and why the retrocaecal appendix produces a soft abdomen.",
+   "domains": [
+    "general_surgery",
+    "emergency_medicine",
+    "gastroenterology"
+   ],
+   "intents": [
+    "identify",
+    "act"
+   ],
+   "populations": [
+    "all_ages"
+   ],
+   "contexts": [
+    "routine"
+   ],
+   "hazard": "high",
+   "urgency": "urgent",
+   "jurisdiction": "international",
+   "search": {
+    "terms": [
+     "abdominal",
+     "alvarado score",
+     "appendicectomy",
+     "appendicitis",
+     "appendix abscess",
+     "appendix mass",
+     "case",
+     "case appendicitis",
+     "case: acute appendicitis",
+     "case: central abdominal pain that moved to the right iliac fossa",
+     "central",
+     "ectopic pregnancy",
+     "fossa",
+     "guarding",
+     "iliac",
+     "laparoscopic",
+     "mcburney point",
+     "mesenteric adenitis",
+     "migrating pain appendicitis",
+     "moved",
+     "obturator sign",
+     "pain",
+     "peritonism",
+     "psoas sign",
+     "rebound tenderness",
+     "retrocaecal",
+     "retrocaecal appendix",
+     "right",
+     "right iliac fossa pain case",
+     "rovsing sign",
+     "somatic pain",
+     "visceral pain"
+    ],
+    "ambiguous_terms": [],
+    "phrases": [],
+    "field_weights": {
+     "title": 8,
+     "short_title": 6,
+     "also_known_as": 5,
+     "terms": 4,
+     "summary": 2,
+     "body": 1,
+     "flashcards": 0.5
+    }
+   },
+   "body": {
+    "the_one_line": "23-year-old man with 18 hours of abdominal pain that began around the umbilicus as a vague ache and has now settled in the right iliac fossa as a sharp, constant pain made worse by moving and coughing.",
+    "section_1_clerking": {
+     "history": "Yesterday evening he felt generally unwell with a dull, poorly localised ache around the navel and no appetite. He could not eat his supper. Overnight he vomited twice. This morning the pain had MOVED and become sharp and constant in the right lower abdomen. It hurts to walk, to cough, and to go over speed bumps in the car. No diarrhoea. He has passed no flatus problems and opened his bowels normally yesterday.",
+     "the_migration_which_is_the_diagnosis": {
+      "the_observation": "PAIN BEGINS CENTRALLY AND POORLY LOCALISED, THEN MOVES TO THE RIGHT ILIAC FOSSA AND BECOMES SHARP AND WELL LOCALISED. This migration is more useful than any single examination sign.",
+      "why_it_happens_which_is_worth_understanding_properly": {
+       "phase_1_visceral_pain": "Early appendicitis distends the appendix. Visceral afferents from the appendix — a MIDGUT structure — enter the spinal cord at around T10, ALONGSIDE fibres from many other midgut organs. The brain cannot localise which organ is sending the signal, so it refers the pain to the DERMATOME, which at T10 is THE UMBILICUS. Hence a vague, central, colicky ache that the patient cannot point to.",
+       "phase_2_somatic_pain": "As inflammation progresses through the appendix wall, it reaches the PARIETAL PERITONEUM overlying it. Parietal peritoneum has SOMATIC innervation from the segmental nerves of the abdominal wall, which is precisely localising. The pain therefore SHIFTS to exactly where the appendix lies, becomes sharp and constant, and is aggravated by anything that moves the peritoneum — coughing, walking, the car journey.",
+       "the_generalisable_principle": "VISCERAL PAIN IS DULL, CENTRAL AND POORLY LOCALISED; SOMATIC PERITONEAL PAIN IS SHARP, LATERALISED AND MOVEMENT-SENSITIVE. This one idea explains the pain pattern of almost every intra-abdominal inflammatory process, not just appendicitis — cholecystitis moving from epigastrium to right upper quadrant, diverticulitis to the left iliac fossa."
+      }
+     },
+     "the_sequence_of_symptoms_which_is_also_diagnostic": "IN APPENDICITIS THE ORDER IS USUALLY: ANOREXIA FIRST, THEN PAIN, THEN VOMITING. In gastroenteritis, VOMITING TYPICALLY PRECEDES the pain. That order is a genuinely useful discriminator and takes one question to establish. ANOREXIA IS ALMOST UNIVERSAL — a patient who is hungry and eating normally makes appendicitis much less likely, though it does not exclude it.",
+     "vitals": "BP 124/76 mmHg. Pulse 96. Respiratory rate 16. Temperature 37.6 — LOW-GRADE, which is typical; a high fever early suggests something else or a perforation. Saturation 99%.",
+     "examination": {
+      "general": "Lying still, reluctant to move — a patient with peritonitis lies still, whereas a patient with COLIC (renal or biliary) writhes and cannot get comfortable. That distinction is visible from the end of the bed.",
+      "abdomen": "MAXIMAL TENDERNESS AT MCBURNEY POINT — one third of the way along a line from the right anterior superior iliac spine to the umbilicus. GUARDING — reflex involuntary contraction of the overlying abdominal muscle. PERCUSSION TENDERNESS present.",
+      "the_way_to_elicit_rebound_without_hurting_the_patient": "PERCUSSION TENDERNESS IS A KINDER AND EQUALLY VALID TEST FOR PERITONISM than the traditional press-and-release rebound. Gentle percussion, or asking the patient to COUGH or to HOP, produces the same information. DEEP PALPATION FOLLOWED BY SUDDEN RELEASE IS UNNECESSARILY PAINFUL AND SHOULD BE ABANDONED — it adds nothing that percussion does not give you.",
+      "special_signs": {
+       "rovsing_sign": "Palpation of the LEFT iliac fossa produces pain in the RIGHT iliac fossa. Displacement of gas and stretching of the peritoneum transmits across.",
+       "psoas_sign": "Pain on passive EXTENSION of the right hip, or on active hip flexion against resistance. It suggests a RETROCAECAL appendix lying on the psoas muscle.",
+       "obturator_sign": "Pain on passive INTERNAL ROTATION of the flexed right hip, suggesting a PELVIC appendix lying against the obturator internus.",
+       "the_honest_caveat": "THESE SIGNS ARE OF LIMITED SENSITIVITY. Their PRESENCE supports the diagnosis; their ABSENCE excludes nothing. They are most useful for localising an atypically positioned appendix — which is their real value."
+      },
+      "the_position_that_changes_the_examination": {
+       "the_point": "THE APPENDIX BASE IS CONSTANT AT THE CONFLUENCE OF THE TAENIAE COLI, BUT ITS TIP LIES WHEREVER IT LIES. Roughly two thirds are RETROCAECAL, and pelvic, subcaecal, preileal and postileal positions all occur.",
+       "the_consequence": "A RETROCAECAL APPENDIX IS SHIELDED FROM THE ANTERIOR PARIETAL PERITONEUM BY THE CAECUM. The abdomen can therefore feel SOFT with minimal guarding despite significant inflammation — a genuinely dangerous false reassurance. A PELVIC APPENDIX irritates the bladder and rectum, causing urinary frequency and diarrhoea, and is regularly misdiagnosed as urinary infection or gastroenteritis. THE POSITION EXPLAINS ALMOST EVERY ATYPICAL PRESENTATION."
+      },
+      "do_not_forget": "EXAMINE THE HERNIAL ORIFICES AND THE TESTES IN EVERY MALE WITH ABDOMINAL PAIN. Testicular torsion presents with abdominal pain and is missed by not looking. And in women, a pelvic assessment as appropriate."
+     }
+    },
+    "section_2_mechanism": {
+     "the_sequence": [
+      "1. THE APPENDIX LUMEN IS OBSTRUCTED — by a FAECOLITH (hardened stool) most commonly in adults, by LYMPHOID HYPERPLASIA in children and young adults following a viral illness, or occasionally by a TUMOUR in older patients.",
+      "2. Mucus continues to be secreted behind the obstruction, so intraluminal PRESSURE RISES. This distension causes the early VISCERAL pain.",
+      "3. Bacteria multiply in the stagnant contents; the wall becomes inflamed and oedematous.",
+      "4. Rising pressure first obstructs VENOUS and LYMPHATIC drainage, worsening congestion, then compromises ARTERIAL supply.",
+      "5. The wall becomes ISCHAEMIC and then NECROTIC — GANGRENOUS APPENDICITIS.",
+      "6. PERFORATION follows, releasing pus and faecal material. This may be walled off by omentum and adjacent bowel into a LOCALISED ABSCESS or PHLEGMON, or spill freely to cause GENERALISED PERITONITIS."
+     ],
+     "the_timeline_that_matters": "PERFORATION BECOMES SUBSTANTIALLY MORE LIKELY AFTER ABOUT 36 TO 48 HOURS OF SYMPTOMS. This is why delay matters, and why the elderly and the very young — who present late and atypically — have much higher perforation rates.",
+     "the_deceptive_improvement": "AT THE MOMENT OF PERFORATION THE PAIN MAY BRIEFLY IMPROVE, because the distended, tense appendix decompresses. THE PATIENT AND SOMETIMES THE CLINICIAN INTERPRET THIS AS RECOVERY. Within hours the pain returns, generalised and worse, with peritonitis. A SUDDEN IMPROVEMENT IN PAIN IN A DETERIORATING PATIENT IS AN OMINOUS SIGN, NOT A GOOD ONE.",
+     "the_omentum": "In children under about 5 the omentum is short and underdeveloped, so it cannot wall off a perforation. THAT IS WHY YOUNG CHILDREN GET GENERALISED PERITONITIS RATHER THAN A LOCALISED ABSCESS, and why appendicitis is more dangerous at that age."
+    },
+    "section_3_differentials": {
+     "the_one_that_must_be_excluded_first": {
+      "ectopic_pregnancy": "IN EVERY WOMAN OF CHILDBEARING AGE WITH ABDOMINAL PAIN, DO A PREGNANCY TEST. NOT \"IF SHE MIGHT BE PREGNANT\" — ALWAYS. A ruptured ectopic pregnancy kills within hours, presents with right or left iliac fossa pain, and has been operated on as appendicitis with fatal results. Patients may not know they are pregnant, may not disclose it, and menstrual history is unreliable. THE TEST TAKES TWO MINUTES AND IS NOT NEGOTIABLE."
+     },
+     "gynaecological": "Ovarian torsion — sudden severe pain with vomiting, often with an ovarian cyst · ruptured ovarian cyst, classically mid-cycle (MITTELSCHMERZ) · PELVIC INFLAMMATORY DISEASE, with cervical excitation, vaginal discharge and often bilateral pain · endometriosis · tubo-ovarian abscess.",
+     "gastrointestinal": "MESENTERIC ADENITIS — commoner in children, often after a sore throat or viral illness, with a higher fever, more shifting tenderness and generalised lymphadenopathy; it resolves without surgery but cannot always be distinguished without imaging or observation · MECKEL DIVERTICULITIS, clinically indistinguishable and found at operation · terminal ileitis, including CROHN DISEASE presenting acutely · caecal diverticulitis · perforated caecal tumour in an older patient · gastroenteritis, where VOMITING PRECEDES PAIN and diarrhoea dominates · constipation.",
+     "urological": "Right URETERIC COLIC, in which the patient CANNOT LIE STILL and the pain radiates loin to groin, with haematuria · urinary tract infection · testicular torsion referring to the abdomen.",
+     "the_special_populations_where_it_is_missed": {
+      "pregnancy": "APPENDICITIS IS THE COMMONEST NON-OBSTETRIC SURGICAL EMERGENCY IN PREGNANCY. THE GRAVID UTERUS DISPLACES THE APPENDIX UPWARDS AND LATERALLY, so pain may be in the right flank or right upper quadrant in the third trimester rather than the right iliac fossa. Nausea, vomiting and a mildly raised white count are normal in pregnancy, which strips away the usual clues. ULTRASOUND FIRST, THEN MRI IF AVAILABLE — avoid CT. Delay harms both mother and fetus far more than an operation does; a negative appendicectomy in pregnancy is preferable to a perforation.",
+      "the_elderly": "PRESENT LATE, WITH LESS PAIN, LESS FEVER AND A LOWER WHITE COUNT because the inflammatory response is blunted. PERFORATION RATES ARE MUCH HIGHER. And an appendiceal or caecal TUMOUR may be the obstructing cause, so a follow-up colonic assessment is warranted in older patients.",
+      "young_children": "Cannot localise, present with vomiting and irritability, and have higher perforation rates because the omentum cannot wall off.",
+      "immunosuppressed_and_diabetic_patients": "Blunted signs and higher perforation risk. Also broaden the differential to include typhlitis (neutropenic colitis)."
+     }
+    },
+    "section_4_investigations": {
+     "the_principle": "APPENDICITIS IS A CLINICAL DIAGNOSIS. INVESTIGATIONS SUPPORT IT, EXCLUDE ALTERNATIVES AND PREPARE FOR SURGERY. A CONVINCING CLINICAL PICTURE WITH NORMAL BLOODS STILL GOES TO THEATRE.",
+     "pregnancy_test": "FIRST, IN EVERY WOMAN OF CHILDBEARING AGE. See above.",
+     "bloods": {
+      "full_blood_count": "Usually a raised white cell count with NEUTROPHILIA. BUT A NORMAL WHITE COUNT DOES NOT EXCLUDE APPENDICITIS — it is normal in a meaningful proportion, particularly early and in the elderly. Never let a normal count overrule a convincing history and examination.",
+      "crp": "Usually raised, and rises later than the white count. The COMBINATION of a normal white count AND a normal CRP in a patient with more than 24 hours of symptoms makes appendicitis considerably less likely — but the pairing matters, not either alone.",
+      "others": "Urea and electrolytes · liver function and AMYLASE OR LIPASE to exclude pancreatitis and biliary disease · glucose · group and save · clotting if surgery is planned · venous gas with lactate if the patient looks unwell, since a raised lactate suggests ischaemia or established sepsis."
+     },
+     "urinalysis": {
+      "the_finding": "MILD PYURIA OR HAEMATURIA IS COMMON IN APPENDICITIS, because an inflamed appendix lying against the ureter or bladder irritates them.",
+      "the_trap": "THIS IS ONE OF THE COMMONEST REASONS APPENDICITIS IS MISDIAGNOSED AS A URINARY TRACT INFECTION, the patient is given trimethoprim and sent home, and returns perforated. A FEW WHITE CELLS ON DIPSTICK IN A PATIENT WITH MIGRATORY PAIN AND RIGHT ILIAC FOSSA GUARDING DOES NOT MEAN CYSTITIS. A urine culture that is genuinely positive with heavy growth and no localising abdominal signs is a different matter."
+     },
+     "imaging": {
+      "when_it_is_needed": "A classic presentation in a young man may go straight to theatre without imaging. Imaging is for DIAGNOSTIC UNCERTAINTY, for women where gynaecological causes are plausible, for children and for the elderly.",
+      "ultrasound": "FIRST LINE IN CHILDREN, YOUNG WOMEN AND PREGNANCY — no radiation. Findings: a non-compressible blind-ending tubular structure over 6 mm in diameter, wall thickening, a faecolith, free fluid, and tenderness under the probe. IT IS OPERATOR-DEPENDENT, AND A NON-VISUALISED APPENDIX IS A COMMON AND UNHELPFUL RESULT THAT EXCLUDES NOTHING.",
+      "ct": "HIGHLY SENSITIVE AND SPECIFIC, and the investigation of choice in adults where the diagnosis is unclear, and particularly in the elderly where malignancy and diverticulitis are alternatives. The trade-off is radiation, which matters most in the young.",
+      "mri": "Preferred in PREGNANCY where available, after an inconclusive ultrasound."
+     },
+     "scoring_systems": "ALVARADO and the Appendicitis Inflammatory Response score combine migratory pain, anorexia, nausea, right iliac fossa tenderness, rebound, fever, leucocytosis and neutrophil shift. THEY SUPPORT DECISION-MAKING AND HELP IDENTIFY LOW-RISK PATIENTS WHO CAN BE OBSERVED — but a low score never overrides clinical concern, and they perform less well in women and the elderly.",
+     "the_underused_option": "ACTIVE OBSERVATION WITH SERIAL EXAMINATION over several hours by the SAME clinician is a legitimate and valuable strategy in equivocal cases. Appendicitis evolves; a soft abdomen at 4 hours may be clearly peritonitic at 10. Documenting serial findings is better medicine than a single uncertain decision."
+    },
+    "section_5_management": {
+     "a_initial": "Nil by mouth. Intravenous fluid. ANALGESIA — see below. Antiemetic. Thromboprophylaxis assessment. Bloods and group and save. SURGICAL REFERRAL.",
+     "b_the_analgesia_myth_that_should_be_dead": {
+      "the_old_teaching": "Withhold analgesia so as not to mask the signs and obscure the diagnosis.",
+      "the_evidence": "MULTIPLE TRIALS HAVE SHOWN THAT OPIOID ANALGESIA DOES NOT MASK PERITONEAL SIGNS OR INCREASE DIAGNOSTIC ERROR IN ACUTE ABDOMINAL PAIN. If anything, a comfortable patient can be examined more reliably.",
+      "the_rule": "GIVE ADEQUATE ANALGESIA PROMPTLY. Withholding it is unkind, unjustified by evidence, and is still practised. Document the examination findings before and after if you wish, but do not leave a patient in pain to preserve a sign."
+     },
+     "c_antibiotics": "Broad-spectrum cover for Gram-negatives and anaerobes — for example CO-AMOXICLAV, or a cephalosporin with METRONIDAZOLE, per local policy. Given at induction as prophylaxis in simple appendicitis, and continued therapeutically if perforated or gangrenous.",
+     "d_appendicectomy": {
+      "the_standard": "LAPAROSCOPIC APPENDICECTOMY is the usual approach — less wound infection, less pain, faster recovery, shorter stay, and it allows inspection of the pelvis and the rest of the abdomen, which is particularly valuable in women where the diagnosis may prove gynaecological. Open appendicectomy through a grid-iron or Lanz incision remains appropriate where laparoscopy is unavailable or unsafe.",
+      "the_normal_appendix_at_operation": "If the appendix looks normal, the surgeon must LOOK FOR ANOTHER CAUSE — inspect the terminal ileum for Crohn disease and Meckel diverticulum, the pelvic organs, and the caecum. Most surgeons still remove a normal-looking appendix if no other cause is found, so that future right iliac fossa pain is not attributed to it, and because early inflammation may not be visible externally.",
+      "the_negative_appendicectomy_rate": "A small negative rate is ACCEPTED as the price of avoiding perforations. Imaging has reduced it, particularly in women. A service with a zero negative rate is probably operating too late."
+     },
+     "e_non_operative_management_with_antibiotics": {
+      "the_evidence": "Trials including CODA have shown that ANTIBIOTICS ALONE CAN TREAT SELECTED UNCOMPLICATED APPENDICITIS, avoiding surgery in a majority.",
+      "the_honest_caveats": "ROUGHLY A THIRD REQUIRE APPENDICECTOMY WITHIN A YEAR. Outcomes are worse where there is an APPENDICOLITH. It requires reliable follow-up and a patient who accepts the recurrence risk. In older patients, non-operative management risks leaving an underlying tumour undiagnosed.",
+      "where_it_fits": "A reasonable option for selected uncomplicated cases after informed discussion, and particularly useful where surgery is high risk or unavailable. IT IS NOT A DEFAULT and it is not appropriate for perforation, abscess or generalised peritonitis."
+     },
+     "f_the_appendix_mass_and_abscess": {
+      "the_presentation": "A patient presenting after 5 or more days with a palpable right iliac fossa MASS — inflamed appendix walled off by omentum and bowel.",
+      "the_management": "Traditionally managed CONSERVATIVELY with antibiotics, fluids and observation, because immediate surgery into an inflamed mass is technically difficult and risks injuring adherent bowel. An ABSCESS is drained, usually RADIOLOGICALLY under image guidance.",
+      "interval_appendicectomy": "Historically routine, now selective and debated.",
+      "the_essential_step_in_older_patients": "AN APPENDIX MASS IN A PATIENT OVER ABOUT 40 REQUIRES SUBSEQUENT COLONIC IMAGING — colonoscopy or CT colonography — BECAUSE A CAECAL OR APPENDICEAL CARCINOMA CAN PRESENT EXACTLY THIS WAY. Missing this is a well-recognised and serious error."
+     },
+     "g_complications_and_after_care": "Wound infection · intra-abdominal or pelvic collection, presenting with swinging fever, ileus or diarrhoea around day 5 to 7 · ileus · adhesional obstruction later · and rarely portal pyaemia. HISTOLOGY IS SENT ON EVERY SPECIMEN — appendiceal NEUROENDOCRINE TUMOURS and mucinous neoplasms are found incidentally, and the result must be followed up, not filed. Early mobilisation, thromboprophylaxis and analgesia. Give clear advice on when to return."
+    },
+    "section_6_teaching_points": {
+     "bonus_1_the_migration_is_two_different_nerve_supplies": "Early distension stimulates VISCERAL afferents entering at T10, referred to the T10 dermatome at the umbilicus — dull, central, unlocalisable. When inflammation reaches the PARIETAL peritoneum, SOMATIC segmental nerves take over — sharp, precisely localised, movement-sensitive. Understanding this explains the pain pattern of nearly every intra-abdominal inflammatory process.",
+     "bonus_2_do_a_pregnancy_test_in_every_woman_of_childbearing_age": "Not \"if she might be\" — always. Ruptured ectopic pregnancy kills within hours and has been operated on as appendicitis. Patients may not know, may not disclose, and menstrual history is unreliable.",
+     "bonus_3_a_normal_white_count_does_not_exclude_it": "It is normal in a meaningful proportion, particularly early and in the elderly. The COMBINATION of a normal white count and normal CRP after 24 hours of symptoms makes it much less likely — but neither alone overrules a convincing history and examination.",
+     "bonus_4_the_position_explains_the_atypical_presentation": "Two thirds are retrocaecal, shielded from the anterior peritoneum by the caecum — so the abdomen feels SOFT despite significant inflammation. A pelvic appendix irritates bladder and rectum, causing frequency and diarrhoea, and is misdiagnosed as urinary infection or gastroenteritis.",
+     "bonus_5_pyuria_does_not_mean_urinary_infection": "An inflamed appendix lying against the ureter or bladder causes mild pyuria and haematuria. This is one of the commonest routes to a missed appendicitis — dipstick, trimethoprim, discharge, return perforated.",
+     "bonus_6_sudden_improvement_can_mean_perforation": "The tense appendix decompresses at the moment it perforates, so pain briefly eases. It is read as recovery. Within hours the pain returns generalised and worse. Sudden improvement in a patient who is otherwise deteriorating is ominous.",
+     "bonus_7_analgesia_does_not_mask_the_signs": "Trials have shown opioid analgesia does not obscure peritoneal signs or increase diagnostic error. Withholding it is unkind and unjustified, and it is still practised.",
+     "trap_1": "Percussion tenderness, coughing or hopping test for peritonism as reliably as press-and-release rebound, and far less cruelly. Abandon deep rebound.",
+     "trap_2": "In PREGNANCY the appendix is displaced upwards and laterally — pain may be in the flank or right upper quadrant. Ultrasound then MRI, not CT.",
+     "trap_3": "The ELDERLY present late with blunted signs and much higher perforation rates — and may have an underlying tumour.",
+     "trap_4": "Examine the hernial orifices and testes in every male with abdominal pain.",
+     "trap_5": "A patient with peritonitis lies STILL; a patient with colic writhes. Visible from the end of the bed.",
+     "trap_6": "An appendix mass in a patient over 40 needs subsequent colonic imaging — caecal carcinoma presents this way.",
+     "trap_7": "Follow up the histology — appendiceal neuroendocrine and mucinous tumours are found incidentally.",
+     "one_line_summary": "Acute appendicitis with classic migration. Pregnancy test in any woman, analgesia without apology, a convincing picture goes to theatre regardless of a normal white count — and remember the retrocaecal appendix gives a soft abdomen."
+    }
+   },
+   "glossary": [
+    {
+     "abbr": "AGE",
+     "full": "advanced glycation end product"
+    },
+    {
+     "abbr": "CRP",
+     "full": "C-reactive protein"
+    },
+    {
+     "abbr": "CT",
+     "full": "computed tomography"
+    },
+    {
+     "abbr": "MRI",
+     "full": "magnetic resonance imaging"
+    }
+   ],
+   "specialty": "Surgery — General surgery",
+   "teaching_case": true,
+   "inputs": [],
+   "logic": {},
+   "outputs": [],
+   "warnings": [
+    "DO A PREGNANCY TEST IN EVERY WOMAN OF CHILDBEARING AGE — ruptured ectopic pregnancy kills within hours and has been operated on as appendicitis.",
+    "A NORMAL WHITE CELL COUNT DOES NOT EXCLUDE APPENDICITIS — a convincing clinical picture goes to theatre.",
+    "MILD PYURIA IS COMMON IN APPENDICITIS — do not diagnose urinary infection and send the patient home.",
+    "A RETROCAECAL APPENDIX gives a SOFT abdomen despite significant inflammation — a dangerous false reassurance.",
+    "A PELVIC APPENDIX causes urinary frequency and diarrhoea and is misdiagnosed as cystitis or gastroenteritis.",
+    "SUDDEN IMPROVEMENT IN PAIN in a deteriorating patient suggests PERFORATION, not recovery.",
+    "GIVE ANALGESIA — trials show it does not mask peritoneal signs or increase diagnostic error.",
+    "Use percussion tenderness, cough or hop rather than deep press-and-release rebound.",
+    "IN PREGNANCY the appendix is displaced upwards and laterally — ultrasound then MRI, not CT. Delay harms mother and fetus more than surgery.",
+    "The ELDERLY present late with blunted signs, higher perforation rates, and possible underlying tumour.",
+    "EXAMINE THE HERNIAL ORIFICES AND TESTES in every male with abdominal pain.",
+    "An APPENDIX MASS in a patient over 40 requires subsequent colonic imaging — caecal carcinoma presents this way.",
+    "FOLLOW UP THE HISTOLOGY — appendiceal neuroendocrine and mucinous tumours are found incidentally.",
+    "Non-operative antibiotic management is for selected uncomplicated cases only, with about a third needing surgery within a year.",
+    "Doses and antibiotic choices here are teaching examples. Follow local surgical policy."
+   ],
+   "limitations": [
+    "A WORKED TEACHING CASE, not a protocol. Imaging pathways, scoring system use and non-operative management policies vary between services.",
+    "Paediatric presentation and management differ and require paediatric surgical input."
+   ],
+   "flashcards": [
+    {
+     "q": "Why does appendicitis pain migrate?",
+     "a": "Visceral afferents at T10 refer to the umbilicus; when inflammation reaches parietal peritoneum, somatic nerves localise it precisely."
+    },
+    {
+     "q": "What is the usual symptom order, and how does gastroenteritis differ?",
+     "a": "Anorexia, then pain, then vomiting. In gastroenteritis vomiting usually precedes the pain."
+    },
+    {
+     "q": "Where is McBurney point?",
+     "a": "One third along a line from the right anterior superior iliac spine to the umbilicus."
+    },
+    {
+     "q": "Describe Rovsing, psoas and obturator signs.",
+     "a": "Left iliac fossa palpation causing right-sided pain; pain on hip extension (retrocaecal); pain on internal rotation of the flexed hip (pelvic)."
+    },
+    {
+     "q": "Why can a retrocaecal appendix give a soft abdomen?",
+     "a": "The caecum shields it from the anterior parietal peritoneum, so guarding is minimal."
+    },
+    {
+     "q": "Which test is never optional in a woman with abdominal pain?",
+     "a": "A pregnancy test — ruptured ectopic pregnancy kills within hours."
+    },
+    {
+     "q": "Does a normal white count exclude appendicitis?",
+     "a": "No — it is normal in a meaningful proportion, especially early and in the elderly."
+    },
+    {
+     "q": "Why does appendicitis cause pyuria?",
+     "a": "An inflamed appendix lying against the ureter or bladder irritates them — a common route to misdiagnosis as UTI."
+    },
+    {
+     "q": "What does sudden pain improvement suggest?",
+     "a": "Perforation with decompression of the distended appendix — not recovery."
+    },
+    {
+     "q": "Should analgesia be withheld to preserve signs?",
+     "a": "No — trials show it does not mask peritoneal signs or increase diagnostic error."
+    },
+    {
+     "q": "How does pregnancy change the presentation and imaging?",
+     "a": "The appendix is displaced upwards and laterally; use ultrasound then MRI, not CT."
+    },
+    {
+     "q": "What must follow an appendix mass in a patient over 40?",
+     "a": "Colonic imaging — caecal or appendiceal carcinoma can present exactly this way."
+    }
+   ],
+   "checkboxes": [
+    "Pregnancy test done in any woman of childbearing age",
+    "Symptom sequence established — anorexia, pain, vomiting",
+    "Migration of pain documented",
+    "Peritonism tested by percussion, cough or hop rather than deep rebound",
+    "Hernial orifices and testes examined",
+    "Analgesia given promptly",
+    "Full blood count and CRP interpreted together, not in isolation",
+    "Urinalysis interpreted with caution — pyuria not assumed to be UTI",
+    "Imaging chosen appropriately for age, sex and pregnancy status",
+    "Serial examination documented if the diagnosis is equivocal",
+    "Surgical referral made",
+    "Antibiotics given at induction",
+    "Colonic imaging planned if appendix mass in a patient over 40",
+    "Histology result followed up"
+   ],
+   "related_slugs": [
+    "acute_abdomen_pattern_recognition_and_first_decisions"
+   ],
+   "patient_integration": null,
+   "governance": {
+    "evidence_tier": "T5_textbook_or_standard_teaching",
+    "verification_status": "standard_teaching",
+    "sources": [],
+    "nigeria_overlay": null,
+    "build_date": "2026-08-07",
+    "review_interval_months": 12,
+    "next_review_due": "2027-08-07",
+    "clinical_reviewer": null,
+    "approved_for_release": false,
+    "local_confirmation_required": true,
+    "supersedes": null,
+    "content_hash": "379889fee06561ef"
+   }
+  },
+  {
+   "id": "AS-CASE-0032",
+   "schema_version": "4.0.0",
+   "content_release": "AWIBI-SCOUT-CONTENT-2026.08.R3",
+   "type": "case",
+   "title": "CASE: Sudden Agonising Epigastric Pain and a Board-Like Abdomen",
+   "short_title": "Case: perforated peptic ulcer",
+   "slug": "case_sudden_agonising_epigastric_pain_and_a_board_like_abdomen",
+   "also_known_as": [
+    "case perforated peptic ulcer",
+    "perforated duodenal ulcer case",
+    "pneumoperitoneum",
+    "board-like rigidity",
+    "free air under diaphragm",
+    "kehr sign",
+    "omental patch",
+    "graham patch",
+    "nsaid ulcer",
+    "helicobacter pylori"
+   ],
+   "summary": "A 58-year-old on long-term NSAIDs with sudden severe pain and a rigid abdomen. Teaches the three phases of perforation, why a normal erect chest film does not exclude it, why shoulder-tip pain occurs, and why resuscitation precedes theatre but must not delay it.",
+   "domains": [
+    "general_surgery",
+    "emergency_medicine",
+    "gastroenterology"
+   ],
+   "intents": [
+    "identify",
+    "act"
+   ],
+   "populations": [
+    "all_ages"
+   ],
+   "contexts": [
+    "routine"
+   ],
+   "hazard": "critical",
+   "urgency": "immediate",
+   "jurisdiction": "international",
+   "search": {
+    "terms": [
+     "abdomen",
+     "agonising",
+     "board",
+     "board-like rigidity",
+     "boey score",
+     "case",
+     "case perforated peptic ulcer",
+     "case: perforated peptic ulcer",
+     "case: sudden agonising epigastric pain and a board-like abdomen",
+     "epigastric",
+     "erect chest radiograph",
+     "free air",
+     "free air under diaphragm",
+     "graham patch",
+     "helicobacter pylori",
+     "kehr sign",
+     "like",
+     "nasogastric tube",
+     "nsaid",
+     "nsaid ulcer",
+     "omental patch",
+     "pain",
+     "peptic ulcer",
+     "perforated duodenal ulcer case",
+     "perforated peptic ulcer",
+     "peritonitis",
+     "pneumoperitoneum",
+     "proton pump inhibitor",
+     "referred shoulder pain",
+     "rigidity",
+     "sepsis six",
+     "sudden"
+    ],
+    "ambiguous_terms": [],
+    "phrases": [],
+    "field_weights": {
+     "title": 8,
+     "short_title": 6,
+     "also_known_as": 5,
+     "terms": 4,
+     "summary": 2,
+     "body": 1,
+     "flashcards": 0.5
+    }
+   },
+   "body": {
+    "the_one_line": "58-year-old man with sudden, severe, generalised abdominal pain that began 4 hours ago while watching television. He can tell you the exact minute it started. He is lying completely still and his abdomen feels like a board.",
+    "section_1_clerking": {
+     "history": "Four hours ago, at rest, he developed INSTANTANEOUS severe epigastric pain that spread rapidly across the whole abdomen within minutes. He describes it as the worst pain of his life. He is now also aware of pain at the TIP OF THE RIGHT SHOULDER. He has vomited once. He has had intermittent burning epigastric pain for months, relieved by food and by antacids, which he has been treating himself. He has been taking IBUPROFEN daily for knee pain for the last year, bought over the counter.",
+     "the_features_that_make_the_diagnosis": {
+      "instantaneous_onset": "THE PATIENT CAN NAME THE MINUTE. Very few abdominal conditions do this. Sudden, maximal-at-onset abdominal pain means PERFORATION, RUPTURE (aneurysm, ectopic) or a VASCULAR event (mesenteric ischaemia, dissection). A pain that builds over hours is a different category of disease entirely.",
+      "the_progression": "Epigastric first, then generalised within minutes as gastroduodenal contents spread through the peritoneal cavity.",
+      "shoulder_tip_pain_and_why": "KEHR SIGN. The DIAPHRAGM is supplied by the PHRENIC NERVE, which arises from cervical roots C3, C4 AND C5. Those same roots supply the SKIN OVER THE SHOULDER. Irritation of the diaphragmatic peritoneum by acid, gas or blood is therefore referred to the shoulder tip. THE PHRASE IS \"C3, 4, 5 KEEPS THE DIAPHRAGM ALIVE\" — and it also explains why free intraperitoneal fluid or air causes shoulder pain. It occurs with perforation, with intraperitoneal bleeding such as ruptured spleen or ectopic pregnancy, and after laparoscopy from residual carbon dioxide.",
+      "the_nsaid_history": "THE CAUSE, SITTING IN THE DRUG HISTORY. NSAIDs inhibit COX-1, reducing the prostaglandins that maintain gastric mucus, bicarbonate secretion and mucosal blood flow. HE BOUGHT IT HIMSELF, SO IT WOULD NOT APPEAR ON ANY PRESCRIPTION LIST. ALWAYS ASK ABOUT OVER-THE-COUNTER MEDICINES BY NAME — patients do not consider them drugs."
+     },
+     "the_other_risk_factors_to_ask_about": "HELICOBACTER PYLORI infection · smoking · alcohol · STEROIDS, particularly combined with NSAIDs, which multiplies the risk · SSRIs, which impair platelet function · anticoagulants · previous ulcer disease · critical illness (stress ulceration) · and, rarely, ZOLLINGER-ELLISON SYNDROME, suggested by multiple, distal or recurrent ulcers.",
+     "vitals": "BP 104/62 mmHg. Pulse 118. Respiratory rate 26 and SHALLOW. Temperature 37.2 — often normal early; fever develops later as bacterial peritonitis establishes. Saturation 96%. Lactate 3.4 mmol/L. Urine output reduced.",
+     "why_the_breathing_is_shallow": "Deep breathing moves the diaphragm and the inflamed peritoneum, so the patient splints — taking rapid shallow breaths. This causes basal atelectasis and, untreated, contributes to postoperative pneumonia.",
+     "examination": "LYING ABSOLUTELY STILL, often with knees drawn up. He does not want to be touched or moved. BOARD-LIKE RIGIDITY — generalised involuntary guarding of the entire abdominal wall, the classic sign of GENERALISED PERITONITIS. GENERALISED PERCUSSION TENDERNESS. ABSENT BOWEL SOUNDS, from paralytic ileus. LOSS OF LIVER DULLNESS TO PERCUSSION in the right upper quadrant, because free gas has risen and interposed between liver and diaphragm — an old sign, insensitive but specific and free to elicit. Examine the hernial orifices. Rectal examination may reveal tenderness in the pouch of Douglas from collected fluid.",
+     "the_examination_point_that_matters": "RIGIDITY IS INVOLUNTARY AND CANNOT BE OVERCOME BY REASSURANCE OR DISTRACTION. VOLUNTARY GUARDING relaxes when the patient is distracted or breathes out. Distinguishing them is the difference between a surgical abdomen and an anxious one, and it is done by watching and talking, not by pressing harder."
+    },
+    "section_2_mechanism": {
+     "where_and_why": "Most perforations occur in the ANTERIOR wall of the FIRST PART OF THE DUODENUM or in the stomach. A POSTERIOR duodenal ulcer behaves differently — it erodes into the GASTRODUODENAL ARTERY and causes MASSIVE HAEMORRHAGE rather than perforation. ANTERIOR PERFORATES, POSTERIOR BLEEDS, and that anatomical fact explains the two entirely different emergencies arising from the same disease.",
+     "the_pathophysiology": "Ulceration erodes progressively through mucosa, submucosa, muscularis and finally serosa. Once the full thickness is breached, gastric acid, bile, food and gas escape into the peritoneal cavity.",
+     "the_three_phases_which_explain_the_clinical_course": {
+      "phase_1_chemical_peritonitis_0_to_2_hours": "Acid and bile cause intense CHEMICAL irritation of the peritoneum. This produces the sudden agonising pain and rigidity. The patient is in severe pain but is not yet septic.",
+      "phase_2_the_deceptive_period_2_to_12_hours": "PERITONEAL FLUID DILUTES THE ACID AND THE PAIN MAY GENUINELY EASE. THE ABDOMEN CAN BECOME LESS RIGID AND THE PATIENT MAY APPEAR TO IMPROVE. THIS IS A TRAP THAT HAS COST LIVES — a patient seen at 8 hours can look considerably better than one seen at 2 hours, and be sent home or observed. Meanwhile several litres of fluid are shifting into the peritoneal cavity and bacteria are multiplying.",
+      "phase_3_bacterial_peritonitis_and_septic_shock_after_12_hours": "Bacterial contamination establishes. Fever, worsening distension, ileus, massive third-space fluid loss, hypovolaemia, organ failure and septic shock. MORTALITY RISES STEEPLY WITH DELAY TO SURGERY."
+     },
+     "the_fluid_loss_that_is_underestimated": "The inflamed peritoneum has a vast surface area and leaks plasma into the abdominal cavity — THIRD SPACING. Several litres can be lost from the circulation while the abdomen looks only moderately distended. THIS IS WHY THESE PATIENTS NEED MUCH MORE FLUID THAN EXPECTED, and why they arrive in theatre hypovolaemic if resuscitation has been half-hearted."
+    },
+    "section_3_differentials": {
+     "the_category": "SUDDEN, MAXIMAL-AT-ONSET ABDOMINAL PAIN. The differential is short and every item is dangerous.",
+     "one_perforated_peptic_ulcer": "WORKING DIAGNOSIS. Supporting: instantaneous onset, NSAID use, prior dyspepsia, generalised rigidity, shoulder tip pain.",
+     "two_ruptured_abdominal_aortic_aneurysm": "MUST BE CONSIDERED IN ANY PATIENT OVER 50 WITH SUDDEN ABDOMINAL OR BACK PAIN AND HYPOTENSION. Look for a pulsatile expansile mass and asymmetric femoral pulses. It is misdiagnosed as renal colic and as perforation, and a wrong call is fatal.",
+     "three_acute_pancreatitis": "Severe epigastric pain radiating to the back, with a raised amylase or lipase. CAN ALSO PRODUCE A RIGID ABDOMEN AND FREE FLUID. IMPORTANT: AMYLASE CAN BE RAISED IN PERFORATION TOO, because pancreatic enzymes are absorbed from the peritoneum — so a moderately raised amylase does not settle the question. Very high levels favour pancreatitis. CT distinguishes them.",
+     "four_acute_mesenteric_ischaemia": "Sudden severe pain, classically OUT OF PROPORTION TO A SOFT ABDOMEN early, in a patient with atrial fibrillation or vascular disease, with a high lactate. It becomes rigid only when the bowel infarcts and perforates.",
+     "five_myocardial_infarction": "AN INFERIOR MI CAN PRESENT WITH EPIGASTRIC PAIN AND VOMITING. DO AN ECG IN EVERY PATIENT OVER ABOUT 40 WITH UPPER ABDOMINAL PAIN. Taking a patient with an inferior MI to theatre is a catastrophe, and it happens.",
+     "six_ruptured_ectopic_pregnancy": "In any woman of childbearing age — sudden pain, shoulder tip pain from intraperitoneal blood, and shock. Pregnancy test.",
+     "seven_other_perforations": "Perforated diverticulitis, perforated appendix, perforated colonic tumour, oesophageal perforation (BOERHAAVE SYNDROME, after violent vomiting, with surgical emphysema in the neck).",
+     "eight_biliary_and_other": "Acute cholecystitis and biliary colic build over hours rather than starting instantaneously. Diabetic ketoacidosis and sickle crisis can mimic an acute abdomen — check glucose and consider the history."
+    },
+    "section_4_investigations": {
+     "the_principle": "RESUSCITATION AND INVESTIGATION HAPPEN TOGETHER, AND NEITHER DELAYS THE SURGICAL REFERRAL. A patient with generalised peritonitis needs a surgeon, not a longer list of tests.",
+     "erect_chest_radiograph": {
+      "what_it_shows": "FREE GAS UNDER THE DIAPHRAGM — a crescent of lucency between the diaphragm and the liver. It is the classic and immediately available test.",
+      "how_to_do_it_properly": "THE PATIENT MUST BE SITTING OR STANDING UPRIGHT FOR AT LEAST 10 TO 15 MINUTES BEFORE THE FILM, so free gas has time to rise to the highest point. A film taken immediately after sitting the patient up, or taken supine, will miss gas that is present. If the patient cannot sit up, a LEFT LATERAL DECUBITUS film shows gas between the liver and the abdominal wall.",
+      "the_critical_limitation": "IT IS ONLY ABOUT 70 TO 80% SENSITIVE. UP TO 30% OF CONFIRMED PERFORATIONS HAVE NO VISIBLE FREE AIR. A NORMAL ERECT CHEST FILM DOES NOT EXCLUDE PERFORATION. If the clinical picture is convincing, proceed to CT or straight to theatre. Reassurance from a normal film is a well-documented route to a delayed operation.",
+      "the_false_positive": "CHILAIDITI SIGN — interposition of colon between liver and diaphragm — mimics free air. Look for haustral markings within the lucency."
+     },
+     "ct_abdomen_and_pelvis_with_contrast": "FAR MORE SENSITIVE for free gas and free fluid, identifies the SITE of perforation, and distinguishes the alternatives — pancreatitis, ischaemia, aneurysm, diverticulitis. It is the investigation of choice where the diagnosis is uncertain, and it guides whether non-operative management is feasible. DO NOT DELAY THEATRE FOR A CT IN A PATIENT WITH UNEQUIVOCAL GENERALISED PERITONITIS AND SHOCK — that patient needs source control.",
+     "bloods": "Full blood count · urea, creatinine and electrolytes · AMYLASE OR LIPASE, remembering it can be moderately raised in perforation · liver function · CRP · GLUCOSE · CLOTTING · GROUP AND CROSS-MATCH · BLOOD GAS WITH LACTATE, which is a key severity marker · blood cultures.",
+     "ecg": "IN EVERY PATIENT OVER 40 WITH UPPER ABDOMINAL PAIN. See the differential.",
+     "pregnancy_test": "In any woman of childbearing age."
+    },
+    "section_5_management": {
+     "a_resuscitate_aggressively_and_in_parallel": {
+      "the_principle": "THIS PATIENT NEEDS AN OPERATION. RESUSCITATION MAKES THE OPERATION SURVIVABLE — IT DOES NOT REPLACE IT, AND IT MUST NOT BE ALLOWED TO DELAY IT INDEFINITELY. SOURCE CONTROL IS PART OF THE RESUSCITATION.",
+      "the_actions": "Two large-bore cannulae. BALANCED CRYSTALLOID in 500 mL boluses with reassessment — EXPECT TO NEED SEVERAL LITRES because of third-space loss. Oxygen. CATHETERISE and monitor hourly urine output, targeting roughly 0.5 mL/kg/hour. Correct electrolytes. Cross-match. Arterial line and central access if shocked. CRITICAL CARE INVOLVEMENT EARLY.",
+      "the_sepsis_six": "Oxygen, cultures, antibiotics, fluids, lactate, urine output — all within the hour."
+     },
+     "b_antibiotics": "BROAD-SPECTRUM INTRAVENOUS ANTIBIOTICS covering Gram-negatives and anaerobes — for example piperacillin with tazobactam, or a cephalosporin with metronidazole, per local policy. Consider ANTIFUNGAL cover in patients who are immunosuppressed, critically ill, or have had a prolonged perforation, since Candida peritonitis occurs.",
+     "c_nasogastric_tube_and_acid_suppression": "A NASOGASTRIC TUBE decompresses the stomach, reduces ongoing contamination of the peritoneal cavity, and relieves vomiting in ileus. INTRAVENOUS PROTON PUMP INHIBITOR — for example omeprazole 40 mg — reduces further acid secretion. NIL BY MOUTH. Analgesia — do not withhold it.",
+     "d_surgery": {
+      "the_standard_operation": "LAPAROSCOPIC OR OPEN REPAIR WITH AN OMENTAL PATCH — the GRAHAM PATCH — in which a tongue of omentum is laid over the perforation and secured with sutures, plus THOROUGH PERITONEAL LAVAGE to wash out contamination. Simple, quick and effective, and appropriate for the majority.",
+      "when_more_is_needed": "A large perforation, a perforated gastric ulcer where MALIGNANCY IS POSSIBLE, or a giant ulcer may need resection. ALWAYS BIOPSY THE EDGE OF A PERFORATED GASTRIC ULCER — a proportion are malignant, whereas duodenal ulcers essentially never are. This is a small step at operation with major consequences if omitted.",
+      "the_prognostic_score": "The BOEY SCORE uses three factors — SHOCK ON ADMISSION, MAJOR MEDICAL COMORBIDITY, and SYMPTOM DURATION OVER 24 HOURS. Mortality rises steeply with each. It is useful for counselling and for deciding the level of postoperative care."
+     },
+     "e_non_operative_management_and_its_narrow_place": "A small, SEALED perforation in a stable patient without generalised peritonitis, confirmed on CT with water-soluble contrast showing no leak, may occasionally be managed with antibiotics, nasogastric decompression, acid suppression and very close observation. IT REQUIRES A SURGEON REVIEWING REPEATEDLY AND AN IMMEDIATE THRESHOLD TO OPERATE IF ANYTHING CHANGES. IT IS NOT A WAY TO AVOID OPERATING ON A SICK PATIENT.",
+     "f_the_postoperative_and_secondary_prevention_that_prevents_recurrence": {
+      "the_step_that_gets_forgotten": "TEST FOR AND ERADICATE HELICOBACTER PYLORI IN EVERY PATIENT. Test at least 4 weeks after antibiotics and 2 weeks after stopping a proton pump inhibitor, or these cause FALSE NEGATIVES — a urea breath test or stool antigen taken while on a PPI is unreliable, and this timing error is extremely common. Eradication with a proton pump inhibitor plus two antibiotics dramatically reduces recurrence.",
+      "stop_the_nsaid": "PERMANENTLY where possible. Provide an alternative analgesic plan for his knee — paracetamol, topical NSAID, physiotherapy, weight management, referral. If an NSAID is genuinely unavoidable, co-prescribe a proton pump inhibitor and use the lowest effective dose. Simply writing \"stop ibuprofen\" without giving him something for his knee guarantees he restarts it.",
+      "proton_pump_inhibitor": "Continue for at least 6 to 8 weeks to allow healing.",
+      "confirm_healing_in_gastric_ulcers": "REPEAT ENDOSCOPY TO CONFIRM HEALING AND EXCLUDE MALIGNANCY in gastric ulcers. Duodenal ulcers do not routinely require it.",
+      "the_rest": "Smoking cessation, alcohol reduction, thromboprophylaxis, early mobilisation, physiotherapy for the atelectasis caused by splinting, and nutritional support."
+     }
+    },
+    "section_6_teaching_points": {
+     "bonus_1_the_three_phases_include_a_deceptive_middle": "Chemical peritonitis for the first couple of hours, then a period where peritoneal fluid dilutes the acid and the pain genuinely EASES and the abdomen softens, then bacterial peritonitis and septic shock. A patient seen at 8 hours can look better than one seen at 2. That apparent improvement has cost lives.",
+     "bonus_2_anterior_perforates_posterior_bleeds": "An anterior duodenal ulcer perforates into the peritoneal cavity. A POSTERIOR one erodes into the gastroduodenal artery and causes massive haemorrhage. One disease, two entirely different emergencies, determined by anatomy.",
+     "bonus_3_a_normal_erect_chest_film_does_not_exclude_perforation": "It is only 70 to 80% sensitive — up to 30% of confirmed perforations show no free air. And the patient must be upright for 10 to 15 minutes beforehand for gas to rise. Reassurance from a normal film is a documented route to a delayed operation.",
+     "bonus_4_kehr_sign_and_c3_4_5": "The phrenic nerve arises from C3, C4 and C5, which also supply the shoulder skin. Diaphragmatic irritation by acid, gas or blood is therefore referred to the shoulder tip. It occurs in perforation, intraperitoneal bleeding such as ruptured spleen or ectopic pregnancy, and after laparoscopy.",
+     "bonus_5_third_space_loss_is_much_larger_than_it_looks": "The inflamed peritoneum leaks plasma over a vast surface area. Several litres can be lost while the abdomen appears only moderately distended. These patients need far more fluid than expected and arrive shocked in theatre if resuscitation was timid.",
+     "bonus_6_biopsy_the_edge_of_a_perforated_gastric_ulcer": "A proportion are malignant. Duodenal ulcers essentially never are. It is a small step at operation with major consequences if omitted, and gastric ulcers additionally need repeat endoscopy to confirm healing.",
+     "bonus_7_test_for_helicobacter_at_the_right_time": "Urea breath test or stool antigen taken while on a proton pump inhibitor or soon after antibiotics gives a FALSE NEGATIVE. Wait at least 2 weeks off the PPI and 4 weeks after antibiotics. This timing error is extremely common and leads to untreated infection and recurrence.",
+     "trap_1": "DO AN ECG in every patient over 40 with upper abdominal pain — an inferior MI presents this way and taking that patient to theatre is a catastrophe.",
+     "trap_2": "Amylase can be moderately raised in perforation, so it does not reliably distinguish perforation from pancreatitis.",
+     "trap_3": "Consider ruptured aortic aneurysm in any patient over 50 with sudden abdominal pain and hypotension.",
+     "trap_4": "Distinguish involuntary RIGIDITY from voluntary guarding by watching and talking, not by pressing harder.",
+     "trap_5": "Ask about over-the-counter medicines BY NAME — the NSAID that caused this appeared on no prescription list.",
+     "trap_6": "Give an alternative analgesic plan when stopping the NSAID, or the patient will restart it.",
+     "one_line_summary": "Perforated peptic ulcer from over-the-counter ibuprofen. Resuscitate hard and in parallel, antibiotics and a nasogastric tube, erect chest film knowing it misses a third, straight to theatre for an omental patch — then eradicate Helicobacter and give him something else for his knee."
+    }
+   },
+   "glossary": [
+    {
+     "abbr": "COX",
+     "full": "cyclo-oxygenase",
+     "gloss": "the enzyme making prostaglandins and thromboxane from arachidonic acid"
+    },
+    {
+     "abbr": "COX-1",
+     "full": "cyclo-oxygenase 1",
+     "gloss": "the constant housekeeping form protecting stomach, kidney and platelets"
+    },
+    {
+     "abbr": "CRP",
+     "full": "C-reactive protein"
+    },
+    {
+     "abbr": "CT",
+     "full": "computed tomography"
+    },
+    {
+     "abbr": "ECG",
+     "full": "electrocardiogram"
+    },
+    {
+     "abbr": "NSAID",
+     "full": "non-steroidal anti-inflammatory drug",
+     "gloss": "ibuprofen, naproxen, diclofenac — as distinct from corticosteroids"
+    }
+   ],
+   "specialty": "Surgery — General surgery",
+   "teaching_case": true,
+   "inputs": [],
+   "logic": {},
+   "outputs": [],
+   "warnings": [
+    "A NORMAL ERECT CHEST RADIOGRAPH DOES NOT EXCLUDE PERFORATION — it is only 70 to 80% sensitive.",
+    "The patient must be UPRIGHT FOR 10 TO 15 MINUTES before the erect film, or free gas will not have risen.",
+    "BEWARE THE DECEPTIVE MIDDLE PHASE — peritoneal fluid dilutes the acid and the pain eases while bacteria multiply.",
+    "THIRD-SPACE FLUID LOSS IS MUCH LARGER THAN IT LOOKS — expect to need several litres.",
+    "RESUSCITATION MUST NOT DELAY SURGERY — source control is part of the resuscitation.",
+    "DO AN ECG in every patient over 40 with upper abdominal pain — inferior MI presents this way.",
+    "Consider RUPTURED AORTIC ANEURYSM in any patient over 50 with sudden abdominal pain and hypotension.",
+    "AMYLASE CAN BE RAISED IN PERFORATION — it does not reliably distinguish it from pancreatitis.",
+    "ANTERIOR duodenal ulcers PERFORATE; POSTERIOR ones erode the gastroduodenal artery and BLEED.",
+    "ALWAYS BIOPSY THE EDGE OF A PERFORATED GASTRIC ULCER — a proportion are malignant.",
+    "Repeat endoscopy to confirm healing of gastric ulcers; duodenal ulcers do not routinely need it.",
+    "TEST FOR HELICOBACTER AT THE RIGHT TIME — at least 2 weeks off a PPI and 4 weeks after antibiotics, or you get a false negative.",
+    "ASK ABOUT OVER-THE-COUNTER MEDICINES BY NAME — the causative NSAID appears on no prescription list.",
+    "Give an alternative analgesic plan when stopping the NSAID, or the patient will restart it.",
+    "Doses and antibiotic choices here are teaching examples. Follow local surgical policy."
+   ],
+   "limitations": [
+    "A WORKED TEACHING CASE, not a protocol. Antibiotic choice, operative approach and non-operative selection vary between services.",
+    "Non-operative management has a narrow, carefully selected place and requires repeated senior surgical review."
+   ],
+   "flashcards": [
+    {
+     "q": "Describe the three phases of perforation.",
+     "a": "Chemical peritonitis, then a deceptive phase as fluid dilutes the acid and pain eases, then bacterial peritonitis and shock."
+    },
+    {
+     "q": "Why does perforation cause shoulder tip pain?",
+     "a": "The phrenic nerve arises from C3, C4 and C5, which also supply the shoulder skin — Kehr sign."
+    },
+    {
+     "q": "How sensitive is the erect chest radiograph?",
+     "a": "Only 70 to 80% — up to 30% of confirmed perforations show no free air."
+    },
+    {
+     "q": "How must the erect film be taken?",
+     "a": "The patient upright for 10 to 15 minutes beforehand, or a left lateral decubitus if they cannot sit."
+    },
+    {
+     "q": "What is the difference between anterior and posterior duodenal ulcers?",
+     "a": "Anterior perforates; posterior erodes the gastroduodenal artery and causes massive haemorrhage."
+    },
+    {
+     "q": "What is the Graham patch?",
+     "a": "An omental patch laid over the perforation and secured with sutures, plus thorough peritoneal lavage."
+    },
+    {
+     "q": "Why biopsy a perforated gastric ulcer?",
+     "a": "A proportion are malignant — duodenal ulcers essentially never are."
+    },
+    {
+     "q": "What are the three Boey score factors?",
+     "a": "Shock on admission, major medical comorbidity, and symptoms for more than 24 hours."
+    },
+    {
+     "q": "When should Helicobacter testing be done?",
+     "a": "At least 2 weeks off a PPI and 4 weeks after antibiotics, or the test is falsely negative."
+    },
+    {
+     "q": "Why is the breathing shallow?",
+     "a": "The patient splints to avoid moving the inflamed peritoneum, causing basal atelectasis."
+    },
+    {
+     "q": "How do you distinguish rigidity from voluntary guarding?",
+     "a": "Rigidity is involuntary and cannot be overcome by distraction or reassurance."
+    },
+    {
+     "q": "What is Chilaiditi sign?",
+     "a": "Colon interposed between liver and diaphragm mimicking free air — look for haustral markings."
+    }
+   ],
+   "checkboxes": [
+    "ECG performed if over 40 with upper abdominal pain",
+    "Pregnancy test if applicable",
+    "Ruptured aortic aneurysm considered",
+    "Two large-bore cannulae and aggressive fluid resuscitation",
+    "Sepsis six completed within the hour",
+    "Broad-spectrum antibiotics given",
+    "Nasogastric tube and intravenous proton pump inhibitor",
+    "Catheter with hourly urine output",
+    "Erect chest film taken correctly, and a normal film not used to exclude",
+    "CT considered if diagnosis uncertain, but not delaying theatre in peritonitis",
+    "Cross-match and critical care involvement",
+    "Surgery for omental patch and lavage",
+    "Gastric ulcer edge biopsied",
+    "Helicobacter testing timed correctly and eradication arranged",
+    "NSAID stopped with an alternative analgesic plan provided"
+   ],
+   "related_slugs": [
+    "peptic_ulcer_disease_causes_complications_and_eradication"
+   ],
+   "patient_integration": null,
+   "governance": {
+    "evidence_tier": "T5_textbook_or_standard_teaching",
+    "verification_status": "standard_teaching",
+    "sources": [],
+    "nigeria_overlay": null,
+    "build_date": "2026-08-07",
+    "review_interval_months": 12,
+    "next_review_due": "2027-08-07",
+    "clinical_reviewer": null,
+    "approved_for_release": false,
+    "local_confirmation_required": true,
+    "supersedes": null,
+    "content_hash": "e21daf16c7cfe22b"
+   }
+  },
+  {
+   "id": "AS-CASE-0033",
+   "schema_version": "4.0.0",
+   "content_release": "AWIBI-SCOUT-CONTENT-2026.08.R3",
+   "type": "case",
+   "title": "CASE: Fever, Jaundice and Right Upper Quadrant Pain — Then Confusion",
+   "short_title": "Case: acute ascending cholangitis",
+   "slug": "case_fever_jaundice_and_right_upper_quadrant_pain_then_confusion",
+   "also_known_as": [
+    "case cholangitis",
+    "ascending cholangitis case",
+    "charcot triad case",
+    "reynolds pentad",
+    "ercp case",
+    "biliary sepsis",
+    "obstructive jaundice sepsis",
+    "tokyo guidelines",
+    "biliary drainage"
+   ],
+   "summary": "A 71-year-old with Charcot triad progressing to Reynolds pentad. Teaches why this is an obstructed infected system rather than an infection you can treat with antibiotics, and why DRAINAGE within hours is the treatment.",
+   "domains": [
+    "general_surgery",
+    "gastroenterology",
+    "emergency_medicine",
+    "infectious_disease"
+   ],
+   "intents": [
+    "identify",
+    "act"
+   ],
+   "populations": [
+    "all_ages"
+   ],
+   "contexts": [
+    "routine"
+   ],
+   "hazard": "critical",
+   "urgency": "immediate",
+   "jurisdiction": "international",
+   "search": {
+    "terms": [
+     "ascending cholangitis",
+     "ascending cholangitis case",
+     "biliary drainage",
+     "biliary sepsis",
+     "case",
+     "case cholangitis",
+     "case: acute ascending cholangitis",
+     "case: fever, jaundice and right upper quadrant pain — then confusion",
+     "charcot triad",
+     "charcot triad case",
+     "cholecystectomy",
+     "choledocholithiasis",
+     "common bile duct stone",
+     "confusion",
+     "ercp",
+     "ercp case",
+     "fever",
+     "gallstone",
+     "jaundice",
+     "mrcp",
+     "murphy sign",
+     "obstructive jaundice",
+     "obstructive jaundice sepsis",
+     "pain",
+     "percutaneous transhepatic cholangiography",
+     "quadrant",
+     "reynolds pentad",
+     "right",
+     "sphincterotomy",
+     "then",
+     "tokyo guidelines",
+     "upper"
+    ],
+    "ambiguous_terms": [],
+    "phrases": [],
+    "field_weights": {
+     "title": 8,
+     "short_title": 6,
+     "also_known_as": 5,
+     "terms": 4,
+     "summary": 2,
+     "body": 1,
+     "flashcards": 0.5
+    }
+   },
+   "body": {
+    "the_one_line": "71-year-old woman with 2 days of right upper quadrant pain, fever with rigors and yellow eyes, who has become confused and hypotensive in the last 3 hours.",
+    "section_1_clerking": {
+     "history": "Two days of constant right upper quadrant pain radiating to the back and right shoulder blade. Fever with SHAKING RIGORS. Her daughter noticed her eyes turned yellow yesterday. Her urine has gone DARK and her stools PALE. In the last three hours she has become confused and drowsy. She has had episodes of similar but milder right upper quadrant pain after fatty meals for two years.",
+     "the_two_named_patterns_and_what_they_mean": {
+      "charcot_triad": "FEVER (with rigors) · JAUNDICE · RIGHT UPPER QUADRANT PAIN. THE TRIAD OF ACUTE CHOLANGITIS. It is SPECIFIC but only moderately SENSITIVE — present in perhaps half to two thirds of cases — SO ITS ABSENCE DOES NOT EXCLUDE CHOLANGITIS, particularly in the elderly, where fever and pain may both be muted.",
+      "reynolds_pentad": "CHARCOT TRIAD PLUS HYPOTENSION AND CONFUSION. IT INDICATES SUPPURATIVE CHOLANGITIS WITH SEPTIC SHOCK AND CARRIES HIGH MORTALITY. SHE HAS ALL FIVE. THE PENTAD IS NOT AN EXAM CURIOSITY — IT IS THE SIGNAL THAT THE PATIENT NEEDS DRAINAGE WITHIN HOURS, NOT TOMORROW."
+     },
+     "the_dark_urine_and_pale_stool_which_localise_the_problem": {
+      "the_explanation": "CONJUGATED bilirubin is water-soluble. When the bile duct is obstructed, conjugated bilirubin cannot reach the gut, so it refluxes into the blood and is excreted by the KIDNEYS — giving DARK URINE. Meanwhile no bilirubin reaches the intestine to be converted to stercobilin, so the stool loses its colour — PALE STOOL. There is also no bile salt delivery, so fat is not emulsified — hence STEATORRHOEA and, over time, fat-soluble vitamin deficiency.",
+      "why_it_matters": "DARK URINE PLUS PALE STOOL MEANS OBSTRUCTIVE (POST-HEPATIC) JAUNDICE. In HAEMOLYTIC jaundice the bilirubin is UNCONJUGATED, fat-soluble, bound to albumin and NOT excreted in urine — so the urine is NORMAL and the stool is normal or dark. Two questions at the bedside separate the categories before any test."
+     },
+     "the_associated_symptom_to_ask_about": "PRURITUS — itching from retained bile salts. It is common in obstructive jaundice, often severe, and it is frequently not asked about and therefore not treated.",
+     "past_medical_history": "Type 2 diabetes. Hypertension. Known gallstones on an ultrasound two years ago, for which she declined surgery.",
+     "vitals": "BP 84/46 mmHg. Pulse 124. Respiratory rate 28. Temperature 38.9. Saturation 94%. GCS 13. Glucose 14.2. Lactate 4.8 mmol/L. Urine output minimal.",
+     "examination": "Jaundiced sclerae and skin. Confused. Cool peripheries with prolonged capillary refill. Tender right upper quadrant with guarding. MURPHY SIGN — ask the patient to breathe out, place your hand at the right costal margin, then ask them to breathe in; the descending inflamed gallbladder meets your hand and the patient CATCHES THEIR BREATH IN PAIN. It is a sign of CHOLECYSTITIS rather than cholangitis, and the two coexist. Scratch marks from pruritus. No stigmata of chronic liver disease. NO palpable mass — but see Courvoisier below.",
+     "courvoisier_law_and_its_honest_status": {
+      "the_statement": "In the presence of PAINLESS jaundice, a PALPABLE, NON-TENDER GALLBLADDER is unlikely to be due to gallstones — and therefore suggests MALIGNANT obstruction, classically pancreatic head carcinoma or cholangiocarcinoma.",
+      "the_reasoning": "Chronic gallstone disease causes a FIBROTIC, SHRUNKEN gallbladder that cannot distend. A previously normal gallbladder obstructed by tumour distends freely and becomes palpable.",
+      "the_caveat": "IT IS A USEFUL RULE OF THUMB, NOT A LAW. Exceptions exist in both directions, including a stone impacted in the cystic duct with a separate distal obstruction. Use it to raise suspicion of malignancy, never to exclude stones."
+     }
+    },
+    "section_2_mechanism": {
+     "the_two_ingredients": "CHOLANGITIS REQUIRES BOTH BILIARY OBSTRUCTION AND BACTERIAL COLONISATION OF BILE. Neither alone produces it. Bile is normally sterile and flows continuously, flushing the tree.",
+     "the_sequence": [
+      "1. Obstruction — most commonly a STONE IN THE COMMON BILE DUCT (choledocholithiasis). Also benign or malignant STRICTURE, tumour of the pancreatic head, ampulla or bile duct, parasitic infestation, and blocked biliary stents.",
+      "2. Bile stasis behind the obstruction allows bacterial proliferation — typically gut organisms ascending from the duodenum: ESCHERICHIA COLI, KLEBSIELLA, ENTEROCOCCUS, ENTEROBACTER and anaerobes.",
+      "3. INTRABILIARY PRESSURE RISES BEHIND THE OBSTRUCTION.",
+      "4. ABOVE ROUGHLY 20 cmH2O, THE TIGHT JUNCTIONS BETWEEN HEPATOCYTES AND BILE CANALICULI FAIL, AND BACTERIA AND ENDOTOXIN ARE FORCED DIRECTLY INTO THE HEPATIC SINUSOIDS AND HENCE INTO THE BLOODSTREAM — CHOLANGIOVENOUS REFLUX."
+     ],
+     "the_single_most_important_consequence": {
+      "the_statement": "THIS IS WHY ANTIBIOTICS ALONE ARE NOT ENOUGH. As long as the pressure remains high, bacteria continue to be pumped into the blood, and antibiotics penetrate obstructed bile poorly. THE DRIVER OF THE SEPSIS IS THE PRESSURE. RELIEVING THE OBSTRUCTION IS THE TREATMENT; THE ANTIBIOTIC SUPPORTS IT.",
+      "the_analogy": "It is the same principle as an obstructed infected kidney or an undrained abscess. YOU CANNOT TREAT AN OBSTRUCTED INFECTED SYSTEM WITHOUT DRAINING IT — and recognising cholangitis as belonging to that category, rather than to the category of \"infections treated with antibiotics\", is the conceptual step that changes management."
+     },
+     "the_associated_risk": "GALLSTONE PANCREATITIS may coexist if a stone obstructs the pancreatic duct at the ampulla — always check amylase or lipase."
+    },
+    "section_3_differentials": {
+     "one_acute_cholangitis": "WORKING DIAGNOSIS. Supporting: Charcot triad progressing to Reynolds pentad, known gallstones, obstructive pattern of jaundice.",
+     "two_acute_cholecystitis": "Right upper quadrant pain, fever and positive Murphy sign, BUT USUALLY WITHOUT SIGNIFICANT JAUNDICE, because the cystic duct rather than the common bile duct is obstructed. Mild jaundice can occur with MIRIZZI SYNDROME, where a stone in the cystic duct or Hartmann pouch compresses the common hepatic duct externally. The two frequently coexist.",
+     "three_biliary_colic": "Pain after fatty meals lasting a few hours, WITHOUT fever, jaundice or raised inflammatory markers. Her two-year history fits this, and it is the warning that preceded today.",
+     "four_acute_pancreatitis": "Epigastric pain radiating to the back with raised amylase or lipase. GALLSTONE PANCREATITIS AND CHOLANGITIS CAN OCCUR TOGETHER when a stone impacts at the ampulla — the presence of one does not exclude the other.",
+     "five_liver_abscess": "Fever, right upper quadrant pain and raised inflammatory markers, but usually a more subacute course. AMOEBIC LIVER ABSCESS must be considered in the appropriate setting and is treated with metronidazole rather than by drainage in most cases. Ultrasound and CT distinguish them.",
+     "six_malignant_obstruction": "Pancreatic head carcinoma, cholangiocarcinoma or ampullary tumour, presenting with PROGRESSIVE PAINLESS jaundice and weight loss — but they can become infected and present exactly as cholangitis, particularly after instrumentation.",
+     "seven_viral_or_drug_hepatitis": "Jaundice with markedly raised transaminases and a HEPATITIC rather than cholestatic pattern, without the biliary pain.",
+     "eight_right_lower_lobe_pneumonia_and_sepsis_of_other_origin": "Can cause right upper quadrant pain and a degree of jaundice. Examine the chest and consider the whole patient."
+    },
+    "section_4_investigations": {
+     "the_pattern_on_liver_function_tests": {
+      "the_cholestatic_pattern": "ALKALINE PHOSPHATASE AND GAMMA-GT RAISED DISPROPORTIONATELY TO THE TRANSAMINASES, with a raised CONJUGATED bilirubin. That combination indicates OBSTRUCTION.",
+      "the_hepatitic_pattern": "ALT and AST raised disproportionately — indicating hepatocyte injury from viral, drug or ischaemic causes.",
+      "the_useful_nuance": "A brief but MARKED SPIKE IN TRANSAMINASES can occur at the moment a stone passes or impacts, which can be mistaken for hepatitis. Interpret the trend and the whole picture, not one result.",
+      "the_alkaline_phosphatase_source_check": "Alkaline phosphatase also comes from BONE and PLACENTA. A raised GAMMA-GT alongside confirms the biliary origin."
+     },
+     "bloods": "FULL BLOOD COUNT — raised white cells with neutrophilia · CRP · UREA AND ELECTROLYTES for acute kidney injury, which is common in biliary sepsis · LIVER FUNCTION as above · AMYLASE OR LIPASE for coexisting pancreatitis · CLOTTING — the PROTHROMBIN TIME MAY BE PROLONGED because obstruction prevents bile salt delivery and therefore absorption of FAT-SOLUBLE VITAMIN K, and this matters before any procedure · GLUCOSE · LACTATE · BLOOD CULTURES BEFORE ANTIBIOTICS, which are positive in a high proportion and guide definitive therapy · GROUP AND SAVE.",
+     "imaging": {
+      "ultrasound_first": "FIRST-LINE, immediate, no radiation. Looks for GALLSTONES, a DILATED COMMON BILE DUCT (normally under about 6 mm, rising slightly with age and after cholecystectomy), intrahepatic duct dilatation, and gallbladder wall thickening. IMPORTANT LIMITATION: ULTRASOUND FREQUENTLY FAILS TO SEE THE STONE IN THE DISTAL COMMON BILE DUCT because of overlying bowel gas — SO A DILATED DUCT WITHOUT A VISIBLE STONE IS STILL HIGHLY SUGGESTIVE, and a normal-calibre duct does not exclude a stone, particularly early.",
+      "mrcp": "MAGNETIC RESONANCE CHOLANGIOPANCREATOGRAPHY — highly sensitive for duct stones, non-invasive, and the investigation of choice where the diagnosis is uncertain and the patient is stable. IT IS DIAGNOSTIC ONLY — it cannot treat. DO NOT DELAY DRAINAGE IN A SEPTIC PATIENT TO OBTAIN AN MRCP.",
+      "ct": "Useful for complications, for malignancy, and where ultrasound is inconclusive. Less sensitive than MRCP for small stones.",
+      "endoscopic_ultrasound": "Very sensitive for small distal duct stones where MRCP is equivocal."
+     },
+     "severity_grading": "The TOKYO GUIDELINES grade cholangitis as MILD (responds to initial treatment), MODERATE (does not respond, or has specific adverse features) and SEVERE (organ dysfunction — cardiovascular, neurological, respiratory, renal, hepatic or haematological). SEVERE DISEASE MANDATES URGENT DRAINAGE AND CRITICAL CARE. SHE IS SEVERE, WITH CARDIOVASCULAR AND NEUROLOGICAL DYSFUNCTION."
+    },
+    "section_5_management": {
+     "the_three_simultaneous_priorities": "RESUSCITATE · ANTIBIOTICS · DRAIN. THE THIRD IS THE DEFINITIVE TREATMENT AND IS THE ONE MOST OFTEN DELAYED WHILE THE FIRST TWO ARE ATTENDED TO.",
+     "a_resuscitation": "ABCDE. Oxygen. Two large-bore cannulae. BALANCED CRYSTALLOID boluses with reassessment. Blood cultures. CATHETERISE with hourly urine output. Correct glucose. If hypotension persists after adequate fluid, VASOPRESSORS and CRITICAL CARE — she is in septic shock and will not tolerate a procedure without support. The SEPSIS SIX within the hour.",
+     "b_antibiotics": "BROAD-SPECTRUM INTRAVENOUS ANTIBIOTICS covering Gram-negatives, enterococci and anaerobes — for example piperacillin with tazobactam, or a cephalosporin with metronidazole, per local policy. Give them after cultures, but do not let culture-taking delay them. NARROW LATER guided by blood and bile cultures — BILE OBTAINED AT DRAINAGE SHOULD BE SENT FOR CULTURE, and it frequently yields the organism when blood cultures do not.",
+     "c_correct_the_coagulopathy_before_the_procedure": "GIVE INTRAVENOUS VITAMIN K if the prothrombin time is prolonged, because obstruction impairs vitamin K absorption. In urgent situations, or with significant coagulopathy, prothrombin complex concentrate or plasma may be needed. THIS IS EASILY OVERLOOKED AND MATTERS, because ERCP with sphincterotomy causes bleeding.",
+     "d_biliary_drainage_which_is_the_treatment": {
+      "the_timing": "URGENT — WITHIN 24 HOURS, AND WITHIN HOURS IN SEVERE DISEASE OR SEPTIC SHOCK. Delay to drainage is strongly associated with mortality. In a patient with Reynolds pentad, drainage is as urgent as an operation for peritonitis.",
+      "ercp_the_first_choice": {
+       "what_it_is": "ENDOSCOPIC RETROGRADE CHOLANGIOPANCREATOGRAPHY. A side-viewing endoscope reaches the duodenum, the ampulla is cannulated, and the biliary tree is opacified. SPHINCTEROTOMY divides the sphincter of Oddi, stones are extracted with a balloon or basket, and a STENT is placed if needed to guarantee drainage.",
+       "why_it_is_preferred": "It is both diagnostic and THERAPEUTIC in one procedure, and it is less invasive than surgery.",
+       "in_the_very_unstable_patient": "A SHORT PROCEDURE WITH SIMPLE STENT INSERTION OR NASOBILIARY DRAIN PLACEMENT TO ACHIEVE DECOMPRESSION, DEFERRING STONE CLEARANCE, IS OFTEN THE RIGHT CHOICE. THE AIM IS TO RELIEVE PRESSURE, NOT TO ACHIEVE A PERFECT RESULT IN ONE SITTING.",
+       "complications_to_know": "POST-ERCP PANCREATITIS, the commonest — rectal NSAIDs such as diclofenac or indometacin at the time of the procedure reduce its incidence and are given routinely unless contraindicated. Also bleeding after sphincterotomy, perforation, cholangitis and sedation-related events."
+      },
+      "percutaneous_transhepatic_biliary_drainage": "PTC — a radiologically placed drain through the liver into a dilated duct. USED WHEN ERCP FAILS, IS NOT AVAILABLE, OR IS NOT POSSIBLE — for example altered anatomy after gastric surgery, or a hilar obstruction. It is an essential alternative and should be considered early rather than after repeated failed attempts.",
+      "surgical_drainage": "Open common bile duct exploration is now rarely first-line but remains necessary where endoscopic and percutaneous options are unavailable — which is the reality in many settings, and it is a legitimate and life-saving operation."
+     },
+     "e_the_definitive_treatment_of_the_gallbladder": {
+      "the_rule": "RELIEVING THE DUCT DOES NOT TREAT THE GALLBLADDER. IF GALLSTONES ARE THE CAUSE, CHOLECYSTECTOMY IS NEEDED, OR SHE WILL RETURN.",
+      "the_timing": "Usually performed during the SAME ADMISSION or shortly afterwards, once sepsis has resolved. Delaying it for months carries a substantial risk of recurrent cholangitis, cholecystitis or pancreatitis in the interval — and \"we will do it as an outpatient\" is how patients come back sicker. In a frail patient unfit for surgery, sphincterotomy alone may be accepted as definitive management."
+     },
+     "f_the_things_that_get_missed_afterwards": "PRURITUS — treat it; it is miserable and often ignored. NUTRITION and fat-soluble vitamin status (A, D, E, K) after prolonged obstruction. DIABETES control, which is disrupted by sepsis. If obstruction proves MALIGNANT, arrange staging and multidisciplinary discussion promptly — the drainage is palliative, not the plan. Ensure the histology or cytology from any brushings is followed up."
+    },
+    "section_6_teaching_points": {
+     "bonus_1_it_is_an_obstructed_infected_system": "Above roughly 20 cmH2O of biliary pressure, the junctions between hepatocytes and canaliculi fail and bacteria are pumped directly into the bloodstream — cholangiovenous reflux. Antibiotics cannot fix that, and they penetrate obstructed bile poorly. This belongs to the same category as an obstructed infected kidney or an undrained abscess: DRAINAGE IS THE TREATMENT.",
+     "bonus_2_charcot_is_specific_but_not_sensitive": "The triad is present in only about half to two thirds of cases, and much less often in the elderly, where fever and pain are muted. Its absence excludes nothing. Reynolds pentad — adding hypotension and confusion — means suppurative cholangitis and mandates drainage within hours.",
+     "bonus_3_dark_urine_and_pale_stool_localise_the_jaundice": "Conjugated bilirubin is water-soluble and is excreted by the kidney when it cannot reach the gut, giving dark urine; no bilirubin reaching the intestine gives pale stool. In haemolysis the bilirubin is unconjugated, albumin-bound and NOT excreted in urine. Two bedside questions separate the categories.",
+     "bonus_4_ultrasound_often_misses_the_duct_stone": "Bowel gas obscures the distal common bile duct. A DILATED DUCT WITHOUT A VISIBLE STONE is still highly suggestive, and a normal-calibre duct does not exclude one. MRCP is far more sensitive — but it is diagnostic only and must not delay drainage in a septic patient.",
+     "bonus_5_check_the_clotting_before_the_procedure": "Obstruction prevents bile salt delivery, so fat-soluble VITAMIN K is not absorbed and the prothrombin time is prolonged. ERCP with sphincterotomy causes bleeding. Giving vitamin K is easily overlooked and easily done.",
+     "bonus_6_decompress_rather_than_perfect": "In an unstable patient, a short ERCP placing a stent or nasobiliary drain, deferring stone clearance, is often the correct choice. The aim is to relieve the pressure driving the sepsis, not to complete the definitive repair in one sitting.",
+     "bonus_7_rectal_nsaids_reduce_post_ercp_pancreatitis": "Rectal diclofenac or indometacin at the time of the procedure reduces the commonest complication of ERCP and is given routinely unless contraindicated.",
+     "trap_1": "Courvoisier is a rule of thumb, not a law — use a palpable non-tender gallbladder in painless jaundice to raise suspicion of malignancy, never to exclude stones.",
+     "trap_2": "Cholangitis and gallstone pancreatitis coexist — always check amylase or lipase.",
+     "trap_3": "Send BILE for culture at drainage — it often yields the organism when blood cultures do not.",
+     "trap_4": "Consider percutaneous drainage EARLY when ERCP fails or is not feasible, rather than after repeated attempts.",
+     "trap_5": "Arrange cholecystectomy during the same admission or shortly after — deferring it for months brings the patient back sicker.",
+     "trap_6": "Alkaline phosphatase also comes from bone and placenta — a raised gamma-GT confirms the biliary source.",
+     "one_line_summary": "Severe ascending cholangitis with Reynolds pentad. Resuscitate, cultures then broad-spectrum antibiotics, correct the vitamin K-dependent coagulopathy, and get her drained within hours — because the pressure, not the bacteria, is what is killing her."
+    }
+   },
+   "glossary": [
+    {
+     "abbr": "ALT",
+     "full": "alanine aminotransferase",
+     "gloss": "a liver-specific enzyme released when hepatocytes are injured"
+    },
+    {
+     "abbr": "AST",
+     "full": "aspartate aminotransferase",
+     "gloss": "an enzyme from liver, heart, muscle and red cells"
+    },
+    {
+     "abbr": "CRP",
+     "full": "C-reactive protein"
+    },
+    {
+     "abbr": "CT",
+     "full": "computed tomography"
+    },
+    {
+     "abbr": "GCS",
+     "full": "Glasgow Coma Scale"
+    }
+   ],
+   "specialty": "Surgery — General surgery",
+   "teaching_case": true,
+   "inputs": [],
+   "logic": {},
+   "outputs": [],
+   "warnings": [
+    "CHOLANGITIS IS AN OBSTRUCTED INFECTED SYSTEM — antibiotics alone are NOT enough. DRAINAGE IS THE TREATMENT.",
+    "REYNOLDS PENTAD means suppurative cholangitis and septic shock — drainage within HOURS, not tomorrow.",
+    "CHARCOT TRIAD is present in only about half to two thirds of cases — its absence excludes nothing, especially in the elderly.",
+    "ULTRASOUND OFTEN MISSES THE DISTAL DUCT STONE because of bowel gas — a dilated duct without a visible stone is still highly suggestive.",
+    "MRCP IS DIAGNOSTIC ONLY — do not delay drainage in a septic patient to obtain one.",
+    "CHECK AND CORRECT THE CLOTTING before ERCP — obstruction prevents vitamin K absorption and sphincterotomy bleeds.",
+    "In an unstable patient, DECOMPRESS with a stent or nasobiliary drain rather than attempting full stone clearance.",
+    "Give RECTAL NSAIDs at ERCP to reduce post-ERCP pancreatitis unless contraindicated.",
+    "Consider PERCUTANEOUS DRAINAGE EARLY when ERCP fails or is not feasible.",
+    "SEND BILE FOR CULTURE at drainage — it often yields the organism when blood cultures do not.",
+    "Always check AMYLASE OR LIPASE — gallstone pancreatitis coexists.",
+    "ARRANGE CHOLECYSTECTOMY during the same admission or shortly after — deferring it brings the patient back sicker.",
+    "Courvoisier is a rule of thumb, NOT a law — never use it to exclude stones.",
+    "Alkaline phosphatase also comes from bone and placenta — check gamma-GT to confirm the biliary source.",
+    "Antibiotic choices here are teaching examples. Follow local microbiology policy."
+   ],
+   "limitations": [
+    "A WORKED TEACHING CASE, not a protocol. Drainage modality depends on local availability of ERCP and interventional radiology.",
+    "Where endoscopic and percutaneous options are unavailable, open surgical drainage remains a legitimate life-saving alternative."
+   ],
+   "flashcards": [
+    {
+     "q": "What is Charcot triad and how sensitive is it?",
+     "a": "Fever, jaundice and right upper quadrant pain — present in only about half to two thirds of cases."
+    },
+    {
+     "q": "What is Reynolds pentad?",
+     "a": "Charcot triad plus hypotension and confusion — suppurative cholangitis with septic shock."
+    },
+    {
+     "q": "Why are antibiotics alone insufficient?",
+     "a": "High biliary pressure forces bacteria into the bloodstream via cholangiovenous reflux, and antibiotics penetrate obstructed bile poorly."
+    },
+    {
+     "q": "Why is the urine dark and the stool pale?",
+     "a": "Conjugated bilirubin is water-soluble and excreted renally when it cannot reach the gut; no bilirubin reaches the intestine to colour the stool."
+    },
+    {
+     "q": "What is the limitation of ultrasound here?",
+     "a": "Bowel gas obscures the distal common bile duct — a dilated duct without a visible stone is still highly suggestive."
+    },
+    {
+     "q": "Why check clotting before ERCP?",
+     "a": "Obstruction prevents bile salt delivery so fat-soluble vitamin K is not absorbed; sphincterotomy causes bleeding."
+    },
+    {
+     "q": "What should be done in an unstable patient at ERCP?",
+     "a": "Decompress with a stent or nasobiliary drain and defer stone clearance."
+    },
+    {
+     "q": "How is post-ERCP pancreatitis reduced?",
+     "a": "Rectal diclofenac or indometacin at the time of the procedure."
+    },
+    {
+     "q": "What is Courvoisier law and its caveat?",
+     "a": "A palpable non-tender gallbladder in painless jaundice suggests malignancy — a rule of thumb, never used to exclude stones."
+    },
+    {
+     "q": "What is Mirizzi syndrome?",
+     "a": "A stone in the cystic duct or Hartmann pouch compressing the common hepatic duct externally, causing jaundice."
+    },
+    {
+     "q": "What distinguishes cholestatic from hepatitic liver function tests?",
+     "a": "Cholestatic: ALP and gamma-GT raised disproportionately. Hepatitic: ALT and AST raised disproportionately."
+    },
+    {
+     "q": "What must follow duct clearance?",
+     "a": "Cholecystectomy during the same admission or shortly after, or the patient returns."
+    }
+   ],
+   "checkboxes": [
+    "Charcot and Reynolds features documented",
+    "Urine and stool colour asked about",
+    "Sepsis six completed within the hour",
+    "Blood cultures taken before antibiotics",
+    "Broad-spectrum antibiotics given",
+    "Amylase or lipase checked",
+    "Clotting checked and vitamin K given if prolonged",
+    "Ultrasound performed urgently",
+    "MRCP not allowed to delay drainage in a septic patient",
+    "Tokyo severity grade assigned",
+    "Urgent biliary drainage arranged within hours for severe disease",
+    "Percutaneous drainage considered if ERCP fails or is unavailable",
+    "Bile sent for culture at drainage",
+    "Rectal NSAID given at ERCP",
+    "Cholecystectomy planned for the same admission or shortly after"
+   ],
+   "related_slugs": [
+    "charcot_triad_and_the_biliary_emergencies"
+   ],
+   "patient_integration": null,
+   "governance": {
+    "evidence_tier": "T5_textbook_or_standard_teaching",
+    "verification_status": "standard_teaching",
+    "sources": [],
+    "nigeria_overlay": null,
+    "build_date": "2026-08-07",
+    "review_interval_months": 12,
+    "next_review_due": "2027-08-07",
+    "clinical_reviewer": null,
+    "approved_for_release": false,
+    "local_confirmation_required": true,
+    "supersedes": null,
+    "content_hash": "ddca89e549777cde"
+   }
+  },
+  {
+   "id": "AS-CASE-0034",
+   "schema_version": "4.0.0",
+   "content_release": "AWIBI-SCOUT-CONTENT-2026.08.R3",
+   "type": "case",
+   "title": "CASE: Massive Abdominal Distension and No Flatus for Three Days",
+   "short_title": "Case: sigmoid volvulus and large bowel obstruction",
+   "slug": "case_massive_abdominal_distension_and_no_flatus_for_three_days",
+   "also_known_as": [
+    "case sigmoid volvulus",
+    "large bowel obstruction case",
+    "coffee bean sign",
+    "closed loop obstruction",
+    "ileocaecal valve competent",
+    "flatus tube",
+    "caecal perforation",
+    "laplace law bowel",
+    "absolute constipation"
+   ],
+   "summary": "A 68-year-old with gross distension, absolute constipation and a coffee-bean sign. Teaches the four cardinal features of obstruction, why a competent ileocaecal valve is dangerous, why the caecum perforates rather than the sigmoid, and when decompression must be abandoned for theatre.",
+   "domains": [
+    "general_surgery",
+    "emergency_medicine",
+    "gastroenterology"
+   ],
+   "intents": [
+    "identify",
+    "act"
+   ],
+   "populations": [
+    "all_ages"
+   ],
+   "contexts": [
+    "routine"
+   ],
+   "hazard": "critical",
+   "urgency": "immediate",
+   "jurisdiction": "international",
+   "search": {
+    "terms": [
+     "abdominal",
+     "absolute constipation",
+     "caecal diameter",
+     "caecal perforation",
+     "case",
+     "case sigmoid volvulus",
+     "case: massive abdominal distension and no flatus for three days",
+     "case: sigmoid volvulus and large bowel obstruction",
+     "closed loop obstruction",
+     "coffee bean sign",
+     "days",
+     "distension",
+     "flatus",
+     "flatus tube",
+     "hartmann procedure",
+     "ileocaecal valve",
+     "ileocaecal valve competent",
+     "laplace law bowel",
+     "large bowel obstruction",
+     "large bowel obstruction case",
+     "law of laplace",
+     "massive",
+     "neostigmine",
+     "ogilvie syndrome",
+     "pseudo-obstruction",
+     "sigmoid colectomy",
+     "sigmoid volvulus",
+     "sigmoidoscopic decompression",
+     "three"
+    ],
+    "ambiguous_terms": [],
+    "phrases": [],
+    "field_weights": {
+     "title": 8,
+     "short_title": 6,
+     "also_known_as": 5,
+     "terms": 4,
+     "summary": 2,
+     "body": 1,
+     "flashcards": 0.5
+    }
+   },
+   "body": {
+    "the_one_line": "68-year-old man with 3 days of increasing abdominal distension, colicky pain, no flatus and no bowel movement, whose abdomen is now grossly distended and tympanitic. His abdominal radiograph shows a huge loop arising from the pelvis.",
+    "section_1_clerking": {
+     "the_four_cardinal_features_of_intestinal_obstruction": {
+      "the_list": "ABDOMINAL PAIN (colicky) · VOMITING · ABDOMINAL DISTENSION · ABSOLUTE CONSTIPATION (no faeces AND no flatus).",
+      "how_the_pattern_localises_the_level": "IN HIGH (PROXIMAL SMALL BOWEL) OBSTRUCTION, VOMITING IS EARLY AND PROFUSE, and distension is minimal. IN LOW (LARGE BOWEL) OBSTRUCTION, DISTENSION IS MARKED AND EARLY, and vomiting is LATE and may be faeculent. ABSOLUTE CONSTIPATION APPEARS EARLY IN LARGE BOWEL OBSTRUCTION AND LATE IN SMALL BOWEL OBSTRUCTION, because the distal bowel below a small bowel obstruction still has content to pass. HIS PATTERN — MARKED DISTENSION, EARLY ABSOLUTE CONSTIPATION, LATE VOMITING — IS LARGE BOWEL OBSTRUCTION.",
+      "the_term_absolute_constipation": "It means NO FAECES AND NO FLATUS. Passing flatus means the lumen is not completely obstructed. ASK ABOUT FLATUS SPECIFICALLY — patients report \"constipation\" meaning they have not opened their bowels, which is not the same thing."
+     },
+     "history": "Three days of gradually increasing distension with intermittent colicky central pain. No flatus and no stool for three days. He vomited for the first time this morning. He has a long history of CHRONIC CONSTIPATION and has had two similar but milder episodes in the past year that settled spontaneously. He lives in a residential home. NO weight loss, no rectal bleeding, no change in stool calibre before this.",
+     "the_history_that_points_at_volvulus": "CHRONIC CONSTIPATION with a redundant, elongated sigmoid colon · INSTITUTIONALISED OR IMMOBILE patients · NEUROLOGICAL OR PSYCHIATRIC disease · high-fibre diet in some populations · pregnancy · and PREVIOUS SELF-RESOLVING EPISODES, which are highly suggestive because volvulus can twist and untwist. IN MUCH OF AFRICA AND ASIA, SIGMOID VOLVULUS IS A LEADING CAUSE OF LARGE BOWEL OBSTRUCTION AND AFFECTS YOUNGER PATIENTS THAN IN EUROPE — the textbook picture of an elderly institutionalised patient is not universal.",
+     "the_history_that_would_point_at_cancer_instead": "PROGRESSIVE change in bowel habit over weeks to months · rectal bleeding · weight loss · narrowing stool calibre · iron deficiency anaemia · family history. COLORECTAL CARCINOMA IS THE COMMONEST CAUSE OF LARGE BOWEL OBSTRUCTION IN MOST HIGH-INCOME SETTINGS and must always be considered.",
+     "vitals": "BP 108/64 mmHg. Pulse 106. Respiratory rate 22. Temperature 37.4. Saturation 95%. Lactate 2.4 mmol/L. Urine output reduced.",
+     "examination": "GROSSLY DISTENDED, TYMPANITIC abdomen — drum-like on percussion because it is full of gas. Generally tender but NOT rigid, with no rebound at present. HIGH-PITCHED \"TINKLING\" BOWEL SOUNDS early in obstruction, becoming ABSENT as the bowel tires and ileus supervenes — so absent sounds in obstruction is a LATE and WORSE sign, not a normal one. EXAMINE THE HERNIAL ORIFICES CAREFULLY — an obstructed hernia is a common and easily missed cause and requires only that you look. RECTAL EXAMINATION: EMPTY, BALLOONED RECTUM, which is characteristic of a more proximal obstruction; also feel for a rectal tumour and look for blood on the glove.",
+     "the_signs_that_would_change_everything": "LOCALISED TENDERNESS, GUARDING, REBOUND OR RIGIDITY · FEVER · TACHYCARDIA OUT OF PROPORTION · RISING LACTATE · PERSISTENT PAIN THAT BECOMES CONSTANT RATHER THAN COLICKY. ANY OF THESE SUGGESTS ISCHAEMIA OR PERFORATION AND MEANS THEATRE, NOT FURTHER OBSERVATION."
+    },
+    "section_2_mechanism": {
+     "what_a_volvulus_is": "TWISTING OF A SEGMENT OF BOWEL AROUND ITS MESENTERIC AXIS. It requires a long, mobile segment on a NARROW MESENTERIC BASE — which is exactly what a chronically loaded, elongated sigmoid becomes.",
+     "why_it_is_a_closed_loop": {
+      "the_definition": "A CLOSED LOOP OBSTRUCTION IS OBSTRUCTED AT BOTH ENDS. In sigmoid volvulus the twist occludes the lumen at the point of torsion, so the loop between cannot decompress in either direction.",
+      "why_that_is_dangerous": "Gas and fluid continue to accumulate inside a segment with no outlet. PRESSURE RISES RAPIDLY. The twist ALSO occludes the mesenteric vessels — first the thin-walled VEINS, causing congestion and worsening oedema, then the ARTERIES, causing ISCHAEMIA, NECROSIS AND PERFORATION. A CLOSED LOOP THEREFORE STRANGULATES MUCH FASTER THAN A SIMPLE OBSTRUCTION, AND IT IS A SURGICAL EMERGENCY RATHER THAN A PROBLEM THAT CAN BE OBSERVED."
+     },
+     "the_ileocaecal_valve_which_determines_the_whole_picture": {
+      "if_the_valve_is_INCOMPETENT": "Colonic contents reflux backwards into the small bowel, which decompresses the colon. The patient vomits more and both small and large bowel dilate on the film. IT IS UNCOMFORTABLE BUT SAFER.",
+      "if_the_valve_is_COMPETENT": "Gas cannot escape backwards. THE ENTIRE COLON BETWEEN THE VALVE AND THE OBSTRUCTION BECOMES A SECOND CLOSED LOOP. Pressure rises steeply and the risk of perforation is high. A COMPETENT ILEOCAECAL VALVE CONVERTS LARGE BOWEL OBSTRUCTION INTO A SURGICAL EMERGENCY — this is the counter-intuitive point, because a competent valve sounds like a good thing."
+     },
+     "why_the_caecum_perforates_and_not_the_obstructed_segment": {
+      "the_law": "THE LAW OF LAPLACE. For a cylinder, WALL TENSION IS PROPORTIONAL TO PRESSURE MULTIPLIED BY RADIUS. Pressure is transmitted equally throughout the closed system, so the segment with the LARGEST RADIUS experiences the GREATEST WALL TENSION.",
+      "the_consequence": "THE CAECUM IS THE WIDEST PART OF THE COLON. It therefore develops the highest wall tension and PERFORATES FIRST — even though the obstruction is in the sigmoid, far away. THIS IS WHY THE CAECAL DIAMETER ON THE FILM IS THE NUMBER THAT MATTERS, NOT THE SIZE OF THE SIGMOID LOOP.",
+      "the_threshold": "A CAECAL DIAMETER OVER ABOUT 9 TO 12 cm INDICATES IMPENDING PERFORATION AND DEMANDS URGENT ACTION. Measure it and write it down."
+     }
+    },
+    "section_3_differentials": {
+     "one_sigmoid_volvulus": "WORKING DIAGNOSIS. Supporting: chronic constipation, institutionalised, previous self-resolving episodes, gross tympanitic distension, characteristic radiograph.",
+     "two_colorectal_carcinoma": "THE COMMONEST CAUSE OF LARGE BOWEL OBSTRUCTION IN MOST HIGH-INCOME SETTINGS. Suggested by progressive symptoms, weight loss, rectal bleeding and anaemia. CT distinguishes it, and it must be excluded even when volvulus is found, because both can be present.",
+     "three_caecal_volvulus": "Less common. Occurs in younger patients with a mobile caecum. The distended loop typically points to the LEFT UPPER quadrant, the reverse of sigmoid volvulus. IT DOES NOT RESPOND TO ENDOSCOPIC DECOMPRESSION AND REQUIRES SURGERY.",
+     "four_diverticular_stricture": "A history of diverticular disease with previous episodes of left iliac fossa pain and fever.",
+     "five_acute_colonic_pseudo_obstruction_ogilvie_syndrome": {
+      "what_it_is": "MASSIVE COLONIC DILATATION WITH NO MECHANICAL OBSTRUCTING LESION, caused by autonomic imbalance. Typical settings: elderly, recent surgery (especially orthopaedic), trauma, severe illness, electrolyte disturbance, and opioids or anticholinergics.",
+      "why_the_distinction_is_essential": "IT IS TREATED MEDICALLY, NOT SURGICALLY. Correct electrolytes (potassium, magnesium, calcium), stop opioids and anticholinergics, treat the underlying illness, decompress with a flatus tube, and consider NEOSTIGMINE — which produces dramatic decompression but requires CARDIAC MONITORING AND ATROPINE AVAILABLE because it causes BRADYCARDIA, and is contraindicated in mechanical obstruction, asthma and significant bradycardia. OPERATING ON PSEUDO-OBSTRUCTION IS A SIGNIFICANT AVOIDABLE HARM, AND ONLY IMAGING SEPARATES THEM RELIABLY."
+     },
+     "six_faecal_impaction": "Common in the same population. Rectal examination finds it — which is one of several reasons the rectal examination is not optional.",
+     "seven_small_bowel_obstruction": "Adhesions and hernias dominate. More vomiting, less distension, and a different radiographic pattern — central loops with VALVULAE CONNIVENTES crossing the FULL width of the bowel, versus peripheral loops with HAUSTRA crossing only PART of the width in the colon."
+    },
+    "section_4_investigations": {
+     "abdominal_radiograph": {
+      "the_coffee_bean_sign": "A MASSIVELY DILATED LOOP ARISING FROM THE PELVIS AND EXTENDING TOWARDS THE RIGHT UPPER QUADRANT, with the two limbs of the loop separated by the dense line of the apposed inner walls — resembling a coffee bean. It is characteristic of SIGMOID volvulus. Loss of haustral markings in the twisted loop is usual.",
+      "what_else_to_look_for": "MEASURE THE CAECAL DIAMETER. Assess whether small bowel is also dilated, which tells you about the ileocaecal valve. Look for FREE AIR under the diaphragm on an erect chest film if perforation is suspected, and for PNEUMATOSIS (gas in the bowel wall) or PORTAL VENOUS GAS, both indicating ischaemia.",
+      "distinguishing_small_from_large_bowel": "SMALL BOWEL — central, VALVULAE CONNIVENTES crossing the FULL width, diameter over 3 cm abnormal. LARGE BOWEL — peripheral, HAUSTRA crossing only PART of the width, over 6 cm abnormal, and over 9 cm for the CAECUM."
+     },
+     "ct_abdomen_and_pelvis_with_contrast": {
+      "why_it_is_usually_still_needed": "It CONFIRMS the volvulus, showing the WHIRL SIGN of twisted mesentery and the transition point; it EXCLUDES an underlying tumour, which can coexist; it identifies ISCHAEMIA through bowel wall changes, poor enhancement, pneumatosis, portal venous gas and free fluid; and it distinguishes mechanical obstruction from PSEUDO-OBSTRUCTION.",
+      "the_exception": "A patient with peritonitis and clear evidence of perforation goes to theatre. Do not delay a laparotomy for a scan in that situation."
+     },
+     "bloods": "Full blood count · UREA AND ELECTROLYTES, which are frequently deranged from vomiting and third-space loss and are also the key to identifying pseudo-obstruction · CRP · LACTATE, which is the most useful single marker of bowel ischaemia, though a NORMAL LACTATE DOES NOT EXCLUDE EARLY ISCHAEMIA · liver function · amylase · clotting · GROUP AND CROSS-MATCH · blood gas.",
+     "do_not": "AVOID BARIUM CONTRAST STUDIES where perforation is possible — barium in the peritoneum causes severe chemical peritonitis. Use water-soluble contrast if a contrast study is needed."
+    },
+    "section_5_management": {
+     "a_the_immediate_measures": {
+      "drip_and_suck": "The traditional phrase for the foundation of obstruction management. INTRAVENOUS FLUID RESUSCITATION — these patients are profoundly volume-deplete from vomiting, reduced intake and litres of fluid sequestered in the distended bowel. NASOGASTRIC TUBE on free drainage to decompress the stomach, reduce vomiting and reduce the risk of aspiration.",
+      "the_rest": "NIL BY MOUTH. Catheterise with hourly urine output. Correct ELECTROLYTES, particularly potassium. Analgesia and antiemetic. Thromboprophylaxis. Bloods and cross-match. Antibiotics if there is any suspicion of ischaemia, perforation or sepsis. SURGICAL REFERRAL IMMEDIATELY."
+     },
+     "b_endoscopic_decompression_which_is_the_first_line_for_sigmoid_volvulus": {
+      "the_procedure": "FLEXIBLE SIGMOIDOSCOPY (or rigid sigmoidoscopy) TO UNTWIST THE LOOP, followed by insertion of a FLATUS TUBE left in place for 24 to 48 hours to keep it decompressed and prevent immediate recurrence.",
+      "the_result": "SUCCESSFUL IN A HIGH PROPORTION — typically 70 to 90% — with a dramatic and immediately obvious rush of gas and liquid faeces, and rapid relief of the distension.",
+      "the_essential_part_of_the_procedure": "INSPECT THE MUCOSA AS YOU GO. IF THE MUCOSA IS ISCHAEMIC — dusky, black, ulcerated or gangrenous — ABANDON THE DECOMPRESSION AND PROCEED TO SURGERY. Decompressing dead bowel and sending the patient back to the ward is a catastrophic error, and it is the single most important judgement in the procedure.",
+      "the_absolute_contraindications": "PERITONITIS · SUSPECTED PERFORATION · EVIDENCE OF ISCHAEMIA. THESE PATIENTS GO TO THEATRE."
+     },
+     "c_when_to_operate": {
+      "the_indications": "FAILED endoscopic decompression · ISCHAEMIC or gangrenous bowel · PERFORATION · PERITONITIS · CAECAL DIAMETER approaching or exceeding the perforation threshold with no decompression achieved · RECURRENT volvulus · and CAECAL volvulus, which does not respond to endoscopic decompression at all.",
+      "the_operations": "SIGMOID COLECTOMY with primary anastomosis in a stable patient with healthy bowel. HARTMANN PROCEDURE — resection with an END COLOSTOMY and closure of the rectal stump — where the bowel is ischaemic, the patient is unstable, or the abdomen is contaminated, because an anastomosis in those conditions leaks. RESECTION WITH ANASTOMOSIS AND DEFUNCTIONING STOMA is an intermediate option.",
+      "the_honest_point_about_stomas": "A HARTMANN PROCEDURE IS THE SAFE OPERATION IN A SICK PATIENT. The stoma can often be reversed later, but many never are. THAT CONVERSATION SHOULD HAPPEN BEFORE THE OPERATION WHERE THE PATIENT IS ABLE TO HAVE IT — and a stoma nurse should see them preoperatively if time allows, including for siting."
+     },
+     "d_the_step_that_prevents_the_next_admission": {
+      "the_problem": "DECOMPRESSION ALONE DOES NOT CURE THE VOLVULUS. THE REDUNDANT SIGMOID IS STILL THERE. RECURRENCE RATES AFTER DECOMPRESSION ALONE ARE HIGH — commonly quoted between 40 and 60%, and each recurrence carries a risk of gangrene.",
+      "the_action": "ELECTIVE SIGMOID COLECTOMY DURING THE SAME ADMISSION, once the patient is decompressed, resuscitated and prepared, IS RECOMMENDED FOR PATIENTS FIT FOR SURGERY. Sending a decompressed patient home with a follow-up appointment is how they return with gangrenous bowel. In genuinely unfit patients, a decision to accept recurrence risk is legitimate — but it should be a documented decision, not an omission."
+     },
+     "e_after_care": "Correct nutrition and electrolytes. Treat the underlying constipation. Review causative medication. Mobilise. IF ANY SUSPICION OF UNDERLYING MALIGNANCY REMAINS, ARRANGE COLONIC ASSESSMENT — the emergency presentation may have masked a tumour, and a colonoscopy after recovery is often warranted. Stoma care and follow-up if one was formed."
+    },
+    "section_6_teaching_points": {
+     "bonus_1_a_competent_ileocaecal_valve_is_dangerous": "If the valve is competent, gas cannot reflux into the small bowel, so the colon between valve and obstruction becomes a SECOND closed loop and pressure rises steeply. A competent valve therefore converts large bowel obstruction into a surgical emergency — the opposite of what \"competent\" suggests.",
+     "bonus_2_laplace_explains_why_the_caecum_perforates": "Wall tension is proportional to pressure times radius. Pressure is equal throughout the closed system, so the widest segment — the CAECUM — bears the greatest tension and perforates first, even though the obstruction is in the sigmoid. That is why the CAECAL diameter is the number that matters, and over about 9 to 12 cm demands urgent action.",
+     "bonus_3_the_pattern_of_symptoms_localises_the_level": "High obstruction: early profuse vomiting, little distension, late constipation. Low obstruction: early marked distension and absolute constipation, late and sometimes faeculent vomiting. And \"absolute constipation\" means no flatus either — ask about flatus specifically.",
+     "bonus_4_inspect_the_mucosa_during_decompression": "Dusky, black or ulcerated mucosa means abandon the procedure and go to theatre. Decompressing dead bowel and returning the patient to the ward is catastrophic, and this judgement is the most important part of the procedure.",
+     "bonus_5_decompression_is_not_a_cure": "The redundant sigmoid remains, and recurrence after decompression alone runs at 40 to 60%, each episode risking gangrene. Elective sigmoid colectomy during the same admission is recommended for fit patients — a follow-up appointment is not a plan.",
+     "bonus_6_do_not_operate_on_pseudo_obstruction": "Ogilvie syndrome causes massive colonic dilatation with NO mechanical lesion, in the elderly, post-surgical, electrolyte-deranged or opioid-treated patient. It is treated medically — correct electrolytes, stop the offending drugs, flatus tube, and neostigmine with cardiac monitoring and atropine available. Only imaging separates it reliably from mechanical obstruction.",
+     "bonus_7_absent_bowel_sounds_in_obstruction_is_a_late_bad_sign": "Early obstruction gives high-pitched tinkling sounds as bowel fights against the block. Silence means the bowel has tired and ileus has supervened — it is not a return to normal.",
+     "trap_1": "EXAMINE THE HERNIAL ORIFICES in every patient with obstruction — an obstructed hernia requires only that you look.",
+     "trap_2": "Do a RECTAL EXAMINATION — it finds impaction, a rectal tumour, blood, and the ballooned empty rectum of proximal obstruction.",
+     "trap_3": "Distinguish small from large bowel on the film — valvulae conniventes cross the FULL width, haustra only PART of it.",
+     "trap_4": "CAECAL volvulus points to the LEFT upper quadrant and does NOT respond to endoscopic decompression.",
+     "trap_5": "AVOID BARIUM if perforation is possible — use water-soluble contrast.",
+     "trap_6": "A normal lactate does not exclude early ischaemia.",
+     "trap_7": "Exclude an underlying malignancy — colorectal cancer is the commonest cause of large bowel obstruction in many settings and can coexist with volvulus.",
+     "one_line_summary": "Sigmoid volvulus with closed-loop large bowel obstruction. Drip and suck, measure the caecum, sigmoidoscopic decompression while inspecting the mucosa, theatre immediately if it looks ischaemic — and resect the sigmoid before he goes home, or he will be back."
+    }
+   },
+   "glossary": [
+    {
+     "abbr": "ASIA",
+     "full": "American Spinal Injury Association",
+     "gloss": "its Impairment Scale grades spinal cord injury A to E"
+    },
+    {
+     "abbr": "CRP",
+     "full": "C-reactive protein"
+    },
+    {
+     "abbr": "CT",
+     "full": "computed tomography"
+    }
+   ],
+   "specialty": "Surgery — General surgery",
+   "teaching_case": true,
+   "inputs": [],
+   "logic": {},
+   "outputs": [],
+   "warnings": [
+    "A COMPETENT ILEOCAECAL VALVE creates a second closed loop and converts large bowel obstruction into a surgical emergency.",
+    "THE CAECUM PERFORATES FIRST because of the law of Laplace — measure the CAECAL diameter, and over about 9 to 12 cm demands urgent action.",
+    "ABSOLUTE CONSTIPATION means no faeces AND NO FLATUS — ask about flatus specifically.",
+    "INSPECT THE MUCOSA during endoscopic decompression — dusky or black bowel means ABANDON and go to theatre.",
+    "Peritonitis, suspected perforation or evidence of ischaemia are ABSOLUTE CONTRAINDICATIONS to endoscopic decompression.",
+    "DECOMPRESSION IS NOT A CURE — recurrence runs at 40 to 60%. Elective sigmoid colectomy during the same admission for fit patients.",
+    "DO NOT OPERATE ON PSEUDO-OBSTRUCTION — treat it medically. Only imaging separates it reliably from mechanical obstruction.",
+    "Neostigmine for pseudo-obstruction requires CARDIAC MONITORING and atropine available — it causes bradycardia.",
+    "ABSENT BOWEL SOUNDS in obstruction is a LATE and WORSE sign, not a return to normal.",
+    "EXAMINE THE HERNIAL ORIFICES and perform a RECTAL EXAMINATION in every patient with obstruction.",
+    "CAECAL VOLVULUS points to the LEFT upper quadrant and does NOT respond to endoscopic decompression.",
+    "AVOID BARIUM where perforation is possible — it causes severe chemical peritonitis. Use water-soluble contrast.",
+    "A NORMAL LACTATE DOES NOT EXCLUDE early bowel ischaemia.",
+    "EXCLUDE UNDERLYING MALIGNANCY — colorectal cancer is the commonest cause of large bowel obstruction in many settings.",
+    "Management here is a teaching example. Follow local surgical policy."
+   ],
+   "limitations": [
+    "A WORKED TEACHING CASE, not a protocol. Thresholds for surgery, decompression technique and same-admission resection policy vary between services.",
+    "Epidemiology differs markedly by region — sigmoid volvulus is far commoner and affects younger patients in parts of Africa and Asia."
+   ],
+   "flashcards": [
+    {
+     "q": "Name the four cardinal features of intestinal obstruction.",
+     "a": "Colicky pain, vomiting, distension and absolute constipation (no faeces AND no flatus)."
+    },
+    {
+     "q": "How does the symptom pattern localise the level?",
+     "a": "High: early profuse vomiting, little distension. Low: early marked distension and absolute constipation, late vomiting."
+    },
+    {
+     "q": "Why is a competent ileocaecal valve dangerous?",
+     "a": "Gas cannot reflux into the small bowel, creating a second closed loop with steeply rising pressure."
+    },
+    {
+     "q": "Why does the caecum perforate rather than the sigmoid?",
+     "a": "Law of Laplace — wall tension is proportional to pressure times radius, and the caecum is widest."
+    },
+    {
+     "q": "What caecal diameter indicates impending perforation?",
+     "a": "Over about 9 to 12 cm."
+    },
+    {
+     "q": "What is the coffee-bean sign?",
+     "a": "A massively dilated loop from the pelvis to the right upper quadrant with apposed inner walls forming a dense line."
+    },
+    {
+     "q": "When must endoscopic decompression be abandoned?",
+     "a": "If the mucosa is dusky, black or ulcerated — that patient goes to theatre."
+    },
+    {
+     "q": "What is the recurrence rate after decompression alone?",
+     "a": "Commonly 40 to 60% — which is why elective sigmoid colectomy is recommended in fit patients."
+    },
+    {
+     "q": "What is Ogilvie syndrome and how is it treated?",
+     "a": "Acute colonic pseudo-obstruction — treated medically with electrolyte correction, stopping opioids, flatus tube and neostigmine."
+    },
+    {
+     "q": "What precautions accompany neostigmine?",
+     "a": "Cardiac monitoring and atropine available — it causes bradycardia; contraindicated in mechanical obstruction and asthma."
+    },
+    {
+     "q": "How do you distinguish small from large bowel on a film?",
+     "a": "Valvulae conniventes cross the FULL width (small bowel); haustra cross only PART of it (large bowel)."
+    },
+    {
+     "q": "How does caecal volvulus differ?",
+     "a": "It points to the LEFT upper quadrant, occurs in younger patients, and requires surgery rather than endoscopic decompression."
+    }
+   ],
+   "checkboxes": [
+    "Absolute constipation confirmed — flatus asked about specifically",
+    "Hernial orifices examined",
+    "Rectal examination performed",
+    "Caecal diameter measured on the radiograph and documented",
+    "Small versus large bowel pattern identified",
+    "Pseudo-obstruction considered and electrolytes checked",
+    "Drip and suck instituted — fluids and nasogastric tube",
+    "Catheter with hourly urine output",
+    "Lactate measured, knowing a normal value does not exclude ischaemia",
+    "CT arranged unless peritonitis mandates immediate theatre",
+    "Barium avoided",
+    "Endoscopic decompression with mucosal inspection",
+    "Surgery if ischaemia, perforation or failed decompression",
+    "Same-admission sigmoid colectomy planned for fit patients",
+    "Underlying malignancy excluded before or after discharge"
+   ],
+   "related_slugs": [
+    "intestinal_obstruction_levels_causes_and_decisions"
+   ],
+   "patient_integration": null,
+   "governance": {
+    "evidence_tier": "T5_textbook_or_standard_teaching",
+    "verification_status": "standard_teaching",
+    "sources": [],
+    "nigeria_overlay": null,
+    "build_date": "2026-08-07",
+    "review_interval_months": 12,
+    "next_review_due": "2027-08-07",
+    "clinical_reviewer": null,
+    "approved_for_release": false,
+    "local_confirmation_required": true,
+    "supersedes": null,
+    "content_hash": "3f8a95bcdbdce0c7"
+   }
+  },
+  {
+   "id": "AS-CASE-0035",
+   "schema_version": "4.0.0",
+   "content_release": "AWIBI-SCOUT-CONTENT-2026.08.R3",
+   "type": "case",
+   "title": "CASE: Severe Abdominal Pain with a Soft Abdomen in Atrial Fibrillation",
+   "short_title": "Case: acute mesenteric ischaemia",
+   "slug": "case_severe_abdominal_pain_with_a_soft_abdomen_in_atrial_fibrillation",
+   "also_known_as": [
+    "case mesenteric ischaemia",
+    "acute mesenteric ischaemia case",
+    "pain out of proportion abdomen",
+    "superior mesenteric artery embolus",
+    "mesenteric venous thrombosis",
+    "non-occlusive mesenteric ischaemia",
+    "ct angiography mesenteric",
+    "second look laparotomy"
+   ],
+   "summary": "A 76-year-old in atrial fibrillation with agonising pain and an almost normal examination. Teaches the pain-examination mismatch, why the lactate is normal early, why waiting for peritonitis means waiting for dead bowel, and the four different mechanisms with four different treatments.",
+   "domains": [
+    "general_surgery",
+    "vascular_surgery",
+    "emergency_medicine"
+   ],
+   "intents": [
+    "identify",
+    "act"
+   ],
+   "populations": [
+    "all_ages"
+   ],
+   "contexts": [
+    "routine"
+   ],
+   "hazard": "critical",
+   "urgency": "immediate",
+   "jurisdiction": "international",
+   "search": {
+    "terms": [
+     "abdomen",
+     "abdominal",
+     "acute mesenteric ischaemia case",
+     "atrial",
+     "atrial fibrillation",
+     "case",
+     "case mesenteric ischaemia",
+     "case: acute mesenteric ischaemia",
+     "case: severe abdominal pain with a soft abdomen in atrial fibrillation",
+     "ct angiography",
+     "ct angiography mesenteric",
+     "damage control surgery",
+     "embolus",
+     "fibrillation",
+     "lactate",
+     "mesenteric ischaemia",
+     "mesenteric venous thrombosis",
+     "non-occlusive mesenteric ischaemia",
+     "pain",
+     "pain out of proportion",
+     "pain out of proportion abdomen",
+     "pneumatosis intestinalis",
+     "portal venous gas",
+     "second look laparotomy",
+     "severe",
+     "short bowel syndrome",
+     "soft",
+     "superior mesenteric artery",
+     "superior mesenteric artery embolus",
+     "thrombosis"
+    ],
+    "ambiguous_terms": [],
+    "phrases": [],
+    "field_weights": {
+     "title": 8,
+     "short_title": 6,
+     "also_known_as": 5,
+     "terms": 4,
+     "summary": 2,
+     "body": 1,
+     "flashcards": 0.5
+    }
+   },
+   "body": {
+    "the_one_line": "76-year-old woman in atrial fibrillation, not anticoagulated, with 5 hours of sudden severe central abdominal pain. She is in obvious agony, but her abdomen is soft with only mild generalised tenderness and no guarding.",
+    "section_1_clerking": {
+     "the_finding_that_defines_the_case": {
+      "pain_out_of_proportion_to_the_examination": "THE HALLMARK. THE PATIENT IS IN SEVERE, RELENTLESS PAIN WHILE THE ABDOMEN IS SOFT AND ALMOST UNREMARKABLE. This is the exact opposite of what clinicians are trained to expect, and it is why the diagnosis is missed.",
+      "why_it_happens": "EARLY MESENTERIC ISCHAEMIA IS A VISCERAL PROCESS. The bowel is ischaemic and generating intense visceral pain, but the PARIETAL PERITONEUM IS NOT YET INVOLVED, so there is no guarding, no rigidity and no rebound. PERITONISM ONLY APPEARS WHEN THE BOWEL WALL IS FULL-THICKNESS NECROTIC AND INFLAMMATION REACHES THE PERITONEUM.",
+      "the_consequence_that_must_be_understood": "WAITING FOR THE ABDOMEN TO BECOME PERITONITIC BEFORE ACTING MEANS WAITING FOR THE BOWEL TO DIE. By the time the examination looks convincing, the window for revascularisation and bowel salvage has closed. MORTALITY IS ROUGHLY 60 TO 80% AND THE SINGLE BIGGEST DETERMINANT IS TIME TO DIAGNOSIS. THE DIAGNOSIS MUST BE MADE ON SUSPICION, NOT ON SIGNS."
+     },
+     "history": "Sudden onset five hours ago of severe, constant central abdominal pain. She has vomited twice and passed a loose stool shortly after the pain began — GUT EMPTYING is an early feature. She has no appetite and feels frightened. No previous abdominal surgery. No fever.",
+     "the_early_symptom_triad_worth_knowing": "SEVERE PAIN · VOMITING OR DIARRHOEA (gut emptying) · AND A RISK FACTOR FOR EMBOLISM OR THROMBOSIS. That combination in an older patient should trigger the thought before any test.",
+     "the_risk_factors_that_point_at_each_mechanism": {
+      "embolic": "ATRIAL FIBRILLATION (especially unanticoagulated, as here) · recent myocardial infarction with mural thrombus · prosthetic valves · endocarditis · previous embolic events. SUDDEN onset, in a patient with a clear cardiac source.",
+      "thrombotic": "ESTABLISHED ATHEROSCLEROSIS — peripheral vascular disease, coronary disease, previous stroke, smoking. LOOK FOR A HISTORY OF CHRONIC MESENTERIC ISCHAEMIA: POST-PRANDIAL ABDOMINAL PAIN (\"INTESTINAL ANGINA\"), FEAR OF EATING (SITOPHOBIA) AND WEIGHT LOSS over months. That history converts an obscure presentation into an obvious one, and it takes one question.",
+      "non_occlusive": "LOW FLOW STATES — cardiac failure, cardiogenic or septic shock, recent cardiac surgery, dialysis, and VASOPRESSORS or digoxin. Often more insidious in a patient already critically ill.",
+      "venous": "THROMBOPHILIA · malignancy · portal hypertension · recent abdominal surgery or sepsis · oral contraceptives · inflammatory bowel disease · pancreatitis. Typically a SUBACUTE course over days rather than hours, and often in a younger patient."
+     },
+     "past_medical_history": "Atrial fibrillation, DECLINED ANTICOAGULATION 2 years ago after reading about bleeding risk. Hypertension. Type 2 diabetes.",
+     "vitals": "BP 138/82 mmHg. Pulse 108, IRREGULARLY IRREGULAR. Respiratory rate 22. Temperature 36.9. Saturation 96%. LACTATE 1.8 mmol/L — WITHIN THE NORMAL RANGE, and see below why that is not reassuring.",
+     "examination": "Distressed and in obvious pain, restless rather than lying still. Abdomen SOFT, mildly tender centrally, NO GUARDING, NO REBOUND. Bowel sounds present. IRREGULARLY IRREGULAR PULSE. Peripheral pulses present. Rectal examination: no melaena at present, though it appears later. NOTHING ON EXAMINATION EXPLAINS HER PAIN — AND THAT IS THE FINDING.",
+     "the_deceptive_middle_phase": "AFTER SEVERAL HOURS THE PAIN MAY LESSEN as the ischaemic bowel wall becomes necrotic and its afferent nerves die. THE PATIENT APPEARS TO IMPROVE. This is followed by peritonitis, shock and death. A REDUCTION IN PAIN IN THIS SETTING IS NOT IMPROVEMENT."
+    },
+    "section_2_mechanism": {
+     "the_anatomy_that_explains_the_distribution": "The COELIAC AXIS supplies the foregut, the SUPERIOR MESENTERIC ARTERY the midgut (distal duodenum to the proximal two thirds of the transverse colon), and the INFERIOR MESENTERIC ARTERY the hindgut. THE SUPERIOR MESENTERIC ARTERY IS INVOLVED IN THE VAST MAJORITY OF ACUTE MESENTERIC ISCHAEMIA, because it takes off from the aorta at a SHALLOW, OBLIQUE ANGLE that directs emboli straight into it.",
+     "the_four_mechanisms_and_why_they_matter": {
+      "one_arterial_embolism": "ROUGHLY 50%. Sudden, complete occlusion, classically lodging just distal to the origin of the middle colic artery — which is why the PROXIMAL JEJUNUM IS OFTEN SPARED, a useful operative and radiological clue. Presents with the most abrupt onset. TREATMENT: EMBOLECTOMY OR ENDOVASCULAR RETRIEVAL.",
+      "two_arterial_thrombosis": "ROUGHLY 25%. Thrombosis on pre-existing atherosclerotic plaque, usually AT THE ORIGIN of the vessel — so the ischaemia is more EXTENSIVE. Preceded by chronic mesenteric ischaemia in many patients. TREATMENT: STENTING OR BYPASS.",
+      "three_non_occlusive_mesenteric_ischaemia": "ROUGHLY 20%. NO OCCLUSION AT ALL — profound splanchnic VASOCONSTRICTION in a low-flow state. The vessels are patent on angiography, which is why it is missed if you are only looking for a blockage. TREATMENT: OPTIMISE CARDIAC OUTPUT, WITHDRAW VASOCONSTRICTORS WHERE POSSIBLE, AND INTRA-ARTERIAL VASODILATOR SUCH AS PAPAVERINE. Revascularisation is not the answer because there is nothing to revascularise.",
+      "four_mesenteric_venous_thrombosis": "ROUGHLY 5 to 10%. Venous outflow obstruction causes congestion, oedema and eventually arterial compromise. SUBACUTE presentation over days. TREATMENT: ANTICOAGULATION, often without surgery unless the bowel is infarcted.",
+      "the_teaching_point": "FOUR MECHANISMS, FOUR DIFFERENT TREATMENTS. \"Mesenteric ischaemia\" is not one disease, and identifying which one you are dealing with determines whether the patient needs an embolectomy, a stent, a vasodilator or heparin."
+     },
+     "why_the_bowel_dies_in_stages": [
+      "1. The MUCOSA is the most metabolically active layer and the furthest from the arterial supply, so it dies FIRST — within a few hours.",
+      "2. Mucosal death breaks the gut barrier, allowing BACTERIAL TRANSLOCATION and endotoxin release into the portal circulation and then systemically — hence sepsis before the bowel is visibly dead.",
+      "3. Progressive full-thickness necrosis of muscularis and serosa follows, producing peritonitis and perforation.",
+      "4. REPERFUSION AFTER REVASCULARISATION CAUSES FURTHER INJURY — a surge of potassium, acid and inflammatory mediators from the ischaemic bed, which can cause arrhythmia, profound acidosis and cardiovascular collapse. THE PATIENT CAN DETERIORATE AT THE MOMENT THE BLOOD SUPPLY IS RESTORED, and the theatre team must anticipate it."
+     ]
+    },
+    "section_3_differentials": {
+     "one_acute_mesenteric_ischaemia": "MUST BE ASSUMED. Supporting: sudden severe pain, soft abdomen, atrial fibrillation without anticoagulation, gut emptying, age.",
+     "two_perforated_viscus": "Sudden severe pain, BUT with a rigid abdomen from the outset rather than a soft one. Free air on imaging.",
+     "three_ruptured_abdominal_aortic_aneurysm": "Sudden pain with hypotension and a pulsatile mass. Must be excluded in any older patient with sudden abdominal pain — and CT answers both questions at once.",
+     "four_acute_pancreatitis": "Epigastric pain to the back with raised amylase or lipase. Note that amylase can also be modestly raised in mesenteric ischaemia.",
+     "five_intestinal_obstruction_and_strangulation": "Colicky pain, distension, absolute constipation. A strangulated hernia or closed-loop obstruction produces localised ischaemia and is a differential and a cause.",
+     "six_myocardial_infarction": "Inferior MI presents with epigastric pain — DO AN ECG. And atrial fibrillation raises the possibility of a coronary embolus too.",
+     "seven_diabetic_ketoacidosis_and_metabolic_causes": "Can present with severe abdominal pain and a soft abdomen. Check glucose and ketones — it is a cheap way to avoid an unnecessary laparotomy.",
+     "eight_renal_colic_and_gastroenteritis": "Frequently the label attached to early mesenteric ischaemia. A patient given an antispasmodic for \"gastroenteritis\" and discharged is the classic missed case."
+    },
+    "section_4_investigations": {
+     "the_lactate_trap_which_is_the_most_important_laboratory_point": {
+      "the_expectation": "Clinicians look for a raised lactate to confirm ischaemia.",
+      "the_reality": "THE LACTATE IS OFTEN NORMAL IN EARLY MESENTERIC ISCHAEMIA. Lactate produced by the ischaemic gut drains into the PORTAL VEIN and is largely METABOLISED BY THE LIVER on first pass. It only rises systemically when the ischaemia is extensive, the liver is overwhelmed, or there is established shock — BY WHICH POINT THE BOWEL IS USUALLY ALREADY DEAD.",
+      "the_rule": "A NORMAL LACTATE DOES NOT EXCLUDE MESENTERIC ISCHAEMIA. It is a LATE marker and a marker of severity, NOT a screening test. Using a normal lactate to reassure yourself and discharge or observe the patient is the commonest laboratory error in this diagnosis."
+     },
+     "other_bloods": "Full blood count — often a raised white count, sometimes markedly. UREA AND ELECTROLYTES. AMYLASE, which may be modestly raised. LIVER FUNCTION. CLOTTING. BLOOD GAS — a METABOLIC ACIDOSIS WITH A RAISED ANION GAP, when present, is significant, but its absence again does not exclude. CROSS-MATCH. D-dimer is sensitive but very non-specific — a normal value is mildly reassuring, a raised one means little.",
+     "ct_angiography_which_is_the_investigation": {
+      "the_rule": "CT ANGIOGRAPHY OF THE ABDOMEN IS THE INVESTIGATION OF CHOICE AND MUST BE OBTAINED URGENTLY. Do not wait for blood results. Do not observe overnight.",
+      "the_protocol_point": "REQUEST AN ARTERIAL PHASE CT ANGIOGRAM, AND DISCUSS IT WITH THE RADIOLOGIST — a routine portal-venous-phase abdominal CT can MISS the arterial occlusion. STATING THE CLINICAL SUSPICION EXPLICITLY CHANGES THE PROTOCOL THAT IS USED, AND THEREFORE CHANGES THE ANSWER.",
+      "the_renal_function_objection": "CONTRAST NEPHROPATHY IS A REAL BUT MANAGEABLE RISK. WITHHOLDING A CT ANGIOGRAM BECAUSE OF A RAISED CREATININE IN A PATIENT WHO MAY HAVE DEAD BOWEL IS A SERIOUS ERROR — the patient will not survive to have chronic kidney disease. Give the contrast.",
+      "what_it_shows": "Filling defect or occlusion in the superior mesenteric artery, vein or coeliac axis · bowel wall thickening or, ominously, PAPER-THIN wall · lack of bowel wall enhancement, which is a key sign of non-viability · PNEUMATOSIS INTESTINALIS (gas within the bowel wall) · PORTAL VENOUS GAS · mesenteric fat stranding and free fluid · and free air if perforated. PNEUMATOSIS AND PORTAL VENOUS GAS ARE LATE SIGNS OF ESTABLISHED INFARCTION — their absence is not reassurance, and their presence means the bowel is already dead."
+     },
+     "plain_radiograph": "Usually normal early, which is precisely why it must not be used to exclude the diagnosis. Later it may show thickened \"thumbprinted\" bowel wall, ileus, or pneumatosis. IT HAS NO ROLE IN RULING THIS OUT.",
+     "ecg": "Confirms atrial fibrillation, identifies myocardial infarction, and documents the embolic source."
+    },
+    "section_5_management": {
+     "a_immediate_resuscitation": "ABCDE. High-flow oxygen. Two large-bore cannulae. AGGRESSIVE FLUID RESUSCITATION — these patients have massive third-space loss into ischaemic bowel and are far more depleted than they look. Catheterise. Correct electrolytes and acidosis. Analgesia — generously, and without apology. NASOGASTRIC TUBE. Cross-match.",
+     "the_vasopressor_caution": "IF VASOPRESSORS ARE UNAVOIDABLE, REMEMBER THEY WORSEN SPLANCHNIC VASOCONSTRICTION. Prefer adequate volume resuscitation; where a vasopressor is needed, this is a specific reason to avoid agents with the most intense splanchnic effect where alternatives exist, and to withdraw them as soon as possible. IN NON-OCCLUSIVE ISCHAEMIA, VASOPRESSORS ARE PART OF THE CAUSE.",
+     "b_anticoagulation": "SYSTEMIC HEPARINISATION as soon as the diagnosis is suspected and bleeding risk permits — it limits propagation of thrombus. In MESENTERIC VENOUS THROMBOSIS, ANTICOAGULATION IS THE PRIMARY TREATMENT and many patients recover without surgery.",
+     "c_antibiotics": "BROAD-SPECTRUM INTRAVENOUS ANTIBIOTICS covering Gram-negatives and anaerobes. Bacterial translocation across the dead mucosa begins early, before the bowel is visibly infarcted.",
+     "d_call_the_vascular_and_general_surgeons_immediately": "THIS IS A JOINT PROBLEM. The general surgeon assesses bowel viability; the vascular surgeon or interventional radiologist restores the blood supply. INVOLVE BOTH AT THE SAME TIME, and involve interventional radiology, because endovascular options may be quicker and less morbid.",
+     "e_restoring_the_blood_supply_by_mechanism": {
+      "embolus": "SURGICAL EMBOLECTOMY through the superior mesenteric artery, or ENDOVASCULAR aspiration or thrombolysis in selected patients without peritonitis.",
+      "thrombosis": "ENDOVASCULAR STENTING, or surgical BYPASS. Usually needs the vascular team.",
+      "non_occlusive": "OPTIMISE CARDIAC OUTPUT AND PERFUSION, WITHDRAW VASOCONSTRICTORS, and consider INTRA-ARTERIAL VASODILATOR INFUSION such as PAPAVERINE via a catheter in the superior mesenteric artery. THERE IS NO OCCLUSION TO REMOVE.",
+      "venous": "ANTICOAGULATION, with surgery reserved for infarcted bowel.",
+      "the_sequencing_principle": "WHERE BOTH ARE NEEDED, REVASCULARISE BEFORE DECIDING WHAT BOWEL TO RESECT. Bowel that looks non-viable in an ischaemic field may recover once perfused, and resecting first leads to unnecessarily long resections."
+     },
+     "f_laparotomy_and_the_damage_control_approach": {
+      "when": "PERITONITIS, evidence of infarction, or failure of endovascular treatment.",
+      "assessing_viability": "Colour, peristalsis, mesenteric pulsation and bleeding from cut edges. Doppler and indocyanine green fluorescence assist where available. VIABILITY IS GENUINELY DIFFICULT TO JUDGE, and that uncertainty is the reason for the next point.",
+      "the_planned_second_look": {
+       "what_it_is": "RESECT CLEARLY DEAD BOWEL, LEAVE THE BOWEL ENDS STAPLED OFF WITHOUT AN ANASTOMOSIS, TEMPORARILY CLOSE THE ABDOMEN, AND RETURN TO THEATRE AT 24 TO 48 HOURS TO REASSESS.",
+       "why_it_is_right": "It allows marginal bowel time to declare itself, avoids over-resection at the first operation, and avoids anastomosis in an unstable, acidotic, hypothermic patient where it would leak. A PLANNED SECOND LOOK IS A DELIBERATE STRATEGY, NOT AN ADMISSION OF FAILURE, and it must be planned at the first operation rather than triggered by deterioration."
+      }
+     },
+     "g_the_realistic_conversation": {
+      "the_prognosis": "MORTALITY IS 60 TO 80%, higher with delayed diagnosis, extensive infarction and advanced age.",
+      "extensive_resection": "If the entire midgut is infarcted, resection leaves SHORT BOWEL SYNDROME with lifelong parenteral nutrition — and in a frail elderly patient, a decision that resection is not in their interests may be the right one. THIS CONVERSATION SHOULD HAPPEN BEFORE OR DURING THE OPERATION, WITH FAMILY WHERE POSSIBLE, AND MUST BE DOCUMENTED. Palliative care involvement is appropriate and should not be delayed by reluctance to have the conversation."
+     },
+     "h_the_thing_that_should_have_prevented_this": {
+      "the_point": "SHE HAS ATRIAL FIBRILLATION AND DECLINED ANTICOAGULATION. Anticoagulation in atrial fibrillation prevents systemic embolism — of which mesenteric embolism is one form, alongside stroke and acute limb ischaemia.",
+      "the_lesson": "When a patient declines anticoagulation, the conversation should cover WHAT IT PREVENTS in terms they can weigh — not just \"reduces stroke risk\", but the concrete alternatives — and it should be REVISITED rather than recorded once and never raised again. A single documented refusal two years ago is not informed consent for the present situation."
+     },
+     "i_survivors": "Long-term anticoagulation. Investigate and treat the underlying cause — cardiac source, atherosclerosis, thrombophilia screen in venous cases, malignancy screen where appropriate. Nutritional support and dietitian input, especially after significant resection. Stoma care. Rehabilitation."
+    },
+    "section_6_teaching_points": {
+     "bonus_1_pain_out_of_proportion_with_a_soft_abdomen": "Early ischaemia is a purely visceral process — the parietal peritoneum is not involved, so there is no guarding. Peritonism only appears when the bowel is full-thickness necrotic. WAITING FOR THE ABDOMEN TO BECOME PERITONITIC MEANS WAITING FOR THE BOWEL TO DIE.",
+     "bonus_2_a_normal_lactate_does_not_exclude_it": "Lactate from the ischaemic gut drains into the portal vein and is metabolised by the liver on first pass. It rises systemically only when ischaemia is extensive or shock is established — by which time the bowel is usually dead. Lactate is a severity marker, not a screening test.",
+     "bonus_3_say_the_words_when_you_request_the_ct": "A routine portal-venous-phase abdominal CT can miss the arterial occlusion. Requesting an ARTERIAL PHASE CT ANGIOGRAM and telling the radiologist what you suspect changes the protocol and therefore changes the answer.",
+     "bonus_4_four_mechanisms_four_treatments": "Embolus needs embolectomy; thrombosis needs stenting or bypass; NON-OCCLUSIVE disease has patent vessels and needs vasodilators and withdrawal of vasoconstrictors; venous thrombosis needs anticoagulation. Treating all mesenteric ischaemia as one disease produces the wrong operation.",
+     "bonus_5_revascularise_before_resecting": "Bowel that looks dead in an ischaemic field may recover once perfused. Resecting first leads to unnecessarily long resections and avoidable short bowel syndrome.",
+     "bonus_6_the_planned_second_look_is_a_strategy": "Resect only clearly dead bowel, leave the ends stapled without anastomosis, and return at 24 to 48 hours. It lets marginal bowel declare itself and avoids anastomosis in an unstable acidotic patient. Plan it at the first operation, not after a deterioration.",
+     "bonus_7_reperfusion_can_kill_at_the_moment_of_success": "Restoring flow releases potassium, acid and inflammatory mediators from the ischaemic bed, causing arrhythmia, profound acidosis and collapse. The theatre and anaesthetic team must anticipate it.",
+     "trap_1": "Ask about POST-PRANDIAL PAIN, FEAR OF EATING and WEIGHT LOSS — chronic mesenteric ischaemia precedes thrombotic occlusion and makes the diagnosis obvious.",
+     "trap_2": "A reduction in pain after several hours can mean the afferent nerves have died, not that the patient is improving.",
+     "trap_3": "Do not withhold contrast because of a raised creatinine — the patient will not survive to have chronic kidney disease.",
+     "trap_4": "Pneumatosis and portal venous gas are LATE signs — their absence is not reassurance and their presence means the bowel is already dead.",
+     "trap_5": "A plain abdominal radiograph has no role in excluding this diagnosis.",
+     "trap_6": "Vasopressors worsen splanchnic vasoconstriction, and in non-occlusive ischaemia they are part of the cause.",
+     "trap_7": "DO AN ECG — inferior MI presents with epigastric pain, and check glucose and ketones, since DKA causes severe pain with a soft abdomen.",
+     "one_line_summary": "Acute mesenteric ischaemia from an embolus in unanticoagulated atrial fibrillation. Severe pain with a soft abdomen IS the diagnosis, the normal lactate means nothing, request an arterial-phase CT angiogram now — and revascularise before deciding what to resect."
+    }
+   },
+   "glossary": [
+    {
+     "abbr": "CT",
+     "full": "computed tomography"
+    },
+    {
+     "abbr": "DKA",
+     "full": "diabetic ketoacidosis"
+    },
+    {
+     "abbr": "ECG",
+     "full": "electrocardiogram"
+    }
+   ],
+   "specialty": "Surgery — General surgery",
+   "teaching_case": true,
+   "inputs": [],
+   "logic": {},
+   "outputs": [],
+   "warnings": [
+    "PAIN OUT OF PROPORTION TO A SOFT ABDOMEN IS THE DIAGNOSIS. Waiting for peritonitis means waiting for dead bowel.",
+    "A NORMAL LACTATE DOES NOT EXCLUDE MESENTERIC ISCHAEMIA — portal lactate is metabolised by the liver on first pass.",
+    "REQUEST AN ARTERIAL PHASE CT ANGIOGRAM and state the suspicion — a routine portal-venous CT can miss the occlusion.",
+    "DO NOT WITHHOLD CONTRAST because of a raised creatinine — the patient will not survive to have chronic kidney disease.",
+    "PNEUMATOSIS AND PORTAL VENOUS GAS ARE LATE SIGNS — absence is not reassurance, presence means the bowel is already dead.",
+    "A PLAIN ABDOMINAL RADIOGRAPH HAS NO ROLE in excluding this diagnosis.",
+    "A REDUCTION IN PAIN after several hours may mean the afferent nerves have died, not improvement.",
+    "FOUR MECHANISMS, FOUR TREATMENTS — embolectomy, stenting, vasodilators, or anticoagulation. Identify which one.",
+    "In NON-OCCLUSIVE ischaemia the vessels are PATENT — there is nothing to revascularise, and vasopressors are part of the cause.",
+    "REVASCULARISE BEFORE RESECTING — bowel that looks dead in an ischaemic field may recover once perfused.",
+    "PLAN A SECOND-LOOK LAPAROTOMY at the first operation — it is a strategy, not an admission of failure.",
+    "REPERFUSION CAN CAUSE COLLAPSE at the moment flow is restored — potassium, acid and mediators surge from the ischaemic bed.",
+    "ASK ABOUT POST-PRANDIAL PAIN, FEAR OF EATING AND WEIGHT LOSS — chronic mesenteric ischaemia precedes thrombotic occlusion.",
+    "DO AN ECG and check glucose and ketones — inferior MI and DKA both present with severe pain and a soft abdomen.",
+    "Management here is a teaching example. Follow local vascular and surgical guidance."
+   ],
+   "limitations": [
+    "A WORKED TEACHING CASE, not a protocol. Endovascular versus open strategy depends on local vascular and interventional radiology availability.",
+    "Decisions about extensive resection and short bowel syndrome are individual and require senior and family involvement."
+   ],
+   "flashcards": [
+    {
+     "q": "What is the hallmark finding?",
+     "a": "Severe pain with a soft abdomen — early ischaemia is visceral and does not involve the parietal peritoneum."
+    },
+    {
+     "q": "Why is the lactate normal early?",
+     "a": "Lactate drains into the portal vein and is metabolised by the liver on first pass — it rises only late."
+    },
+    {
+     "q": "What must you specify when requesting the CT?",
+     "a": "An ARTERIAL PHASE CT angiogram, stating the suspicion — routine portal-venous CT can miss the occlusion."
+    },
+    {
+     "q": "Name the four mechanisms and their treatments.",
+     "a": "Embolus (embolectomy), thrombosis (stent or bypass), non-occlusive (vasodilators, stop vasoconstrictors), venous (anticoagulation)."
+    },
+    {
+     "q": "Why does the SMA receive most emboli?",
+     "a": "It leaves the aorta at a shallow oblique angle that directs emboli straight into it."
+    },
+    {
+     "q": "Why is the proximal jejunum often spared in embolism?",
+     "a": "The embolus typically lodges just distal to the origin of the middle colic artery."
+    },
+    {
+     "q": "What do pneumatosis and portal venous gas indicate?",
+     "a": "Established infarction — late signs meaning the bowel is already dead."
+    },
+    {
+     "q": "Why revascularise before resecting?",
+     "a": "Bowel that looks non-viable in an ischaemic field may recover once perfused, avoiding over-resection."
+    },
+    {
+     "q": "What is a planned second-look laparotomy?",
+     "a": "Resect clearly dead bowel, leave ends stapled without anastomosis, and reassess at 24 to 48 hours."
+    },
+    {
+     "q": "What is the danger at the moment of reperfusion?",
+     "a": "A surge of potassium, acid and inflammatory mediators causing arrhythmia, acidosis and collapse."
+    },
+    {
+     "q": "What history points at thrombotic occlusion?",
+     "a": "Post-prandial pain, fear of eating (sitophobia) and weight loss — chronic mesenteric ischaemia."
+    },
+    {
+     "q": "What is the mortality and its biggest determinant?",
+     "a": "Roughly 60 to 80%, and the biggest determinant is time to diagnosis."
+    }
+   ],
+   "checkboxes": [
+    "Pain-examination mismatch recognised and documented",
+    "Risk factors for each of the four mechanisms elicited",
+    "Post-prandial pain and weight loss asked about",
+    "ECG performed; glucose and ketones checked",
+    "Normal lactate NOT used to exclude the diagnosis",
+    "Arterial-phase CT angiogram requested with explicit suspicion stated",
+    "Contrast not withheld for renal function",
+    "Aggressive fluid resuscitation started",
+    "Systemic heparinisation considered",
+    "Broad-spectrum antibiotics given",
+    "Vascular surgery, general surgery and interventional radiology all involved",
+    "Revascularisation planned before resection decisions",
+    "Second-look laparotomy planned at the first operation",
+    "Prognosis and extent-of-resection discussion documented with family",
+    "Long-term anticoagulation and cause investigation arranged for survivors"
+   ],
+   "related_slugs": [
+    "acute_abdomen_pattern_recognition_and_first_decisions"
+   ],
+   "patient_integration": null,
+   "governance": {
+    "evidence_tier": "T5_textbook_or_standard_teaching",
+    "verification_status": "standard_teaching",
+    "sources": [],
+    "nigeria_overlay": null,
+    "build_date": "2026-08-07",
+    "review_interval_months": 12,
+    "next_review_due": "2027-08-07",
+    "clinical_reviewer": null,
+    "approved_for_release": false,
+    "local_confirmation_required": true,
+    "supersedes": null,
+    "content_hash": "5a5058c667542389"
+   }
+  },
+  {
+   "id": "AS-CASE-0036",
+   "schema_version": "4.0.0",
+   "content_release": "AWIBI-SCOUT-CONTENT-2026.08.R3",
+   "type": "case",
+   "title": "CASE: Motorcycle Versus Lorry — The First Ten Minutes",
+   "short_title": "Case: polytrauma primary survey",
+   "slug": "case_motorcycle_versus_lorry_the_first_ten_minutes",
+   "also_known_as": [
+    "case polytrauma",
+    "primary survey case",
+    "atls case",
+    "catastrophic haemorrhage",
+    "cabcde trauma",
+    "blood on the floor and four more",
+    "permissive hypotension",
+    "damage control resuscitation",
+    "lethal triad trauma",
+    "tranexamic acid trauma",
+    "fast scan",
+    "massive haemorrhage protocol"
+   ],
+   "summary": "A 24-year-old motorcyclist arriving by ambulance, hypotensive and agitated. Teaches the primary survey done properly, why catastrophic haemorrhage comes before airway, the four places blood hides, permissive hypotension and why the agitation is hypoxia until proven otherwise.",
+   "domains": [
+    "trauma",
+    "emergency_medicine",
+    "critical_care",
+    "general_surgery"
+   ],
+   "intents": [
+    "identify",
+    "act"
+   ],
+   "populations": [
+    "all_ages"
+   ],
+   "contexts": [
+    "routine"
+   ],
+   "hazard": "critical",
+   "urgency": "immediate",
+   "jurisdiction": "international",
+   "search": {
+    "terms": [
+     "ampl e history",
+     "atls case",
+     "blood on the floor and four more",
+     "cabcde trauma",
+     "case",
+     "case polytrauma",
+     "case: motorcycle versus lorry — the first ten minutes",
+     "case: polytrauma primary survey",
+     "catastrophic haemorrhage",
+     "cervical spine immobilisation",
+     "crash-2",
+     "damage control resuscitation",
+     "fast scan",
+     "first",
+     "lethal triad",
+     "lethal triad trauma",
+     "log roll",
+     "lorry",
+     "massive haemorrhage protocol",
+     "massive haemothorax",
+     "minutes",
+     "motorcycle",
+     "pelvic binder",
+     "permissive hypotension",
+     "polytrauma",
+     "primary survey",
+     "primary survey case",
+     "secondary survey",
+     "tension pneumothorax",
+     "tourniquet",
+     "tranexamic acid",
+     "tranexamic acid trauma",
+     "versus"
+    ],
+    "ambiguous_terms": [],
+    "phrases": [],
+    "field_weights": {
+     "title": 8,
+     "short_title": 6,
+     "also_known_as": 5,
+     "terms": 4,
+     "summary": 2,
+     "body": 1,
+     "flashcards": 0.5
+    }
+   },
+   "body": {
+    "the_one_line": "24-year-old motorcyclist hit by a lorry at speed, arriving 25 minutes after the collision. Blood pressure 82/50, pulse 130, agitated and combative, with an obvious deformed left thigh and blood soaking through a dressing on his right arm.",
+    "section_1_the_structure": {
+     "the_principle": "THE PRIMARY SURVEY IS NOT AN EXAMINATION ROUTINE — IT IS A PRIORITISED SEQUENCE OF FINDING AND FIXING THINGS THAT KILL WITHIN MINUTES. YOU DO NOT MOVE ON UNTIL THE CURRENT PROBLEM IS ADDRESSED. IF THE PATIENT DETERIORATES AT ANY POINT, YOU GO BACK TO THE BEGINNING.",
+     "the_modern_sequence": {
+      "the_change": "Classical teaching is A-B-C-D-E. MODERN TRAUMA PRACTICE PUTS A C IN FRONT: <C>-A-B-C-D-E, WHERE <C> IS CATASTROPHIC HAEMORRHAGE.",
+      "why": "A patient exsanguinating from a limb wound will die of blood loss long before an airway problem kills them. MILITARY AND CIVILIAN EXPERIENCE SHOWED THAT COMPRESSIBLE EXTERNAL HAEMORRHAGE IS A LEADING CAUSE OF PREVENTABLE TRAUMA DEATH, AND IT TAKES SECONDS TO CONTROL. So it is dealt with FIRST, in parallel with the airway, not after it."
+     },
+     "the_team": "This is a TEAM activity with a designated TEAM LEADER who stands back, does not perform procedures, and directs. PRE-ALERT allows the team to assemble before arrival, allocate roles, prepare equipment and activate the massive haemorrhage protocol. A trauma call received on arrival has already lost time."
+    },
+    "section_2_the_primary_survey": {
+     "catastrophic_haemorrhage": {
+      "the_finding": "Blood soaking through the arm dressing and pooling on the trolley.",
+      "the_actions": "DIRECT PRESSURE FIRST — firm, sustained, with a gloved hand, not a gentle pat with gauze. If that fails, a HAEMOSTATIC DRESSING packed into the wound. If that fails on a limb, a TOURNIQUET applied proximally, tightened until bleeding stops, AND THE TIME WRITTEN ON IT.",
+      "the_tourniquet_facts_worth_knowing": "A CORRECTLY APPLIED TOURNIQUET IS PAINFUL — if it does not hurt, it is probably not tight enough and may be worsening bleeding by occluding venous return while leaving arterial inflow. DOCUMENT THE TIME OF APPLICATION. Do not remove it on the ward without a surgeon and a plan. Prolonged application risks limb ischaemia and reperfusion injury, but the limb is a lesser problem than exsanguination."
+     },
+     "a_airway_with_cervical_spine_control": {
+      "assess": "CAN HE TALK? A patient who speaks clearly in full sentences has a patent airway and adequate ventilation for the moment. HE IS AGITATED AND SHOUTING — which tells you the airway is open, and tells you something else (see D).",
+      "look_for": "Stridor, gurgling, snoring, facial or neck trauma, burns to the face or singed nasal hairs, expanding neck haematoma, blood or vomit in the mouth.",
+      "the_actions": "Suction. Jaw thrust — NOT head tilt, because of the cervical spine. Airway adjuncts. Definitive airway with rapid sequence induction where indicated. ANTICIPATE THE DIFFICULT AIRWAY in facial trauma and have a surgical airway plan and equipment ready before you start.",
+      "cervical_spine": "MANUAL IN-LINE STABILISATION, then a collar with blocks and tape — or, increasingly, careful manual control and minimal handling, since rigid collars have their own harms including raised intracranial pressure and pressure injury. THE PRINCIPLE IS TO AVOID MOVING AN UNSTABLE SPINE, NOT TO APPLY A PARTICULAR DEVICE. Immobilisation must never obstruct airway management."
+     },
+     "b_breathing_and_ventilation": {
+      "assess": "RESPIRATORY RATE, oxygen saturation, TRACHEAL POSITION, chest expansion and symmetry, percussion, auscultation, and inspection for wounds, flail segments and surgical emphysema. EXPOSE THE WHOLE CHEST AND LOOK AT BOTH SIDES.",
+      "the_immediately_life_threatening_chest_injuries": "TENSION PNEUMOTHORAX · OPEN PNEUMOTHORAX (sucking chest wound) · MASSIVE HAEMOTHORAX · FLAIL CHEST WITH PULMONARY CONTUSION · CARDIAC TAMPONADE (strictly circulation, but found here).",
+      "tension_pneumothorax": {
+       "the_rule": "IT IS A CLINICAL DIAGNOSIS AND MUST BE TREATED BEFORE ANY RADIOGRAPH. A patient who dies waiting for a chest film to confirm a tension pneumothorax has died of a delay, not of a pneumothorax.",
+       "the_signs": "Respiratory distress, hypoxia, reduced or absent breath sounds and hyper-resonance on the affected side, tracheal deviation AWAY from the side (a LATE sign), distended neck veins (absent if the patient is also hypovolaemic), and HYPOTENSION from obstructed venous return.",
+       "the_action": "IMMEDIATE DECOMPRESSION. Needle decompression is a temporising measure — and note that current guidance favours the 4th or 5th INTERCOSTAL SPACE IN THE ANTERIOR AXILLARY LINE over the traditional 2nd space mid-clavicular line, because the chest wall is thinner there and standard cannulae frequently fail to reach the pleura anteriorly in adults. FOLLOW IT WITH A FORMAL CHEST DRAIN, which is the definitive treatment. In many services, FINGER THORACOSTOMY is now preferred as the initial manoeuvre because it reliably enters the pleural space."
+      },
+      "oxygen": "High-flow oxygen for every major trauma patient initially."
+     },
+     "c_circulation_and_haemorrhage_control": {
+      "assess": "Pulse rate and character, blood pressure, capillary refill, skin colour and temperature, conscious level, and urine output once catheterised. NOTE THAT A YOUNG FIT ADULT COMPENSATES EXTREMELY WELL — TACHYCARDIA AND NARROWED PULSE PRESSURE APPEAR LONG BEFORE THE SYSTOLIC BLOOD PRESSURE FALLS. A NORMAL BLOOD PRESSURE IN A TACHYCARDIC YOUNG TRAUMA PATIENT IS NOT REASSURANCE; IT IS COMPENSATION ABOUT TO FAIL.",
+      "the_four_places_blood_hides": {
+       "the_phrase": "\"BLOOD ON THE FLOOR AND FOUR MORE\" — the five places a trauma patient can lose enough blood to die.",
+       "the_list": "1. EXTERNAL (on the floor, in the dressings, at the scene — ask the paramedics how much was lost). 2. CHEST. 3. ABDOMEN. 4. PELVIS AND RETROPERITONEUM. 5. LONG BONES, particularly the femurs — a closed femoral shaft fracture can hold 1 to 1.5 litres, and bilateral femoral fractures alone can cause shock.",
+       "the_point": "A HYPOTENSIVE TRAUMA PATIENT IS BLEEDING INTO ONE OF THESE FIVE UNTIL PROVEN OTHERWISE. Working through them systematically finds the source. HE HAS A DEFORMED THIGH — THAT IS ONE SOURCE ALREADY IDENTIFIED."
+      },
+      "the_actions": "TWO LARGE-BORE CANNULAE (14 or 16 gauge) and bloods including CROSS-MATCH. ACTIVATE THE MASSIVE HAEMORRHAGE PROTOCOL. PELVIC BINDER applied at the level of the GREATER TROCHANTERS — a common error is placing it too high over the iliac crests, where it does not close the pelvic ring. SPLINT THE FEMUR — a traction splint reduces the fracture, restores length, reduces the volume available for bleeding and relieves pain. Control external bleeding.",
+      "the_pelvic_binder_rule": "ONCE A BINDER IS ON, LEAVE IT ON. Repeated \"springing\" or examination of the pelvis to test stability is unnecessary, disrupts clot and can cause further bleeding. THE PELVIS IS ASSESSED BY IMAGING, NOT BY REPEATED MANUAL EXAMINATION."
+     },
+     "d_disability": {
+      "assess": "GCS, pupils, blood GLUCOSE, and gross limb movement. Look for lateralising signs.",
+      "the_point_about_his_agitation": {
+       "the_error": "A combative, agitated trauma patient is easily labelled as drunk, on drugs, or simply difficult.",
+       "the_rule": "AGITATION AND COMBATIVENESS IN TRAUMA ARE HYPOXIA OR HYPOPERFUSION UNTIL PROVEN OTHERWISE. Cerebral hypoxia and shock both cause agitation before they cause drowsiness. THE ANSWER IS OXYGEN AND BLOOD, NOT SEDATION. Sedating a hypoxic, shocked patient to make them easier to manage can be fatal, and alcohol or drugs must never be assumed as the explanation until hypoxia, hypoglycaemia, hypoperfusion and head injury have been addressed."
+      },
+      "glucose": "Check it in every patient with altered consciousness — including trauma. Hypoglycaemia may have caused the crash."
+     },
+     "e_exposure_and_environment": {
+      "expose": "Undress fully to examine, including the back during a controlled LOG ROLL, inspecting the whole spine and the perineum, and performing a rectal examination where indicated.",
+      "then_cover_immediately": {
+       "the_reason": "HYPOTHERMIA IS PART OF THE LETHAL TRIAD. Trauma patients cool rapidly — undressed, wet, receiving cold fluids, in a cold resuscitation room, with impaired thermoregulation from shock.",
+       "the_actions": "Warm blankets, forced-air warming, WARMED intravenous fluids and blood, a warm room. It is easy, cheap, and it is neglected because it feels less urgent than everything else in the room."
+      }
+     }
+    },
+    "section_3_the_lethal_triad_and_damage_control_resuscitation": {
+     "the_lethal_triad": {
+      "the_three": "HYPOTHERMIA · ACIDOSIS · COAGULOPATHY.",
+      "how_they_reinforce_each_other": "HYPOTHERMIA impairs enzymatic clotting factor function and platelet activity, causing COAGULOPATHY. Bleeding causes hypoperfusion and ACIDOSIS, which further impairs clotting factor function. Coagulopathy causes more bleeding, more hypoperfusion, more acidosis and more heat loss. IT IS A SELF-REINFORCING SPIRAL, AND ONCE ESTABLISHED IT IS VERY DIFFICULT TO REVERSE. The whole of damage control resuscitation is designed to prevent entering it.",
+      "trauma_induced_coagulopathy": "Note that severe trauma causes an EARLY coagulopathy present on arrival, before dilution or hypothermia — driven by tissue injury, shock and activation of protein C. It is not simply a consequence of fluid administration."
+     },
+     "permissive_hypotension": {
+      "the_concept": "IN UNCONTROLLED HAEMORRHAGE, ACCEPT A LOWER-THAN-NORMAL BLOOD PRESSURE — commonly a palpable radial pulse or a systolic around 80 to 90 mmHg — UNTIL SURGICAL CONTROL IS ACHIEVED.",
+      "why": "Raising the blood pressure to normal before the bleeding is stopped DISLODGES FORMED CLOT (\"POPPING THE CLOT\"), DILUTES CLOTTING FACTORS AND INCREASES BLEEDING. The aim is enough perfusion to keep the brain and heart going, not a normal number on the monitor.",
+      "the_critical_exception": "DO NOT APPLY PERMISSIVE HYPOTENSION IN SIGNIFICANT TRAUMATIC BRAIN INJURY. The injured brain needs CEREBRAL PERFUSION PRESSURE, and hypotension dramatically worsens outcome after head injury — a single episode of systolic below 90 roughly doubles mortality. IN COMBINED HAEMORRHAGE AND HEAD INJURY, A HIGHER TARGET IS USED AND THE PRIORITY IS SURGICAL CONTROL AS FAST AS POSSIBLE. Knowing WHICH patient you have determines opposite strategies."
+     },
+     "blood_not_crystalloid": "GIVE BLOOD PRODUCTS EARLY IN HAEMORRHAGIC SHOCK, IN BALANCED RATIOS approaching 1:1:1 red cells to plasma to platelets. LARGE VOLUMES OF CRYSTALLOID DILUTE CLOTTING FACTORS, WORSEN ACIDOSIS AND HYPOTHERMIA, AND INCREASE MORTALITY. The old teaching of two litres of crystalloid before blood has been abandoned.",
+     "tranexamic_acid": {
+      "the_drug": "TRANEXAMIC ACID 1 g intravenously over 10 minutes, then 1 g over 8 hours.",
+      "the_evidence": "The CRASH-2 trial showed reduced mortality in bleeding trauma patients. CRASH-3 showed benefit in traumatic brain injury with mild to moderate injury.",
+      "the_timing_rule_that_matters": "GIVE IT WITHIN 3 HOURS OF INJURY. GIVEN AFTER 3 HOURS IT WAS ASSOCIATED WITH INCREASED MORTALITY IN CRASH-2 — SO LATE ADMINISTRATION IS NOT NEUTRAL, IT IS HARMFUL. Earlier is better; benefit declines with every 15 minutes of delay. THE TIME OF INJURY, NOT THE TIME OF ARRIVAL, IS WHAT COUNTS."
+     },
+     "damage_control_surgery": "IN AN UNSTABLE PATIENT, DO THE SHORTEST OPERATION THAT STOPS THE BLEEDING AND CONTROLS CONTAMINATION — pack, clamp, staple, temporarily close — THEN TAKE THE PATIENT TO INTENSIVE CARE TO WARM, CORRECT ACIDOSIS AND COAGULOPATHY, AND RETURN FOR DEFINITIVE SURGERY IN 24 TO 48 HOURS. A long definitive operation in a cold, acidotic, coagulopathic patient kills them on the table."
+    },
+    "section_4_adjuncts_and_imaging": {
+     "adjuncts_to_the_primary_survey": "ECG monitoring · pulse oximetry · capnography if intubated · CATHETER and gastric tube (NASOGASTRIC AVOIDED AND OROGASTRIC USED IF THERE IS SUSPECTED BASE OF SKULL FRACTURE, because of the risk of intracranial placement) · blood gas including lactate and base deficit · ARTERIAL BLOOD GAS BASE DEFICIT IS A BETTER EARLY MARKER OF SHOCK SEVERITY THAN BLOOD PRESSURE.",
+     "the_catheter_caution": "DO NOT CATHETERISE URETHRALLY IF THERE IS BLOOD AT THE MEATUS, A HIGH-RIDING PROSTATE, OR PERINEAL BRUISING — these suggest URETHRAL INJURY, and passing a catheter can convert a partial tear into a complete one. Seek urological advice; suprapubic catheterisation may be needed.",
+     "fast_scan": "FOCUSED ASSESSMENT WITH SONOGRAPHY FOR TRAUMA — bedside ultrasound looking for FREE FLUID in the hepatorenal recess, splenorenal recess, pelvis and pericardium. FAST — RAPID, REPEATABLE, NO RADIATION, AND DONE WITHOUT MOVING THE PATIENT. ITS VALUE IS IN THE UNSTABLE PATIENT: A POSITIVE FAST IN A HYPOTENSIVE PATIENT MEANS THE ABDOMEN IS THE SOURCE AND THE PATIENT NEEDS THEATRE. A NEGATIVE FAST DOES NOT EXCLUDE INTRA-ABDOMINAL INJURY — it is insensitive for solid organ injury without free fluid, and for retroperitoneal and hollow viscus injury.",
+     "radiographs": "CHEST and PELVIS films are the traditional trauma-room radiographs, taken without moving the patient.",
+     "ct": {
+      "the_rule": "WHOLE-BODY CT IS THE STANDARD FOR THE STABLE OR STABILISED POLYTRAUMA PATIENT and identifies injuries that clinical examination misses entirely.",
+      "the_absolute_caution": "THE CT SCANNER IS A DANGEROUS PLACE FOR AN UNSTABLE PATIENT. A HYPOTENSIVE PATIENT WHO IS NOT RESPONDING TO RESUSCITATION NEEDS SURGICAL CONTROL OF BLEEDING, NOT A SCAN. \"DEATH BY CT\" IS A RECOGNISED PHENOMENON AND A REAL ONE."
+     }
+    },
+    "section_5_the_secondary_survey_and_what_follows": {
+     "when": "ONLY AFTER THE PRIMARY SURVEY IS COMPLETE AND THE PATIENT IS STABILISED. If the patient deteriorates, ABANDON THE SECONDARY SURVEY AND RETURN TO THE PRIMARY SURVEY.",
+     "what_it_is": "A HEAD-TO-TOE EXAMINATION INCLUDING EVERY ORIFICE AND THE BACK, DESIGNED TO FIND EVERY INJURY. Fingers and tubes in every orifice, as the old phrase has it.",
+     "the_history": {
+      "ampl_e": "ALLERGIES · MEDICATIONS (including ANTICOAGULANTS, which change everything) · PAST MEDICAL HISTORY AND PREGNANCY · LAST MEAL · EVENTS AND ENVIRONMENT OF THE INJURY.",
+      "the_mechanism_matters": "ASK THE PARAMEDICS ABOUT THE MECHANISM IN DETAIL — speed, ejection, death of another occupant, height of fall, entrapment time, and estimated blood loss at scene. MECHANISM PREDICTS INJURY PATTERNS THAT ARE NOT YET APPARENT, and the paramedics leave. Get it from them before they go."
+     },
+     "the_missed_injury_problem": {
+      "the_reality": "MISSED INJURIES ARE COMMON IN POLYTRAUMA — distracting injuries, an intubated patient who cannot report symptoms, and attention focused on the dramatic wound.",
+      "the_solution": "A FORMAL TERTIARY SURVEY — a systematic repeat head-to-toe examination and review of all imaging within 24 hours, and again when the patient is awake and able to report symptoms. IT IS A SPECIFIC, SCHEDULED TASK, NOT AN INTENTION."
+     },
+     "the_rest": "ANALGESIA — trauma patients are under-analgesed, and pain relief is not a distraction from resuscitation. TETANUS PROPHYLAXIS. ANTIBIOTICS for open fractures and contaminated wounds. Splint fractures. Reassess frequently. Early involvement of orthopaedics, neurosurgery and other specialties. Communicate with the family. And DOCUMENT — trauma documentation is frequently poor and is later needed for clinical, legal and audit purposes."
+    },
+    "section_6_teaching_points": {
+     "bonus_1_catastrophic_haemorrhage_comes_before_the_airway": "A patient exsanguinating from a limb wound dies of blood loss before an airway problem kills them, and control takes seconds. That is why the sequence is <C>-A-B-C-D-E. A correctly applied tourniquet HURTS — if it does not, it may be worsening bleeding by occluding venous return alone. Write the time on it.",
+     "bonus_2_blood_on_the_floor_and_four_more": "External, chest, abdomen, pelvis and retroperitoneum, long bones. A hypotensive trauma patient is bleeding into one of these five until proven otherwise. A closed femoral fracture holds 1 to 1.5 litres — the deformed thigh is already one answer.",
+     "bonus_3_agitation_is_hypoxia_until_proven_otherwise": "Cerebral hypoxia and hypoperfusion cause agitation BEFORE drowsiness. The answer is oxygen and blood, not sedation. Assuming alcohol or drugs before addressing hypoxia, hypoglycaemia, hypoperfusion and head injury is how patients die labelled as difficult.",
+     "bonus_4_a_normal_blood_pressure_in_a_young_trauma_patient_is_compensation": "Young adults maintain systolic pressure until they have lost a great deal of volume. Tachycardia and a narrowed pulse pressure come first. Base deficit on the blood gas is a better early marker of shock severity than blood pressure.",
+     "bonus_5_permissive_hypotension_except_in_head_injury": "Raising the pressure before surgical control pops the clot and dilutes clotting factors. BUT the injured brain needs perfusion pressure, and a single systolic below 90 roughly doubles mortality after head injury. Knowing which patient you have determines opposite strategies.",
+     "bonus_6_tranexamic_acid_within_three_hours_only": "CRASH-2 showed reduced mortality when given early, and INCREASED mortality when given after 3 hours. Late administration is not neutral, it is harmful. The clock runs from the TIME OF INJURY, not the time of arrival.",
+     "bonus_7_the_lethal_triad_is_a_spiral": "Hypothermia impairs clotting; bleeding causes acidosis which impairs clotting; coagulopathy causes more bleeding, more acidosis and more heat loss. Everything in damage control resuscitation — warming, blood not crystalloid, short operations — exists to avoid entering it.",
+     "bonus_8_the_ct_scanner_is_a_dangerous_place_for_an_unstable_patient": "A hypotensive patient not responding to resuscitation needs surgical control, not imaging. \"Death by CT\" is a real phenomenon.",
+     "trap_1": "Tension pneumothorax is a CLINICAL diagnosis — decompress before any radiograph. Use the 4th or 5th space in the anterior axillary line, or finger thoracostomy.",
+     "trap_2": "Apply the pelvic binder at the GREATER TROCHANTERS, not the iliac crests — and once it is on, leave it on. Do not repeatedly spring the pelvis.",
+     "trap_3": "Do NOT catheterise urethrally with blood at the meatus, a high-riding prostate or perineal bruising.",
+     "trap_4": "Use an OROGASTRIC rather than nasogastric tube if base of skull fracture is suspected.",
+     "trap_5": "A NEGATIVE FAST does not exclude intra-abdominal injury — it misses solid organ injury without free fluid, retroperitoneal and hollow viscus injury.",
+     "trap_6": "Get the MECHANISM from the paramedics before they leave — it predicts injuries not yet apparent.",
+     "trap_7": "Schedule a formal TERTIARY SURVEY within 24 hours and again when the patient is awake — missed injuries are common and this is the systematic answer.",
+     "trap_8": "Cover the patient and warm them actively. Hypothermia is neglected because it feels less urgent than everything else in the room.",
+     "one_line_summary": "Polytrauma with haemorrhagic shock. Stop the catastrophic bleeding first, work through the four hidden compartments, treat the agitation as hypoxia, give tranexamic acid within three hours and blood rather than crystalloid — and keep him warm."
+    }
+   },
+   "glossary": [
+    {
+     "abbr": "CT",
+     "full": "computed tomography"
+    },
+    {
+     "abbr": "ECG",
+     "full": "electrocardiogram"
+    },
+    {
+     "abbr": "GCS",
+     "full": "Glasgow Coma Scale"
+    },
+    {
+     "abbr": "ICU",
+     "full": "intensive care unit"
+    },
+    {
+     "abbr": "LAST",
+     "full": "local anaesthetic systemic toxicity"
+    }
+   ],
+   "specialty": "Surgery — Trauma",
+   "teaching_case": true,
+   "inputs": [],
+   "logic": {},
+   "outputs": [],
+   "warnings": [
+    "CATASTROPHIC HAEMORRHAGE COMES BEFORE THE AIRWAY — the sequence is <C>-A-B-C-D-E.",
+    "A correctly applied TOURNIQUET HURTS — if it does not, it may be worsening bleeding. WRITE THE TIME ON IT.",
+    "BLOOD ON THE FLOOR AND FOUR MORE — external, chest, abdomen, pelvis/retroperitoneum, long bones.",
+    "AGITATION IN TRAUMA IS HYPOXIA OR HYPOPERFUSION UNTIL PROVEN OTHERWISE — the answer is oxygen and blood, NOT sedation.",
+    "A NORMAL BLOOD PRESSURE IN A TACHYCARDIC YOUNG TRAUMA PATIENT IS COMPENSATION, NOT REASSURANCE.",
+    "TENSION PNEUMOTHORAX IS A CLINICAL DIAGNOSIS — decompress before any radiograph.",
+    "Decompress at the 4th or 5th intercostal space in the ANTERIOR AXILLARY LINE, or use finger thoracostomy.",
+    "Apply the PELVIC BINDER AT THE GREATER TROCHANTERS, not the iliac crests — and once on, LEAVE IT ON.",
+    "PERMISSIVE HYPOTENSION — but NOT in traumatic brain injury, where hypotension roughly doubles mortality.",
+    "GIVE BLOOD, NOT LARGE VOLUMES OF CRYSTALLOID — crystalloid dilutes clotting factors and worsens acidosis and hypothermia.",
+    "TRANEXAMIC ACID WITHIN 3 HOURS OF INJURY — after 3 hours it INCREASED mortality in CRASH-2.",
+    "THE LETHAL TRIAD is a self-reinforcing spiral — hypothermia, acidosis and coagulopathy. Warm the patient actively.",
+    "THE CT SCANNER IS A DANGEROUS PLACE FOR AN UNSTABLE PATIENT — they need surgical control, not a scan.",
+    "DO NOT CATHETERISE URETHRALLY with blood at the meatus, a high-riding prostate or perineal bruising.",
+    "Use an OROGASTRIC tube if base of skull fracture is suspected.",
+    "A NEGATIVE FAST DOES NOT EXCLUDE intra-abdominal injury.",
+    "Schedule a formal TERTIARY SURVEY within 24 hours — missed injuries are common in polytrauma.",
+    "Management here is a teaching example. Follow your local major trauma protocol."
+   ],
+   "limitations": [
+    "A WORKED TEACHING CASE, not a protocol. Trauma systems, transfusion ratios and imaging pathways differ between services and countries.",
+    "Paediatric trauma has different physiology, weight-based dosing and different compensation patterns."
+   ],
+   "flashcards": [
+    {
+     "q": "Why does catastrophic haemorrhage precede the airway?",
+     "a": "Exsanguination from a limb wound kills before an airway problem does, and control takes seconds."
+    },
+    {
+     "q": "Name the five places a trauma patient bleeds.",
+     "a": "External, chest, abdomen, pelvis and retroperitoneum, long bones."
+    },
+    {
+     "q": "How much blood can a closed femoral fracture hold?",
+     "a": "1 to 1.5 litres — bilateral fractures alone can cause shock."
+    },
+    {
+     "q": "What does agitation in a trauma patient mean?",
+     "a": "Hypoxia or hypoperfusion until proven otherwise — treat with oxygen and blood, not sedation."
+    },
+    {
+     "q": "Where is needle decompression now recommended, and why?",
+     "a": "4th or 5th intercostal space, anterior axillary line — the chest wall is thinner than anteriorly."
+    },
+    {
+     "q": "Where should a pelvic binder be applied?",
+     "a": "At the greater trochanters, not the iliac crests — and once on, leave it on."
+    },
+    {
+     "q": "What is permissive hypotension and its exception?",
+     "a": "Accepting a lower pressure until surgical control — but NOT in traumatic brain injury, which needs perfusion pressure."
+    },
+    {
+     "q": "State the tranexamic acid regimen and timing rule.",
+     "a": "1 g over 10 minutes then 1 g over 8 hours, WITHIN 3 HOURS of injury — later increases mortality."
+    },
+    {
+     "q": "Name the lethal triad and how it self-reinforces.",
+     "a": "Hypothermia, acidosis, coagulopathy — each worsens clotting, causing more bleeding, acidosis and heat loss."
+    },
+    {
+     "q": "What is damage control surgery?",
+     "a": "The shortest operation that stops bleeding and controls contamination, then ICU to correct physiology, then definitive surgery."
+    },
+    {
+     "q": "What does a negative FAST tell you?",
+     "a": "Very little — it misses solid organ injury without free fluid, retroperitoneal and hollow viscus injury."
+    },
+    {
+     "q": "When must urethral catheterisation be avoided?",
+     "a": "Blood at the meatus, high-riding prostate, or perineal bruising — suggesting urethral injury."
+    },
+    {
+     "q": "What is a tertiary survey and when is it done?",
+     "a": "A systematic repeat head-to-toe examination and imaging review within 24 hours and again when the patient is awake."
+    }
+   ],
+   "checkboxes": [
+    "Trauma team pre-alerted with roles allocated",
+    "Catastrophic external haemorrhage controlled first; tourniquet time documented",
+    "Airway assessed with manual in-line cervical stabilisation",
+    "Tension pneumothorax excluded clinically before imaging",
+    "Both sides of the chest exposed, percussed and auscultated",
+    "Two large-bore cannulae and cross-match",
+    "Massive haemorrhage protocol activated",
+    "Pelvic binder applied at greater trochanters and left in place",
+    "Femoral fracture splinted",
+    "Agitation treated as hypoxia, not sedated",
+    "Glucose checked",
+    "Tranexamic acid given within 3 hours of INJURY",
+    "Blood products in balanced ratios rather than large-volume crystalloid",
+    "Patient covered and actively warmed",
+    "Urethral catheter avoided if urethral injury suspected; orogastric if base of skull fracture",
+    "CT only once stabilised; unstable patient taken for surgical control",
+    "AMPLE history and mechanism obtained from paramedics before they leave",
+    "Tertiary survey scheduled within 24 hours"
+   ],
+   "related_slugs": [
+    "trauma_primary_survey_and_the_immediately_life_threatening_injuries"
+   ],
+   "patient_integration": null,
+   "governance": {
+    "evidence_tier": "T5_textbook_or_standard_teaching",
+    "verification_status": "standard_teaching",
+    "sources": [],
+    "nigeria_overlay": null,
+    "build_date": "2026-08-07",
+    "review_interval_months": 12,
+    "next_review_due": "2027-08-07",
+    "clinical_reviewer": null,
+    "approved_for_release": false,
+    "local_confirmation_required": true,
+    "supersedes": null,
+    "content_hash": "68f113cc43a3313d"
    }
   }
  ]
