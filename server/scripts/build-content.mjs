@@ -148,6 +148,15 @@ function expand(entry, index) {
     },
     body: entry.body || {},
     glossary: buildGlossary(entry, bodyText),
+
+    // Case scenarios carry two extra fields. `specialty` groups them the way a
+    // curriculum does (Medicine - Cardiology, Surgery - Urology) so the Cases
+    // page can mirror the postings a student actually rotates through.
+    // `teaching_case` is the flag that makes the dose disclaimer render: every
+    // other entry in Scout deliberately states no doses, and a reader moving
+    // between the two must be told which rules apply to what they are reading.
+    specialty: entry.specialty || null,
+    teaching_case: Boolean(entry.teaching_case),
     inputs: entry.inputs || [],
     logic: entry.logic || {},
     outputs: entry.outputs || [],

@@ -90,6 +90,11 @@ export const api = {
   readAt: (position, signal) => request(`/read/${encodeURIComponent(position)}`, { signal }),
   readPositionOf: (idOrSlug, signal) => request(`/read/position-of/${encodeURIComponent(idOrSlug)}`, { signal }),
 
+  // Case scenarios, grouped by posting and specialty.
+  cases: (signal) => request('/cases', { signal }),
+  casesArea: (group, area, signal) =>
+    request(`/cases/${encodeURIComponent(group)}/${encodeURIComponent(area)}`, { signal }),
+
   cards: (deck, signal) => request(`/cards${qs({ deck })}`, { signal }),
   checklists: (signal) => request('/checklists', { signal }),
 

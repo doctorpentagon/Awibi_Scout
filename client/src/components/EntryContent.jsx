@@ -43,6 +43,22 @@ export function EntryContent({ entry, linkMap = null, showBackLink = false }) {
         )}
       </header>
 
+      {/* Cases are the ONE place in Scout that carries drug doses. A reader
+          arriving from a reference card — where doses are deliberately absent —
+          must be told the rules differ here, on the entry itself and not only
+          on the index page they may not have come through. */}
+      {entry.teaching_case && (
+        <section className="entry-teaching-note" role="note">
+          <h2 className="entry-teaching-title">Worked teaching case — contains drug doses</h2>
+          <p>
+            Reference entries in Scout deliberately state no doses. This is a teaching case,
+            where the doses are the point. Every dose is a worked example for an adult with
+            normal kidney and liver function unless stated otherwise.{' '}
+            <strong>Check your own formulary before prescribing for a real patient.</strong>
+          </p>
+        </section>
+      )}
+
       {/* Warnings sit above the content. A clinician who reads only the top of
           the card must still meet them. */}
       {entry.warnings?.length > 0 && (

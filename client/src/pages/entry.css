@@ -368,3 +368,30 @@
 @media (max-width: 480px) {
   .entry-glossary-row { grid-template-columns: 1fr; gap: 2px; }
 }
+
+/* ---- teaching case banner ---------------------------------------------- */
+/* Deliberately NOT styled as a danger callout. It is a standing condition of
+   the document, not an alarm about its content — but it must be impossible to
+   scroll past, because it is the only place in Scout where doses appear. */
+.entry-teaching-note {
+  margin: 20px 0;
+  padding: 12px 16px;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.entry-teaching-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 0 6px;
+  color: var(--text);
+}
+
+.entry-teaching-note p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text);
+}

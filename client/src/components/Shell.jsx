@@ -9,6 +9,7 @@ const NAV_GROUPS = [
     label: 'The library',
     items: [
       { to: '/library', label: 'Library', icon: '☰' },
+      { to: '/cases', label: 'Case scenarios', icon: '✚' },
       { to: '/read', label: 'Read it all', icon: '▤' },
       { to: '/cards', label: 'Cards & checklists', icon: '✎' },
     ],
@@ -23,6 +24,7 @@ const TITLES = {
   '/': 'Scout',
   '/library': 'Library',
   '/read': 'Read the library',
+  '/cases': 'Case scenarios',
   '/cards': 'Learn',
   '/sources': 'Sources & updates',
   '/about': 'About',
