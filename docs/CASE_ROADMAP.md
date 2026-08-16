@@ -17,8 +17,8 @@ there is a natural checkpoint every 10 cases rather than every 3.
 |---|---|---|---|
 | **1** | 1–10 | Cardiology · Respiratory · Endocrinology · Nephrology · Hepatology | **COMPLETE** |
 | **2** | 11–20 | Gastroenterology · Hepatology · Neurology · Haematology · Infectious disease | **COMPLETE** |
-| **3** | 21–30 | Rheumatology · Infectious disease · Oncology · Dermatology | **next** |
-| 4 | 31–40 | General surgery · Trauma | planned |
+| **3** | 21–30 | Rheumatology · Infectious disease · Oncology · Dermatology | **COMPLETE** |
+| **4** | 31–40 | General surgery · Trauma | **next** |
 | 5 | 41–50 | Urology · Orthopaedics · Vascular | planned |
 | 6 | 51–60 | Neurosurgery · Cardiothoracic · Paediatric surgery · Plastics | planned |
 | 7 | 61–70 | Anaesthesia · ENT · Ophthalmology · Dental | planned |
@@ -35,9 +35,9 @@ curl localhost:5188/api/cases | node -e "let d='';process.stdin.on('data',c=>d+=
 
 | | |
 |---|---|
-| Cases written | **20** |
+| Cases written | **30** |
 | Target | 200+ |
-| Specialty areas covered | 9 of ~45 |
+| Specialty areas covered | 12 of ~45 |
 
 ---
 
@@ -99,11 +99,14 @@ point is that no area is left without a worked patient.
       *Planned:* haemorrhagic stroke · myasthenic crisis · multiple sclerosis relapse · peripheral neuropathy · spinal cord compression
 - [x] **Haematology** (4) — sickle cell vaso-occlusive crisis · neutropenic sepsis · acute leukaemia with leukostasis and tumour lysis · anticoagulant-related major bleeding
       *Planned:* lymphoma presentation · anaemia workup · thrombocytopenia and TTP · haemophilia · transfusion reaction
-- [ ] **Rheumatology** — systemic lupus erythematosus · rheumatoid flare · giant cell arteritis · gout versus septic arthritis · vasculitis · systemic sclerosis crisis
-- [x] **Infectious disease** (1) — bacterial meningitis with meningococcal sepsis
-      *Planned:* malaria · typhoid · HIV with opportunistic infection · tuberculosis · tetanus · sepsis of unknown source · Lassa fever · rabies exposure
-- [ ] **Oncology** — malignant spinal cord compression · superior vena cava obstruction · tumour lysis syndrome · hypercalcaemia of malignancy · febrile neutropenia
-- [ ] **Dermatology** — Stevens-Johnson syndrome and toxic epidermal necrolysis · erythroderma · cellulitis versus necrotising fasciitis · pemphigus · drug eruption
+- [x] **Rheumatology** (3) — giant cell arteritis · septic arthritis versus gout · SLE with lupus nephritis
+      *Planned:* rheumatoid flare · ANCA vasculitis · systemic sclerosis renal crisis · antiphospholipid syndrome
+- [x] **Infectious disease** (4) — bacterial meningitis with meningococcal sepsis · severe falciparum malaria · cryptococcal meningitis in advanced HIV · generalised tetanus
+      *Planned:* · typhoid · HIV with opportunistic infection · tuberculosis · tetanus · sepsis of unknown source · Lassa fever · rabies exposure
+- [x] **Oncology** (2) — malignant spinal cord compression · hypercalcaemia of malignancy
+      *Planned:* superior vena cava obstruction · tumour lysis syndrome · febrile neutropenia in solid tumour
+- [x] **Dermatology** (2) — Stevens-Johnson syndrome and toxic epidermal necrolysis · necrotising fasciitis versus cellulitis
+      *Planned:* erythroderma · pemphigus · DRESS syndrome · erythema nodosum
 
 ### Surgery
 
