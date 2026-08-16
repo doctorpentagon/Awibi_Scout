@@ -2,7 +2,7 @@
  "release": "AWIBI-SCOUT-CONTENT-2026.08.R3",
  "schema_version": "4.0.0",
  "build_date": "2026-08-07",
- "entry_count": 225,
+ "entry_count": 229,
  "extends": "AWIBI-SCOUT-CONTENT-2026.08.R2",
  "note": "Content extension. Adds areas; supersedes nothing. Every entry is unreviewed and unapproved.",
  "entries": [
@@ -50875,6 +50875,1280 @@
     "local_confirmation_required": true,
     "supersedes": null,
     "content_hash": "1ed5ca0318a941d9"
+   }
+  },
+  {
+   "id": "AS-CASE-0041",
+   "schema_version": "4.0.0",
+   "content_release": "AWIBI-SCOUT-CONTENT-2026.08.R3",
+   "type": "case",
+   "title": "CASE: A 14-Year-Old with Sudden Testicular Pain at 3 a.m.",
+   "short_title": "Case: testicular torsion",
+   "slug": "case_a_14_year_old_with_sudden_testicular_pain_at_3_a_m",
+   "also_known_as": [
+    "case testicular torsion",
+    "torsion of testis case",
+    "acute scrotum case",
+    "bell clapper deformity",
+    "prehn sign",
+    "cremasteric reflex",
+    "blue dot sign",
+    "torsion of appendix testis",
+    "orchidopexy",
+    "epididymo-orchitis versus torsion"
+   ],
+   "summary": "A boy woken by severe scrotal pain 4 hours ago. Teaches why no investigation may delay theatre, why the abdominal pain presentation is the one that gets missed, what the bell-clapper deformity is, and why both testes are fixed even though only one twisted.",
+   "domains": [
+    "urology",
+    "emergency_medicine",
+    "paediatrics"
+   ],
+   "intents": [
+    "identify",
+    "act"
+   ],
+   "populations": [
+    "all_ages"
+   ],
+   "contexts": [
+    "routine"
+   ],
+   "hazard": "critical",
+   "urgency": "immediate",
+   "jurisdiction": "international",
+   "search": {
+    "terms": [
+     "acute scrotum",
+     "acute scrotum case",
+     "appendix testis",
+     "bell clapper deformity",
+     "blue dot sign",
+     "case",
+     "case testicular torsion",
+     "case: a 14-year-old with sudden testicular pain at 3 a.m.",
+     "case: testicular torsion",
+     "cremasteric reflex",
+     "doppler ultrasound scrotum",
+     "epididymo-orchitis",
+     "epididymo-orchitis versus torsion",
+     "hydatid of morgagni",
+     "manual detorsion",
+     "open book detorsion",
+     "orchidectomy",
+     "orchidopexy",
+     "pain",
+     "prehn sign",
+     "sudden",
+     "testicular",
+     "testicular torsion",
+     "torsion of appendix testis",
+     "torsion of testis case",
+     "year"
+    ],
+    "ambiguous_terms": [],
+    "phrases": [],
+    "field_weights": {
+     "title": 8,
+     "short_title": 6,
+     "also_known_as": 5,
+     "terms": 4,
+     "summary": 2,
+     "body": 1,
+     "flashcards": 0.5
+    }
+   },
+   "body": {
+    "the_one_line": "14-year-old boy woken from sleep 4 hours ago by sudden severe pain in the left testicle, with vomiting. He is pale and cannot get comfortable. His mother brought him because he was also complaining of tummy ache.",
+    "section_1_the_governing_rule": {
+     "the_statement": "TESTICULAR TORSION IS A SURGICAL EMERGENCY WITH A HARD TIME LIMIT. THE TESTIS IS USUALLY SALVAGEABLE WITHIN ABOUT 6 HOURS, SALVAGE FALLS SHARPLY BETWEEN 6 AND 12 HOURS, AND AFTER 24 HOURS IT IS ALMOST ALWAYS LOST. HE IS AT 4 HOURS — INSIDE THE WINDOW, AND THE WINDOW IS CLOSING WHILE THE DIAGNOSIS IS BEING DISCUSSED.",
+     "the_second_rule": "IF TORSION IS SUSPECTED, THE PATIENT GOES TO THEATRE. NO INVESTIGATION MAY DELAY EXPLORATION. A NEGATIVE OR EQUIVOCAL ULTRASOUND DOES NOT EXCLUDE IT, AND WAITING FOR A SCAN OUT OF HOURS IS THE COMMONEST REASON TESTES ARE LOST. A NEGATIVE EXPLORATION IS AN ACCEPTABLE OUTCOME; A LOST TESTIS FROM DELAY IS NOT.",
+     "the_age_pattern": "THERE ARE TWO PEAKS: THE NEONATAL PERIOD and PUBERTY, roughly ages 12 to 18, when rapid testicular growth increases the risk. BUT IT OCCURS AT ANY AGE, INCLUDING IN ADULTS, and assuming an older man with acute scrotal pain has epididymo-orchitis is a recognised error."
+    },
+    "section_2_clerking": {
+     "history": "Woken from sleep by sudden severe left testicular pain. He vomited twice. He also complains of lower abdominal pain. No urinary symptoms — no dysuria, frequency or discharge. No trauma. No fever. He has had two brief similar episodes in the last few months that settled within an hour and he told nobody.",
+     "the_features_that_point_at_torsion": {
+      "sudden_onset_often_waking_from_sleep": "CLASSIC. Torsion frequently occurs at night or on waking, thought to relate to cremasteric contraction during sleep.",
+      "vomiting": "Common with torsion and unusual with epididymo-orchitis — a useful discriminator that is often not asked about.",
+      "previous_self_resolving_episodes": "INTERMITTENT TORSION AND SPONTANEOUS DETORSION. THIS IS AN IMPORTANT AND UNDER-ASKED PIECE OF HISTORY. A boy with recurrent brief episodes of severe testicular pain has an anatomically predisposed testis and should be referred for ELECTIVE BILATERAL ORCHIDOPEXY — because the next episode may not untwist.",
+      "absence_of_urinary_symptoms": "Dysuria, frequency and discharge point towards infection. Their ABSENCE supports torsion. But note their PRESENCE does not exclude torsion."
+     },
+     "the_presentation_that_gets_missed": {
+      "the_problem": "HE COMPLAINS OF ABDOMINAL PAIN. THE TESTIS DEVELOPS ON THE POSTERIOR ABDOMINAL WALL AND DESCENDS, TAKING ITS NERVE SUPPLY WITH IT — SO PAIN IS REFERRED TO THE T10 DERMATOME, WHICH IS THE PERIUMBILICAL AND LOWER ABDOMINAL REGION. A BOY CAN THEREFORE PRESENT WITH ABDOMINAL PAIN AND VOMITING AND NO COMPLAINT OF SCROTAL PAIN AT ALL.",
+      "the_rule_that_follows": "EXAMINE THE TESTES IN EVERY BOY AND MAN WITH ABDOMINAL PAIN. THIS IS THE SINGLE MOST IMPORTANT PREVENTABLE CAUSE OF A MISSED TORSION. Adolescents are also embarrassed and may not volunteer scrotal pain, and a clinician who does not ask and does not look will not find it. EXPLAIN WHY YOU ARE EXAMINING, OFFER A CHAPERONE, AND DO IT."
+     },
+     "vitals": "BP 118/70 mmHg. Pulse 104. Temperature 36.8 — AFEBRILE, which argues against infection. Respiratory rate 18. Distressed and pale.",
+     "examination": {
+      "inspection": "The LEFT hemiscrotum is swollen and erythematous. THE LEFT TESTIS LIES HIGHER THAN THE RIGHT AND HORIZONTALLY — a HIGH-RIDING, TRANSVERSELY ORIENTATED TESTIS, because the twisted spermatic cord shortens and rotates it.",
+      "palpation": "EXQUISITELY TENDER — often too tender to examine properly, which is itself informative. The whole testis is tender rather than a localised area.",
+      "the_cremasteric_reflex": {
+       "how_to_elicit": "STROKE OR LIGHTLY PINCH THE SKIN OF THE UPPER MEDIAL THIGH. The normal response is CONTRACTION OF THE CREMASTER MUSCLE, ELEVATING THE IPSILATERAL TESTIS. The afferent and efferent limbs are both in the GENITOFEMORAL NERVE (L1-L2).",
+       "in_torsion": "IT IS TYPICALLY ABSENT on the affected side — the most useful single physical sign.",
+       "the_honest_caveat": "IT IS NOT INFALLIBLE. It is normally absent in some boys under about 30 months and can be present in a proportion of confirmed torsions. A PRESENT CREMASTERIC REFLEX DOES NOT EXCLUDE TORSION — this must be stated plainly, because a present reflex has been used to justify discharge."
+      },
+      "prehn_sign": "ELEVATING THE TESTIS RELIEVES PAIN IN EPIDIDYMO-ORCHITIS AND DOES NOT RELIEVE (OR WORSENS) PAIN IN TORSION. IT IS UNRELIABLE AND MUST NOT BE USED TO EXCLUDE TORSION. It is worth knowing because it is asked about, not because it decides management.",
+      "examine_the_other_side": "ALWAYS EXAMINE BOTH TESTES AND COMPARE. Also examine the abdomen and the groin for a hernia, and check the lie of the contralateral testis, since the anatomical predisposition is usually bilateral."
+     }
+    },
+    "section_3_mechanism": {
+     "what_torsion_is": "THE SPERMATIC CORD TWISTS, OCCLUDING FIRST THE THIN-WALLED VENOUS DRAINAGE AND THEN THE ARTERIAL SUPPLY.",
+     "the_sequence": [
+      "1. Venous occlusion causes CONGESTION and SWELLING.",
+      "2. Swelling within the tight tunica albuginea further raises pressure.",
+      "3. ARTERIAL INFLOW FAILS, causing ischaemia.",
+      "4. INFARCTION AND NECROSIS follow. The germinal epithelium is the most sensitive tissue and is damaged earliest."
+     ],
+     "the_degree_matters": "THE NUMBER OF TWISTS DETERMINES THE SPEED. A 180-degree twist may cause partial obstruction with slower damage; 360 degrees or more causes complete arterial occlusion and rapid infarction. THIS IS WHY THE 6-HOUR RULE IS A GUIDE, NOT A GUARANTEE — a severely twisted testis can be lost sooner, and a partially twisted one may survive longer.",
+     "the_bell_clapper_deformity": {
+      "the_normal_anatomy": "The tunica vaginalis normally covers the anterior and lateral surfaces of the testis, leaving the POSTERIOR surface attached to the scrotal wall. That posterior attachment ANCHORS the testis and prevents it rotating.",
+      "the_abnormality": "IN THE BELL-CLAPPER DEFORMITY, THE TUNICA VAGINALIS INSERTS HIGH ON THE SPERMATIC CORD AND COMPLETELY ENCIRCLES THE TESTIS, INCLUDING POSTERIORLY. THE TESTIS THEREFORE HANGS FREELY WITHIN THE TUNICA LIKE THE CLAPPER INSIDE A BELL, AND CAN ROTATE ON ITS CORD.",
+      "the_consequence_that_determines_the_operation": "THE DEFORMITY IS USUALLY BILATERAL AND CONGENITAL. THAT IS WHY BOTH TESTES ARE FIXED AT OPERATION EVEN THOUGH ONLY ONE TWISTED — THE OTHER SIDE IS ANATOMICALLY PREDISPOSED AND WILL TORT IN TIME. FIXING ONLY THE AFFECTED SIDE LEAVES THE PATIENT AT RISK OF LOSING HIS REMAINING TESTIS, WHICH IS A FAR WORSE OUTCOME."
+     },
+     "extravaginal_torsion": "IN NEONATES, THE WHOLE CORD AND TUNICA TWIST TOGETHER (EXTRAVAGINAL), because the tunica is not yet adherent to the scrotal wall. It often occurs before or around birth, presenting as a firm, non-tender, discoloured scrotal mass, and the testis is usually already lost. Management differs and is a paediatric urology decision.",
+     "the_immunological_point": "The blood-testis barrier normally sequesters germ cells from the immune system. Prolonged ischaemia and infarction can expose these antigens, and ANTISPERM ANTIBODIES may develop, potentially affecting fertility in the CONTRALATERAL testis. It is one of several reasons prompt salvage matters beyond the affected side."
+    },
+    "section_4_differentials": {
+     "one_testicular_torsion": "MUST BE ASSUMED. Supporting: age, sudden onset waking from sleep, vomiting, high-riding transverse testis, absent cremasteric reflex, afebrile, no urinary symptoms, previous self-resolving episodes.",
+     "two_torsion_of_the_appendix_testis": {
+      "what_it_is": "Torsion of a small embryological remnant on the upper pole — the HYDATID OF MORGAGNI, a Müllerian duct remnant.",
+      "the_features": "Commonest in boys aged 7 to 12. Pain is usually LESS SEVERE and more GRADUAL, localised to the UPPER POLE, with a tender nodule there. THE BLUE DOT SIGN — a small blue or dark spot visible through the scrotal skin at the upper pole, representing the infarcted appendage — is pathognomonic when present, though it is present in a minority.",
+      "the_management": "It is SELF-LIMITING and treated with analgesia. BUT IT CANNOT BE RELIABLY DISTINGUISHED FROM TORSION WITHOUT EXPLORATION IN MANY CASES, AND WHERE THERE IS ANY DOUBT THE PATIENT IS EXPLORED."
+     },
+     "three_epididymo_orchitis": {
+      "the_features": "GRADUAL onset over days, FEVER, DYSURIA, urethral discharge, and often a history of urinary tract infection or sexual exposure. The epididymis is tender, sometimes separately palpable from the testis early on. Prehn sign may be positive. Raised inflammatory markers and pyuria.",
+      "the_organisms": "In sexually active young men, CHLAMYDIA TRACHOMATIS and NEISSERIA GONORRHOEAE — requiring partner notification and sexual health referral. In older men and those with urinary tract abnormalities, coliforms such as Escherichia coli.",
+      "the_warning": "IN A TEENAGER, DO NOT DIAGNOSE EPIDIDYMO-ORCHITIS WITHOUT SERIOUSLY CONSIDERING TORSION. It is the diagnosis most often attached to a torted testis, and the antibiotics are given while the testis dies."
+     },
+     "four_incarcerated_inguinal_hernia": "A groin swelling extending into the scrotum, with bowel obstruction if strangulated. Examine the groin.",
+     "five_trauma_and_testicular_rupture": "History of injury; ultrasound assesses the tunica albuginea and haematoma. Requires exploration if ruptured.",
+     "six_idiopathic_scrotal_oedema": "Painless or mildly uncomfortable erythema and swelling extending beyond the scrotum onto the perineum and groin, in young boys. Self-limiting.",
+     "seven_henoch_schonlein_purpura": "Can cause scrotal pain and swelling in children, with the characteristic rash on the buttocks and legs, abdominal pain and joint involvement.",
+     "eight_testicular_tumour": "Usually a PAINLESS lump, but can present with acute pain if there is haemorrhage into the tumour. Examine and image after the acute episode where the history suggests it."
+    },
+    "section_5_investigations": {
+     "the_principle": "NONE OF THESE MAY DELAY THEATRE. THEY ARE FOR EQUIVOCAL CASES OR FOR ALTERNATIVE DIAGNOSES, NOT FOR CONFIRMING A CLINICAL SUSPICION OF TORSION.",
+     "urine_dipstick_and_culture": "A positive nitrite and leucocytes support infection. NOTE THAT A NEGATIVE DIPSTICK IS COMMON IN TORSION AND SUPPORTS IT, BUT A POSITIVE ONE DOES NOT EXCLUDE TORSION — the two can coexist and pyuria has other causes.",
+     "colour_doppler_ultrasound": {
+      "what_it_shows": "ABSENT OR REDUCED ARTERIAL FLOW in the affected testis, sometimes with the WHIRLPOOL SIGN of the twisted cord. It also identifies alternative diagnoses — abscess, hernia, tumour, appendix testis torsion.",
+      "the_limitations_that_must_be_understood": "IT IS OPERATOR-DEPENDENT AND FREQUENTLY UNAVAILABLE OUT OF HOURS, WHICH IS WHEN TORSION PRESENTS. FLOW MAY BE PRESENT IN EARLY OR PARTIAL TORSION, AND IN INTERMITTENT TORSION THAT HAS SPONTANEOUSLY DETORTED — INDEED SUCH A TESTIS MAY SHOW INCREASED FLOW FROM REACTIVE HYPERAEMIA. A SCAN SHOWING NORMAL FLOW THEREFORE DOES NOT EXCLUDE TORSION.",
+      "where_it_fits": "Useful where the clinical picture genuinely points elsewhere and there is time. NEVER as a gatekeeper to exploration in a convincing case."
+     },
+     "scoring_systems": "The TWIST score (Testicular Workup for Ischemia and Suspected Torsion) uses testicular swelling, hard testis, absent cremasteric reflex, nausea or vomiting, and high-riding testis. HIGH SCORES SUPPORT PROCEEDING DIRECTLY TO SURGERY; low scores may support observation or imaging. IT IS AN AID TO CONFIDENCE, NOT A LICENCE TO WAIT.",
+     "bloods": "Full blood count and CRP if infection is genuinely being considered. Group and save and preoperative bloods for theatre. THEY DO NOT DIAGNOSE OR EXCLUDE TORSION."
+    },
+    "section_6_management": {
+     "a_immediate": "NIL BY MOUTH. Intravenous access and bloods. STRONG ANALGESIA — this is one of the most painful conditions and boys are frequently under-analgesed out of misplaced caution; give an opioid. Antiemetic. CALL THE UROLOGIST OR ON-CALL SURGEON IMMEDIATELY AND ALERT THEATRE. CONSENT for scrotal exploration, BILATERAL FIXATION, AND POSSIBLE ORCHIDECTOMY.",
+     "the_consent_conversation": {
+      "why_it_needs_care": "YOU MUST CONSENT FOR THE POSSIBILITY OF ORCHIDECTOMY, and for FIXATION OF THE UNAFFECTED SIDE. Both need explaining to a frightened adolescent and their parent under time pressure.",
+      "what_to_say": "Explain that the testis is twisted and losing its blood supply; that the operation untwists it and stitches BOTH testes in place so it cannot happen again; that if the testis is already dead it must be removed because a dead testis can harm the other one and causes ongoing problems; and that ONE HEALTHY TESTIS IS SUFFICIENT FOR NORMAL HORMONE PRODUCTION AND FERTILITY IN THE GREAT MAJORITY OF MEN. That last sentence matters enormously to a 14-year-old and is often omitted."
+     },
+     "b_manual_detorsion": {
+      "what_it_is": "A TEMPORISING MANOEUVRE where surgery will be delayed. The testis typically twists MEDIALLY (inwards), so detorsion is usually performed by rotating the testis OUTWARDS — the \"OPEN BOOK\" manoeuvre, as if opening a book, with the patient facing you: the left testis is rotated clockwise and the right anticlockwise, as seen by the examiner.",
+      "the_endpoint": "SUCCESS IS SUGGESTED BY IMMEDIATE PAIN RELIEF AND THE TESTIS RETURNING TO A NORMAL VERTICAL LIE. MORE THAN ONE FULL ROTATION MAY BE NEEDED, and if pain worsens, try the opposite direction — a third of torsions twist laterally.",
+      "the_essential_caveat": "SUCCESSFUL MANUAL DETORSION DOES NOT REMOVE THE NEED FOR SURGERY. IT BUYS TIME. THE PATIENT STILL REQUIRES EXPLORATION AND BILATERAL FIXATION, BECAUSE DETORSION MAY BE INCOMPLETE AND THE ANATOMICAL PREDISPOSITION REMAINS. Sending a comfortable boy home after manual detorsion is a serious error."
+     },
+     "c_scrotal_exploration": {
+      "the_operation": "Through a scrotal or midline raphe incision, the testis is delivered, DETORTED, AND WRAPPED IN WARM SALINE SWABS FOR SEVERAL MINUTES TO ASSESS RECOVERY. If it pinks up and bleeds when the tunica is incised, it is viable and is FIXED. If it remains black and does not recover, it is REMOVED.",
+      "bilateral_fixation": "THE CONTRALATERAL TESTIS IS FIXED AT THE SAME OPERATION, ALWAYS, because the bell-clapper deformity is bilateral. Fixation is by three-point suture fixation to the dartos, or by dartos pouch technique.",
+      "orchidectomy": "A NECROTIC TESTIS MUST BE REMOVED. Leaving it risks infection, chronic pain, and exposure of germ cell antigens that may generate antisperm antibodies affecting the other side. Offer a PROSTHESIS — usually at a later date — and raise it, because young men care about it and rarely ask."
+     },
+     "d_after_the_operation": {
+      "if_the_testis_was_saved": "Follow-up to assess atrophy, which can occur despite apparently successful salvage. Reassure about fertility and hormone function.",
+      "if_it_was_removed": "Explain clearly. Discuss the prosthesis. Offer psychological support — the loss matters to an adolescent far more than adults often assume. Advise SELF-EXAMINATION OF THE REMAINING TESTIS and immediate presentation with any pain, because he now has only one.",
+      "the_fertility_conversation": "One healthy testis produces adequate testosterone and sperm for normal puberty and fertility in the great majority. Say this explicitly and early.",
+      "safeguarding_and_delay": "IF THERE WAS A SIGNIFICANT DELAY IN PRESENTATION OR REFERRAL, EXAMINE WHY. Was he embarrassed? Was he seen and reassured elsewhere? Was a scan awaited? These are learning points for the service, and the honest answer usually improves the next boy pathway."
+     }
+    },
+    "section_7_teaching_points": {
+     "bonus_1_examine_the_testes_in_every_boy_with_abdominal_pain": "The testis develops on the posterior abdominal wall and descends with its T10 nerve supply, so pain refers to the periumbilical region. A boy can present with abdominal pain and vomiting and never mention his scrotum — especially an embarrassed adolescent. This is the single most preventable cause of a missed torsion.",
+     "bonus_2_no_investigation_may_delay_theatre": "A normal Doppler does not exclude torsion — flow can be present in early, partial or recently detorted torsion, sometimes with reactive hyperaemia. Waiting for an out-of-hours scan is the commonest reason testes are lost. A negative exploration is acceptable; a lost testis from delay is not.",
+     "bonus_3_the_bell_clapper_deformity_is_bilateral": "The tunica vaginalis inserts high and encircles the testis, so it hangs freely like a clapper in a bell. It is congenital and usually bilateral — which is why BOTH testes are fixed even though only one twisted. Fixing one side leaves the boy at risk of losing his only remaining testis.",
+     "bonus_4_a_present_cremasteric_reflex_does_not_exclude_torsion": "It is the most useful single sign when absent, but it is normally absent in some young boys and present in a proportion of confirmed torsions. It has been used to justify discharge, and it should not be.",
+     "bonus_5_manual_detorsion_buys_time_and_nothing_more": "Open-book rotation outwards can relieve ischaemia, but detorsion may be incomplete and the anatomical predisposition remains. The patient still needs exploration and bilateral fixation. Sending a comfortable boy home is a serious error.",
+     "bonus_6_ask_about_previous_episodes": "Recurrent brief episodes of severe testicular pain that settled are INTERMITTENT TORSION. That boy needs elective bilateral orchidopexy, because the next episode may not untwist. It is a question nobody asks.",
+     "trap_1": "The time window is 6 hours for reliable salvage, falling sharply to 12, almost never after 24 — and the number of twists means a severely torted testis can be lost sooner.",
+     "trap_2": "Do NOT diagnose epididymo-orchitis in a teenager without seriously considering torsion — it is the label most often attached to a torted testis.",
+     "trap_3": "The blue dot sign indicates a torted appendix testis, but it is present in a minority, and doubt means exploration.",
+     "trap_4": "Prehn sign is unreliable and must not be used to exclude torsion.",
+     "trap_5": "Give strong analgesia — boys are systematically under-analgesed here.",
+     "trap_6": "Consent explicitly for orchidectomy AND bilateral fixation, and say that one healthy testis is enough for normal hormones and fertility.",
+     "trap_7": "Torsion occurs at any age including in adults and neonates — the two peaks are a pattern, not a rule.",
+     "one_line_summary": "Testicular torsion at 4 hours. Examine the testes of every boy with abdominal pain, do not wait for a scan, give proper analgesia, consent for orchidectomy and bilateral fixation — and tell him one testis is enough."
+    }
+   },
+   "glossary": [
+    {
+     "abbr": "AGE",
+     "full": "advanced glycation end product"
+    },
+    {
+     "abbr": "CRP",
+     "full": "C-reactive protein"
+    },
+    {
+     "abbr": "MEN",
+     "full": "multiple endocrine neoplasia"
+    }
+   ],
+   "specialty": "Surgery — Urology",
+   "teaching_case": true,
+   "inputs": [],
+   "logic": {},
+   "outputs": [],
+   "warnings": [
+    "IF TORSION IS SUSPECTED, GO TO THEATRE — no investigation may delay exploration.",
+    "A NORMAL DOPPLER ULTRASOUND DOES NOT EXCLUDE TORSION — flow can be present in early, partial or recently detorted torsion.",
+    "THE SALVAGE WINDOW IS ABOUT 6 HOURS, falling sharply to 12, and almost never salvageable after 24.",
+    "EXAMINE THE TESTES IN EVERY BOY AND MAN WITH ABDOMINAL PAIN — referred T10 pain means the scrotum may never be mentioned.",
+    "A PRESENT CREMASTERIC REFLEX DOES NOT EXCLUDE TORSION.",
+    "PREHN SIGN IS UNRELIABLE and must not be used to exclude torsion.",
+    "DO NOT diagnose epididymo-orchitis in a teenager without seriously considering torsion.",
+    "FIX BOTH TESTES — the bell-clapper deformity is bilateral and congenital.",
+    "MANUAL DETORSION BUYS TIME ONLY — the patient still needs exploration and bilateral fixation.",
+    "ASK ABOUT PREVIOUS SELF-RESOLVING EPISODES — intermittent torsion needs elective bilateral orchidopexy.",
+    "GIVE STRONG ANALGESIA — this is severely painful and boys are systematically under-treated.",
+    "CONSENT explicitly for orchidectomy and bilateral fixation, and state that one healthy testis is sufficient for normal hormones and fertility.",
+    "Torsion occurs at ANY age, including neonates and adults — the two peaks are a pattern, not a rule.",
+    "Management here is a teaching example. Follow local urology guidance."
+   ],
+   "limitations": [
+    "A WORKED TEACHING CASE, not a protocol. Imaging availability and scoring system use vary; the surgical threshold should remain low regardless.",
+    "Neonatal (extravaginal) torsion differs in mechanism, prognosis and management and requires paediatric urology input."
+   ],
+   "flashcards": [
+    {
+     "q": "What is the salvage window?",
+     "a": "About 6 hours for reliable salvage, falling sharply to 12, almost never after 24."
+    },
+    {
+     "q": "Why can torsion present as abdominal pain?",
+     "a": "The testis descends with its T10 nerve supply, so pain refers to the periumbilical region."
+    },
+    {
+     "q": "Does a normal Doppler exclude torsion?",
+     "a": "No — flow can be present in early, partial or recently detorted torsion, sometimes with reactive hyperaemia."
+    },
+    {
+     "q": "What is the bell-clapper deformity?",
+     "a": "The tunica vaginalis inserts high and encircles the testis, which hangs freely and can rotate — usually bilateral."
+    },
+    {
+     "q": "Why are both testes fixed?",
+     "a": "The deformity is congenital and bilateral, so the other side will torsion in time."
+    },
+    {
+     "q": "How is the cremasteric reflex elicited and interpreted?",
+     "a": "Stroke the upper medial thigh — absence supports torsion, but its presence does NOT exclude it."
+    },
+    {
+     "q": "What is the blue dot sign?",
+     "a": "A dark spot at the upper pole from an infarcted appendix testis — pathognomonic but present in a minority."
+    },
+    {
+     "q": "Describe manual detorsion.",
+     "a": "Open-book rotation outwards — left clockwise, right anticlockwise as seen by the examiner. It buys time only."
+    },
+    {
+     "q": "Does successful manual detorsion avoid surgery?",
+     "a": "No — detorsion may be incomplete and the anatomical predisposition remains. Exploration and bilateral fixation are still required."
+    },
+    {
+     "q": "How does epididymo-orchitis differ?",
+     "a": "Gradual onset over days, fever, dysuria and discharge, with raised inflammatory markers and pyuria."
+    },
+    {
+     "q": "What does a history of previous brief episodes mean?",
+     "a": "Intermittent torsion — the boy needs elective bilateral orchidopexy."
+    },
+    {
+     "q": "Why must a necrotic testis be removed?",
+     "a": "Risk of infection, chronic pain, and exposure of germ cell antigens generating antisperm antibodies affecting the other side."
+    }
+   ],
+   "checkboxes": [
+    "Testes examined in a boy presenting with abdominal pain",
+    "Chaperone offered and examination explained",
+    "Time of onset established and documented",
+    "Previous self-resolving episodes asked about",
+    "Both testes examined and compared",
+    "Cremasteric reflex tested but not used to exclude",
+    "Strong analgesia given",
+    "Urology or on-call surgeon called immediately",
+    "Theatre alerted; patient nil by mouth",
+    "Imaging NOT allowed to delay exploration",
+    "Consent obtained for exploration, bilateral fixation and possible orchidectomy",
+    "Manual detorsion considered only as a temporising measure",
+    "Fertility and hormone reassurance given explicitly",
+    "Prosthesis discussed if orchidectomy performed",
+    "Reason for any delay in presentation or referral examined"
+   ],
+   "related_slugs": [
+    "acute_scrotum_differential_and_time_critical_decisions"
+   ],
+   "patient_integration": null,
+   "governance": {
+    "evidence_tier": "T5_textbook_or_standard_teaching",
+    "verification_status": "standard_teaching",
+    "sources": [],
+    "nigeria_overlay": null,
+    "build_date": "2026-08-07",
+    "review_interval_months": 12,
+    "next_review_due": "2027-08-07",
+    "clinical_reviewer": null,
+    "approved_for_release": false,
+    "local_confirmation_required": true,
+    "supersedes": null,
+    "content_hash": "e901e9144b9a7866"
+   }
+  },
+  {
+   "id": "AS-CASE-0042",
+   "schema_version": "4.0.0",
+   "content_release": "AWIBI-SCOUT-CONTENT-2026.08.R3",
+   "type": "case",
+   "title": "CASE: Renal Colic with a Fever of 38.9 — The Obstructed Infected Kidney",
+   "short_title": "Case: infected obstructed kidney",
+   "slug": "case_renal_colic_with_a_fever_of_38_9_the_obstructed_infected_kidney",
+   "also_known_as": [
+    "case renal colic",
+    "infected obstructed kidney case",
+    "pyonephrosis case",
+    "obstructed infected system",
+    "nephrostomy case",
+    "ureteric stent",
+    "ct kub",
+    "urosepsis case",
+    "staghorn calculus"
+   ],
+   "summary": "A 52-year-old with ureteric colic, fever and hypotension. Teaches why a stone plus a fever is a urological emergency rather than a painkiller problem, why antibiotics alone fail, and why the stone is not treated at the same sitting.",
+   "domains": [
+    "urology",
+    "emergency_medicine",
+    "nephrology",
+    "infectious_disease"
+   ],
+   "intents": [
+    "identify",
+    "act"
+   ],
+   "populations": [
+    "all_ages"
+   ],
+   "contexts": [
+    "routine"
+   ],
+   "hazard": "critical",
+   "urgency": "immediate",
+   "jurisdiction": "international",
+   "search": {
+    "terms": [
+     "calcium oxalate",
+     "case",
+     "case renal colic",
+     "case: infected obstructed kidney",
+     "case: renal colic with a fever of 38.9 — the obstructed infected kidney",
+     "colic",
+     "ct kub",
+     "eswl",
+     "fever",
+     "infected",
+     "infected obstructed kidney case",
+     "jj stent",
+     "kidney",
+     "medical expulsive therapy",
+     "nephrostomy",
+     "nephrostomy case",
+     "obstructed",
+     "obstructed infected kidney",
+     "obstructed infected system",
+     "pyonephrosis",
+     "pyonephrosis case",
+     "renal",
+     "renal colic",
+     "staghorn calculus",
+     "struvite",
+     "tamsulosin",
+     "ureteric colic",
+     "ureteric stent",
+     "ureteroscopy",
+     "uric acid stone",
+     "urolithiasis",
+     "urosepsis",
+     "urosepsis case"
+    ],
+    "ambiguous_terms": [],
+    "phrases": [],
+    "field_weights": {
+     "title": 8,
+     "short_title": 6,
+     "also_known_as": 5,
+     "terms": 4,
+     "summary": 2,
+     "body": 1,
+     "flashcards": 0.5
+    }
+   },
+   "body": {
+    "the_one_line": "52-year-old woman with 12 hours of severe left loin pain radiating to the groin, now with a temperature of 38.9, rigors, and a blood pressure of 88/52. CT shows a 9 mm stone in the left mid-ureter with hydronephrosis.",
+    "section_1_the_rule_that_defines_the_case": {
+     "the_statement": "AN OBSTRUCTED KIDNEY THAT IS ALSO INFECTED IS A UROLOGICAL EMERGENCY REQUIRING DRAINAGE WITHIN HOURS. IT IS NOT A PAIN PROBLEM WITH A COMPLICATING INFECTION. THE COMBINATION OF OBSTRUCTION AND INFECTION PRODUCES A CLOSED, PRESSURISED, INFECTED CAVITY — AND, EXACTLY AS IN CHOLANGITIS OR AN UNDRAINED ABSCESS, ANTIBIOTICS ALONE CANNOT TREAT IT.",
+     "the_two_things_that_must_be_asked_of_every_renal_colic_patient": {
+      "question_1": "IS THERE A FEVER OR ANY SIGN OF INFECTION? A stone plus sepsis needs drainage today.",
+      "question_2": "IS THIS A SINGLE OR SOLITARY FUNCTIONING KIDNEY, OR IS THERE BILATERAL OBSTRUCTION, OR ACUTE KIDNEY INJURY? Obstruction of a solitary kidney is ANURIC RENAL FAILURE and is equally urgent.",
+      "why": "MOST RENAL COLIC IS MANAGED WITH ANALGESIA AND EXPECTANT TREATMENT. THESE TWO QUESTIONS IDENTIFY THE MINORITY WHO NEED AN INTERVENTION TONIGHT, AND THEY ARE ANSWERED WITH A THERMOMETER AND A CREATININE."
+     }
+    },
+    "section_2_clerking": {
+     "history": "Sudden severe left loin pain 12 hours ago, coming in waves, radiating round to the left groin and labia. She could not lie still and paced the room. She vomited three times. Since this morning she has had rigors and feels \"shivery and confused\". She passed a stone 3 years ago. Reduced urine output today.",
+     "the_character_of_the_pain": "LOIN TO GROIN, COLICKY, SEVERE, AND THE PATIENT CANNOT KEEP STILL. THE RESTLESSNESS IS DIAGNOSTICALLY USEFUL: A PATIENT WITH PERITONITIS LIES ABSOLUTELY STILL BECAUSE MOVEMENT HURTS; A PATIENT WITH COLIC WRITHES AND PACES BECAUSE NO POSITION HELPS. That distinction is visible from the doorway.",
+     "why_the_pain_radiates_where_it_does": "The pain follows the course of the ureter and the referred distribution of its nerve supply (T11 to L2). A stone at the PELVI-URETERIC JUNCTION gives flank pain; in the MID-URETER it refers to the iliac fossa and groin; and at the VESICO-URETERIC JUNCTION it causes suprapubic pain with URINARY FREQUENCY, URGENCY AND PAIN REFERRED TO THE TIP OF THE PENIS OR THE LABIA — which is regularly misdiagnosed as a urinary tract infection.",
+     "the_features_of_sepsis": "RIGORS · fever · confusion · hypotension · tachycardia. RIGORS — true shaking chills — indicate BACTERAEMIA and are a significant symptom that should never be recorded as \"felt cold\".",
+     "past_history_and_risk_factors": "Previous stone (recurrence risk is substantial). ASK ABOUT: dehydration and low fluid intake · hot climate or occupation · high salt, animal protein or oxalate intake · gout and hyperuricaemia · hyperparathyroidism and hypercalcaemia · inflammatory bowel disease, malabsorption and bowel resection (enteric hyperoxaluria) · recurrent urinary infection · anatomical abnormalities · immobilisation · and drugs including topiramate, indinavir and excess vitamin C or calcium supplements. FAMILY HISTORY is relevant, particularly for cystinuria and primary hyperoxaluria.",
+     "vitals": "BP 88/52 mmHg. Pulse 122. Respiratory rate 26. Temperature 38.9. Saturation 95%. Lactate 3.6 mmol/L. Confused, GCS 14. Urine output minimal.",
+     "examination": "Restless, sweating. LEFT RENAL ANGLE TENDERNESS. Abdomen soft with mild left-sided tenderness, no peritonism. Cool peripheries with prolonged capillary refill. NOTE: SIGNIFICANT PERITONISM SHOULD MAKE YOU RECONSIDER — renal colic does not cause a rigid abdomen, and the great mimic is a leaking abdominal aortic aneurysm."
+    },
+    "section_3_the_differential_that_kills": {
+     "ruptured_or_leaking_abdominal_aortic_aneurysm": {
+      "why_it_is_first": "AN AORTIC ANEURYSM LEAKING INTO THE RETROPERITONEUM CAUSES SEVERE LOIN AND FLANK PAIN RADIATING TO THE GROIN, WITH HAEMATURIA IN SOME PATIENTS — IT MIMICS RENAL COLIC EXACTLY.",
+      "the_rule": "A FIRST PRESENTATION OF \"RENAL COLIC\" IN A PATIENT OVER 50, PARTICULARLY WITH HYPOTENSION OR VASCULAR RISK FACTORS, IS A LEAKING ANEURYSM UNTIL PROVEN OTHERWISE. Examine for a pulsatile expansile mass and check the femoral pulses. THIS MISDIAGNOSIS IS WELL DOCUMENTED AND FATAL, and it is the reason that \"first stone over 50\" should always prompt the thought."
+     },
+     "other_differentials": "PYELONEPHRITIS without obstruction · ECTOPIC PREGNANCY and ovarian torsion — DO A PREGNANCY TEST · appendicitis, particularly with a retrocaecal appendix · diverticulitis · testicular torsion referring to the loin · musculoskeletal pain · renal infarction, in atrial fibrillation, with a very high LDH · papillary necrosis in diabetes, sickle cell disease and analgesic nephropathy · and herpes zoster before the rash appears."
+    },
+    "section_4_investigations": {
+     "ct_kub": {
+      "what_it_is": "NON-CONTRAST CT OF THE KIDNEYS, URETERS AND BLADDER — the reference standard, with sensitivity and specificity above 95%.",
+      "why_non_contrast": "STONES ARE DENSE AND VISIBLE WITHOUT CONTRAST, AND CONTRAST IN THE COLLECTING SYSTEM WOULD OBSCURE THEM. It also identifies alternative diagnoses, including the aneurysm.",
+      "what_it_tells_you": "STONE SIZE AND POSITION, which predict spontaneous passage; the DEGREE OF HYDRONEPHROSIS; PERINEPHRIC STRANDING; and STONE DENSITY IN HOUNSFIELD UNITS, which predicts response to shockwave treatment. Note that INDINAVIR STONES ARE RADIOLUCENT EVEN ON CT — a rare but genuine exception.",
+      "in_pregnancy": "ULTRASOUND FIRST, THEN MRI IF NEEDED. Avoid CT."
+     },
+     "ultrasound": "Useful in pregnancy, in children, and for follow-up. Detects hydronephrosis and renal stones well but is POOR AT VISUALISING MID-URETERIC STONES because of overlying bowel gas. A dilated system with no visible stone is still highly suggestive.",
+     "urine": "DIPSTICK — HAEMATURIA IS PRESENT IN ROUGHLY 85%, SO ITS ABSENCE DOES NOT EXCLUDE A STONE, and this is a common misconception. Nitrites and leucocytes suggest infection. SEND A CULTURE BEFORE ANTIBIOTICS. Note that in complete obstruction the infected urine may not reach the bladder, so A CLEAN BLADDER SPECIMEN DOES NOT EXCLUDE INFECTION ABOVE THE OBSTRUCTION — the definitive sample is the one obtained at drainage.",
+     "bloods": "Full blood count · CRP · UREA, CREATININE AND ELECTROLYTES for acute kidney injury · CALCIUM, PHOSPHATE AND URATE, which begin the metabolic workup · LACTATE · CLOTTING, since an intervention is coming · BLOOD CULTURES BEFORE ANTIBIOTICS · GROUP AND SAVE · and a PREGNANCY TEST.",
+     "the_metabolic_workup_for_later": "STONE ANALYSIS if one is retrieved or passed — it directs prevention and is frequently discarded. In recurrent or high-risk stone formers, a 24-hour urine collection for volume, calcium, oxalate, citrate, urate, sodium and pH, plus parathyroid hormone if calcium is raised."
+    },
+    "section_5_management": {
+     "a_resuscitation_and_antibiotics": "ABCDE. Oxygen. Two cannulae. BALANCED CRYSTALLOID with reassessment. BLOOD CULTURES THEN BROAD-SPECTRUM INTRAVENOUS ANTIBIOTICS covering Gram-negatives per local policy. Catheterise and monitor urine output. Vasopressors and critical care if hypotension persists. THE SEPSIS SIX WITHIN THE HOUR.",
+     "b_analgesia": {
+      "first_line": "A NON-STEROIDAL ANTI-INFLAMMATORY DRUG — for example DICLOFENAC 75 mg intramuscularly or 100 mg per rectum — IS MORE EFFECTIVE THAN AN OPIOID FOR URETERIC COLIC and is first line.",
+      "why_it_works_better": "NSAIDs reduce GLOMERULAR FILTRATION AND THEREFORE URINE PRODUCTION AND RENAL PELVIC PRESSURE, and they reduce ureteric smooth muscle spasm and the prostaglandin-mediated oedema at the stone. They treat the MECHANISM of the pain, not just the perception of it.",
+      "the_caution_that_applies_here": "BUT NSAIDs ARE NEPHROTOXIC AND MUST BE USED WITH CARE — OR AVOIDED — IN ACUTE KIDNEY INJURY, SEPSIS, HYPOVOLAEMIA AND EXISTING RENAL IMPAIRMENT. SHE IS SEPTIC, HYPOTENSIVE AND OLIGURIC, SO AN NSAID IS THE WRONG CHOICE TONIGHT. Use an opioid and paracetamol instead, and reconsider the NSAID once she is resuscitated and renal function is known.",
+      "antiemetic": "Give one — vomiting is near-universal."
+     },
+     "c_drainage_which_is_the_definitive_treatment": {
+      "the_rule": "THE OBSTRUCTED INFECTED KIDNEY MUST BE DECOMPRESSED URGENTLY — WITHIN HOURS. ANTIBIOTICS ALONE WILL NOT CLEAR PUS UNDER PRESSURE IN A CLOSED SPACE, AND PENETRATION INTO AN OBSTRUCTED SYSTEM IS POOR. DELAY IS DIRECTLY ASSOCIATED WITH MORTALITY.",
+      "the_two_options": {
+       "percutaneous_nephrostomy": "A tube placed radiologically through the flank directly into the renal pelvis. Advantages: performed under local anaesthesia, avoids a general anaesthetic in an unstable septic patient, drains thick pus effectively, and allows antegrade imaging later. Often preferred in the SEPTIC, UNSTABLE patient.",
+       "retrograde_ureteric_stent": "A JJ stent passed cystoscopically up the ureter. Usually requires a general anaesthetic and can be difficult to pass beyond a tightly impacted stone, but avoids an external tube and bag.",
+       "the_choice": "DETERMINED BY LOCAL EXPERTISE AND AVAILABILITY AND BY THE PATIENT CONDITION. THE IMPORTANT POINT IS NOT WHICH, BUT THAT ONE OF THEM HAPPENS TONIGHT."
+      },
+      "the_rule_that_is_most_often_broken": {
+       "the_statement": "DO NOT ATTEMPT TO TREAT THE STONE AT THE SAME SITTING. NO URETEROSCOPY, NO LASER FRAGMENTATION, NO SHOCKWAVE LITHOTRIPSY IN AN INFECTED OBSTRUCTED SYSTEM.",
+       "why": "MANIPULATING AN INFECTED OBSTRUCTED SYSTEM AND RAISING INTRARENAL PRESSURE CAUSES PYELOVENOUS AND PYELOLYMPHATIC BACKFLOW, FORCING BACTERIA AND ENDOTOXIN DIRECTLY INTO THE CIRCULATION AND PRECIPITATING FULMINANT SEPTIC SHOCK ON THE TABLE. DRAIN NOW, TREAT THE STONE LATER — usually after days to weeks of antibiotics with the infection controlled."
+      },
+      "send_the_pus": "SEND URINE OBTAINED AT DRAINAGE FOR URGENT MICROSCOPY AND CULTURE — it is the definitive sample and frequently yields the organism when blood and bladder cultures do not."
+     },
+     "d_the_stones_that_do_not_need_intervention": {
+      "the_general_rule": "MOST STONES UNDER 5 mm PASS SPONTANEOUSLY — around 70 to 80%. Stones of 5 to 10 mm pass less often. STONES OVER 10 mm RARELY PASS AND USUALLY NEED INTERVENTION. HER STONE IS 9 mm, so passage was unlikely even without the infection.",
+      "medical_expulsive_therapy": "AN ALPHA BLOCKER SUCH AS TAMSULOSIN relaxes ureteric smooth muscle and may aid passage of DISTAL ureteric stones, particularly those over about 5 mm. Evidence is mixed and benefit is modest — recent large trials showed less effect than earlier studies. It is reasonable for selected distal stones and is NOT a substitute for intervention where one is indicated.",
+      "the_indications_for_intervention": "INFECTION WITH OBSTRUCTION (an emergency) · obstruction of a SOLITARY kidney or BILATERAL obstruction · ACUTE KIDNEY INJURY · UNCONTROLLED PAIN OR VOMITING despite adequate treatment · a stone unlikely to pass · and failure to progress over several weeks.",
+      "the_safety_netting_for_those_managed_expectantly": "They must know to RETURN IMMEDIATELY WITH FEVER, RIGORS, UNCONTROLLED PAIN, VOMITING OR REDUCED URINE OUTPUT — and it must be written down. A patient sent home with an unobstructed stone who develops a fever at 2 a.m. has the emergency in this case."
+     },
+     "e_definitive_stone_treatment_later": "EXTRACORPOREAL SHOCKWAVE LITHOTRIPSY for suitable stones — contraindicated in pregnancy, uncorrected coagulopathy and untreated infection. URETEROSCOPY WITH LASER FRAGMENTATION, now the most versatile option. PERCUTANEOUS NEPHROLITHOTOMY for large or staghorn stones. Open surgery is rare.",
+     "f_prevention_which_is_the_part_that_is_skipped": {
+      "the_universal_advice": "FLUID INTAKE SUFFICIENT TO PRODUCE 2 TO 2.5 LITRES OF URINE PER DAY — the single most effective preventive measure for every stone type, and it needs to be quantified rather than \"drink more\". Reduce SALT and animal protein. MAINTAIN NORMAL DIETARY CALCIUM — RESTRICTING CALCIUM PARADOXICALLY INCREASES STONE RISK, because dietary calcium binds oxalate in the gut and prevents its absorption. THIS IS COUNTER-INTUITIVE AND PATIENTS ARE FREQUENTLY GIVEN THE OPPOSITE ADVICE.",
+      "by_stone_type": "CALCIUM OXALATE (commonest) — fluids, reduce oxalate-rich foods, thiazide if hypercalciuric, potassium citrate if hypocitraturic. URIC ACID — alkalinise the urine, allopurinol, and note these stones can be DISSOLVED medically. STRUVITE (magnesium ammonium phosphate) — formed by UREASE-PRODUCING organisms such as Proteus that split urea and alkalinise the urine; these form STAGHORN calculi, and COMPLETE STONE CLEARANCE IS ESSENTIAL BECAUSE RESIDUAL FRAGMENTS HARBOUR BACTERIA AND REGROW. CYSTINE — inherited, needs high fluid intake, alkalinisation and specific agents.",
+      "the_recurrence_rate": "Roughly half of stone formers have another stone within 5 to 10 years. Prevention is not optional advice — it is the treatment for the disease."
+     }
+    },
+    "section_6_teaching_points": {
+     "bonus_1_a_stone_plus_a_fever_is_an_emergency": "Obstruction plus infection creates a closed, pressurised, infected cavity. Antibiotics penetrate it poorly and cannot clear pus under pressure. It belongs with cholangitis and the undrained abscess: DRAINAGE IS THE TREATMENT, within hours.",
+     "bonus_2_do_not_treat_the_stone_at_the_same_sitting": "Manipulating an infected obstructed system raises intrarenal pressure and forces bacteria into the circulation by pyelovenous backflow, precipitating fulminant septic shock on the table. Drain now, treat the stone weeks later.",
+     "bonus_3_first_renal_colic_over_50_is_an_aneurysm_until_proven_otherwise": "A leaking aortic aneurysm causes loin-to-groin pain and sometimes haematuria, mimicking colic exactly. Examine for a pulsatile expansile mass and check the femoral pulses. This misdiagnosis is documented and fatal.",
+     "bonus_4_absence_of_haematuria_does_not_exclude_a_stone": "Haematuria is present in about 85% — so roughly one in seven has none. And a clean bladder specimen does not exclude infection ABOVE a complete obstruction, because that urine never reaches the bladder.",
+     "bonus_5_nsaids_beat_opioids_for_colic_but_not_in_this_patient": "They reduce glomerular filtration, renal pelvic pressure and prostaglandin-mediated oedema — treating the mechanism. But they are nephrotoxic and wrong in sepsis, hypovolaemia and acute kidney injury. Knowing WHY they work tells you when not to use them.",
+     "bonus_6_restricting_dietary_calcium_increases_stone_risk": "Dietary calcium binds oxalate in the gut and prevents its absorption. Restricting it increases urinary oxalate and stone formation. Patients are routinely given exactly the wrong advice.",
+     "bonus_7_the_restless_patient": "Colic patients writhe because no position helps; peritonitis patients lie absolutely still because movement hurts. Visible from the doorway, and it distinguishes two large categories of abdominal pain before you touch anyone.",
+     "trap_1": "Ask two questions of every renal colic patient: is there a fever, and is this a solitary kidney or is renal function impaired?",
+     "trap_2": "Struvite staghorn stones harbour urease-producing bacteria — complete clearance is essential or they regrow.",
+     "trap_3": "Send urine obtained AT DRAINAGE for culture — it is the definitive sample.",
+     "trap_4": "Keep the stone for analysis — it directs prevention and is routinely thrown away.",
+     "trap_5": "Quantify the fluid advice: 2 to 2.5 litres of URINE per day, not \"drink more\".",
+     "trap_6": "Give written safety-netting to anyone managed expectantly — fever, rigors, vomiting or reduced urine output means return immediately.",
+     "one_line_summary": "Infected obstructed kidney behind a 9 mm ureteric stone. Resuscitate, cultures then antibiotics, avoid the NSAID because she is septic and oliguric, and get her drained tonight — but do not touch the stone until the infection is controlled."
+    }
+   },
+   "glossary": [
+    {
+     "abbr": "CRP",
+     "full": "C-reactive protein"
+    },
+    {
+     "abbr": "CT",
+     "full": "computed tomography"
+    },
+    {
+     "abbr": "GCS",
+     "full": "Glasgow Coma Scale"
+    },
+    {
+     "abbr": "MRI",
+     "full": "magnetic resonance imaging"
+    }
+   ],
+   "specialty": "Surgery — Urology",
+   "teaching_case": true,
+   "inputs": [],
+   "logic": {},
+   "outputs": [],
+   "warnings": [
+    "A STONE PLUS A FEVER IS A UROLOGICAL EMERGENCY — the obstructed infected kidney must be DRAINED within hours.",
+    "ANTIBIOTICS ALONE CANNOT TREAT AN OBSTRUCTED INFECTED SYSTEM — penetration is poor and pus is under pressure.",
+    "DO NOT TREAT THE STONE AT THE SAME SITTING — manipulation forces bacteria into the circulation and causes fulminant septic shock.",
+    "FIRST \"RENAL COLIC\" OVER 50 IS A LEAKING AORTIC ANEURYSM UNTIL PROVEN OTHERWISE.",
+    "ABSENCE OF HAEMATURIA DOES NOT EXCLUDE A STONE — it is present in only about 85%.",
+    "A CLEAN BLADDER SPECIMEN DOES NOT EXCLUDE INFECTION ABOVE A COMPLETE OBSTRUCTION.",
+    "NSAIDs are first line for colic but are NEPHROTOXIC — avoid in sepsis, hypovolaemia and acute kidney injury.",
+    "ALWAYS ASK whether this is a SOLITARY kidney or whether obstruction is bilateral — that is anuric renal failure.",
+    "Send urine obtained AT DRAINAGE for culture — it is the definitive sample.",
+    "DO A PREGNANCY TEST and use ultrasound then MRI rather than CT in pregnancy.",
+    "STRUVITE STAGHORN STONES harbour urease-producing bacteria — complete clearance is essential or they regrow.",
+    "RESTRICTING DIETARY CALCIUM INCREASES STONE RISK — maintain normal intake.",
+    "Keep the stone for ANALYSIS — it directs prevention and is routinely discarded.",
+    "Give WRITTEN safety-netting to anyone managed expectantly — fever, rigors, vomiting or low urine output means return immediately.",
+    "Doses and antibiotic choices here are teaching examples. Follow local urology and microbiology policy."
+   ],
+   "limitations": [
+    "A WORKED TEACHING CASE, not a protocol. Choice between nephrostomy and stent depends on local expertise and availability.",
+    "Medical expulsive therapy evidence is mixed and its role is limited to selected distal stones."
+   ],
+   "flashcards": [
+    {
+     "q": "What two questions must every renal colic patient be asked?",
+     "a": "Is there a fever or infection, and is this a solitary kidney or is renal function impaired?"
+    },
+    {
+     "q": "Why can antibiotics not treat an infected obstructed kidney?",
+     "a": "It is a closed pressurised infected cavity — antibiotic penetration is poor and pus is under pressure."
+    },
+    {
+     "q": "Why must the stone not be treated at the same sitting?",
+     "a": "Raising intrarenal pressure causes pyelovenous backflow, forcing bacteria into the circulation and precipitating septic shock."
+    },
+    {
+     "q": "What is the crucial differential in a first presentation over 50?",
+     "a": "A leaking abdominal aortic aneurysm — it mimics renal colic exactly, sometimes with haematuria."
+    },
+    {
+     "q": "How often is haematuria present?",
+     "a": "About 85% — so its absence does not exclude a stone."
+    },
+    {
+     "q": "Why are NSAIDs more effective than opioids in colic?",
+     "a": "They reduce glomerular filtration, renal pelvic pressure and prostaglandin-mediated oedema — treating the mechanism."
+    },
+    {
+     "q": "When must NSAIDs be avoided here?",
+     "a": "Sepsis, hypovolaemia, acute kidney injury or existing renal impairment — they are nephrotoxic."
+    },
+    {
+     "q": "Compare nephrostomy and retrograde stent.",
+     "a": "Nephrostomy: local anaesthesia, drains thick pus, good in the unstable septic patient. Stent: avoids an external bag but usually needs a general anaesthetic."
+    },
+    {
+     "q": "What proportion of stones under 5 mm pass spontaneously?",
+     "a": "Around 70 to 80%; stones over 10 mm rarely pass."
+    },
+    {
+     "q": "Which organisms form struvite stones and why does it matter?",
+     "a": "Urease-producing organisms such as Proteus — they form staghorn calculi and residual fragments harbour bacteria and regrow."
+    },
+    {
+     "q": "Why should dietary calcium NOT be restricted?",
+     "a": "Dietary calcium binds oxalate in the gut and prevents its absorption — restriction increases stone risk."
+    },
+    {
+     "q": "What is the fluid target for prevention?",
+     "a": "2 to 2.5 litres of URINE per day — quantified, not \"drink more\"."
+    },
+    {
+     "q": "How does the patient position differ between colic and peritonitis?",
+     "a": "Colic patients writhe because no position helps; peritonitis patients lie absolutely still."
+    }
+   ],
+   "checkboxes": [
+    "Fever and sepsis features specifically sought",
+    "Solitary kidney, bilateral obstruction and renal function checked",
+    "Leaking aortic aneurysm considered in a first presentation over 50",
+    "Pregnancy test done",
+    "Blood cultures taken before antibiotics",
+    "Sepsis six completed within the hour",
+    "NSAID avoided because of sepsis and acute kidney injury",
+    "Non-contrast CT KUB obtained (ultrasound then MRI if pregnant)",
+    "Urology contacted urgently for drainage",
+    "Drainage arranged within hours — nephrostomy or stent",
+    "NO stone treatment attempted at the same sitting",
+    "Urine from the drained system sent for culture",
+    "Stone kept for analysis if retrieved",
+    "Metabolic workup planned for recurrent stone formers",
+    "Written safety-netting given if managed expectantly"
+   ],
+   "related_slugs": [
+    "urinary_stone_disease_presentation_imaging_and_management"
+   ],
+   "patient_integration": null,
+   "governance": {
+    "evidence_tier": "T5_textbook_or_standard_teaching",
+    "verification_status": "standard_teaching",
+    "sources": [],
+    "nigeria_overlay": null,
+    "build_date": "2026-08-07",
+    "review_interval_months": 12,
+    "next_review_due": "2027-08-07",
+    "clinical_reviewer": null,
+    "approved_for_release": false,
+    "local_confirmation_required": true,
+    "supersedes": null,
+    "content_hash": "918845b9bf4d6c9c"
+   }
+  },
+  {
+   "id": "AS-CASE-0043",
+   "schema_version": "4.0.0",
+   "content_release": "AWIBI-SCOUT-CONTENT-2026.08.R3",
+   "type": "case",
+   "title": "CASE: A White, Cold, Painful Leg Six Hours After It Started",
+   "short_title": "Case: acute limb ischaemia",
+   "slug": "case_a_white_cold_painful_leg_six_hours_after_it_started",
+   "also_known_as": [
+    "case acute limb ischaemia",
+    "white leg case",
+    "six ps case",
+    "embolus limb",
+    "rutherford classification limb",
+    "embolectomy case",
+    "fogarty catheter",
+    "fixed mottling",
+    "reperfusion syndrome",
+    "crush syndrome limb"
+   ],
+   "summary": "A 74-year-old in atrial fibrillation with a pulseless white leg. Teaches the six Ps in the order they actually appear, why fixed mottling means the limb is dead, the Rutherford categories that decide the operation, and why reperfusion can kill the patient.",
+   "domains": [
+    "vascular_surgery",
+    "emergency_medicine",
+    "cardiovascular"
+   ],
+   "intents": [
+    "identify",
+    "act"
+   ],
+   "populations": [
+    "all_ages"
+   ],
+   "contexts": [
+    "routine"
+   ],
+   "hazard": "critical",
+   "urgency": "immediate",
+   "jurisdiction": "international",
+   "search": {
+    "terms": [
+     "acute limb ischaemia",
+     "after",
+     "ankle brachial pressure index",
+     "case",
+     "case acute limb ischaemia",
+     "case: a white, cold, painful leg six hours after it started",
+     "case: acute limb ischaemia",
+     "cold",
+     "compartment syndrome",
+     "critical limb ischaemia",
+     "crush syndrome limb",
+     "embolectomy",
+     "embolectomy case",
+     "embolus",
+     "embolus limb",
+     "fasciotomy",
+     "fixed mottling",
+     "fogarty catheter",
+     "hours",
+     "hyperkalaemia",
+     "intermittent claudication",
+     "painful",
+     "reperfusion injury",
+     "reperfusion syndrome",
+     "rhabdomyolysis",
+     "rutherford classification",
+     "rutherford classification limb",
+     "six ps",
+     "six ps case",
+     "started",
+     "thrombolysis",
+     "thrombosis in situ",
+     "white",
+     "white leg case"
+    ],
+    "ambiguous_terms": [],
+    "phrases": [],
+    "field_weights": {
+     "title": 8,
+     "short_title": 6,
+     "also_known_as": 5,
+     "terms": 4,
+     "summary": 2,
+     "body": 1,
+     "flashcards": 0.5
+    }
+   },
+   "body": {
+    "the_one_line": "74-year-old woman in atrial fibrillation, not anticoagulated, with sudden onset 6 hours ago of a painful, white, cold right leg. She cannot move her toes and the foot feels numb.",
+    "section_1_the_six_ps_in_the_order_they_appear": {
+     "the_correction_that_matters": "THE SIX Ps ARE USUALLY LISTED ALPHABETICALLY OR BY MEMORABILITY. THEY SHOULD BE LEARNED IN THE ORDER THEY APPEAR CLINICALLY, BECAUSE THAT ORDER IS THE PROGNOSIS.",
+     "the_order": {
+      "one_pain": "FIRST. Sudden, severe and constant. Ask exactly when it started — the clock starts there.",
+      "two_pallor": "The limb is white, then becomes mottled. See below for why mottling is the critical observation.",
+      "three_pulselessness": "ABSENT PULSES DISTAL TO THE OCCLUSION. FEEL BOTH LEGS AND COMPARE — the contralateral pulses tell you whether the patient has pulses at all normally, which is the key to the embolus-versus-thrombosis question.",
+      "four_perishing_cold": "Feel with the BACK OF YOUR HAND along both limbs simultaneously and identify the LEVEL at which the temperature changes. That level is roughly one joint below the occlusion.",
+      "five_paraesthesia": "THE FIRST SIGN OF NERVE ISCHAEMIA AND THE FIRST OMINOUS ONE. Sensory nerves are the most metabolically sensitive tissue in the limb and fail before muscle. LOSS OF LIGHT TOUCH AND PROPRIOCEPTION BETWEEN THE TOES IS AN EARLY WARNING THAT THE LIMB IS THREATENED, AND IT IS ONLY FOUND IF YOU TEST FOR IT.",
+      "six_paralysis": "THE LATEST AND WORST. INABILITY TO MOVE THE TOES OR FOOT MEANS MUSCLE ISCHAEMIA IS ESTABLISHED AND THE LIMB IS IMMEDIATELY THREATENED. A PATIENT WITH PARALYSIS NEEDS REVASCULARISATION NOW, NOT AN INVESTIGATION."
+     },
+     "the_practical_summary": "PAIN, PALLOR, PULSELESSNESS AND COLDNESS TELL YOU THERE IS ISCHAEMIA. PARAESTHESIA AND PARALYSIS TELL YOU HOW URGENT IT IS. THE NEUROLOGICAL FINDINGS, NOT THE COLOUR, DETERMINE WHETHER THE LIMB IS VIABLE, THREATENED OR ALREADY LOST — AND THEY ARE THE TWO MOST OFTEN NOT EXAMINED.",
+     "the_time_window": "IRREVERSIBLE MUSCLE AND NERVE DAMAGE BEGINS AT ROUGHLY 4 TO 6 HOURS. SHE IS AT 6 HOURS WITH PARALYSIS AND SENSORY LOSS. THIS IS AN IMMEDIATE THREAT."
+    },
+    "section_2_the_distinction_that_determines_the_operation": {
+     "the_question": "IS THIS AN EMBOLUS ON A NORMAL ARTERY, OR THROMBOSIS ON A DISEASED ONE? THE TWO NEED DIFFERENT OPERATIONS, AND THE ANSWER IS LARGELY IN THE HISTORY AND THE OTHER LEG.",
+     "embolus": {
+      "the_features": "SUDDEN, DRAMATIC ONSET — the patient names the minute · NO history of claudication · A CLEAR EMBOLIC SOURCE, above all ATRIAL FIBRILLATION, also recent myocardial infarction with mural thrombus, prosthetic valves, endocarditis, aneurysm (aortic, popliteal) and, rarely, paradoxical embolism through a patent foramen ovale · NORMAL PULSES IN THE CONTRALATERAL LIMB, because the arteries are not diseased · and POOR COLLATERALS, so the ischaemia is PROFOUND.",
+      "the_common_site": "THE COMMON FEMORAL BIFURCATION is the commonest site in the leg, because the vessel narrows there. Also the popliteal trifurcation and the aortic bifurcation — a SADDLE EMBOLUS at the aortic bifurcation causes BILATERAL leg ischaemia with absent femoral pulses and is rapidly fatal.",
+      "the_operation": "EMBOLECTOMY, usually with a FOGARTY BALLOON CATHETER passed through a femoral arteriotomy, often under LOCAL ANAESTHESIA. It is quick and can be dramatically effective."
+     },
+     "thrombosis_in_situ": {
+      "the_features": "MORE INSIDIOUS onset over hours to days · A HISTORY OF INTERMITTENT CLAUDICATION, rest pain or previous vascular intervention · ABSENT OR REDUCED PULSES IN THE OTHER LEG TOO, because the disease is systemic · vascular risk factors — smoking, diabetes, hypertension, hyperlipidaemia · and WELL-DEVELOPED COLLATERALS, so the ischaemia may be LESS PROFOUND despite complete occlusion.",
+      "the_operation": "MORE COMPLEX — angioplasty and stenting, thrombolysis, or a BYPASS. Simple embolectomy will fail, because the underlying stenosis remains. IT REQUIRES IMAGING TO PLAN, which is why a stable thrombotic patient may be imaged first while an embolic patient with a threatened limb goes straight to theatre."
+     },
+     "the_practical_point": "EXAMINE THE OTHER LEG. NORMAL PULSES ON THE CONTRALATERAL SIDE IN A PATIENT WITH ATRIAL FIBRILLATION AND A SUDDEN WHITE LEG STRONGLY SUGGESTS AN EMBOLUS AND SUPPORTS PROCEEDING DIRECTLY TO EMBOLECTOMY. It takes ten seconds and it changes the operation."
+    },
+    "section_3_clerking_and_examination": {
+     "history": "Sudden severe right leg pain 6 hours ago while sitting. NO previous leg pain on walking. She has atrial fibrillation and DECLINED ANTICOAGULATION. No previous vascular surgery.",
+     "vitals": "BP 148/88 mmHg. Pulse 96, IRREGULARLY IRREGULAR. Temperature 36.6. Respiratory rate 18. Glucose 7.2.",
+     "examination": {
+      "the_leg": "RIGHT LEG WHITE AND COLD FROM THE MID-THIGH DOWN, with a clear temperature demarcation. FEMORAL PULSE PRESENT, POPLITEAL AND DISTAL PULSES ABSENT — placing the occlusion at the femoral bifurcation or superficial femoral artery.",
+      "the_other_leg": "ALL PULSES PRESENT AND NORMAL — supporting embolus rather than thrombosis.",
+      "neurological": "REDUCED SENSATION over the forefoot and toes. UNABLE TO MOVE THE TOES. Calf soft but tender.",
+      "the_calf_examination": "A TENSE, HARD, TENDER CALF SUGGESTS ESTABLISHED MUSCLE INFARCTION OR COMPARTMENT SYNDROME AND IS AN OMINOUS SIGN. Squeeze the calf gently and compare sides.",
+      "the_mottling_that_decides_everything": {
+       "blanching_mottling": "Mottled skin that BLANCHES ON PRESSURE AND REFILLS. THE CAPILLARY BED IS STILL PATENT AND THE LIMB IS SALVAGEABLE.",
+       "fixed_mottling": "Mottling that DOES NOT BLANCH — a dark, purple, fixed pattern. THE CAPILLARIES HAVE THROMBOSED. THE LIMB IS IRREVERSIBLY LOST, AND REVASCULARISATION AT THIS STAGE WILL NOT SAVE IT — IT WILL RELEASE A LETHAL LOAD OF POTASSIUM AND MYOGLOBIN INTO THE CIRCULATION AND MAY KILL THE PATIENT.",
+       "the_point": "PRESS ON THE MOTTLING. IT TAKES TWO SECONDS AND IT IS THE OBSERVATION THAT SEPARATES A LIMB THAT SHOULD BE REVASCULARISED FROM ONE THAT REQUIRES PRIMARY AMPUTATION OR PALLIATION."
+      },
+      "also_examine": "The heart for atrial fibrillation and murmurs. The abdomen for an aneurysm. BOTH POPLITEAL FOSSAE for aneurysm — a popliteal aneurysm is a classic embolic source and thrombosis of one is a classic cause of acute limb ischaemia, and it is missed because the popliteal fossa is not palpated."
+     },
+     "handheld_doppler": "AN ESSENTIAL BEDSIDE TOOL. Listen at the dorsalis pedis and posterior tibial arteries. AN AUDIBLE ARTERIAL SIGNAL MEANS SOME FLOW REMAINS. AN ABSENT ARTERIAL SIGNAL WITH AN ABSENT VENOUS SIGNAL IS AN OMINOUS COMBINATION indicating a very severely compromised limb. NOTE THAT A DOPPLER SIGNAL MAY BE PRESENT WHEN A PULSE IS NOT PALPABLE — so \"no palpable pulse\" and \"no flow\" are different statements."
+    },
+    "section_4_the_rutherford_classification_which_decides_the_plan": {
+     "why_it_matters": "IT TRANSLATES THE EXAMINATION INTO A DECISION. THE THREE THINGS THAT DETERMINE THE CATEGORY ARE SENSORY LOSS, MUSCLE WEAKNESS AND DOPPLER SIGNALS.",
+     "the_categories": {
+      "i_viable": "NO sensory loss, NO muscle weakness, ARTERIAL AND VENOUS DOPPLER SIGNALS AUDIBLE. NOT IMMEDIATELY THREATENED. There is time for imaging and a planned procedure.",
+      "iia_marginally_threatened": "MINIMAL sensory loss, confined to the toes, NO muscle weakness. ARTERIAL SIGNAL OFTEN INAUDIBLE, venous audible. SALVAGEABLE IF PROMPTLY TREATED.",
+      "iib_immediately_threatened": "SENSORY LOSS BEYOND THE TOES WITH REST PAIN, AND MILD TO MODERATE MUSCLE WEAKNESS. ARTERIAL SIGNAL INAUDIBLE, venous audible. SALVAGEABLE ONLY WITH IMMEDIATE REVASCULARISATION. THIS IS AN EMERGENCY AND THE PATIENT GOES TO THEATRE, NOT TO THE SCANNER.",
+      "iii_irreversible": "PROFOUND ANAESTHESIA, PROFOUND PARALYSIS OR RIGOR, FIXED MOTTLING. BOTH ARTERIAL AND VENOUS SIGNALS INAUDIBLE. MAJOR TISSUE LOSS AND PERMANENT NERVE DAMAGE ARE INEVITABLE. THE LIMB CANNOT BE SAVED — THE DECISION IS PRIMARY AMPUTATION OR, IN A DYING PATIENT, PALLIATION."
+     },
+     "her_category": "SENSORY LOSS BEYOND THE TOES AND INABILITY TO MOVE THE TOES, WITH BLANCHING MOTTLING AND A VENOUS BUT NO ARTERIAL DOPPLER SIGNAL — CATEGORY IIb, IMMEDIATELY THREATENED. SHE NEEDS REVASCULARISATION NOW.",
+     "the_decision_rule_that_follows": "CATEGORY I AND IIa MAY BE IMAGED FIRST. CATEGORY IIb GOES STRAIGHT TO THEATRE — IMAGING IS DONE ON TABLE IF NEEDED. CATEGORY III IS NOT REVASCULARISED."
+    },
+    "section_5_management": {
+     "a_immediate": {
+      "heparin": "FULL SYSTEMIC HEPARINISATION IMMEDIATELY — an intravenous bolus followed by infusion, unless contraindicated. IT DOES NOT DISSOLVE THE EXISTING CLOT, BUT IT PREVENTS PROPAGATION OF THROMBUS PROXIMALLY AND DISTALLY, WHICH PRESERVES THE RUN-OFF VESSELS AND THEREFORE THE OPERABILITY OF THE LIMB. It is the single most useful thing to do while waiting for the surgeon.",
+      "the_rest": "OXYGEN. ANALGESIA — this is severe pain and requires opioids. INTRAVENOUS FLUID. NIL BY MOUTH. Bloods including full blood count, urea and electrolytes, POTASSIUM, CREATINE KINASE, clotting, GROUP AND CROSS-MATCH. ECG for atrial fibrillation and myocardial infarction. KEEP THE LIMB AT OR BELOW THE LEVEL OF THE HEART, NOT ELEVATED, and KEEP IT WARM BUT DO NOT APPLY DIRECT HEAT — an anaesthetic limb burns easily and the patient cannot feel it. Protect the heel and pressure areas.",
+      "call_vascular_surgery_immediately": "BY TELEPHONE. State the Rutherford category. A category IIb limb is as urgent as any surgical emergency in the hospital."
+     },
+     "b_imaging": {
+      "the_rule": "DO NOT DELAY REVASCULARISATION OF A CATEGORY IIb LIMB FOR IMAGING. Time to reperfusion determines the outcome.",
+      "when_it_helps": "CT ANGIOGRAPHY defines the anatomy, the level of occlusion and the run-off, and is valuable in a VIABLE or MARGINALLY threatened limb, and in suspected thrombosis where a bypass may be needed. On-table angiography is used when the patient goes directly to theatre."
+     },
+     "c_revascularisation": {
+      "embolectomy": "For an embolus. A FOGARTY BALLOON CATHETER is passed beyond the clot through an arteriotomy, the balloon is inflated, and the catheter is withdrawn, dragging the clot out. Often under LOCAL ANAESTHETIC, which matters in a frail patient with cardiac disease. ON-TABLE ANGIOGRAPHY afterwards confirms clearance of the run-off.",
+      "for_thrombosis": "ANGIOPLASTY AND STENTING, SURGICAL BYPASS, or thrombectomy combined with treatment of the underlying lesion. Requires planning and imaging.",
+      "catheter_directed_thrombolysis": "A catheter is placed into the clot and a thrombolytic infused over hours. SUITABLE FOR CATEGORY I AND SOME IIa LIMBS WHERE THERE IS TIME, and useful for distal clot that cannot be reached surgically. NOT SUITABLE FOR A CATEGORY IIb LIMB, because it takes hours the limb does not have. Contraindicated with recent surgery, stroke, bleeding or coagulopathy.",
+      "primary_amputation": "FOR A CATEGORY III LIMB. It is not a failure — it is the correct operation, and attempting revascularisation of dead muscle can kill the patient."
+     },
+     "d_the_reperfusion_that_can_kill": {
+      "the_mechanism": "ISCHAEMIC MUSCLE ACCUMULATES POTASSIUM, HYDROGEN IONS, MYOGLOBIN AND INFLAMMATORY MEDIATORS. WHEN FLOW IS RESTORED, ALL OF IT ENTERS THE SYSTEMIC CIRCULATION AT ONCE.",
+      "the_consequences": "HYPERKALAEMIA CAUSING ARRHYTHMIA AND CARDIAC ARREST · SEVERE METABOLIC ACIDOSIS · MYOGLOBINURIA CAUSING ACUTE KIDNEY INJURY · massive fluid shift and hypotension · and ARDS from inflammatory mediators. THIS IS THE SAME PHYSIOLOGY AS CRUSH SYNDROME.",
+      "the_management": "ANTICIPATE IT WITH THE ANAESTHETIST BEFORE THE CLAMP COMES OFF. GENEROUS INTRAVENOUS FLUID BEFORE AND DURING REPERFUSION. MONITOR POTASSIUM AND THE ECG CONTINUOUSLY, and have CALCIUM, INSULIN-DEXTROSE and bicarbonate available. Monitor creatine kinase, renal function and urine output. Involve critical care.",
+      "the_teaching_point": "THE PATIENT CAN ARREST AT THE MOMENT THE OPERATION SUCCEEDS. THIS IS NOT A THEORETICAL RISK, AND IT IS THE REASON A CATEGORY III LIMB IS AMPUTATED RATHER THAN REVASCULARISED."
+     },
+     "e_compartment_syndrome_after_reperfusion": {
+      "why_it_happens": "REPERFUSED MUSCLE SWELLS DRAMATICALLY. In the tight fascial compartments of the calf, this raises compartment pressure and causes a SECONDARY compartment syndrome — after a technically successful operation.",
+      "the_action": "MONITOR THE LIMB CLOSELY AFTERWARDS FOR PAIN, TENSENESS AND PAIN ON PASSIVE STRETCH. MANY SURGEONS PERFORM PROPHYLACTIC FASCIOTOMY at the time of revascularisation where ischaemia has been prolonged — generally beyond about 4 to 6 hours — precisely because the syndrome is predictable. A LIMB THAT IS SUCCESSFULLY REVASCULARISED AND THEN LOST TO COMPARTMENT SYNDROME IS A PARTICULARLY AVOIDABLE TRAGEDY."
+     },
+     "f_afterwards_and_the_prevention_that_was_missed": {
+      "find_the_source": "ECHOCARDIOGRAM for cardiac thrombus, valve disease or endocarditis. Assess for aneurysm — aortic and POPLITEAL, and examine both popliteal fossae. Rhythm monitoring if atrial fibrillation is suspected but not documented. Thrombophilia screen in a young patient without an obvious source.",
+      "anticoagulation": "LIFELONG anticoagulation for atrial fibrillation or another cardiac source.",
+      "the_conversation_that_should_have_happened_earlier": "SHE HAS ATRIAL FIBRILLATION AND DECLINED ANTICOAGULATION. THE SAME EMBOLIC MECHANISM CAUSES STROKE AND MESENTERIC ISCHAEMIA. When a patient declines anticoagulation, explain concretely WHAT it prevents, and REVISIT the conversation rather than recording a refusal once and never raising it again. A decision made two years ago on partial information is not informed consent for today.",
+      "secondary_prevention": "Antiplatelet and statin where the mechanism is atherosclerotic. Smoking cessation, blood pressure and diabetes control. Supervised exercise and vascular follow-up for peripheral arterial disease.",
+      "the_honest_prognosis": "ACUTE LIMB ISCHAEMIA CARRIES HIGH MORBIDITY AND MORTALITY — these are elderly patients with cardiac disease undergoing urgent surgery. Amputation and death rates are both substantial. Discuss this honestly with the patient and family before the operation."
+     }
+    },
+    "section_6_teaching_points": {
+     "bonus_1_the_six_ps_in_clinical_order_are_a_prognosis": "Pain, pallor, pulselessness and coldness say there is ischaemia. PARAESTHESIA and PARALYSIS say how urgent it is — nerve is the most sensitive tissue and fails before muscle. Those two are the ones that determine viability, and they are the two most often not examined.",
+     "bonus_2_press_on_the_mottling": "Mottling that BLANCHES means the capillary bed is patent and the limb is salvageable. FIXED mottling that does not blanch means the capillaries have thrombosed, the limb is lost, and revascularisation will release a lethal potassium and myoglobin load. Two seconds separates revascularisation from amputation.",
+     "bonus_3_examine_the_other_leg": "Normal contralateral pulses with a sudden white leg in atrial fibrillation means EMBOLUS on a normal artery — a Fogarty embolectomy, often under local anaesthetic. Absent contralateral pulses with a claudication history means THROMBOSIS on diseased artery — which needs imaging and a bypass, and where simple embolectomy will fail.",
+     "bonus_4_heparin_immediately_even_though_it_dissolves_nothing": "It prevents propagation of thrombus proximally and distally, preserving the run-off vessels and therefore the operability of the limb. It is the most useful thing to do while waiting for the surgeon.",
+     "bonus_5_rutherford_translates_examination_into_a_decision": "I and IIa may be imaged first. IIb goes STRAIGHT to theatre. III is not revascularised. Sensory loss, muscle weakness and Doppler signals are the three inputs.",
+     "bonus_6_the_patient_can_arrest_when_the_operation_succeeds": "Reperfusion releases potassium, acid, myoglobin and inflammatory mediators simultaneously — the physiology of crush syndrome. Anticipate it with the anaesthetist before the clamp comes off, with fluid, ECG monitoring and hyperkalaemia treatment ready.",
+     "bonus_7_prophylactic_fasciotomy_after_prolonged_ischaemia": "Reperfused muscle swells and causes a SECONDARY compartment syndrome after a technically successful operation. Many surgeons fasciotomise prophylactically beyond 4 to 6 hours of ischaemia, because the syndrome is predictable.",
+     "trap_1": "Do NOT elevate the limb and do NOT apply direct heat — an anaesthetic limb burns and the patient cannot feel it.",
+     "trap_2": "Palpate BOTH popliteal fossae — a popliteal aneurysm is a classic source and a classic cause, and it is missed because nobody feels for it.",
+     "trap_3": "A Doppler signal can be present when a pulse is not palpable — \"no palpable pulse\" and \"no flow\" are different statements.",
+     "trap_4": "Thrombolysis takes hours a category IIb limb does not have.",
+     "trap_5": "A tense, hard, tender calf suggests established muscle infarction — an ominous sign.",
+     "trap_6": "A saddle embolus at the aortic bifurcation causes BILATERAL ischaemia with absent femoral pulses and is rapidly fatal.",
+     "trap_7": "Primary amputation for a category III limb is the correct operation, not a failure.",
+     "one_line_summary": "Category IIb acute limb ischaemia from an embolus in untreated atrial fibrillation. Heparinise now, press on the mottling, examine the other leg, straight to theatre for embolectomy — and warn the anaesthetist about the potassium before the clamp comes off."
+    }
+   },
+   "glossary": [
+    {
+     "abbr": "ARDS",
+     "full": "acute respiratory distress syndrome",
+     "gloss": "diffuse inflammatory lung injury causing refractory hypoxaemia"
+    },
+    {
+     "abbr": "CT",
+     "full": "computed tomography"
+    },
+    {
+     "abbr": "ECG",
+     "full": "electrocardiogram"
+    }
+   ],
+   "specialty": "Surgery — Vascular surgery",
+   "teaching_case": true,
+   "inputs": [],
+   "logic": {},
+   "outputs": [],
+   "warnings": [
+    "PARAESTHESIA AND PARALYSIS are the signs that determine urgency — and they are the two most often not examined.",
+    "PRESS ON THE MOTTLING — fixed, non-blanching mottling means the limb is irreversibly lost.",
+    "REVASCULARISING A DEAD LIMB CAN KILL THE PATIENT — a lethal load of potassium and myoglobin is released.",
+    "GIVE SYSTEMIC HEPARIN IMMEDIATELY — it prevents thrombus propagation and preserves the run-off vessels.",
+    "EXAMINE THE OTHER LEG — normal contralateral pulses suggest embolus; absent ones suggest thrombosis on diseased artery.",
+    "CATEGORY IIb GOES STRAIGHT TO THEATRE — do not delay revascularisation for imaging.",
+    "THROMBOLYSIS TAKES HOURS a category IIb limb does not have.",
+    "ANTICIPATE REPERFUSION INJURY with the anaesthetist BEFORE the clamp comes off — hyperkalaemia, acidosis, myoglobinuria.",
+    "CONSIDER PROPHYLACTIC FASCIOTOMY after prolonged ischaemia — reperfused muscle swells and causes secondary compartment syndrome.",
+    "DO NOT ELEVATE the limb and DO NOT apply direct heat — an anaesthetic limb burns unnoticed.",
+    "PALPATE BOTH POPLITEAL FOSSAE — popliteal aneurysm is a classic source and cause and is routinely missed.",
+    "A Doppler signal may be present when no pulse is palpable — the two statements are not the same.",
+    "A SADDLE EMBOLUS at the aortic bifurcation causes bilateral ischaemia with absent femoral pulses and is rapidly fatal.",
+    "PRIMARY AMPUTATION for a category III limb is the correct operation, not a failure.",
+    "Management here is a teaching example. Follow local vascular surgical guidance."
+   ],
+   "limitations": [
+    "A WORKED TEACHING CASE, not a protocol. Thrombolysis protocols, imaging pathways and fasciotomy policy vary between vascular units.",
+    "Decisions about primary amputation and palliation are senior surgical judgements made with the patient and family."
+   ],
+   "flashcards": [
+    {
+     "q": "Which of the six Ps determine urgency?",
+     "a": "Paraesthesia and paralysis — nerve is the most sensitive tissue and fails before muscle."
+    },
+    {
+     "q": "What does fixed, non-blanching mottling mean?",
+     "a": "The capillary bed has thrombosed — the limb is irreversibly lost."
+    },
+    {
+     "q": "Why give heparin immediately?",
+     "a": "It does not dissolve clot but prevents propagation, preserving the run-off vessels and the operability of the limb."
+    },
+    {
+     "q": "How does examining the other leg change the operation?",
+     "a": "Normal contralateral pulses suggest embolus (embolectomy); absent ones suggest thrombosis on diseased artery (bypass)."
+    },
+    {
+     "q": "Give the Rutherford categories and their implications.",
+     "a": "I viable (image first), IIa marginally threatened, IIb immediately threatened (straight to theatre), III irreversible (amputate)."
+    },
+    {
+     "q": "What are the three inputs to the Rutherford category?",
+     "a": "Sensory loss, muscle weakness and Doppler signals."
+    },
+    {
+     "q": "Where do emboli commonly lodge in the leg?",
+     "a": "The common femoral bifurcation, the popliteal trifurcation, and the aortic bifurcation (saddle embolus)."
+    },
+    {
+     "q": "What is a Fogarty catheter used for?",
+     "a": "Balloon embolectomy — passed beyond the clot, inflated and withdrawn to drag it out, often under local anaesthetic."
+    },
+    {
+     "q": "Describe reperfusion syndrome.",
+     "a": "Potassium, acid, myoglobin and inflammatory mediators released at once — arrhythmia, acidosis, acute kidney injury and ARDS."
+    },
+    {
+     "q": "Why is prophylactic fasciotomy considered?",
+     "a": "Reperfused muscle swells, causing secondary compartment syndrome after a technically successful revascularisation."
+    },
+    {
+     "q": "When is catheter-directed thrombolysis appropriate?",
+     "a": "Category I and some IIa limbs where there is time — not IIb, which cannot wait hours."
+    },
+    {
+     "q": "Why must the limb not be warmed directly?",
+     "a": "It is anaesthetic — the patient cannot feel a burn."
+    }
+   ],
+   "checkboxes": [
+    "Time of onset established",
+    "All six Ps assessed, including sensation and toe movement",
+    "Mottling tested for blanching",
+    "Both legs examined and pulses compared",
+    "Both popliteal fossae palpated for aneurysm",
+    "Handheld Doppler used for arterial and venous signals",
+    "Rutherford category assigned and documented",
+    "Systemic heparin given immediately",
+    "Opioid analgesia given",
+    "Limb kept at or below heart level, warm but without direct heat",
+    "Vascular surgery telephoned with the Rutherford category stated",
+    "Imaging NOT delaying theatre in a category IIb limb",
+    "Potassium, creatine kinase and renal function checked",
+    "Anaesthetist warned about reperfusion before the clamp is released",
+    "Fasciotomy considered after prolonged ischaemia",
+    "Embolic source investigated and lifelong anticoagulation arranged",
+    "Prognosis discussed honestly before surgery"
+   ],
+   "related_slugs": [
+    "peripheral_arterial_disease_and_the_ischaemic_limb"
+   ],
+   "patient_integration": null,
+   "governance": {
+    "evidence_tier": "T5_textbook_or_standard_teaching",
+    "verification_status": "standard_teaching",
+    "sources": [],
+    "nigeria_overlay": null,
+    "build_date": "2026-08-07",
+    "review_interval_months": 12,
+    "next_review_due": "2027-08-07",
+    "clinical_reviewer": null,
+    "approved_for_release": false,
+    "local_confirmation_required": true,
+    "supersedes": null,
+    "content_hash": "669e8c5845146757"
+   }
+  },
+  {
+   "id": "AS-CASE-0044",
+   "schema_version": "4.0.0",
+   "content_release": "AWIBI-SCOUT-CONTENT-2026.08.R3",
+   "type": "case",
+   "title": "CASE: Collapse with Back Pain in a 78-Year-Old Man",
+   "short_title": "Case: ruptured abdominal aortic aneurysm",
+   "slug": "case_collapse_with_back_pain_in_a_78_year_old_man",
+   "also_known_as": [
+    "case ruptured aaa",
+    "abdominal aortic aneurysm rupture case",
+    "pulsatile mass",
+    "aaa triad",
+    "permissive hypotension aaa",
+    "evar case",
+    "aortic screening",
+    "renal colic mimic",
+    "retroperitoneal haemorrhage"
+   ],
+   "summary": "A 78-year-old smoker with sudden back pain, collapse and a pulsatile mass. Teaches the triad and why it is often incomplete, why this is misdiagnosed as renal colic, why permissive hypotension applies, and why the only useful action in the emergency department is to get him to theatre.",
+   "domains": [
+    "vascular_surgery",
+    "emergency_medicine",
+    "trauma"
+   ],
+   "intents": [
+    "identify",
+    "act"
+   ],
+   "populations": [
+    "all_ages"
+   ],
+   "contexts": [
+    "routine"
+   ],
+   "hazard": "critical",
+   "urgency": "immediate",
+   "jurisdiction": "international",
+   "search": {
+    "terms": [
+     "aaa triad",
+     "abdominal aortic aneurysm",
+     "abdominal aortic aneurysm rupture case",
+     "abdominal aortic diameter",
+     "aortic screening",
+     "aortic screening programme",
+     "aortocaval fistula",
+     "aortoenteric fistula",
+     "back",
+     "case",
+     "case ruptured aaa",
+     "case: collapse with back pain in a 78-year-old man",
+     "case: ruptured abdominal aortic aneurysm",
+     "collapse",
+     "contained rupture",
+     "evar",
+     "evar case",
+     "laplace law aneurysm",
+     "open repair",
+     "pain",
+     "permissive hypotension",
+     "permissive hypotension aaa",
+     "pulsatile expansile mass",
+     "pulsatile mass",
+     "renal colic mimic",
+     "retroperitoneal haemorrhage",
+     "ruptured aaa",
+     "year"
+    ],
+    "ambiguous_terms": [],
+    "phrases": [],
+    "field_weights": {
+     "title": 8,
+     "short_title": 6,
+     "also_known_as": 5,
+     "terms": 4,
+     "summary": 2,
+     "body": 1,
+     "flashcards": 0.5
+    }
+   },
+   "body": {
+    "the_one_line": "78-year-old man, lifelong smoker, collapsed at home with sudden severe central abdominal and back pain 40 minutes ago. Blood pressure 82/48, pulse 118, cold and clammy, with a pulsatile mass in the abdomen.",
+    "section_1_recognition": {
+     "the_classic_triad": {
+      "the_three": "SUDDEN ABDOMINAL OR BACK PAIN · HYPOTENSION OR COLLAPSE · A PULSATILE ABDOMINAL MASS.",
+      "the_honest_caveat": "ALL THREE ARE PRESENT IN ONLY ABOUT HALF OF PATIENTS. THE MASS IS DIFFICULT OR IMPOSSIBLE TO FEEL IN AN OBESE PATIENT, AND MAY BE ABSENT IF THE PATIENT IS PROFOUNDLY HYPOTENSIVE. THE ABSENCE OF A PALPABLE MASS DOES NOT EXCLUDE THE DIAGNOSIS."
+     },
+     "how_to_examine_for_it": "PLACE BOTH HANDS ON EITHER SIDE OF THE MIDLINE ABOVE THE UMBILICUS. A TRUE ANEURYSM IS EXPANSILE — THE HANDS MOVE APART. A mass that is merely PULSATILE — moving both hands in the same direction — is TRANSMITTED pulsation from a normal aorta beneath it. THE DISTINCTION BETWEEN EXPANSILE AND TRANSMITTED IS THE POINT OF THE EXAMINATION, and it is frequently taught as \"pulsatile mass\" without it.",
+     "the_misdiagnosis_that_kills": {
+      "renal_colic": "RUPTURED ANEURYSM BLEEDS INTO THE RETROPERITONEUM, WHERE THE KIDNEYS AND URETERS LIE. IT THEREFORE CAUSES LOIN AND FLANK PAIN RADIATING TO THE GROIN, AND SOMETIMES HAEMATURIA. IT MIMICS URETERIC COLIC EXACTLY.",
+      "the_rule": "A FIRST PRESENTATION OF \"RENAL COLIC\" IN A PATIENT OVER 50 IS A RUPTURED OR LEAKING ANEURYSM UNTIL PROVEN OTHERWISE. Sending such a patient for an outpatient scan with analgesia is a documented cause of death.",
+      "other_misdiagnoses": "It is also mistaken for MYOCARDIAL INFARCTION, PERFORATED VISCUS, PANCREATITIS, DIVERTICULITIS, MUSCULOSKELETAL BACK PAIN and SCIATICA — the last particularly when the pain radiates down a leg from retroperitoneal nerve root compression."
+     },
+     "the_risk_factors": "AGE and MALE SEX — men are affected roughly 4 to 6 times more often · SMOKING, the strongest modifiable risk factor by a wide margin · HYPERTENSION · FAMILY HISTORY, which substantially increases risk · atherosclerosis and other vascular disease · and connective tissue disorders such as MARFAN and EHLERS-DANLOS in younger patients. NOTE THAT DIABETES IS ASSOCIATED WITH A LOWER RISK OF ANEURYSM — an unusual and genuinely counter-intuitive association."
+    },
+    "section_2_mechanism": {
+     "what_an_aneurysm_is": "A PERMANENT LOCALISED DILATATION OF AN ARTERY TO MORE THAN 1.5 TIMES ITS NORMAL DIAMETER. FOR THE INFRARENAL ABDOMINAL AORTA, A DIAMETER OF 3 cm OR MORE DEFINES AN ANEURYSM.",
+     "true_versus_false": "A TRUE aneurysm involves ALL THREE LAYERS of the arterial wall. A FALSE (pseudo) aneurysm is a contained rupture where blood is held by surrounding tissue rather than by an intact wall — typically after trauma or arterial puncture.",
+     "why_they_form": "DEGRADATION OF ELASTIN AND COLLAGEN IN THE MEDIA, driven by matrix metalloproteinases, inflammation and atherosclerosis. The INFRARENAL aorta is most affected — it has fewer vasa vasorum and less elastin than the thoracic aorta, and it bears reflected pressure waves from the bifurcation.",
+     "the_law_of_laplace_again": {
+      "the_relationship": "WALL TENSION IS PROPORTIONAL TO PRESSURE MULTIPLIED BY RADIUS.",
+      "the_consequence": "AS THE ANEURYSM ENLARGES, WALL TENSION RISES, WHICH DRIVES FURTHER ENLARGEMENT. GROWTH ACCELERATES AND RUPTURE RISK RISES STEEPLY AND NON-LINEARLY WITH DIAMETER. THIS IS WHY SURVEILLANCE INTERVALS SHORTEN AS THE ANEURYSM GROWS, AND WHY THE REPAIR THRESHOLD IS A DIAMETER RATHER THAN A SYMPTOM.",
+      "the_approximate_annual_rupture_risk": "Below 4 cm: very low. 4 to 5.5 cm: low, around 1% or less per year. 5.5 to 6 cm: rising, roughly 5 to 10%. Above 7 cm: high, in the region of 20 to 30% or more per year. FIGURES VARY BETWEEN SERIES — the SHAPE of the curve is the point."
+     },
+     "the_repair_threshold": "ELECTIVE REPAIR IS GENERALLY OFFERED AT A DIAMETER OF 5.5 cm IN MEN, OR FOR RAPID GROWTH (commonly taken as more than 1 cm per year), OR FOR SYMPTOMS. Thresholds are lower in women, in whom aneurysms rupture at smaller diameters. THE THRESHOLD EXISTS BECAUSE BELOW IT, THE OPERATIVE MORTALITY EXCEEDS THE RUPTURE RISK — trials showed no survival benefit from repairing small aneurysms.",
+     "where_it_ruptures": "MOST RUPTURE POSTERIORLY AND LATERALLY INTO THE RETROPERITONEUM, where the surrounding tissues can temporarily CONTAIN the bleeding — a CONTAINED RUPTURE. THAT CONTAINMENT IS WHY THE PATIENT ARRIVES ALIVE, AND IT IS PRECARIOUS. ANTERIOR rupture into the free peritoneal cavity causes immediate exsanguination and the patient rarely reaches hospital.",
+     "the_rare_presentations_worth_knowing": "AORTOCAVAL FISTULA — rupture into the inferior vena cava, causing high-output cardiac failure, a machinery-like abdominal bruit and leg swelling. AORTOENTERIC FISTULA — usually after previous aortic graft surgery, causing a \"herald\" gastrointestinal bleed followed by catastrophic haemorrhage; ANY GASTROINTESTINAL BLEED IN A PATIENT WITH A PREVIOUS AORTIC GRAFT IS AN AORTOENTERIC FISTULA UNTIL PROVEN OTHERWISE."
+    },
+    "section_3_clerking_and_examination": {
+     "history": "Sudden severe central abdominal pain radiating through to the back 40 minutes ago, followed by collapse. He is a lifelong smoker with hypertension and known peripheral arterial disease. HIS BROTHER DIED OF A \"BURST ARTERY IN THE STOMACH\" — a family history he has never been asked about.",
+     "vitals": "BP 82/48 mmHg. Pulse 118. Respiratory rate 26. Saturation 94%. Cold, clammy, capillary refill 4 seconds. GCS 14, anxious and restless.",
+     "examination": "Pale and shut down. TENDER, PULSATILE, EXPANSILE MASS above the umbilicus. Abdominal tenderness without generalised rigidity. GREY-TURNER SIGN (flank bruising) and CULLEN SIGN (periumbilical bruising) may appear with retroperitoneal haemorrhage but TAKE HOURS TO DEVELOP AND ARE LATE — do not wait for them. FEMORAL PULSES present but weak. Check for signs of DISTAL EMBOLISATION — \"TRASH FOOT\", with blue toes despite palpable pulses, from mural thrombus embolising distally.",
+     "the_examination_point": "RESTLESSNESS AND AGITATION IN AN OLDER PATIENT WITH ABDOMINAL PAIN IS SHOCK UNTIL PROVEN OTHERWISE. It is easily labelled as confusion or anxiety."
+    },
+    "section_4_investigations": {
+     "the_governing_rule": {
+      "the_statement": "A HAEMODYNAMICALLY UNSTABLE PATIENT WITH A KNOWN OR SUSPECTED ANEURYSM AND A CONVINCING HISTORY DOES NOT NEED A SCAN — HE NEEDS A VASCULAR SURGEON AND A THEATRE. THE DIAGNOSIS IS CLINICAL, AND TIME SPENT IN THE RADIOLOGY DEPARTMENT IS TIME NOT SPENT IN THEATRE.",
+      "the_nuance": "THE PICTURE IS DIFFERENT IN A STABLE PATIENT OR WHERE THE DIAGNOSIS IS GENUINELY UNCERTAIN, WHERE CT ANGIOGRAPHY IS ESSENTIAL — BOTH TO CONFIRM AND TO DETERMINE WHETHER ENDOVASCULAR REPAIR IS ANATOMICALLY FEASIBLE. Many units will accept a very rapid CT in a transiently stable patient specifically to plan EVAR, because that decision changes mortality. THE JUDGEMENT IS THE SURGEON, AND THE CONVERSATION SHOULD HAPPEN BY TELEPHONE WITHIN MINUTES OF ARRIVAL."
+     },
+     "bedside_ultrasound": "CAN CONFIRM THE PRESENCE OF AN ANEURYSM IN SECONDS, at the bedside, without moving the patient. IT IS EXCELLENT FOR CONFIRMING AN ANEURYSM EXISTS AND POOR AT CONFIRMING RUPTURE, because retroperitoneal blood is difficult to see. A POSITIVE SCAN IN A SHOCKED PATIENT WITH THE RIGHT HISTORY IS ENOUGH TO ACT ON.",
+     "ct_angiography": "The definitive investigation in a stable patient. Confirms rupture, defines the anatomy — neck length and angulation, iliac access — and determines EVAR suitability.",
+     "bloods": "CROSS-MATCH URGENTLY — 6 to 10 units or more, and ACTIVATE THE MASSIVE HAEMORRHAGE PROTOCOL. Full blood count, urea and electrolytes, clotting, blood gas with lactate. ECG. NOTE THAT THE HAEMOGLOBIN MAY BE NORMAL IN ACUTE HAEMORRHAGE before haemodilution — do not be reassured."
+    },
+    "section_5_management": {
+     "a_what_actually_helps_in_the_emergency_department": {
+      "the_short_list": "CALL THE VASCULAR SURGEON AND THE ANAESTHETIST. ACTIVATE THE MASSIVE HAEMORRHAGE PROTOCOL. ALERT THEATRE. TWO LARGE-BORE CANNULAE. CROSS-MATCH. ANALGESIA. NOTHING ELSE MATTERS AS MUCH AS THE TELEPHONE CALL.",
+      "the_transfer_point": "IF YOUR HOSPITAL HAS NO VASCULAR SERVICE, THE DECISION TO TRANSFER MUST BE MADE IMMEDIATELY, IN PARALLEL WITH RESUSCITATION, NOT AFTER IT. Discuss with the regional vascular unit at once."
+     },
+     "b_permissive_hypotension_which_is_the_key_management_principle": {
+      "the_target": "AIM FOR A SYSTOLIC BLOOD PRESSURE OF ROUGHLY 70 TO 90 mmHg, OR SIMPLY FOR A CONSCIOUS PATIENT WHO IS TALKING TO YOU — WHICH IS A BETTER BEDSIDE ENDPOINT, BECAUSE IT MEANS THE BRAIN IS PERFUSED.",
+      "why": "A RUPTURED ANEURYSM IS TEMPORARILY CONTAINED BY RETROPERITONEAL TAMPONADE AND FRESH CLOT. RESTORING A NORMAL BLOOD PRESSURE DISLODGES THAT CLOT, OVERWHELMS THE TAMPONADE AND CONVERTS A CONTAINED RUPTURE INTO A FREE ONE. THE PATIENT THEN EXSANGUINATES.",
+      "the_practical_instruction": "DO NOT POUR IN FLUID TO \"CORRECT\" THE BLOOD PRESSURE. THIS IS COUNTER-INTUITIVE AND IS OFTEN THE INSTINCT OF EVERYONE IN THE ROOM. A systolic of 82 in a talking patient with a contained rupture is a BETTER situation than a systolic of 130 achieved with three litres of crystalloid. AVOID LARGE-VOLUME CRYSTALLOID SPECIFICALLY — it dilutes clotting factors and worsens the coagulopathy as well.",
+      "when_to_give_blood": "Give BLOOD, not crystalloid, and give it to maintain consciousness and organ perfusion — not to reach a number. TRANEXAMIC ACID is reasonable where local protocol supports it."
+     },
+     "c_the_repair": {
+      "evar_endovascular_aneurysm_repair": {
+       "what_it_is": "A stent graft is deployed inside the aneurysm sac via the femoral arteries, excluding the sac from the circulation.",
+       "the_advantages": "LOWER SHORT-TERM MORTALITY AND MORBIDITY THAN OPEN REPAIR, avoids a laparotomy and aortic cross-clamping, and can often be done under LOCAL ANAESTHESIA — a significant advantage in a shocked elderly patient, since induction of general anaesthesia abolishes the sympathetic tone that is maintaining their blood pressure and can precipitate cardiac arrest.",
+       "the_limitation": "IT REQUIRES SUITABLE ANATOMY — an adequate infrarenal neck and accessible iliac vessels — AND THEREFORE REQUIRES A CT. Not all patients are candidates. It also requires LIFELONG SURVEILLANCE for ENDOLEAK, migration and sac expansion, which is a genuine long-term burden.",
+       "the_evidence": "Trials of EVAR versus open repair for RUPTURED aneurysm showed broadly similar early mortality overall but advantages in selected patients and in length of stay, and EVAR is now widely used where anatomy and logistics allow."
+      },
+      "open_repair": "Laparotomy, proximal aortic control, and replacement of the aneurysmal segment with a tube or bifurcated graft. Necessary where anatomy is unsuitable or EVAR is unavailable. Higher physiological insult, but definitive.",
+      "aortic_occlusion_balloon": "Some units place an occlusion balloon via the femoral artery to achieve proximal control before induction of anaesthesia — again, because induction can precipitate collapse."
+     },
+     "d_the_honest_prognosis_and_the_conversation": {
+      "the_numbers": "OVERALL MORTALITY FROM RUPTURED ANEURYSM IS AROUND 80% WHEN OUT-OF-HOSPITAL DEATHS ARE INCLUDED. Of those who reach hospital alive, operative mortality is roughly 30 to 50%. THESE ARE NOT GOOD ODDS, AND THE PATIENT AND FAMILY DESERVE TO KNOW THEM.",
+      "the_decision_not_to_operate": "IN A VERY FRAIL PATIENT WITH SIGNIFICANT COMORBIDITY, SURGERY MAY NOT BE IN THEIR INTERESTS. THAT IS A LEGITIMATE SENIOR DECISION MADE WITH THE PATIENT WHERE POSSIBLE AND WITH THE FAMILY, AND IT REQUIRES EXCELLENT PALLIATIVE CARE AND ANALGESIA RATHER THAN ABANDONMENT. Make the decision explicitly and document it — a default drift into no treatment without a conversation is the worst outcome.",
+      "the_speed_of_the_conversation": "There may be only minutes. Be direct, be kind, and make sure the family understand the seriousness before he goes to theatre, because he may not come back."
+     },
+     "e_after_surgery": "Critical care. Watch for ABDOMINAL COMPARTMENT SYNDROME after open repair or massive transfusion. ACUTE KIDNEY INJURY from hypoperfusion and suprarenal clamping. COLONIC ISCHAEMIA from loss of the inferior mesenteric artery — SUSPECT IT WITH BLOODY DIARRHOEA AFTER AORTIC SURGERY AND INVESTIGATE PROMPTLY, because it carries very high mortality. Spinal cord ischaemia. Distal embolisation. Multi-organ failure. And after EVAR, lifelong surveillance imaging.",
+     "f_prevention_and_screening": {
+      "screening": "MANY COUNTRIES SCREEN MEN AT AGE 65 WITH A SINGLE ABDOMINAL ULTRASOUND. It reduces aneurysm-related mortality substantially and is one of the more clearly effective screening programmes. Men with a normal aorta at 65 need no further screening.",
+      "surveillance": "Detected small aneurysms enter a surveillance programme with intervals shortening as diameter increases — for example annually at 3 to 4.4 cm and three-monthly above 4.5 cm, with referral at 5.5 cm. Local programmes vary.",
+      "medical_management": "SMOKING CESSATION IS THE SINGLE MOST IMPORTANT INTERVENTION — it slows growth and reduces rupture risk. Blood pressure control, statin and antiplatelet for overall cardiovascular risk. THERE IS NO DRUG THAT RELIABLY SHRINKS AN ANEURYSM, despite trials of several.",
+      "the_family": "FIRST-DEGREE RELATIVES OF PATIENTS WITH AN ANEURYSM HAVE SUBSTANTIALLY INCREASED RISK AND SHOULD BE OFFERED SCREENING. HIS BROTHER DIED OF ONE AND NOBODY EVER ASKED. Ask about family history in every vascular patient, and act on it."
+     }
+    },
+    "section_6_teaching_points": {
+     "bonus_1_first_renal_colic_over_50_is_an_aneurysm_until_proven_otherwise": "Retroperitoneal blood produces loin-to-groin pain and sometimes haematuria, mimicking ureteric colic exactly. Sending such a patient home with analgesia and an outpatient scan is a documented cause of death.",
+     "bonus_2_expansile_not_merely_pulsatile": "Place a hand either side of the midline. A true aneurysm pushes your hands APART; transmitted pulsation moves them in the same direction. That distinction is the point of the examination and is usually taught without it.",
+     "bonus_3_permissive_hypotension_because_the_clot_is_holding_him_together": "The rupture is contained by retroperitoneal tamponade and fresh clot. Restoring a normal pressure dislodges it and converts a contained rupture into a free one. Aim for a talking patient, not a number — and give blood, not litres of crystalloid.",
+     "bonus_4_laplace_explains_the_repair_threshold": "Wall tension is pressure times radius, so enlargement drives further enlargement and rupture risk rises steeply and non-linearly with diameter. Below 5.5 cm the operative mortality exceeds the rupture risk, which is why the threshold is a diameter rather than a symptom.",
+     "bonus_5_induction_of_anaesthesia_can_kill_before_the_incision": "General anaesthesia abolishes the sympathetic tone maintaining the blood pressure and can precipitate collapse. That is why EVAR under local anaesthesia is attractive in a shocked patient, and why some units place an occlusion balloon before induction.",
+     "bonus_6_all_three_triad_features_appear_in_only_half": "The mass is impossible to feel in an obese patient and may be absent when profoundly hypotensive. Grey-Turner and Cullen signs take hours and are late. Do not wait for a complete picture.",
+     "bonus_7_the_family_history_nobody_asks_about": "First-degree relatives have substantially increased risk and should be offered screening. His brother died of one and it was never recorded. Ask, and act on the answer.",
+     "trap_1": "Any gastrointestinal bleed in a patient with a previous aortic graft is an AORTOENTERIC FISTULA until proven otherwise.",
+     "trap_2": "Bloody diarrhoea after aortic surgery is COLONIC ISCHAEMIA until proven otherwise — very high mortality.",
+     "trap_3": "Haemoglobin may be normal in acute haemorrhage before haemodilution.",
+     "trap_4": "Restlessness in an older patient with abdominal pain is SHOCK, not anxiety.",
+     "trap_5": "DIABETES is associated with LOWER aneurysm risk — genuinely counter-intuitive and worth remembering.",
+     "trap_6": "Women rupture at smaller diameters, so thresholds are lower.",
+     "trap_7": "A decision not to operate in a very frail patient is legitimate — but it must be made explicitly and documented, with good palliation.",
+     "one_line_summary": "Ruptured abdominal aortic aneurysm. Telephone the vascular surgeon and activate the massive haemorrhage protocol first, keep him talking rather than chasing a blood pressure, and do not send an unstable patient to the scanner."
+    }
+   },
+   "glossary": [
+    {
+     "abbr": "AGE",
+     "full": "advanced glycation end product"
+    },
+    {
+     "abbr": "CT",
+     "full": "computed tomography"
+    },
+    {
+     "abbr": "ECG",
+     "full": "electrocardiogram"
+    },
+    {
+     "abbr": "GCS",
+     "full": "Glasgow Coma Scale"
+    },
+    {
+     "abbr": "MEN",
+     "full": "multiple endocrine neoplasia"
+    }
+   ],
+   "specialty": "Surgery — Vascular surgery",
+   "teaching_case": true,
+   "inputs": [],
+   "logic": {},
+   "outputs": [],
+   "warnings": [
+    "A FIRST PRESENTATION OF \"RENAL COLIC\" OVER 50 IS A RUPTURED ANEURYSM UNTIL PROVEN OTHERWISE.",
+    "ALL THREE TRIAD FEATURES ARE PRESENT IN ONLY ABOUT HALF — absence of a palpable mass does not exclude it.",
+    "PERMISSIVE HYPOTENSION — aim for a TALKING patient, not a normal blood pressure. Restoring pressure dislodges the clot.",
+    "GIVE BLOOD, NOT LARGE-VOLUME CRYSTALLOID — crystalloid dilutes clotting factors and worsens coagulopathy.",
+    "AN UNSTABLE PATIENT WITH A CONVINCING HISTORY DOES NOT NEED A SCAN — he needs a surgeon and a theatre.",
+    "CALL THE VASCULAR SURGEON AND ACTIVATE THE MASSIVE HAEMORRHAGE PROTOCOL FIRST — nothing else matters as much.",
+    "If there is no local vascular service, decide on TRANSFER IMMEDIATELY, in parallel with resuscitation.",
+    "INDUCTION OF ANAESTHESIA CAN PRECIPITATE COLLAPSE by abolishing compensatory sympathetic tone.",
+    "A mass must be EXPANSILE, not merely pulsatile — transmitted pulsation moves both hands the same way.",
+    "GREY-TURNER AND CULLEN SIGNS TAKE HOURS and are late — do not wait for them.",
+    "HAEMOGLOBIN MAY BE NORMAL in acute haemorrhage before haemodilution.",
+    "Any GASTROINTESTINAL BLEED with a previous aortic graft is an AORTOENTERIC FISTULA until proven otherwise.",
+    "BLOODY DIARRHOEA AFTER AORTIC SURGERY is colonic ischaemia until proven otherwise — very high mortality.",
+    "WOMEN RUPTURE AT SMALLER DIAMETERS — repair thresholds are lower.",
+    "OFFER SCREENING TO FIRST-DEGREE RELATIVES — risk is substantially increased.",
+    "A decision not to operate in a very frail patient is legitimate but must be explicit, documented and accompanied by good palliation.",
+    "Management here is a teaching example. Follow local vascular protocols."
+   ],
+   "limitations": [
+    "A WORKED TEACHING CASE, not a protocol. EVAR versus open repair for rupture depends on anatomy, logistics and local expertise.",
+    "Rupture risk figures vary between series; the shape of the risk curve rather than the exact number is the teaching point."
+   ],
+   "flashcards": [
+    {
+     "q": "Give the classic triad and its limitation.",
+     "a": "Sudden abdominal or back pain, hypotension, pulsatile mass — all three present in only about half."
+    },
+    {
+     "q": "How do you distinguish an expansile from a transmitted pulsation?",
+     "a": "An expansile mass pushes both hands apart; transmitted pulsation moves them in the same direction."
+    },
+    {
+     "q": "What is the crucial misdiagnosis?",
+     "a": "Renal colic — retroperitoneal blood causes loin-to-groin pain and sometimes haematuria."
+    },
+    {
+     "q": "What defines an abdominal aortic aneurysm?",
+     "a": "Infrarenal aortic diameter of 3 cm or more, or 1.5 times normal."
+    },
+    {
+     "q": "Why does rupture risk rise steeply with diameter?",
+     "a": "Law of Laplace — wall tension is pressure times radius, so enlargement drives further enlargement."
+    },
+    {
+     "q": "What is the usual elective repair threshold and why?",
+     "a": "5.5 cm in men — below that, operative mortality exceeds rupture risk."
+    },
+    {
+     "q": "Explain permissive hypotension here.",
+     "a": "The rupture is contained by retroperitoneal tamponade and clot; restoring pressure dislodges it and causes free rupture."
+    },
+    {
+     "q": "What is a better endpoint than a blood pressure number?",
+     "a": "A conscious, talking patient — it means the brain is perfused."
+    },
+    {
+     "q": "Why can EVAR under local anaesthesia be advantageous?",
+     "a": "General anaesthesia abolishes compensatory sympathetic tone and can precipitate collapse in a shocked patient."
+    },
+    {
+     "q": "What is the long-term burden of EVAR?",
+     "a": "Lifelong surveillance for endoleak, migration and sac expansion."
+    },
+    {
+     "q": "What does bloody diarrhoea after aortic surgery suggest?",
+     "a": "Colonic ischaemia from loss of the inferior mesenteric artery — very high mortality."
+    },
+    {
+     "q": "What does a GI bleed in a patient with an aortic graft suggest?",
+     "a": "Aortoenteric fistula until proven otherwise."
+    },
+    {
+     "q": "Which common condition is associated with LOWER aneurysm risk?",
+     "a": "Diabetes — a genuinely counter-intuitive association."
+    }
+   ],
+   "checkboxes": [
+    "Aneurysm considered in any patient over 50 with abdominal or back pain and hypotension",
+    "Abdomen examined for an EXPANSILE mass",
+    "Femoral pulses and distal embolisation assessed",
+    "Vascular surgeon telephoned immediately",
+    "Massive haemorrhage protocol activated and theatre alerted",
+    "Two large-bore cannulae and urgent cross-match",
+    "Permissive hypotension maintained — patient kept talking, not normotensive",
+    "Blood given rather than large-volume crystalloid",
+    "Unstable patient NOT sent to the scanner",
+    "Bedside ultrasound used if it does not delay",
+    "Transfer decision made immediately if no local vascular service",
+    "Prognosis discussed honestly with patient and family",
+    "Decision not to operate, if taken, made explicitly and documented with palliation",
+    "Family history recorded and relatives offered screening",
+    "Smoking cessation addressed for survivors"
+   ],
+   "related_slugs": [
+    "aortic_aneurysm_and_dissection_recognition_and_thresholds"
+   ],
+   "patient_integration": null,
+   "governance": {
+    "evidence_tier": "T5_textbook_or_standard_teaching",
+    "verification_status": "standard_teaching",
+    "sources": [],
+    "nigeria_overlay": null,
+    "build_date": "2026-08-07",
+    "review_interval_months": 12,
+    "next_review_due": "2027-08-07",
+    "clinical_reviewer": null,
+    "approved_for_release": false,
+    "local_confirmation_required": true,
+    "supersedes": null,
+    "content_hash": "8d3dd1568adeb9ca"
    }
   }
  ]
