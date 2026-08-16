@@ -18,8 +18,8 @@ there is a natural checkpoint every 10 cases rather than every 3.
 | **1** | 1–10 | Cardiology · Respiratory · Endocrinology · Nephrology · Hepatology | **COMPLETE** |
 | **2** | 11–20 | Gastroenterology · Hepatology · Neurology · Haematology · Infectious disease | **COMPLETE** |
 | **3** | 21–30 | Rheumatology · Infectious disease · Oncology · Dermatology | **COMPLETE** |
-| **4** | 31–40 | General surgery · Trauma | **next** |
-| 5 | 41–50 | Urology · Orthopaedics · Vascular | planned |
+| **4** | 31–40 | General surgery · Trauma · Burns · Orthopaedics | **COMPLETE** |
+| **5** | 41–50 | Urology · Orthopaedics · Vascular | **next** |
 | 6 | 51–60 | Neurosurgery · Cardiothoracic · Paediatric surgery · Plastics | planned |
 | 7 | 61–70 | Anaesthesia · ENT · Ophthalmology · Dental | planned |
 | 8 | 71–80 | Obstetrics · Gynaecology | planned |
@@ -35,9 +35,9 @@ curl localhost:5188/api/cases | node -e "let d='';process.stdin.on('data',c=>d+=
 
 | | |
 |---|---|
-| Cases written | **30** |
+| Cases written | **40** |
 | Target | 200+ |
-| Specialty areas covered | 12 of ~45 |
+| Specialty areas covered | 16 of ~45 |
 
 ---
 
@@ -110,15 +110,19 @@ point is that no area is left without a worked patient.
 
 ### Surgery
 
-- [ ] **General surgery** — appendicitis · perforated peptic ulcer · acute cholecystitis and cholangitis · bowel obstruction · incarcerated hernia · diverticulitis · mesenteric ischaemia
-- [ ] **Trauma** — polytrauma primary survey · head injury · chest trauma · abdominal trauma · pelvic fracture · burns
+- [x] **General surgery** (5) — acute appendicitis · perforated peptic ulcer · ascending cholangitis · sigmoid volvulus and large bowel obstruction · acute mesenteric ischaemia
+      *Planned:* acute cholecystitis · incarcerated hernia · diverticulitis · lower GI bleed
+- [x] **Trauma** (3) — polytrauma primary survey · extradural haematoma and head injury · penetrating chest trauma
+      *Planned:* abdominal trauma · pelvic fracture with haemorrhage · spinal trauma
 - [ ] **Urology** — renal colic · acute urinary retention · testicular torsion · Fournier gangrene · haematuria · prostate cancer
-- [ ] **Orthopaedics** — neck of femur fracture · open fracture · compartment syndrome · septic arthritis · cauda equina · supracondylar fracture in a child
+- [x] **Orthopaedics** (1) — acute compartment syndrome
+      *Planned:* neck of femur fracture · open fracture · cauda equina · supracondylar fracture in a child
 - [ ] **Neurosurgery** — extradural haematoma · chronic subdural · raised intracranial pressure · hydrocephalus with a blocked shunt
 - [ ] **Cardiothoracic** — aortic dissection · empyema · pneumothorax requiring drain · oesophageal perforation
 - [ ] **Vascular** — acute limb ischaemia · ruptured abdominal aortic aneurysm · diabetic foot · critical limb ischaemia
 - [ ] **Paediatric surgery** — intussusception · pyloric stenosis · gastroschisis and omphalocele · undescended testis
-- [ ] **Plastics and burns** — major burn with fluid calculation · hand injury · degloving · pressure ulcer
+- [x] **Plastics and burns** (1) — major burn with inhalation injury and fluid calculation
+      *Planned:* hand injury · degloving · pressure ulcer · flap failure
 
 ### Special postings
 
