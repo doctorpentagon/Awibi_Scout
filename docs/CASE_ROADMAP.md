@@ -8,20 +8,36 @@ range, every drug with dose, route, preparation, rate and monitoring.
 
 ---
 
-## Where this stands
+## Batches — you only need to check in at each boundary
 
-| | |
-|---|---|
-| Cases written | **11** |
-| Target | 200+ |
-| Postings with at least one case | 1 of 12 |
-| Specialty areas covered | 6 of ~45 |
+Work proceeds in **batches of 10**. Each batch is reported when complete, so
+there is a natural checkpoint every 10 cases rather than every 3.
 
-Check the live count yourself — the roadmap is a plan, the API is the truth:
+| Batch | Cases | Areas | Status |
+|---|---|---|---|
+| **1** | 1–10 | Cardiology · Respiratory · Endocrinology · Nephrology · Hepatology | **COMPLETE** |
+| **2** | 11–20 | Gastroenterology · Hepatology · Neurology · Haematology | **in progress — 3 of 10** |
+| 3 | 21–30 | Rheumatology · Infectious disease · Oncology · Dermatology | planned |
+| 4 | 31–40 | General surgery · Trauma | planned |
+| 5 | 41–50 | Urology · Orthopaedics · Vascular | planned |
+| 6 | 51–60 | Neurosurgery · Cardiothoracic · Paediatric surgery · Plastics | planned |
+| 7 | 61–70 | Anaesthesia · ENT · Ophthalmology · Dental | planned |
+| 8 | 71–80 | Obstetrics · Gynaecology | planned |
+| 9 | 81–90 | Paediatrics · Neonatology | planned |
+| 10 | 91–100 | Psychiatry · Radiology · Emergency medicine | planned |
+| 11–20 | 101–200 | Second and third cases per area, depth within each specialty | planned |
+
+**Live count — the roadmap is a plan, the API is the truth:**
 
 ```bash
 curl localhost:5188/api/cases | node -e "let d='';process.stdin.on('data',c=>d+=c).on('end',()=>console.log(JSON.parse(d).total))"
 ```
+
+| | |
+|---|---|
+| Cases written | **13** |
+| Target | 200+ |
+| Specialty areas covered | 7 of ~45 |
 
 ---
 
@@ -79,7 +95,8 @@ point is that no area is left without a worked patient.
       *Planned:* lower GI bleed · inflammatory bowel disease flare · bowel obstruction · coeliac disease · *Clostridioides difficile*
 - [x] **Hepatology** (2) — variceal bleed in cirrhosis · paracetamol overdose and acute liver failure
       *Planned:* alcoholic hepatitis · viral hepatitis · spontaneous bacterial peritonitis · hepatic encephalopathy · hepatocellular carcinoma
-- [ ] **Neurology** — ischaemic stroke · haemorrhagic stroke · subarachnoid haemorrhage · Guillain-Barré · myasthenic crisis · status epilepticus · meningitis · multiple sclerosis relapse · peripheral neuropathy
+- [x] **Neurology** (2) — acute ischaemic stroke · subarachnoid haemorrhage
+      *Planned:* haemorrhagic stroke · Guillain-Barré · myasthenic crisis · status epilepticus · bacterial meningitis · multiple sclerosis relapse · peripheral neuropathy
 - [ ] **Haematology** — sickle cell crisis · acute chest syndrome · neutropenic sepsis · leukaemia presentation · lymphoma · anaemia workup · thrombocytopenia · DIC
 - [ ] **Rheumatology** — systemic lupus erythematosus · rheumatoid flare · giant cell arteritis · gout versus septic arthritis · vasculitis · systemic sclerosis crisis
 - [ ] **Infectious disease** — malaria · typhoid · HIV with opportunistic infection · tuberculosis · tetanus · sepsis of unknown source · Lassa fever · rabies exposure
