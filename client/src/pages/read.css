@@ -69,3 +69,18 @@
   .read-bar-part { display: none; }
   .read-head h1 { font-size: 24px; }
 }
+
+/* ---- full entry inside the reader ---- */
+/* The reader reuses the entry stylesheet, so only the differences are set here. */
+.read-nav-top { margin-bottom: 24px; }
+.read-nav-top .read-btn-quiet { flex: 0 1 auto; font-weight: 500; color: var(--muted); }
+
+.read-entry-full { margin-bottom: 32px; }
+/* The reader supplies its own position header, so the entry's own back-link
+   and outer spacing would duplicate it. */
+.read-entry-full .entry-crumb { display: none; }
+.read-entry-full .entry-head { margin-top: 0; }
+
+@media (max-width: 560px) {
+  .read-nav-top .read-btn-quiet { display: none; }
+}

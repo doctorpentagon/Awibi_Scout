@@ -1,6 +1,8 @@
 import { useEffect, useState, useCallback } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { api } from '../lib/api.js';
+import { EntryContent } from '../components/EntryContent.jsx';
+import '../pages/entry.css';
 import './read.css';
 
 /**
@@ -42,6 +44,7 @@ export default function ReadPage() {
       .then((d) => {
         if (cancelled) return;
         setPage(d);
+        window.scrollTo({ top: 0, behavior: 'instant' });
         // Remember where they got to, so "resume" is honest rather than a guess.
         try { localStorage.setItem(STORAGE_KEY, String(d.position)); } catch { /* private mode */ }
       })
@@ -150,12 +153,27 @@ export default function ReadPage() {
         <div className="read-progress-fill" style={{ width: `${pct}%` }} />
       </div>
 
-      <article className="read-entry">
-        <h1>{entry.title}</h1>
-        <p className="read-summary">{entry.summary}</p>
-        <Link className="read-btn read-btn-primary" to={`/entry/${entry.slug || entry.id}`}>
-          Open the full entry
+      {/* Navigation sits ABOVE the content so a reader can move on without
+          scrolling to the bottom of a long entry, and repeats below for when
+          they have read to the end. */}
+      <nav className="read-nav read-nav-top" aria-label="Move through the library">
+        <button type="button" className="read-btn" disabled={!page.previous}
+                onClick={() => go(page.previous?.position)}>
+          ← Previous
+        </button>
+        <Link className="read-btn read-btn-quiet" to={`/entry/${entry.slug || entry.id}`}>
+          Open on its own
         </Link>
+        <button type="button" className="read-btn read-btn-primary" disabled={!page.next}
+                onClick={() => go(page.next?.position)}>
+          Next →
+        </button>
+      </nav>
+
+      {/* The whole entry, inline. Leaving the reading flow to see the content is
+          how a reader loses their place and stops. */}
+      <article className="entry read-entry-full">
+        <EntryContent entry={entry} />
       </article>
 
       <nav className="read-nav" aria-label="Move through the library">
@@ -168,7 +186,11 @@ export default function ReadPage() {
           Next →
         </button>
       </nav>
-      <p className="read-hint">Arrow keys also move between entries.</p>
+      <p className="read-hint">
+        {page.next
+          ? `Next: ${page.next.id} · arrow keys also move between entries.`
+          : 'That is the end of the library. Arrow keys also move between entries.'}
+      </p>
     </div>
   );
 }
