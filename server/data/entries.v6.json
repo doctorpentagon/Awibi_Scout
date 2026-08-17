@@ -2,7 +2,7 @@
  "release": "AWIBI-SCOUT-CONTENT-2026.08.R3",
  "schema_version": "4.0.0",
  "build_date": "2026-08-07",
- "entry_count": 239,
+ "entry_count": 245,
  "extends": "AWIBI-SCOUT-CONTENT-2026.08.R2",
  "note": "Content extension. Adds areas; supersedes nothing. Every entry is unreviewed and unapproved.",
  "entries": [
@@ -55281,6 +55281,1807 @@
     "local_confirmation_required": true,
     "supersedes": null,
     "content_hash": "a4d4eab3d982f145"
+   }
+  },
+  {
+   "id": "AS-CASE-0055",
+   "schema_version": "4.0.0",
+   "content_release": "AWIBI-SCOUT-CONTENT-2026.08.R3",
+   "type": "case",
+   "title": "CASE: A 9-Month-Old Drawing Up His Legs and Screaming Every Twenty Minutes",
+   "short_title": "Case: intussusception",
+   "slug": "case_a_9_month_old_drawing_up_his_legs_and_screaming_every_twenty_minutes",
+   "also_known_as": [
+    "case intussusception",
+    "intussusception case",
+    "redcurrant jelly stool",
+    "sausage shaped mass",
+    "target sign ultrasound",
+    "air enema reduction",
+    "dance sign",
+    "lead point intussusception",
+    "ileocolic intussusception"
+   ],
+   "summary": "An infant with colic, a sausage-shaped mass and redcurrant jelly stool. Teaches why the child looks WELL between episodes, why lethargy is the presentation that gets missed, why the enema is both diagnostic and therapeutic, and what a lead point means.",
+   "domains": [
+    "paediatric_surgery",
+    "paediatrics",
+    "emergency_medicine"
+   ],
+   "intents": [
+    "identify",
+    "act"
+   ],
+   "populations": [
+    "all_ages"
+   ],
+   "contexts": [
+    "routine"
+   ],
+   "hazard": "critical",
+   "urgency": "immediate",
+   "jurisdiction": "international",
+   "search": {
+    "terms": [
+     "air enema",
+     "air enema reduction",
+     "case",
+     "case intussusception",
+     "case: a 9-month-old drawing up his legs and screaming every twenty minutes",
+     "case: intussusception",
+     "dance sign",
+     "drawing",
+     "every",
+     "henoch-schonlein purpura",
+     "hydrostatic reduction",
+     "ileocolic",
+     "ileocolic intussusception",
+     "intussusception",
+     "intussusception case",
+     "intussusceptum",
+     "intussuscipiens",
+     "lead point",
+     "lead point intussusception",
+     "legs",
+     "meckel diverticulum",
+     "minutes",
+     "month",
+     "peyer patches",
+     "pseudokidney sign",
+     "redcurrant jelly stool",
+     "sausage shaped mass",
+     "sausage-shaped mass",
+     "screaming",
+     "target sign",
+     "target sign ultrasound",
+     "twenty"
+    ],
+    "ambiguous_terms": [],
+    "phrases": [],
+    "field_weights": {
+     "title": 8,
+     "short_title": 6,
+     "also_known_as": 5,
+     "terms": 4,
+     "summary": 2,
+     "body": 1,
+     "flashcards": 0.5
+    }
+   },
+   "body": {
+    "the_one_line": "9-month-old boy with 12 hours of episodes in which he suddenly screams, draws his knees to his chest, goes pale, and then settles completely for 20 minutes before the next one. He has vomited twice and passed a stool containing blood and mucus.",
+    "section_1_the_pattern_that_makes_the_diagnosis": {
+     "the_episodic_colic": {
+      "the_description": "SUDDEN, SEVERE, PAROXYSMAL PAIN LASTING A FEW MINUTES, WITH THE CHILD DRAWING UP THE LEGS, SCREAMING AND GOING PALE — THEN COMPLETE SETTLING BETWEEN EPISODES.",
+      "why_the_normality_between_episodes_is_the_trap": "THE CHILD LOOKS ENTIRELY WELL BETWEEN ATTACKS, OFTEN PLAYING NORMALLY. A CLINICIAN WHO SEES THE CHILD ONLY IN AN INTERVAL FINDS NOTHING WRONG AND SENDS THEM HOME. THE HISTORY OF THE EPISODES, FROM THE PARENT, IS THE DIAGNOSIS — NOT THE EXAMINATION AT ONE MOMENT.",
+      "why_it_is_episodic": "THE PAIN CORRESPONDS TO PERISTALTIC WAVES DRIVING THE TELESCOPED BOWEL FURTHER FORWARD. Between waves the traction on the mesentery eases and the pain settles."
+     },
+     "the_age": "PEAK INCIDENCE BETWEEN 6 MONTHS AND 2 YEARS, commonest around 5 to 10 months. IT OCCURS OUTSIDE THIS RANGE, AND A CHILD OVER 2 OR AN ADULT WITH INTUSSUSCEPTION IS MUCH MORE LIKELY TO HAVE A PATHOLOGICAL LEAD POINT, WHICH CHANGES THE MANAGEMENT.",
+     "the_presentation_that_is_most_often_missed": {
+      "the_problem": "A SIGNIFICANT PROPORTION OF INFANTS PRESENT WITH PROFOUND LETHARGY AND REDUCED RESPONSIVENESS RATHER THAN OBVIOUS COLIC. THEY ARE FLOPPY, PALE AND UNINTERESTED, AND ARE INVESTIGATED FOR SEPSIS, MENINGITIS OR A METABOLIC PROBLEM.",
+      "the_rule": "AN UNEXPLAINED LETHARGIC OR \"SEPTIC-LOOKING\" INFANT WITH NO CLEAR SOURCE NEEDS INTUSSUSCEPTION CONSIDERED AND AN ABDOMINAL ULTRASOUND. It is a diagnosis of the abdomen presenting as a neurological or septic picture, and the mechanism is not fully explained — possibly endogenous opioid release or cytokines from the compromised bowel."
+     },
+     "the_classic_triad_and_its_honest_status": "PAROXYSMAL PAIN · A PALPABLE SAUSAGE-SHAPED MASS · REDCURRANT JELLY STOOL. ALL THREE TOGETHER OCCUR IN WELL UNDER HALF OF CASES, AND REDCURRANT JELLY STOOL IS A LATE SIGN INDICATING MUCOSAL ISCHAEMIA. WAITING FOR THE TRIAD MEANS WAITING FOR ISCHAEMIC BOWEL."
+    },
+    "section_2_clerking_and_examination": {
+     "history": "Twelve hours of the episodes described. Two episodes of vomiting, the second BILE-STAINED. One stool with blood and mucus, described by the mother as looking like jam. Off his feeds. He had a cold a week ago.",
+     "the_bilious_vomiting": "BILIOUS (GREEN) VOMITING IN AN INFANT IS ALWAYS ABNORMAL AND INDICATES OBSTRUCTION DISTAL TO THE AMPULLA OF VATER UNTIL PROVEN OTHERWISE. It is a red flag in its own right — see the malrotation case.",
+     "the_preceding_viral_illness": "A RECENT VIRAL INFECTION, OFTEN RESPIRATORY OR GASTROINTESTINAL, IS COMMON. It causes HYPERTROPHY OF PEYER PATCHES — lymphoid tissue in the terminal ileum — WHICH ACTS AS THE LEAD POINT. THAT IS WHY MOST CASES ARE ILEOCOLIC AND WHY THE PEAK AGE COINCIDES WITH WEANING AND THE FIRST INFECTIONS.",
+     "vitals": "Temperature 37.4. Pulse 168. Respiratory rate 40. Capillary refill 3 seconds. Alert but intermittently distressed. Weight 8.6 kg.",
+     "examination": {
+      "the_mass": "A SAUSAGE-SHAPED MASS, TYPICALLY IN THE RIGHT UPPER QUADRANT OR EPIGASTRIUM, FELT BETWEEN EPISODES WHEN THE ABDOMEN IS RELAXED. EXAMINE THE CHILD WHEN THEY ARE SETTLED, IDEALLY FEEDING OR ASLEEP — an examination during a screaming episode finds nothing but a rigid abdomen.",
+      "dance_sign": "AN EMPTY, HOLLOW-FEELING RIGHT ILIAC FOSSA, BECAUSE THE CAECUM HAS BEEN DRAWN PROXIMALLY INTO THE TRANSVERSE COLON. It is subtle and inconsistent, but it is the anatomical logic of the disease made palpable.",
+      "rectal_examination": "May reveal blood and mucus on the glove, or in advanced cases the apex of the intussusceptum palpable as a mass, or even prolapsing through the anus — a very late and ominous finding that can be mistaken for rectal prolapse.",
+      "the_rest": "Assess hydration and perfusion carefully — these infants are often significantly dehydrated. Look for a PURPURIC RASH on the buttocks and legs, which would suggest Henoch-Schönlein purpura as a lead point."
+     }
+    },
+    "section_3_mechanism": {
+     "what_it_is": "ONE SEGMENT OF BOWEL — THE INTUSSUSCEPTUM — TELESCOPES INTO THE SEGMENT DISTAL TO IT — THE INTUSSUSCIPIENS — LIKE THE SECTIONS OF A COLLAPSING TELESCOPE, DRAGGING ITS MESENTERY IN WITH IT.",
+     "the_sequence": [
+      "1. Peristalsis drives the proximal segment forward into the distal one.",
+      "2. THE MESENTERY IS DRAGGED IN AND COMPRESSED BETWEEN THE LAYERS OF BOWEL.",
+      "3. VENOUS AND LYMPHATIC DRAINAGE IS OBSTRUCTED FIRST, causing congestion and oedema, which worsens the compression.",
+      "4. Mucosal congestion causes bleeding and mucus production — MIXED TOGETHER, THIS IS THE \"REDCURRANT JELLY\" STOOL. IT IS THEREFORE A SIGN OF MUCOSAL ISCHAEMIA, NOT AN EARLY DIAGNOSTIC FEATURE.",
+      "5. ARTERIAL SUPPLY IS EVENTUALLY COMPROMISED, causing full-thickness ischaemia, necrosis and perforation.",
+      "6. Meanwhile the lumen is obstructed, causing vomiting, distension and dehydration."
+     ],
+     "the_types": "ILEOCOLIC IS BY FAR THE COMMONEST — the terminal ileum telescopes through the ileocaecal valve into the colon. Also ileo-ileal, colocolic and ileo-ileocolic.",
+     "the_lead_point": {
+      "what_it_is": "ANY LESION THAT ALTERS THE NORMAL BOWEL WALL AND IS GRASPED BY PERISTALSIS, DRAGGING THE SEGMENT FORWARD.",
+      "in_infants": "USUALLY IDIOPATHIC — that is, hypertrophied Peyer patches after a viral illness, which is not regarded as a pathological lead point.",
+      "the_pathological_lead_points": "MECKEL DIVERTICULUM, the commonest identified · POLYP · DUPLICATION CYST · LYMPHOMA, particularly in older children · HENOCH-SCHÖNLEIN PURPURA, where submucosal haematoma acts as the lead point and the intussusception is often ILEO-ILEAL, so it may be missed on a contrast enema · CYSTIC FIBROSIS with inspissated stool · and, in adults, a TUMOUR in the majority.",
+      "the_rule_that_follows": "A PATHOLOGICAL LEAD POINT IS MUCH MORE LIKELY IN CHILDREN OVER 2, IN RECURRENT INTUSSUSCEPTION, AND IN ADULTS. THESE PATIENTS NEED THE LEAD POINT SOUGHT AND USUALLY NEED SURGERY RATHER THAN ENEMA REDUCTION ALONE — IN ADULTS, INTUSSUSCEPTION IS A TUMOUR UNTIL PROVEN OTHERWISE AND IS TREATED BY RESECTION WITHOUT ATTEMPTED REDUCTION."
+     }
+    },
+    "section_4_investigations": {
+     "ultrasound": {
+      "the_status": "THE INVESTIGATION OF CHOICE — sensitivity and specificity above 95% in experienced hands, no radiation, immediate, and it identifies alternative diagnoses.",
+      "the_signs": "THE TARGET SIGN (or DOUGHNUT SIGN) — concentric rings of bowel within bowel on TRANSVERSE section. THE PSEUDOKIDNEY SIGN — the same appearance on LONGITUDINAL section, resembling a kidney. Also look for FREE FLUID, TRAPPED FLUID between the layers, ABSENT DOPPLER FLOW in the intussusceptum, and a LEAD POINT — all of which predict a lower chance of successful enema reduction."
+     },
+     "abdominal_radiograph": "NOT DIAGNOSTIC and often normal. It may show obstruction, a soft tissue mass or absence of gas in the right lower quadrant. ITS MAIN VALUE IS TO EXCLUDE FREE AIR FROM PERFORATION, which is an absolute contraindication to enema reduction. A NORMAL FILM DOES NOT EXCLUDE INTUSSUSCEPTION.",
+     "bloods": "Full blood count · UREA AND ELECTROLYTES, which are frequently deranged from vomiting and third-space loss · GLUCOSE · CRP · GROUP AND SAVE · blood gas with LACTATE, where a rising lactate suggests ischaemia · and capillary blood gas for the degree of dehydration and acidosis."
+    },
+    "section_5_management": {
+     "a_resuscitate_first": {
+      "the_rule": "THESE INFANTS ARE MORE DEHYDRATED THAN THEY LOOK. FLUID RESUSCITATE BEFORE ANY ATTEMPT AT REDUCTION — the procedure and any subsequent anaesthetic are unsafe in a shocked child.",
+      "the_practical": "INTRAVENOUS ACCESS. FLUID BOLUS OF 10 to 20 mL/kg of balanced crystalloid, reassessing after each. FOR THIS 8.6 kg CHILD, A 20 mL/kg BOLUS IS 172 mL. Then maintenance plus deficit replacement. NASOGASTRIC TUBE on free drainage to decompress and prevent aspiration. NIL BY MOUTH. Analgesia. Broad-spectrum antibiotics before reduction, per local policy. Correct electrolytes and glucose."
+     },
+     "b_the_enema_which_is_both_the_test_and_the_treatment": {
+      "what_it_is": "AIR (PNEUMATIC) OR HYDROSTATIC CONTRAST OR SALINE IS INSTILLED PER RECTUM UNDER RADIOLOGICAL OR ULTRASOUND GUIDANCE, AND THE PRESSURE PUSHES THE INTUSSUSCEPTUM BACK. IT IS DIAGNOSTIC AND THERAPEUTIC IN ONE PROCEDURE.",
+      "the_success_rate": "ROUGHLY 80 TO 90% IN UNCOMPLICATED CASES IN EXPERIENCED HANDS. AIR ENEMA IS GENERALLY PREFERRED — higher success, lower radiation, and less contamination if perforation occurs.",
+      "the_confirmation_of_success": "REFLUX OF AIR OR CONTRAST INTO THE TERMINAL ILEUM, plus clinical improvement. WITHOUT THAT REFLUX, REDUCTION IS INCOMPLETE.",
+      "the_absolute_contraindications": "PERFORATION OR FREE AIR · PERITONITIS · HAEMODYNAMIC INSTABILITY OR SHOCK THAT HAS NOT BEEN CORRECTED. THESE CHILDREN GO TO THEATRE.",
+      "the_essential_precondition": "A SURGEON AND A THEATRE MUST BE AVAILABLE BEFORE THE ENEMA IS STARTED, BECAUSE PERFORATION OCCURS IN ROUGHLY 1% AND REQUIRES IMMEDIATE LAPAROTOMY. THE PROCEDURE IS NEVER PERFORMED WITHOUT SURGICAL COVER.",
+      "the_tension_pneumoperitoneum_warning": "IF PERFORATION OCCURS DURING AN AIR ENEMA, AIR UNDER PRESSURE ENTERS THE PERITONEUM AND CAN CAUSE A TENSION PNEUMOPERITONEUM, SPLINTING THE DIAPHRAGM AND CAUSING CARDIORESPIRATORY COLLAPSE. IT IS TREATED BY IMMEDIATE NEEDLE DECOMPRESSION OF THE ABDOMEN. THE EQUIPMENT FOR THIS MUST BE IN THE ROOM.",
+      "delayed_repeat_enema": "If the first attempt partially reduces the intussusception in a stable child, a repeat attempt after a few hours is often successful and avoids surgery. It is a recognised technique, not a failure."
+     },
+     "c_surgery": {
+      "the_indications": "FAILED ENEMA REDUCTION · PERFORATION OR PERITONITIS · SHOCK · SUSPECTED PATHOLOGICAL LEAD POINT · and generally in ADULTS and older children.",
+      "the_operation": "MANUAL REDUCTION BY GENTLY SQUEEZING THE INTUSSUSCEPTUM BACK FROM THE DISTAL END — PUSHING, NEVER PULLING, BECAUSE TRACTION TEARS THE OEDEMATOUS BOWEL. If reduction fails, or the bowel is necrotic or a lead point is found, RESECTION WITH PRIMARY ANASTOMOSIS. Laparoscopic reduction is used in many centres.",
+      "the_incidental_appendicectomy": "Frequently performed at the same operation given the right iliac fossa incision, though practice varies."
+     },
+     "d_after_reduction": {
+      "observe": "ADMIT AND OBSERVE FOR AT LEAST 24 HOURS. RECURRENCE OCCURS IN ROUGHLY 5 TO 10% AFTER ENEMA REDUCTION, AND MOST RECURRENCES HAPPEN WITHIN THE FIRST 24 TO 48 HOURS. Do not discharge straight from the radiology department.",
+      "feeding": "Reintroduce feeds gradually once the child is comfortable and settled.",
+      "the_safety_netting": "TELL THE PARENTS EXPLICITLY WHAT RECURRENCE LOOKS LIKE — the same episodes of screaming and drawing up the legs — AND THAT THEY SHOULD RETURN IMMEDIATELY. GIVE IT IN WRITING. Recurrence is common enough that this conversation is not optional.",
+      "recurrent_intussusception": "MORE THAN ONE RECURRENCE SHOULD PROMPT A SEARCH FOR A PATHOLOGICAL LEAD POINT with further imaging and often surgery."
+     },
+     "e_the_vaccine_note": "AN ASSOCIATION BETWEEN THE FIRST-GENERATION ROTAVIRUS VACCINE AND INTUSSUSCEPTION LED TO ITS WITHDRAWAL. CURRENT ROTAVIRUS VACCINES CARRY A VERY SMALL EXCESS RISK THAT IS GREATLY OUTWEIGHED BY THE BENEFIT IN PREVENTING SEVERE GASTROENTERITIS, PARTICULARLY IN SETTINGS WHERE ROTAVIRUS DIARRHOEA IS A MAJOR CAUSE OF CHILD DEATH. Know the association, and do not let it become a reason to discourage vaccination."
+    },
+    "section_6_teaching_points": {
+     "bonus_1_the_child_looks_well_between_episodes": "The history from the parent is the diagnosis, not the examination at one moment. A clinician who sees the child in an interval finds a normal, playing infant and sends them home. Ask about the pattern and examine when the child is settled.",
+     "bonus_2_lethargy_is_the_presentation_that_gets_missed": "A significant proportion present with profound lethargy and reduced responsiveness rather than colic, and are worked up for sepsis or meningitis. An unexplained floppy, pale infant with no clear source needs an abdominal ultrasound.",
+     "bonus_3_redcurrant_jelly_stool_is_a_late_sign": "It is blood and mucus from mucosal ischaemia. Waiting for the classic triad means waiting for ischaemic bowel — and all three features together occur in well under half of cases.",
+     "bonus_4_the_enema_is_the_test_and_the_treatment": "Air enema reduces 80 to 90% of uncomplicated cases. Success is confirmed by REFLUX INTO THE TERMINAL ILEUM — without that, reduction is incomplete.",
+     "bonus_5_never_do_the_enema_without_surgical_cover": "Perforation occurs in about 1% and needs immediate laparotomy. And if air perforates, TENSION PNEUMOPERITONEUM can splint the diaphragm and cause collapse — needle decompression equipment must be in the room.",
+     "bonus_6_push_never_pull_at_operation": "Manual reduction is by squeezing the intussusceptum back from the distal end. Traction tears the oedematous bowel.",
+     "bonus_7_age_predicts_the_lead_point": "Under 2 it is usually idiopathic — hypertrophied Peyer patches after a viral illness. Over 2, recurrent, or in an adult, a pathological lead point is likely: Meckel diverticulum, polyp, lymphoma or, in adults, a tumour. Adults are resected without attempted reduction.",
+     "trap_1": "BILIOUS VOMITING IN AN INFANT IS ALWAYS ABNORMAL — it indicates obstruction distal to the ampulla.",
+     "trap_2": "A NORMAL ABDOMINAL RADIOGRAPH DOES NOT EXCLUDE INTUSSUSCEPTION — its role is to exclude free air.",
+     "trap_3": "RESUSCITATE BEFORE REDUCING — these infants are more dehydrated than they look.",
+     "trap_4": "Look for a purpuric rash — Henoch-Schönlein purpura causes ILEO-ILEAL intussusception that a contrast enema may miss.",
+     "trap_5": "ADMIT AND OBSERVE for at least 24 hours — recurrence is 5 to 10% and mostly early.",
+     "trap_6": "Give written safety-netting describing exactly what recurrence looks like.",
+     "trap_7": "Dance sign — an empty right iliac fossa — is the anatomy of the disease made palpable.",
+     "one_line_summary": "Ileocolic intussusception in a 9-month-old. The history of the episodes is the diagnosis because he looks well in between, resuscitate before reducing, air enema with a surgeon and theatre standing by — and admit him for 24 hours because it comes back."
+    }
+   },
+   "glossary": [
+    {
+     "abbr": "AGE",
+     "full": "advanced glycation end product"
+    },
+    {
+     "abbr": "CRP",
+     "full": "C-reactive protein"
+    }
+   ],
+   "specialty": "Surgery — Paediatric surgery",
+   "teaching_case": true,
+   "inputs": [],
+   "logic": {},
+   "outputs": [],
+   "warnings": [
+    "THE CHILD LOOKS WELL BETWEEN EPISODES — the parent history is the diagnosis, not a single examination.",
+    "PROFOUND LETHARGY may be the only presentation — an unexplained floppy pale infant needs an abdominal ultrasound.",
+    "REDCURRANT JELLY STOOL IS A LATE SIGN of mucosal ischaemia — waiting for the triad means waiting for dead bowel.",
+    "BILIOUS VOMITING IN AN INFANT IS ALWAYS ABNORMAL.",
+    "A NORMAL ABDOMINAL RADIOGRAPH DOES NOT EXCLUDE INTUSSUSCEPTION — its role is to exclude free air.",
+    "RESUSCITATE BEFORE ATTEMPTING REDUCTION — these infants are more dehydrated than they appear.",
+    "NEVER PERFORM AN ENEMA WITHOUT A SURGEON AND THEATRE AVAILABLE — perforation occurs in about 1%.",
+    "TENSION PNEUMOPERITONEUM can follow air enema perforation — needle decompression equipment must be in the room.",
+    "Confirm success by REFLUX INTO THE TERMINAL ILEUM — without it, reduction is incomplete.",
+    "Absolute contraindications to enema: perforation, peritonitis, or uncorrected shock.",
+    "At operation PUSH, never PULL — traction tears oedematous bowel.",
+    "A PATHOLOGICAL LEAD POINT is likely over age 2, in recurrence, and in adults — adults are resected without attempted reduction.",
+    "Look for a PURPURIC RASH — Henoch-Schönlein purpura causes ileo-ileal intussusception a contrast enema may miss.",
+    "ADMIT AND OBSERVE FOR AT LEAST 24 HOURS — recurrence is 5 to 10% and mostly early.",
+    "GIVE WRITTEN SAFETY-NETTING describing exactly what recurrence looks like.",
+    "Doses and volumes here are teaching examples. Follow local paediatric surgical guidance."
+   ],
+   "limitations": [
+    "A WORKED TEACHING CASE, not a protocol. Enema technique, antibiotic policy and delayed repeat attempts vary between centres.",
+    "Management of a pathological lead point and of adult intussusception differs substantially."
+   ],
+   "flashcards": [
+    {
+     "q": "Why is the diagnosis missed between episodes?",
+     "a": "The child looks entirely well and often plays normally — the parent history of the episodes is the diagnosis."
+    },
+    {
+     "q": "What is the presentation that gets worked up as sepsis?",
+     "a": "Profound lethargy and reduced responsiveness without obvious colic."
+    },
+    {
+     "q": "What is redcurrant jelly stool and when does it appear?",
+     "a": "Blood and mucus from mucosal ischaemia — a LATE sign, not an early diagnostic feature."
+    },
+    {
+     "q": "What are the ultrasound signs?",
+     "a": "Target or doughnut sign transversely, pseudokidney sign longitudinally."
+    },
+    {
+     "q": "What is Dance sign?",
+     "a": "An empty right iliac fossa, because the caecum has been drawn proximally."
+    },
+    {
+     "q": "How successful is air enema reduction?",
+     "a": "Roughly 80 to 90% in uncomplicated cases in experienced hands."
+    },
+    {
+     "q": "How is successful reduction confirmed?",
+     "a": "Reflux of air or contrast into the terminal ileum plus clinical improvement."
+    },
+    {
+     "q": "What are the contraindications to enema reduction?",
+     "a": "Perforation or free air, peritonitis, and uncorrected shock."
+    },
+    {
+     "q": "What complication of air enema needs immediate needle decompression?",
+     "a": "Tension pneumoperitoneum splinting the diaphragm."
+    },
+    {
+     "q": "Why push rather than pull at operation?",
+     "a": "Traction tears the oedematous bowel — reduce by squeezing from the distal end."
+    },
+    {
+     "q": "When is a pathological lead point likely?",
+     "a": "Over age 2, in recurrent cases, and in adults — where a tumour is the commonest cause."
+    },
+    {
+     "q": "What is the recurrence rate and when does it occur?",
+     "a": "5 to 10% after enema reduction, mostly within the first 24 to 48 hours."
+    },
+    {
+     "q": "Why do most cases follow a viral illness?",
+     "a": "Hypertrophied Peyer patches in the terminal ileum act as the lead point — hence ileocolic predominance."
+    }
+   ],
+   "checkboxes": [
+    "History of paroxysmal episodes obtained from the parent",
+    "Child examined when settled, not mid-scream",
+    "Bilious vomiting recognised as always abnormal",
+    "Lethargy considered as a presentation in its own right",
+    "Purpuric rash looked for",
+    "Hydration and perfusion assessed and corrected before any procedure",
+    "Nasogastric tube and nil by mouth",
+    "Ultrasound obtained as first-line imaging",
+    "Radiograph used to exclude free air, not to exclude the diagnosis",
+    "Surgeon and theatre available before the enema starts",
+    "Needle decompression equipment available for air enema",
+    "Reduction confirmed by reflux into the terminal ileum",
+    "Admitted and observed at least 24 hours",
+    "Written safety-netting describing recurrence given to parents",
+    "Pathological lead point sought if over 2, recurrent, or an adult"
+   ],
+   "related_slugs": [
+    "intestinal_obstruction_levels_causes_and_decisions"
+   ],
+   "patient_integration": null,
+   "governance": {
+    "evidence_tier": "T5_textbook_or_standard_teaching",
+    "verification_status": "standard_teaching",
+    "sources": [],
+    "nigeria_overlay": null,
+    "build_date": "2026-08-07",
+    "review_interval_months": 12,
+    "next_review_due": "2027-08-07",
+    "clinical_reviewer": null,
+    "approved_for_release": false,
+    "local_confirmation_required": true,
+    "supersedes": null,
+    "content_hash": "67def13ccfc40286"
+   }
+  },
+  {
+   "id": "AS-CASE-0056",
+   "schema_version": "4.0.0",
+   "content_release": "AWIBI-SCOUT-CONTENT-2026.08.R3",
+   "type": "case",
+   "title": "CASE: A 5-Week-Old Vomiting Across the Room After Every Feed",
+   "short_title": "Case: hypertrophic pyloric stenosis",
+   "slug": "case_a_5_week_old_vomiting_across_the_room_after_every_feed",
+   "also_known_as": [
+    "case pyloric stenosis",
+    "infantile hypertrophic pyloric stenosis case",
+    "projectile vomiting case",
+    "olive mass",
+    "test feed",
+    "paradoxical aciduria",
+    "hypochloraemic metabolic alkalosis",
+    "ramstedt pyloromyotomy"
+   ],
+   "summary": "A hungry baby with projectile non-bilious vomiting. Teaches why the vomiting is NOT bilious and what that excludes, the exact electrolyte picture and why the urine becomes paradoxically acidic, and why this is a MEDICAL emergency corrected before any operation.",
+   "domains": [
+    "paediatric_surgery",
+    "paediatrics",
+    "emergency_medicine"
+   ],
+   "intents": [
+    "identify",
+    "act"
+   ],
+   "populations": [
+    "all_ages"
+   ],
+   "contexts": [
+    "routine"
+   ],
+   "hazard": "high",
+   "urgency": "urgent",
+   "jurisdiction": "international",
+   "search": {
+    "terms": [
+     "across",
+     "after",
+     "apnoea after anaesthesia",
+     "case",
+     "case pyloric stenosis",
+     "case: a 5-week-old vomiting across the room after every feed",
+     "case: hypertrophic pyloric stenosis",
+     "every",
+     "feed",
+     "hypertrophic pyloric stenosis",
+     "hypochloraemic hypokalaemic metabolic alkalosis",
+     "hypochloraemic metabolic alkalosis",
+     "infantile hypertrophic pyloric stenosis case",
+     "non-bilious",
+     "olive mass",
+     "paradoxical aciduria",
+     "projectile vomiting",
+     "projectile vomiting case",
+     "pyloric olive",
+     "ramstedt pyloromyotomy",
+     "room",
+     "succus entericus",
+     "test feed",
+     "ultrasound pylorus",
+     "visible peristalsis",
+     "vomiting",
+     "week"
+    ],
+    "ambiguous_terms": [],
+    "phrases": [],
+    "field_weights": {
+     "title": 8,
+     "short_title": 6,
+     "also_known_as": 5,
+     "terms": 4,
+     "summary": 2,
+     "body": 1,
+     "flashcards": 0.5
+    }
+   },
+   "body": {
+    "the_one_line": "5-week-old firstborn boy with 10 days of vomiting after feeds, now forceful and travelling across the room. He is hungry immediately afterwards and feeds avidly. He has lost weight and his nappies are drier than usual.",
+    "section_1_the_three_features_that_make_the_diagnosis": {
+     "one_the_vomiting_is_non_bilious": {
+      "the_statement": "THE OBSTRUCTION IS AT THE PYLORUS, WHICH IS PROXIMAL TO THE AMPULLA OF VATER WHERE BILE ENTERS THE DUODENUM. BILE THEREFORE CANNOT REACH THE STOMACH, AND THE VOMIT IS MILKY, NEVER GREEN.",
+      "the_diagnostic_power": "THIS IS THE SINGLE MOST USEFUL DISCRIMINATOR IN NEONATAL AND INFANT VOMITING. NON-BILIOUS VOMITING PLACES THE OBSTRUCTION AT OR ABOVE THE PYLORUS. BILIOUS (GREEN) VOMITING PLACES IT BELOW THE AMPULLA AND MUST TRIGGER AN IMMEDIATE SEARCH FOR MALROTATION WITH VOLVULUS, WHICH IS A DIFFERENT AND FAR MORE URGENT DISEASE. ASKING THE COLOUR OF THE VOMIT IS THE MOST IMPORTANT QUESTION IN THE HISTORY."
+     },
+     "two_the_vomiting_is_projectile": "FORCEFUL, TRAVELLING A DISTANCE, OCCURRING SHORTLY AFTER A FEED. It results from vigorous gastric peristalsis against a fixed obstruction. Note that it is often NOT projectile at the outset and becomes so as the hypertrophy progresses — so early cases can be dismissed as reflux or overfeeding.",
+     "three_the_baby_is_hungry": {
+      "the_observation": "HE VOMITS, THEN IMMEDIATELY WANTS TO FEED AGAIN AND FEEDS AVIDLY.",
+      "why_it_matters": "A \"HUNGRY VOMITER\" IS CHARACTERISTIC. AN INFANT VOMITING FROM SEPSIS, RAISED INTRACRANIAL PRESSURE, A METABOLIC DISORDER OR GASTROENTERITIS IS TYPICALLY LETHARGIC AND UNINTERESTED IN FEEDING. THE COMBINATION OF VOMITING PLUS AVID HUNGER PLUS WEIGHT LOSS IS ALMOST DIAGNOSTIC."
+     }
+    },
+    "section_2_clerking": {
+     "history": "Vomiting for 10 days, initially small posset-like amounts and now forceful and after every feed. Milky, NEVER GREEN. Hungry immediately afterwards. Fewer wet nappies. Constipated. Weight has fallen from 4.1 kg at birth and 4.4 kg at 2 weeks to 4.0 kg today — HE HAS LOST WEIGHT AND CROSSED CENTILES.",
+     "the_epidemiology": "TYPICALLY PRESENTS BETWEEN 2 AND 8 WEEKS OF AGE, most often around 3 to 6 weeks. MUCH COMMONER IN BOYS, roughly 4 to 5 times, AND CLASSICALLY IN FIRSTBORN MALES. A POSITIVE FAMILY HISTORY, especially maternal, substantially increases risk. Associated with ERYTHROMYCIN exposure in the neonate or via a breastfeeding mother, and with bottle feeding and maternal smoking.",
+     "the_history_to_take": "THE COLOUR OF THE VOMIT, asked explicitly · the FORCE and TIMING relative to feeds · whether the baby is hungry afterwards · WET NAPPIES AND STOOL FREQUENCY · WEIGHT, plotted against the birth weight and previous measurements · feeding history and volumes · fever or other features of sepsis · and family history.",
+     "the_weight_chart": "PLOT THE WEIGHT. A BABY WHO HAS LOST WEIGHT OR CROSSED CENTILES DOWNWARDS HAS A SIGNIFICANT PROBLEM, AND THE CHART TURNS A VAGUE \"HE IS VOMITING A LOT\" INTO OBJECTIVE EVIDENCE. It is the single most useful piece of paper in paediatric assessment and it is frequently not requested.",
+     "vitals_and_examination": {
+      "general": "Alert but irritable. SUNKEN FONTANELLE, dry mucous membranes, reduced skin turgor, capillary refill 3 seconds — MODERATELY DEHYDRATED. Weight 4.0 kg.",
+      "visible_peristalsis": "WATCH THE ABDOMEN DURING A FEED WITH THE LIGHT ACROSS IT — GASTRIC PERISTALTIC WAVES MAY BE SEEN MOVING FROM LEFT TO RIGHT ACROSS THE UPPER ABDOMEN. It is a striking sign when present.",
+      "the_test_feed": {
+       "what_it_is": "THE CLASSICAL BEDSIDE EXAMINATION. FEED THE BABY — the sucking relaxes the abdominal wall and settles them — AND PALPATE IN THE EPIGASTRIUM OR RIGHT UPPER QUADRANT, JUST TO THE RIGHT OF THE MIDLINE AND BELOW THE LIVER EDGE, WITH THE BABY LYING ON THEIR LEFT SIDE OR OVER THE PARENT SHOULDER.",
+       "the_finding": "THE HYPERTROPHIED PYLORUS IS PALPABLE AS A FIRM, SMOOTH, MOBILE MASS ABOUT THE SIZE AND SHAPE OF AN OLIVE.",
+       "the_honest_status": "A PALPABLE OLIVE IS ESSENTIALLY DIAGNOSTIC AND, IN SOME CENTRES, REMOVES THE NEED FOR IMAGING. BUT IT REQUIRES PATIENCE AND EXPERIENCE, AND WITH THE AVAILABILITY OF ULTRASOUND FEWER CLINICIANS ARE PRACTISED AT IT. FAILURE TO FEEL IT EXCLUDES NOTHING. Attempt it — it is a genuine skill worth having — but do not rely on its absence."
+      }
+     }
+    },
+    "section_3_the_biochemistry_which_is_the_examinable_core": {
+     "what_is_lost": "PERSISTENT VOMITING OF PURELY GASTRIC CONTENTS LOSES HYDROGEN IONS (HCl), CHLORIDE, SODIUM, POTASSIUM AND WATER. CRUCIALLY, NOTHING FROM BELOW THE PYLORUS IS LOST — no bicarbonate-rich duodenal secretions — WHICH IS WHY THE PICTURE IS SO PURE AND SO CHARACTERISTIC.",
+     "the_classic_picture": "HYPOCHLORAEMIC, HYPOKALAEMIC METABOLIC ALKALOSIS. Low chloride, low potassium, low sodium, raised bicarbonate, alkalotic pH.",
+     "the_paradoxical_aciduria_explained_step_by_step": {
+      "the_puzzle": "THE BABY IS ALKALOTIC, SO THE KIDNEY SHOULD EXCRETE ALKALINE URINE AND RETAIN ACID. INSTEAD, THE URINE BECOMES ACIDIC. WHY?",
+      "the_sequence": [
+       "1. EARLY, the kidney does the appropriate thing: it excretes BICARBONATE to correct the alkalosis, and to maintain electroneutrality it excretes SODIUM alongside it. The urine is alkaline.",
+       "2. But sodium loss worsens the already severe VOLUME DEPLETION.",
+       "3. AT THAT POINT THE KIDNEY PRIORITY CHANGES. PRESERVING CIRCULATING VOLUME OUTRANKS CORRECTING pH. Aldosterone is activated and the kidney reabsorbs sodium avidly in the distal tubule.",
+       "4. Sodium reabsorption there requires exchange for either POTASSIUM or HYDROGEN. Potassium is already depleted from the vomiting, SO THE KIDNEY IS FORCED TO EXCRETE HYDROGEN IONS INSTEAD.",
+       "5. THE RESULT IS ACIDIC URINE IN AN ALKALOTIC BABY — PARADOXICAL ACIDURIA — AND IT WORSENS THE ALKALOSIS FURTHER."
+      ],
+      "why_it_matters_clinically": "PARADOXICAL ACIDURIA IS A MARKER OF SEVERE, ESTABLISHED DEHYDRATION AND POTASSIUM DEPLETION. IT SIGNALS A BABY WHO NEEDS AGGRESSIVE AND CAREFUL CORRECTION, NOT A QUICK TRIP TO THEATRE. It is also one of the cleanest illustrations in medicine of the kidney trading one problem for another when volume is threatened."
+     }
+    },
+    "section_4_investigations": {
+     "the_essential_bloods": "UREA AND ELECTROLYTES INCLUDING CHLORIDE — chloride must be requested specifically in many laboratories and is the key marker. VENOUS OR CAPILLARY BLOOD GAS for pH and bicarbonate. GLUCOSE. Full blood count. Group and save. THE BIOCHEMISTRY GUIDES THE RESUSCITATION AND DETERMINES WHEN THE BABY IS FIT FOR ANAESTHESIA.",
+     "ultrasound": {
+      "the_status": "THE INVESTIGATION OF CHOICE — non-invasive, no radiation, and highly accurate in experienced hands.",
+      "the_criteria": "PYLORIC MUSCLE THICKNESS GREATER THAN ABOUT 3 mm AND PYLORIC CHANNEL LENGTH GREATER THAN ABOUT 15 to 17 mm, with failure of gastric contents to pass. Thresholds vary slightly between centres and with the age of the infant.",
+      "the_practical_note": "IF THE SCAN IS EQUIVOCAL AND THE CLINICAL PICTURE IS STRONG, REPEAT IT AFTER A DAY OR TWO — the hypertrophy progresses and an early scan can be borderline."
+     },
+     "contrast_study": "A barium or water-soluble upper gastrointestinal contrast study shows the \"STRING SIGN\" of the elongated narrowed channel and the \"SHOULDER SIGN\" of the mass indenting the antrum. IT IS RARELY NEEDED NOW, BUT AN UPPER GASTROINTESTINAL CONTRAST STUDY IS THE INVESTIGATION OF CHOICE IF MALROTATION IS THE CONCERN — a different question entirely."
+    },
+    "section_5_management": {
+     "the_single_most_important_principle": {
+      "the_statement": "PYLORIC STENOSIS IS A MEDICAL EMERGENCY, NOT A SURGICAL ONE. THE OBSTRUCTION IS NOT STRANGULATING AND THE BOWEL IS NOT ISCHAEMIC. THE DANGER IS THE DEHYDRATION AND THE METABOLIC DERANGEMENT. THE BABY MUST BE FULLY RESUSCITATED AND BIOCHEMICALLY CORRECTED BEFORE ANY OPERATION.",
+      "why_operating_early_is_dangerous": "ANAESTHETISING AN ALKALOTIC, HYPOKALAEMIC, DEHYDRATED INFANT RISKS ARRHYTHMIA AND, SPECIFICALLY, POSTOPERATIVE APNOEA. METABOLIC ALKALOSIS SUPPRESSES THE CENTRAL RESPIRATORY DRIVE, BECAUSE CENTRAL CHEMORECEPTORS RESPOND TO CEREBROSPINAL FLUID pH — AN ALKALOTIC BABY UNDER-BREATHES AFTER ANAESTHESIA AND CAN HAVE PROLONGED APNOEAS. THIS IS THE SPECIFIC REASON THE ALKALOSIS MUST BE CORRECTED FIRST, AND IT IS THE POINT THAT EXPLAINS EVERYTHING ELSE ABOUT THE MANAGEMENT.",
+      "the_practical_rule": "THERE IS NO SUCH THING AS AN EMERGENCY PYLOROMYOTOMY. Correcting the biochemistry usually takes 24 to 48 hours, occasionally longer, and that time is treatment, not delay."
+     },
+     "a_fluid_resuscitation_and_correction": {
+      "if_shocked": "BOLUS of 10 to 20 mL/kg of BALANCED CRYSTALLOID OR SODIUM CHLORIDE 0.9%, repeated as needed. FOR THIS 4 kg BABY, A 20 mL/kg BOLUS IS 80 mL.",
+      "then_replacement": "MAINTENANCE PLUS DEFICIT, using a sodium chloride-containing fluid WITH ADDED POTASSIUM once urine output is established. Sodium chloride 0.9% with 5% glucose and added potassium chloride is a common choice. THE CHLORIDE IS THE POINT — replacing chloride allows the kidney to stop retaining bicarbonate and lets the alkalosis correct itself.",
+      "the_potassium_rule": "DO NOT ADD POTASSIUM UNTIL THE BABY IS PASSING URINE. Then replace it, because the total body deficit is large even when the serum level looks only modestly low.",
+      "monitoring": "Regular electrolytes and gas, urine output, weight, and clinical hydration."
+     },
+     "b_the_targets_before_theatre": "THE BABY IS GENERALLY CONSIDERED FIT FOR SURGERY WHEN: CHLORIDE IS ABOVE ROUGHLY 100 mmol/L · BICARBONATE IS BELOW ROUGHLY 26 TO 30 mmol/L · SODIUM AND POTASSIUM ARE NORMAL · AND THE BABY IS CLINICALLY WELL HYDRATED WITH GOOD URINE OUTPUT. LOCAL THRESHOLDS VARY — KNOW YOURS, AND AGREE THEM WITH THE ANAESTHETIST.",
+     "c_supportive": "NIL BY MOUTH. NASOGASTRIC TUBE on free drainage with aspirates measured and REPLACED millilitre for millilitre with sodium chloride 0.9% plus potassium, because the aspirate is continued loss of exactly what you are trying to replace. Keep warm. Monitor glucose — these babies are at risk of hypoglycaemia.",
+     "d_the_operation": {
+      "ramstedt_pyloromyotomy": "THE MUSCLE OF THE PYLORUS IS INCISED LONGITUDINALLY DOWN TO, BUT NOT THROUGH, THE MUCOSA, WHICH THEN POUTS THROUGH THE DIVIDED MUSCLE AND RELIEVES THE OBSTRUCTION. Performed open through a right upper quadrant or periumbilical incision, or LAPAROSCOPICALLY.",
+      "the_key_technical_risk": "PERFORATION OF THE MUCOSA, most commonly at the DUODENAL end where the mucosa is closest to the surface. It is tested for at operation by insufflating air through the nasogastric tube. If it occurs it is repaired, and feeding is delayed.",
+      "the_other_risk": "INCOMPLETE MYOTOMY, causing persistent vomiting — the myotomy must extend far enough proximally onto the antrum."
+     },
+     "e_after_the_operation": {
+      "feeding": "FEEDS ARE USUALLY REINTRODUCED WITHIN A FEW HOURS AND GRADED UP. Most babies are feeding normally within 24 to 48 hours.",
+      "the_expected_vomiting": "SOME VOMITING IN THE FIRST 24 TO 48 HOURS IS COMMON AND EXPECTED, FROM GASTRIC ATONY AND OEDEMA AT THE MYOTOMY SITE. IT DOES NOT MEAN THE OPERATION HAS FAILED. WARN THE PARENTS OF THIS EXPLICITLY BEFORE IT HAPPENS — otherwise a normal postoperative course is experienced as a disaster. PERSISTENT vomiting beyond a few days should prompt consideration of incomplete myotomy or another diagnosis such as reflux.",
+      "apnoea_monitoring": "MONITOR FOR POSTOPERATIVE APNOEA, particularly if the alkalosis was significant or the infant is young or was premature.",
+      "prognosis": "EXCELLENT. The condition does not recur and there are no long-term sequelae. Say so to the parents, who are usually frightened."
+     }
+    },
+    "section_6_teaching_points": {
+     "bonus_1_ask_the_colour_of_the_vomit": "NON-BILIOUS places the obstruction at or above the pylorus. BILIOUS places it below the ampulla and demands an immediate search for malrotation with volvulus. It is the most important question in the history of any vomiting infant, and it separates a condition corrected over 48 hours from one that destroys the midgut in hours.",
+     "bonus_2_the_hungry_vomiter": "He vomits then feeds avidly. Infants vomiting from sepsis, raised intracranial pressure or metabolic disease are lethargic and uninterested. Vomiting plus avid hunger plus weight loss is close to diagnostic.",
+     "bonus_3_paradoxical_aciduria": "Early the kidney excretes bicarbonate with sodium, which worsens volume depletion. Once volume is threatened, preserving it outranks correcting pH: aldosterone drives sodium reabsorption in exchange for potassium — and when potassium is depleted, for HYDROGEN. Hence acid urine in an alkalotic baby, which worsens the alkalosis.",
+     "bonus_4_this_is_a_medical_emergency_not_a_surgical_one": "The bowel is not ischaemic. The danger is dehydration and alkalosis. There is no such thing as an emergency pyloromyotomy, and the 24 to 48 hours of correction is treatment, not delay.",
+     "bonus_5_alkalosis_causes_postoperative_apnoea": "Central chemoreceptors respond to cerebrospinal fluid pH, so an alkalotic baby under-breathes after anaesthesia and can have prolonged apnoeas. That single physiological fact is why the biochemistry must be corrected before theatre.",
+     "bonus_6_replace_the_nasogastric_aspirate_millilitre_for_millilitre": "The aspirate is continued loss of exactly the chloride, potassium and hydrogen you are trying to replace. Measuring it and replacing it with saline plus potassium is how the correction actually happens.",
+     "bonus_7_warn_the_parents_about_postoperative_vomiting": "Vomiting for the first 24 to 48 hours is expected from gastric atony and myotomy site oedema. Told in advance it is a normal course; discovered without warning it feels like the operation failed.",
+     "trap_1": "PLOT THE WEIGHT against birth weight and previous measurements — it converts \"vomiting a lot\" into objective evidence.",
+     "trap_2": "Failure to feel the olive excludes nothing — the skill is worth having but its absence is not reassurance.",
+     "trap_3": "Request CHLORIDE specifically — it is the key marker and is not always included by default.",
+     "trap_4": "Do not add potassium until the baby is passing urine.",
+     "trap_5": "If the ultrasound is equivocal and the picture is strong, repeat it in a day or two — the hypertrophy progresses.",
+     "trap_6": "Mucosal perforation at the duodenal end is the main technical risk, tested by air insufflation at operation.",
+     "one_line_summary": "Hypertrophic pyloric stenosis at 5 weeks. Non-bilious vomiting in a hungry baby who is losing weight, hypochloraemic hypokalaemic alkalosis with paradoxical aciduria — correct the biochemistry over 24 to 48 hours, then operate, because an alkalotic baby stops breathing after anaesthesia."
+    }
+   },
+   "glossary": [
+    {
+     "abbr": "AGE",
+     "full": "advanced glycation end product"
+    }
+   ],
+   "specialty": "Surgery — Paediatric surgery",
+   "teaching_case": true,
+   "inputs": [],
+   "logic": {},
+   "outputs": [],
+   "warnings": [
+    "ASK THE COLOUR OF THE VOMIT — bilious (green) vomiting means malrotation with volvulus until proven otherwise, a different and far more urgent disease.",
+    "THIS IS A MEDICAL EMERGENCY, NOT A SURGICAL ONE — the danger is dehydration and alkalosis, not ischaemic bowel.",
+    "THERE IS NO SUCH THING AS AN EMERGENCY PYLOROMYOTOMY — correct the biochemistry first, over 24 to 48 hours.",
+    "METABOLIC ALKALOSIS SUPPRESSES RESPIRATORY DRIVE AND CAUSES POSTOPERATIVE APNOEA — this is why correction precedes surgery.",
+    "REQUEST CHLORIDE SPECIFICALLY — it is the key marker and is not always included by default.",
+    "DO NOT ADD POTASSIUM until the baby is passing urine.",
+    "REPLACE NASOGASTRIC ASPIRATE millilitre for millilitre with saline plus potassium — it is continued loss of what you are replacing.",
+    "PARADOXICAL ACIDURIA indicates severe established dehydration and potassium depletion.",
+    "PLOT THE WEIGHT against birth weight and previous measurements.",
+    "FAILURE TO FEEL THE OLIVE EXCLUDES NOTHING.",
+    "If the ultrasound is equivocal but the picture is strong, repeat it after a day or two.",
+    "VOMITING FOR 24 TO 48 HOURS AFTER SURGERY IS EXPECTED — warn parents explicitly or a normal course feels like failure.",
+    "Persistent vomiting beyond a few days suggests incomplete myotomy or another diagnosis.",
+    "Mucosal perforation at the duodenal end is the main technical risk and is tested for at operation.",
+    "MONITOR FOR POSTOPERATIVE APNOEA, especially with significant alkalosis or prematurity.",
+    "Fluid volumes and thresholds here are teaching examples. Follow local paediatric surgical guidance."
+   ],
+   "limitations": [
+    "A WORKED TEACHING CASE, not a protocol. Biochemical thresholds for theatre, fluid regimens and feeding protocols vary between centres.",
+    "Ultrasound criteria vary slightly with infant age and local practice."
+   ],
+   "flashcards": [
+    {
+     "q": "Why is the vomiting non-bilious?",
+     "a": "The obstruction is at the pylorus, proximal to the ampulla of Vater, so bile cannot reach the stomach."
+    },
+    {
+     "q": "What does bilious vomiting in an infant mean?",
+     "a": "Obstruction below the ampulla — malrotation with volvulus until proven otherwise."
+    },
+    {
+     "q": "What is the \"hungry vomiter\" and why does it matter?",
+     "a": "The baby feeds avidly after vomiting — infants vomiting from sepsis or raised pressure are lethargic and uninterested."
+    },
+    {
+     "q": "Give the classic biochemical picture.",
+     "a": "Hypochloraemic, hypokalaemic metabolic alkalosis with hyponatraemia and raised bicarbonate."
+    },
+    {
+     "q": "Explain paradoxical aciduria.",
+     "a": "Volume preservation outranks pH: aldosterone drives sodium reabsorption in exchange for potassium, and when potassium is depleted, for hydrogen."
+    },
+    {
+     "q": "Why must the alkalosis be corrected before surgery?",
+     "a": "Central chemoreceptors respond to CSF pH — an alkalotic baby under-breathes after anaesthesia and can have prolonged apnoeas."
+    },
+    {
+     "q": "What is a test feed?",
+     "a": "Feeding the baby to relax the abdominal wall while palpating for the olive-sized pyloric mass in the epigastrium."
+    },
+    {
+     "q": "Give the ultrasound criteria.",
+     "a": "Muscle thickness over about 3 mm and channel length over about 15 to 17 mm, with failure of gastric emptying."
+    },
+    {
+     "q": "What are the biochemical targets before theatre?",
+     "a": "Chloride above roughly 100, bicarbonate below roughly 26 to 30, normal sodium and potassium, good urine output."
+    },
+    {
+     "q": "Describe the operation.",
+     "a": "Ramstedt pyloromyotomy — the pyloric muscle is incised down to but not through the mucosa."
+    },
+    {
+     "q": "What is the main technical risk?",
+     "a": "Mucosal perforation, most often at the duodenal end, tested for by air insufflation."
+    },
+    {
+     "q": "Why does vomiting persist for a day or two after surgery?",
+     "a": "Gastric atony and oedema at the myotomy site — expected, and parents should be warned in advance."
+    }
+   ],
+   "checkboxes": [
+    "Colour of the vomit established explicitly",
+    "Hunger after vomiting noted",
+    "Weight plotted against birth weight and previous measurements",
+    "Hydration assessed clinically",
+    "Test feed attempted for the pyloric olive",
+    "Urea, electrolytes INCLUDING CHLORIDE and a blood gas sent",
+    "Ultrasound arranged",
+    "Fluid resuscitation started, with potassium added only once passing urine",
+    "Nasogastric tube on free drainage with aspirate measured and replaced",
+    "Biochemical targets reached before theatre and agreed with the anaesthetist",
+    "Glucose monitored",
+    "Postoperative apnoea monitoring arranged",
+    "Parents warned that vomiting for 24 to 48 hours after surgery is expected",
+    "Excellent long-term prognosis explained"
+   ],
+   "related_slugs": [
+    "vomiting_in_the_infant_the_bilious_versus_non_bilious_split"
+   ],
+   "patient_integration": null,
+   "governance": {
+    "evidence_tier": "T5_textbook_or_standard_teaching",
+    "verification_status": "standard_teaching",
+    "sources": [],
+    "nigeria_overlay": null,
+    "build_date": "2026-08-07",
+    "review_interval_months": 12,
+    "next_review_due": "2027-08-07",
+    "clinical_reviewer": null,
+    "approved_for_release": false,
+    "local_confirmation_required": true,
+    "supersedes": null,
+    "content_hash": "5c363492705b1770"
+   }
+  },
+  {
+   "id": "AS-CASE-0057",
+   "schema_version": "4.0.0",
+   "content_release": "AWIBI-SCOUT-CONTENT-2026.08.R3",
+   "type": "case",
+   "title": "CASE: A 3-Week-Old with Green Vomit",
+   "short_title": "Case: malrotation with midgut volvulus",
+   "slug": "case_a_3_week_old_with_green_vomit",
+   "also_known_as": [
+    "case malrotation",
+    "midgut volvulus case",
+    "bilious vomiting neonate",
+    "ladd bands",
+    "ladd procedure",
+    "corkscrew sign",
+    "whirlpool sign",
+    "duodenal atresia double bubble",
+    "neonatal bowel obstruction"
+   ],
+   "summary": "A neonate with bilious vomiting. Teaches the single most important rule in paediatric surgery — bilious vomiting in a neonate is malrotation until proven otherwise — why the whole midgut can infarct in hours, and why the upper GI contrast study is the emergency investigation.",
+   "domains": [
+    "paediatric_surgery",
+    "paediatrics",
+    "emergency_medicine"
+   ],
+   "intents": [
+    "identify",
+    "act"
+   ],
+   "populations": [
+    "all_ages"
+   ],
+   "contexts": [
+    "routine"
+   ],
+   "hazard": "critical",
+   "urgency": "immediate",
+   "jurisdiction": "international",
+   "search": {
+    "terms": [
+     "bilious vomiting",
+     "bilious vomiting neonate",
+     "case",
+     "case malrotation",
+     "case: a 3-week-old with green vomit",
+     "case: malrotation with midgut volvulus",
+     "corkscrew sign",
+     "double bubble",
+     "duodenal atresia",
+     "duodenal atresia double bubble",
+     "duodenojejunal flexure",
+     "green",
+     "ladd bands",
+     "ladd procedure",
+     "ligament of treitz",
+     "malrotation",
+     "midgut volvulus",
+     "midgut volvulus case",
+     "necrotising enterocolitis",
+     "neonatal bowel obstruction",
+     "short bowel syndrome",
+     "superior mesenteric artery",
+     "upper gastrointestinal contrast study",
+     "vomit",
+     "week",
+     "whirlpool sign"
+    ],
+    "ambiguous_terms": [],
+    "phrases": [],
+    "field_weights": {
+     "title": 8,
+     "short_title": 6,
+     "also_known_as": 5,
+     "terms": 4,
+     "summary": 2,
+     "body": 1,
+     "flashcards": 0.5
+    }
+   },
+   "body": {
+    "the_one_line": "3-week-old baby, previously feeding and thriving, who has vomited three times this morning. The vomit is GREEN. She has otherwise seemed well and her abdomen is soft.",
+    "section_1_the_single_rule": {
+     "the_statement": "BILIOUS (GREEN) VOMITING IN A NEONATE IS MALROTATION WITH MIDGUT VOLVULUS UNTIL PROVEN OTHERWISE. IT IS A SURGICAL EMERGENCY REQUIRING IMMEDIATE ASSESSMENT AND URGENT IMAGING, AND IT IS THE SINGLE MOST IMPORTANT RULE IN PAEDIATRIC SURGERY.",
+     "why_the_colour_matters": "BILE ENTERS THE DUODENUM AT THE AMPULLA OF VATER. GREEN VOMIT THEREFORE MEANS THE OBSTRUCTION IS DISTAL TO THE AMPULLA. IN A NEONATE THAT MEANS A SMALL NUMBER OF DIAGNOSES, AND THE ONE THAT KILLS FASTEST IS VOLVULUS.",
+     "the_terrifying_part": {
+      "the_statement": "A BABY WITH MIDGUT VOLVULUS CAN LOOK COMPLETELY WELL. THE ABDOMEN IS OFTEN SOFT AND NON-DISTENDED, BECAUSE THE OBSTRUCTION IS HIGH AND THERE IS NOTHING BELOW IT TO DISTEND. THERE MAY BE NO TENDERNESS, NO FEVER AND NORMAL OBSERVATIONS.",
+      "the_consequence": "MEANWHILE THE ENTIRE MIDGUT — FROM THE SECOND PART OF THE DUODENUM TO THE MID-TRANSVERSE COLON — IS TWISTING AROUND ITS BLOOD SUPPLY AND CAN INFARCT WITHIN HOURS. BY THE TIME THE BABY LOOKS UNWELL, WITH A DISTENDED TENDER ABDOMEN, ABDOMINAL WALL DISCOLOURATION, SHOCK OR BLOODY STOOL, THE BOWEL IS USUALLY ALREADY DEAD. A WELL-LOOKING BABY WITH GREEN VOMIT IS THE PRESENTATION YOU WANT, AND IT IS EXACTLY THE ONE THAT GETS SENT HOME."
+     },
+     "the_practical_instruction": "DO NOT OBSERVE. DO NOT ARRANGE AN OUTPATIENT REVIEW. DO NOT ATTRIBUTE IT TO REFLUX, FEEDING PROBLEMS OR GASTROENTERITIS. TELEPHONE THE PAEDIATRIC SURGEONS AND ARRANGE AN URGENT UPPER GASTROINTESTINAL CONTRAST STUDY."
+    },
+    "section_2_the_embryology_that_explains_everything": {
+     "normal_rotation": "During weeks 6 to 10 of gestation the midgut herniates into the umbilical cord, ROTATES 270 DEGREES ANTICLOCKWISE around the axis of the SUPERIOR MESENTERIC ARTERY, and returns to the abdomen. The DUODENOJEJUNAL FLEXURE ends up in the LEFT UPPER QUADRANT at the ligament of Treitz, and the CAECUM in the RIGHT LOWER QUADRANT.",
+     "the_purpose_of_that_arrangement": {
+      "the_key_idea": "THE POINT OF NORMAL ROTATION IS THAT IT PLACES THE TWO ENDS OF THE MIDGUT — THE DUODENOJEJUNAL FLEXURE AND THE CAECUM — AS FAR APART AS POSSIBLE. THE MESENTERY THEREFORE HAS A BROAD BASE RUNNING DIAGONALLY ACROSS THE ABDOMEN, AND A BROAD BASE CANNOT TWIST."
+     },
+     "what_goes_wrong": "IN MALROTATION, ROTATION IS INCOMPLETE. THE DUODENOJEJUNAL FLEXURE SITS TOO LOW AND TOO FAR RIGHT, AND THE CAECUM SITS HIGH IN THE RIGHT UPPER QUADRANT. THE TWO ENDS ARE CLOSE TOGETHER, SO THE MESENTERY HANGS ON A NARROW STALK — AND A NARROW STALK TWISTS.",
+     "the_two_ways_malrotation_causes_obstruction": {
+      "volvulus": "THE MIDGUT ROTATES AROUND THE NARROW MESENTERIC PEDICLE, OCCLUDING THE SUPERIOR MESENTERIC ARTERY AND VEIN. THE ENTIRE MIDGUT IS AT RISK SIMULTANEOUSLY. THIS IS THE CATASTROPHE.",
+      "ladd_bands": "ABNORMAL PERITONEAL BANDS RUN FROM THE MALPOSITIONED CAECUM ACROSS THE DUODENUM TO THE RIGHT POSTERIOR ABDOMINAL WALL, COMPRESSING THE DUODENUM EXTRINSICALLY. This causes obstruction WITHOUT volvulus and can present more insidiously with intermittent vomiting and failure to thrive."
+     },
+     "the_timing_of_presentation": "ROUGHLY HALF TO TWO THIRDS PRESENT IN THE FIRST MONTH OF LIFE, AND THE LARGE MAJORITY WITHIN THE FIRST YEAR. BUT MALROTATION CAN PRESENT AT ANY AGE, INCLUDING IN ADULTS, WITH INTERMITTENT ABDOMINAL PAIN, VOMITING OR CHRONIC OBSTRUCTION — AND IT IS THEN MISDIAGNOSED FOR YEARS AS FUNCTIONAL ABDOMINAL PAIN OR AN EATING DISORDER. A CHILD OR ADULT WITH RECURRENT UNEXPLAINED BILIOUS VOMITING DESERVES AN UPPER GASTROINTESTINAL CONTRAST STUDY."
+    },
+    "section_3_clerking_and_examination": {
+     "history": "Born at term, uncomplicated pregnancy and delivery. Breastfeeding well and gaining weight. This morning she vomited three times; the mother describes the vomit as bright green. She has been slightly less interested in feeding since. Her last stool was normal this morning.",
+     "the_questions": "THE EXACT COLOUR OF THE VOMIT — ask the parent to describe it, and if there is a nappy or cloth, LOOK AT IT · onset and frequency · feeding and weight · stool pattern and any blood · abdominal distension · and antenatal history, since some anomalies are detected on scan.",
+     "the_associations_to_ask_about": "MALROTATION IS ASSOCIATED WITH CONGENITAL DIAPHRAGMATIC HERNIA, EXOMPHALOS AND GASTROSCHISIS, and with HETEROTAXY AND CONGENITAL CARDIAC DISEASE. A child with any of these has a much higher likelihood of malrotation, and many are screened.",
+     "vitals": "Temperature 36.9. Pulse 150. Respiratory rate 44. Capillary refill 2 seconds. Alert. Weight 3.6 kg. SHE LOOKS WELL — WHICH IS THE POINT.",
+     "examination": {
+      "the_abdomen": "SOFT, NOT DISTENDED, NOT TENDER. THIS IS ENTIRELY COMPATIBLE WITH MIDGUT VOLVULUS AND MUST NOT BE REASSURING. The obstruction is high, so there is little bowel below it to distend.",
+      "the_late_signs_that_mean_you_are_too_late": "ABDOMINAL DISTENSION · TENDERNESS AND GUARDING · ERYTHEMA OR BLUISH DISCOLOURATION OF THE ABDOMINAL WALL · BLOOD PER RECTUM · SHOCK, tachycardia, poor perfusion and metabolic acidosis. THESE INDICATE ESTABLISHED ISCHAEMIA OR INFARCTION.",
+      "the_rest": "Assess hydration and perfusion. Examine the groins for a hernia. Check for other anomalies. Assess for sepsis, which is the main differential in an unwell neonate."
+     }
+    },
+    "section_4_the_differential_of_bilious_vomiting_in_a_neonate": {
+     "one_malrotation_with_volvulus": "MUST BE EXCLUDED FIRST BECAUSE IT IS THE MOST TIME-CRITICAL.",
+     "two_duodenal_atresia": "Presents in the FIRST DAY OR TWO of life. Classic \"DOUBLE BUBBLE\" on plain radiograph — gas in the stomach and the proximal duodenum with NO distal gas. Strongly associated with DOWN SYNDROME, in roughly a third. Note that the vomiting is bilious only if the atresia is DISTAL to the ampulla, which is the majority.",
+     "three_jejunal_or_ileal_atresia": "Distal obstruction with more distension and multiple dilated loops on the film.",
+     "four_meconium_ileus": "Inspissated meconium obstructing the terminal ileum. STRONGLY ASSOCIATED WITH CYSTIC FIBROSIS — a baby with meconium ileus needs cystic fibrosis testing. Contrast enema may be both diagnostic and therapeutic.",
+     "five_hirschsprung_disease": "FAILURE TO PASS MECONIUM WITHIN 48 HOURS, abdominal distension, and often an explosive release of stool and gas on rectal examination. Diagnosed by rectal suction biopsy showing absent ganglion cells.",
+     "six_necrotising_enterocolitis": "Mainly PREMATURE infants. Feed intolerance, distension, bloody stool and systemic deterioration. PNEUMATOSIS INTESTINALIS on the radiograph is characteristic.",
+     "seven_sepsis_and_ileus": "A very common cause of vomiting in a neonate and always considered — but SEPSIS DOES NOT EXCLUDE MALROTATION, and treating a septic-looking baby with antibiotics while the midgut infarcts is a recognised disaster.",
+     "eight_incarcerated_inguinal_hernia": "Examine the groins in every vomiting infant. It is easily reduced early and catastrophic late."
+    },
+    "section_5_investigations": {
+     "the_upper_gastrointestinal_contrast_study": {
+      "the_status": "THE GOLD STANDARD AND THE EMERGENCY INVESTIGATION. IT MUST BE AVAILABLE OUT OF HOURS, AND IF IT IS NOT, THE BABY MUST BE TRANSFERRED TO A CENTRE WHERE IT IS — THAT NIGHT.",
+      "what_it_shows": "THE POSITION OF THE DUODENOJEJUNAL FLEXURE, WHICH IS THE KEY ANATOMICAL LANDMARK. NORMALLY IT LIES TO THE LEFT OF THE VERTEBRAL BODY MIDLINE AT THE LEVEL OF THE DUODENAL BULB. IN MALROTATION IT IS LOW AND TO THE RIGHT.",
+      "the_volvulus_signs": "A CORKSCREW OR SPIRAL APPEARANCE OF THE DUODENUM AND PROXIMAL JEJUNUM as contrast passes through the twisted segment · a BEAK-LIKE TAPERING at the point of obstruction · or complete duodenal obstruction.",
+      "the_practical_points": "USE WATER-SOLUBLE CONTRAST OR DILUTE BARIUM ACCORDING TO LOCAL PROTOCOL. THE STUDY MUST BE PERFORMED AND INTERPRETED BY SOMEONE EXPERIENCED IN PAEDIATRIC PRACTICE, because the position of the duodenojejunal flexure is easy to misjudge and both false positives and false negatives occur."
+     },
+     "ultrasound": "THE WHIRLPOOL SIGN — the superior mesenteric vein and mesentery spiralling clockwise around the superior mesenteric artery — IS HIGHLY SUGGESTIVE OF VOLVULUS. Also look for INVERSION OF THE NORMAL RELATIONSHIP, where the superior mesenteric VEIN lies to the LEFT of the ARTERY instead of the right. ULTRASOUND IS OPERATOR-DEPENDENT AND A NORMAL SCAN DOES NOT EXCLUDE MALROTATION, but it is fast, radiation-free and increasingly used as a first test.",
+     "plain_abdominal_radiograph": {
+      "the_findings": "May show a \"double bubble\" with some distal gas, a paucity of distal bowel gas, or be COMPLETELY NORMAL.",
+      "the_rule": "A NORMAL ABDOMINAL RADIOGRAPH DOES NOT EXCLUDE MALROTATION OR VOLVULUS. IT MUST NEVER BE USED AS A RULE-OUT TEST, and a normal film is one of the commonest reasons a baby with green vomit is sent home."
+     },
+     "bloods": "Full blood count · UREA AND ELECTROLYTES · GLUCOSE, since neonates become hypoglycaemic quickly · BLOOD GAS WITH LACTATE, where a metabolic acidosis with a rising lactate suggests ischaemia and is an indication to go straight to theatre · CRP · blood cultures · GROUP AND CROSS-MATCH · clotting.",
+     "the_overriding_principle": "IF THE BABY IS UNSTABLE, HAS PERITONITIS, OR HAS A METABOLIC ACIDOSIS SUGGESTING ISCHAEMIA, GO STRAIGHT TO THEATRE. IMAGING IS FOR THE STABLE BABY IN WHOM THE DIAGNOSIS IS UNCERTAIN — IT IS NOT A PRECONDITION FOR LAPAROTOMY IN A SICK ONE."
+    },
+    "section_6_management": {
+     "a_immediate": "NIL BY MOUTH. NASOGASTRIC TUBE on free drainage. INTRAVENOUS ACCESS with fluid resuscitation — 10 to 20 mL/kg boluses of balanced crystalloid as needed, then maintenance plus deficit. FOR THIS 3.6 kg BABY, A 20 mL/kg BOLUS IS 72 mL. Correct glucose and electrolytes. BROAD-SPECTRUM ANTIBIOTICS. Keep warm — neonates lose heat fast and hypothermia worsens acidosis and coagulopathy. Analgesia. CROSS-MATCH. TELEPHONE THE PAEDIATRIC SURGICAL CENTRE IMMEDIATELY.",
+     "b_the_ladd_procedure": {
+      "the_four_steps": {
+       "one": "UNTWIST THE VOLVULUS — ANTICLOCKWISE, because the twist is clockwise. The bowel is delivered and derotated, often through more than one full turn.",
+       "two": "DIVIDE THE LADD BANDS crossing the duodenum, relieving the extrinsic obstruction.",
+       "three": "BROADEN THE MESENTERIC BASE by mobilising the duodenum to the right and the caecum to the left, placing the small bowel on the RIGHT side of the abdomen and the colon on the LEFT. THE POINT IS TO RECREATE A BROAD MESENTERIC BASE THAT CANNOT TWIST AGAIN.",
+       "four": "APPENDICECTOMY, because the caecum is left in an abnormal position on the left and a future appendicitis would present atypically and be missed."
+      },
+      "the_teaching_point": "THE OPERATION DOES NOT RESTORE NORMAL ANATOMY — IT DELIBERATELY CREATES A NON-ROTATED BUT SAFE ARRANGEMENT WITH A WIDE MESENTERIC BASE. Understanding that explains why the appendix is removed and why the bowel is left in an unusual position."
+     },
+     "c_the_bowel_viability_decision": {
+      "if_viable": "Untwist, perform the Ladd procedure, and close.",
+      "if_frankly_necrotic_and_limited": "Resect the dead segment with primary anastomosis or stomas.",
+      "if_extensive_ischaemia_of_doubtful_viability": {
+       "the_approach": "UNTWIST, WARM THE BOWEL, WAIT, AND PERFORM A PLANNED SECOND-LOOK LAPAROTOMY AT 24 TO 48 HOURS. RESECT ONLY WHAT IS CLEARLY DEAD AT THE FIRST OPERATION.",
+       "why": "BOWEL THAT LOOKS NON-VIABLE IMMEDIATELY AFTER DEROTATION FREQUENTLY RECOVERS ONCE PERFUSED. RESECTING IT AT THE FIRST OPERATION CONVERTS A SURVIVABLE ILLNESS INTO LIFELONG SHORT BOWEL SYNDROME. THIS IS THE SINGLE MOST CONSEQUENTIAL JUDGEMENT IN THE OPERATION."
+      },
+      "if_the_entire_midgut_is_infarcted": "A devastating situation. Resection leaves short bowel syndrome with lifelong parenteral nutrition, and in some cases a decision is made not to resect. THIS IS A SENIOR DECISION MADE WITH THE FAMILY, AND IT MUST BE DISCUSSED HONESTLY AND DOCUMENTED."
+     },
+     "d_afterwards": "Neonatal intensive care. Parenteral nutrition until enteral feeding is established. Monitor for anastomotic leak, sepsis and adhesive obstruction. RECURRENT VOLVULUS AFTER A PROPERLY PERFORMED LADD PROCEDURE IS UNCOMMON BUT POSSIBLE — parents must know the symptoms. ADHESIVE SMALL BOWEL OBSTRUCTION IS A LIFELONG RISK after any laparotomy in infancy.",
+     "e_the_asymptomatic_incidental_malrotation": "Malrotation is sometimes found incidentally on imaging for another reason. WHETHER TO PERFORM A PROPHYLACTIC LADD PROCEDURE IN AN ASYMPTOMATIC CHILD IS GENUINELY DEBATED — it weighs the lifetime risk of catastrophic volvulus against operative and adhesion risk. IT IS A PAEDIATRIC SURGICAL DECISION, AND OLDER CHILDREN AND ADULTS ARE OFTEN MANAGED DIFFERENTLY FROM INFANTS."
+    },
+    "section_7_teaching_points": {
+     "bonus_1_green_vomit_in_a_neonate_is_the_rule_to_remember": "Bilious vomiting in a neonate is malrotation with midgut volvulus until proven otherwise. Bile enters at the ampulla, so green vomit places the obstruction below it. It is the single most important rule in paediatric surgery.",
+     "bonus_2_the_well_looking_baby_is_the_dangerous_one": "The abdomen is often soft and non-distended because the obstruction is high with nothing below it to distend. By the time there is distension, tenderness, abdominal wall discolouration or bloody stool, the midgut is usually already dead. The presentation you want is the one that gets sent home.",
+     "bonus_3_normal_rotation_exists_to_create_a_broad_mesenteric_base": "270 degrees of anticlockwise rotation places the duodenojejunal flexure and the caecum as far apart as possible, giving a broad diagonal mesenteric base that cannot twist. Malrotation leaves them close together on a narrow stalk — and a narrow stalk twists.",
+     "bonus_4_a_normal_abdominal_radiograph_excludes_nothing": "It may be completely normal in volvulus. It must never be used as a rule-out test, and a normal film is one of the commonest reasons a baby with green vomit is discharged.",
+     "bonus_5_the_upper_gi_contrast_study_is_an_emergency_investigation": "It shows the position of the duodenojejunal flexure — normally left of the midline at the level of the duodenal bulb — and the corkscrew of a volvulus. It must be available out of hours, and if it is not, the baby is transferred that night.",
+     "bonus_6_untwist_anticlockwise_and_do_not_resect_early": "The twist is clockwise, so derotation is anticlockwise. And bowel that looks dead immediately after derotation frequently recovers once perfused — resecting at the first operation converts a survivable illness into lifelong short bowel syndrome. Plan a second look.",
+     "bonus_7_the_ladd_procedure_does_not_restore_normal_anatomy": "It deliberately creates a non-rotated but safe arrangement with a wide mesenteric base — small bowel right, colon left — and the appendix is removed because a future appendicitis in a left-sided caecum would present atypically and be missed.",
+     "trap_1": "Sepsis does not exclude malrotation — treating a septic-looking baby with antibiotics while the midgut infarcts is a recognised disaster.",
+     "trap_2": "Examine the GROINS in every vomiting infant — an incarcerated hernia is easy early and catastrophic late.",
+     "trap_3": "Malrotation presents at any age, including in adults, and is misdiagnosed for years as functional abdominal pain.",
+     "trap_4": "Look for the WHIRLPOOL SIGN and an inverted superior mesenteric vein-artery relationship on ultrasound — but a normal scan does not exclude it.",
+     "trap_5": "An unstable baby, peritonitis or a metabolic acidosis means theatre, not imaging.",
+     "trap_6": "Meconium ileus means test for cystic fibrosis; duodenal atresia means look for Down syndrome.",
+     "trap_7": "Keep the baby WARM — neonates lose heat fast and hypothermia worsens acidosis and coagulopathy.",
+     "one_line_summary": "Bilious vomiting in a 3-week-old. She looks well and that means nothing — telephone the paediatric surgeons now and get an urgent upper GI contrast study, because the entire midgut can infarct while everyone waits for her to look unwell."
+    }
+   },
+   "glossary": [
+    {
+     "abbr": "AGE",
+     "full": "advanced glycation end product"
+    },
+    {
+     "abbr": "CRP",
+     "full": "C-reactive protein"
+    }
+   ],
+   "specialty": "Surgery — Paediatric surgery",
+   "teaching_case": true,
+   "inputs": [],
+   "logic": {},
+   "outputs": [],
+   "warnings": [
+    "BILIOUS (GREEN) VOMITING IN A NEONATE IS MALROTATION WITH MIDGUT VOLVULUS UNTIL PROVEN OTHERWISE.",
+    "A WELL-LOOKING BABY WITH A SOFT ABDOMEN IS ENTIRELY COMPATIBLE WITH VOLVULUS — the obstruction is high with nothing below to distend.",
+    "By the time there is distension, tenderness, abdominal wall discolouration or bloody stool, the midgut is usually ALREADY DEAD.",
+    "DO NOT OBSERVE, do not arrange outpatient review, and do not attribute it to reflux or gastroenteritis.",
+    "A NORMAL ABDOMINAL RADIOGRAPH DOES NOT EXCLUDE MALROTATION OR VOLVULUS.",
+    "The UPPER GI CONTRAST STUDY is an EMERGENCY investigation — transfer that night if it is not available.",
+    "SEPSIS DOES NOT EXCLUDE MALROTATION — treating a septic-looking baby while the midgut infarcts is a recognised disaster.",
+    "AN UNSTABLE BABY, PERITONITIS OR METABOLIC ACIDOSIS MEANS THEATRE, NOT IMAGING.",
+    "UNTWIST ANTICLOCKWISE — the volvulus twists clockwise.",
+    "DO NOT RESECT DOUBTFUL BOWEL AT THE FIRST OPERATION — plan a second look at 24 to 48 hours or you create lifelong short bowel syndrome.",
+    "The LADD PROCEDURE does not restore normal anatomy — it creates a safe wide-based arrangement, and the appendix is removed deliberately.",
+    "EXAMINE THE GROINS in every vomiting infant.",
+    "Malrotation presents at ANY AGE including adults, and is misdiagnosed for years as functional abdominal pain.",
+    "KEEP THE BABY WARM — hypothermia worsens acidosis and coagulopathy.",
+    "Fluid volumes here are teaching examples. Follow local neonatal and paediatric surgical guidance."
+   ],
+   "limitations": [
+    "A WORKED TEACHING CASE, not a protocol. Contrast choice, ultrasound-first pathways and prophylactic surgery for incidental malrotation vary between centres.",
+    "Decisions about extensive resection and short bowel syndrome are senior decisions made with the family."
+   ],
+   "flashcards": [
+    {
+     "q": "What does bilious vomiting in a neonate mean?",
+     "a": "Malrotation with midgut volvulus until proven otherwise — the single most important rule in paediatric surgery."
+    },
+    {
+     "q": "Why is green vomit significant?",
+     "a": "Bile enters at the ampulla of Vater, so bilious vomit places the obstruction distal to it."
+    },
+    {
+     "q": "Why can the baby look well?",
+     "a": "The obstruction is high with little bowel below to distend — a soft non-tender abdomen is compatible with volvulus."
+    },
+    {
+     "q": "What is the purpose of normal 270-degree rotation?",
+     "a": "It places the duodenojejunal flexure and caecum far apart, creating a broad mesenteric base that cannot twist."
+    },
+    {
+     "q": "What are Ladd bands?",
+     "a": "Peritoneal bands from the malpositioned caecum crossing and compressing the duodenum."
+    },
+    {
+     "q": "What does the upper GI contrast study show?",
+     "a": "The duodenojejunal flexure position — normally left of midline at the duodenal bulb — and a corkscrew or beak in volvulus."
+    },
+    {
+     "q": "What is the whirlpool sign?",
+     "a": "The superior mesenteric vein and mesentery spiralling around the artery on ultrasound."
+    },
+    {
+     "q": "Does a normal abdominal radiograph exclude volvulus?",
+     "a": "No — it may be completely normal, and this is a common reason babies are sent home."
+    },
+    {
+     "q": "Name the four steps of the Ladd procedure.",
+     "a": "Untwist anticlockwise, divide Ladd bands, broaden the mesenteric base, and perform appendicectomy."
+    },
+    {
+     "q": "Why is the appendix removed?",
+     "a": "The caecum is left on the left, so a future appendicitis would present atypically and be missed."
+    },
+    {
+     "q": "Why not resect doubtful bowel at the first operation?",
+     "a": "Bowel that looks dead after derotation frequently recovers once perfused — early resection creates short bowel syndrome."
+    },
+    {
+     "q": "Which conditions are associated with malrotation?",
+     "a": "Congenital diaphragmatic hernia, exomphalos, gastroschisis, heterotaxy and congenital cardiac disease."
+    }
+   ],
+   "checkboxes": [
+    "Colour of the vomit established and, if possible, seen",
+    "Bilious vomiting treated as an emergency regardless of how well the baby looks",
+    "Paediatric surgeons telephoned immediately",
+    "Nil by mouth with nasogastric tube on free drainage",
+    "Fluid resuscitation, glucose and electrolytes corrected",
+    "Broad-spectrum antibiotics given",
+    "Baby kept warm",
+    "Blood gas with lactate checked for ischaemia",
+    "Cross-match arranged",
+    "Urgent upper GI contrast study arranged, or transfer organised",
+    "Normal plain radiograph NOT used to exclude the diagnosis",
+    "Straight to theatre if unstable, peritonitic or acidotic",
+    "Second-look laparotomy planned if bowel viability is doubtful",
+    "Honest discussion with the family about extensive infarction if relevant",
+    "Groins examined for hernia"
+   ],
+   "related_slugs": [
+    "vomiting_in_the_infant_the_bilious_versus_non_bilious_split"
+   ],
+   "patient_integration": null,
+   "governance": {
+    "evidence_tier": "T5_textbook_or_standard_teaching",
+    "verification_status": "standard_teaching",
+    "sources": [],
+    "nigeria_overlay": null,
+    "build_date": "2026-08-07",
+    "review_interval_months": 12,
+    "next_review_due": "2027-08-07",
+    "clinical_reviewer": null,
+    "approved_for_release": false,
+    "local_confirmation_required": true,
+    "supersedes": null,
+    "content_hash": "692a6e37aaa4bcb1"
+   }
+  },
+  {
+   "id": "AS-CASE-0058",
+   "schema_version": "4.0.0",
+   "content_release": "AWIBI-SCOUT-CONTENT-2026.08.R3",
+   "type": "case",
+   "title": "CASE: Pneumonia That Will Not Settle After Ten Days of Antibiotics",
+   "short_title": "Case: empyema and complicated parapneumonic effusion",
+   "slug": "case_pneumonia_that_will_not_settle_after_ten_days_of_antibiotics",
+   "also_known_as": [
+    "case empyema",
+    "parapneumonic effusion case",
+    "light criteria case",
+    "pleural fluid ph",
+    "chest drain empyema",
+    "fibrinolytic pleural",
+    "decortication",
+    "vats empyema",
+    "loculated effusion"
+   ],
+   "summary": "A 64-year-old still febrile after ten days of antibiotics with a large left effusion. Teaches Light criteria, the pleural fluid pH threshold that decides drainage, the three stages of empyema and why timing determines whether a drain or a surgeon is needed.",
+   "domains": [
+    "cardiothoracic_surgery",
+    "respiratory",
+    "infectious_disease",
+    "emergency_medicine"
+   ],
+   "intents": [
+    "identify",
+    "act"
+   ],
+   "populations": [
+    "all_ages"
+   ],
+   "contexts": [
+    "routine"
+   ],
+   "hazard": "high",
+   "urgency": "urgent",
+   "jurisdiction": "international",
+   "search": {
+    "terms": [
+     "after",
+     "antibiotics",
+     "case",
+     "case empyema",
+     "case: empyema and complicated parapneumonic effusion",
+     "case: pneumonia that will not settle after ten days of antibiotics",
+     "chest drain",
+     "chest drain empyema",
+     "days",
+     "decortication",
+     "empyema",
+     "exudate",
+     "fibrinolytic pleural",
+     "fibrinopurulent",
+     "intrapleural alteplase dornase",
+     "light criteria",
+     "light criteria case",
+     "loculated effusion",
+     "loculation",
+     "organising stage",
+     "parapneumonic effusion",
+     "parapneumonic effusion case",
+     "pleural fluid glucose",
+     "pleural fluid ldh",
+     "pleural fluid ph",
+     "pneumonia",
+     "settle",
+     "transudate",
+     "ultrasound guided",
+     "vats",
+     "vats empyema",
+     "will"
+    ],
+    "ambiguous_terms": [],
+    "phrases": [],
+    "field_weights": {
+     "title": 8,
+     "short_title": 6,
+     "also_known_as": 5,
+     "terms": 4,
+     "summary": 2,
+     "body": 1,
+     "flashcards": 0.5
+    }
+   },
+   "body": {
+    "the_one_line": "64-year-old man treated for community-acquired pneumonia ten days ago, still febrile with night sweats, worsening breathlessness and pleuritic pain. Chest radiograph shows a large left-sided effusion.",
+    "section_1_the_rule_that_should_trigger_the_thought": {
+     "the_statement": "A PATIENT WITH PNEUMONIA WHO FAILS TO IMPROVE AFTER 48 TO 72 HOURS OF APPROPRIATE ANTIBIOTICS, OR WHO HAS PERSISTENT FEVER, RISING INFLAMMATORY MARKERS OR AN EFFUSION, HAS A COMPLICATED PARAPNEUMONIC EFFUSION OR EMPYEMA UNTIL PROVEN OTHERWISE. THE ANSWER IS NOT A DIFFERENT ANTIBIOTIC — IT IS AN ULTRASOUND AND A NEEDLE.",
+     "why_antibiotics_alone_fail": "PUS IN A CLOSED SPACE IS NOT ADEQUATELY PENETRATED BY ANTIBIOTICS, AND THE LOW pH AND LOW OXYGEN TENSION OF AN EMPYEMA IMPAIR BOTH ANTIBIOTIC ACTIVITY AND NEUTROPHIL FUNCTION. IT IS THE SAME PRINCIPLE AS CHOLANGITIS, THE OBSTRUCTED INFECTED KIDNEY AND ANY UNDRAINED ABSCESS: SOURCE CONTROL IS THE TREATMENT.",
+     "the_frequency": "AROUND 40% OF PATIENTS HOSPITALISED WITH PNEUMONIA DEVELOP A PLEURAL EFFUSION, AND A SUBSTANTIAL MINORITY OF THOSE BECOME COMPLICATED. IT IS COMMON, AND MORTALITY IS SIGNIFICANT — commonly quoted around 15 to 20%, higher in the elderly and comorbid."
+    },
+    "section_2_clerking": {
+     "history": "Ten days ago treated with oral antibiotics for pneumonia. Initially slightly better, then worse. Persistent fever with drenching NIGHT SWEATS. Increasing breathlessness. Sharp LEFT-SIDED PLEURITIC PAIN. Poor appetite and 4 kg weight loss. Productive cough.",
+     "the_risk_factors": "DIABETES · ALCOHOL EXCESS · intravenous drug use · POOR DENTITION AND PERIODONTAL DISEASE, which is a major source of anaerobes · ASPIRATION RISK — stroke, reduced consciousness, oesophageal disease, alcohol · immunosuppression · malignancy · previous thoracic surgery or trauma · and delayed or inadequate initial treatment.",
+     "the_aspiration_point": "ASK ABOUT SWALLOWING, ALCOHOL, SEIZURES, DENTAL HEALTH AND ANYTHING CAUSING REDUCED CONSCIOUSNESS. ASPIRATION-RELATED EMPYEMA IS TYPICALLY POLYMICROBIAL WITH ANAEROBES, IS FOUL-SMELLING, AND REQUIRES ANAEROBIC COVER THAT SOME PNEUMONIA REGIMENS DO NOT PROVIDE.",
+     "vitals": "BP 118/68 mmHg. Pulse 108. Respiratory rate 26. Temperature 38.4. Saturation 91% on air. CRP 240, white cells 19.4.",
+     "examination": "Reduced expansion on the LEFT. STONY DULL to percussion at the left base with ABSENT breath sounds and reduced vocal resonance. Tracheal position central. Look for FINGER CLUBBING, which occurs in chronic empyema and lung abscess. Examine the MOUTH AND TEETH. Look for an EMPYEMA NECESSITANS — a rare presentation where pus tracks through the chest wall to form a subcutaneous collection."
+    },
+    "section_3_the_stages_which_determine_the_treatment": {
+     "stage_1_exudative_simple_parapneumonic": {
+      "what": "Sterile inflammatory fluid crossing into the pleural space because of increased capillary permeability from the adjacent pneumonia.",
+      "the_fluid": "Free-flowing, clear, pH above 7.2, glucose normal, negative Gram stain and culture.",
+      "the_treatment": "ANTIBIOTICS ALONE. It resolves as the pneumonia resolves."
+     },
+     "stage_2_fibrinopurulent_complicated": {
+      "what": "BACTERIAL INVASION OF THE PLEURAL SPACE. Neutrophils accumulate, fibrin is deposited, and SEPTATIONS AND LOCULATIONS FORM, dividing the space into compartments.",
+      "the_fluid": "Turbid or frankly purulent. pH BELOW 7.2. GLUCOSE LOW. LDH HIGH. Gram stain or culture may be positive.",
+      "the_treatment": "DRAINAGE IS REQUIRED. Antibiotics alone will fail. Intrapleural fibrinolytics may be needed once loculations form."
+     },
+     "stage_3_organising": {
+      "what": "FIBROBLASTS PRODUCE A THICK, INELASTIC FIBROUS PEEL OVER THE VISCERAL AND PARIETAL PLEURA, TRAPPING THE LUNG AND PREVENTING IT FROM RE-EXPANDING.",
+      "the_treatment": "A DRAIN CANNOT FIX THIS. SURGICAL DECORTICATION IS REQUIRED TO PEEL THE FIBROUS RIND OFF THE LUNG.",
+      "the_timing_lesson": "THE STAGES PROGRESS OVER DAYS TO WEEKS. THE LONGER THE DELAY, THE MORE LIKELY SURGERY BECOMES. A COLLECTION DRAINED IN WEEK ONE NEEDS A TUBE; THE SAME COLLECTION IN WEEK FOUR NEEDS A THORACOTOMY. THAT IS THE ENTIRE ARGUMENT FOR EARLY SAMPLING."
+     }
+    },
+    "section_4_investigations": {
+     "the_light_criteria": {
+      "the_purpose": "TO DISTINGUISH AN EXUDATE FROM A TRANSUDATE, WHICH SEPARATES INFLAMMATORY AND INFECTIVE CAUSES FROM PRESSURE-DRIVEN ONES SUCH AS HEART FAILURE.",
+      "the_criteria": "THE FLUID IS AN EXUDATE IF ANY ONE OF: PLEURAL FLUID PROTEIN TO SERUM PROTEIN RATIO GREATER THAN 0.5 · PLEURAL FLUID LDH TO SERUM LDH RATIO GREATER THAN 0.6 · PLEURAL FLUID LDH GREATER THAN TWO THIRDS OF THE UPPER LIMIT OF THE NORMAL SERUM LDH RANGE.",
+      "the_practical_requirement": "A PAIRED SERUM SAMPLE MUST BE TAKEN AT THE SAME TIME AS THE PLEURAL FLUID. THE CRITERIA CANNOT BE APPLIED WITHOUT IT, AND FORGETTING THE SERUM SAMPLE IS THE COMMONEST PRACTICAL ERROR IN PLEURAL ASSESSMENT.",
+      "the_known_limitation": "LIGHT CRITERIA ARE SENSITIVE FOR EXUDATES BUT MISCLASSIFY A PROPORTION OF TRANSUDATES AS EXUDATES, PARTICULARLY IN PATIENTS ON DIURETICS FOR HEART FAILURE, BECAUSE DIURESIS CONCENTRATES THE FLUID. IF THE CLINICAL PICTURE IS CLEARLY HEART FAILURE, A SERUM-TO-PLEURAL-FLUID ALBUMIN GRADIENT ABOVE 12 g/L SUGGESTS A TRANSUDATE DESPITE THE CRITERIA."
+     },
+     "the_pleural_fluid_ph_which_is_the_decision_point": {
+      "the_threshold": "A PLEURAL FLUID pH BELOW 7.2 IN A PARAPNEUMONIC EFFUSION INDICATES A COMPLICATED EFFUSION AND IS AN INDICATION FOR DRAINAGE. IT IS THE SINGLE MOST USEFUL NUMBER IN THE ASSESSMENT.",
+      "how_to_measure_it_properly": "THE SAMPLE MUST BE COLLECTED ANAEROBICALLY IN A HEPARINISED SYRINGE AND ANALYSED IN A BLOOD GAS MACHINE. DO NOT USE A pH STICK, WHICH IS UNRELIABLE. DO NOT PUT LOCAL ANAESTHETIC IN THE SYRINGE — LIDOCAINE IS ACIDIC AND FALSELY LOWERS THE READING. AND DO NOT PUT FRANK PUS THROUGH A BLOOD GAS ANALYSER, because it damages the machine — and it is unnecessary, since obvious pus needs no pH to justify drainage.",
+      "the_other_markers": "GLUCOSE BELOW ROUGHLY 2.2 mmol/L and LDH ABOVE ROUGHLY 1000 IU/L also indicate a complicated effusion. THEY ARE USEFUL IF THE pH IS UNAVAILABLE, AND GLUCOSE IS THE MOST PRACTICAL SUBSTITUTE.",
+      "the_governing_rule": "FRANK PUS, A POSITIVE GRAM STAIN OR A POSITIVE CULTURE MEANS DRAIN IT — NO FURTHER TESTS ARE NEEDED."
+     },
+     "thoracic_ultrasound": {
+      "the_status": "ESSENTIAL, AND IT SHOULD BE USED FOR EVERY PLEURAL PROCEDURE.",
+      "why": "IT IDENTIFIES SEPTATIONS AND LOCULATIONS THAT A CHEST RADIOGRAPH CANNOT SEE, ESTIMATES VOLUME, AND — CRITICALLY — GUIDES A SAFE SITE FOR ASPIRATION OR DRAIN INSERTION. ULTRASOUND-GUIDED PLEURAL PROCEDURES HAVE SUBSTANTIALLY LOWER COMPLICATION RATES THAN LANDMARK TECHNIQUES, AND PERFORMING THEM WITHOUT IMAGING IS NO LONGER ACCEPTABLE PRACTICE IN MOST SETTINGS.",
+      "the_marking_caveat": "MARK AND PUNCTURE AT THE SAME SITTING WITH THE PATIENT IN THE SAME POSITION. A SITE MARKED ON THE WARD AND PUNCTURED AN HOUR LATER IN A DIFFERENT POSITION IS A RECOGNISED CAUSE OF ORGAN INJURY."
+     },
+     "ct_thorax_with_contrast": "Defines the extent, shows loculations and pleural thickening, identifies an underlying lung abscess or malignancy, and plans surgery. THE \"SPLIT PLEURA SIGN\" — enhancement and separation of the thickened visceral and parietal pleura around the collection — IS CHARACTERISTIC OF EMPYEMA AND HELPS DISTINGUISH IT FROM A LUNG ABSCESS, WHICH HAS A THICK IRREGULAR WALL AND AN ACUTE ANGLE WITH THE CHEST WALL.",
+     "microbiology": "SEND PLEURAL FLUID FOR GRAM STAIN, CULTURE AND SENSITIVITY, AND INOCULATE SOME INTO BLOOD CULTURE BOTTLES, WHICH SIGNIFICANTLY INCREASES THE YIELD. SEND BLOOD CULTURES. SEND FLUID FOR CYTOLOGY, TUBERCULOSIS CULTURE AND ACID-FAST STAIN WHERE RELEVANT. NOTE THAT CULTURES ARE NEGATIVE IN A LARGE PROPORTION, particularly after antibiotics — a negative culture does not mean the fluid is not infected.",
+     "the_tuberculosis_consideration": "IN HIGH-BURDEN SETTINGS, A LYMPHOCYTE-PREDOMINANT EXUDATE WITH A HIGH PROTEIN AND A RAISED ADENOSINE DEAMINASE SUGGESTS TUBERCULOUS PLEURAL EFFUSION. IT IS TREATED WITH ANTITUBERCULOUS THERAPY, NOT PRIMARILY BY DRAINAGE, AND MISSING IT LEADS TO PROLONGED INEFFECTIVE ANTIBACTERIAL TREATMENT."
+    },
+    "section_5_management": {
+     "a_antibiotics": "INTRAVENOUS, GUIDED BY CULTURE WHERE AVAILABLE AND LOCAL POLICY OTHERWISE. INCLUDE ANAEROBIC COVER, particularly where aspiration is likely or the fluid is foul-smelling. A PROLONGED COURSE IS REQUIRED — typically several weeks in total, with a switch to oral once the patient is improving and the collection is drained. NOTE THAT MOST ANTIBIOTICS PENETRATE THE PLEURAL SPACE ADEQUATELY EXCEPT AMINOGLYCOSIDES, WHICH ARE INACTIVATED BY THE LOW pH AND SHOULD NOT BE RELIED ON.",
+     "b_drainage": {
+      "the_indications": "FRANK PUS · POSITIVE GRAM STAIN OR CULTURE · pH BELOW 7.2 · and often a large effusion with ongoing sepsis.",
+      "the_drain": "A CHEST DRAIN INSERTED UNDER ULTRASOUND GUIDANCE IN THE SAFE TRIANGLE. SMALL-BORE DRAINS (10 to 14 French) ARE AS EFFECTIVE AS LARGE-BORE ONES FOR EMPYEMA AND ARE MORE COMFORTABLE — THIS WAS DEMONSTRATED IN TRIAL DATA AND OVERTURNED THE ASSUMPTION THAT PUS NEEDS A BIG TUBE. FLUSH SMALL DRAINS REGULARLY WITH SALINE TO PREVENT BLOCKAGE.",
+      "the_technique_points": "ULTRASOUND GUIDANCE ALWAYS. Blunt dissection, never a trocar. The safe triangle, above the rib below. Secure well. Connect to an underwater seal."
+     },
+     "c_intrapleural_fibrinolytics": {
+      "what_they_are": "INTRAPLEURAL ALTEPLASE COMBINED WITH DORNASE ALFA, INSTILLED THROUGH THE CHEST DRAIN.",
+      "why_the_combination_matters": "ALTEPLASE BREAKS DOWN FIBRIN SEPTATIONS, OPENING UP LOCULATED COMPARTMENTS. DORNASE ALFA DIGESTS EXTRACELLULAR DNA FROM DEGENERATE NEUTROPHILS, WHICH IS WHAT MAKES THE PUS THICK AND VISCOUS. THE MIST2 TRIAL SHOWED THAT THE COMBINATION IMPROVED FLUID DRAINAGE AND REDUCED THE NEED FOR SURGERY, WHEREAS NEITHER AGENT ALONE WAS EFFECTIVE — AND DORNASE ALONE WAS WORSE THAN PLACEBO. THE POINT IS THAT THEY DO TWO DIFFERENT JOBS AND BOTH ARE REQUIRED.",
+      "the_practical": "Given as instillations over several days with the drain clamped for a period after each dose. Bleeding is the main risk."
+     },
+     "d_surgery": {
+      "the_indications": "FAILURE TO IMPROVE AFTER ADEQUATE DRAINAGE AND FIBRINOLYTICS · EXTENSIVE LOCULATION · A THICK PLEURAL PEEL TRAPPING THE LUNG · ONGOING SEPSIS · and a chronic organised empyema.",
+      "the_operations": "VIDEO-ASSISTED THORACOSCOPIC SURGERY (VATS) with debridement and washout, which is the usual first surgical approach and may be used early in fit patients. OPEN THORACOTOMY AND DECORTICATION for the organised stage, peeling the fibrous rind off the lung. In very frail patients, an OPEN WINDOW THORACOSTOMY or long-term drain may be used for palliation.",
+      "the_timing_message": "REFER TO THORACIC SURGERY EARLY RATHER THAN AFTER WEEKS OF FAILED MEDICAL MANAGEMENT. THE OPERATION IS EASIER AND SMALLER IN THE FIBRINOPURULENT STAGE THAN IN THE ORGANISED STAGE, AND OUTCOMES ARE BETTER."
+     },
+     "e_supportive_and_the_things_that_get_forgotten": {
+      "nutrition": "THESE PATIENTS ARE PROFOUNDLY CATABOLIC AND OFTEN MALNOURISHED BY PRESENTATION. NUTRITIONAL SUPPORT IS PART OF THE TREATMENT AND AFFECTS HEALING AND OUTCOME.",
+      "physiotherapy": "Chest physiotherapy and early mobilisation to promote lung re-expansion.",
+      "analgesia": "A drain and pleuritic pain both restrict breathing. GOOD ANALGESIA IS A RESPIRATORY TREATMENT.",
+      "thromboprophylaxis": "Sepsis plus immobility.",
+      "the_dental_referral": "IF POOR DENTITION IS THE SOURCE, ARRANGE DENTAL ASSESSMENT — otherwise it recurs. It is a genuinely useful referral that is almost never made.",
+      "the_underlying_cause": "CONSIDER AND EXCLUDE AN UNDERLYING BRONCHIAL OBSTRUCTION OR MALIGNANCY, particularly in a smoker or where the pneumonia recurs in the same lobe. Arrange follow-up imaging to confirm resolution and bronchoscopy where indicated."
+     }
+    },
+    "section_6_teaching_points": {
+     "bonus_1_failure_to_improve_is_the_trigger": "A patient with pneumonia not improving after 48 to 72 hours, or with persistent fever, rising markers or an effusion, needs an ultrasound and a needle — not a different antibiotic. Pus in a closed space is not penetrated by antibiotics, and low pH and oxygen tension impair both the drug and the neutrophils.",
+     "bonus_2_the_pleural_fluid_ph_decides": "Below 7.2 in a parapneumonic effusion means drainage. Collect it anaerobically in a heparinised syringe through a blood gas machine — no pH sticks, no lidocaine in the syringe (it is acidic and falsely lowers the reading), and no frank pus through the analyser, which damages it and is unnecessary anyway.",
+     "bonus_3_take_a_paired_serum_sample": "Light criteria are ratios and cannot be applied without simultaneous serum protein and LDH. Forgetting the serum sample is the commonest practical error in pleural assessment.",
+     "bonus_4_the_stage_determines_whether_a_tube_or_a_surgeon_is_needed": "Exudative stage: antibiotics. Fibrinopurulent: drainage, possibly with fibrinolytics. Organising: a fibrous peel that a drain cannot fix, requiring decortication. The same collection needs a tube in week one and a thoracotomy in week four — which is the whole argument for early sampling.",
+     "bonus_5_alteplase_and_dornase_do_two_different_jobs": "Alteplase breaks fibrin septations; dornase digests neutrophil DNA that makes pus viscous. MIST2 showed the combination worked while neither alone did — and dornase alone was worse than placebo.",
+     "bonus_6_small_drains_work_as_well_as_large_ones": "Trial data showed 10 to 14 French drains are as effective for empyema and more comfortable, overturning the assumption that pus needs a big tube. Flush them regularly to prevent blockage.",
+     "bonus_7_always_use_ultrasound_and_puncture_at_the_same_sitting": "Ultrasound-guided procedures have substantially lower complication rates. Marking a site on the ward and puncturing an hour later in a different position is a recognised cause of organ injury.",
+     "trap_1": "FRANK PUS, a positive Gram stain or a positive culture means DRAIN IT — no further tests required.",
+     "trap_2": "A NEGATIVE CULTURE DOES NOT MEAN THE FLUID IS NOT INFECTED — cultures are negative in a large proportion, especially after antibiotics. Inoculate blood culture bottles to raise the yield.",
+     "trap_3": "AMINOGLYCOSIDES ARE INACTIVATED BY THE LOW pH of an empyema.",
+     "trap_4": "Light criteria misclassify some transudates as exudates in patients on diuretics — use the albumin gradient if the picture is heart failure.",
+     "trap_5": "Consider TUBERCULOUS effusion in high-burden settings — lymphocytic, high protein, raised adenosine deaminase, and treated medically.",
+     "trap_6": "ASK ABOUT ASPIRATION AND DENTITION — anaerobic cover may be missing from a standard pneumonia regimen, and the teeth are the source that recurs.",
+     "trap_7": "Refer to thoracic surgery EARLY — the operation is smaller and the outcome better in the fibrinopurulent stage.",
+     "one_line_summary": "Empyema after inadequately treated pneumonia. Not improving means ultrasound and a needle, not a new antibiotic — send a paired serum sample, get the pH properly, drain below 7.2, add alteplase with dornase for loculations, and refer to surgery early."
+    }
+   },
+   "glossary": [
+    {
+     "abbr": "CRP",
+     "full": "C-reactive protein"
+    },
+    {
+     "abbr": "CT",
+     "full": "computed tomography"
+    }
+   ],
+   "specialty": "Surgery — Cardiothoracic surgery",
+   "teaching_case": true,
+   "inputs": [],
+   "logic": {},
+   "outputs": [],
+   "warnings": [
+    "FAILURE TO IMPROVE ON ANTIBIOTICS after 48 to 72 hours means an ultrasound and a needle, NOT a different antibiotic.",
+    "FRANK PUS, A POSITIVE GRAM STAIN OR CULTURE MEANS DRAIN IT — no further tests needed.",
+    "A PLEURAL FLUID pH BELOW 7.2 in a parapneumonic effusion is an indication for drainage.",
+    "Collect the pH sample ANAEROBICALLY in a heparinised syringe via a blood gas machine — NOT a pH stick.",
+    "DO NOT PUT LIDOCAINE IN THE SYRINGE — it is acidic and falsely lowers the pH.",
+    "DO NOT PUT FRANK PUS THROUGH A BLOOD GAS ANALYSER — it damages the machine and is unnecessary.",
+    "TAKE A PAIRED SERUM SAMPLE — Light criteria are ratios and cannot be applied without it.",
+    "ALWAYS USE ULTRASOUND for pleural procedures, and mark and puncture at the SAME SITTING in the SAME POSITION.",
+    "A NEGATIVE CULTURE DOES NOT MEAN THE FLUID IS NOT INFECTED — inoculate blood culture bottles to raise the yield.",
+    "AMINOGLYCOSIDES ARE INACTIVATED by the low pH of an empyema.",
+    "ALTEPLASE AND DORNASE MUST BE GIVEN TOGETHER — neither alone was effective in MIST2, and dornase alone was worse than placebo.",
+    "SMALL-BORE DRAINS are as effective as large ones for empyema — but flush them to prevent blockage.",
+    "REFER TO THORACIC SURGERY EARLY — the operation is smaller and outcomes better in the fibrinopurulent stage.",
+    "Light criteria misclassify some transudates as exudates on diuretics — use the albumin gradient if heart failure is likely.",
+    "Consider TUBERCULOUS effusion in high-burden settings — lymphocytic with raised adenosine deaminase, treated medically.",
+    "ASK ABOUT ASPIRATION AND DENTITION — anaerobic cover may be missing, and the teeth are the source that recurs.",
+    "Doses and antibiotic choices here are teaching examples. Follow local respiratory and thoracic guidance."
+   ],
+   "limitations": [
+    "A WORKED TEACHING CASE, not a protocol. Antibiotic regimens, fibrinolytic protocols and surgical thresholds vary between services.",
+    "Early surgical intervention versus fibrinolytics remains an area of variation between centres."
+   ],
+   "flashcards": [
+    {
+     "q": "What should trigger the thought of empyema?",
+     "a": "Pneumonia not improving after 48 to 72 hours, or persistent fever, rising markers or an effusion."
+    },
+    {
+     "q": "Why do antibiotics alone fail?",
+     "a": "Pus in a closed space is poorly penetrated, and low pH and oxygen tension impair both antibiotic activity and neutrophil function."
+    },
+    {
+     "q": "State the Light criteria.",
+     "a": "Exudate if pleural/serum protein over 0.5, pleural/serum LDH over 0.6, or pleural LDH over two thirds the upper serum limit."
+    },
+    {
+     "q": "What is the pleural fluid pH threshold for drainage?",
+     "a": "Below 7.2 in a parapneumonic effusion."
+    },
+    {
+     "q": "How must the pH sample be handled?",
+     "a": "Anaerobically in a heparinised syringe through a blood gas machine — no pH sticks, no lidocaine, and never frank pus."
+    },
+    {
+     "q": "Name the three stages of empyema.",
+     "a": "Exudative (antibiotics), fibrinopurulent (drainage), organising (decortication)."
+    },
+    {
+     "q": "Why must alteplase and dornase be combined?",
+     "a": "Alteplase breaks fibrin septations; dornase digests neutrophil DNA making pus viscous. MIST2 showed neither alone worked."
+    },
+    {
+     "q": "What size chest drain is needed?",
+     "a": "Small-bore 10 to 14 French is as effective as large-bore and more comfortable — but flush it regularly."
+    },
+    {
+     "q": "What is the split pleura sign?",
+     "a": "Enhancement and separation of thickened visceral and parietal pleura on CT — characteristic of empyema."
+    },
+    {
+     "q": "Which antibiotic class is inactivated in empyema?",
+     "a": "Aminoglycosides — inactivated by the low pH."
+    },
+    {
+     "q": "What alternative markers indicate a complicated effusion?",
+     "a": "Glucose below about 2.2 mmol/L and LDH above about 1000 IU/L."
+    },
+    {
+     "q": "What suggests a tuberculous effusion?",
+     "a": "Lymphocyte-predominant exudate with high protein and raised adenosine deaminase — treated medically."
+    }
+   ],
+   "checkboxes": [
+    "Failure to improve recognised as an indication for imaging, not a new antibiotic",
+    "Thoracic ultrasound performed",
+    "Pleural aspiration performed under ultrasound guidance at the same sitting",
+    "PAIRED SERUM protein and LDH sent with the pleural sample",
+    "pH sampled anaerobically in a heparinised syringe and run on a gas machine",
+    "Glucose and LDH sent as alternatives if pH unavailable",
+    "Fluid sent for Gram stain, culture, and inoculated into blood culture bottles",
+    "Cytology and tuberculosis testing sent where relevant",
+    "Blood cultures taken",
+    "Intravenous antibiotics with anaerobic cover where aspiration is likely",
+    "Chest drain inserted for pus, positive Gram stain, or pH below 7.2",
+    "Intrapleural alteplase WITH dornase considered for loculations",
+    "Thoracic surgery referral made early rather than after prolonged failure",
+    "Nutrition, physiotherapy, analgesia and thromboprophylaxis addressed",
+    "Dental assessment arranged if poor dentition is the source",
+    "Underlying malignancy or bronchial obstruction excluded with follow-up imaging"
+   ],
+   "related_slugs": [
+    "pleural_effusion_light_criteria_and_the_diagnostic_tap"
+   ],
+   "patient_integration": null,
+   "governance": {
+    "evidence_tier": "T5_textbook_or_standard_teaching",
+    "verification_status": "standard_teaching",
+    "sources": [],
+    "nigeria_overlay": null,
+    "build_date": "2026-08-07",
+    "review_interval_months": 12,
+    "next_review_due": "2027-08-07",
+    "clinical_reviewer": null,
+    "approved_for_release": false,
+    "local_confirmation_required": true,
+    "supersedes": null,
+    "content_hash": "063c67043e297e99"
+   }
+  },
+  {
+   "id": "AS-CASE-0059",
+   "schema_version": "4.0.0",
+   "content_release": "AWIBI-SCOUT-CONTENT-2026.08.R3",
+   "type": "case",
+   "title": "CASE: A Swollen Finger Two Days After a Rose Thorn",
+   "short_title": "Case: pyogenic flexor tenosynovitis",
+   "slug": "case_a_swollen_finger_two_days_after_a_rose_thorn",
+   "also_known_as": [
+    "case flexor tenosynovitis",
+    "pyogenic flexor tenosynovitis case",
+    "kanavel signs",
+    "hand infection case",
+    "horseshoe abscess",
+    "parona space",
+    "felon",
+    "fight bite",
+    "human bite hand",
+    "paronychia"
+   ],
+   "summary": "A 38-year-old with a fusiform swollen finger held in flexion. Teaches the four Kanavel signs and which appears first, why the tendon sheath is a closed compartment that destroys gliding function in hours, and why \"give antibiotics and review tomorrow\" costs the finger.",
+   "domains": [
+    "plastic_surgery",
+    "orthopaedics",
+    "emergency_medicine",
+    "infectious_disease"
+   ],
+   "intents": [
+    "identify",
+    "act"
+   ],
+   "populations": [
+    "all_ages"
+   ],
+   "contexts": [
+    "routine"
+   ],
+   "hazard": "critical",
+   "urgency": "immediate",
+   "jurisdiction": "international",
+   "search": {
+    "terms": [
+     "after",
+     "case",
+     "case flexor tenosynovitis",
+     "case: a swollen finger two days after a rose thorn",
+     "case: pyogenic flexor tenosynovitis",
+     "days",
+     "eikenella corrodens",
+     "felon",
+     "fight bite",
+     "finger",
+     "flexor tendon sheath",
+     "fusiform swelling",
+     "hand elevation",
+     "hand infection case",
+     "horseshoe abscess",
+     "human bite hand",
+     "kanavel signs",
+     "pain on passive extension",
+     "parona space",
+     "paronychia",
+     "pyogenic flexor tenosynovitis",
+     "pyogenic flexor tenosynovitis case",
+     "rose",
+     "swollen",
+     "tendon adhesions",
+     "thorn",
+     "washout hand"
+    ],
+    "ambiguous_terms": [],
+    "phrases": [],
+    "field_weights": {
+     "title": 8,
+     "short_title": 6,
+     "also_known_as": 5,
+     "terms": 4,
+     "summary": 2,
+     "body": 1,
+     "flashcards": 0.5
+    }
+   },
+   "body": {
+    "the_one_line": "38-year-old gardener with a swollen, exquisitely painful right index finger, two days after pricking it on a rose thorn. He holds the finger slightly bent and will not let anyone straighten it.",
+    "section_1_the_four_kanavel_signs": {
+     "the_list": {
+      "one_fusiform_swelling": "THE WHOLE FINGER IS UNIFORMLY SWOLLEN — \"SAUSAGE-SHAPED\" — RATHER THAN SWOLLEN AT ONE POINT. This distinguishes it from a localised abscess or paronychia.",
+      "two_finger_held_in_slight_flexion": "THE POSITION OF MAXIMUM SHEATH VOLUME AND THEREFORE LEAST PAIN. The patient adopts it without being told, and it is visible from the end of the bed.",
+      "three_tenderness_along_the_course_of_the_tendon_sheath": "PALPATE ALONG THE VOLAR ASPECT OF THE FINGER AND INTO THE PALM. TENDERNESS EXTENDING PROXIMAL TO THE FINGER, INTO THE PALM, INDICATES THAT INFECTION HAS TRACKED ALONG THE SHEATH — a significant finding.",
+      "four_pain_on_passive_extension": {
+       "what_it_is": "GENTLY ATTEMPT TO STRAIGHTEN THE FINGER. IT CAUSES SEVERE PAIN.",
+       "why_it_matters": "THIS IS THE EARLIEST AND MOST SENSITIVE OF THE FOUR SIGNS. Extension stretches the inflamed synovial sheath and raises pressure within it. IT APPEARS BEFORE FUSIFORM SWELLING IS OBVIOUS, WHICH MEANS IT IS THE SIGN THAT MAKES THE EARLY DIAGNOSIS — WHEN THE FINGER STILL LOOKS ONLY MODERATELY SWOLLEN AND THE DIAGNOSIS CAN STILL BE MADE IN TIME.",
+       "the_practical": "DO IT GENTLY AND ONCE. It is diagnostic, not something to repeat."
+      }
+     },
+     "the_honest_caveat": "ALL FOUR SIGNS ARE PRESENT IN ONLY A PROPORTION OF CASES, AND EARLY INFECTION MAY SHOW ONLY PAIN ON PASSIVE EXTENSION AND TENDERNESS. THE ABSENCE OF FUSIFORM SWELLING DOES NOT EXCLUDE IT, and waiting for the complete set means waiting for the tendon to be destroyed."
+    },
+    "section_2_why_this_is_an_emergency": {
+     "the_anatomy": "THE FLEXOR TENDONS RUN WITHIN A CLOSED SYNOVIAL SHEATH — A SEALED TUBE WITH A LIMITED VOLUME AND A POOR BLOOD SUPPLY.",
+     "the_consequences_of_that_anatomy": [
+      "1. IT IS A CLOSED SPACE, SO PUS RAPIDLY GENERATES HIGH PRESSURE, AND ANTIBIOTICS PENETRATE POORLY. Same principle as an undrained abscess anywhere.",
+      "2. THE TENDON HAS A TENUOUS SEGMENTAL BLOOD SUPPLY THROUGH THE VINCULA. RAISED SHEATH PRESSURE OCCLUDES IT, CAUSING TENDON NECROSIS AND RUPTURE.",
+      "3. THE SYNOVIUM AND THE SMOOTH GLIDING SURFACE ARE DESTROYED BY THE INFLAMMATORY EXUDATE. EVEN IF THE INFECTION IS CURED, ADHESIONS FORM AND THE TENDON NO LONGER GLIDES — THE FINGER BECOMES STIFF AND FUNCTIONLESS."
+     ],
+     "the_key_teaching_point": "THE OUTCOME THAT MATTERS IS NOT WHETHER THE INFECTION CLEARS — IT IS WHETHER THE FINGER STILL MOVES. GLIDING FUNCTION IS LOST WITHIN HOURS TO A COUPLE OF DAYS, AND IT DOES NOT COME BACK. THAT IS WHY THIS IS A SAME-DAY SURGICAL PROBLEM AND NOT AN ANTIBIOTIC PRESCRIPTION.",
+     "the_spread_pathways": {
+      "horseshoe_abscess": "THE SHEATHS OF THE THUMB (RADIAL BURSA) AND LITTLE FINGER (ULNAR BURSA) COMMUNICATE IN THE WRIST IN MANY PEOPLE. INFECTION IN ONE CAN THEREFORE TRACK ACROSS TO THE OTHER, PRODUCING A \"HORSESHOE ABSCESS\". ALWAYS EXAMINE THE THUMB IF THE LITTLE FINGER IS INFECTED, AND VICE VERSA.",
+      "parona_space": "INFECTION CAN SPREAD PROXIMALLY INTO THE POTENTIAL SPACE OF PARONA IN THE DISTAL FOREARM, BETWEEN PRONATOR QUADRATUS AND THE FLEXOR TENDONS. Examine and palpate the distal forearm — a tender, swollen distal forearm in a hand infection means the infection has escaped the hand."
+     }
+    },
+    "section_3_clerking_and_examination": {
+     "history": "Rose thorn injury to the volar pad of the right index finger two days ago. Minor at the time. Pain increased overnight and the finger has become swollen and stiff. He cannot grip. NO fever. He is right-handed and works as a gardener.",
+     "the_history_that_matters_in_every_hand_injury": "HAND DOMINANCE · OCCUPATION AND HOBBIES, because the functional consequence differs enormously between a labourer, a musician and an office worker · MECHANISM AND TIMING · CONTAMINATION — soil, water, animal or human · TETANUS STATUS · DIABETES AND IMMUNOSUPPRESSION · smoking, which impairs healing · and previous hand problems.",
+     "the_bite_question": {
+      "why_to_ask": "ASK EXPLICITLY WHETHER A WOUND OVER THE KNUCKLE WAS CAUSED BY PUNCHING SOMEONE IN THE MOUTH. A \"FIGHT BITE\" — a clenched-fist injury over the metacarpophalangeal joint — IS ROUTINELY CONCEALED OUT OF EMBARRASSMENT AND IS DESCRIBED AS CATCHING THE HAND ON A WALL OR A DOOR.",
+      "why_it_matters": "THE WOUND LOOKS TRIVIAL — A 5 mm LACERATION. BUT WITH THE FIST CLENCHED THE TOOTH PENETRATES THE EXTENSOR TENDON AND THE JOINT CAPSULE, AND WHEN THE HAND IS OPENED THE TENDON SLIDES PROXIMALLY, SEALING ORAL BACTERIA INSIDE THE JOINT. EIKENELLA CORRODENS AND ORAL ANAEROBES CAUSE A DESTRUCTIVE SEPTIC ARTHRITIS. IT REQUIRES EXPLORATION, WASHOUT AND ANTIBIOTICS — CO-AMOXICLAV COVERS EIKENELLA; FLUCLOXACILLIN ALONE DOES NOT. A FIGHT BITE MANAGED AS A SIMPLE LACERATION DESTROYS THE JOINT."
+     },
+     "the_organisms": "STAPHYLOCOCCUS AUREUS AND STREPTOCOCCI most commonly. Consider MRSA where prevalent. GARDENING AND SOIL contamination raise the possibility of unusual organisms, and a chronic, indolent tenosynovitis after a thorn or aquarium exposure should prompt consideration of ATYPICAL MYCOBACTERIA (Mycobacterium marinum) AND SPOROTHRIX — these need specific culture conditions and prolonged treatment, and are missed because nobody tells the laboratory. IN A SEXUALLY ACTIVE ADULT WITH TENOSYNOVITIS AND A PUSTULAR RASH, CONSIDER DISSEMINATED GONOCOCCAL INFECTION.",
+     "vitals": "BP 132/78 mmHg. Pulse 92. Temperature 37.6 — LOW-GRADE, AND SYSTEMIC FEATURES ARE OFTEN ABSENT IN A LOCALISED HAND INFECTION. THE ABSENCE OF FEVER IS NOT REASSURANCE.",
+     "examination": {
+      "the_finger": "ALL FOUR KANAVEL SIGNS PRESENT. Tenderness extends into the distal palm.",
+      "the_whole_hand_and_arm": "EXAMINE THE THUMB AND LITTLE FINGER for a horseshoe abscess. PALPATE THE DISTAL FOREARM for Parona space involvement. Check for LYMPHANGITIS — red streaking up the forearm — and EPITROCHLEAR AND AXILLARY LYMPHADENOPATHY.",
+      "neurovascular": "DOCUMENT SENSATION IN EACH DIGITAL NERVE TERRITORY AND CAPILLARY REFILL BEFORE ANY INTERVENTION.",
+      "function": "Test flexor digitorum profundus (distal interphalangeal flexion with the middle joint held straight) and flexor digitorum superficialis (proximal interphalangeal flexion with the other fingers held extended) — separately, and document it."
+     }
+    },
+    "section_4_investigations": {
+     "the_principle": "THE DIAGNOSIS IS CLINICAL. INVESTIGATIONS SUPPORT MANAGEMENT AND MUST NOT DELAY THEATRE.",
+     "radiograph": "LOOK FOR A RETAINED FOREIGN BODY — A THORN OR WOOD FRAGMENT IS RADIOLUCENT AND MAY NOT SHOW, SO A NORMAL FILM DOES NOT EXCLUDE ONE. ULTRASOUND IS BETTER FOR RADIOLUCENT FOREIGN BODIES. Also look for gas in the tissues, bony injury and osteomyelitis in chronic cases.",
+     "ultrasound": "Can demonstrate fluid within the tendon sheath and identify a collection or a radiolucent foreign body. Useful where the diagnosis is uncertain, but it must not delay surgery in a clear case.",
+     "bloods": "Full blood count, CRP, glucose and HbA1c — UNDIAGNOSED DIABETES PRESENTS AS A HAND INFECTION MORE OFTEN THAN PEOPLE EXPECT, AND IT SHOULD BE SCREENED FOR IN EVERY SIGNIFICANT HAND INFECTION. Blood cultures if febrile. Urate if gout is a differential.",
+     "microbiology": "SEND DEEP TISSUE AND FLUID FROM THEATRE, NOT A SUPERFICIAL SWAB. AND TELL THE LABORATORY IF ATYPICAL ORGANISMS ARE POSSIBLE — mycobacterial and fungal cultures require specific media and prolonged incubation and will not be done unless requested.",
+     "the_differential": "ACUTE GOUT OR PSEUDOGOUT can mimic infection closely and is a genuine trap — but IF IN DOUBT, TREAT AS INFECTION AND EXPLORE. Also consider septic arthritis of the interphalangeal joint, a felon (pulp space abscess), paronychia, herpetic whitlow (VESICLES, and INCISION IS CONTRAINDICATED because it worsens it and risks dissemination), cellulitis, and an inflammatory arthropathy."
+    },
+    "section_5_management": {
+     "a_immediate": "ELEVATE THE HAND ABOVE THE LEVEL OF THE HEART — in a sling or on pillows, and genuinely above the heart, not resting on the abdomen. IT IS A GENUINE TREATMENT that reduces oedema and pain and is almost always done inadequately. INTRAVENOUS ANTIBIOTICS after cultures where possible. ANALGESIA. NIL BY MOUTH. Remove all rings from the hand immediately. TETANUS PROPHYLAXIS. SPLINT IN THE POSITION OF SAFETY. REFER TO HAND OR PLASTIC SURGERY THE SAME DAY.",
+     "the_position_of_safety": {
+      "the_position": "WRIST EXTENDED ABOUT 20 TO 30 DEGREES · METACARPOPHALANGEAL JOINTS FLEXED TO ABOUT 70 TO 90 DEGREES · INTERPHALANGEAL JOINTS STRAIGHT · THUMB ABDUCTED.",
+      "why_it_is_shaped_that_way": "IT KEEPS THE COLLATERAL LIGAMENTS OF THE METACARPOPHALANGEAL JOINTS AT MAXIMUM LENGTH — they are taut in flexion — AND THE VOLAR PLATES OF THE INTERPHALANGEAL JOINTS AT MAXIMUM LENGTH IN EXTENSION. IMMOBILISING A HAND IN THE \"COMFORTABLE\" POSITION WITH THE FINGERS STRAIGHT AT THE KNUCKLES AND CURLED AT THE TIPS ALLOWS THOSE STRUCTURES TO SHORTEN, PRODUCING CONTRACTURES THAT CANNOT BE STRETCHED OUT. THE POSITION OF SAFETY LOOKS AWKWARD AND IS CORRECT."
+     },
+     "b_the_antibiotics_alone_question": {
+      "the_narrow_exception": "VERY EARLY INFECTION, PRESENTING WITHIN ROUGHLY 24 HOURS, WITHOUT PUS AND WITH ONLY MINIMAL SIGNS, MAY BE TREATED WITH INTRAVENOUS ANTIBIOTICS, ELEVATION AND SPLINTING, WITH REVIEW BY A HAND SURGEON WITHIN A FEW HOURS.",
+      "the_conditions": "IT REQUIRES ADMISSION, INTRAVENOUS ANTIBIOTICS, HOURLY-TO-FOUR-HOURLY REASSESSMENT BY SOMEONE COMPETENT, AND AN IMMEDIATE THRESHOLD TO OPERATE IF THERE IS NO CLEAR IMPROVEMENT WITHIN 12 TO 24 HOURS.",
+      "what_it_is_not": "IT IS NOT ORAL ANTIBIOTICS AND A CLINIC APPOINTMENT. \"GIVE FLUCLOXACILLIN AND COME BACK TOMORROW\" IS THE SENTENCE THAT COSTS THE FINGER. Established infection with pus needs surgery."
+     },
+     "c_surgery": {
+      "the_operation": "SURGICAL DRAINAGE AND IRRIGATION OF THE TENDON SHEATH, usually through limited incisions at the proximal (A1 pulley) and distal ends of the sheath, with a catheter passed through and the sheath irrigated with saline. Open drainage through a mid-lateral or Brunner incision is used for extensive infection or necrosis.",
+      "the_principle_of_hand_incisions": "INCISIONS MUST RESPECT HAND ANATOMY — NEVER CROSS A FLEXION CREASE AT RIGHT ANGLES, because the resulting scar contracts and produces a fixed flexion deformity. Use Brunner zigzag or mid-lateral incisions. THIS IS WHY HAND INFECTIONS SHOULD BE DRAINED BY SOMEONE WHO OPERATES ON HANDS, AND NOT INCISED CASUALLY IN AN EMERGENCY DEPARTMENT.",
+      "repeat_washout": "Frequently required at 24 to 48 hours. It is planned, not a failure.",
+      "debridement": "Necrotic tendon and sheath are excised. Extensive necrosis may require staged reconstruction or, rarely, amputation."
+     },
+     "d_the_postoperative_care_that_determines_the_functional_result": {
+      "the_principle": "THE OPERATION TREATS THE INFECTION. THE HAND THERAPY DETERMINES WHETHER THE FINGER WORKS.",
+      "early_mobilisation": "EARLY, SUPERVISED MOBILISATION UNDER A HAND THERAPIST ONCE INFECTION IS CONTROLLED IS ESSENTIAL TO PREVENT ADHESIONS BETWEEN THE TENDON AND ITS SHEATH. A FINGER IMMOBILISED UNTIL IT IS COMFORTABLE IS A FINGER THAT WILL NOT BEND. THE BALANCE BETWEEN REST FOR THE INFECTION AND MOVEMENT FOR THE TENDON IS THE CENTRAL DIFFICULTY, AND IT IS A HAND THERAPIST DECISION.",
+      "elevation": "Continued, strictly, for days.",
+      "antibiotics": "Continued intravenously then orally, guided by culture, typically for one to two weeks or longer if bone or joint is involved.",
+      "the_expectation_setting": "BE HONEST: EVEN WITH PROMPT AND CORRECT TREATMENT, SOME STIFFNESS IS COMMON, AND WITH DELAYED PRESENTATION PERMANENT LOSS OF MOVEMENT IS LIKELY. A gardener needs to know what this means for his work."
+     }
+    },
+    "section_6_teaching_points": {
+     "bonus_1_pain_on_passive_extension_is_the_earliest_sign": "It appears before fusiform swelling is obvious, which makes it the sign that allows the diagnosis to be made in time. Gently attempt to straighten the finger, once. All four Kanavel signs are present in only a proportion of cases, and waiting for the full set means waiting for tendon destruction.",
+     "bonus_2_the_outcome_is_movement_not_cure": "The tendon sheath is a closed space with poor blood supply. Raised pressure occludes the vincular supply causing tendon necrosis, and the inflammatory exudate destroys the gliding surface. Even a cured infection leaves a stiff finger if adhesions form — and gliding function is lost within hours to days and does not return.",
+     "bonus_3_ask_about_the_fight_bite": "A wound over the knuckle from punching someone in the mouth is routinely concealed. With the fist clenched the tooth enters the joint, and opening the hand seals oral bacteria inside. Co-amoxiclav covers Eikenella; flucloxacillin alone does not. Managed as a simple laceration, it destroys the joint.",
+     "bonus_4_the_position_of_safety_looks_wrong_and_is_right": "Wrist extended, knuckles flexed 70 to 90 degrees, fingers straight, thumb abducted. It keeps the MCP collateral ligaments and IP volar plates at maximum length. The \"comfortable\" position lets them shorten into contractures that cannot be stretched out.",
+     "bonus_5_examine_the_thumb_and_the_forearm": "The radial and ulnar bursae communicate in many people, so little finger infection can track to the thumb — a horseshoe abscess. And infection can escape proximally into the space of Parona in the distal forearm. Both are found only by examining beyond the affected finger.",
+     "bonus_6_elevate_properly": "Genuinely above the level of the heart, in a sling or on pillows — not resting on the abdomen. It is a real treatment that reduces oedema and pain, and it is almost always done inadequately.",
+     "bonus_7_never_cross_a_flexion_crease_at_right_angles": "The scar contracts and produces a fixed flexion deformity. Use Brunner zigzag or mid-lateral incisions — which is why hand infections should be drained by someone who operates on hands.",
+     "trap_1": "Absence of fever is not reassurance — systemic features are often absent in a localised hand infection.",
+     "trap_2": "A normal radiograph does not exclude a retained thorn or wood fragment, which are radiolucent. Ultrasound is better.",
+     "trap_3": "Screen for DIABETES — undiagnosed diabetes presents as a hand infection more often than expected.",
+     "trap_4": "Tell the laboratory if atypical organisms are possible — mycobacterial and fungal cultures need specific media and will not be done unless requested.",
+     "trap_5": "HERPETIC WHITLOW must not be incised — it worsens it and risks dissemination. Look for vesicles.",
+     "trap_6": "Oral antibiotics and a clinic appointment is the sentence that costs the finger.",
+     "trap_7": "Early supervised hand therapy determines the functional result — a finger immobilised until comfortable will not bend.",
+     "one_line_summary": "Pyogenic flexor tenosynovitis. Pain on passive extension is the earliest Kanavel sign, elevate properly and splint in the position of safety, and refer for same-day washout — because what is at stake is not the infection but whether the finger ever bends again."
+    }
+   },
+   "glossary": [
+    {
+     "abbr": "CRP",
+     "full": "C-reactive protein"
+    },
+    {
+     "abbr": "HbA1c",
+     "full": "glycated haemoglobin",
+     "gloss": "average glucose over roughly the past 2–3 months"
+    },
+    {
+     "abbr": "MRSA",
+     "full": "meticillin-resistant Staphylococcus aureus"
+    },
+    {
+     "abbr": "TIPS",
+     "full": "transjugular intrahepatic portosystemic shunt"
+    }
+   ],
+   "specialty": "Surgery — Plastics and burns",
+   "teaching_case": true,
+   "inputs": [],
+   "logic": {},
+   "outputs": [],
+   "warnings": [
+    "PAIN ON PASSIVE EXTENSION IS THE EARLIEST AND MOST SENSITIVE KANAVEL SIGN — it appears before fusiform swelling.",
+    "All four Kanavel signs are present in only a proportion — waiting for the full set means waiting for tendon destruction.",
+    "THE OUTCOME THAT MATTERS IS MOVEMENT, NOT CURE — gliding function is lost within hours to days and does not return.",
+    "ORAL ANTIBIOTICS AND A CLINIC APPOINTMENT IS THE SENTENCE THAT COSTS THE FINGER — this needs same-day surgical referral.",
+    "ASK ABOUT A FIGHT BITE — a knuckle wound from punching a mouth is routinely concealed and destroys the joint if managed as a laceration.",
+    "CO-AMOXICLAV covers Eikenella corrodens; FLUCLOXACILLIN ALONE DOES NOT.",
+    "ELEVATE THE HAND GENUINELY ABOVE THE HEART — it is a real treatment and is almost always done inadequately.",
+    "SPLINT IN THE POSITION OF SAFETY — wrist extended, knuckles flexed 70 to 90 degrees, fingers straight, thumb abducted.",
+    "NEVER CROSS A FLEXION CREASE AT RIGHT ANGLES — the scar contracts into a fixed flexion deformity.",
+    "EXAMINE THE THUMB AND LITTLE FINGER for a horseshoe abscess, and the distal forearm for Parona space spread.",
+    "ABSENCE OF FEVER IS NOT REASSURANCE in a localised hand infection.",
+    "A NORMAL RADIOGRAPH DOES NOT EXCLUDE a radiolucent thorn or wood fragment — ultrasound is better.",
+    "SCREEN FOR DIABETES in every significant hand infection.",
+    "TELL THE LABORATORY if atypical mycobacteria or fungi are possible — those cultures need specific media and will not be done otherwise.",
+    "HERPETIC WHITLOW MUST NOT BE INCISED — look for vesicles.",
+    "REMOVE ALL RINGS immediately and give tetanus prophylaxis.",
+    "EARLY SUPERVISED HAND THERAPY determines the functional result.",
+    "Antibiotic choices here are teaching examples. Follow local hand surgery and microbiology guidance."
+   ],
+   "limitations": [
+    "A WORKED TEACHING CASE, not a protocol. The narrow role of antibiotics alone in very early presentation requires admission and repeated senior hand surgical review.",
+    "Timing of mobilisation balances infection control against adhesion prevention and is a hand therapist and surgeon decision."
+   ],
+   "flashcards": [
+    {
+     "q": "Name the four Kanavel signs.",
+     "a": "Fusiform swelling, finger held in slight flexion, tenderness along the sheath, and pain on passive extension."
+    },
+    {
+     "q": "Which Kanavel sign appears first?",
+     "a": "Pain on passive extension — before fusiform swelling is obvious."
+    },
+    {
+     "q": "Why is the tendon sheath so dangerous?",
+     "a": "A closed space with poor blood supply — pressure occludes the vincular supply and exudate destroys the gliding surface."
+    },
+    {
+     "q": "What outcome actually matters?",
+     "a": "Whether the finger still moves — gliding function is lost within hours to days and does not return."
+    },
+    {
+     "q": "What is a horseshoe abscess?",
+     "a": "Infection tracking between the radial and ulnar bursae, which communicate in the wrist in many people."
+    },
+    {
+     "q": "What is the space of Parona?",
+     "a": "A potential space in the distal forearm between pronator quadratus and the flexor tendons."
+    },
+    {
+     "q": "Why does a fight bite destroy the joint?",
+     "a": "With the fist clenched the tooth enters the joint; opening the hand seals oral bacteria inside."
+    },
+    {
+     "q": "Which antibiotic covers Eikenella corrodens?",
+     "a": "Co-amoxiclav — flucloxacillin alone does not."
+    },
+    {
+     "q": "Describe the position of safety and why.",
+     "a": "Wrist extended, MCPs flexed 70 to 90, IPs straight, thumb abducted — keeps collateral ligaments and volar plates at maximum length."
+    },
+    {
+     "q": "Why must incisions not cross flexion creases at right angles?",
+     "a": "The scar contracts and produces a fixed flexion deformity — use Brunner or mid-lateral incisions."
+    },
+    {
+     "q": "Which hand infection must NOT be incised?",
+     "a": "Herpetic whitlow — incision worsens it and risks dissemination. Look for vesicles."
+    },
+    {
+     "q": "What organisms should prompt a specific laboratory request?",
+     "a": "Atypical mycobacteria and Sporothrix after thorn or aquarium exposure — they need specific media and prolonged incubation."
+    }
+   ],
+   "checkboxes": [
+    "All four Kanavel signs specifically sought, including gentle passive extension",
+    "Fight bite asked about explicitly",
+    "Thumb and little finger examined for horseshoe abscess",
+    "Distal forearm palpated for Parona space involvement",
+    "Neurovascular status and individual tendon function documented",
+    "All rings removed",
+    "Hand elevated genuinely above the heart",
+    "Splinted in the position of safety",
+    "Intravenous antibiotics with appropriate cover for the mechanism",
+    "Tetanus prophylaxis given",
+    "Diabetes screened for",
+    "Imaging for retained foreign body considered, knowing thorns are radiolucent",
+    "Same-day hand or plastic surgery referral",
+    "Deep tissue sent from theatre, with atypical organisms flagged to the laboratory",
+    "Herpetic whitlow excluded before any incision",
+    "Early supervised hand therapy arranged",
+    "Realistic functional expectations discussed"
+   ],
+   "related_slugs": [
+    "hand_infections_and_the_anatomy_that_governs_them"
+   ],
+   "patient_integration": null,
+   "governance": {
+    "evidence_tier": "T5_textbook_or_standard_teaching",
+    "verification_status": "standard_teaching",
+    "sources": [],
+    "nigeria_overlay": null,
+    "build_date": "2026-08-07",
+    "review_interval_months": 12,
+    "next_review_due": "2027-08-07",
+    "clinical_reviewer": null,
+    "approved_for_release": false,
+    "local_confirmation_required": true,
+    "supersedes": null,
+    "content_hash": "121e9f7fedec8eb9"
+   }
+  },
+  {
+   "id": "AS-CASE-0060",
+   "schema_version": "4.0.0",
+   "content_release": "AWIBI-SCOUT-CONTENT-2026.08.R3",
+   "type": "case",
+   "title": "CASE: A Pinprick Wound from a Paint Gun That \"Barely Hurts\"",
+   "short_title": "Case: high-pressure injection injury",
+   "slug": "case_a_pinprick_wound_from_a_paint_gun_that_barely_hurts",
+   "also_known_as": [
+    "case injection injury",
+    "high pressure injection injury case",
+    "paint gun injury",
+    "grease gun injury",
+    "hydraulic injection injury",
+    "occult hand injury",
+    "amputation rate injection",
+    "organic solvent injection"
+   ],
+   "summary": "A 44-year-old with a tiny entry wound on the index finger from a paint sprayer. Teaches why the most benign-looking hand injury in the emergency department is a surgical emergency, why the amputation rate is so high, and why the injected material determines the prognosis.",
+   "domains": [
+    "plastic_surgery",
+    "orthopaedics",
+    "emergency_medicine",
+    "occupational_health"
+   ],
+   "intents": [
+    "identify",
+    "act"
+   ],
+   "populations": [
+    "all_ages"
+   ],
+   "contexts": [
+    "routine"
+   ],
+   "hazard": "critical",
+   "urgency": "immediate",
+   "jurisdiction": "international",
+   "search": {
+    "terms": [
+     "amputation",
+     "amputation rate injection",
+     "barely",
+     "case",
+     "case injection injury",
+     "case: a pinprick wound from a paint gun that \"barely hurts\"",
+     "case: high-pressure injection injury",
+     "chemical inflammation",
+     "compartment syndrome hand",
+     "debridement",
+     "digital nerve",
+     "grease gun",
+     "grease gun injury",
+     "high pressure injection injury case",
+     "high-pressure injection injury",
+     "hurts",
+     "hydraulic fluid",
+     "hydraulic injection injury",
+     "occult hand injury",
+     "occupational injury",
+     "organic solvent",
+     "organic solvent injection",
+     "paint",
+     "paint gun",
+     "paint gun injury",
+     "pinprick",
+     "radiopaque injectate",
+     "tendon sheath spread",
+     "wound"
+    ],
+    "ambiguous_terms": [],
+    "phrases": [],
+    "field_weights": {
+     "title": 8,
+     "short_title": 6,
+     "also_known_as": 5,
+     "terms": 4,
+     "summary": 2,
+     "body": 1,
+     "flashcards": 0.5
+    }
+   },
+   "body": {
+    "the_one_line": "44-year-old spray painter who was cleaning the nozzle of an airless paint gun when it discharged into the tip of his left index finger. There is a 2 mm entry wound. He says it stings a little and he only came because his supervisor insisted.",
+    "section_1_why_this_is_the_most_dangerous_looking_nothing_in_the_department": {
+     "the_statement": "HIGH-PRESSURE INJECTION INJURY IS A TRUE SURGICAL EMERGENCY THAT LOOKS LIKE A TRIVIAL PUNCTURE WOUND. AMPUTATION RATES ARE REPORTED BETWEEN ROUGHLY 16% AND 48% DEPENDING ON THE MATERIAL INJECTED, AND THE SINGLE STRONGEST PREDICTOR OF AMPUTATION IS DELAY TO SURGICAL DEBRIDEMENT.",
+     "the_mismatch": "THE PATIENT IS COMFORTABLE, THE WOUND IS 2 mm, THERE IS NO BLEEDING AND NO OBVIOUS DEFORMITY. EVERYTHING ABOUT THE PRESENTATION SAYS \"DRESSING AND DISCHARGE\". THAT MISMATCH IS THE ENTIRE DANGER — AND THE PATIENT OFTEN HAS TO BE PERSUADED TO STAY.",
+     "the_pressures_involved": "AIRLESS PAINT SPRAYERS OPERATE AT SEVERAL THOUSAND POUNDS PER SQUARE INCH. GREASE GUNS AND HYDRAULIC SYSTEMS OPERATE SIMILARLY. PRESSURES ABOVE ROUGHLY 100 psi PENETRATE SKIN, AND THESE DEVICES EXCEED THAT BY AN ORDER OF MAGNITUDE. THE MATERIAL IS DRIVEN DEEP ALONG THE PATH OF LEAST RESISTANCE — THE TENDON SHEATHS AND NEUROVASCULAR BUNDLES — AND CAN TRACK FROM A FINGERTIP INTO THE PALM AND FOREARM WITHIN SECONDS.",
+     "the_time_window": "SURGICAL DEBRIDEMENT IS RECOMMENDED WITHIN 6 HOURS, AND OUTCOMES DETERIORATE MARKEDLY BEYOND 10 TO 12 HOURS. THE PATIENT WHO IS SENT HOME AND RETURNS THE NEXT MORNING WITH A SWOLLEN BLACK FINGER HAS USUALLY LOST IT."
+    },
+    "section_2_the_material_determines_the_prognosis": {
+     "the_principle": "IT IS NOT THE PRESSURE ALONE THAT DESTROYS THE HAND — IT IS THE CHEMICAL PROPERTIES OF WHAT WAS INJECTED.",
+     "organic_solvents_and_paint_thinner": "THE WORST. PAINT, PAINT THINNER, DIESEL AND OTHER ORGANIC SOLVENTS CAUSE INTENSE CHEMICAL INFLAMMATION AND WIDESPREAD TISSUE NECROSIS. AMPUTATION RATES ARE THE HIGHEST IN THIS GROUP — commonly quoted around 40 to 50%.",
+     "grease_and_oil": "CAUSE LESS ACUTE CHEMICAL NECROSIS BUT PROVOKE A CHRONIC GRANULOMATOUS FOREIGN BODY REACTION WITH FIBROSIS, OLEOGRANULOMAS, STIFFNESS AND CHRONIC SINUSES. Amputation rates are lower but functional outcomes are frequently poor.",
+     "water_and_air": "GENERALLY THE LEAST DAMAGING CHEMICALLY, BUT STILL CAUSE MECHANICAL DISRUPTION, BARELY CONTROLLED SPREAD AND INFECTION RISK, AND STILL REQUIRE ASSESSMENT.",
+     "the_practical_action": "ESTABLISH EXACTLY WHAT WAS INJECTED AND, WHERE POSSIBLE, OBTAIN THE SAFETY DATA SHEET FROM THE WORKPLACE. IT INFORMS THE PROGNOSIS, THE URGENCY AND THE SURGICAL PLAN, AND NOBODY THINKS TO ASK FOR IT."
+    },
+    "section_3_clerking_and_examination": {
+     "history": "Injury 40 minutes ago. Airless spray gun, oil-based paint. He was cleaning the nozzle with the trigger guard removed. Left index finger, non-dominant hand. Minimal pain initially, now a deep aching that is increasing. He is a spray painter by trade.",
+     "the_essential_questions": "WHAT WAS INJECTED — the exact substance · THE PRESSURE OF THE DEVICE · THE TIME OF INJURY, precisely · THE SITE AND DIRECTION · hand dominance and occupation · tetanus status · and whether the workplace has a safety data sheet.",
+     "vitals": "Normal throughout. AFEBRILE AND SYSTEMICALLY WELL — as expected, and not reassuring.",
+     "examination": {
+      "the_wound": "A 2 mm PUNCTATE ENTRY WOUND ON THE VOLAR PULP OF THE LEFT INDEX FINGER. Minimal surrounding erythema. NO BLEEDING. THE FINGER LOOKS ALMOST NORMAL.",
+      "the_early_signs_to_look_for": "INCREASING DEEP ACHING PAIN, WHICH IS THE EARLIEST SIGN AND IS OFTEN THE ONLY ONE · FIRMNESS OR FULLNESS OF THE PULP OR FINGER · PALLOR OR MOTTLING · REDUCED SENSATION IN A DIGITAL NERVE DISTRIBUTION, from direct injury or from pressure · REDUCED ACTIVE MOVEMENT · and TENDERNESS EXTENDING PROXIMALLY along the tendon sheath or into the palm, which indicates how far the material has tracked.",
+      "the_documentation": "DOCUMENT SENSATION IN EACH DIGITAL NERVE TERRITORY, CAPILLARY REFILL, AND ACTIVE AND PASSIVE MOVEMENT, WITH THE TIME — before and after any intervention.",
+      "what_not_to_do": "DO NOT INCISE, PROBE OR ATTEMPT TO EXPRESS THE MATERIAL IN THE EMERGENCY DEPARTMENT. DO NOT INJECT LOCAL ANAESTHETIC INTO THE DIGIT — ADDING VOLUME TO A CLOSED, ALREADY PRESSURISED COMPARTMENT WORSENS THE ISCHAEMIA. Use a PROXIMAL BLOCK OR SYSTEMIC ANALGESIA INSTEAD, and this is a genuine and commonly made error."
+     },
+     "compartment_syndrome": "THE INJECTED VOLUME, PLUS THE INFLAMMATORY OEDEMA IT PROVOKES, RAISES PRESSURE WITHIN THE CLOSED COMPARTMENTS OF THE DIGIT, HAND AND FOREARM. EXPECT IT, LOOK FOR IT, AND NOTE THAT A DIGIT HAS NO REAL COMPARTMENT PRESSURE MONITORING OPTION — IT IS A CLINICAL DIAGNOSIS AND THE DECOMPRESSION IS PART OF THE OPERATION."
+    },
+    "section_4_investigations": {
+     "radiographs": {
+      "why": "MANY INJECTED MATERIALS ARE RADIOPAQUE — INCLUDING LEAD-BASED PAINTS AND SOME GREASES — AND THE RADIOGRAPH THEN SHOWS THE EXTENT OF SPREAD, WHICH IS ROUTINELY MUCH GREATER THAN THE EXAMINATION SUGGESTS. IT ALSO SHOWS SUBCUTANEOUS AIR TRACKING ALONG THE TISSUE PLANES, WHICH MAPS THE PATH EVEN WHEN THE MATERIAL ITSELF IS NOT VISIBLE.",
+      "the_views": "AP AND LATERAL OF THE DIGIT AND HAND, AND INCLUDE THE FOREARM IF THERE IS ANY PROXIMAL SPREAD.",
+      "the_limitation": "A NORMAL RADIOGRAPH DOES NOT EXCLUDE EXTENSIVE INJECTION — many materials are radiolucent. IT CANNOT BE USED TO REASSURE."
+     },
+     "bloods": "Full blood count, CRP, urea and electrolytes, clotting, group and save, glucose. In specific circumstances, systemic toxicity is possible from certain injected substances — ESTABLISH WHAT THE MATERIAL IS AND SEEK TOXICOLOGY ADVICE IF IT IS SYSTEMICALLY TOXIC.",
+     "do_not_delay": "IMAGING IS USEFUL FOR PLANNING BUT MUST NOT DELAY THEATRE. THE DIAGNOSIS IS MADE FROM THE MECHANISM."
+    },
+    "section_5_management": {
+     "a_the_immediate_actions": "RECOGNISE IT AS AN EMERGENCY AND SAY SO OUT LOUD — the patient and often the triage system need to be told. NIL BY MOUTH. INTRAVENOUS ACCESS AND BLOODS. BROAD-SPECTRUM INTRAVENOUS ANTIBIOTICS. TETANUS PROPHYLAXIS. ANALGESIA — SYSTEMIC OR A PROXIMAL BLOCK, NEVER A DIGITAL INFILTRATION. ELEVATE THE HAND ABOVE THE HEART. REMOVE ALL RINGS. SPLINT IN THE POSITION OF SAFETY. TELEPHONE THE HAND OR PLASTIC SURGEONS IMMEDIATELY.",
+     "the_steroid_question": "SYSTEMIC CORTICOSTEROIDS ARE SOMETIMES GIVEN TO REDUCE THE INFLAMMATORY RESPONSE. THE EVIDENCE IS WEAK AND INCONSISTENT, AND PRACTICE VARIES. IT IS A SPECIALIST DECISION AND MUST NEVER SUBSTITUTE FOR OR DELAY SURGERY.",
+     "b_surgery": {
+      "the_operation": "URGENT, WIDE SURGICAL EXPLORATION AND DEBRIDEMENT UNDER GENERAL OR REGIONAL ANAESTHESIA, WITH TOURNIQUET CONTROL — AND NOTE THAT THE LIMB SHOULD BE ELEVATED RATHER THAN EXSANGUINATED WITH A BANDAGE, BECAUSE SQUEEZING DRIVES MATERIAL FURTHER PROXIMALLY.",
+      "the_extent": "THE EXPLORATION MUST FOLLOW THE MATERIAL WHEREVER IT HAS GONE, WHICH IS ALWAYS FURTHER THAN THE ENTRY WOUND SUGGESTS. It commonly requires extensile incisions from fingertip into the palm and sometimes the forearm. ALL INJECTED MATERIAL AND ALL NECROTIC TISSUE MUST BE REMOVED, AND THE TENDON SHEATHS OPENED AND IRRIGATED.",
+      "decompression": "DECOMPRESS THE INVOLVED COMPARTMENTS — DIGITAL, HAND AND FOREARM AS REQUIRED.",
+      "the_incisions": "BRUNNER ZIGZAG OR MID-LATERAL — NEVER CROSSING A FLEXION CREASE AT RIGHT ANGLES, BECAUSE THE CONTRACTED SCAR PRODUCES A FIXED FLEXION DEFORMITY.",
+      "leave_open_and_relook": "WOUNDS ARE LEFT OPEN AND A PLANNED SECOND-LOOK DEBRIDEMENT PERFORMED AT 24 TO 48 HOURS, BECAUSE NECROSIS PROGRESSES AND RESIDUAL MATERIAL IS COMMONLY FOUND. THIS IS EXPECTED, NOT A FAILURE."
+     },
+     "c_amputation": "SOMETIMES NECESSARY, EITHER PRIMARILY FOR AN UNSALVAGEABLE DIGIT OR SECONDARILY AFTER FAILED DEBRIDEMENT. IT MUST BE DISCUSSED HONESTLY WITH THE PATIENT BEFORE THE FIRST OPERATION, BECAUSE THE DECISION MAY BE MADE INTRAOPERATIVELY AND CONSENT MUST COVER IT. A patient who wakes without a finger having been told only that he needed a washout has been badly failed.",
+     "d_afterwards": {
+      "reconstruction": "Soft tissue coverage with grafts or flaps as required, once the tissue has declared itself.",
+      "hand_therapy": "EARLY AND INTENSIVE, TO PRESERVE WHATEVER FUNCTION REMAINS. Stiffness, contracture and cold intolerance are common long-term problems.",
+      "the_honest_conversation": "BE EXPLICIT ABOUT THE LIKELY OUTCOME FROM THE OUTSET. A SPRAY PAINTER MAY NOT BE ABLE TO RETURN TO HIS TRADE. Chronic pain, cold intolerance, stiffness and amputation are all realistic outcomes even with correct management.",
+      "occupational_and_reporting": "THIS IS AN OCCUPATIONAL INJURY. REPORT IT THROUGH THE APPROPRIATE WORKPLACE AND REGULATORY CHANNELS, INVOLVE OCCUPATIONAL HEALTH, AND ADDRESS THE MECHANISM — HE WAS CLEANING THE NOZZLE WITH THE TRIGGER GUARD REMOVED. THE MOST EFFECTIVE TREATMENT FOR THE NEXT PATIENT IS PREVENTION AT THE WORKPLACE, AND THE REPORT IS THE ONLY ROUTE TO IT."
+     },
+     "e_the_education_point": "MANY OF THESE PATIENTS ARE INITIALLY MANAGED BY SOMEONE WHO HAS NEVER SEEN ONE. IF YOU WORK IN AN AREA WITH INDUSTRY, AGRICULTURE OR CONSTRUCTION, THE DEPARTMENT SHOULD KNOW THAT A PINPRICK WOUND FROM A PRESSURISED DEVICE IS A THEATRE CASE. IT IS WORTH SAYING AT TEACHING, BECAUSE THE DIAGNOSIS IS ENTIRELY DEPENDENT ON SOMEONE HAVING HEARD OF IT."
+    },
+    "section_6_teaching_points": {
+     "bonus_1_the_most_benign_looking_hand_injury_in_the_department": "A 2 mm painless puncture with no bleeding, in a comfortable patient who did not want to come. Amputation rates are 16 to 48%, and the strongest predictor is delay to debridement. The mismatch between appearance and severity IS the danger.",
+     "bonus_2_the_material_determines_the_prognosis": "Organic solvents such as paint and thinner cause intense chemical necrosis with the highest amputation rates. Grease and oil cause chronic granulomatous reaction, fibrosis and stiffness. Water and air are least damaging chemically. Get the safety data sheet from the workplace — nobody thinks to ask.",
+     "bonus_3_never_infiltrate_local_anaesthetic_into_the_digit": "Adding volume to a closed, already pressurised compartment worsens the ischaemia. Use a proximal block or systemic analgesia. It is a genuine and commonly made error.",
+     "bonus_4_do_not_exsanguinate_with_a_bandage": "Squeezing the limb drives injected material further proximally. Elevate to empty the limb before inflating the tourniquet.",
+     "bonus_5_the_radiograph_maps_the_spread": "Many materials are radiopaque, and subcutaneous air tracking along tissue planes maps the path even when the material is not visible. The extent is routinely far greater than the examination suggests — but a normal film excludes nothing, because many materials are radiolucent.",
+     "bonus_6_debride_within_six_hours_and_plan_a_second_look": "Outcomes deteriorate markedly beyond 10 to 12 hours. Wounds are left open with a planned relook at 24 to 48 hours because necrosis progresses and residual material is commonly found — that is expected, not failure.",
+     "bonus_7_consent_for_amputation_before_the_first_operation": "The decision may be made intraoperatively. A patient who wakes without a finger having been told only that he needed a washout has been badly failed.",
+     "trap_1": "The patient is comfortable, afebrile and wants to leave — that is entirely expected and is not reassurance.",
+     "trap_2": "Do NOT incise, probe or attempt to express the material in the emergency department.",
+     "trap_3": "Expect COMPARTMENT SYNDROME of digit, hand and forearm — in a digit it is a clinical diagnosis and decompression is part of the operation.",
+     "trap_4": "Never cross a flexion crease at right angles — use Brunner or mid-lateral incisions.",
+     "trap_5": "Systemic steroids have weak evidence and must never delay or substitute for surgery.",
+     "trap_6": "REPORT IT AS AN OCCUPATIONAL INJURY and address the mechanism — prevention at the workplace is the treatment for the next patient.",
+     "trap_7": "Be honest early that return to the same trade may not be possible.",
+     "one_line_summary": "High-pressure paint injection injury. A painless 2 mm wound in a man who wants to go home, with an amputation risk approaching half — find out exactly what was injected, never infiltrate the digit, and get him to theatre within six hours."
+    }
+   },
+   "glossary": [
+    {
+     "abbr": "CRP",
+     "full": "C-reactive protein"
+    }
+   ],
+   "specialty": "Surgery — Plastics and burns",
+   "teaching_case": true,
+   "inputs": [],
+   "logic": {},
+   "outputs": [],
+   "warnings": [
+    "A PINPRICK WOUND FROM A PRESSURISED DEVICE IS A SURGICAL EMERGENCY — amputation rates are 16 to 48%.",
+    "DELAY TO DEBRIDEMENT IS THE STRONGEST PREDICTOR OF AMPUTATION — aim for surgery within 6 hours.",
+    "THE PATIENT LOOKS WELL AND WANTS TO GO HOME — that is expected and is NOT reassurance.",
+    "ESTABLISH EXACTLY WHAT WAS INJECTED and obtain the workplace safety data sheet.",
+    "ORGANIC SOLVENTS such as paint and thinner carry the highest amputation rates.",
+    "NEVER INFILTRATE LOCAL ANAESTHETIC INTO THE DIGIT — it adds volume to a pressurised compartment and worsens ischaemia.",
+    "DO NOT INCISE, PROBE OR ATTEMPT TO EXPRESS the material in the emergency department.",
+    "DO NOT EXSANGUINATE THE LIMB WITH A BANDAGE — squeezing drives material proximally. Elevate instead.",
+    "A NORMAL RADIOGRAPH DOES NOT EXCLUDE EXTENSIVE INJECTION — many materials are radiolucent.",
+    "EXPECT COMPARTMENT SYNDROME of digit, hand and forearm — decompression is part of the operation.",
+    "THE EXPLORATION MUST FOLLOW THE MATERIAL, which always spreads further than the entry wound suggests.",
+    "NEVER CROSS A FLEXION CREASE AT RIGHT ANGLES — use Brunner or mid-lateral incisions.",
+    "LEAVE WOUNDS OPEN AND PLAN A SECOND LOOK at 24 to 48 hours — necrosis progresses and residual material is common.",
+    "CONSENT FOR POSSIBLE AMPUTATION BEFORE THE FIRST OPERATION — the decision may be made intraoperatively.",
+    "SYSTEMIC STEROIDS have weak evidence and must never delay or replace surgery.",
+    "REPORT IT AS AN OCCUPATIONAL INJURY and address the mechanism — prevention is the treatment for the next patient.",
+    "Management here is a teaching example. Follow local hand surgery guidance."
+   ],
+   "limitations": [
+    "A WORKED TEACHING CASE, not a protocol. Steroid use and the extent of initial debridement are specialist decisions and practice varies.",
+    "Amputation rates quoted vary between series and depend heavily on the injected material and time to surgery."
+   ],
+   "flashcards": [
+    {
+     "q": "Why is this injury so dangerous?",
+     "a": "It looks like a trivial puncture but carries amputation rates of 16 to 48%, with delay to debridement the strongest predictor."
+    },
+    {
+     "q": "Which injected materials are worst?",
+     "a": "Organic solvents — paint, thinner, diesel — causing intense chemical necrosis and the highest amputation rates."
+    },
+    {
+     "q": "What does grease injection cause?",
+     "a": "Chronic granulomatous foreign body reaction with fibrosis, oleogranulomas, stiffness and chronic sinuses."
+    },
+    {
+     "q": "Why must local anaesthetic not be infiltrated into the digit?",
+     "a": "It adds volume to a closed pressurised compartment and worsens ischaemia — use a proximal block or systemic analgesia."
+    },
+    {
+     "q": "Why not exsanguinate the limb with a bandage?",
+     "a": "Squeezing drives injected material further proximally — elevate the limb instead."
+    },
+    {
+     "q": "What is the target time to surgery?",
+     "a": "Within 6 hours; outcomes deteriorate markedly beyond 10 to 12 hours."
+    },
+    {
+     "q": "What does the radiograph show?",
+     "a": "Radiopaque material and subcutaneous air tracking along tissue planes, mapping spread far beyond the entry wound."
+    },
+    {
+     "q": "Does a normal radiograph exclude extensive injection?",
+     "a": "No — many materials are radiolucent."
+    },
+    {
+     "q": "What pressure penetrates skin?",
+     "a": "Roughly 100 psi; industrial devices exceed this by an order of magnitude."
+    },
+    {
+     "q": "What is the earliest clinical sign?",
+     "a": "Increasing deep aching pain, often the only sign in the first hours."
+    },
+    {
+     "q": "Why leave wounds open with a planned relook?",
+     "a": "Necrosis progresses and residual material is commonly found at 24 to 48 hours."
+    },
+    {
+     "q": "What must consent cover before the first operation?",
+     "a": "Possible amputation — the decision may be made intraoperatively."
+    }
+   ],
+   "checkboxes": [
+    "Mechanism recognised as an emergency and communicated to the team",
+    "Exact injected material established and safety data sheet requested",
+    "Time of injury documented precisely",
+    "Sensation, capillary refill and movement documented with the time",
+    "Proximal extent of tenderness assessed",
+    "All rings removed",
+    "NO digital infiltration of local anaesthetic",
+    "NO incision, probing or attempt to express material",
+    "Hand elevated above the heart and splinted in the position of safety",
+    "Broad-spectrum intravenous antibiotics and tetanus prophylaxis given",
+    "Radiographs of digit, hand and forearm obtained without delaying theatre",
+    "Hand or plastic surgery telephoned immediately",
+    "Consent obtained covering possible amputation",
+    "Tourniquet applied after elevation, not bandage exsanguination",
+    "Second-look debridement planned at 24 to 48 hours",
+    "Occupational injury reported and workplace mechanism addressed",
+    "Honest discussion about function and return to trade"
+   ],
+   "related_slugs": [
+    "hand_infections_and_the_anatomy_that_governs_them"
+   ],
+   "patient_integration": null,
+   "governance": {
+    "evidence_tier": "T5_textbook_or_standard_teaching",
+    "verification_status": "standard_teaching",
+    "sources": [],
+    "nigeria_overlay": null,
+    "build_date": "2026-08-07",
+    "review_interval_months": 12,
+    "next_review_due": "2027-08-07",
+    "clinical_reviewer": null,
+    "approved_for_release": false,
+    "local_confirmation_required": true,
+    "supersedes": null,
+    "content_hash": "645500022a22df3c"
    }
   }
  ]

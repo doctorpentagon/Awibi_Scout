@@ -20,8 +20,8 @@ there is a natural checkpoint every 10 cases rather than every 3.
 | **3** | 21–30 | Rheumatology · Infectious disease · Oncology · Dermatology | **COMPLETE** |
 | **4** | 31–40 | General surgery · Trauma · Burns · Orthopaedics | **COMPLETE** |
 | **5** | 41–50 | Urology · Orthopaedics · Vascular | **COMPLETE** |
-| **6** | 51–60 | Neurosurgery · Cardiothoracic · Paediatric surgery · Plastics | **next** |
-| 7 | 61–70 | Anaesthesia · ENT · Ophthalmology · Dental | planned |
+| **6** | 51–60 | Neurosurgery · Cardiothoracic · Paediatric surgery · Plastics | **COMPLETE** |
+| **7** | 61–70 | Anaesthesia · ENT · Ophthalmology · Dental | **next** |
 | 8 | 71–80 | Obstetrics · Gynaecology | planned |
 | 9 | 81–90 | Paediatrics · Neonatology | planned |
 | 10 | 91–100 | Psychiatry · Radiology · Emergency medicine | planned |
@@ -35,9 +35,9 @@ curl localhost:5188/api/cases | node -e "let d='';process.stdin.on('data',c=>d+=
 
 | | |
 |---|---|
-| Cases written | **50** |
+| Cases written | **60** |
 | Target | 200+ |
-| Specialty areas covered | 18 of ~45 |
+| Specialty areas covered | 21 of ~45 |
 
 ---
 
@@ -118,13 +118,17 @@ point is that no area is left without a worked patient.
       *Planned:* Fournier gangrene · frank haematuria · prostate cancer presentation · priapism
 - [x] **Orthopaedics** (5) — acute compartment syndrome · neck of femur fracture · cauda equina syndrome · open tibial fracture · paediatric supracondylar fracture
       *Planned:* septic arthritis of the hip in a child · periprosthetic infection · shoulder dislocation
-- [ ] **Neurosurgery** — extradural haematoma · chronic subdural · raised intracranial pressure · hydrocephalus with a blocked shunt
-- [ ] **Cardiothoracic** — aortic dissection · empyema · pneumothorax requiring drain · oesophageal perforation
+- [x] **Neurosurgery** (2) — chronic subdural haematoma · blocked ventriculoperitoneal shunt
+      *Planned:* brain abscess · pituitary apoplexy · spinal epidural abscess  
+      *(extradural haematoma is covered under Trauma)*
+- [x] **Cardiothoracic** (3) — acute aortic dissection · oesophageal perforation (Boerhaave) · empyema
+      *Planned:* pneumothorax requiring drain · post-cardiac-surgery tamponade · massive haemoptysis
 - [x] **Vascular** (3) — acute limb ischaemia · ruptured abdominal aortic aneurysm · infected diabetic foot
       *Planned:* critical limb ischaemia · carotid disease · varicose vein complications
-- [ ] **Paediatric surgery** — intussusception · pyloric stenosis · gastroschisis and omphalocele · undescended testis
-- [x] **Plastics and burns** (1) — major burn with inhalation injury and fluid calculation
-      *Planned:* hand injury · degloving · pressure ulcer · flap failure
+- [x] **Paediatric surgery** (3) — intussusception · hypertrophic pyloric stenosis · malrotation with midgut volvulus
+      *Planned:* necrotising enterocolitis · Hirschsprung disease · gastroschisis and exomphalos · undescended testis
+- [x] **Plastics and burns** (3) — major burn with inhalation injury · pyogenic flexor tenosynovitis · high-pressure injection injury
+      *Planned:* degloving · pressure ulcer · flap failure · facial laceration
 
 ### Special postings
 
